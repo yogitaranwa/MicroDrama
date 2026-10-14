@@ -1,0 +1,366 @@
+{
+  "dataset_source": "DramaBench 500 corpus (MIT)",
+  "formulas_count": 6,
+  "formulas": {
+    "Cold Stare-down Freeze": {
+      "count": 15,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Baby's Wild Ride Episode 1",
+          "ending_snippet": "ns, but she bends to clean the spill.  EXT. CAR WASH - DAY  SONG YUAN, in dirty work clothes, sits by a lamppost, looking dejected but determined.  SONG YUAN (V.O.) For every night I spent wondering if he's still breathing... you'll pay.  SONG YUAN's eyes sharpen with cold, calculated determination."
+        },
+        {
+          "title": "Mr. Gu's Secret Criminal Wife",
+          "ending_snippet": ".  GU YANCHEN suddenly turns around, sees the ultrasound report in her hand, and snatches it away.  GU YANCHEN (roaring) Don't give me that look!  He crumples the report into a ball and throws it on the ground. HAN CHUYAO's expression changes from shock to resolution. GU YANCHEN looks at her coldly."
+        },
+        {
+          "title": "A Suona Shakes Heaven and Earth",
+          "ending_snippet": "black envelope across the counter.  CHEN JIANGHAI Our proposal. Accept, and your instruments reach three hundred students. Refuse...  He glances at the broken suona.  CHEN JIANGHAI ...and we demonstrate why some traditions belong in museums.  SU YING's hand trembles as she reaches for the envelope."
+        },
+        {
+          "title": "Untitled Hospital Drama",
+          "ending_snippet": "ch blood. Is that your new refrain?  JIANG ZIXI I didn't—  LU BOCHUAN (angrily) You never do. Always the accident. I'm exhausted watching you perform. Every drop of your blood in my veins feels like a chain.  JIANG ZIXI (hurt) Bochuan...  JIANG ZIXI looks at him, her eyes filled with shock and pain."
+        },
+        {
+          "title": "The Nation's Mighty Dragon",
+          "ending_snippet": "POISON FANG and his men look around, startled.  POISON FANG Who's there? Show yourself!  MU SHAOFENG (V.O.) Three crimes. One sentence.  MU SHAOFENG walks into the light, confronting them.  POISON FANG You're a dead man walking.  MU SHAOFENG (smiles) Justice doesn't wait.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Dragon Hall of Great Xia",
+          "ending_snippet": "through the prison. Guards scatter.  HAN XIAO (announcing) Chen Yao. Your grandfather sent us.  ALL (in unison) Young Miss, we're taking you home.  INT. CELL - DAY  The FEMALE PRISONERS hear the shouts from outside and look up in terror. Behind them, Chen Yao's birthmark emits a sudden golden flash."
+        },
+        {
+          "title": "The Paranoid Wife of the Obsessed CEO Gu",
+          "ending_snippet": "ving the baby.  GU SHEN ...isn't mine. Detectives are downstairs.  The bodyguards lift JING YAN from the sofa. She struggles weakly.  JING YAN (desperate) Please... just look at her—  GU SHEN turns away, his expression unreadable. The BABY begins to CRY.  GU SHEN remains motionless, his eyes closed."
+        },
+        {
+          "title": "Love Found Around the Corner",
+          "ending_snippet": "on) Welcome home, Young Master. Welcome home, Young Madam.  SU AN stares at everything before her—not in shock, but with sudden understanding. Her fingers tighten on the marriage certificate.  SU AN (V.O.) So this is what three years of patience buys you. A throne. Good thing I brought my own crown."
+        },
+        {
+          "title": "Wife's Return",
+          "ending_snippet": "ngs out. The knife hits concrete.  HUO SIHAN (O.S.) She's not dead yet.  The Kidnapper whirls. Huo Sihan stands in the doorframe, weapon raised, rain-soaked.  SU MO (barely breathing) You shouldn't have.  Huo Sihan's eyes stay on the Kidnapper.  HUO SIHAN We need to talk.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Mr. Ming, Your Wife Only Sees You as a Substitute - Episode 1",
+          "ending_snippet": "U XIN (voice breaking) I never meant—  CHEN MEILING rushes forward and slaps FU XIN. FU XIN falls, veil tearing.  CHEN MEILING (crying out) He died fetching your birthday gift!  FU XIN (on the ground, trembling) It was an engagement ring. I wanted—  MING HAO (coldly) You gave us a cremation instead."
+        },
+        {
+          "title": "The Billionaire CEO's Beloved Substitute Wife",
+          "ending_snippet": "r, alive. That's what this night buys you.  SU XUE stands up and walks to SU CI, invading her space.  SU XUE After tonight, the contract is void. You return to being nobody. I reclaim my name, my husband, my life. That's the deal.  SU XUE reveals a triumphant smile that doesn't quite reach her eyes."
+        },
+        {
+          "title": "Deep Love, Misty Tears",
+          "ending_snippet": ", watching SU YU slide to the floor.  SU XIA (quietly) He was always going to choose the daughter who looked like his mother. Legitimacy has its privileges.  She touches SU YU's shoulder. Her smile is winter.  SU XIA (V.O.) The shadow daughter wins. You just never thought to look for me in the dark."
+        },
+        {
+          "title": "Return to Shanghai Bund - Rising to the Top",
+          "ending_snippet": "NIGHT  LIN YUAN, dressed in Republic-era clothing, sits in a rickshaw, looking bewildered.  A rickshaw puller, XIANG ZI, stands beside the cart.  XIANG ZI Ruo Qi.  LIN YUAN (confused) Ruo Qi?  XIANG ZI Ruo Qi!  LIN YUAN looks at the unfamiliar surroundings and realizes he has traveled through time."
+        },
+        {
+          "title": "The Peerless Mystic Healer",
+          "ending_snippet": "a delivery boy who can't even afford rent.  LILI picks up a water glass from the table and splashes the water in YE FENG's face.  LILI'S MOM (mocking) A useless waste like you? You're daydreaming. Today, you get nothing.  YE FENG's face is dripping with water, his eyes filled with anger and despair."
+        },
+        {
+          "title": "Four Treasures Strike: Mommy Prepares to Attack",
+          "ending_snippet": "ry.  Her vision blurs. TANG QIANQIAN answers her phone, turning away.  TANG QIANQIAN (into phone) It's done. Shares transfer at midnight.  She looks back once. Not triumphant—relieved. As if closing a door.  TANG YUE collapses. The last sound: champagne cork pop. Celebration.  TITLE: TO BE CONTINUED"
+        }
+      ]
+    },
+    "Dopamine Twist Ultimatum": {
+      "count": 15,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Post-2000s Dad's Wild Parenting Style",
+          "ending_snippet": "50]. Not trending. Enduring.  Aichen watches Kunhun drift toward bed, already sketching tomorrow's build.  AICHEN (V.O.) Maybe the best parenting isn't a system to game.  He turns off the rig. The RGB fades to a single nightlight.  AICHEN (V.O.) It's a campaign we choose to play together.  FADE OUT."
+        },
+        {
+          "title": "Rise Against All Odds: A Life of Dominance",
+          "ending_snippet": "ill know why your parents were murdered.  CHEN XUEWEN suddenly looks up. Grabs the bars.  CHEN XUEWEN (urgently) What do you know?  DU LAO I know they were silenced. I know who gave the order. And I know you have a choice.  (beat)  Become a ghost or become a weapon. But you can't be both.  FADE OUT."
+        },
+        {
+          "title": "My Love Begins With You",
+          "ending_snippet": "rtnership. That's what we called it.  He moves closer. GU XINING's knuckles whiten on her glass.  JIN BEICHUAN Six months of research. Shared resources. Shared space.  JIN BEICHUAN Shared a bed.  CLOSE UP - GU XINING's face. Shock flickers, then something harder: recognition of a trap. Her jaw sets."
+        },
+        {
+          "title": "The Prince's Awakening",
+          "ending_snippet": "ps) No. You're a battlefield. And I intend to win.  THE PRINCE tears her garment slightly at the shoulder. The silk whispers.  ZHAO RUI (startled) They'll say you're depraved.  THE PRINCE (smiling) Then let them. Let them see exactly what they wanted.  THE PRINCE leans in. The screen fades to black."
+        },
+        {
+          "title": "Love Ends",
+          "ending_snippet": "it.  The doctor wheels a gurney past them. A small, frail form lies beneath sterile sheets. Yin Hui reaches out, fingers brushing the fabric as it passes.  A Yan watches her face—not with triumph, but with something that might be grief, might be vengeance, might be both.  He doesn't release her arm."
+        },
+        {
+          "title": "The Blind Young Master of a Wealthy Family Cannot Be Bullied",
+          "ending_snippet": "he's been massaging his replacement's ego for six months?  LIU TIANHAO (to Lin Yu) Your ex-wife, Liu Yiyi, prefers my suite to your studio apartment. She says the lighting flatters her.  LIU YIYI (turning away) Lin Yu, I... it wasn't supposed to be like this.  LIN YU (very quietly) No. It never is."
+        },
+        {
+          "title": "The Young Healer Disciple",
+          "ending_snippet": "n her hands.  HUANG XIAOYAO These calm the heart. I'll come daily. As family.  JIN LIANZI's face shows pain crumble into relief.  JIN LIANZI (voice breaking) Don't leave me.  HUANG XIAOYAO I'm here. Not as him. As me.  He sits beside her, a healing hand on her shoulder. Grief shared is grief halved."
+        },
+        {
+          "title": "Mr. Fu Still Has Lingering Feelings",
+          "ending_snippet": "em, phone in hand.  FU SHIQIAN (shouting) Shenger! Let go!  YE SHENGER (whispering to Wanwan) You want closure? Let's see what he chooses.  She twists, pulling Wanwan toward the water's edge. A large wave crashes over them both.  YE SHENGER (calling out) Shiqian!  FU SHIQIAN (shouting in terror) No!"
+        },
+        {
+          "title": "Impostor Goddess",
+          "ending_snippet": "quickly jumps into the water and swims toward the drowning woman.  BAI SHAN rescues the woman and brings her to the poolside, laying her flat.  He immediately performs CPR and mouth-to-mouth resuscitation on the woman.  As he performs mouth-to-mouth resuscitation, a golden light flashes.  FADE OUT."
+        },
+        {
+          "title": "Her Son Was Targeted by the Boss",
+          "ending_snippet": "Inside: empty champagne bottles, a silk tie monogrammed YQ, the bed still warm. The window drapes billow. Empty.  YAN XUAN Where—  QIAO WU checks her phone. A new message: \"With Fourth Master. Safe.\"  She stares at the tie. Her smile vanishes.  QIAO WU (whisper) You stupid girl.  ON SCREEN: THE END"
+        },
+        {
+          "title": "Supreme God Emperor",
+          "ending_snippet": "emons SCREAM as light unwrites them.  Xiao Yu drops to one knee—exhausted. He looks at Mei.  XIAO YU (breathing hard) The Ten are not yet mine. I... am not what I was.  He stands, leaning on the sword.  XIAO YU But I am here.  He touches the statue's base. Golden light spreads—rebuilding.  FADE OUT."
+        },
+        {
+          "title": "Rise from Humble Beginnings",
+          "ending_snippet": "ONG and his HENCHMAN.  HENCHMAN Boss, the thief's awake.  ZHANG LONG (contemptuously) Thief? He's a ghost. No record of him anywhere.  GU QING (confused and terrified) Where is this? Who are you people? Where are my girls?  ZHANG LONG and the HENCHMAN close in on GU QING, their expressions menacing."
+        },
+        {
+          "title": "The Runaway Bride Marries Right",
+          "ending_snippet": "e car. Ling Tian meets his gaze, then deliberately turns the key. The engine purrs to life. He pulls away, smooth and unhurried.  In the rearview, Mian's eyes—wide, grateful—find his reflection.  LING TIAN (to himself, barely audible) Everybody's running from something.  He accelerates into traffic."
+        },
+        {
+          "title": "New Year's Eve",
+          "ending_snippet": "stairs.  WANG KUN (calling after) Where are you going?  ZHANG WEI (quietly) To see my mother.  He exits. Wang Kun watches him go.  WANG KUN (to Li Juan) He'll be back. They need the money.  Li Juan nods, but her fingers tremble as she touches the gold watch on her wrist.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Ex-Wife's Allure: Mr. Fu's Endless Devotion",
+          "ending_snippet": "eezes.  FU YANCHENG follows his gaze. His expression shifts: surprise, then something darker.  QI SHEN Mr. Fu... is that--  FU YANCHENG (out of patience) Get out.  Qi Shen retreats. Fu Yancheng stands alone, staring at the stain.  FU YANCHENG (V.O.) Her first time. And I—  ON SCREEN: TO BE CONTINUED"
+        }
+      ]
+    },
+    "Physical Peril / Near-Collision": {
+      "count": 15,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Hunting Relationship",
+          "ending_snippet": "JIANG MUSHENG Thank you.  ZHOU CHAOXUAN studies her exposed scar for a beat too long.  ZHOU CHAOXUAN Hunt more carefully. Some predators bite back.  He walks away. She watches him go, her triumph edged with uncertainty.  JIANG MUSHENG (V.O.) The predator sees the hunter.  TITLE CARD: TO BE CONTINUED"
+        },
+        {
+          "title": "Carefree Medical Immortal in the City",
+          "ending_snippet": "arriage contract. Come back with me to get married.  YE CHENYANG and JUNIOR SISTER are both stunned. YE CHENYANG's eyes widen, his mouth forming an \"O\" shape, his face full of shock.  JUNIOR SISTER (whisper) The contract from Qingyun Pass...  YE CHENYANG What?  FADE OUT.  TITLE CARD: TO BE CONTINUED"
+        },
+        {
+          "title": "Urban Hero's Soul",
+          "ending_snippet": "iform, sitting in a high school classroom. He looks around in confusion.  The TEACHER slams the desk hard at the podium.  The blackboard reads \"100 Days Until College Entrance Exam.\"  CHU FENG'S eyes widen in disbelief, seeing the date carved into his desk: April 5, 2005.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Rejuvenation",
+          "ending_snippet": "spect.  Ning Chen rises, lifting Servant 1 by the throat. The old man's body stands straight, years melting from his posture if not his skin. Energy crackles around him—not golden now, but raw and invisible. A pressure that hums.  The incense burner crashes to the stones.  NING CHEN You were saying?"
+        },
+        {
+          "title": "Days to Come",
+          "ending_snippet": "mentioned.  BO FENGFENG After you see what's inside, you can decide if I'm a stranger.  SU QIANQIAN (hesitant) What's in there?  BO FENGFENG The truth about who you were. And who we were.  He holds out his bandaged hand—the fire scars visible. Qianqian stares at it, something flickering in her eyes."
+        },
+        {
+          "title": "Reborn: Medical Hands Cover the Sky",
+          "ending_snippet": "g off his mask. His eyes glow faintly blue.  LING CHEN (whispering) The tribulation... I survived?  He looks at his hands. Surgical scars fade. The monitor starts beeping—perfect rhythm.  LING CHEN What am I now?  The room shifts. Sterile walls become a white, ethereal space.  LING CHEN Who are you?"
+        },
+        {
+          "title": "Tiger Courage, Dragon Prestige",
+          "ending_snippet": "It's 9pm. My deadline's midnight. You think I care about your app?  LIU HUIQIANG I care about my rating. Sir.  MAN Then care about this: one-star unless you're back in ten minutes with exactly what I asked for.  He slams the door. LIU HUIQIANG stares at the closed door, a muscle working in his jaw."
+        },
+        {
+          "title": "Mr. Huo, Your Wife is a Bit Wild",
+          "ending_snippet": "We might survive after all.  A black sedan rounds the corner too fast, screeching. Papers scatter. She whirls, planting both hands on the hood as the car halts inches away.  Through the windshield, her eyes meet MR. HUO's—his sharp with surprise, hers flashing with fury.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Limited Marriage Spoiling, Iceberg Daddy's Wife-Doting Daily Life",
+          "ending_snippet": "hears the name and freezes.  XIA NIAN, wearing a sparkling dress and a tassel veil, walks onto the stage.  XI YAOTING stands up, recognition hitting him.  LIN CHUAN (surprised) You know her?  XI YAOTING (staring at the stage) She's the one.  LIN CHUAN (stunned) Holy shit.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Rise to Fame with a Shuttlecock",
+          "ending_snippet": ".  Li Jiang raises the trophy slowly, as if performing a ritual. His face remains stoic, but a single tear escapes.  The arena lights BLAZE. For a moment, Li Jiang is silhouetted against the brilliance, a solitary figure holding the weight of a promise kept.  A white light flashes across the screen."
+        },
+        {
+          "title": "Fairy Child Cheats, Saves Father, Wins Brides, Conquers the World",
+          "ending_snippet": "protective) Stay back!  PRINCESS XIAO JINLAN's palm strikes out, maternal magic flaring.  YE SHUZE dodges, eyes widening with recognition.  YE SHUZE (astonished) Your Highness... you're carrying the prophesied one.  PRINCESS XIAO JINLAN (determined) Then this child already protects his mother. Good."
+        },
+        {
+          "title": "You Are the April of This World",
+          "ending_snippet": "card from his wallet, places it on the nightstand.  SI YIHAN The card contacts my accountant. Consider this resolved.  He takes his jacket and leaves. The door clicks shut.  YE NANSHENG touches the card, her expression hardening from hurt to something else—determination.  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "Chaotic Times Wedding - The Lady Wants to Escape Marriage",
+          "ending_snippet": "ld newspaper on the table with the headline \"Year 12 of the Republic.\"  A MAN in a trench coat and fedora walks past in the aisle, his silhouette strikingly similar to HUO XIZHOU. Gunpowder and sandalwood scent the air.  YAN'ER suddenly lifts her head, her eyes filled with shock and hope.  FADE OUT."
+        },
+        {
+          "title": "Underworld Chat Group",
+          "ending_snippet": "ure...  He sees the stone monument at the bridge head.  ZHOU YAN (shocked) She wasn't inviting me out... she was inviting me here.  A white light flashes, and ZHOU YAN disappears. His phone clatters to the stone, screen still showing their chat log. The last message reads: \"Welcome home.\"  SCENE END"
+        },
+        {
+          "title": "Tang Clan",
+          "ending_snippet": "fingertips—while golden light pools in his palm, swirling into ancient characters.  XIE FENG (backing away) I want no part of your world.  TANG SEVENTH MASTER (laughs, bitter) Neither did I.  The characters flicker brighter. His eyes meet Xie Feng's—one pupil pure white, one burning gold.  FADE OUT."
+        }
+      ]
+    },
+    "The Unanswered Phone / Intercepted Call": {
+      "count": 15,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Fill in the Blank",
+          "ending_snippet": "JINGYI (O.S.) Four years, and he still uses our code. 'Welcome home.' Tell me, does he still call you by my name when he dreams?  The line cuts. YE WANQIU's hand drops, phone clattering to the floor. She sinks down, the wall holding her up as betrayal settles into her bones with quiet, final weight."
+        },
+        {
+          "title": "Blood Wolf Hall",
+          "ending_snippet": "rushes toward CHEN TIANQI.  ZHUQUE Young Master, your wife is in danger!  CHEN TIANQI (grabbing her arm) What happened to Qingcheng?  ZHUQUE hands him the phone. The screen shows QINGCHENG unconscious. A man with a syringe kneels beside her.  CHEN TIANQI watches, his grip crushing the phone's frame."
+        },
+        {
+          "title": "Yinyang Village: Rebirth Blood Pu",
+          "ending_snippet": "t trembles.  OLD MAN (whispering) Meimei... I heard you singing.  The woman in red slowly turns her head. Her face is pale, her eyes vacant, but her smile is knowing.  WOMAN IN RED (voice distorted) Father... the year is done.  The candlelight flares green. Her shadow on the wall has too many limbs."
+        },
+        {
+          "title": "Marriage Ad on Electric Pole Turns Out to Be Beautiful Boss",
+          "ending_snippet": "this properly.  INT. SHEN RUMENG'S HOME - DAY  A sharp-eyed woman in a black silk robe, SHEN RUMENG, sits on a leather sofa. Her phone rings—\"Unknown Caller\" flashes on screen. Beside her, a printed copy of the same marriage ad.  SHEN RUMENG (answering) This is Shen Rumeng. You have thirty seconds."
+        },
+        {
+          "title": "Rather Die Than Submit",
+          "ending_snippet": "Yueyue.  Her chin lifts. Tears cut clean tracks through the dirt on her cheeks. Her voice carries—clear, young, unbreakable.  YUEYUE Father. Your daughter Yueyue has waited seven winters.  Silence. Even the soldiers freeze.  WOMAN A (whispered prayer) She called him Father. The gods forgive us all."
+        },
+        {
+          "title": "The Female CEO's Personal Imperial Physician",
+          "ending_snippet": "his grip iron around her wrist.  XIAO RAN Touch Her Majesty and lose the hand.  YOUNG MASTER LIN (to his bodyguard) Break him. Again.  The bodyguard advances.  GU HUAN (stepping between them, voice like steel) Try it. This hospital has excellent lawyers. And better security cameras.  TO BE CONTINUED"
+        },
+        {
+          "title": "Report to the Prince, the Princess Wants a Divorce",
+          "ending_snippet": "thumping stops. Darkness presses in. Then—  WEI ZIXUAN's fingers find the silver bracelet on her wrist. It glows faintly. Her hand trembles, then steadies.  She begins feeling the coffin seams, searching methodically. A doctor's fingers, trained for emergencies.  Silence. Focus. Survival.  FADE OUT."
+        },
+        {
+          "title": "Save My Boss",
+          "ending_snippet": "you reach me—battery at one percent—  The phone flickers. Wu's fingers dig into the mud, pulling himself toward the blinking light.  LUO WENXUAN (V.O.) (from phone) —say you'll try—  Wu collapses, his fingertips inches from the phone. The red light blinks once more, then dies. The screen goes black."
+        },
+        {
+          "title": "Return to 1990: Entertainment Godfather",
+          "ending_snippet": "suddenly wakes up, wearing a security guard uniform, seated among unfamiliar young faces.  XU TIANYANG (disoriented) Where is this?  HOST (O.S.) Welcome everyone to Good Voice.  On stage, a MALE and FEMALE HOST are hosting the show. The background displays \"Good Voice Talent Show - 1990.\"  FADE OUT."
+        },
+        {
+          "title": "Super Wheat",
+          "ending_snippet": "ches her leave—then pulls up a second screen: demographics of Lin Weimin's hometown village.  He zooms in on a name: SU MEI. Widow. Property holder.  WANG BANCHENG (to himself) Gifts should arrive before the guest.  He picks up a phone.  WANG BANCHENG (into phone) Ready the demolition crew. Quietly."
+        },
+        {
+          "title": "Bringing Glory to the Ancestors",
+          "ending_snippet": "haracters visible: GLORY.  EXT. FOREST - DAY  Assistant Wang peers into the well. His flashlight catches the pendant. He pulls out his phone.  ASSISTANT WANG (into phone) Mr. Xiao... it's a boy. And you're not going to believe what's around his neck.  The pendant gleams in the dark water.  FADE OUT."
+        },
+        {
+          "title": "Phoenix Cry in the Palace",
+          "ending_snippet": "nto porcelain. Next life, I will be the hammer.  EXT. PALACE ROOFTOP - NIGHT  Lightning forks. The palace glows white.  INT. GARDEN PAVILION - DAY  SU YUNROU, now thirteen, awakens with a gasp. She touches her flat stomach. Remembers.  SU YUNROU (voice hardening) Clay remembers the kiln.  She rises."
+        },
+        {
+          "title": "Merit Too Great Invites Suspicion, I Turn to Join Mobei",
+          "ending_snippet": "ers look away.  SHAO XUXUE (looking down at him) Fifth Rank warrior, reduced to a crippled administrator. You never belonged here.  Li Zhen's fingers twitch. His blood begins to glow faintly gold.  SYSTEM VOICE (V.O.) Host status: Critical. Loyalty bonds: Severed. Life choice imminent. Activating..."
+        },
+        {
+          "title": "The Masked Heir Returns",
+          "ending_snippet": "aintly red—a brief, impossible flicker. He pushes gently.  The GATEKEEPER is launched backward, slamming into the gate with a thunderous crash.  The FAMILY HEAD straightens his cuff, expression neutral.  From within the estate, a voice cracks like a whip.  VOICE (O.S.) Who dares touch my gatekeeper!"
+        },
+        {
+          "title": "Good Deeds Bring Blessings",
+          "ending_snippet": "ght. His name appears nowhere—not on the house, not on her vaccine, not in her future.  The phone buzzes. A text from SONG MINGZHU: \"Forgot to mention—security cameras were installed last week. App on your phone. Check vault footage.\"  SU JIARONG's thumb hovers over the app icon. Freezes.  FADE OUT."
+        }
+      ]
+    },
+    "The Sudden Arrest / Handcuffs": {
+      "count": 6,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Seduced the Wrong Uncle: Madam's Daily Revenge",
+          "ending_snippet": "(angrily) Still thinking about money? You have no heart.  QIN KE I'm his woman, not yours. Whether I have a heart is none of your business.  NAN MING grabs QIN KE, pins her against the door, and kisses her fiercely.  The POLICE burst through the door.  POLICE Don't move!  ON SCREEN: TO BE CONTINUED"
+        },
+        {
+          "title": "The Heavenly Life Creditor",
+          "ending_snippet": "r grandfather's time.  GU QING Flesh merchants call us many things. Life Creditor is... polite.  The brothers lock eyes. Outside the window, autumn leaves suddenly swirl as if caught in a summer storm--then freeze mid-air.  CLOSE-UP: GU QING's pupils become twin golden coins, ancient and unreadable."
+        },
+        {
+          "title": "Forced Marriage",
+          "ending_snippet": "ISTER (pounding) She's bleeding! Open up!  GRANDFATHER (through door) She'll live. You'll marry.  YOUNGER SISTER (desperate) This is kidnapping! The police—  GRANDFATHER (fading) Police here are Li family too.  YOUNGER SISTER (crying out) Let me out! What right do you have to lock me up! What right!"
+        },
+        {
+          "title": "The Mute Girl Is Duode",
+          "ending_snippet": "s okay now.  LIANG XIAOJUN Mom, am I really saved?  LIANG XIAOJUN What about Qianqian? Was Qianqian saved too?  MOTHER (confused) What Qianqian? When the police found you, you were alone. There was no one else.  LIANG XIAOJUN hears this news. His eyes instantly become hollow and filled with despair."
+        },
+        {
+          "title": "Asia-Pacific Cup Final",
+          "ending_snippet": "ried on a stretcher.  NEWS ANCHOR Breaking: Daxia's football hero Zhang Ran hospitalized after acute drug overdose. Police sources confirm illicit substances found at his residence. The Football Association has stripped his title pending investigation. His career—his legacy—now hangs in the balance."
+        },
+        {
+          "title": "A Life of Regret",
+          "ending_snippet": "now.  INT. BEDROOM - NIGHT  SHEN CHUAN sits on the stripped mattress, holding the crayon drawing. Police lights pulse through curtains.  SHEN CHUAN (whisper) We were supposed to be three.  He folds the drawing. Police radio CHATTER grows louder. It falls from his fingers.  A KNOCK on the front door."
+        }
+      ]
+    },
+    "Incriminating Evidence Reveal": {
+      "count": 15,
+      "ending_tempo": "Shot 8 climax cut - freezes on character realization or external shock.",
+      "examples": [
+        {
+          "title": "Reborn in the Apocalypse: Marrying My Scumbag's Rival",
+          "ending_snippet": "xpression makes him pause. Then he opens the door completely.  Waiting inside, barely visible: rows of SUPPLIES. Canned goods. Medicine. And on a table, a PHOTO of Shen Yunan and Xu Zhiyi—years younger, smiling.  XIAO LIANG pushes Xu Zhiyi forward, toward the warmth, toward the past she left behind."
+        },
+        {
+          "title": "He Gave Me Starlight",
+          "ending_snippet": "nst the city lights—starlight trapped between them—her pupils dilate instantly, shock written all over her face. The photos show her and SANG MUYE kissing passionately in the apartment.  OLD MASTER SHEN (softly, dangerously) You've brought the son of my enemy into my house. Through my granddaughter."
+        },
+        {
+          "title": "Baby Strike: Agent Mommy Is Not to Be Messed With",
+          "ending_snippet": "e'll be an orphan!  FANG NUAN (coldly) Who are you? Do you want to die?  LU QIANQIAN (struggling) Let go of me!  A man in a gray suit (MAN IN SUIT) walks into the ward holding a toddler's photo. Seeing this scene, he is shocked.  MAN IN SUIT Lu Nuan, that's enough! Think of your daughter!  FADE OUT."
+        },
+        {
+          "title": "Endless Purgatory",
+          "ending_snippet": "She presents a red box with both hands. The DRAGON EMPEROR's sword vanishes.  DRAGON EMPEROR What is this?  QINGFENG Nine marriage contracts. To bind the fractured realms. Your final trial.  The DRAGON EMPEROR's face shows an expression of weary disbelief.  DRAGON EMPEROR I just escaped one prison."
+        },
+        {
+          "title": "The Demon's Arrival",
+          "ending_snippet": "? Of me... alone?  The bathroom door clicks open. Empty. The window's glass is FROSTED with rime. A single BLACK FEATHER drifts to the tiles.  MALE REPORTER 2 What the hell... it's July.  Lin Yixue touches the frost on the sill. It's real. And for the first time, her shock becomes wonder.  FADE OUT."
+        },
+        {
+          "title": "Dragon Lord of the Nation",
+          "ending_snippet": "g picks up the phone. His scarred fingers brush the image. He hands it back without meeting their eyes.  QIN FENG Good render.  He walks to his dented car. The guards stare after him.  SECURITY GUARD B (whisper) His knuckles were bleeding.  SECURITY GUARD A (scoffs) Paper cuts. Let it go.  FADE OUT."
+        },
+        {
+          "title": "Restart and Rise Again",
+          "ending_snippet": "photo. His fingers brush the faces of his wife and daughter.  XIAO RAN (fading) Lin Yue... I'm sorry I wasn't... stronger...  XIAO RAN'S hand drops. He is still.  The photo frame GLOWS faintly. The blood on the glass SLOWLY FADES, as if being drawn back in. The air shimmers.  A second chance begins."
+        },
+        {
+          "title": "The General Takes a Job (The War Goddess Plays Unfair)",
+          "ending_snippet": "ailored suit.  CHAIRMAN ZHANG Xiao He. You're awake.  SHEN QINGHE (frozen) Zhang.  CHAIRMAN ZHANG (stepping closer, voice slimy) Your father signed the contract. You're mine until the debt's cleared. Be a good girl.  He reaches for her. She sees the wooden horse on the nightstand, just out of reach."
+        },
+        {
+          "title": "Flash Marriage: My Sugar Daddy Husband Gained Mind Reading",
+          "ending_snippet": "I, caught mid-adjustment, her lipstick on his collar, his hand on her waist. Their faces freeze in twin masks of shock.  The PHOTOGRAPHER, positioned behind Jian Ning, captures everything.  JIAN NING (to the photographer, voice steady) Keep recording. Every second. This is my wedding gift to myself."
+        },
+        {
+          "title": "The Feisty Pregnant Wife",
+          "ending_snippet": "RUN!  Aiwei hesitates only a moment, then bolts past her stunned brother.  Mother screams. Father curses. But Aiwei is already through the gate, the scorched admission letter clutched to her chest.  The half-burned paper flutters from her hand as she flees—she doesn't stop to retrieve it.  FADE OUT."
+        },
+        {
+          "title": "Rise of the Son-in-Law (Episode 35)",
+          "ending_snippet": "housand spirit stones will compensate you for your trouble, Sui Jin. Consider it a... severance package.  Both XIA YAN and SUI JIN freeze. Sui Jin's gaze drops to the floor, not in submission, but as if seeing something no one else can. Xia Yan's face drains of color, her hand tightening on his arm."
+        },
+        {
+          "title": "Six-and-a-Half-Year-Old Twin Treasures at Home",
+          "ending_snippet": "second band, smudged incomplete.  QIN YI Find her.  EXT. MODERN OFFICE BUILDING - DAY  Six and a half years later. FANG SITONG, hardened and sharp, walks with a little girl toward the entrance.  The girl clutches a magazine photo of QIN YI.  They are stopped by QIN YI and his bodyguards.  FADE OUT."
+        },
+        {
+          "title": "Heartbeat Transgression",
+          "ending_snippet": "can confront them. Or survive them. Choose.  JIANG QIAO, teary-eyed, nods once.  PEI ZHIHONG removes his hands, putting an arm around JIANG QIAO's shoulder, leading her away.  In the distant corridor, two PAPARAZZI are frantically taking photos of PEI YUNXIAO and LIN YIN kissing with their cameras."
+        },
+        {
+          "title": "Spring Romance",
+          "ending_snippet": "wallet—sees it slightly askew. A knowing smile plays on his lips.  He pulls out his phone, scrolls to a photo: JIANG FU and JIAMU at their engagement party. He sets it down, then notices her pearl necklace on the nightstand.  CHENG JIALUO Game's just starting, little fiancée.  He pockets the pearls."
+        },
+        {
+          "title": "Zero Degree Ambiguity",
+          "ending_snippet": "ace.  WEN XUAN This is how deals collapse.  JIAN YUCHEN Let's renegotiate.  He leans in. She could pull back. She doesn't.  WEN XUAN Distance. Autonomy.  JIAN YUCHEN Void the contract.  He kisses her. She meets him halfway.  The camera pans to their wedding photo—crooked.  ON SCREEN: TO BE CONTINUED"
+        }
+      ]
+    }
+  }
+}

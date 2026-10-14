@@ -1,0 +1,492 @@
+{
+  "dataset_source": "DramaBench 500 corpus (MIT)",
+  "categories_count": 6,
+  "categories": {
+    "Medical Coercion & Secret Bloodline": {
+      "count": 15,
+      "structural_formula": "Opening scene with medical coercion & secret bloodline introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "Baby's Wild Ride Episode 1",
+          "premise": "A woman betrayed by her family gives birth in secret, loses her child, and is forced to take the fall for her sister's crimes, vowing revenge from prison.",
+          "hook_snippet": "Title: Baby's Wild Ride Episode 1 Description: A woman betrayed by her family gives birth in secret, loses her child, and is forced to take the fall for her sister's crimes, vowing revenge from prison.  INT. BEDROOM - DAY  SONG YUAN lies on the bed,"
+        },
+        {
+          "title": "Mr. Gu's Secret Criminal Wife",
+          "premise": "A woman serves as a living blood bank for her husband's true love, only to have her pregnancy dismissed and destroyed by the man she married.",
+          "hook_snippet": "Title: Mr. Gu's Secret Criminal Wife Description: A woman serves as a living blood bank for her husband's true love, only to have her pregnancy dismissed and destroyed by the man she married.  INT. HOSPITAL CORRIDOR - DAY  The hospital corridor compr"
+        },
+        {
+          "title": "Untitled Hospital Drama",
+          "premise": "A woman saves her husband's life with her blood, only to be met with cold rejection and disgust.",
+          "hook_snippet": "Title: Untitled Hospital Drama Description: A woman saves her husband's life with her blood, only to be met with cold rejection and disgust.  INT. HOSPITAL CORRIDOR - DAY  Two DOCTORS push a stretcher carrying LU BOCHUAN at high speed. His abdomen is"
+        },
+        {
+          "title": "Urban Hero's Soul",
+          "premise": "A man diagnosed with a terminal illness at 38 drowns his sorrows in alcohol, only to mysteriously wake up back in his high school classroom.",
+          "hook_snippet": "Title: Urban Hero's Soul Description: A man diagnosed with a terminal illness at 38 drowns his sorrows in alcohol, only to mysteriously wake up back in his high school classroom.  INT. BAR - NIGHT  A dimly lit bar. CHU FENG sits alone at the bar coun"
+        },
+        {
+          "title": "Blood Wolf Hall",
+          "premise": "A former heir to a powerful organization is called back after being betrayed and exiled years ago, only to find himself drawn into a conspiracy involving a stolen artifact and danger to his loved one.",
+          "hook_snippet": "Title: Blood Wolf Hall Description: A former heir to a powerful organization is called back after being betrayed and exiled years ago, only to find himself drawn into a conspiracy involving a stolen artifact and danger to his loved one.  EXT. HELIPAD"
+        },
+        {
+          "title": "Love Ends",
+          "premise": "A man confronts his estranged wife in the rain, where her desperate plea for help reveals buried truths about their past, while their critically ill daughter's life hangs in the balance.",
+          "hook_snippet": "Title: Love Ends Description: A man confronts his estranged wife in the rain, where her desperate plea for help reveals buried truths about their past, while their critically ill daughter's life hangs in the balance.  EXT. ROAD IN THE RAIN - NIGHT  T"
+        },
+        {
+          "title": "Mr. Fu Still Has Lingering Feelings",
+          "premise": "A woman diagnosed with terminal lung cancer seeks closure with her estranged husband, only to be confronted by her best friend who has become his mistress.",
+          "hook_snippet": "Title: Mr. Fu Still Has Lingering Feelings Description: A woman diagnosed with terminal lung cancer seeks closure with her estranged husband, only to be confronted by her best friend who has become his mistress.  INT. HOSPITAL CONSULTATION ROOM - DAY"
+        },
+        {
+          "title": "Supreme God Emperor",
+          "premise": "When four evil gods threaten to destroy Yunzhou City and annihilate the Great Xia people, the legendary God Emperor Xiao Yu emerges from his statue to defend his land and people with ancient divine weapons.",
+          "hook_snippet": "Title: Supreme God Emperor Description: When four evil gods threaten to destroy Yunzhou City and annihilate the Great Xia people, the legendary God Emperor Xiao Yu emerges from his statue to defend his land and people with ancient divine weapons.  IN"
+        },
+        {
+          "title": "Deep Love, Misty Tears",
+          "premise": "A man slaps his wife after being manipulated into believing she orchestrated an attack on her sister at a wedding, causing a miscarriage.",
+          "hook_snippet": "Title: Deep Love, Misty Tears Description: A man slaps his wife after being manipulated into believing she orchestrated an attack on her sister at a wedding, causing a miscarriage.  INT. HALLWAY - DAY  The slap cracks like a gunshot. SU YU stumbles b"
+        },
+        {
+          "title": "The Peerless Mystic Healer",
+          "premise": "A man desperately tries to get his family's demolition compensation money from his girlfriend to save his dying mother, only to be humiliated and refused.",
+          "hook_snippet": "Title: The Peerless Mystic Healer Description: A man desperately tries to get his family's demolition compensation money from his girlfriend to save his dying mother, only to be humiliated and refused.  INT. SWIMMING POOL - DAY  MISS SU, in a red bik"
+        },
+        {
+          "title": "Reborn: Medical Hands Cover the Sky",
+          "premise": "A man who sacrificed everything for love is reborn after a tragic death, discovering he has returned with mysterious powers.",
+          "hook_snippet": "Title: Reborn: Medical Hands Cover the Sky Description: A man who sacrificed everything for love is reborn after a tragic death, discovering he has returned with mysterious powers.  INT. HOSPITAL CORRIDOR - DAY  NURSES wheel a gurney with LING CHEN t"
+        },
+        {
+          "title": "Reborn: All In (Episode 84)",
+          "premise": "A ruthless tycoon who lost his wife and daughter gets a second chance when he's murdered and wakes up twenty years in the past.",
+          "hook_snippet": "Title: Reborn: All In (Episode 84) Description: A ruthless tycoon who lost his wife and daughter gets a second chance when he's murdered and wakes up twenty years in the past.  INT. BEDROOM - DAY  CHEN RAN lies rigid in silk sheets, sweat staining hi"
+        },
+        {
+          "title": "Reborn in the Apocalypse: Marrying My Scumbag's Rival",
+          "premise": "A global cold wave plunges the world into an icy apocalypse where survival means abandoning all morality, and a woman finds herself caught between her past and a desperate present.",
+          "hook_snippet": "Title: Reborn in the Apocalypse: Marrying My Scumbag's Rival Description: A global cold wave plunges the world into an icy apocalypse where survival means abandoning all morality, and a woman finds herself caught between her past and a desperate pres"
+        },
+        {
+          "title": "Vanished Love",
+          "premise": "A mother rushes her sick son to the hospital on her daughter's birthday, only to face her husband's fury and a devastating choice between her two children.",
+          "hook_snippet": "Title: Vanished Love Description: A mother rushes her sick son to the hospital on her daughter's birthday, only to face her husband's fury and a devastating choice between her two children.  EXT. HOSPITAL - DAY  A series of fast-paced hospital shots:"
+        },
+        {
+          "title": "Revenge of the Betrayed General's Daughter",
+          "premise": "A woman is tortured and murdered by her lover and his mistress after her family helped him rise to power.",
+          "hook_snippet": "Title: Revenge of the Betrayed General's Daughter Description: A woman is tortured and murdered by her lover and his mistress after her family helped him rise to power.  INT. WOODSHED - NIGHT  In the dim woodshed, flames flicker in a brazier.  GU YAN"
+        }
+      ]
+    },
+    "Framed & Vow of Vengeance": {
+      "count": 15,
+      "structural_formula": "Opening scene with framed & vow of vengeance introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "Post-2000s Dad's Wild Parenting Style",
+          "premise": "A young man travels through time, becomes a father to an 8-year-old son, and joins a parenting reality show where he challenges traditional education methods with his gaming-friendly approach.",
+          "hook_snippet": "Title: Post-2000s Dad's Wild Parenting Style Description: A young man travels through time, becomes a father to an 8-year-old son, and joins a parenting reality show where he challenges traditional education methods with his gaming-friendly approach."
+        },
+        {
+          "title": "Rise Against All Odds: A Life of Dominance",
+          "premise": "A young man wrongfully imprisoned for murder discovers his parents were killed while trying to clear his name, and a mysterious inmate offers him a chance to escape and seek revenge.",
+          "hook_snippet": "Title: Rise Against All Odds: A Life of Dominance Description: A young man wrongfully imprisoned for murder discovers his parents were killed while trying to clear his name, and a mysterious inmate offers him a chance to escape and seek revenge.  INT"
+        },
+        {
+          "title": "Dragon Hall of Great Xia",
+          "premise": "The master of Dragon Hall discovers his long-lost granddaughter has been imprisoned and abused, and immediately mobilizes his forces to rescue her.",
+          "hook_snippet": "Title: Dragon Hall of Great Xia Description: The master of Dragon Hall discovers his long-lost granddaughter has been imprisoned and abused, and immediately mobilizes his forces to rescue her.  INT. DRAGON HALL GREAT CHAMBER - DAY  A magnificent grea"
+        },
+        {
+          "title": "The Blind Young Master of a Wealthy Family Cannot Be Bullied",
+          "premise": "A blind massage therapist discovers his ex-wife's betrayal when he is humiliated by a wealthy hotel manager during what he thought would be a routine service call.",
+          "hook_snippet": "Title: The Blind Young Master of a Wealthy Family Cannot Be Bullied Description: A blind massage therapist discovers his ex-wife's betrayal when he is humiliated by a wealthy hotel manager during what he thought would be a routine service call.  INT."
+        },
+        {
+          "title": "The Young Healer Disciple",
+          "premise": "A young herbalist is seduced by his senior brother's widow when he comes to deliver medicine.",
+          "hook_snippet": "Title: The Young Healer Disciple Description: A young herbalist is seduced by his senior brother's widow when he comes to deliver medicine.  INT. BEDROOM - DAY  JIN LIANZI (32) wears a faded red robe, sits by the window, lost in grief.  HUANG XIAOYAO"
+        },
+        {
+          "title": "Her Son Was Targeted by the Boss",
+          "premise": "A woman scorned by her cheating fiancé seeks revenge at a bar, leading to a fateful encounter with a powerful man from her fiancé's own family.",
+          "hook_snippet": "Title: Her Son Was Targeted by the Boss Description: A woman scorned by her cheating fiancé seeks revenge at a bar, leading to a fateful encounter with a powerful man from her fiancé's own family.  INT. BAR - NIGHT  QIAO JING (eldest daughter of the"
+        },
+        {
+          "title": "Seduced the Wrong Uncle: Madam's Daily Revenge",
+          "premise": "A secretary is framed for embezzlement and faces arrest, but she holds leverage over her boss after a night together, threatening to expose their affair to his nephew, her fiancé.",
+          "hook_snippet": "Title: Seduced the Wrong Uncle: Madam's Daily Revenge Description: A secretary is framed for embezzlement and faces arrest, but she holds leverage over her boss after a night together, threatening to expose their affair to his nephew, her fiancé.  IN"
+        },
+        {
+          "title": "Four Treasures Strike: Mommy Prepares to Attack",
+          "premise": "A hacker child discovers his father is about to marry the woman who wronged his mother six years ago, and rallies his siblings to intervene.",
+          "hook_snippet": "Title: Four Treasures Strike: Mommy Prepares to Attack Description: A hacker child discovers his father is about to marry the woman who wronged his mother six years ago, and rallies his siblings to intervene.  INT. OFFICE - NIGHT  CONGCONG (10, Secon"
+        },
+        {
+          "title": "Guardian God of Jiang Domain",
+          "premise": "A powerful lord returns home to find his benefactor dead and his family in danger from a scheming mistress and treacherous relative.",
+          "hook_snippet": "Title: Guardian God of Jiang Domain Description: A powerful lord returns home to find his benefactor dead and his family in danger from a scheming mistress and treacherous relative.  EXT. GOLF COURSE - DAY  JIANG SHOU is swinging a golf club, with tw"
+        },
+        {
+          "title": "The Marquis Lady's Rebirth",
+          "premise": "A woman betrayed by her husband and killed in a frozen apocalypse is reborn to the days before disaster strikes, determined to stockpile resources and seek revenge.",
+          "hook_snippet": "Title: The Marquis Lady's Rebirth Description: A woman betrayed by her husband and killed in a frozen apocalypse is reborn to the days before disaster strikes, determined to stockpile resources and seek revenge.  EXT. NINGYUAN MARQUIS MANOR ENTRANCE"
+        },
+        {
+          "title": "Countdown to National Ruin, Little Princess's Thoughts Save the Emperor",
+          "premise": "A girl transmigrates into a novel as a cannon fodder princess about to be executed by a tyrant emperor, but discovers he can hear her inner thoughts.",
+          "hook_snippet": "Title: Countdown to National Ruin, Little Princess's Thoughts Save the Emperor Description: A girl transmigrates into a novel as a cannon fodder princess about to be executed by a tyrant emperor, but discovers he can hear her inner thoughts.  EXT. PA"
+        },
+        {
+          "title": "Family Forces Me to Take the Blame for Ten Years for Adopted Son",
+          "premise": "A man returns to his birth family after ten years, only to be forced to take the blame for a crime committed by his adopted brother.",
+          "hook_snippet": "Title: Family Forces Me to Take the Blame for Ten Years for Adopted Son Description: A man returns to his birth family after ten years, only to be forced to take the blame for a crime committed by his adopted brother.  INT. YUAN FAMILY LIVING ROOM -"
+        },
+        {
+          "title": "Reborn in the Seventies, Substitute Husband, It's Your Turn to Suffer",
+          "premise": "Fengxia overhears her husband's plot to assume his deceased brother's identity and abandon her, revealing a shocking betrayal by her entire family.",
+          "hook_snippet": "Title: Reborn in the Seventies, Substitute Husband, It's Your Turn to Suffer Description: Fengxia overhears her husband's plot to assume his deceased brother's identity and abandon her, revealing a shocking betrayal by her entire family.  EXT. DILAPI"
+        },
+        {
+          "title": "Landing Ashore, Discarding the Devoted Husband First",
+          "premise": "A man who built his wife's streaming career watches as she betrays his trust with false advertising and is tempted by her ex-lover.",
+          "hook_snippet": "Title: Landing Ashore, Discarding the Devoted Husband First Description: A man who built his wife's streaming career watches as she betrays his trust with false advertising and is tempted by her ex-lover.  INT. LIVE STREAMING ROOM - DAY  WEIYA and an"
+        },
+        {
+          "title": "The Secret of Club No. 9",
+          "premise": "At an elite club, a powerful woman named Tina selects male consultants from thousands of applicants, testing their skincare knowledge and ability to handle demanding clients.",
+          "hook_snippet": "Title: The Secret of Club No. 9 Description: At an elite club, a powerful woman named Tina selects male consultants from thousands of applicants, testing their skincare knowledge and ability to handle demanding clients.  INT. TOP-TIER CLUB - NIGHT  O"
+        }
+      ]
+    },
+    "Disguised Identity & Public Humiliation": {
+      "count": 15,
+      "structural_formula": "Opening scene with disguised identity & public humiliation introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "A Suona Shakes Heaven and Earth",
+          "premise": "Lin Chuan, a legendary musician known as the Music God, survives a car accident only to return three years later to find traditional music under threat from foreign rivals.",
+          "hook_snippet": "Title: A Suona Shakes Heaven and Earth Description: Lin Chuan, a legendary musician known as the Music God, survives a car accident only to return three years later to find traditional music under threat from foreign rivals.  INT. CONCERT HALL STAGE"
+        },
+        {
+          "title": "Impostor Goddess",
+          "premise": "A novelist celebrating her book publication discovers a glowing copy of her own novel in a restroom and is mysteriously transported into the world of her story.",
+          "hook_snippet": "Title: Impostor Goddess Description: A novelist celebrating her book publication discovers a glowing copy of her own novel in a restroom and is mysteriously transported into the world of her story.  EXT. ROOFTOP - NIGHT  City night view, tall buildin"
+        },
+        {
+          "title": "When Will the Moon Be Full & When Will the Moon Shine on My Return",
+          "premise": "A young man returns to the city, leaving behind his beloved in the countryside, but tragedy strikes before their reunion.",
+          "hook_snippet": "Title: When Will the Moon Be Full & When Will the Moon Shine on My Return Description: A young man returns to the city, leaving behind his beloved in the countryside, but tragedy strikes before their reunion.  INT. FAREWELL CEREMONY - DAY  Gongs and"
+        },
+        {
+          "title": "Descending the Mountain into the Mortal World",
+          "premise": "A master chess player sends his disciple, who possesses mystical powers and a thirst for justice, down the mountain with meaningful gifts to confront a dark past.",
+          "hook_snippet": "Title: Descending the Mountain into the Mortal World Description: A master chess player sends his disciple, who possesses mystical powers and a thirst for justice, down the mountain with meaningful gifts to confront a dark past.  EXT. LAKESIDE PAVILI"
+        },
+        {
+          "title": "Fishing Beauty Survives in a Shura Field",
+          "premise": "A woman's soul is transported into the body of a villainess who has simultaneously provoked multiple dangerous men, and must now survive the deadly consequences.",
+          "hook_snippet": "Title: Fishing Beauty Survives in a Shura Field Description: A woman's soul is transported into the body of a villainess who has simultaneously provoked multiple dangerous men, and must now survive the deadly consequences.  INT. LUXURIOUS BEDROOM - N"
+        },
+        {
+          "title": "Compete with Me on Fathers? My Dad is the Dragon Emperor!",
+          "premise": "The legendary Dragon Emperor discovers his wife and son are living in poverty and humiliation, and vows to return and protect them.",
+          "hook_snippet": "Title: Compete with Me on Fathers? My Dad is the Dragon Emperor! Description: The legendary Dragon Emperor discovers his wife and son are living in poverty and humiliation, and vows to return and protect them.  EXT. ABANDONED FACTORY EXTERIOR - NIGHT"
+        },
+        {
+          "title": "Rather Die Than Submit",
+          "premise": "A young girl confronts the Emperor on the street, claiming he is her father, shocking the crowd who believed he came to select concubines.",
+          "hook_snippet": "Title: Rather Die Than Submit Description: A young girl confronts the Emperor on the street, claiming he is her father, shocking the crowd who believed he came to select concubines.  EXT. ANCIENT STREET - DAY  SOLDIERS in crimson armor shove forward,"
+        },
+        {
+          "title": "He Gave Me Starlight",
+          "premise": "A forbidden romance between Sang Muye and Shen Xingli unfolds, but their secret relationship is exposed when her grandfather discovers compromising photos.",
+          "hook_snippet": "Title: He Gave Me Starlight Description: A forbidden romance between Sang Muye and Shen Xingli unfolds, but their secret relationship is exposed when her grandfather discovers compromising photos.  INT. APARTMENT - NIGHT  SANG MUYE, a bespectacled, r"
+        },
+        {
+          "title": "The Imperial Consort is a Man",
+          "premise": "A man finds himself transported to ancient times, forced into the role of an imperial consort, and desperately trying to return to his own world.",
+          "hook_snippet": "Title: The Imperial Consort is a Man Description: A man finds himself transported to ancient times, forced into the role of an imperial consort, and desperately trying to return to his own world.  INT. LUXURIOUS BEDCHAMBER - NIGHT  ASSASSINS are subd"
+        },
+        {
+          "title": "Substitute Tycoon",
+          "premise": "A wealthy family's heir is missing, and a desperate mother searches for a lookalike to prevent a illegitimate son from inheriting the family fortune.",
+          "hook_snippet": "Title: Substitute Tycoon Description: A wealthy family's heir is missing, and a desperate mother searches for a lookalike to prevent a illegitimate son from inheriting the family fortune.  INT. JIANG FAMILY MANSION - DAY  JIANG WANQING (50s), matriar"
+        },
+        {
+          "title": "The Great Xia Dynasty",
+          "premise": "A messenger brings urgent news as the Emperor mourns his lost daughter. When word arrives that the Tenth Princess has been found, the princes compete to show their devotion, unaware she is being held captive elsewhere.",
+          "hook_snippet": "Title: The Great Xia Dynasty Description: A messenger brings urgent news as the Emperor mourns his lost daughter. When word arrives that the Tenth Princess has been found, the princes compete to show their devotion, unaware she is being held captive"
+        },
+        {
+          "title": "Wudao Mountain Wuji Temple",
+          "premise": "A humble temple janitor reveals his hidden strength when confronted by arrogant visitors before a martial arts trial assembly.",
+          "hook_snippet": "Title: Wudao Mountain Wuji Temple Description: A humble temple janitor reveals his hidden strength when confronted by arrogant visitors before a martial arts trial assembly.  TITLE CARD: WUDAO MOUNTAIN WUJI TEMPLE  EXT. TEMPLE MOUNTAIN GATE - DAY  A"
+        },
+        {
+          "title": "Gale: Desperate Escape",
+          "premise": "Xiao Lang and his companions attempt to escape from a compound in Myawaddy, only to be caught by ruthless guards.",
+          "hook_snippet": "Title: Gale: Desperate Escape Description: Xiao Lang and his companions attempt to escape from a compound in Myawaddy, only to be caught by ruthless guards.  INT. COMPOUND COURTYARD - NIGHT  A pair of THUGS patrol, their synchronized footsteps echoin"
+        },
+        {
+          "title": "Radiant Like Her",
+          "premise": "A wealthy heiress hides her identity to live a simple life with the man she loves, only to face a turning point on their third anniversary.",
+          "hook_snippet": "Title: Radiant Like Her Description: A wealthy heiress hides her identity to live a simple life with the man she loves, only to face a turning point on their third anniversary.  INT. BARBECUE STALL - NIGHT  JIANG YAO, a young woman in a simple apron,"
+        },
+        {
+          "title": "Don't Cry, Mom",
+          "premise": "A mother faces cruelty from her mother-in-law who refuses to give back money needed for her sick daughter's surgery, while a wealthy chairman searches for his long-lost daughter.",
+          "hook_snippet": "Title: Don't Cry, Mom Description: A mother faces cruelty from her mother-in-law who refuses to give back money needed for her sick daughter's surgery, while a wealthy chairman searches for his long-lost daughter.  INT. ZHANG DASHAN'S HOUSE - DAY  ZH"
+        }
+      ]
+    },
+    "Family Inheritance War": {
+      "count": 15,
+      "structural_formula": "Opening scene with family inheritance war introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "Hunting Relationship",
+          "premise": "A woman with a scarred past uses a staged confrontation at a blind date banquet to catch the attention of her real target, a powerful and elusive businessman.",
+          "hook_snippet": "Title: Hunting Relationship Description: A woman with a scarred past uses a staged confrontation at a blind date banquet to catch the attention of her real target, a powerful and elusive businessman.  TITLE CARD: HUNTING RELATIONSHIP  EXT. LUXURIOUS"
+        },
+        {
+          "title": "My Love Begins With You",
+          "premise": "A young woman attends a business dinner to help her mother, only to encounter a man from her past who reveals a shocking secret.",
+          "hook_snippet": "Title: My Love Begins With You Description: A young woman attends a business dinner to help her mother, only to encounter a man from her past who reveals a shocking secret.  INT. HOTEL HALLWAY - NIGHT  CLOSE UP - A pair of nude-colored high heels wal"
+        },
+        {
+          "title": "The Nation's Mighty Dragon",
+          "premise": "A powerful commander returns to eliminate an international criminal who traffics children and threatens national security.",
+          "hook_snippet": "Title: The Nation's Mighty Dragon Description: A powerful commander returns to eliminate an international criminal who traffics children and threatens national security.  INT. HELICOPTER - DAY  SOUND of helicopter blades whirring.  A helicopter flies"
+        },
+        {
+          "title": "Days to Come",
+          "premise": "A wealthy businessman returns to his homeland and encounters his former love, now working as a cleaner, who no longer remembers him.",
+          "hook_snippet": "Title: Days to Come Description: A wealthy businessman returns to his homeland and encounters his former love, now working as a cleaner, who no longer remembers him.  INT. LUXURY CAR - DAY  BO FENGFENG, in a sharp suit and gold-rimmed glasses, stares"
+        },
+        {
+          "title": "My Dad Commands Respect Across Nine Provinces",
+          "premise": "A seemingly ordinary middle-aged man running a street barbecue stand is revealed to be a legendary commander when his past comes calling.",
+          "hook_snippet": "Title: My Dad Commands Respect Across Nine Provinces Description: A seemingly ordinary middle-aged man running a street barbecue stand is revealed to be a legendary commander when his past comes calling.  INT. BARBECUE STAND - NIGHT  A street-side ba"
+        },
+        {
+          "title": "I Am King",
+          "premise": "A man disguised as a migrant worker returns home, but his true identity as a legendary military commander is revealed at a train station security checkpoint.",
+          "hook_snippet": "Title: I Am King Description: A man disguised as a migrant worker returns home, but his true identity as a legendary military commander is revealed at a train station security checkpoint.  INT. TRAIN STATION HALL - DAY  A plainly dressed man who look"
+        },
+        {
+          "title": "Sorry, I Am the Leading Lady",
+          "premise": "Wen Chuxia prepares to meet her boyfriend's parents with lavish gifts, only to discover his family's unexpected plans to move into her apartment.",
+          "hook_snippet": "Title: Sorry, I Am the Leading Lady Description: Wen Chuxia prepares to meet her boyfriend's parents with lavish gifts, only to discover his family's unexpected plans to move into her apartment.  INT. WEN CHUXIA'S VANITY TABLE - DAY  WEN CHUXIA appli"
+        },
+        {
+          "title": "Mr. Huo, Your Wife is a Bit Wild",
+          "premise": "A red-clad martial arts girl performing on an ancient-style street encounters the mysterious Mr. Huo when fate brings them together in an unexpected collision.",
+          "hook_snippet": "Title: Mr. Huo, Your Wife is a Bit Wild Description: A red-clad martial arts girl performing on an ancient-style street encounters the mysterious Mr. Huo when fate brings them together in an unexpected collision.  EXT. HERITAGE DISTRICT STREET - DAY"
+        },
+        {
+          "title": "Where to Find You Upon Descending the Mountain",
+          "premise": "A young woman fleeing her master encounters an unconscious man in the forest. Five years later, her act of kindness has unexpected consequences.",
+          "hook_snippet": "Title: Where to Find You Upon Descending the Mountain Description: A young woman fleeing her master encounters an unconscious man in the forest. Five years later, her act of kindness has unexpected consequences.  INT. FOREST - NIGHT  A dead campfire."
+        },
+        {
+          "title": "Rise to Fame with a Shuttlecock",
+          "premise": "A shuttlecock champion achieves his lifelong dream of winning the national championship.",
+          "hook_snippet": "Title: Rise to Fame with a Shuttlecock Description: A shuttlecock champion achieves his lifelong dream of winning the national championship.  INT. SPORTS ARENA - DAY  Inside the sports arena, the audience ROARS. Thousands of hands clap in unison. Fla"
+        },
+        {
+          "title": "Dragon Lord of Dragon Gate",
+          "premise": "Qi Tian, a legendary warrior who conquered millions, now lives in hiding selling watermelons, while secretly protecting his wife and wielding immense power.",
+          "hook_snippet": "Title: Dragon Lord of Dragon Gate Description: Qi Tian, a legendary warrior who conquered millions, now lives in hiding selling watermelons, while secretly protecting his wife and wielding immense power.  EXT. BATTLEFIELD - NIGHT  THREE YEARS AGO  QI"
+        },
+        {
+          "title": "Secret Wife Brought Home",
+          "premise": "A young master searches for a woman from his past, but the one who returns seems increasingly different from the person he remembers, while a kind stranger appears who looks identical to her.",
+          "hook_snippet": "Title: Secret Wife Brought Home Description: A young master searches for a woman from his past, but the one who returns seems increasingly different from the person he remembers, while a kind stranger appears who looks identical to her.  INT. BEDROOM"
+        },
+        {
+          "title": "Hidden Dragon",
+          "premise": "A powerful warrior lord with godlike abilities decides to cultivate a supreme technique that seals his memories for three years, only to wake up as a security guard with no recollection of his past glory.",
+          "hook_snippet": "Title: Hidden Dragon Description: A powerful warrior lord with godlike abilities decides to cultivate a supreme technique that seals his memories for three years, only to wake up as a security guard with no recollection of his past glory.  INT. INTER"
+        },
+        {
+          "title": "Back to Ancient Times as a Waiter",
+          "premise": "A modern man wakes up in ancient China after an accident on a film set, finding himself in a new family with a confusing identity.",
+          "hook_snippet": "Title: Back to Ancient Times as a Waiter Description: A modern man wakes up in ancient China after an accident on a film set, finding himself in a new family with a confusing identity.  INT. ANCIENT ROOM - DAY  Close-up of HUA MENGYAN's eyes as they"
+        },
+        {
+          "title": "I Love You, I'm Guilty",
+          "premise": "A woman suffers abuse and false accusations from a man who refuses to believe her innocence.",
+          "hook_snippet": "Title: I Love You, I'm Guilty Description: A woman suffers abuse and false accusations from a man who refuses to believe her innocence.  INT. ROOM - DAY  TANG XIAOYAN lies on the floor, clutching a torn PHOTOGRAPH, her eyes hollow with exhaustion ben"
+        }
+      ]
+    },
+    "Contract Marriage & Forced Pact": {
+      "count": 15,
+      "structural_formula": "Opening scene with contract marriage & forced pact introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "Carefree Medical Immortal in the City",
+          "premise": "A swordsman's romantic practice session with his junior sister is interrupted by a powerful War Goddess bearing a marriage contract.",
+          "hook_snippet": "Title: Carefree Medical Immortal in the City Description: A swordsman's romantic practice session with his junior sister is interrupted by a powerful War Goddess bearing a marriage contract.  EXT. LAKESIDE MEADOW - DAY  MONTAGE:  YE CHENYANG and JUNI"
+        },
+        {
+          "title": "Fill in the Blank",
+          "premise": "A woman discovers her husband's lingering feelings for another woman through a misdelivered bouquet of flowers.",
+          "hook_snippet": "Title: Fill in the Blank Description: A woman discovers her husband's lingering feelings for another woman through a misdelivered bouquet of flowers.  INT. FRONT DOOR - DAY  The doorbell rings.  YE WANQIU walks from inside the house toward the door."
+        },
+        {
+          "title": "The Paranoid Wife of the Obsessed CEO Gu",
+          "premise": "A pregnant woman fleeing in the rain gives birth, only to be accused by her husband of murder and adultery, leading to her arrest.",
+          "hook_snippet": "Title: The Paranoid Wife of the Obsessed CEO Gu Description: A pregnant woman fleeing in the rain gives birth, only to be accused by her husband of murder and adultery, leading to her arrest.  EXT. HIGHWAY - NIGHT  Rain slashes across the asphalt. JI"
+        },
+        {
+          "title": "Love Found Around the Corner",
+          "premise": "A wealthy CEO finally gets his chance when the woman he has loved for three years breaks off her engagement and begins searching for a husband.",
+          "hook_snippet": "Title: Love Found Around the Corner Description: A wealthy CEO finally gets his chance when the woman he has loved for three years breaks off her engagement and begins searching for a husband.  EXT. PARK PATH - DAY  A black Rolls-Royce stops by the r"
+        },
+        {
+          "title": "Wife's Return",
+          "premise": "A woman fights for survival while her estranged husband races to save her, forcing both to confront the cost of their choices.",
+          "hook_snippet": "Title: Wife's Return Description: A woman fights for survival while her estranged husband races to save her, forcing both to confront the cost of their choices.  INT. WAREHOUSE - NIGHT  SU MO, 26, kneels in a torn gold dress, suspended by chains. She"
+        },
+        {
+          "title": "Mr. Ming, Your Wife Only Sees You as a Substitute - Episode 1",
+          "premise": "A bride is publicly accused at her wedding of being a murderer by her groom, who reveals himself to be the brother of her deceased former lover.",
+          "hook_snippet": "Title: Mr. Ming, Your Wife Only Sees You as a Substitute - Episode 1 Description: A bride is publicly accused at her wedding of being a murderer by her groom, who reveals himself to be the brother of her deceased former lover.  INT. DRESSING ROOM - D"
+        },
+        {
+          "title": "Rejuvenation",
+          "premise": "A man afflicted with premature aging awakens from a three-year coma to protect his devoted wife who sacrificed everything for him.",
+          "hook_snippet": "Title: Rejuvenation Description: A man afflicted with premature aging awakens from a three-year coma to protect his devoted wife who sacrificed everything for him.  INT. ANCIENT STYLE COURTYARD - DAY  A classical courtyard dusted with snow. NING CHEN"
+        },
+        {
+          "title": "The Billionaire CEO's Beloved Substitute Wife",
+          "premise": "A woman serves as a marriage substitute for two years, only to face the return of the real bride after completing one final task.",
+          "hook_snippet": "Title: The Billionaire CEO's Beloved Substitute Wife Description: A woman serves as a marriage substitute for two years, only to face the return of the real bride after completing one final task.  INT. HOTEL BEDROOM - NIGHT  SU CI stands at the door,"
+        },
+        {
+          "title": "The Runaway Bride Marries Right",
+          "premise": "A powerful leader in disguise as a taxi driver helps a runaway bride escape her wedding, while secretly hunting down a traitor within his organization.",
+          "hook_snippet": "Title: The Runaway Bride Marries Right Description: A powerful leader in disguise as a taxi driver helps a runaway bride escape her wedding, while secretly hunting down a traitor within his organization.  EXT. ROADSIDE - DAY  LING TIAN, the crisp yel"
+        },
+        {
+          "title": "New Year's Eve",
+          "premise": "A desperate worker confronts his corrupt boss on a rooftop after being denied wages needed for his dying mother's surgery.",
+          "hook_snippet": "Title: New Year's Eve Description: A desperate worker confronts his corrupt boss on a rooftop after being denied wages needed for his dying mother's surgery.  INT. ROOFTOP - NIGHT  Brilliant fireworks bloom in the night sky, snowflakes falling.  ZHAN"
+        },
+        {
+          "title": "Ex-Wife's Allure: Mr. Fu's Endless Devotion",
+          "premise": "After a night of unexpected passion with her estranged husband, a woman discovers a conspiracy and faces the consequences of a marriage arranged three years ago.",
+          "hook_snippet": "Title: Ex-Wife's Allure: Mr. Fu's Endless Devotion Description: After a night of unexpected passion with her estranged husband, a woman discovers a conspiracy and faces the consequences of a marriage arranged three years ago.  INT. BATHROOM - NIGHT ("
+        },
+        {
+          "title": "Ex-Husband Gains Mind Reading After Divorce",
+          "premise": "A woman threatens to jump from a building to prevent divorce, but her husband coldly calls her bluff. After a car accident, he gains the ability to hear her inner thoughts.",
+          "hook_snippet": "Title: Ex-Husband Gains Mind Reading After Divorce Description: A woman threatens to jump from a building to prevent divorce, but her husband coldly calls her bluff. After a car accident, he gains the ability to hear her inner thoughts.  EXT. OFFICE"
+        },
+        {
+          "title": "Mr. Jin, Your Wife Has Run Away With Your Daughter Again",
+          "premise": "A woman trapped in a loveless marriage faces betrayal and near-death, confronting her husband who never believed her cries for help.",
+          "hook_snippet": "Title: Mr. Jin, Your Wife Has Run Away With Your Daughter Again Description: A woman trapped in a loveless marriage faces betrayal and near-death, confronting her husband who never believed her cries for help.  EXT. SNOWY STAIRCASE - DAY  LU YING, we"
+        },
+        {
+          "title": "She Gave Birth But Her Ex-Husband Claims He's Celibate",
+          "premise": "After the death of the family matriarch, a wealthy heir prepares to abandon his intellectually disabled wife and unborn twins, unaware of the danger lurking around them.",
+          "hook_snippet": "Title: She Gave Birth But Her Ex-Husband Claims He's Celibate Description: After the death of the family matriarch, a wealthy heir prepares to abandon his intellectually disabled wife and unborn twins, unaware of the danger lurking around them.  EXT."
+        },
+        {
+          "title": "Marriage Ad on Electric Pole Turns Out to Be Beautiful Boss",
+          "premise": "Su Han discovers he has a superpower that turns fake things into reality, leading him to respond to a suspicious marriage advertisement.",
+          "hook_snippet": "Title: Marriage Ad on Electric Pole Turns Out to Be Beautiful Boss Description: Su Han discovers he has a superpower that turns fake things into reality, leading him to respond to a suspicious marriage advertisement.  INT. SU HAN'S BEDROOM - DAY  Su"
+        }
+      ]
+    },
+    "High-Stakes Crisis & Ambush": {
+      "count": 15,
+      "structural_formula": "Opening scene with high-stakes crisis & ambush introducing immediate conflict in first 3 seconds.",
+      "examples": [
+        {
+          "title": "The Prince's Awakening",
+          "premise": "A modern man finds himself transported into an ancient painting, awakening as the Crown Prince of the Great Qin Empire, only to discover a conspiracy against him.",
+          "hook_snippet": "Title: The Prince's Awakening Description: A modern man finds himself transported into an ancient painting, awakening as the Crown Prince of the Great Qin Empire, only to discover a conspiracy against him.  INT. MODERN OFFICE - DAY  A young man in a"
+        },
+        {
+          "title": "Rise from Humble Beginnings",
+          "premise": "A modern poetry champion finds himself transported to ancient times after a mysterious earthquake, waking up bound in a woodshed far from his former life of luxury.",
+          "hook_snippet": "Title: Rise from Humble Beginnings Description: A modern poetry champion finds himself transported to ancient times after a mysterious earthquake, waking up bound in a woodshed far from his former life of luxury.  INT. MODERN LOFT - NIGHT  Candleligh"
+        },
+        {
+          "title": "Return to Shanghai Bund - Rising to the Top",
+          "premise": "A boxer loses a match to save his wife, but arrives too late. A mystical amulet sends him back to 1847 Shanghai, where he gets a second chance.",
+          "hook_snippet": "Title: Return to Shanghai Bund - Rising to the Top Description: A boxer loses a match to save his wife, but arrives too late. A mystical amulet sends him back to 1847 Shanghai, where he gets a second chance.  INT. BOXING GYM - NIGHT  On the boxing ri"
+        },
+        {
+          "title": "Reigniting the Glorious Era",
+          "premise": "A weapons researcher dies with regret and is reborn to the early days of the nation, determined to prevent the tragedy that cost his beloved colleague her life.",
+          "hook_snippet": "Title: Reigniting the Glorious Era Description: A weapons researcher dies with regret and is reborn to the early days of the nation, determined to prevent the tragedy that cost his beloved colleague her life.  INT. MUNITIONS FACTORY - DAY  ON SCREEN:"
+        },
+        {
+          "title": "Lottery Winner's Time Travel",
+          "premise": "A security guard wins the lottery but gets hit by a car while retrieving his ticket, only to wake up in ancient times and meet his ancestor.",
+          "hook_snippet": "Title: Lottery Winner's Time Travel Description: A security guard wins the lottery but gets hit by a car while retrieving his ticket, only to wake up in ancient times and meet his ancestor.  INT. LOTTERY SHOP - DAY  A composed woman in red (LOTTERY A"
+        },
+        {
+          "title": "Opening with a Broken Engagement - I Am the Emperor and I Reveal It",
+          "premise": "A modern scientist is transported to ancient times after a lab explosion, where he discovers he is the Sixth Prince and becomes entangled in palace intrigue.",
+          "hook_snippet": "Title: Opening with a Broken Engagement - I Am the Emperor and I Reveal It Description: A modern scientist is transported to ancient times after a lab explosion, where he discovers he is the Sixth Prince and becomes entangled in palace intrigue.  INT"
+        },
+        {
+          "title": "Underworld Chat Group",
+          "premise": "A morgue attendant flirts with a girl online late at night, only to discover she is a ghost from a corpse delivered the day before.",
+          "hook_snippet": "Title: Underworld Chat Group Description: A morgue attendant flirts with a girl online late at night, only to discover she is a ghost from a corpse delivered the day before.  INT. FUNERAL HOME - NIGHT  Inside the quiet funeral home, the lighting is g"
+        },
+        {
+          "title": "Return to Ancient Times as a Wastrel",
+          "premise": "A modern archaeologist is transported to ancient times after discovering a mysterious jade artifact and finds himself in the body of a prince.",
+          "hook_snippet": "Title: Return to Ancient Times as a Wastrel Description: A modern archaeologist is transported to ancient times after discovering a mysterious jade artifact and finds himself in the body of a prince.  INT. ARCHAEOLOGICAL SITE - DAY  XU JIPING, wearin"
+        },
+        {
+          "title": "Husband from Outer Space",
+          "premise": "A star explorer from planet Hacker falls in love with an Earth woman, breaking planetary law, and faces execution by his own brother.",
+          "hook_snippet": "Title: Husband from Outer Space Description: A star explorer from planet Hacker falls in love with an Earth woman, breaking planetary law, and faces execution by his own brother.  INT. FOREST - DAY  QIAN ZICHU (30s, otherworldly stillness) and CHU YU"
+        },
+        {
+          "title": "The Demon's Arrival",
+          "premise": "A Demon Lord defeated in battle is reborn in the modern world and must navigate his new identity while planning his return to the demon realm.",
+          "hook_snippet": "Title: The Demon's Arrival Description: A Demon Lord defeated in battle is reborn in the modern world and must navigate his new identity while planning his return to the demon realm.  INT. DEMON REALM - NIGHT  The DEMON LORD hovers above his shattere"
+        },
+        {
+          "title": "Dragon Lord of the Nation",
+          "premise": "A security guard who moonlights as a ride-share driver hides his true identity as the legendary Dragon Lord, protector of the Great Xia nation.",
+          "hook_snippet": "Title: Dragon Lord of the Nation Description: A security guard who moonlights as a ride-share driver hides his true identity as the legendary Dragon Lord, protector of the Great Xia nation.  EXT. OFFICE BUILDING - DAY  SECURITY GUARD A stifles a yawn"
+        },
+        {
+          "title": "I'm Really Not the God of War",
+          "premise": "A man selling lingerie on the street is mistaken for a legendary warrior called Dragon Lord by assassins and warriors who come to kill or protect him.",
+          "hook_snippet": "Title: I'm Really Not the God of War Description: A man selling lingerie on the street is mistaken for a legendary warrior called Dragon Lord by assassins and warriors who come to kill or protect him.  INT. CITY STREET - NIGHT  A motorcycle tears thr"
+        },
+        {
+          "title": "Tomb Keeper's Notes: Return to Coffin Mountain",
+          "premise": "A man plagued by nightmares seeks a legendary cure from a mysterious mountain, but obtaining it requires more than just finding it.",
+          "hook_snippet": "Title: Tomb Keeper's Notes: Return to Coffin Mountain Description: A man plagued by nightmares seeks a legendary cure from a mysterious mountain, but obtaining it requires more than just finding it.  INT. COFFIN MOUNTAIN - NIGHT (FLASHBACK)  SHI QING"
+        },
+        {
+          "title": "Mr. Mo, Come Spoil Me",
+          "premise": "A woman with a birthmark marries a rumored invalid, but both harbor secrets that make them far more capable than they appear.",
+          "hook_snippet": "Title: Mr. Mo, Come Spoil Me Description: A woman with a birthmark marries a rumored invalid, but both harbor secrets that make them far more capable than they appear.  INT. DRESSING ROOM - DAY  SU MUYAN wears a red Chinese-style wedding dress, a pro"
+        },
+        {
+          "title": "The Secret That Cannot Be Told",
+          "premise": "A security guard gains the ability to see people's secrets after hitting his head, discovering hidden truths about those around him.",
+          "hook_snippet": "Title: The Secret That Cannot Be Told Description: A security guard gains the ability to see people's secrets after hitting his head, discovering hidden truths about those around him.  EXT. RESIDENTIAL COMMUNITY ENTRANCE - DAY  A young SECURITY GUARD"
+        }
+      ]
+    }
+  }
+}

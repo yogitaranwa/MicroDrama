@@ -1,0 +1,23 @@
+{
+  "raw_rows": 500,
+  "deduplicated_rows": 500,
+  "independent_title_groups": 498,
+  "requested_group_ratio": {
+    "train": 70,
+    "test": 20,
+    "eval": 10
+  },
+  "group_counts": {
+    "train": 348,
+    "test": 99,
+    "eval": 51
+  },
+  "row_counts": {
+    "train": 350,
+    "test": 99,
+    "eval": 51
+  },
+  "series_linkage": "Titles normalized to remove episode suffixes. This is a conservative proxy; source supplies no verified season IDs.",
+  "duration": "Not verified one-minute episodes.",
+  "training": "No weights trained."
+}

@@ -1,0 +1,1284 @@
+================================================================================
+PLAN.TXT  -  AI MICRODRAMA GENERATOR ON TOP OF THE MAGIC HOUR API
+Prepared for: Yogita Kumari
+Knowledge cutoff for this document: 8 October 2026 (sources fetched on that date)
+Status: research plan, not yet executed. No Magic Hour key has been used. No video has been generated. No credits spent.
+================================================================================
+
+HOW TO READ THIS FILE
+- Section 1 is the stress test you asked for. It tries to take the idea apart first, then gives a verdict.
+- Sections 2 to 4 are the full solution, the alternates, and the experiment plan.
+- Section 5 is the paper index. Section 6 is the commercial landscape with similarity scores. Section 7 is open source. Section 8 is the data analyst treatment. Section 9 is legal and platform risk. Section 10 is the benchmark. Section 11 is the build roadmap. Section 12 is open questions for you. Section 13 is the source list.
+- References appear as [R12] for web sources, [P3] for papers. Full URLs are in Section 13. A claim with no tag is my own judgment or arithmetic and is marked as such.
+- Source quality grades: A = official docs, regulator, primary paper or company filing; B = established press or research firm; C = vendor blog, SEO article, or aggregator. Every C source is flagged where used. I read abstracts and highlights for papers, not full texts, unless stated.
+
+WRITING NOTE: plain text, no formatting dependencies, so it opens anywhere.
+
+TABLE OF CONTENTS
+ 0. Executive summary
+ 1. Skeptical stress test (the idea against its strongest critics)
+ 2. Full solution architecture
+ 3. Alternate approaches compared
+ 4. Experiment plan and credit budget for the 20,000 Magic Hour credits
+ 5. Research paper findings, indexed
+ 6. Commercial and regional landscape, with similarity scores
+ 7. Open source map for every pipeline stage
+ 8. Data analyst treatment: market, engagement, unit economics
+ 9. Legal, platform and safety constraints
+10. Quality evaluation and benchmark design
+11. Build roadmap
+12. Open questions (the clarifying questions)
+13. Source list
+14. Appendix: schemas, prompt templates, file layout
+
+================================================================================
+0. EXECUTIVE SUMMARY
+================================================================================
+
+The idea in one line (your words, cleaned): a user gives reference images of characters plus a story prompt, optionally a template and specific scenes, and gets back a 60 to 120 second microdrama episode that is as engaging as the real thing. Python only, Colab fine, built on the Magic Hour API, with a benchmark that reruns the same inputs so every iteration is comparable.
+
+What I verified today in Magic Hour's own docs [R1 R2 R3 R4 R5 R6 R7 R9]:
+- Text-to-video and image-to-video exist, with 14 listed models (ltx-2.5, minimax-h3, wan-2.2, wan-3.0, kling-2.6, kling-3.0, veo3.1, veo3.1-lite, seedance-1.5, seedance-2.0, seedance-2.0-mini, seedance-2.5, sora-2, gemini-omni-1.1) [R3].
+- Text-to-video accepts a "references" array of {name, file_path} [R1]. Image-to-video accepts a start image and an optional end image [R2]. Both are the hooks for character consistency. Limits on reference count and how prompts address a reference by name are NOT documented on the pages I read. That is the biggest unknown and the first experiment.
+- Max single clip length depends on model: kling-3.0 15s, seedance-2.0 15s, seedance-2.5 30s, minimax-h3 30s, ltx-2.5 60s, sora-2 60s, veo3.1 up to 56s in fixed steps [R1 R3].
+- Native audio exists on several models, with or without extra credits [R3]. Separate lip-sync (1 credit per frame, doubled on pro) [R3 R6], AI voice generator with "celebrity and character voices" at 0.1 credit per character [R3 R7], voice cloner at 0.1 per character [R3], audio-to-video [R8], saved "characters, references, voices, moodboards" items via the API [R9].
+- 9:16 is supported on the models listed in the docs I read (partially truncated in the fetch, so verify per model in the first test) [R1].
+- Typical processing times: text-to-video p50 25s, image-to-video p50 33s, lip-sync p50 1m30s (30 day window to 16 Sep 2026) [R4].
+- No API concurrency cap, jobs can queue [R9]. Credits are refunded on failed jobs [R1].
+
+The number that shapes everything (my arithmetic from R3, Table C1 in Section 4):
+- One 60 second episode costs 1,440 credits at the cheapest tier (ltx-2.5, 480p), 2,880 at ltx-2.5 720p, 4,320 with kling-3.0 at 720p with audio, and 17,280 with seedance-2.0 at 720p.
+- 20,000 credits therefore buy roughly 12 episodes at the cheapest quality and zero to two with the premium models once rerolls are counted. This is a prototype budget, not a production budget.
+
+Verdict of the stress test (Section 1.9): the idea survives as "a story engine, shot planner, consistency manager and benchmark harness on top of a third-party video API". It does not survive as "reaches the best human microdramas using only 20k credits". The fixes are: draft cheap then finalize selectively, make the benchmark the product, keep the backend pluggable, and choose a clear wedge (Hindi and Indian-language microdramas, with reference-image characters and measured quality).
+
+What I recommend you decide first (Section 12 has all questions): which Magic Hour plan your 20k credits sit on (free tier locks kling and seedance), whether v1 is a demo or a product, and which languages v1 must cover.
+
+================================================================================
+1. SKEPTICAL STRESS TEST
+================================================================================
+
+You asked me to act as a sharp, skeptical reviewer: first build the strongest case against the idea, then say whether it survives, then show where it breaks and how to fix it. If it is solid, say so, and do not invent flaws. I follow that. Each attack below has: the attack, the evidence, severity (1 low to 5 fatal-if-ignored), whether the idea survives it, and the fix.
+
+1.0 The claim being tested
+Claim C: "With reference images, a prompt, templates and scene instructions, our pipeline on Magic Hour's API can produce a microdrama episode of 60 to 120 seconds that is as good as the best real microdramas and shorts, measured by a repeatable benchmark."
+Claim C has four parts that fail independently: (a) the story is as good, (b) the characters, voices and style stay consistent, (c) it is affordable to iterate, (d) the measurement is trustworthy. I attack each.
+
+--------------------------------------------------------------------------------
+ATTACK A1. The credit budget cannot support the iteration the claim needs.   Severity 5
+--------------------------------------------------------------------------------
+Attack: Quality comes from iteration and rerolls. 20,000 credits is a thin budget for a video pipeline.
+Evidence: Magic Hour bills video per second of output, rates in R3: ltx-2.5 24 credits/s at 480p and 48 at 720p; kling-3.0 48 at 720p plus 24 for audio; seedance-2.0 288 at 720p; seedance-2.5 576 at 720p; veo3.1 96 at 720p plus 24 for audio. A 60s episode at 1.0x (no rerolls) is 1,440 to 34,560 credits depending on model (Table C1). With a realistic acceptance rate of 40 to 60 percent of generated shot-seconds, the cheapest tier gives 5 to 7 full episodes and the premium tiers give 0 to 1 (Table C2). The credit-to-dollar rate in the pricing page text is about 400 to 533 credits per dollar depending on pack [R10], so 20,000 credits is about 38 to 50 dollars of value. This is my arithmetic from the pages cited.
+Does the idea survive? Partly. It survives as a prototype that proves the pipeline and the benchmark. It does not survive as a method to reach top-tier quality on every iteration.
+Fix:
+1. Two-pass generation. Draft every shot cheaply (ltx-2.5 at 480p, 24 credits/s) to verify framing, action and consistency, then render only approved shots on a better model. Table C3 shows this lets about 3 to 5 final episodes fit in 20k.
+2. Never reroll a whole episode. Reroll at shot level, with a shot-level automated pre-check (face match against the reference, black frame, text artifacts) before spending on lip-sync or upscale.
+3. Cache everything by content hash: prompts, reference images, model, seed, duration. A benchmark rerun must reuse unchanged shots, so a script change costs credits only for changed shots.
+4. Treat generation budget as a first-class variable in the benchmark (credits per accepted minute), so improvements that cost 5x do not count as wins.
+5. Use the free tier, mock server and account endpoint to build and test the orchestration with zero credit spend [R3 R9]. The docs list a mock server and a balance endpoint (GET /v1/account).
+
+--------------------------------------------------------------------------------
+ATTACK A2. Character consistency across 6 to 12 separate clips is still an open research problem.   Severity 5
+--------------------------------------------------------------------------------
+Attack: The claim depends on the same actor face, outfit and body appearing across many independently generated clips. Single-clip generators drift. Even papers from 2026 treat this as unsolved.
+Evidence: EntityBench, GroundShot, PersonaShot, EM-Vid, VideoMemory, InfinityStory and SubjectAnchor are 2026 papers whose stated motivation is that entity consistency across shots remains a challenge [P1 P2 P4 P5 P6 P7 P22]. GroundShot says inconsistencies accumulate as the number of shots grows [P2]. PersonaShot (Aug 2026) is a benchmark built because person-centric narrative continuity is not solved [P4]. These are abstract-level readings.
+Magic Hour-specific gap: the text-to-video "references" field exists [R1], but nothing I read states the maximum count, how references are addressed in the prompt, or whether identity is preserved when two references share a frame. Image-to-video carries the identity in the first frame but identity can drift during motion and in later shots.
+Does the idea survive? Yes, if consistency is engineered in the pipeline instead of assumed from the model.
+Fix (the "anchor stack"):
+1. Character bible per person: a canonical front, three-quarter and profile image, a wardrobe sheet, and a fixed text identity string (age, build, hair, wardrobe colors) pasted verbatim into every shot prompt.
+2. Use the references array on every shot that features the character. If references work well, prefer text-to-video with references for establishing shots.
+3. Use image-to-video with first-frame and last-frame images for continuity: the last frame of shot N (or a still produced by an image editor from it) becomes the first frame of shot N+1 when the scene continues.
+4. Limit visible characters per shot to two where possible, close-ups for dialogue. Fewer faces reduce drift and cost less to verify.
+5. Automatic identity check per shot: face embeddings (open source InsightFace class models, see Section 7) compared with the reference; reject shots below a threshold before any further spend.
+6. A Magic Hour face-swap step is a last resort repair (video face swap costs 24 credits/s [R3]) and has ethics and quality caveats.
+7. Benchmark metric: identity similarity per shot and across shot pairs (Section 10).
+
+--------------------------------------------------------------------------------
+ATTACK A3. Voice consistency and lip sync across clips.   Severity 4
+--------------------------------------------------------------------------------
+Attack: If each clip generates its own audio, each clip can invent a slightly different voice for the same character. Your own criterion lists "consistency of voice" first.
+Evidence: Native audio is listed per model [R3] with no statement about cross-clip voice identity. The AI Voice Generator is described as "celebrity and character voices" [R7], which creates impersonation risk and may not offer Indian-language voices (the page I read does not list languages). The Voice Cloner exists (0.1 credit per character) [R3] but needs a voice sample. Lip sync costs 1 credit per frame, doubled on pro [R3 R6], about 24 credits/s standard.
+Does the idea survive? Yes, with a decoupled audio design.
+Fix:
+1. Generate dialogue audio separately per character with one fixed voice per character (Magic Hour voice cloner from a consented sample, or open source TTS such as IndicF5 for Indian languages [R65], CosyVoice [R66], IndexTTS [R64], Qwen3-TTS [P33]).
+2. Generate shot video with audio off, or discard its audio, then apply lip-sync to dialogue close-ups only, or use audio-to-video [R8].
+3. Keep music and ambience as a separate bed so shot-to-shot sound seams are covered.
+4. Benchmark: speaker similarity between lines of the same character (speaker embedding cosine), plus a human 1 to 5 rating.
+
+--------------------------------------------------------------------------------
+ATTACK A4. Clip length ceilings force seams, and seams break the "microdrama feel".   Severity 3
+--------------------------------------------------------------------------------
+Attack: Real microdramas hold performance across 20 to 40 second continuous scenes. API clips top out at 15 seconds on kling-3.0, seedance-2.0 and wan-2.2, 30 on seedance-2.5, minimax-h3 and wan-3.0, up to 60 on ltx-2.5 and sora-2 [R1 R3].
+Evidence: R1/R3 duration tables.
+Does the idea survive? Yes. Real microdramas are cut fast. Typical shot length in the format is short; your own default of 60 seconds suggests 8 to 14 shots of 4 to 8 seconds. The cut itself is a feature (cliffhanger rhythm).
+Fix: design the shot plan for 3 to 8 second shots, hard cuts, reaction inserts, and J and L cuts using the continuous audio bed. Avoid long single takes. Use the longer-clip models only for establishing or action shots where identity risk is low.
+
+--------------------------------------------------------------------------------
+ATTACK A5. "As good as the best real microdramas" is an undefined and probably unreachable bar for the whole stack.   Severity 4
+--------------------------------------------------------------------------------
+Attack: The best microdramas succeed through casting, acting, pacing and script craft learned from thousands of tested episodes, plus distribution machinery. A generator that copies surface structure gets formulaic output. The market is also now flooded with AI output, so "watchable" is table stakes.
+Evidence: More than 50,000 AI-native titles hit Douyin in March 2026 alone [R24]. AI microdramas were over 95 percent of new releases in Q1 2026 by one industry data set (C/B grade, Chinese-language, secondary) [R19]. Micro-drama platforms were already dropping paywalls as viewers lost interest in 2025 [R30], which signals fatigue with formulaic content. Sensor Tower reports downloads up 140 percent year on year while revenue grew 20 percent, so monetisation per download is under pressure [R14 R15].
+Does the idea survive? Partly. The practical bar should be "beats the median AI microdrama and approaches the bottom quartile of human-made hits on the same script", and the benchmark should measure the gap to a human-made reference set.
+Fix:
+1. Define the bar as a measured score on a frozen rubric plus pairwise preference against 5 reference microdramas you pick (Section 10).
+2. Invest in the writers' room (script engine) more than the renderer. The renderer is a rented commodity; the script and shot plan are the differentiator (Section 2).
+3. Build a "hook library" and "cliffhanger library" by deconstructing real episodes (shot-by-shot beat sheets for 20 to 30 episodes you choose), then use them as retrieval examples for the writer agent (Section 2.3).
+4. Avoid cloning copyrighted plots. Use structure, not text (Section 9).
+
+--------------------------------------------------------------------------------
+ATTACK A6. The evaluation plan is circular and n=1.   Severity 4
+--------------------------------------------------------------------------------
+Attack: "I will judge by watching" and "the model judges" are both weak. One human rater with one mood, and an LLM judge that prefers its own style, give noisy measurements, and noise looks like progress.
+Evidence: 2026 papers keep proposing rubric-based and agentic judges because single-score judgments are unreliable: RAVEN-Eval, VideoArgus, FIRM-Video, DirectorBench, NarrLV [P40 to P44]. PlaylistEval (Sep 2026) specifically asks whether video-language judges can be trusted on long videos [P45]. A WWW 2026 paper studies MLLM-based short drama quality assessment [P46]. I have only read abstracts.
+Does the idea survive? Yes if the benchmark is treated as an instrument that itself must be calibrated.
+Fix:
+1. Frozen benchmark set of 8 to 12 briefs (multi-genre, 2 to 3 languages), frozen rubric, frozen judge prompts and model versions, logged seeds.
+2. Three layers: deterministic checks (structure, timing, identity similarity, audio loudness, caption safe area), model judges (script-level and video-level, temperature 0, 3 repeats, report mean and spread), and human pairwise comparisons for each release candidate (A versus B blind, 5 minutes).
+3. Calibrate the judge against your human picks: compute rank correlation (Spearman) on 20 pairs. Only trust the judge dimensions that correlate above 0.6.
+4. Include known-good and known-bad anchors: a human-made microdrama clip and a deliberately bad AI clip, so the scale does not drift.
+5. Report uncertainty. Do not claim a win below the noise floor you measured.
+
+--------------------------------------------------------------------------------
+ATTACK A7. Script quality and episode quality are different things, and the script engine cannot be judged in isolation.   Severity 3
+--------------------------------------------------------------------------------
+Attack: Great hooks on paper die if the first three seconds are visually weak. A script that is good for text can be unfilmable.
+Evidence: structural scoring only measures what is written. The stub-LLM benchmark I built earlier tests structure only (my own test, no story quality claim).
+Does the idea survive? Yes.
+Fix: the writer agent must output filmable shots with explicit first-frame descriptions, and a separate "director pass" rewrites any shot the video model is known to fail at (crowds, hands, text, fast fight choreography) into safer coverage. Keep a "model failure catalogue" updated from benchmark runs.
+
+--------------------------------------------------------------------------------
+ATTACK A8. Dependence on one vendor whose API is beta and whose model list changes.   Severity 3
+--------------------------------------------------------------------------------
+Evidence: the OpenAPI header says "version: beta" [R9 page]; the "default" model "tracks our current recommendation and changes over time" [R3]; legacy models are being retired from the docs [R3]. Models and prices can change under you mid-benchmark.
+Does the idea survive? Yes.
+Fix: pin the model ID in every call (never "default"), record model, resolution and docs snapshot hash in each benchmark run, keep the VideoBackend interface so Kling, Seedance, Veo or open source Wan can be swapped (Section 2.8).
+
+--------------------------------------------------------------------------------
+ATTACK A9. "Everything free" collides with video generation.   Severity 3
+--------------------------------------------------------------------------------
+Attack: Free Colab cannot run top open video models. The free Magic Hour tier restricts models and resolution.
+Evidence: Magic Hour says free plan models are ltx-2.5 and minimax-h3 at 480p; kling-3.0 and seedance-2.5 need a paid plan [R3]. Open source video models commonly need 24 to 48 GB VRAM for good output (Wan 2.2 5B on a 24 GB card, larger models on 48 GB) (C-grade guides) [R51]. Colab free GPUs are far below that (my knowledge of Colab tiers, not verified today).
+Does the idea survive? Yes, because the 20k credits already exist. No new spend is required by this plan. But if those credits are free-tier starter credits, then kling and seedance may be locked. This is question Q5 in Section 12.
+Fix: call GET /v1/account first thing once the key exists, to read balance and plan [R3]. Build the whole pipeline to run on ltx-2.5 and minimax-h3 at 480p first. Do not purchase anything without your explicit approval.
+
+--------------------------------------------------------------------------------
+ATTACK A10. Real-person likeness, celebrity voices, and labelling rules.   Severity 4
+--------------------------------------------------------------------------------
+Attack: Reference images of real people can make a deepfake. Magic Hour's voice generator advertises celebrity voices [R7]. India's 2026 amendments require labelling of synthetically generated information, and platforms add their own labelling and reach limits.
+Evidence: MeitY amendment rules notified 10 Feb 2026, effective 20 Feb 2026, introduce "synthetically generated information" duties [R72 R73 R74 R75]. YouTube's July 2025 "inauthentic content" update targets mass-produced or repetitive content [R76]. Instagram's AI label changes dated 31 Aug 2026 are from a secondary source (C) [R77]. Section 9 has details.
+Does the idea survive? Yes with guardrails.
+Fix: consent attestation for any real-person reference image, block celebrity and politician likeness and voice by default, embed visible and metadata labels (C2PA-style provenance is a stretch goal), a content-safety checklist in the benchmark, never publish real-person output without the owner's consent.
+
+--------------------------------------------------------------------------------
+ATTACK A11. There is no moat: incumbents and many startups already sell "script to short drama".   Severity 4
+--------------------------------------------------------------------------------
+Evidence: Pexo, Medeo, OpenDrama, Pippit, aishortdrama.io, Drama.Land, Higgsfield, LTX Studio, OpenArt and Fable Showrunner all advertise some form of prompt or script to short drama [R36 to R47]. Open source: Jellyfish, Wind Comic, Open-AI-Micro-Drama-Generator, PenShot, huobao-drama, PureVis [R54 to R59]. ByteDance runs a closed loop from novels to models to distribution [R22]. Similarity scores in Section 6 put several products at 70 to 85 out of 100 against this idea.
+Does the idea survive? As a learning project and portfolio piece, strongly. As a commercial product, only with a wedge.
+Fix: pick a wedge. Candidates: (1) Indian languages and Indian genres, where India is a $300M market projected much higher but with a visible shake-out (Pocket FM closed Pocket TV in June 2026) [R26 R27 R28]; (2) measured quality: publish the benchmark and show the score curve, which almost no vendor does (D6 is zero for nearly all products in Table S2); (3) reference-image-first workflows for real creators and brands.
+
+--------------------------------------------------------------------------------
+ATTACK A12. "Any language" is a claim, not a feature.   Severity 3
+--------------------------------------------------------------------------------
+Evidence: Text quality of LLMs in Hindi and regional languages varies; TTS and lip-sync models are mostly trained on Chinese and English with partial coverage elsewhere. Open source IndicF5 covers 11 Indian languages [R65]; IndexTTS had an open request for Hindi in Sep 2025 [R64 issue 429]; Qwen3-TTS and X-Voice target multilingual use [P33 P34]. Native lip-sync quality per language is unverified.
+Does the idea survive? Yes, if v1 declares supported languages and tests each.
+Fix: v1 languages: English and Hindi, tested with the benchmark; others flagged "experimental" until a per-language score exists. Dubbing from an English master is a fallback path (CineDub, Aug 2026, is relevant research [P36]).
+
+--------------------------------------------------------------------------------
+ATTACK A13. Latency and hangs.   Severity 2
+--------------------------------------------------------------------------------
+Evidence: p50 25s text-to-video, 33s image-to-video, 1m30s lip-sync [R4]; p50 is not p95, jobs can queue [R9]. You said slow hangs count as failures.
+Fix: per-job timeout of 8 minutes for video, 3 minutes for audio, automatic cancel and one retry on another model, async fan-out (the API has no concurrency cap [R9]) so a 10-shot episode renders in about the time of the slowest shot, not the sum. Webhooks are supported [R9 llms index]; polling fallback in Colab.
+
+--------------------------------------------------------------------------------
+ATTACK A14. Unknowns that could invalidate the architecture.   Severity 4 until resolved
+--------------------------------------------------------------------------------
+List of things the docs I read do not state; each gets a probe experiment (Section 4):
+U1. Maximum number and size of references; whether names in the prompt bind to references.
+U2. Whether 9:16 is available on every model you want to use.
+U3. Whether native-audio dialogue follows quoted lines in the prompt, and in Hindi.
+U4. Actual credits_charged versus the table (the sample response shows 450 for a 5s example, which does not match a simple multiplication of the table rate, so billing may include fps or other factors) [R1].
+U5. Whether failed or content-filtered jobs refund fully [R1 says refunded on failure].
+U6. Content moderation behaviour on dramatic themes (violence, romance, revenge). Microdrama genres lean on conflict, so over-blocking would hurt.
+U7. Whether 20k credits sit on a paid plan.
+U8. Output watermark and commercial rights on your plan: free video outputs may be watermarked; paid plans and credit packs remove watermarks and allow commercial use [R10 FAQ].
+
+--------------------------------------------------------------------------------
+1.9 VERDICT
+--------------------------------------------------------------------------------
+Survives (holds up under attack):
+- The core product shape: a story and shot-plan engine plus consistency manager plus pluggable renderer plus benchmark. Nothing above kills it.
+- The market is real and large (Section 8), the tooling is mature enough to prototype (Section 3), and the gap in measured, benchmarked quality is real (D6 scores in Table S2).
+- Your instinct to make the benchmark first-class is the strongest part of the idea.
+
+Breaks (as stated):
+- "As good as the best microdramas" with 20k credits and one rater. The credit budget (A1), the consistency limits (A2, A3) and the single-rater measurement (A6) each break it alone.
+- Commercial differentiation without a wedge (A11).
+
+Fix summary (priority order):
+1. Probe experiments U1 to U8 in the first 3,000 credits.
+2. Two-pass draft then final rendering, with shot-level caching.
+3. Anchor stack for characters and decoupled audio.
+4. Calibrated three-layer benchmark with human pairwise checks.
+5. Pluggable backend and pinned models.
+6. Choose the wedge by asking you Q1 to Q8 (Section 12).
+
+I did not invent flaws to look rigorous: attacks A12 and A13 are rated low or medium because the evidence for them is thin or the fix is cheap.
+
+================================================================================
+2. FULL SOLUTION ARCHITECTURE
+================================================================================
+
+2.0 Decisions you gave on 8 Oct 2026, 12:48 IST, and what each does to the design
+D-1  Format: primarily vertical 9:16, with "auto adjusting as per device orientation". Design: render a 9:16 master; produce 16:9 and 1:1 deliveries by a reframe stage (Section 2.9). Magic Hour lists 9:16 and 16:9 (and 1:1 on several models) per model in the docs [R1]; verify per model in probe P-2.
+D-2  Language: English primary now. Other languages tested later but "kept in the pipeline". You noted Magic Hour gives 80+ languages. I did not find a language count on the docs pages I read [R7 R9], so treat "80+" as your statement, unverified by me; probe P-6 checks it. Design: every module takes a language code, all prompts and voice choices are parameterised, and the benchmark has a language column.
+D-3  Series: "series with great continuity like 21 seasons". This is the heaviest architectural requirement. It adds a persistent Story Bible and continuity engine (Section 2.4), a season and arc planner (2.5), and series-level benchmark metrics (Section 10.6).
+D-4  Product to ship, phased: demo now, then scalability, then ship. Section 11 is phased this way, and each phase lists limits and edge cases.
+D-5  Credits account: your reply "yes true" did not choose between the two accounts I asked about. Still open (Q5). The key will arrive through a vault link, not chat.
+D-6  Start timing: v1 build starts only after you read this full plan, limits, architecture and edge cases. Section 12 holds the open questions; nothing is built against the API before your go-ahead.
+
+2.1 Design principles
+P1  The renderer is a rented commodity; story, shot plan, consistency and measurement are the product.
+P2  Every stage has typed input and output (JSON schema), is cached by content hash, and can be rerun alone.
+P3  Cheap first: draft, verify, then spend. No unreviewed expensive call.
+P4  Decouple audio from video. Decouple identity from motion.
+P5  Pluggable everything: LLM, image model, video backend, TTS, lip-sync, judge.
+P6  Measure before and after every change on the frozen benchmark.
+P7  Fail fast: per-stage timeouts, one retry, then a clear failure record.
+P8  Series first: no episode is generated without loading the bible; no episode is accepted without updating it.
+P9  Free-only rule: no purchases, no card-gated trials, no paid models outside the existing credits. Official registries only for installs; no piped scripts.
+
+2.2 End-to-end pipeline (stage list)
+S0  Intake and normalisation
+S1  Series planning (season arc, episode grid)  [series mode only]
+S2  Episode brief expansion
+S3  Writers' room: beat sheet, script, hook and cliffhanger passes
+S4  Script critic loop (rubric + structure checks)
+S5  Shot planner and director pass (filmable shots, model-aware coverage)
+S6  Character and world asset builder (bible, reference sheets, locations)
+S7  Draft render (cheap)
+S8  Shot verifier (identity, artifacts, framing)
+S9  Final render (selected shots only)
+S10 Audio: dialogue TTS or clone, lip-sync, music, ambience, mix
+S11 Edit and assemble (cuts, captions, safe areas, loudness)
+S12 Reframe and delivery (9:16 master, 16:9 and 1:1 derivatives)
+S13 Evaluation (deterministic, judge, human) and logging
+S14 Bible update and continuity check  [series mode]
+S15 Packaging: episode file, captions, thumbnail, metadata, provenance label
+
+2.3 The writers' room (S2 to S4)
+Goal: scripts that are structurally correct and emotionally compelling.
+Inputs: user prompt, template, optional required scenes, characters (names, descriptions, images), language, target duration, series context (bible).
+Template library (v1 seven genres, my earlier build): hidden identity, revenge, betrayal and affair, contract marriage and CEO romance, werewolf and supernatural, mafia, family and inheritance. Each template stores premise, engine, hook patterns, twist patterns, cliffhanger patterns. Add later: rebirth and time loop, workplace power, campus, Indian family drama and saas-bahu, regional folklore.
+Beat structure (60s default): hook 0 to 3s; setup to about 15s; escalation to about 36s; twist at 60 to 85 percent; cliffhanger last 15 percent. Longer episodes scale the same fractions, with a second mini-hook mid-episode for 90 to 120s.
+Agents (all prompt roles over one or two LLM calls each, not heavy frameworks):
+- Showrunner: owns episode goal, emotional target (who the audience wants punished or rescued), and the one open question the cliffhanger will pose.
+- Plotter: beat sheet with plants and payoffs (one planted object, line or name before the twist).
+- Dialogue writer: lines under 14 words, 2.6 spoken words per second maximum, in the target language, with subtext through reaction shots.
+- Hook doctor: rewrites the first 3 seconds with 5 alternatives, chooses one by rubric.
+- Cliffhanger doctor: 5 alternatives, chooses one that poses a specific open question and does not resolve.
+- Continuity editor: checks the draft against the bible (Section 2.4) and flags violations.
+Critic loop: structural validator (my earlier validate.py checks: contiguous shots, first shot is hook, last is cliffhanger, duration limits, speaker names valid, words per second) plus LLM rubric judge (8 criteria). Loop up to 3 rounds, keeping the best. Use plan-then-write decomposition, which recent work supports: "Beyond Direct Generation" screenwriting decomposition, Dramaturge iterative refinement, outline stage comparison, PLOTTER graph-based planning [P25 P26 P27 P28]. Abstract-level reading only.
+Retrieval of craft: a "hook library" and "cliffhanger library" of 20 to 30 human-made episodes you choose, each deconstructed into beat sheets (hook type, first-3-second image, power shift count, twist type, cliffhanger type, runtime of each beat). The writer agent gets 3 nearest examples by template and tone as few-shot structure, never as text to copy.
+Deconstruction method (per reference episode, done by you or by me from public clips with notes only, no copying text): timestamp every shot; label beat; count cuts per 10 seconds; mark emotional peak positions; note the last frame and the open question. Output one JSON per episode. This becomes the training set for the structural priors, and the benchmark reference set (Section 10).
+
+2.4 The Story Bible and continuity engine (for "21 seasons")
+Why it exists: video models forget. LLM context windows forget. A 21-season series (hundreds of episodes) needs a database that is the single source of truth.
+Storage: SQLite in Colab and Drive (portable, queryable) plus JSON export per episode. Scale-up phase moves to Postgres. A vector index (FAISS or sqlite-vss class, both open source) for semantic recall of past scenes.
+Entities:
+- Series: title, genre template, tone, language, season count plan, content rating, aspect defaults.
+- Character: id, name, aliases, role, arc stage, personality, speech style (vocabulary, catchphrases, language mix), relationships (typed edges with status and since-episode), secrets (who knows what, since when), appearance spec (canonical text identity string), wardrobe states per era, reference image set (front, 3/4, profile, expressions), voice id, age timeline.
+- Location: id, description, lighting and palette, reference stills, geography relations.
+- Props and plot objects: ownership and location over time.
+- World state: timeline of facts with episode id. Facts have visibility (public, known-to-set, secret).
+- Threads: open plot threads with id, setup episode, promise, planned payoff window, status (open, advanced, resolved, abandoned).
+- Cliffhanger ledger: each episode's final open question, whether it is resolved, and in which episode. Rule: every cliffhanger gets resolved within 1 to 3 episodes, and resolution should open a new one.
+- Episode log: script, shot list, summary (300 tokens), emotional curve, hook type, twist type, runtime, benchmark scores, credits spent.
+- Style bible: color grade, lens language, music motifs, title card, captions style.
+Operations:
+- load_context(episode_n): retrieves a compact context pack: recap of last 3 episodes, active threads, character states for characters in scope, relevant relationships and secrets, the previous cliffhanger to resolve, and the next planned beats from the season arc. Hard cap about 6k tokens so cost stays flat as the series grows.
+- continuity_check(script): rule-based checks (dead characters do not appear, secrets are not mentioned by characters who do not know them, injuries and outfits persist, props are where they should be, locations exist) plus LLM audit; returns violations with fix suggestions.
+- commit(episode): update world state, threads, ledger, relationships, character arc stages from the accepted script, with a diff the user can review.
+- retcon(request): explicit command that edits past facts with a changelog, because stories sometimes change.
+Season and arc planner (S1): creates a series skeleton: premise, 5 to 10 major arcs, season finales, recurring villain escalations, a character growth plan, and a grid of episodes per season with the hook and cliffhanger type targeted for each. Season-long reveals are scheduled and tracked in Threads so they are planted early and paid late. Pacing guard: no more than 3 consecutive episodes of the same twist type; at least one status reversal per episode; every 10 episodes a "mini finale".
+Visual continuity across seasons: each character's appearance spec has era versions (for example season 1, season 5 after time skip), each with its own reference sheet; ageing is handled by explicit era assets, not by hoping the model ages the face.
+Drift management for very long series: re-anchor character reference sheets every season; keep the original season-1 canonical images as the identity ground truth; run an identity drift benchmark (similarity of newest episode's character crops to season-1 canon) and flag when it falls below a threshold (Section 10.6).
+Edge cases in series mode (also in Section 11.5): actor swap (reference image changes), time skips, flashbacks (past-era assets), twins and doubles (identity collision), cameo characters, mid-series genre shifts, user edits to canon, parallel storylines, continuity of language style per character, recaps for new viewers, content rating drift.
+
+2.5 Character reference handling (S6)
+Input: 1 to 6 images per character from the user, any quality. The system:
+1. Validates each image: face count, resolution, blur, occlusion, aspect, NSFW and real-person flags. Image validation uses small open source detectors (face detection, blur variance, simple classifiers), run locally on CPU in Colab.
+2. Consent gate: for photos of real people, require a recorded attestation by the uploader; block known public figures through a face-match against a celebrity watchlist is a possible later feature (needs a careful free dataset review) and is a policy item, not v1.
+3. Builds a character sheet: canonical front face, 3/4 left and right, profile, full body, and 4 expressions (neutral, angry, tearful, smirk). Uses Magic Hour image tools (image editor and generator models listed in R3, such as nano-banana variants, seedream, gpt-image, qwen-edit, flux-2-klein; cost 5 to 150 credits each at lowest resolution) or, as free alternatives, open source image editors (Section 7) run elsewhere. The credit cost of a full sheet at 6 images is about 300 credits at 50 credits each, which is why sheets are built once per character and cached.
+4. Stores the identity string (canonical text description), the reference file paths in Magic Hour (via upload URLs and file_path) and in the bible.
+5. Embeds identity: computes a face embedding with an open source face recognition model (InsightFace class, check licence for commercial use because some model weights are research-only) to use in verification; store only embeddings and hashes unless the user opts to keep images.
+Usage at shot time: the shot planner lists characters present; the render stage passes their reference images (references array, or first-frame image) and the identity strings; the verifier compares output face crops against embeddings.
+Fallback if references are weak: use a two-step image-first flow: generate the keyframe with an image editor given references (this is stronger at identity), then animate with image-to-video.
+
+2.6 Shot planner and director pass (S5)
+Output per shot (extending my existing schema): idx, start, duration, beat, location id, characters present with wardrobe state, first-frame description, motion description, camera (shot size, angle, movement), lighting, dialogue (speaker, text, language, emotion), sfx and music cue, transition, "risk flags" (crowd, hands, text on screen, fast action, rain, mirrors, two-shot with similar faces), and a chosen render mode.
+Render mode per shot:
+- RM-A: image-to-video from a verified keyframe (default for close-ups and dialogue).
+- RM-B: text-to-video with references (establishing and mid shots with one or two characters).
+- RM-C: first and last frame interpolation for transitions and controlled moves (image-to-video with end image) [R2].
+- RM-D: insert shots (objects, texts, phones) generated from an image tool plus subtle motion; cheapest and safest.
+Director pass: rewrites risky shots into safer coverage (replace crowd shot with over-shoulder, avoid hands in focus, keep text on screen as a post overlay instead of generated text).
+Coverage rules for microdrama grammar: average shot 3 to 6 seconds; push-in on reveals; reaction shots; hold after the twist; last shot is a freeze or hard cut on a face or object; on-screen captions in safe area (Section 2.9).
+
+2.7 Rendering (S7 to S9) on Magic Hour
+Draft model: ltx-2.5 at 480p (24 credits/s) with audio off; used to test composition and action, not final identity.
+Final model options (all pinned by ID): kling-3.0 (cinematic stories, references, optional audio) at 720p; seedance-2.0 or 2.5 where reference control matters and budget allows; veo3.1-lite for balanced realism; minimax-h3 or wan-3.0 for longer clips with native audio. Per-shot model routing table is learned from the benchmark (which model has the best identity score per credit for which shot type).
+Job control: asynchronous submission, webhook or poll, 8 minute timeout, one retry on a different seed or model, record credits_charged from the finished job, cache by hash, refund awareness (failed jobs are refunded [R1]).
+Budget governor: a hard per-episode credit ceiling and a global ceiling read from GET /v1/account; refuse to start a job that would breach it; produce a cost estimate before every batch for your approval in demo phase.
+Mock mode: the dry-run backend I already built plus Magic Hour's mock server [R3] so the pipeline and the benchmark run with zero credits.
+
+2.8 Pluggable backend interface (my VideoBackend, extended)
+Methods: estimate(shot) returns credits and seconds; submit(shot, refs, mode) returns job id; poll(job id) returns status and result; fetch(job id) returns file; cancel(job id).
+Implementations: MagicHourBackend (v1 target), DryRunBackend (exists), FalOrOtherBackend (only if you ever approve it, not now), LocalOpenSourceBackend (Wan 2.2 or LTX on a GPU you control, stretch goal) [R50 R53].
+Same for TTS, lip-sync, image, LLM, judge interfaces.
+
+2.9 Aspect ratio and "auto adjust per device orientation" (D-1)
+Interpretation (please confirm in Q1): the primary deliverable is vertical 9:16 for phones; the player should also look right when a viewer holds the phone sideways, on tablets and on desktop.
+Plan:
+1. Generate the master in 9:16 only (cheapest, and the main use). Magic Hour exposes 9:16 and 16:9 per model [R1].
+2. Safe-area composition rule in the shot planner: faces and key action inside the central 1:1 region, so a 1:1 crop works, and in the central 80 percent width for captions.
+3. Derive 16:9 by one of: (a) letterbox with a blurred-background fill (cheap, standard, acceptable), (b) smart crop of a separately rendered 16:9 version for hero shots only (costs credits again), (c) outpaint sides using a video outpainting model (research stage; not v1).
+4. Delivery manifest: one episode, three renditions (9:16, 1:1, 16:9) plus a JSON of safe areas and caption positions. The player selects by orientation; the web player or app handles auto-switch. In Colab demo we ship the 9:16 file and one 16:9 letterboxed file.
+5. Captions: burned-in for social, sidecar (WebVTT or SRT) for product; Magic Hour has an auto subtitle endpoint at about 4.8 credits/s [R3]; open source Whisper-class transcription is a free alternative for timing.
+Trade-off to call out: a native 16:9 render per episode doubles the video cost; I recommend not doing that in v1.
+
+2.10 Audio (S10)
+Dialogue: TTS or clone per character with a fixed voice id from the bible. Sources: Magic Hour voice generator or cloner [R3 R7], or open source (Section 7). Languages: English first, Hindi next; pronounce names via a pronunciation lexicon in the bible.
+Lip sync: only for close-ups with speech. Magic Hour lip sync is 1 credit per frame (about 24 credits/s) and lite or pro modes [R3 R6]. If a model's native audio already syncs well in the probe, skip separate lip sync.
+Music and ambience: free licensed sources only; generate or select loops with attribution; music motifs per series in the style bible; sidechain duck under dialogue; target loudness about -14 LUFS for social (my engineering default, not sourced).
+Mix: FFmpeg in Colab (official apt package), no external scripts.
+
+2.11 Editing and assembly (S11)
+Python and FFmpeg: concatenate shots by plan, apply J and L cuts, add captions, add a short cold open title card for episode 1 of a season, end card with next-episode teaser text from the script (the "next episode" prompt is a retention device used by the format; my judgment). Generate thumbnail from the hook frame.
+
+2.12 Evaluation and logging (S13)
+See Section 10. Every run writes: config, model versions, seeds, credits, timings, artefact hashes, scores, and a report in HTML and CSV in Drive.
+
+2.13 Repository layout (Colab friendly)
+microdrama/
+  schema.py, templates.py, llm.py, validate.py, storyteller.py, backend.py, pipeline.py, benchmark.py (exist from my first build)
+  bible/ (db.py, models.py, context.py, continuity.py, commit.py)
+  planner/ (series.py, episode.py)
+  assets/ (validate_images.py, sheets.py, embeddings.py)
+  render/ (magichour.py, dryrun.py, router.py, budget.py, cache.py)
+  audio/ (tts.py, lipsync.py, mix.py)
+  edit/ (assemble.py, captions.py, reframe.py)
+  eval/ (deterministic.py, judge.py, human.py, report.py, calibration.py)
+notebooks/ 01_quickstart.ipynb (Run All clean), 02_series.ipynb, 03_benchmark.ipynb
+Notebook style rules you set: no comments in code cells, documentation in markdown, runs on a fresh runtime.
+
+2.14 Component choices at a glance (v1)
+LLM writer: free OpenAI-compatible endpoint or open weights via a free tier; your decision needed (Q9). Judge: same family, temperature 0.
+Image: Magic Hour image tools for character sheets (credits) with free alternatives later.
+Video: Magic Hour. Audio: decide by probe P-4 and P-6. Face check: InsightFace class. ASR: Whisper class. Edit: FFmpeg.
+
+================================================================================
+3. ALTERNATE APPROACHES COMPARED
+================================================================================
+
+Eight pipeline families. Scores 1 to 5 (5 best) are my judgment from the evidence in Sections 5 to 7 and the Magic Hour facts; they are not measurements. "Fit" means fit to your constraints: Python in Colab, Magic Hour credits, free-only, series continuity, benchmark-first.
+
+ALT-1  Prompt-per-clip chain (the simple baseline)
+What: LLM writes N shot prompts, each goes to text-to-video, clips are concatenated.
+Pros: fastest to build (one day), cheapest to debug, good as the control arm of the benchmark.
+Cons: identity drift, no reference control, voices differ per clip.
+Cost per 60s at ltx-2.5 720p: 2,880 credits at 1.0x.
+Consistency 1, Story 2, Cost 4, Build effort 5, Fit 3. Use as baseline B0 in the benchmark.
+
+ALT-2  Keyframe-first (image then animate)  [recommended core]
+What: for each shot make a keyframe with an image model using the character references, check identity on the still (cheap: 5 to 150 credits), then image-to-video from the approved keyframe, with optional end frame [R2 R3].
+Pros: identity is verified before video credits are spent; still images are cheap to reroll; end-frame control gives continuity between shots.
+Cons: more stages; image-to-video can still drift during motion; the keyframe step adds cost (50 credits per image at nano-banana level) but saves video rerolls.
+Consistency 4, Story 4, Cost 4, Effort 3, Fit 5.
+
+ALT-3  Reference-to-video (references array) end to end
+What: text-to-video with the character references on every shot [R1].
+Pros: simplest consistent pipeline if the model honours references; kling-3.0 and seedance-2.0 are marketed for references [R1 R3].
+Cons: unknown reference limits (U1); identity bleed between two similar references; costs premium rates for seedance.
+Consistency 3 (unverified), Story 4, Cost 2 to 4 depending on model, Effort 4, Fit 4. Test in probes P-1 and P-3, then combine with ALT-2 as render mode RM-B.
+
+ALT-4  Audio-first (voice then visuals)
+What: write and record dialogue first, then use audio-to-video or lip-sync to place faces to speech [R6 R8].
+Pros: voices consistent by construction; timing fits the audio; good for dialogue-heavy episodes, which most microdramas are.
+Cons: audio-to-video output is a generated scene guided by audio, with less control over blocking; lip-sync adds cost; lip-sync on wide shots is poor.
+Consistency 3 (voice 5, face 3), Story 4, Cost 3, Effort 3, Fit 4. Use as render mode for dialogue close-ups.
+
+ALT-5  Agentic end-to-end frameworks (ViMax, MAViS, Co-Director, CineCrew, Wind Comic, Jellyfish)
+What: adopt a research or open source multi-agent film framework and point it at the Magic Hour backend [P12 to P18; R54 R55 R59].
+Pros: fast start on ideas (shot memory, critique loops).
+Cons: code quality varies, most target other backends, licence and safety review needed, little regard for budget limits or benchmarking, hard to guarantee fail-fast and no-comment notebook rules.
+Consistency 3, Story 3, Cost 2 (agents burn calls), Effort 3, Fit 3. Borrow ideas; do not adopt wholesale. Use as comparison arm B2 in the benchmark if one can be wired in cheaply.
+
+ALT-6  Animated, comic-style (manhua and "AI comic drama")
+What: stylised 2D or 3D animation, stills with motion, voiceover. The Chinese market segment of AI comic dramas ("漫剧") is estimated at over 40 billion yuan within a 121 billion yuan 2026 market by DataEye [R17], and Xinhua reports over 10,000 AI comic-style micro dramas released monthly since early 2026 [R20].
+Pros: lower consistency demands (stylised faces are easier to keep consistent), lower cost (image to short motion), forgiving of lip-sync errors, big proven audience in China.
+Cons: you asked for dramas as engaging as live-action microdramas; stylisation may or may not match your taste; Western microdrama audiences are live-action centred (ReelShort, DramaBox) [R13 R14].
+Consistency 4, Story 4, Cost 5, Effort 3, Fit 4. Strong candidate for the cheapest path to a convincing series. Add a style switch: "photoreal" or "comic".
+
+ALT-7  Open source local stack (Wan 2.2 or LTX or HunyuanVideo with LoRA, ComfyUI)
+What: self-host video models and train character LoRAs for identity.
+Pros: free of API credits, controllable identity via LoRA training, full pipeline ownership [R50 R51 R53].
+Cons: needs 24 to 48 GB VRAM for good quality [R51], more than free Colab gives; training and ComfyUI plumbing is heavy; you said "good output or no output" and "fail fast".
+Consistency 4 (with LoRA), Story 3, Cost 5 (after hardware), Effort 1, Fit 2 right now. Keep as the scale-phase option.
+
+ALT-8  Hybrid live-footage plus AI (real actors, AI for B-roll, dubbing, localisation)
+What: human-shot core with AI for localisation and extra shots; the Indian market runs a lot of human-made microdramas on very low budgets (Alvarez and Marsal commentary on a sub-two-lakh production model) [R83].
+Pros: quality ceiling highest; avoids consistency problems.
+Cons: not what you asked for; needs actors and crews.
+Fit 1. Mentioned for completeness.
+
+Decision matrix (weights: consistency 30, story quality 25, cost 20, build effort 10, fit 15):
+  ALT-1: 1*30+2*25+4*20+5*10+3*15 = 30+50+80+50+45 = 255 / 500
+  ALT-2: 4*30+4*25+4*20+3*10+5*15 = 120+100+80+30+75 = 405
+  ALT-3: 3*30+4*25+3*20+4*10+4*15 = 90+100+60+40+60 = 350
+  ALT-4: 3*30+4*25+3*20+3*10+4*15 = 90+100+60+30+60 = 340
+  ALT-5: 3*30+3*25+2*20+3*10+3*15 = 90+75+40+30+45 = 280
+  ALT-6: 4*30+4*25+5*20+3*10+4*15 = 120+100+100+30+60 = 410
+  ALT-7: 4*30+3*25+5*20+1*10+2*15 = 120+75+100+10+30 = 335
+  ALT-8: not scored (out of scope)
+Reading: ALT-2 and ALT-6 lead; the differences between 405 and 410 are within my scoring noise. Recommendation: build ALT-2 as the engine with ALT-3 and ALT-4 as render modes, and add a comic-style switch (ALT-6) to compare cost and quality on the benchmark. Keep ALT-1 as the permanent control arm and ALT-5 as an optional comparison.
+
+Model stack options on Magic Hour for ALT-2 (per second, 720p unless noted, from R3):
+  Budget stack: images flux-2-klein or qwen-edit (5 to 10 credits), video ltx-2.5 (48/s with audio included) or minimax-h3 (48/s).
+  Balanced stack: images nano-banana (50), video kling-3.0 (48 + 24 audio) or veo3.1-lite (48 + 24).
+  Premium stack: images nano-banana-pro (150), video seedance-2.0 (288/s with audio) or veo3.1 (96 + 24). Premium is only for hero shots (hook and cliffhanger) in a 20k budget.
+Model routing idea: use the premium model only on the first shot (hook) and the last shot (cliffhanger), balanced model on the twist, budget model elsewhere. Retention is concentrated in the first seconds and the ending in this format (my judgment, supported by engagement commentary of grade C [R78 R79]), so spending there is rational. The benchmark can test this routing claim directly.
+
+================================================================================
+4. EXPERIMENT PLAN AND CREDIT BUDGET (20,000 CREDITS)
+================================================================================
+
+Rule: nothing in this section runs until you approve the plan and send the API key through a vault link. Estimates below use the rates in R3.
+
+4.1 Budget allocation
+  Phase 0 setup and probes ................ 3,000 credits (15 percent)
+  Phase 1 demo episodes (E1 to E3) ........ 8,000 credits (40 percent)
+  Phase 2 benchmark runs (draft grade) .... 5,000 credits (25 percent)
+  Phase 3 hero episode (best quality) ..... 3,000 credits (15 percent)
+  Reserve ................................. 1,000 credits (5 percent)
+Hard stops: stop and report when 80 percent of any phase budget is used. Any call over 1,500 credits needs your approval.
+
+4.2 Probe experiments (Phase 0) with cost
+P-0  GET /v1/account: read balance, plan, limits. Cost 0. Resolves U7.
+P-1  Reference semantics: 3 text-to-video 5s clips at ltx-2.5 480p with 1, 2 and 3 references of two different characters; check identity and name binding. About 3 x 120 = 360 credits. Resolves U1.
+P-2  Aspect and models: 9:16 request on ltx-2.5, minimax-h3, kling-3.0 (kling only if plan allows), 4s each at lowest resolution. About 4 x (96 to 192) = 600 credits. Resolves U2.
+P-3  Image-to-video identity: keyframe from image edit with references, then image-to-video 5s on 2 models. Image 50 credits x 2, video 2 x 240 = 580 credits.
+P-4  Native audio dialogue: 5s clip with a quoted line in English on ltx-2.5 and minimax-h3 (audio included), check if the spoken text matches and the mouth moves. 2 x 240 = 480 credits. Resolves U3 for English.
+P-5  Pricing truth: compare credits_charged versus the table for every probe. Cost 0 extra. Resolves U4.
+P-6  Language probe: a Hindi line on the voice generator (about 40 characters = 4 credits) and in native audio (240 credits). Resolves the "80+ languages" statement for audio. Total about 250 credits.
+P-7  Moderation probe: 2 mild conflict prompts (argument, slap implied, threat) at 480p 3s each. About 150 credits. Resolves U6.
+P-8  Lip sync: one 5s close-up (about 120 frames = 120 credits). Resolves lip sync quality and cost.
+P-9  End-frame chaining: image-to-video with end image, 6s. About 290 credits.
+Sum: about 2,900 credits.
+
+4.3 Demo episodes (Phase 1)
+E1: hidden identity, 60s, 2 characters, English, ALT-2 with budget stack. Target 4,000 credits including drafts.
+E2: betrayal, 60s, 3 characters, standalone. Target 2,500.
+E3: continuation of E1 as episode 2 of a series to test the bible and cliffhanger resolution. Target 1,500 (shorter, reuses assets).
+Each episode is judged with the full benchmark layers and a self-assessment note from me.
+
+4.4 Stop conditions and risk controls
+- Identity score below threshold on 3 consecutive shots: stop, switch render mode or model, not just reroll.
+- Moderation block rate above 30 percent in a phase: stop and report; adjust prompts.
+- Cost per accepted second above 2x the Phase 0 estimate: stop and re-plan.
+- Any call that returns unexpected billing: stop all jobs and report with job IDs.
+
+4.5 What I need from you before Phase 0 (short)
+1. Approval of this plan and the budget split. 2. The API key via vault link. 3. Answers to the open questions in Section 12, especially Q5 (credit account) and Q9 (which free LLM to use for the writers' room).
+
+4.6 Cost tables (computed by script from R3 rates; assumptions printed with each table)
+
+TABLE C1. Credits for ONE finished episode of N seconds at 1.0x (every second rendered once, audio on), by model and resolution
+Formula: credits_per_second(model, resolution) + audio_surcharge_per_second, times N. Source rates: R3 (docs.magichour.ai/api-reference/models).
+Episodes per 20,000 credits = floor(20000 / credits_per_episode). Retry multiplier is applied in Table C2.
+
+model              res        c/sec      N=45      N=60      N=90     N=120   eps@60s
+-------------------------------------------------------------------------------------
+ltx-2.5            480p          24      1080      1440      2160      2880        13
+ltx-2.5            720p          48      2160      2880      4320      5760         6
+ltx-2.5            1080p         72      3240      4320      6480      8640         4
+minimax-h3         480p          24      1080      1440      2160      2880        13
+minimax-h3         720p          48      2160      2880      4320      5760         6
+minimax-h3         1080p         72      3240      4320      6480      8640         4
+wan-3.0            480p          48      2160      2880      4320      5760         6
+wan-3.0            720p          96      4320      5760      8640     11520         3
+wan-3.0            1080p        180      8100     10800     16200     21600         1
+kling-3.0          720p          72      3240      4320      6480      8640         4
+kling-3.0          1080p         96      4320      5760      8640     11520         3
+veo3.1-lite        720p          72      3240      4320      6480      8640         4
+veo3.1-lite        1080p         96      4320      5760      8640     11520         3
+veo3.1             720p         120      5400      7200     10800     14400         2
+veo3.1             1080p        144      6480      8640     12960     17280         2
+seedance-2.0-mini  480p          96      4320      5760      8640     11520         3
+seedance-2.0-mini  720p         192      8640     11520     17280     23040         1
+seedance-2.0       480p         144      6480      8640     12960     17280         2
+seedance-2.0       720p         288     12960     17280     25920     34560         1
+seedance-2.5       480p         288     12960     17280     25920     34560         1
+seedance-2.5       720p         576     25920     34560     51840     69120         0
+sora-2             720p         120      5400      7200     10800     14400         2
+
+Notes: kling-3.0 audio is +24/s at 720p and 1080p (R3). seedance-2.x, ltx-2.5, minimax-h3, wan-3.0, sora-2 include audio at no extra credit (R3). wan-2.2 and kling-2.6 have no audio so they are excluded here.
+Docs state video cost = duration x output fps x resolution multiplier (R3), so real charges can differ from this table. Always read credits_charged from the job after completion (R1).
+
+TABLE C2. Usable finished episodes from 20,000 credits when only a fraction of generated shots is accepted
+accept = share of generated shot-seconds that survive review (the rest are rerolled and billed). Supplementary spend per episode: TTS 0.1 credit per character (R3), assume 900 characters = 90 credits; character sheets via image models 5 to 150 credits each, assume 6 sheets x 50 = 300 credits per series, amortised over 5 episodes = 60 per episode.
+
+model              res      c/ep60 |  acc100%   acc60%   acc40%   acc25%
+------------------------------------------------------------------------
+ltx-2.5            480p       1440 |       12        7        5        3
+ltx-2.5            720p       2880 |        6        4        2        1
+ltx-2.5            1080p      4320 |        4        2        1        1
+minimax-h3         480p       1440 |       12        7        5        3
+minimax-h3         720p       2880 |        6        4        2        1
+minimax-h3         1080p      4320 |        4        2        1        1
+wan-3.0            480p       2880 |        6        4        2        1
+wan-3.0            720p       5760 |        3        2        1        0
+wan-3.0            1080p     10800 |        1        1        0        0
+kling-3.0          720p       4320 |        4        2        1        1
+kling-3.0          1080p      5760 |        3        2        1        0
+veo3.1-lite        720p       4320 |        4        2        1        1
+veo3.1-lite        1080p      5760 |        3        2        1        0
+veo3.1             720p       7200 |        2        1        1        0
+veo3.1             1080p      8640 |        2        1        0        0
+seedance-2.0-mini  480p       5760 |        3        2        1        0
+seedance-2.0-mini  720p      11520 |        1        1        0        0
+seedance-2.0       480p       8640 |        2        1        0        0
+seedance-2.0       720p      17280 |        1        0        0        0
+seedance-2.5       480p      17280 |        1        0        0        0
+seedance-2.5       720p      34560 |        0        0        0        0
+sora-2             720p       7200 |        2        1        1        0
+
+TABLE C3. Draft-then-final strategy (recommended). Drafts at low cost to lock script and shot plan, finals only for approved shots.
+Assumes 60s episode, 10 shots of 6s. Draft = ltx-2.5 480p (24/s) for every shot once; final = chosen model for accepted shots with 1.5 attempts per shot on average (accept rate about 67 percent).
+
+final model/res                     draft      final     extras   total/ep
+--------------------------------------------------------------------------
+ltx-2.5 720p                         1440       4320        150       5910  -> 3 eps / 20k
+minimax-h3 720p                      1440       4320        150       5910  -> 3 eps / 20k
+kling-3.0 720p                       1440       6480        150       8070  -> 2 eps / 20k
+veo3.1-lite 720p                     1440       6480        150       8070  -> 2 eps / 20k
+seedance-2.0-mini 720p               1440      17280        150      18870  -> 1 eps / 20k
+seedance-2.0 480p                    1440      12960        150      14550  -> 1 eps / 20k
+seedance-2.5 480p                    1440      25920        150      27510  -> 0 eps / 20k
+
+Lip-sync (R6, R3): 1 credit per frame, doubled on pro. At 24 fps that is 24 credits/s standard, 48 credits/s pro. A 60s episode lip-synced end to end is about 1,440 credits standard. Lip-sync only makes sense on close-up dialogue shots (about 40 percent of runtime) unless native-audio models already sync.
+
+================================================================================
+5. RESEARCH PAPER FINDINGS, INDEXED
+================================================================================
+
+Scope: papers and technical reports found by search on 8 Oct 2026, mostly dated 2025-10 to 2026-09. Depth key: A = I read the abstract or search highlight; T = title and listing only (do not rely on details). I did not read full texts. Dates are submission or listing dates as shown by the source; arXiv IDs starting 26xx are 2026 submissions (YYMM). Full URLs are in Section 13.
+
+5.1 Multi-shot consistency (identity, objects, locations across shots)
+P1  EntityBench / "Towards Entity-Consistent Long-Range Multi-Shot Video Generation" (arXiv 2605.15199, May 2026). Depth A. Finding: maintaining consistent characters, objects and locations across shots remains a challenge; prior evaluations use limited entity coverage and simple consistency metrics; introduces a benchmark. Use: model for our identity-metric design and prompt sets.
+P2  GroundShot (arXiv 2606.20799, Jun to Jul 2026). Depth A. Finding: inconsistencies accumulate across shots; proposes entity-grounded shot scheduling. Use: schedule shots so entities reappear with refreshed anchors; supports our re-anchoring and shot ordering ideas.
+P3  Gloria, consistent character video generation via content anchors (arXiv 2603.29931, Mar 2026). Depth A. Finding: existing approaches give insufficient context to preserve identity or use non-character-centric memory; uses content anchors. Use: validates a character-centric anchor memory in our bible.
+P4  PersonaShot (arXiv 2608.16717, 17 Aug 2026). Depth A. Finding: benchmark for person-centric narrative continuity in multi-shot generation. Use: candidate metric source for series-level identity tracking.
+P5  EM-Vid, training-free entity-centric memory (alphaXiv 2605.23610, May 2026). Depth A. Finding: training-free memory per entity for consistent multi-shot generation. Use: a training-free approach compatible with API-only access, because it needs no weights.
+P6  VideoMemory (arXiv 2601.03655, Jan 2026). Depth A. Finding: memory integration for consistent characters, props and environments across shots.
+P7  InfinityStory (arXiv 2603.03646, Mar 2026). Depth A. Finding: addresses background consistency across shots, multi-subject transitions; framework, dataset and model for long-form storytelling video.
+P22 SubjectAnchor (arXiv 2609.34502, 28 Sep 2026). Depth A. Finding: subject-aware memory-to-video where each shot is generated from remembered subjects. Use: freshest evidence the problem is still being worked on.
+P23 StoryMem (arXiv 2512.19539, Dec 2025). Depth A. Finding: multi-shot long video storytelling with memory for cinematic quality and long-range consistency; memory inspired by human memory.
+P24 Multi-Grid post-training for long-form multi-shot generation (arXiv 2609.06373, 6 Sep 2026). Depth T.
+P19 ShotStream, streaming multi-shot (arXiv 2603.25746, Mar 2026). Depth A. Finding: causal multi-shot architecture for interactive storytelling with low latency.
+P20 CineWeaver, training-free reference-controllable multi-shot generation (arXiv 2607.26529, Jul 2026). Depth T plus title. Use: reference control without training.
+P21 OneStory, adaptive memory multi-shot (CVPR 2026). Depth T.
+P32 CausalCine (arXiv 2605.12496, May 2026) and P47 ReCA (arXiv 2605.26525, May 2026). Depth T.
+What this cluster tells us (synthesis, my judgment): every 2026 paper treats cross-shot identity as unsolved; the strongest ideas are (1) explicit entity memory, (2) anchors refreshed per shot, (3) scheduling shots so entities appear in compatible conditions, (4) training-free methods. We can implement (1) to (3) at the prompt and asset level using an API. We cannot implement training-based methods without model access.
+
+5.2 Reference-conditioned (subject-to-video) generation
+P8  Kaleido, open-sourced multi-subject reference video generation (arXiv 2510.18573, listed Mar 2026). Depth A. Finding: subject-to-video from multiple reference images; open source.
+P9  SkyReels-V3 technical report (arXiv 2601.17323, Jan 2026). Depth A. Finding: unified multimodal in-context conditional video model, includes reference conditioning.
+P10 MSR, Multiple Subject Reference for Video Generation (arXiv 2609.18393, 16 Sep 2026). Depth A. Finding: conditioning on multiple images needs preserving appearance while associating each reference with its intended role.
+P11 MAGREF, masked guidance for any-reference video generation (arXiv 2505.23742; alphaXiv listing Oct 2025). Depth A. Finding: identity inconsistency and entanglement among multiple references are persistent challenges.
+P55 CVPR 2026 "Rethinking Position Embedding as a Context Controller for Multi-Reference and Multi-Shot" (CVPR 2026). Depth A. Finding: proprietary models such as Sora 2 show multi-shot video from multiple reference characters; academic research is limited; core challenge when reference images are highly similar.
+P56 Intrinsic subject-aware attention for controllable multi-subject generation (arXiv 2609.11507, 10 Sep 2026). Depth A. Finding: uncontrollable fidelity strength and semantic drift in multi-subject generation.
+P57 MV-S2V multi-view subject-consistent video generation (SIGGRAPH 2026 proceedings, Jul 2026). Depth A. Finding: multi-view references improve subject consistency.
+Takeaways: (a) multiple references of similar-looking people cause identity bleed [P55 P11]; keep cast visually distinct (hair, wardrobe colour, age) in the bible; (b) multi-view references help [P57], which matches our front, three-quarter, profile sheet; (c) "fidelity strength" is not controllable in most systems [P56], so verify and reject rather than tune.
+
+5.3 Agentic script-to-film pipelines
+P12 Better Call CineCrew, ultra-long narrative-to-film (arXiv 2609.07720, 7 Sep 2026). Depth T.
+P13 "The Script is All You Need", agentic dialogue-to-cinematic video (arXiv 2601.17737, Jan 2026). Depth T plus title.
+P14 MAViS, multi-agent framework for long-sequence video storytelling (EACL 2026). Depth T.
+P15 ViMax, agentic video generation (arXiv 2606.07649, Jun 2026). Depth T.
+P16 AniMaster, story text to animated video via cinematic script generation (arXiv 2609.00346, Jul 2026). Depth T.
+P17 Co-Director, agentic generative video storytelling (arXiv 2604.24842, Apr 2026). Depth A. Finding: chained agentic pipelines suffer semantic drift and cascading failures from independent handcrafted prompts; proposes a hierarchical approach. Use: supports a single shared shot spec object passed through all stages rather than free-text prompts per stage (our schema).
+P18 Camera Artist, multi-agent framework for camera language (arXiv 2604.09195, Apr 2026). Depth T.
+Synthesis: the agent frameworks converge on the same stages we have (script, storyboard, keyframes, video, review). The main lessons are: carry one structured spec, review each stage before the next, and avoid cascading failure by validating early.
+
+5.4 Script and story generation by LLMs
+P25 "Beyond Direct Generation: a decomposed approach to well-crafted screenwriting with LLMs" (arXiv 2510.23163, listed Jan 2026). Depth A. Finding: decomposing screenplay writing beats direct generation. Use: our plan-then-write pipeline.
+P26 Plug-and-Play Dramaturge, divide-and-conquer iterative script refinement (ACM TIST, Jan 2026). Depth A. Use: critic loop for script refinement.
+P27 Multi-framework comparison of outline stages in long-form generation (arXiv 2608.26177, 13 Aug 2026). Depth A. Finding: long-form LLM output suffers length collapse and attribute drift over multi-chapter stories; outline-first writing helps. Use: justification for the bible and context packs in a 21-season series.
+P28 PLOTTER, graph-based reasoning for complex narrative generation (ACL 2026 Findings). Depth A (secondary note). Finding: event graph and character graph with an evaluate, plan, revise loop. Use: our threads and relationships tables can serve as event and character graphs.
+P29 OmniScript, audio-visual script generation for long-form cinematic video (arXiv 2604.11102, Apr 2026). Depth A. Finding: video-to-script task; useful for deconstructing reference episodes into structured scripts automatically.
+P30 HoWToBench, holistic evaluation of LLM writing (arXiv 2604.19071, Apr 2026). Depth A. Finding: reference-based metrics are inadequate for open-ended writing.
+P31 SAGE, hierarchical evaluation of interpretive literary quality (arXiv 2609.06611, 6 Sep 2026). Depth A.
+Synthesis: outline-first, decomposed, critic-looped generation is the 2026 consensus; evaluation of open-ended creative text is itself weak, which supports human anchors in our benchmark.
+
+5.5 Evaluation of generated video and stories
+P48 VBench-2.0 (arXiv 2503.21755; v2 Aug 2025). Depth A. Finding: benchmark suite for intrinsic faithfulness beyond per-frame aesthetics; 16 to 18 dimensions in the VBench family. Use: borrow dimension definitions and open source code (GitHub Vchitect/VBench) for deterministic metrics.
+P49 MovieBench, hierarchical movie-level dataset (CVPR 2025; arXiv 2411.15262). Depth A. Use: character and scene hierarchy for long video evaluation.
+P50 ViStoryBench, story visualisation benchmark (CVPR 2026). Depth A. Use: character consistency metrics for story visualisation.
+P51 StoryBench (arXiv 2308.11606, 2023). Depth T. Older but referenced for continuity of story visualisation.
+P44 NarrLV, narrative-centric evaluation for long video generation (arXiv 2507.11245; Mar 2026 listing). Depth A.
+P43 DirectorBench (arXiv 2605.30090, 28 May 2026). Depth A. Finding: diagnosing long-form video generation with personalised multi-agent evaluation.
+P40 RAVEN-Eval (arXiv 2608.09111, 10 Aug 2026). Depth A. Finding: rubric-guided automatic evaluation using multimodal LLM preference judgement.
+P41 VideoArgus (arXiv 2608.05485, 6 Aug 2026). Depth A. Finding: agentic rubric-grounded evaluation for generation and editing.
+P42 FIRM-Video (arXiv 2608.21839, 22 Aug 2026). Depth A. Finding: check-before-score design for reliable text-to-video reward modelling.
+P45 PlaylistEval (arXiv 2609.34314, 28 Sep 2026). Depth A. Finding: tests whether video-language judges remain reliable when evidence is buried in very long videos. Use: caution for judge reliability; keep episodes short and judge in segments.
+P46 "Bridging visual dynamics and narrative reasoning: MLLMs for short drama quality assessment" (WWW 2026, Apr 2026). Depth T plus title. Use: the most on-topic evaluation paper; read in full before finalising the rubric.
+P52 VGA-Bench, video aesthetics benchmark (CVPR 2026). Depth A. Use: aesthetic scoring dimension.
+Public leaderboards: an aggregator reports Artificial Analysis Video Arena blind Elo plus VBench results (grade C) [R80].
+Synthesis: the field moved from FVD-style single scalars to multi-dimensional, rubric-grounded, agentic judging, and now questions judge reliability. Our benchmark follows that: deterministic metrics, rubric judges with repeats, human pairwise anchors.
+
+5.6 Audio, voice, lip sync, dubbing
+P33 Qwen3-TTS family open-sourced, voice design (Jan 2026). Depth A. Finding: open multilingual TTS suite with real-time latency and fine voice control (Marktechpost summary, grade B-C) [R69].
+P34 X-Voice, zero-shot cross-lingual voice cloning for 30 languages (alphaXiv 2605.05611, May 2026). Depth A.
+P35 VoxCPM2 technical report (arXiv 2606.06928, Jun 2026). Depth A. Tokenizer-free multilingual TTS with voice cloning [R68].
+P54 IndexTTS 2.5 technical report (arXiv 2601.03888, Jan 2026). Depth A. Zero-shot TTS with emotion and duration control; duration control is directly useful for fitting dialogue to shot length [R64].
+P36 CineDub, end-to-end multi-speaker dialogue dubbing (arXiv 2608.15734, Aug 2026). Depth T plus title. Use: path for later language dubbing.
+P37 DreamID-Omni, unified controllable human-centric audio-video generation (arXiv 2602.12160, Feb 2026). Depth T plus title.
+P38 Hallo-Live, real-time streaming joint audio-video avatars (arXiv 2604.23632, Apr 2026) and GitHub release May 2026. Depth T.
+P39 HighSync, lip synchronisation via latent diffusion (arXiv 2605.16918, May 2026). Depth T.
+P62 EditYourself (arXiv 2601.22127), P63 DyStream (arXiv 2512.24408), P64 InteractHuman (ICLR 2026). Depth T.
+Synthesis: open TTS in 2026 is strong and multilingual; duration control (IndexTTS line) and cross-lingual cloning (X-Voice) solve two microdrama needs: fit to shot length and same voice across languages.
+
+5.7 Video foundation models
+P53 HunyuanVideo 1.5 technical report (arXiv 2511.18870, 24 Nov 2025). Depth A. Finding: 8.3B-parameter open model, efficient inference on consumer GPUs, selective and sliding tile attention. Source of the "14 GB VRAM" type claims in blog posts.
+Wan 2.2 (Alibaba, Apache 2.0, GitHub release July 2025; 17k stars at crawl) [R50]. LTX-2.3 and LTX-2.5 (Lightricks) [R53]. Kandinsky 5, MiniMax H3 [R51]. Depth A for repo pages, C for comparison blogs.
+
+5.8 Short-form engagement and micro-drama research
+P58 "The impact of recommendation algorithm features on user retention in short-video platforms" (ACM, 14 Sep 2026). Depth A listing only. Use: retention is driven by recommendation features as well as content; we cannot control distribution, so we optimise intrinsic watchability.
+P59 "Micro-Drama: from Chinese phenomenon to global trend" (Zenodo preprint, 24 Dec 2025). Depth T. Use: read for genre and business model structure.
+P60 "Analysis of the communication and business model of Chinese short video dramas" (SCIRP, Sep 2025). Depth T.
+P61 "Micro-drama in the digital era: an analytical overview" (ResearchGate, Oct 2025). Depth T.
+Other micro-drama studies seen as listings only: integrated models of cultural identity and social influence on paid viewing, emotional value perception in paying, and user segmentation for paid micro short dramas (all 2025 to early 2026, via Exa library listings) [R81].
+Practitioner claims on "first 3 seconds" and "0.7 second rule" are grade C blog content with no primary data I could verify [R78 R79]. I therefore treat the 3-second hook window as a design hypothesis to test in our own benchmark, not as a fact.
+
+5.9 What I could not find
+- A peer-reviewed controlled study of which hook or cliffhanger types drive paid conversion in microdrama apps. Platform data is proprietary.
+- A public dataset of microdrama episodes with per-second retention curves. Third-party trackers give app-level numbers (Section 8) only.
+- Independent evaluation of Magic Hour's models against alternatives. The docs themselves offer a guide for comparing media APIs on your own workload [R84], which suggests we should run our own.
+
+================================================================================
+6. COMMERCIAL AND REGIONAL LANDSCAPE, WITH SIMILARITY SCORES
+================================================================================
+
+6.1 Method for the similarity score (so you can audit it)
+1. Define seven dimensions that describe your idea (Table S1), with weights summing to 100. Weights reflect your brief: story engine and consistency and finished video each carry 20, genre control 12, benchmark loop 12 (you stressed it), prompt-led input 8, series continuity 8.
+2. For each product, read its own page or repository README and score each dimension 0 to 3 using only what that page claims. Scores are claims, not tested behaviour. I did not run any of these products.
+3. Similarity = sum of weight x score / 3, from 0 to 100.
+4. Confidence tag: high, med, low based on how much I read.
+5. A score of 80 does not mean the product is as good. It means its described scope overlaps yours.
+Limits: marketing pages overstate; several are SEO sites (grade C) that may be thin wrappers; I may have missed products in other languages; Chinese platform internals are known mainly through press (Caixin, Xinhua), not product pages.
+
+6.2 Tables
+
+TABLE S1. Dimensions and weights (sum 100)
+   20  D1 story/script engine for microdrama (hooks, beats, cliffhanger)
+   20  D2 reference-image character consistency across shots
+   12  D3 genre templates and scene-level control
+   20  D4 finished video with audio from one prompt
+    8  D5 prompt-led user input, any language/niche
+   12  D6 built-in quality evaluation or benchmark loop
+    8  D7 serial continuity across episodes
+
+Score per dimension: 0 = absent or no evidence, 1 = partial or implied, 2 = present, 3 = core strength with explicit evidence in the cited page. Similarity = sum(weight x score/3), range 0 to 100.
+Confidence: high = product is well understood or documented; med = marketing page plus snippet read; low = only a search snippet or a generic page read. Scores rest on the vendor's own descriptions, not hands-on testing. D6 is scored 0 for almost everyone because no product page advertises a same-inputs regression benchmark.
+
+TABLE S2. Ranked similarity to this idea
+sim   product                                              type                 conf     D1..D7                 refs
+----------------------------------------------------------------------------------------------------------------------------------
+85    Higgsfield (short drama via agent)                   commercial platform  med      3 3 2 3 3 1 2          R44 R45
+84    Fable Showrunner                                     commercial platform  med      3 3 2 3 3 0 3          R47 R48
+83    ByteDance stack (Doubao, Jimeng, Hongguo, Douyin)    China ecosystem      low      3 3 2 3 1 1 3          R22
+80    Wind Comic multi-agent pipeline                      open source MIT      med      3 3 2 3 2 1 1          R55
+80    PureVis Studio Agent                                 open source          low      3 3 2 3 2 1 1          R59
+80    Co-Director / MAViS / CineCrew class (papers)        research             low      3 3 1 3 2 2 1          P12 P14 P13
+79    Pexo AI Micro Drama Maker                            commercial web       med      3 3 2 3 2 0 2          R38
+79    Jellyfish AI Short Drama Studio                      open source          med      3 3 2 3 2 0 2          R54
+76    ViMax agentic video generation                       research code        low      3 3 1 3 2 1 1          R98
+76    OpenDrama studio                                     commercial web       med      3 2 3 3 2 0 2          R39
+73    Medeo Short Drama Generator                          commercial web       low      3 2 3 3 2 0 1          R37
+72    LTX Studio                                           commercial platform  med      2 3 2 3 2 0 2          R43
+69    huobao-drama                                         open source          low      3 2 2 3 2 0 1          R58
+69    Open-AI-Micro-Drama-Generator                        open source          med      3 2 2 3 2 0 1          R56
+63    Pippit AI Drama Generator (CapCut family)            commercial web       low      2 2 2 3 2 0 1          R41
+63    OpenArt AI Shorts / Story                            commercial platform  med      2 2 2 3 2 0 1          R46
+59    Drama.Land screenplay workflow                       commercial web       low      3 1 2 2 2 0 2          R42
+59    PenShot story-shot-agent                             open source          med      3 3 1 1 2 0 1          R57
+56    aishortdrama.io                                      commercial web       low      3 1 2 2 2 0 1          R36
+36    Magic Hour web tools (no story layer)                API platform         high     0 2 0 3 1 0 0          R9
+19    VibeShort (AI short drama viewing app)               consumer app         low      1 0 0 1 0 0 2          R40
+19    Kuku TV (India, human-made plus AI)                  reference product    med      1 0 1 0 0 0 3          R29
+8     ReelShort (human-made catalogue)                     reference product    high     0 0 0 0 0 0 3          R13
+8     DramaBox (human-made catalogue)                      reference product    high     0 0 0 0 0 0 3          R32
+
+6.3 Notes on the main products (what each is, evidence, why it scored as it did)
+
+A. AI tools that generate short dramas
+- Higgsfield. Platform for cinematic social video from a link, image or idea; OpenAI's case study (21 Jan 2026) says it uses GPT-4.1 and GPT-5 for planning and Sora 2 for creation [R45]. A May 2026 LinkedIn post says "Higgsfield Supercomputer" can make a short drama from one prompt: researches, writes the script, storyboards, locks characters, generates scenes and checks its own work [R44]. This is the closest commercial analogue (score 85). Missing, as far as the pages say: a published quality benchmark. Grade: A for the OpenAI page, C for the social post.
+- Fable Showrunner. Amazon-backed (Alexa Fund) platform launched 30 Jul 2025 that generates TV-style episodes with persistent characters, worlds and canon, and lets users insert themselves [R48 R47 R49]. Strong on series continuity (3). Its content is mostly animated, not vertical live-action microdrama. Press reports nine AI "South Park" episodes with 80M+ views, a claim from a secondary source (grade C) [R85].
+- Pexo, Medeo, OpenDrama, Pippit, aishortdrama.io, Drama.Land. Web tools that take a prompt or script and return vertical, hook-first episodes with consistent characters (Pexo) or script, scenes, voice-over and subtitles (aishortdrama.io, Pippit) [R36 R37 R38 R39 R41 R42]. All are vendor pages (grade C). Several name ReelShort or DramaBox styles in marketing. None advertises a regression benchmark.
+- LTX Studio. Production workspace with consistent characters across scenes (AI Characters feature on the page) [R43]. Built by Lightricks, the maker of the open LTX models.
+- OpenArt. AI shorts generator with templates, voiceover and lip-sync [R46].
+- VibeShort. An app that streams AI short dramas (App Store page, Jul 2026) [R40]; relevant as a distribution channel and as evidence of consumer demand for AI-made dramas.
+- ByteDance ecosystem in China. Caixin (1 Jun 2026) describes a closed loop: Fanqie Novel for copyrighted stories, Doubao and Jimeng AI tools, Volcano Engine cloud, Hongguo and Douyin distribution, Ocean Engine advertising [R22]. Hongguo free short drama app is reported above 300 million MAU, 125 minutes average daily use per monthly active user (DataEye via ThePaper, Aug 2026) [R17]. This is the largest AI microdrama production system in the world, not available as a product to you.
+B. Consumer microdrama platforms (human-made catalogues, reference products)
+- ReelShort (Crazy Maple Studio, COL Group). MPA projects 2026 revenue about $1.05B and first meaningful profit [R13]. COL Group accounts reported CNY 5.72B (about $796M) revenue for 2025 and 70M+ monthly users per a Streaming Radar summary (grade C, check original) [R32]. Sensor Tower puts ReelShort at nearly $140M in-app revenue for Q1 2026 [R15]. DataEye says ReelShort led H1 2026 overseas in-app revenue at $78.8M with $10.25 per download (their measurement basis differs from Sensor Tower; these numbers are not additive) [R16].
+- DramaBox. About $139M Q1 2026 in-app revenue at Sensor Tower, similar to ReelShort [R15 R86]; DataEye H1 figure $56.9M at $8.27 per download [R16].
+- GoodShort, NetShort, DramaWave, FlickReels, ShortsWave, DreameShort, Kalos TV, ShortMax [R16]. DataEye says the top ten overseas apps took 93.5 percent of H1 2026 in-app revenue, about $298M [R16]. ShortMax has a much lower per-download figure ($3.62) [R16].
+- India: Kuku TV (Kuku Technologies, IPO-bound, issue size reported at 2,500 to 3,500 crore rupees) [R29], Story TV, Rocket Reels, plus JioHotstar, Amazon MX Player and ZEE5 launches [R87]. Pocket FM shut its microdrama app Pocket TV in June 2026 six months after launch [R27 R28]. BBC: India market about $300M, shows over 50 episodes each under two minutes [R26].
+- China domestic: Hongguo (free, ad-supported), Douyin, Kuaishou. NRTA reports over 800 million micro-drama users; CNNIC series splits out mini-drama users (576M in its 2024 edition) [R18 R88].
+C. Platforms and open source stacks: see Section 7.
+
+6.4 What this landscape implies for you (judgment)
+1. The category "prompt or script in, short drama out" is crowded. Expect your v1 to match features, not differentiate on them.
+2. Nobody visible advertises (a) same-input regression benchmarks, (b) a persistent multi-season bible, (c) per-shot cost governance, (d) Indian language depth. Those are your openings. (b) is directly your "21 seasons" requirement.
+3. The best-funded actors (ByteDance, ReelShort) are vertically integrated: IP, models, distribution. A generator without distribution has a harder path to revenue; selling to creators and studios, or feeding one platform, is more realistic than building a consumer app first.
+4. Price points: some AI-drama services quote about 10 credits per second of video (Drama.Land page, estimate) [R42]; Lume Studio quotes $400 to $1,200 per 1 to 2 minute AI episode in 4K as a service (vendor, grade C) [R25]; reported Chinese AI series cost about 50,000 yuan (about $7,400) per series versus 300,000 to 800,000 yuan for a 100-episode live-action series in one Chinese district [R21 R89]. Magic Hour's own cost for a 60s episode at the cheapest tier is 1,440 credits, about $3 to $4 at $1 per 400 credits [R3 R10; my arithmetic], before rerolls, so the raw render cost is small next to the service quotes; the cost is in quality control and human time.
+
+================================================================================
+7. OPEN SOURCE MAP FOR EVERY PIPELINE STAGE
+================================================================================
+
+Rules applied (your standing rules): free only; install from official registries (PyPI, apt) or vendor repos you approve; check publisher reputation; never pipe a URL into a shell; building from vendor GitHub source needs your explicit approval each time (it was allowed only for the earlier experiment). Licence notes come from repo pages as seen on 8 Oct 2026; licences change, so re-check before use. Star counts are as captured at crawl time and only indicate adoption.
+
+7.1 End-to-end script-to-drama projects (study, do not adopt blindly)
+- Jellyfish AI Short Drama Studio (github.com/idea15/Jellyfish, listed Mar 2026). Script input, smart storyboard, character, scene and prop consistency management, AI video generation, editing, export [R54]. Most similar in scope to your pipeline. Check licence and maturity before reading code.
+- Wind Comic (github.com/ChrisChen667788/wind-comic, Apr 2026, MIT). Multi-agent pipeline from one line to script, storyboards, voiceover, timeline, mp4; provider-agnostic (OpenAI, Claude, Midjourney, Minimax, Veo, Sora, fal, ComfyUI) [R55]. Good reference for a provider abstraction.
+- Open-AI-Micro-Drama-Generator (github.com/2005-ab, Jun 2026). Multi-agent screenwriter, storyboard, frames, video, wired to several commercial video models [R56]. Small project; review for ideas only.
+- PenShot / story-shot-agent (github.com/Hungbk295, May 2026). LangGraph pipeline that parses scripts into shots and text-to-video prompts with cross-clip character consistency; MCP and REST [R57].
+- huobao-drama (github.com/chatfire-ai, Jan 2026) [R58].
+- PureVis Studio Agent (github.com/susirial/purevis_ve_cli, Apr 2026). CLI for concept, character and scene design, script, storyboard, keyframes, video, visual review [R59].
+- script-to-video-production-agent (github.com/jackterror, Jul 2026): narration-locked scenes, prompt packs, asset queues [R60]. Oriented to tutorials.
+- HKUDS VideoAgent (MIT, EMNLP 2026 paper) for video understanding, editing and remaking [R98]. Useful for deconstructing reference episodes.
+- A repository mirrored at download.plaud.ai labelled "dramaclaw" appeared in search results. The domain does not look like GitHub. I did not use it and recommend ignoring it unless verified at its original source.
+Caution: all of these are young repositories; treat code as untrusted until reviewed. Do not run install scripts without your approval.
+
+7.2 Video generation models (for Alt-7 and for future backends)
+- Wan 2.2 (Alibaba, Apache 2.0, github.com/Wan-Video/Wan2.2). 5B variant makes a 5-second 720p clip on a 24 GB class card per a hosting guide; the MoE 14B class needs 48 GB or more [R50 R51]. Magic Hour also offers wan-2.2 and wan-3.0 via API [R3].
+- LTX-2.3 and LTX-2.5 (Lightricks): fast, native audio, long clips; the open weights licence has revenue limits per one comparison article (grade C), verify [R53 R96]. Magic Hour offers ltx-2.5 [R3].
+- HunyuanVideo 1.5 (Tencent, 8.3B parameters, arXiv 2511.18870): consumer-GPU oriented; territorial licence limits reported in the EU, UK and South Korea by blog sources (grade C), verify [P53 R97].
+- Mochi 1 (Apache 2.0 per a comparison article, grade C) [R96]. Kandinsky 5 and MiniMax H3 appear in a 2026 comparison (grade C) [R51].
+- Kaleido (multi-subject reference video, open source) [P8]. SkyReels-V3 [P9].
+Take: for your Colab-only constraint these are not runnable at quality; they matter for the scale phase and as a price-pressure fallback.
+
+7.3 Image generation and editing (character sheets, keyframes)
+- Free alternatives to Magic Hour image credits: open source editors such as Qwen Image edit class models and FLUX.2 klein class models, which Magic Hour itself exposes (qwen-edit, flux-2-klein, z-image-turbo, krea-2 are listed at 5 to 10 credits) [R3]. Local running needs a GPU. ComfyUI (open source) is the common runner.
+- Identity tools: IP-Adapter-FaceID and InstantID-class adapters, PuLID, and LoRA training (kohya or similar) are the open source identity routes for Alt-7. I did not verify 2026 versions; treat as leads, not recommendations.
+- Face detection and recognition: InsightFace (the library is open source; many pretrained weights are research-only, check licence), MediaPipe face detection (Apache 2.0, your earlier face-mesh work used it), facenet-class models.
+
+7.4 Speech
+- IndicF5 (AI4Bharat): TTS for 11 Indian languages trained on 1,417 hours [R65]. Best open lead for Hindi.
+- IndexTTS and IndexTTS-2 / 2.5 (github.com/index-tts, 24k stars; licence "Other", verify): zero-shot cloning with emotion and duration control [R64 P54]. A community request for Hindi support was open as of Sep 2025 [R64].
+- CosyVoice 3 (FunAudioLLM, Apache 2.0, about 22k stars): multilingual voice generation [R66].
+- Qwen3-TTS (Jan 2026 open release), VoxCPM2, MOSS-TTS, X-Voice (30 languages), Confucius4-TTS [P33 P35 P34 R70 R99].
+- ASR for captions and timing: Whisper-class models (open source); not searched today.
+Use: per-language lexicon; fix one voice per character; test each language with a short read-aloud benchmark before declaring it supported.
+
+7.5 Lip sync and talking video
+- LatentSync (ByteDance; 1.6 at 512x512; about 18 GB VRAM for the high-quality path) [R62 R63].
+- MuseTalk 1.5 (Tencent Music Lyra Lab) real-time dubbing; community reports of running on recent consumer GPUs [R63 issue 409].
+- InfiniteTalk (MeiGen-AI, Apache 2.0, about 7.7k stars): audio-driven unlimited-length talking video, image-to-video and video-to-video [R61].
+- Hallo-Live (research code, May 2026) [P38 R71]; MOVA is mentioned in a lip-sync comparison [R63].
+Use: Magic Hour lip sync first; these are the scale-phase fallback.
+
+7.6 Evaluation tooling
+- VBench and VBench-2.0 (github.com/Vchitect/VBench) for dimensions such as subject consistency, motion smoothness, aesthetic quality [P48].
+- ViStoryBench code (github.com/ViStoryBench/vistorybench) for character consistency in story visualisation [P50].
+- Face-embedding similarity (InsightFace or similar), speaker-embedding similarity (ECAPA-TDNN class from SpeechBrain, Apache 2.0), audio loudness (ffmpeg loudnorm or pyloudnorm), scene cut detection (PySceneDetect, BSD). These are standard open source libraries from my general knowledge; versions to be confirmed at install time.
+- LLM judges: any free OpenAI-compatible endpoint; Section 10 keeps judge prompts frozen.
+
+7.7 Orchestration and infra
+- Python 3.x, FFmpeg (apt), SQLite (stdlib), FAISS (PyPI), pydantic for schemas, tenacity or custom retry, httpx. The Magic Hour Python SDK "magic_hour" on PyPI is used in their docs [R2]; verify publisher (magichour) and version before installing.
+- Postgres, Redis, a job queue (Celery or RQ), object storage (S3-compatible) for the scale phase; Docker for packaging; GitHub Actions for CI. All common and open source.
+- Provenance: the C2PA open standard and its open source SDKs for signing content credentials (stretch goal, Section 9).
+
+================================================================================
+8. DATA ANALYST TREATMENT: MARKET, ENGAGEMENT, UNIT ECONOMICS
+================================================================================
+
+8.1 Market size: sources disagree, so here are all of them with their scope
+Global
+- Omdia (Feb 2026): global microdrama revenue $11B in 2025, $14B in 2026; $3B of the 2026 figure outside China; the US is the largest international market [R12].
+- Media Partners Asia (MPA, Aug 2026): revenue outside China $2.7B growing to $3.6B in 2026 and $9.5B by 2031 [R11]. ReelShort revenue to rise by a third in 2026 [R11], projected $1.05B with about $63M EBITDA per a secondary summary [R13 R32].
+- Variety (Nov 2025): headline "$26 billion global microdrama boom" (a forward-looking figure; scope not confirmed from the snippet) [R33].
+- eMarketer (Aug 2026): microdramas of 1 to 2 minutes now hold more daily attention per user than the largest subscription streamers in the US (their framing) [R31].
+Differences: Omdia counts China domestic spend; MPA's outside-China figure excludes it; Variety's figure is a longer-horizon projection. Do not add them.
+China
+- DataEye (via ThePaper and 36Kr, Aug 2026): domestic micro-drama plus AI drama and comic drama market above 121 billion yuan in 2026, of which AI drama and comic drama above 40 billion yuan; free-model micro-drama 57.3 billion yuan (up 8 percent); users 851 million as of May 2026, 66.7 percent of internet users; 133 million users added in about four months; Hongguo above 300M MAU [R17 R90].
+- Ocean Engine and CTR (Sep 2026): market passed 100 billion yuan in 2025, forecast 121 billion in 2026, more than 851 million users; viewers now choose by actor, IP and studio, not only plot [R91].
+- NRTA via chinaculture.org (Oct 2026): over 800 million micro-drama users, about 57 percent of the population [R18].
+- Production side: more than 50,000 AI-native titles on Douyin in March 2026 alone, at about one-tenth the cost of live action [R24]; about 128,000 micro-dramas launched in Q1 2026 with AI above 95 percent per one industry association figure relayed by a research firm (grade C-B) [R19]; over 10,000 AI comic-style productions a month since early 2026 (Xinhua citing DataEye) [R20]; AI series costing about 50,000 yuan (about $7,380) [R21].
+- Regulation: China's NRTA issued micro-drama management measures in July 2026 after a June draft [R90].
+India
+- BBC (May 2026): about $300M now, projected $4.5B by an unspecified year (the snippet is cut) [R26]. Entrepreneur India (Jul 2026): $300M market "just taking off" [R34]. Hollywood Reporter India (Jun 2026): projected $1.5B by end of 2026 (an optimistic figure that conflicts with the $300M; treat with caution) [R35]. Hindustan Times (Jul 2026): vertical drama segment estimated at 3,000 to 4,000 crore rupees (about $360 to $480M at about 83 rupees per dollar, my conversion) [R28].
+- Platforms: Kuku TV leads; Pocket FM shut Pocket TV in June 2026 to focus on audio and overseas, raising viability questions; Alvarez and Marsal commentary says platforms grew 91 percent in a year but the sub-two-lakh production model is a double-edged sword and AI will not replace writers [R27 R28 R83].
+Take-away table (what I would put in a deck):
+  Region        2026 size (source)                   Signal
+  Global        $14B (Omdia)                         growth, China-heavy
+  Ex-China      $3.0B to $3.6B (Omdia, MPA)          US leads, profits emerging at the top
+  China         121B yuan (DataEye, Ocean Engine)    AI share rising, regulation arriving
+  India         $0.3B to $0.5B (BBC, HT)             early, shake-out in progress
+
+8.2 App-level performance (downloads and revenue)
+- Sensor Tower State of Short Drama Apps 2026 (12 Jun 2026): downloads above 850M in Q1 2026, up 140 percent YoY; in-app revenue about $750M, up 20 percent [R14 R15]. Downloads outgrow revenue: monetisation per download is falling as the user base broadens.
+- Q1 2026 in-app revenue: ReelShort about $140M, DramaBox similar, each about 19 percent of the category (Sensor Tower via ReelPulse) [R15 R86].
+- DataEye H1 2026 overseas in-app revenue: ReelShort $78.8M ($10.25 per download), DramaBox $56.9M ($8.27), GoodShort $38.8M ($11.93), NetShort about $35M, DramaWave $34.2M, with FlickReels at $16.5 and ShortsWave at $13.2 per download; the top ten took 93.5 percent of about $298M [R16]. The two sources (Sensor Tower, DataEye) use different scopes and cover different periods, so they are not directly comparable.
+- Concentration: top three apps hold about 60 percent of non-China revenue; panel of 1,549 tracked apps in July 2026 (Streaming Radar, grade C) [R32].
+Interpretation: the market rewards scale and catalogue. A generator's customer is more likely a studio, a creator or a platform than the end viewer.
+
+8.3 Engagement indicators
+- Hongguo: 125 minutes average daily use per monthly active user (DataEye) [R17].
+- US: eMarketer says attention per user exceeds large subscription streamers [R31].
+- Format: episodes of 1 to 2 minutes, often 50 to 100 or more episodes per series [R26 R31].
+- Paywall trend: platforms removed paywalls as viewers lost interest (Caixin, Aug 2025) [R30], consistent with ad-supported growth in China and TikTok entering microdramas (Business Insider, Dec 2025) [R92].
+- Unknowns: no public per-second retention data, no public hook-to-conversion data.
+
+8.4 Production cost comparison (what AI changes)
+  Source                          Figure                                           Grade
+  Xinhua (Apr 2026)               100-episode series 300k to 800k yuan (live)      A-B  [R89]
+  BriefAsia (Jul 2026)            AI series about 50k yuan ($7,380)                B-C  [R21]
+  TNW (May 2026)                  AI about one-tenth of live-action cost           B    [R24]
+  Lume Studio (Sep 2026)          $400 to $1,200 per 1 to 2 min AI episode (4K)    C    [R25]
+  Drama.so (Aug 2026)             live studio quote ¥300k per episode (marketing)  C    [R93]
+  Magic Hour direct render        1,440 to 4,320 credits for 60s (about $3.6 to $10.8 at 400 credits per $)  my arithmetic from R3, R10
+The direct render cost is small. The expensive part of good AI drama is iteration, selection and human taste. That is the part our benchmark and shot verifier automate.
+
+8.5 Unit economics model for a hypothetical product (illustrative, my numbers)
+Assumptions: credit price $1 per 400 credits (Magic Hour pack text, one tier) [R10]; episode 60s; balanced stack; acceptance 60 percent.
+  Credits per accepted episode (Table C2 style): about 4,500 to 6,000 for kling-3.0 720p with audio, about 2,900 to 3,800 for ltx-2.5 720p.
+  Dollar render cost per accepted episode: about $7 to $15 (balanced) or $4 to $10 (budget).
+  Add LLM and audio: about $0.5 to $2 (assumption).
+  A 40-episode season: about $300 to $700 in render cost under these assumptions.
+  Compare to Chinese AI series at about $7,400 all-in [R21]: our render-only number is in the same order of magnitude or lower, but excludes labour, marketing and rights.
+Revenue side, using the observed per-download in-app revenues of $3.6 to $16.5 on the top apps [R16]: a series would need tens of thousands of paying viewers to cover cost; paying behaviour depends on distribution, not generation. This model is a sketch, not a forecast.
+
+8.6 Trends to watch (dated)
+1. AI share of production above 95 percent of new titles in China in Q1 2026 (grade C-B) [R19]; quality now the differentiator ("industry shifts toward quality", Xinhua Apr 2026) [R89].
+2. Regulation: China's July 2026 measures [R90]; India's Feb 2026 synthetic media rules [R72]; EU Article 50 reportedly in effect 2 Aug 2026 (secondary) [R77].
+3. Talent-and-IP branding: viewers choose by actor, IP, studio [R91]; an AI-only studio will need recognisable IP, a consistent cast (your series bible) and a style.
+4. Platform expansion: TikTok entering microdramas [R92]; Indian OTTs launching vertical formats [R87].
+5. Monetisation shift from pay-per-episode to ads and hybrid [R30 R17].
+6. Pocket TV's closure is a reminder that early entrants can fail [R27].
+
+8.7 Data collection plan (if you want to go deeper as a data scientist)
+Dataset D1: 300 microdrama episode metadata rows (title, platform, genre, runtime, episode number, hook type, twist type, cliffhanger type) labelled by you or by the deconstruction agent on episodes you provide. Do not scrape platforms; use episodes you can lawfully watch and your own notes.
+Dataset D2: benchmark runs table (version, case, metrics, credits, seconds).
+Dataset D3: human ratings (pairwise).
+Analyses: (a) which structural features correlate with your own enjoyment ratings (regression with 100 to 300 rows, regularised, report uncertainty); (b) credit cost versus quality curves per model and shot type; (c) identity drift versus shot index and scene length; (d) acceptance rate by shot risk flag.
+Ethics: no scraping behind logins; no use of copyrighted scripts as training data.
+
+================================================================================
+9. LEGAL, PLATFORM AND SAFETY CONSTRAINTS
+================================================================================
+Not legal advice. Each row says what the source states and what it means for design.
+
+9.1 India (your jurisdiction)
+- MeitY notified Amendment Rules 2026 to the IT Rules 2021 on 10 Feb 2026 (G.S.R. 120(E)), effective 20 Feb 2026, introducing "synthetically generated information" (SGI) due diligence for intermediaries [R72 R73 R74 R75 R95]. Press summaries report mandatory labelling of AI-generated content and short takedown windows of hours (Times of India, 10 Feb 2026, grade B) [R94]. I did not read the full gazette text; read the official PDFs before launch.
+Design impact: visible and metadata labels on every output; a published-content register with provenance; user-facing disclosure; a takedown process.
+9.2 Platform rules (secondary sources, grade C, verify at the platform)
+- YouTube: July 2025 update renamed "repetitious content" to "inauthentic content"; mass-produced or repetitive content is ineligible for monetisation [R76 official support page, grade A]. Series of near-identical template episodes are a risk.
+- TikTok, Instagram, YouTube require disclosure of realistic AI video; Instagram's AI-generated profile label and reach limits dated 31 Aug 2026 are reported by secondary sites (grade C) [R77]. EU AI Act Article 50 transparency duties reportedly applied from 2 Aug 2026 (grade C) [R77].
+Design impact: per-episode variation checks (avoid "mass-produced" flags), disclosure toggle in export, no deceptive realism for real people.
+9.3 Magic Hour terms
+- You own generated assets subject to terms and law; assets may not be unique or copyrightable; paid subscribers, credit pack buyers and usage-billed customers may use commercially; free video outputs may carry a watermark [R10 FAQ]. This matters if your 20k credits are free-tier starter credits: you might not have commercial rights or watermark-free output. Question Q5 and probe P-0.
+- Voice generator offers celebrity voices [R7]; using them for anything other than parody-safe private tests is a legal and ethical risk. Default off.
+9.4 Real-person likeness and consent
+- Reference photos of real people require consent attestation; minors excluded; no public figures; no sexual content. Face-swap tools exist on Magic Hour but are out of scope.
+9.5 Content safety for the genre
+- Microdrama genres use violence, infidelity, coercion and abuse as story fuel. Add a content-rating field per series; hard blocks on sexual violence, minors in danger, self-harm instructions, hate; "implied not shown" default for violence; check Magic Hour moderation behaviour (probe P-7).
+9.6 Copyright and originality
+- Do not use copyrighted scripts as retrieval text. Use structural beat sheets. Do not mimic named living creators. Use free-licensed music with attribution logs.
+9.7 Data protection
+- Uploaded character images are personal data; store minimal, encrypted at rest in the product phase; delete on request; do not send them to any service you have not approved.
+9.8 Security
+- API key via vault link only; never in notebooks; the notebook reads it with getpass or an environment variable; no key in logs; budget governor prevents runaway spend.
+
+================================================================================
+10. QUALITY EVALUATION AND BENCHMARK DESIGN
+================================================================================
+
+Your test: "make something you would actually watch, relative to other microdramas and shorts", judged on consistency of voice and video graphics, art style and overall parameters, and "will I enjoy it?". The benchmark turns that into a repeatable instrument. A first harness (structural checks, LLM-judge rubric, human CSV, version comparison) already exists from my first build; this section extends it.
+
+10.1 Principles
+1. Same inputs, every time: a frozen case set, frozen seeds where the API allows, frozen judge prompts and judge model IDs.
+2. Separate what we change (pipeline version) from what we hold fixed (cases, rubric, judges).
+3. Three layers of evidence: deterministic metrics, model judges, human judgments. Report all three; decide on humans.
+4. Cost is a metric: credits per accepted second and wall-clock per episode.
+5. Report noise: repeat judge calls 3 times, report mean and standard deviation, and mark deltas smaller than noise as ties.
+6. Anchors: always include two reference clips (a human-made microdrama you pick, and a deliberately weak AI baseline B0) so the scale cannot drift.
+
+10.2 Benchmark case set (frozen v1, 12 cases)
+ C01 hidden identity, 60s, English, 2 characters
+ C02 revenge, 60s, English, 3 characters
+ C03 betrayal, 60s, English, 3 characters, dialogue heavy
+ C04 CEO romance, 60s, English, 2 characters, close-ups
+ C05 supernatural, 60s, English, 3 characters, visual effects risk
+ C06 mafia, 60s, English, 4 characters, group scene risk
+ C07 family inheritance, 90s, English, 5 characters (ensemble)
+ C08 hidden identity, 60s, Hindi (experimental until audio probe passes)
+ C09 series test: episode 2 of C01 (must resolve C01's cliffhanger)
+ C10 series test: episode 3 of C01 after a time skip (era assets)
+ C11 user-supplied reference photos (consented), 60s
+ C12 user-specified required scenes (3 scenes must appear in order)
+Starting subset for the 20k budget: C01, C03, C09 only at draft grade (Phase 2 spends about 5,000 credits).
+
+10.3 Layer 1: deterministic metrics (no judgment)
+Structure (script): beat coverage, hook in first 3 seconds, last shot is cliffhanger, shot durations within 2 to 8s, words per second at most 2.6, line length at most 14 words, speaker validity, required scenes present in order.
+Identity (video): face embedding cosine similarity of each shot's main face to the character's reference embedding; per-character mean and minimum; across-shot pair similarity; flag below 0.5 (initial guess; calibrate on your accepted shots). Metric source ideas: P1 P4 P50.
+Style: colour histogram distance between shots in a scene, palette drift across the episode; VBench style dimensions where applicable [P48].
+Motion and artefacts: frame difference spikes, black frames, frozen frames, flicker, text artefacts (OCR detects unwanted text), aspect and resolution compliance.
+Audio: integrated loudness near target, clipping, silence gaps longer than 0.8s inside dialogue, speaker embedding similarity between lines by the same character (ECAPA class), word error rate of ASR on dialogue versus script (intelligibility), lip-sync offset estimate when measurable.
+Editing rhythm: cuts per 10 seconds, shot length distribution compared to the reference set.
+Cost: credits_charged sum per accepted episode, per accepted second, generation wall-clock, retries.
+
+10.4 Layer 2: model judges
+Script judge (8 criteria, exists): hook, emotional target, escalation, twist, cliffhanger, dialogue, juice, visual filmability. Temperature 0, 3 repeats, report mean and spread. Pairwise mode: judge sees script A and B in random order, picks one and explains in 2 sentences; run both orders to cancel position bias.
+Video judge: a multimodal model watches sampled frames plus the audio transcript (avoid claiming it hears tone): criteria voice consistency (from transcript speaker labels plus the audio metrics), character consistency, art style consistency, lip-sync, pacing, watchability. Because long-video judging reliability is an open question [P45], judge per 15 to 20 second segment, then aggregate, and rely on the judge only for dimensions that correlate with your ratings (10.6).
+Rubric sources: RAVEN-Eval, VideoArgus, FIRM-Video, DirectorBench ideas [P40 P41 P42 P43]; short drama quality assessment [P46] to be read in full.
+
+10.5 Layer 3: human evaluation (you)
+Time-boxed and cheap: 
+- Pairwise: for each release candidate, 6 blind A versus B comparisons (candidate vs previous best) on random cases; you pick the one you would keep watching and tag the reason (hook, story, faces, voice, style, pacing). Under 15 minutes per release.
+- Absolute: 1 to 10 "would I enjoy it" and 1 to 5 on the video rubric for 3 cases per release (the human_scoring.csv exists).
+- Binary "would I keep watching to the end", and "would I tap next episode" (the format's core outcome).
+- Optional external raters: 3 friends from your target audience for the hero episode, 10 minutes each; log age band and microdrama familiarity.
+Inter-rater reliability only matters if you add raters; otherwise log your own test-retest: rate 3 old clips again after 3 days.
+
+10.6 Calibration, series metrics and acceptance gates
+Calibration: after the first 20 pairwise comparisons, compute Spearman rank correlation between each automatic metric or judge criterion and your preference margin. Keep criteria with correlation above 0.6, down-weight the rest, and publish the weights with the benchmark version.
+Composite score (initial, to be recalibrated): 35 percent human pairwise win rate vs previous best, 20 percent identity and style consistency, 15 percent audio (voice consistency plus intelligibility), 15 percent script judge, 10 percent structure compliance, 5 percent cost efficiency. This is a starting guess, not a validated formula.
+Series metrics (for the 21-season requirement):
+- Canon violations per episode found by the continuity checker (target 0 on rule checks).
+- Cliffhanger resolution rate and latency (resolved within 3 episodes).
+- Thread health: percentage of open threads advanced within 5 episodes; abandoned threads count.
+- Identity drift: similarity of newest episode character crops to the season-1 canonical references, tracked per season (alert threshold set after the first season).
+- Voice drift: speaker similarity to the season-1 voice sample.
+- Repetition index: n-gram and structure similarity between recent episodes (avoid "mass-produced" patterns [R76]).
+Acceptance gates:
+- Demo gate: composite improves over B0 by a margin above noise; no identity score below threshold in more than 10 percent of shots; you rate "would I enjoy it" at 7 or higher on 2 of 3 cases.
+- Scale gate: cost per accepted second within budget; failure rate under 5 percent per job after one retry; benchmark runs reproducible within noise.
+- Ship gate: three external raters rate hero episode 7 or higher; legal and labelling checklist passed; moderation and takedown flow tested.
+
+10.7 Reporting
+Each benchmark run emits: run id, pipeline version, git hash, model IDs and docs snapshot date, case results, charts (score by dimension; cost vs score; identity by shot index), an HTML report in Drive, a CSV for the data analysis in Section 8.7, and a plain-language note of "what got better, what got worse, what is within noise".
+
+10.8 Failure catalogue and regression
+Keep a growing list of failures (hands, crowds, text, mirrored faces, fast action, rain) with minimal repro prompts. Every release runs the catalogue at the cheapest tier to check for regressions in prompting rules.
+
+10.9 Known weak points of this benchmark
+- n=1 human rater unless you add others; mitigated by pairwise design.
+- LLM judges prefer fluent, formulaic scripts (my expectation; not verified here); the human layer overrides.
+- Face similarity metrics are weaker for stylised or comic characters, for heavy makeup, and for profile views.
+- Budget limits the case count; the draft grade may not predict final-grade quality.
+
+================================================================================
+11. BUILD ROADMAP (DEMO, THEN SCALABILITY, THEN SHIP)
+================================================================================
+Nothing starts until you finish reading this plan and give a go (your item 6).
+
+11.1 Phase A: Demo (target: 2 to 3 weeks of focused work; my estimate)
+Goal: prove the loop on Colab with 3 episodes and one series continuation, all on the 20k credits.
+Deliverables:
+A1 Colab notebook "MicroDrama_Quickstart" runs clean on a fresh runtime, no comments in code cells, docs in markdown, key via getpass.
+A2 Writers' room with template library, critic loop, hook and cliffhanger doctors.
+A3 Bible v0 (SQLite): characters, threads, cliffhanger ledger, episode log; context pack; continuity check; commit.
+A4 Character sheet builder and identity embeddings.
+A5 Magic Hour backend: estimate, submit, poll, fetch, budget governor, cache.
+A6 Draft then final rendering; shot verifier; audio mix; assembly; 9:16 master and 16:9 letterbox.
+A7 Benchmark v1: 12-case definition, 3 cases runnable, layers 1 to 3, report.
+A8 Probe report (P-0 to P-9) with measured limits and a "what the API really does" page.
+A9 Three demo episodes with my honest self-assessment and a comparison against the B0 baseline.
+Exit: demo gate in 10.6.
+Limitations accepted in Phase A: English only, two to three characters per episode, 60s default, hard credit cap, manual approval before every large render, no user accounts, no web UI.
+
+11.2 Phase B: Scalability (target: 4 to 6 weeks after Phase A; estimate)
+Goal: make it robust and multi-user without exploding cost.
+B1 Service split: API (FastAPI), worker queue, storage; Docker.
+B2 Postgres bible, object storage, per-user isolation; resumable pipelines; idempotent jobs by content hash.
+B3 Cost engine: per-user budgets, estimates before runs, model router learned from the benchmark.
+B4 Multi-language: tested languages (Hindi first), pronunciation lexicons, per-language benchmark columns.
+B5 Series operations: season planner UI, canon editor, retcon workflow, parallel storylines.
+B6 Safety: image validation, consent flow, moderation filters, audit logs, provenance labelling.
+B7 Observability: tracing, per-stage latency and failure dashboards, alerting on spend spikes.
+B8 Alternative backends: second video provider or open source worker behind the same interface (only with your approval and free-only rule).
+B9 Reframing for 16:9 and 1:1 with per-shot safe areas.
+Exit: scale gate in 10.6.
+
+11.3 Phase C: Ship (target: depends on distribution plan; open)
+C1 Web app or mobile player with orientation-aware delivery (your item 1).
+C2 Accounts, billing (needs your decision on commercial model; not a free-only matter because it involves paid customers, and any payment integration needs your explicit approval).
+C3 Legal: terms, privacy policy, India SGI labelling, platform disclosure helpers, takedown flow.
+C4 Creator tools: template marketplace, character library, style packs.
+C5 Analytics: viewer-side engagement if you host the player (hook drop-off, episode-to-episode retention), A/B testing of hooks.
+C6 Go-to-market wedge decision: Indian-language series, brand and creator studios, or reference-photo personalised dramas.
+Exit: ship gate in 10.6.
+
+11.4 Edge cases and limits, grouped
+Input: blurry or multiple-face photos; photos of children; look-alike characters; conflicting description vs photo; very long prompts; contradictory template and prompt; non-English prompts with mixed scripts; offensive prompts; a user-required scene that breaks story logic.
+Story: cliffhanger that cannot be paid off; plot hole across seasons; repeating twists; a dead character reappearing; time skips; flashbacks; tone drift; dialogue too long for shot; culture-specific idioms in other languages; sensitive themes.
+Rendering: model refuses a prompt; moderation false positives; clip returns wrong aspect; identity drift mid-clip; hands or text artefacts; duration unsupported for a model (for example kling-3.0 3 to 15s, kling-2.6 only 5 or 10 [R1]); queue delays; job succeeds but file expired; credits_charged differs from estimate; API version change.
+Audio: voice mismatch across languages; names mispronounced; native audio ignoring quoted lines; lip sync fails on profile shots; music masks dialogue.
+Series: actor swap; reference update mid-series; user edits canon; 21-season scale (context size, storage, recap generation); episode ordering and branching.
+Ops: key leakage; runaway spend; partial failure leaving orphan assets; Colab session reset; Drive quota; rate and queue behaviour.
+Legal: real-person likeness; minors; copyrighted look-alike plots; platform labelling; takedown requests.
+Each edge case gets a handler and a test in the benchmark or unit tests; the roadmap tracks them in a table (id, trigger, handling, test, status).
+
+11.5 Dependencies and risks (top 8)
+1 Magic Hour reference behaviour (U1). 2 Credit plan limits (U7). 3 Moderation (U6). 4 Hindi audio quality (U3 and P-6). 5 Judge reliability. 6 Scope creep from the series bible. 7 Rights if credits are free-tier. 8 Single-rater bias.
+
+================================================================================
+12. OPEN QUESTIONS
+================================================================================
+Already answered (8 Oct 2026, 12:48 IST, relayed with your original message):
+ Q1 Format: primarily vertical, auto adjust to device orientation. Applied in Section 2.9. Please confirm my reading: 9:16 master plus letterboxed 16:9 and 1:1 derivatives, not native renders per orientation.
+ Q2 Languages: English primary now, others later but kept in the pipeline. Applied. Note: I did not find the "80+ languages" figure on the Magic Hour docs I read; the probe will verify what is actually available for audio.
+ Q3 Series with great continuity, like 21 seasons. Applied in Sections 2.4, 10.6 and 11.
+ Q4 Product to ship, demo first then scalability then ship. Applied in Section 11.
+ Q6 Start v1 after you read the full plan. Applied; nothing runs before your go.
+Still open:
+ Q5 Your credits: your "yes true" reply did not say which account holds the 20,000 credits (your own Magic Hour account or another, for example the internship account). The API key should come from the account that holds them, delivered by vault link. Also: is it a paid plan? (Kling and Seedance need a paid plan [R3]; free videos may be watermarked [R10].)
+ Q7 Do you want a comic or animated style option (ALT-6) alongside photoreal, as a cheaper way to a long series?
+ Q8 Episode default: keep 60s with 6s shots, or go 45s to cut cost?
+ Q9 Which free LLM should write and judge scripts? I need one named, free, OpenAI-compatible or local, and its key through the vault. I used no LLM service in this research.
+ Q10 Which five human-made microdramas should be our reference set (titles, platform, episode numbers)? They calibrate the benchmark and the hook library. I will only take notes, never copy text.
+ Q11 Do you have a target audience and genre for the first series (for example Hindi family drama, English CEO romance)? It picks the wedge.
+ Q12 Are real-person reference photos in scope for the demo, or fictional characters only? Real photos require consent steps.
+ Q13 Where should outputs live (Drive folder MicroDrama, which exists) and who may view them?
+ Q14 Any hard deadline or demo date after you finish the plan?
+ Q15 May I use free open source TTS (IndicF5, CosyVoice, IndexTTS) in Colab if Magic Hour audio is weak in Hindi? Installs would come from PyPI or approved GitHub repos only, with your prior approval for any source build.
+
+================================================================================
+13. SOURCE LIST (all fetched or returned by search on 8 Oct 2026)
+================================================================================
+Grade: A official or primary, B established press or research firm, C vendor, blog or aggregator.
+
+--- Magic Hour official docs (grade A, vendor documentation) ---
+R1  Text-to-Video API reference: https://docs.magichour.ai/api-reference/video-projects/text-to-video
+R2  Image-to-Video API reference: https://docs.magichour.ai/api-reference/video-projects/image-to-video
+R3  Models and credit costs: https://docs.magichour.ai/api-reference/models
+R4  Processing times: https://docs.magichour.ai/api-reference/processing-times
+R5  API pricing overview: https://docs.magichour.ai/billing/overview
+R6  Lip Sync API reference: https://docs.magichour.ai/api-reference/video-projects/lip-sync
+R7  AI Voice Generator tool page: https://docs.magichour.ai/tools/audio/voice-generator
+R8  Audio to Video tool page: https://docs.magichour.ai/tools/video/audio-to-video
+R9  Docs index (llms.txt) and API overview: https://docs.magichour.ai/llms.txt , https://magichour.ai/api
+R10 Pricing page and FAQ: https://magichour.ai/pricing
+R84 Compare AI media APIs on your workload: https://docs.magichour.ai/integration/evaluating-media-apis
+(Also read: https://docs.magichour.ai/api-reference/files/list-saved-items for saved characters, references, voices and moodboards.)
+
+--- Market and industry ---
+R11 Screen Daily, MPA, microdrama revenue outside China $3.6bn in 2026 (B, 2026-08-06): https://www.screendaily.com/news/microdrama-revenue-outside-china-to-hit-36bn-in-2026-says-report/5219165.article
+R12 Omdia via Broadcast and CableSat, $14B in 2026 (B, 2026-02-24): https://www.broadcastandcablesat.co.in/global-microdrama-revenues-to-reach-14b-in-2026/
+R13 TechTimes, ReelShort $1.05B (B-C, 2026-08-06): https://www.techtimes.com/articles/323399/20260806/reelshort-hits-1-billion-microdrama-revenue-first-profit-driven-app-store-bypass.htm
+R14 Sensor Tower, State of Short Drama Apps 2026 (A-B, 2026-06-12): https://sensortower.com/blog/state-of-short-drama-apps-2026-report
+R15 ReelPulse summary of Sensor Tower Q1 2026 (C, 2026-08-03): https://reelpulse.net/articles/state-of-short-drama-apps-q1-2026
+R16 DataEye H1 2026 overseas revenue ranking via Feitian Film (C-B, Chinese, 2026-10-08): https://www.feitianyingye.com/2026/1008/7501.shtml
+R17 DataEye China H1 2026 via ThePaper (B, Chinese, 2026-08-04): https://m.thepaper.cn/newsDetail_forward_33711810
+R18 chinaculture.org, NRTA 800M users (B, 2026-10-02): https://en.chinaculture.org/a/202610/03/WS6ac0b410e4b06d4aa05614df.html
+R19 ChinaIRN research report summary (C, Chinese, 2026-07-01): https://www.chinairn.com/news/20260701/111919976.shtml
+R20 Xinhua, AI redefines China's micro drama (B, 2026-03-25): https://english.news.cn/20260325/f5029e1769fe41908bb3f3a3f33a986e/c.html
+R21 BriefAsia, AI microdrama cost $7,400 (C-B, 2026-07-25): https://www.briefasia.com/en/article/china-ai-microdrama-production-costs
+R22 Caixin cover story, how AI took over China's micro-drama industry (B, 2026-06-01): https://www.caixinglobal.com/2026-06-01/cover-story-how-ai-took-over-chinas-micro-drama-industry-in-90-days-102449814.html
+R23 CNBC, China's short dramas flood the market (B, 2026-08-26): https://www.cnbc.com/2026/08/26/short-drama-china-production-ai-entertainment-economics.html
+R24 The Next Web, China built the AI content factory (B, 2026-05-01): https://thenextweb.com/news/china-micro-drama-ai-state-funding
+R25 Lume Studio, cost per episode (C vendor, 2026-09-26): https://lume-studio.ai/blog/micro-drama-production-cost
+R26 BBC, Kuku TV and Reelies, micro-dramas in India (B, 2026-05-01): https://www.bbc.co.uk/news/articles/c3v2k3xvr04o
+R27 Economic Times, Pocket FM shuts Pocket TV (B, 2026-06-25): https://m.economictimes.com/tech/technology/pocket-fm-winds-down-microdrama-to-focus-on-audio-overseas-market/articleshow/131973542.cms
+R28 Hindustan Times, new genres will fuel micro drama apps (B, 2026-07-03): https://www.hindustantimes.com/cities/mumbai-news/premium-content-new-genres-will-fuel-micro-drama-apps-101783018771582.html
+R29 Fortune India, IPO-bound Kuku bets on microdramas and AI (B, 2026-06-06): https://www.fortuneindia.com/startups-news/ipo-bound-kuku-bets-on-microdramas-ai-and-bharats-storytelling-economy-to-drive-next-phase-of-growth/141794
+R30 Caixin, micro drama platforms knock down paywalls (B, 2025-08-22): https://www.caixinglobal.com/2025-08-22/in-depth-micro-drama-platforms-knock-down-paywalls-as-viewers-lose-interest-102354440.html
+R31 eMarketer, FAQ on microdramas (B, 2026-08-21): https://www.emarketer.com/content/faq-on-microdramas--mobile-video-format-outpacing-netflix-daily-engagement
+R32 Streaming Radar, micro-drama apps 2026 (C, 2026-10-02): https://lens.streaming-radar.com/micro-drama-apps
+R33 Variety, global microdrama boom (B, 2025-11-13): https://variety.com/2025/global/news/global-microdrama-boom-1236560947/
+R34 Entrepreneur India, India's $300M microdrama market (B, 2026-07-14): https://india.entrepreneur.com/technology/indias-usd-300-mn-microdrama-market-is-just-taking-off
+R35 Hollywood Reporter India, India's microdrama boom (B, 2026-06-01): https://www.hollywoodreporterindia.com/features/insight/indias-microdrama-boom-how-data-desire-and-aritifical-intelligence-are-reshaping-entertainment
+R83 Storyboard18, Alvarez and Marsal on microdrama economics (B, 2026-08-26): https://www.storyboard18.com/brand-makers/microdrama-boom-shilpa-malaiya-singhai-alvarez-marsal-interview-ws-lo-107269.htm
+R85 YUV.ai on Fable Showrunner (C, 2026-06-30): https://yuv.ai/blog/fable-showrunner-netflix-of-ai
+R86 ReelPulse DramaBox vs ReelShort (C, 2026-04-18): https://reelpulse.net/articles/dramabox-vs-reelshort-2026
+R87 Storyboard18, players driving India's microdrama boom (B, 2026-06-21): https://www.storyboard18.com/photos/media-and-entertainment/from-tadka-to-kuku-tv-meet-the-players-driving-indias-microdrama-boom-101884.htm
+R88 Pocket Drama Review, CNNIC series (C, 2026-09-16): https://pocketdramareview.com/archive/cnnic-short-video-users-series/
+R89 Xinhua, micro-drama boom meets AI (B, 2026-04-21): https://english.news.cn/20260421/478dab52b4a147ae800b2dbb64bf7626/c.html
+R90 36Kr, H1 2026 live-action micro-drama report (B-C, Chinese, 2026-08-05): https://www.36kr.com/p/3924831083435650
+R91 Ocean Engine and CTR report summary (C, 2026-09-11): https://www.tuyuesouxin.cn/blog/china-micro-drama-brand-asset-2026/
+R92 Business Insider, TikTok jumps into micro dramas (B, 2025-12-26): https://www.businessinsider.com/tiktok-jumps-into-micro-dramas-buzzy-bite-sized-soaps-2025-12
+R93 Drama.so, AI short drama cost teardown (C vendor, 2026-08-10): https://drama.so/en/blog/ai-short-drama-production-cost
+
+--- Commercial tools (vendor pages, grade C unless noted) ---
+R36 https://aishortdrama.io/
+R37 https://www.medeo.app/video-generator/short-drama
+R38 https://pexo.ai/create/micro-drama
+R39 https://opendrama.ai/guides/how-to-make-ai-short-drama
+R40 https://apps.apple.com/us/app/vibeshort-ai-short-dramas/id6758667154
+R41 https://www.pippit.ai/create/short-dramas
+R42 https://drama.land/tools/screenplay-shortform
+R43 https://ltx.studio/
+R44 Higgsfield LinkedIn post (2026-05-18): https://www.linkedin.com/posts/higgsfield_you-can-create-short-dramas-on-higgsfield-activity-7462218126949203968-N2ff
+R45 OpenAI, how Higgsfield turns ideas into cinematic social videos (A-B, 2026-01-21): https://openai.com/index/higgsfield/
+R46 OpenArt AI shorts guide (2026-08-20): https://openart.ai/blog/ai-shorts-generator-guide/
+R47 Showrunner: https://www.showrunnerstudio.com/
+R48 Variety, Amazon invests in Fable Showrunner (B, 2025-07-30): https://variety.com/2025/digital/news/netflix-of-ai-amazon-invests-fable-showrunner-launch-1236471989/
+R49 The Verge, Showrunner interview (B, 2025-08-29): https://www.theverge.com/ai-artificial-intelligence/762594/fable-showrunner-edwatch-saatchi-interview
+
+--- Open source and models ---
+R50 Wan 2.2: https://github.com/Wan-Video/Wan2.2
+R51 Open-source video models and GPUs (C, 2026-09-28): https://quantacloud.net/guides/open-source-video-generation-models
+R53 LTX open source landscape guide (C vendor, 2026-07-22): https://ltx.io/blog/open-source-video-generation-models-guide
+R54 Jellyfish: https://github.com/idea15/Jellyfish
+R55 Wind Comic: https://github.com/ChrisChen667788/wind-comic (mirror seen at github.laiyagushi.com)
+R56 Open-AI-Micro-Drama-Generator: https://github.com/2005-ab/Open-AI-Micro-Drama-Generator
+R57 story-shot-agent (PenShot): https://github.com/Hungbk295/story-shot-agent
+R58 huobao-drama: https://github.com/chatfire-ai/huobao-drama
+R59 PureVis Studio Agent: https://github.com/susirial/purevis_ve_cli
+R60 script-to-video-production-agent: https://github.com/jackterror/script-to-video-production-agent (mirror github.laiyagushi.com)
+R61 InfiniteTalk: https://github.com/MeiGen-AI/InfiniteTalk/
+R62 LatentSync: https://github.com/bytedance/LatentSync/issues
+R63 Open source lip sync models 2026 (C, 2026-07-09): https://news.creeta.com/en/open-source-lip-sync-models-2026/ ; MuseTalk issue: https://github.com/TMElyralab/MuseTalk/issues/409
+R64 IndexTTS: https://github.com/index-tts/index-tts ; Hindi request: https://github.com/index-tts/index-tts/issues/429
+R65 IndicF5: https://github.com/ai4bharat/indicf5
+R66 CosyVoice: https://github.com/FunAudioLLM/CosyVoice
+R68 VoxCPM: https://github.com/OpenBMB/VoxCPM
+R69 Qwen3-TTS blog: https://qwen.ai/blog?id=qwen3tts-0115 ; Marktechpost: https://www.marktechpost.com/2026/01/22/qwen-researchers-release-qwen3-tts-an-open-multilingual-tts-suite-with-real-time-latency-and-fine-grained-voice-control/
+R70 MOSS-TTS: https://github.com/OpenMOSS/MOSS-TTS
+R71 Hallo-Live: https://github.com/minttec/Hallo-Live
+R96 Open source AI video generator licences (C, 2026-09-22): https://aialleyway.com/open-source-ai-video-generator/
+R97 Open source video generator licence guide (C, 2026-07-04): https://techiehub.blog/best-open-source-ai-video-generator/
+R98 HKUDS VideoAgent: https://github.com/HKUDS/VideoAgent
+R99 Confucius4-TTS: https://github.com/netease-youdao/Confucius4-TTS (mirror seen)
+Note: a "dramaclaw" repository mirrored at download.plaud.ai appeared in search and was not used.
+
+--- Legal and platform ---
+R72 Gazette Tracker, G.S.R. 120(E) of 10 Feb 2026 (B-C): https://gazettetracker.com/g/CG-DL-E-10022026-269993
+R73 MeitY FAQ (A): https://www.meity.gov.in/static/uploads/2025/10/065b6deb585441b5ccdf8be42502a49c.pdf ; draft rules: https://www.meity.gov.in/static/uploads/2025/10/9de47fb06522b9e40a61e4731bc7de51.pdf ; explanatory note: https://www.meity.gov.in/static/uploads/2025/10/8e40cdd134cd92dd783a37556428c370.pdf
+R74 Freshfields analysis (B, 2026-02-20): https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn
+R75 Chambers analysis (B, 2026-04-03): https://chambers.com/articles/regulation-of-synthetic-media-in-india-legal-implications-of-the-2026-amendments-to-the-it-rules
+R94 Times of India (B, 2026-02-10): https://timesofindia.indiatimes.com/technology/tech-news/governments-new-it-rules-make-ai-content-labelling-mandatory-give-google-youtube-instagram-and-other-platforms-3-hours-for-takedowns/articleshow/128157496.cms
+R95 Deloitte tax alert (B, 2026): https://www.deloitte.com/content/dam/assets-zone1/in/en/docs/services/tax/2026/in-tax-it-amendment-rules-2026.pdf
+R76 YouTube channel monetization policies (A): https://support.google.com/youtube/answer/1311392?hl=en
+R77 AI content disclosure rules 2026 (C, 2026-08-24): https://www.socialscalehub.com/academy/ai-content-disclosure-rules-2026-tiktok-instagram-youtube ; also https://www.vidpal.ai/blog/ai-content-labels-tiktok-instagram-youtube-2026
+
+--- Engagement practitioner sources (C, no primary data) ---
+R78 https://www.jmltechstudios.com/blog/why-first-3-seconds-decide-your-video
+R79 https://viralroast.com/golden-07s-rule-video-optimization
+R80 Video generation benchmarks leaderboard (C, 2026-04-17): https://awesomeagents.ai/leaderboards/video-generation-benchmarks-leaderboard/
+R81 Exa library listings of micro-drama studies: https://exa.ai/library/publication/6kjvy6nn863 , https://exa.ai/library/publication/00bn9r5xlpk , https://exa.ai/library/publication/mgf50089gj5
+
+--- Papers (A for primary papers; depth noted in Section 5) ---
+P1  https://arxiv.org/abs/2605.15199
+P2  https://arxiv.org/abs/2606.20799 (listing https://arxiv.science/abs/2606.20799)
+P3  https://arxiv.org/abs/2603.29931
+P4  https://arxiv.org/abs/2608.16717
+P5  https://www.alphaxiv.org/abs/2605.23610
+P6  https://arxiv.science/abs/2601.03655
+P7  https://arxiv.org/abs/2603.03646
+P8  https://arxiv.science/abs/2510.18573
+P9  https://arxiv.org/abs/2601.17323
+P10 https://arxiv.org/abs/2609.18393
+P11 https://www.alphaxiv.org/abs/2505.23742
+P12 https://arxiv.org/abs/2609.07720
+P13 https://arxiv.org/html/2601.17737v1
+P14 https://aclanthology.org/2026.eacl-long.101.pdf
+P15 https://arxiv.org/abs/2606.07649
+P16 https://arxiv.org/abs/2609.00346
+P17 https://arxiv.org/html/2604.24842v1
+P18 https://arxiv.org/abs/2604.09195
+P19 https://arxiv.org/abs/2603.25746
+P20 https://arxiv.science/abs/2607.26529
+P21 https://openaccess.thecvf.com/content/CVPR2026/html/An_OneStory_Coherent_Multi-Shot_Video_Generation_with_Adaptive_Memory_CVPR_2026_paper.html
+P22 https://arxiv.science/abs/2609.34502
+P23 https://arxiv.science/abs/2512.19539
+P24 https://arxiv.org/abs/2609.06373
+P25 https://arxiv.gg/abs/2510.23163
+P26 https://dl.acm.org/doi/10.1145/3856818
+P27 http://arxiv.org/abs/2608.26177v1
+P28 https://en.papernotes.org/ACL2026/nlp_generation/planning_beyond_text_graph-based_reasoning_for_complex_narrative_generation/
+P29 https://arxiv.org/abs/2604.11102
+P30 https://arxiv.org/html/2604.19071v1
+P31 https://arxiv.org/abs/2609.06611
+P32 https://arxiv.science/abs/2605.12496
+P33 https://qwen.ai/blog?id=qwen3tts-0115
+P34 https://www.alphaxiv.org/abs/2605.05611
+P35 https://arxiv.org/html/2606.06928v1
+P36 http://arxiv.org/abs/2608.15734
+P37 https://arxiv.org/html/2602.12160v1
+P38 https://arxiv.org/html/2604.23632v1
+P39 https://arxiv.org/abs/2605.16918
+P40 https://arxiv.org/abs/2608.09111
+P41 https://arxiv.org/abs/2608.05485
+P42 https://arxiv.org/abs/2608.21839
+P43 https://arxiv.org/abs/2605.30090
+P44 https://www.alphaxiv.org/abs/2507.11245
+P45 https://arxiv.org/html/2609.34314v1
+P46 https://dl.acm.org/doi/10.1145/3774904.3792827
+P47 https://arxiv.science/abs/2605.26525
+P48 https://arxiv.org/html/2503.21755v2 ; project: https://vchitect.github.io/VBench-2.0-project/
+P49 https://arxiv.org/html/2411.15262v1
+P50 https://openaccess.thecvf.com/content/CVPR2026/papers/Zhuang_ViStoryBench_Comprehensive_Benchmark_Suite_for_Story_Visualization_CVPR_2026_paper.pdf ; code https://github.com/ViStoryBench/vistorybench
+P51 https://arxiv.org/html/2308.11606v2
+P52 https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_VGA-Bench_A_Unified_Benchmark_and_Multi-Model_Framework_for_Video_Aesthetics_CVPR_2026_paper.pdf
+P53 https://arxiv.org/html/2511.18870v1
+P54 https://arxiv.org/html/2601.03888v2
+P55 https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Rethinking_Position_Embedding_as_a_Context_Controller_for_Multi-Reference_and_CVPR_2026_paper.pdf
+P56 https://arxiv.org/abs/2609.11507
+P57 https://dl.acm.org/doi/10.1145/3799902.3811131
+P58 https://dl.acm.org/doi/10.1145/3833541.3833793
+P59 https://zenodo.org/records/18043168
+P60 https://www.scirp.org/journal/paperinformation?paperid=145815
+P61 https://www.researchgate.net/publication/396859364_Micro-drama_in_the_Digital_Era_An_Analytical_Overview_of_the_Emerging_Micro-drama_Industry
+P62 https://arxiv.org/pdf/2601.22127
+P63 https://arxiv.org/abs/2512.24408v1
+P64 https://proceedings.iclr.cc/paper_files/paper/2026/file/d0aafec03d59db29a92fa683bd783374-Paper-Conference.pdf
+
+================================================================================
+14. APPENDIX: SCHEMAS, PROMPT TEMPLATES, FILE LAYOUT
+================================================================================
+
+14.1 Shot spec (JSON), the single object passed through all stages
+{
+ "episode_id": "S01E03", "shot_id": 7, "start_s": 22.0, "dur_s": 6.0, "beat": "escalation",
+ "location_id": "loc_gala_hall", "characters": [{"id":"arjun","wardrobe":"rider_jacket"},{"id":"vikram","wardrobe":"tux_navy"}],
+ "first_frame": "Medium close-up, Vikram sneering, champagne glass raised, chandelier highlights, shallow depth",
+ "motion": "Vikram tilts glass, Arjun steps into frame from right, stops",
+ "camera": {"size":"MCU","angle":"eye","move":"slow push-in"},
+ "dialogue": {"speaker":"vikram","text":"Deliveries use the service door.","lang":"en","emotion":"contempt"},
+ "audio": {"music":"tension_bed_2","sfx":["glass clink"]},
+ "render": {"mode":"RM-A","model":"kling-3.0","res":"720p","audio_native":false,"seed":null},
+ "risk_flags": ["two_faces"], "budget_credits": 288, "status": "planned"
+}
+
+14.2 Bible tables (SQLite)
+series(id, title, template, tone, language, rating, style_json)
+character(id, series_id, name, role, personality, speech_style, appearance_text, voice_id, status)
+character_asset(id, character_id, era, kind, path, embedding_hash)
+relationship(id, a_id, b_id, type, status, since_episode)
+secret(id, fact_id, known_by_json, since_episode)
+fact(id, series_id, text, visibility, episode_id)
+location(id, series_id, name, description, palette, ref_path)
+prop(id, series_id, name, owner_id, location_id, since_episode)
+thread(id, series_id, promise, setup_episode, payoff_window, status)
+cliffhanger(id, episode_id, question, resolved_episode, status)
+episode(id, series_id, season, number, script_json, summary, scores_json, credits, created_at)
+
+14.3 Writers' room system prompt skeleton (kept short, language parameterised)
+"You are the showrunner of {series}. Write episode {n} in {language}. Context pack: {recap}, {active_threads}, {character_states}, {previous_cliffhanger}. Plan: {beat_targets}. Rules: hook within 3 seconds; one power reversal; one planted detail paid off; lines under 14 words; end on a specific open question that is not answered. Return JSON matching the schema. Do not contradict canon facts listed."
+
+14.4 Continuity check prompt skeleton
+"Given canon facts, secrets and character states, list every contradiction in this script. For each: shot id, rule broken, evidence, minimal fix. Return JSON array; empty if none."
+
+14.5 Judge prompt skeleton (frozen per benchmark version)
+"You are a strict viewer of vertical microdramas. Score 1 to 10 on: hook, emotional target, escalation, twist, cliffhanger, dialogue, juice, filmability. Most scripts deserve 4 to 6. Return JSON with scores, weakest criterion and one fix."
+
+14.6 Credit estimator (pseudo)
+estimate(shot) = rate[model][res] x dur + audio_surcharge[model] x dur (if native audio on); lip_sync = 24 x dur (standard); tts = ceil(0.1 x chars); image = per-model credits. Governor refuses when sum(planned) + spent > ceiling.
+
+14.7 Notebook outline (Run All clean)
+1 Intro and architecture (markdown). 2 Install pinned packages from PyPI. 3 Key via getpass. 4 Account check and budget ceiling. 5 Load or create series. 6 Brief and characters. 7 Writers' room. 8 Shot plan and cost estimate (stop for approval). 9 Draft render. 10 Verify. 11 Final render. 12 Audio and assembly. 13 Evaluation report. 14 Bible commit. Every code cell has no comments; each step has a markdown cell explaining it.
+
+END OF PLAN

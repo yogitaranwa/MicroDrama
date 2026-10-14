@@ -1,0 +1,56 @@
+{
+  "standard_episode_duration_seconds": 64,
+  "standard_shots_per_episode": 8,
+  "seconds_per_shot": 8,
+  "structure_breakdown": {
+    "s01": {
+      "beat": "Hook",
+      "start_sec": 0,
+      "end_sec": 8,
+      "intensity": "Maximum initial shock or cliffhanger payoff"
+    },
+    "s02": {
+      "beat": "Scandal",
+      "start_sec": 8,
+      "end_sec": 16,
+      "intensity": "Immediate escalation and stakes reveal"
+    },
+    "s03": {
+      "beat": "Escalation",
+      "start_sec": 16,
+      "end_sec": 24,
+      "intensity": "Antagonist pushes or boundary tested"
+    },
+    "s04": {
+      "beat": "Confrontation",
+      "start_sec": 24,
+      "end_sec": 32,
+      "intensity": "Verbal clash, physical intimacy, or obstacle"
+    },
+    "s05": {
+      "beat": "Defiance",
+      "start_sec": 32,
+      "end_sec": 40,
+      "intensity": "Protagonist pushes back or unexpected twist"
+    },
+    "s06": {
+      "beat": "Ambush",
+      "start_sec": 40,
+      "end_sec": 48,
+      "intensity": "External complication or secret revealed"
+    },
+    "s07": {
+      "beat": "Showdown",
+      "start_sec": 48,
+      "end_sec": 56,
+      "intensity": "Pre-climax tension peak"
+    },
+    "s08": {
+      "beat": "Cliffhanger",
+      "start_sec": 56,
+      "end_sec": 64,
+      "intensity": "Shocking freeze frame or unanswered question"
+    }
+  },
+  "average_script_lines": 113.3
+}

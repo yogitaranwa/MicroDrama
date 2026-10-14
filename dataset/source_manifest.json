@@ -1,0 +1,14 @@
+{
+  "source": "DramaBench versioned 500-file release",
+  "source_url": "https://huggingface.co/datasets/FutureMa/DramaBench/resolve/main/dramabench_continuation_500.jsonl?download=true",
+  "license_url": "https://huggingface.co/datasets/FutureMa/DramaBench/resolve/main/LICENSE?download=true",
+  "license": "MIT",
+  "fetched_date": "2026-10-11",
+  "rows": 500,
+  "sha256": "b75b2c3ea758f0bd49434c8bbdc8fa18beeea9ac77c609ea7a15593dff79af21",
+  "status": "candidate_reference_corpus_not_requested_full_series_dataset",
+  "verified_one_minute_full_series_episodes": 0,
+  "synthetic": false,
+  "use_in_generation_default": false,
+  "rights_basis": "Explicit dataset MIT license plus paper ethics statement. No independent third-party rights audit."
+}

@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+outputs/
+ltx_microdrama/
+*.tmp
+*.part
+*.mp4
+*.srt
+*.zip
+.ipynb_checkpoints/

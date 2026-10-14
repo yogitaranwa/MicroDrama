@@ -1,0 +1,11 @@
+{
+  "average_words_per_line": 8.3,
+  "p95_word_ceiling": 20,
+  "hard_max_word_limit": 15,
+  "guidelines": [
+    "Keep dialogue strictly punchy and under 14 words per line.",
+    "Zero monologues or exposition dumps.",
+    "Every line must contain an emotional charge, accusation, ultimatum, or secret.",
+    "Use subtext: actions and glances speak louder than sentences."
+  ]
+}
