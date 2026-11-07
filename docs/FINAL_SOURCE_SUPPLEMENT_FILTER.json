@@ -1,0 +1,1043 @@
+{
+  "source_files": 140,
+  "withheld": [
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L5-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bcb00be12fa9a09e904a26317fbcaa6a99752fadb588433ca150433b9dd1ab09"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L1-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "122f32378470a6cd72b202ceb9060f0347acdf6a28c44199f0aa5310820b0064"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-two-shot-dialogue.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L1-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fb0fdbdcd388e01e5211ba100859d0afbf5cb504317060970deb41dd2054a649"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L2-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3edc83f0c46e3b58022488d33b21488626bb72b8c1d8c7c87f43d95d42abe959"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L6-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d7a15b4e21ef61ad7354d2480cb4d98ed547e939352a87d0999a1b03c813b76b"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L4-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8d7e0b52db03d61f341d70b209b14f1b8899233a0f5f1795d58a06c3cba74c10"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L5-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1d481a00914cc86e4a1a86f70aa53a746ac112eee1e4a88590be4deeb266dd6"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L3-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f0087486acfe4b9b5244d14e1184c59ac022be8ba9fdf835e9997a6c25c6f20"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L6-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "855612eeb39359069d8a37438091c7a861ea7caa74c5489c7f24b5cdb670d86d"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L3-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0661237bb560b857d8d2fdbc611ce93325fd117de7eab5b0dd44c7353dd0e4f4"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/dialogue.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a4f82d28a3c1d576bec78d841ff7698c13d2fc768b54f9e0f7c292806793e8b1"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-yule-ball-location.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L2-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "867b9c8c7a8055ef7aaee9e4e8e4c69580af8f6b92a99017c5c33d6b475f012e"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/guide-L4-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "52c9e8b0b57494d9eb9824b1b944a9682851819288e0fd6681cebf807199a079"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_nonoverlap_staged_inputs.zip/harry-original-h3-v4-staged/ref-two-shot-action.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L5-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a0ee77562b70fe907358fc448a98f3f755ce1c10d22099843ba277e6d5ed2b36"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L1-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "517792f8032270d72ea4fe7c03c5f1d20d8abc09024e0feaeee859b5a66b84e1"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-two-shot-dialogue.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L1-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fb0fdbdcd388e01e5211ba100859d0afbf5cb504317060970deb41dd2054a649"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L2-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3edc83f0c46e3b58022488d33b21488626bb72b8c1d8c7c87f43d95d42abe959"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L6-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d7a15b4e21ef61ad7354d2480cb4d98ed547e939352a87d0999a1b03c813b76b"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-harry-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L4-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2045e6bf928e669e9f8e035adddb27a8b81e4e5b45e3eeafd5a38751e9462275"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L5-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1d481a00914cc86e4a1a86f70aa53a746ac112eee1e4a88590be4deeb266dd6"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L3-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f0087486acfe4b9b5244d14e1184c59ac022be8ba9fdf835e9997a6c25c6f20"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-draconia-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L6-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ca0160d614687cd382d19f0e795fd2003b2b53dad11939b14f3b906d822c484f"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L3-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0168cd8c8e7e066eaf7db9b990206d9ffc9a0bdf226a912a52c1102d04475048"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/dialogue.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a4f82d28a3c1d576bec78d841ff7698c13d2fc768b54f9e0f7c292806793e8b1"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-yule-ball-location.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L2-start.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9365df4a7df386143bd176c9df8e4d8f2bf249d10a64e50591508cc8955264bf"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/guide-L4-mid.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "52c9e8b0b57494d9eb9824b1b944a9682851819288e0fd6681cebf807199a079"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_v4_staged_inputs.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_v4_staged_inputs.zip/harry-original-h3-v4-staged/ref-two-shot-action.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-harry-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-harry-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-two-shot-dialogue.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/harry-draconia-e01-h3film-baseline-v1.dialogue-exact-13.12s.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ce64fbb7a8650e77e3d6dde7316eba1939968d32dc680520b6cc640addc2a58f"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-draconia-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-harry-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-draconia-speaking-profile.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/dialogue-original-13.666s.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a4f82d28a3c1d576bec78d841ff7698c13d2fc768b54f9e0f7c292806793e8b1"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-draconia-fullbody.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-yule-ball-location.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/inputs/ref-two-shot-action.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+    },
+    {
+      "version": "Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_H3Film_baseline_inputs_2026-10-25.zip/h3film-baseline-package/evidence/modal-wrapper-original-vs-corrective.diff",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "80fb5275484f08934018a1e1faf45fcd97f5ea004a21826d3a57a475bc34111a"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L1_Draconia_warning_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ccf413350f9394d416057b85ac58b7133411d55710df22a28a77791c8a83e188"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L1_draconia_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6f48abe2d65695647fc09d73ba6cc08f8e3ba6c81fa31a184b40f48d05701b11"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L2_Draconia_warning_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7babd32f913e5ebde62f68871e11df30c74cb2bac10f53d1be545a2530a6ac69"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L2_draconia_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d168234de9e4f521aa592b608bbfa7aa339d5f499e8439b0dfbfc3a64fd18e46"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L3_Harry_reply_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "afb626c8e632d102479e01efba6d9bc4ff0dc4a03bfef23ecb71cb84e3e84dee"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L3_harry_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c9d9c69ea7b4d4507ed837fa51750e7d662bfbd6e01db7d827b2d6bb3df74d1b"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L4_Draconia_reply_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3f4984d90f844f98b7951dceef39f362880b51c1cae8d3fd5ed93e6e3d17f1cb"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L4_draconia_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3b71e2840ab6ff7a3687e77536f387f749b6455790f11ab777f0486c1a0b1bfd"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L5_Harry_reply_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "07890e54b8165e59af05324eb502fec554d0c7c1a222acba20ffeb1e03682694"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L5_harry_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9980ebd696f8c2302f47173794d5f701fb2230afafb15a26e14c945e9c3f9e54"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L6_Draconia_final_sheet.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3b4c0f9114c76c007bc0562740a5222c284f86c429de74de1a3455f56ce8813d"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/L6_draconia_mouth_crops.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2b11e1c0d30390f8de3642d7caa3f3b4b17bccf95d1760d49f86d763828c611e"
+    },
+    {
+      "version": "Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip",
+      "path": "Archive/final-recovered-records/Harry_Draconia_E01_original_H3_Modal_V4_QA_frames.zip/V4_all_guide_anchor_frames.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d270a8887cce61a4c574a4d86a36bdd7246c6bb7725ad86b1c1bafd8267ae415"
+    },
+    {
+      "version": "Proposed-postcrash-scene-design-and-controls.zip",
+      "path": "Archive/final-recovered-records/Proposed-postcrash-scene-design-and-controls.zip/02-camera-plan.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "65e383752ebefc75bf97db5dee60474c63a6c21b561ee0a4ce2e0ebbcf2ad768"
+    },
+    {
+      "version": "Proposed-postcrash-scene-design-and-controls.zip",
+      "path": "Archive/final-recovered-records/Proposed-postcrash-scene-design-and-controls.zip/01-source-proposal.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4c470b5e21268750bc0a2f1d520048a4994f9182bc23749754009a0bb2e329ea"
+    },
+    {
+      "version": "Proposed-postcrash-scene-design-and-controls.zip",
+      "path": "Archive/final-recovered-records/Proposed-postcrash-scene-design-and-controls.zip/locked-audio/e01-l16-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8"
+    },
+    {
+      "version": "Proposed-postcrash-scene-design-and-controls.zip",
+      "path": "Archive/final-recovered-records/Proposed-postcrash-scene-design-and-controls.zip/locked-audio/e01-l17-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb"
+    },
+    {
+      "version": "Proposed-postcrash-scene-design-and-controls.zip",
+      "path": "Archive/final-recovered-records/Proposed-postcrash-scene-design-and-controls.zip/source/aftermath-existing-frame-0.7s.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315"
+    },
+    {
+      "version": "No-charge-postcrash-blocking-assessment.zip",
+      "path": "Archive/final-recovered-records/No-charge-postcrash-blocking-assessment.zip/inspection-2.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0e5c54e05e3347a7cb8b163d0d61b477bb394c7d6b3a89ba55561cb537dbd01e"
+    },
+    {
+      "version": "No-charge-postcrash-blocking-assessment.zip",
+      "path": "Archive/final-recovered-records/No-charge-postcrash-blocking-assessment.zip/inspection-1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "16753996ab90905f183c70d6ee285f8d32dff5525e01d3f5a70d9da9c43bf24f"
+    },
+    {
+      "version": "No-charge-postcrash-blocking-assessment.zip",
+      "path": "Archive/final-recovered-records/No-charge-postcrash-blocking-assessment.zip/inspection-0.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "09eab24e9ae8dc5ef63064556b8f906634398916ac7399a4b5630b443d7383e9"
+    },
+    {
+      "version": "No-charge-postcrash-blocking-assessment.zip",
+      "path": "Archive/final-recovered-records/No-charge-postcrash-blocking-assessment.zip/postcrash-evidence-sheet.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "637d16b3f59cbf8e568ff6fbecbdd03bfccf8819379ece4ebd03af5c3cd6c9a6"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/candidate-sheet.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5d8b03f5cd5d46beca509801a7edcedf8a62ff8910e7cc287b3f29aca28edd17"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/outputs/draconia-B.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1afbcadfbe14b3d78b81747c690674099a8f403f97ee50896a84e073ab51ef2b"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/outputs/draconia-A.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "eb5007d001cf77f0cef30e1b6495cd490a0eccf977616494b74a2ed577c2bc06"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/outputs/harry-B.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "95711fd66f63ee84b58ad26825b598adfbbac79bd3d0b4ef2df516dc4c664fbf"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/outputs/harry-A.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3583d25cff5b75cc2b53a931083e5192aabf8eb7f56eca878eba513d2451e3f9"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/e01-s18-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/ref-yule-ball-location.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/ref-harry-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/ref-draconia-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/aftermath-existing-frame-0.7s.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315"
+    },
+    {
+      "version": "hybrid-four-frame-test-complete.zip",
+      "path": "Archive/final-recovered-records/hybrid-four-frame-test-complete.zip/inputs/e01-s17-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/evidence/hybrid-reference-review.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0ab68730da0287b660a194865b338d15465cc02171cc1902b5ea93454c9dba3e"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/e01-s18-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/ref-yule-ball-location.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/ref-harry-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/ref-draconia-front-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/aftermath-existing-frame-0.7s.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315"
+    },
+    {
+      "version": "hybrid-next-comparison-plan.zip",
+      "path": "Archive/final-recovered-records/hybrid-next-comparison-plan.zip/inputs/e01-s17-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-s18-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-l16-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-l17-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-s17-b1.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b0b48249c980016374bc30656a3aba6e88ba360fd62c72049e6d891bdd49c74b"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-s17-b1-start.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-s18-b1.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8df05e1a6d920d912790d1a59043cdb60a78694901a442f4a23da08e9c10ecc4"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/inputs/e01-s18-b2.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/hybrid-approved-takes-master.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d2f7a7fdec14e37cbb21c87981a59b2ee90b8c31ea898d419e2d261852b9d9ec"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-6.5.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dd68d10855a50bf8bfd3d354661a303afe6948977db91072829bed815123d0ce"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-2.5.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "12a5e4d1d7221aae22f4c1e207441b1abba1b2108bc7e7d3d841f45f18e06a33"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/hybrid-source-review.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f76d74bca3206849130c8009b72b1aa979a0612aab5379299fa74a1fc77cc42"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-8.7.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9cf5b9fc9d3bdd30eee3c2d21db66d62adbb6f7b7acc60267271686568214607"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/hybrid-output-review.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b3cc1061ec1659d08b75b7248cea4c4304c565e10fa3b561d8a9ace8730ae952"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-7.7.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "00457f9037d518dd1bc153af7d47b18d828f99ea25b2f455ba8d0c508ccb4c60"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-3.5.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3a3608d03b14a3179008e2357d6d7bcaa582ce9c7ad1d9866dc6f2113dd4a964"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/output-0.5.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1f59b0fbe4baf106dabd5ba984f0ba90320a96c62e0c170161ade21442a8a463"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/results/hybrid-e01-s17-s18-process-test.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ab919c668dd1b682499fb2930bcb70b8a73839ba7f6013304ec75aa8e0643772"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s17-b1-1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fa58ce27a07fd4f98cfab3f5c21ff750ba543056e8e3fe594fbb545d74be41d9"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s17-b1-2.5.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cca66257fbae962391fdeaa56df659f3f632b9935b44e5729a1d0fea1d4daec1"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s17-b1-0.1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3a6e8fef6f98a9ce75bea978050a72fcf6c80e101c97758f03d1f5ef9f7dcf7f"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b2-0.1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "445aca6ddba31a62abfa2620173ef3223b02c1fe55b4b47fdc69a6939b488e21"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b2-0.7.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1a02c18ab975cf95a9c352fcb56e92ab5a2dd8aafa0a84cf262e8f096d15a474"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b2-1.4.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1090e755955300a692276730c1357e2d37923f5c130018c4025822a3f33808e"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b1-2.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1006eaaf32b47fb9c3d5648edf571beeb0b4fdc0f01df2ed39586648ba4d00a3"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b1-0.1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "67ad146ef6e72eada69532944994ba281724348f6148bbdc6fff3f4e37541ab1"
+    },
+    {
+      "version": "hybrid-real-media-test.zip",
+      "path": "Archive/final-recovered-records/hybrid-real-media-test.zip/hybrid-run/media/e01-s18-b1-4.2.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7b1dc708d23ee90b83c2854a752178b5a736322042f2c3b4bfb7208cc131a462"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a00b2257fb52cdfe3e476f3bde57e0a84c25b1a4ba5200bffdd96f3d0c6efac5"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "031c2044da3e3a100b55b4b0f0d0c2ab7851f6000dc4638519a4ab8dc7b48a01"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l06-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6aa38a198059964fbac5681aa4d4e9cbddcda7bc5b17daa8800dacd39995a448"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l02-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l05-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "99a12c2df001603cb239c7ea38a247029bba6926c636e7ded36487163eeb8eb0"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l01-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "77083b98c9efe2225e7c97bcd3392c8419089fd749cfb954fae2acb1ccc101b0"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l16-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-dialogue-preview.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ae6979caa979a1200bf697c3bbaf14c19108cd2d918adabbcbc1849c4a9ca032"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-dialogue-preview.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6ef26a0d223771d322a919f7db78972e9af263c7dc256b9520d44fe5ad199925"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b1b03e59b2f606cc1db539c452b63acafe7f6dabc278e78cdc7312b2cc72a82c"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l12-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6e5a64f29ba843c64a46100256ab42224af48417eb05391195c02297af6e4da3"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l04-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9c13209bd6ce4237477b4ee8be6cc40c17afb40afafc532eb8d922f323680e5a"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a8acf64875b418281979710650bbcebd563083eca3324869b8e54659244f9e71"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "161a2dea8f58105ac5a26d6350578101b3eaf1e58a3147304b1b6b02efcf84b0"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l01-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f6990d12c552bca7d240b9963856e72ce9b81b19ab8a3ddf419e8cff5a18aae"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l01-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l02-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "742b1b62a9645efd76a7aca1c98574415bbb09be052081762665ea8d3099976f"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7cdb290e0ebb3acd3a2818d7b4e6095aedc73a614d2c5c2dcc1fb1e74d5dcb33"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l03-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d26218d01d6da55d7e9958f92904782b61d2a9b4dba0e21c5ba76308ce5f6b38"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "78799891e20c829186f6d7ca7db0a0ba7c239121b223f11306bc340449e395a6"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l12-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5f8fd43faff9ac024de12d00cd87e1ca0b2759a2e3693af7d104997e54b4290b"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l02-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7b6844c20e0678fa1ebbe589e87a76a0c53c5cb837e8575c54c635a5dfa89f71"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l17-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l03-curse.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "342c858da8b4874ee8d15120b89007177693ff88a4554f53dd315f92cd1eb93c"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l05-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l04-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l15-curse.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "69a6ebb4501c22337d8d2757c861a5ff8513ada20bae3aa65b0536553df607be"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l06-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l05-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b9788da0c50d2b002210bc19013a279e5631e5e1fa4a71b2195c66442740b6b9"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "14f2cadc0bc2f78bc0b5e3afd4fe5fb25732278c1777a43fed9cc3b9cdefea79"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-dialogue-preview.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "59d85b8edea4425c3b89ee1bca64149d69c910e70e7c1f036b8b59e686f3380c"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l06-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b76645b60d3380cb0acbc70fe954e7426e42e00684565c505e6aa3473cd08fd"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l04-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "203c507c87f2441245c74de56cf845fc2da55dab34b1ec77b2f89a3b47c2fbbe"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/gap.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c1602829c6fcffbe3308485d35cf8b54d347dac63489b90ba5b0bb0e766ba213"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e4399866e03d16a17eba3790677f926ec4fad65443b805f80d352c9ea625b1f3"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4051b6d0fbcf76c7e6439a27fe204394f2856a588a250a49f3b850961e54061e"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l15-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b4d5789ac1bb92d52da4f067bca96fe4ff586044f9867444461aeca1a3630fbd"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "62e7236b187a925779a3b61077cdf37cfc2edda69d0dacd96dec9dc287091d98"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l03-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l12-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cf71e529a070ec0af4fd7600369b824c30c77ac055d1625db7e34f92b22f9746"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e02-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "84d0daca5eeb8c39eeab016a7d2d54f3034731cc5902a792726d968c880bad45"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e01-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487"
+    },
+    {
+      "version": "current-production-input-code-snapshot.tgz",
+      "path": "Archive/final-recovered-records/current-production-input-code-snapshot.tgz/examples/r2v/accepted-audio/e03-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "21a51cb3e1152b2e8e0ad0b0463dea1f9243d99c36e81c52f7dfdb62343ce697"
+    }
+  ],
+  "held_archives": [
+    {
+      "archive": "pinned-source-code-and-licenses.zip",
+      "reason": "upstream source/license inventory held distinct from project output; no blanket redistribution clearance"
+    }
+  ]
+}

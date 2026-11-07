@@ -1,0 +1,25 @@
+{
+ "id": "e01",
+ "title": "The Waltz That Attacked First",
+ "source": "Harry-Draconia-YuleBall-v2-E01-script-sample-count-fixed.md (2026-10-25)",
+ "shots": [
+  {"id": "e01s01", "seconds": 5, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": [], "speakers": [], "action": "Harry enters the candlelit Yule Ball alone; in every window reflection Draconia is already looking at him", "camera": "wide slow drift through floating candles"},
+  {"id": "e01s02", "seconds": 5, "framing": "close", "location": "great_hall", "visible_characters": ["draconia"], "line_ids": ["e01s02l1"], "speakers": ["draconia"], "action": "Draconia sees a black spark above Harry, drops her programme and runs", "camera": "close, handheld"},
+  {"id": "e01s03", "seconds": 6, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s03l1"], "speakers": ["draconia"], "action": "Ice arrows strike where Harry stood; Draconia drags him onto the dance floor", "camera": "wide, whip pan"},
+  {"id": "e01s04", "seconds": 5, "framing": "three_quarter", "location": "great_hall", "visible_characters": ["harry"], "line_ids": ["e01s04l1"], "speakers": ["harry"], "action": "Harry lets her lead while scanning wand positions", "camera": "three-quarter tracking"},
+  {"id": "e01s05", "seconds": 6, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s05l1"], "speakers": ["draconia"], "action": "Another volley; Draconia spins Harry out of the impact line", "camera": "wide"},
+  {"id": "e01s06", "seconds": 5, "framing": "close", "location": "great_hall", "visible_characters": ["harry"], "line_ids": ["e01s06l1"], "speakers": ["harry"], "action": "Harry notices the arrows land on the offbeat and changes their steps", "camera": "close"},
+  {"id": "e01s07", "seconds": 4, "framing": "close", "location": "great_hall", "visible_characters": ["draconia"], "line_ids": ["e01s07l1"], "speakers": ["draconia"], "action": "Draconia grins despite the chaos", "camera": "close"},
+  {"id": "e01s08", "seconds": 7, "framing": "wide", "location": "great_hall", "visible_characters": ["harry"], "line_ids": ["e01s08l1"], "speakers": ["draconia"], "action": "Silver strings whip across the hall; Harry cuts two, a third wraps his wrist", "camera": "wide"},
+  {"id": "e01s09", "seconds": 5, "framing": "close", "location": "great_hall", "visible_characters": ["draconia"], "line_ids": ["e01s09l1"], "speakers": ["harry"], "action": "Draconia snaps the string with her heel and keeps dancing", "camera": "close"},
+  {"id": "e01s10", "seconds": 7, "framing": "wide", "location": "great_hall", "visible_characters": ["draconia"], "line_ids": ["e01s10l1"], "speakers": ["draconia"], "action": "Six empty suits of armor march in; Draconia kicks a drinks trolley into the first", "camera": "wide"},
+  {"id": "e01s11", "seconds": 5, "framing": "three_quarter", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s11l1"], "speakers": ["harry"], "action": "Harry catches her, turns the rescue into the next step, studies the masked figure", "camera": "three-quarter"},
+  {"id": "e01s12", "seconds": 6, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s12l1"], "speakers": ["draconia"], "action": "The masked figure copies their movements; each copied step seals an exit with ice", "camera": "wide"},
+  {"id": "e01s13", "seconds": 6, "framing": "close", "location": "great_hall", "visible_characters": ["harry"], "line_ids": ["e01s13l1"], "speakers": ["harry"], "action": "Harry sees the floor pattern and deliberately breaks form", "camera": "close"},
+  {"id": "e01s14", "seconds": 6, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s14l1"], "speakers": ["draconia"], "action": "They improvise; a redirected spell hits the chandelier chain", "camera": "wide"},
+  {"id": "e01s15", "seconds": 5, "framing": "three_quarter", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s15l1"], "speakers": ["harry"], "action": "Draconia flips a banquet table into a shield on Harry's call", "camera": "three-quarter"},
+  {"id": "e01s16", "seconds": 5, "framing": "wide", "location": "great_hall", "visible_characters": ["harry", "draconia"], "line_ids": ["e01s16l1"], "speakers": ["draconia"], "action": "The chandelier crashes into the frozen floor; ribbons burn onto their hands", "camera": "wide"},
+  {"id": "e01s17", "seconds": 5, "framing": "close", "location": "great_hall", "visible_characters": ["harry"], "line_ids": ["e01s17l1"], "speakers": ["harry"], "action": "The doors seal; the forest answers with a bow-shaped light; Harry turns on Draconia", "camera": "close"},
+  {"id": "e01s18", "seconds": 2, "framing": "close", "location": "great_hall", "visible_characters": ["draconia"], "line_ids": ["e01s18l1"], "speakers": ["draconia"], "action": "Close on Draconia: scared for the first time, but she does not step back", "camera": "close, locked"}
+ ]
+}

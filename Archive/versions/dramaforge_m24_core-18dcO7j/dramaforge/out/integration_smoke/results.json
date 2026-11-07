@@ -1,0 +1,29 @@
+{
+  "multitalk": {
+    "returncode": 1,
+    "tail": [
+      "  File \"<environment>/.local/lib/python3.10/site-packages/xfuser/envs.py\", line 138, in get_device_version",
+      "    raise NotImplementedError(",
+      "NotImplementedError: No Accelerators(AMD/NV/MTT GPU, additional accelerator families) available"
+    ],
+    "successful_help": false
+  },
+  "infinitetalk": {
+    "returncode": 1,
+    "tail": [
+      "  File \"<environment>/.local/lib/python3.10/site-packages/xfuser/envs.py\", line 138, in get_device_version",
+      "    raise NotImplementedError(",
+      "NotImplementedError: No Accelerators(AMD/NV/MTT GPU, additional accelerator families) available"
+    ],
+    "successful_help": false
+  },
+  "vace": {
+    "returncode": 1,
+    "tail": [
+      "  File \"<project>/third_party/vace/vace/vace_wan_inference.py\", line 18, in <module>",
+      "    import wan",
+      "ModuleNotFoundError: No module named 'wan'"
+    ],
+    "successful_help": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "E01-34s-argument-test-shot1-ONCE",
+  "model": "minimax-h3",
+  "resolution": "720p",
+  "audio": false,
+  "end_seconds": 10,
+  "assets": {
+    "image_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/ecb543a5-b30f-4343-95e3-22ab8a91f083-image-0.png"
+  },
+  "style": {
+    "prompt": "Cinematic photorealistic tense ballroom argument, one continuous single-speaker close-up. Preserve exactly the reference face, hair, costume and room. Young man with round glasses, black formal robe with red lining, white shirt and black tie. He is frightened and accusatory, brows tense, jaw tight, breath uneven. He turns his gaze toward the woman just off camera; ice arrow passes out of frame immediately. Natural small shoulder movement and breathing as they continue a restrained turning step, urgent danger, no smile. Keep the full face and mouth unobstructed and sharply visible throughout, no dramatic camera orbit, no cuts, no face morphing, no text. Only this one face visible. Silent visual performance for separately supplied dialogue."
+  }
+}

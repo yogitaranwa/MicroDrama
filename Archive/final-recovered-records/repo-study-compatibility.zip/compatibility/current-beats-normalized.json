@@ -1,0 +1,520 @@
+{
+  "shots": [
+    {
+      "id": "e01s01b1",
+      "seconds": 5.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "harry_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s02b1",
+      "seconds": 4.7,
+      "line_ids": [
+        "e01-l01-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s02b2",
+      "seconds": 2,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "harry_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s02b3",
+      "seconds": 3.3,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "draconia_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s03b1",
+      "seconds": 3.9,
+      "line_ids": [
+        "e01-l02-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "two_shot_action",
+        "draconia_front_close",
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s03b2",
+      "seconds": 0.6,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s03b3",
+      "seconds": 3.5,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "draconia_fullbody",
+        "harry_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s04b1",
+      "seconds": 3.5,
+      "line_ids": [
+        "e01-l03-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s04b2",
+      "seconds": 1.5,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s05b1",
+      "seconds": 0.8333333333333334,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s05b2",
+      "seconds": 7.166666666666667,
+      "line_ids": [
+        "e01-l04-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "two_shot_dialogue",
+        "draconia_front_close",
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s06b1",
+      "seconds": 2.5,
+      "line_ids": [
+        "e01-l05-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s06b2",
+      "seconds": 0.5,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s06b3",
+      "seconds": 4.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "draconia_fullbody",
+        "harry_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s07b1",
+      "seconds": 6.0,
+      "line_ids": [
+        "e01-l06-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s07b2",
+      "seconds": 2.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s08b1",
+      "seconds": 4.0,
+      "line_ids": [
+        "e01-l07-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s08b2",
+      "seconds": 3.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "draconia_fullbody",
+        "harry_fullbody",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s09b1",
+      "seconds": 1.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s09b2",
+      "seconds": 4.0,
+      "line_ids": [
+        "e01-l08-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "two_shot_dialogue",
+        "harry_front_close",
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s10b1",
+      "seconds": 0.8333333333333334,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s10b2",
+      "seconds": 5.166666666666667,
+      "line_ids": [
+        "e01-l09-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s11b1",
+      "seconds": 3.0,
+      "line_ids": [
+        "e01-l10-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "two_shot_dialogue",
+        "harry_front_close",
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s12b1",
+      "seconds": 5.0,
+      "line_ids": [
+        "e01-l11-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s12b2",
+      "seconds": 2.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s13b1",
+      "seconds": 3.5,
+      "line_ids": [
+        "e01-l12-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s13b2",
+      "seconds": 1.5,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s14b1",
+      "seconds": 3.566666666666667,
+      "line_ids": [
+        "e01-l13-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "two_shot_action",
+        "draconia_front_close",
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s14b2",
+      "seconds": 1.4333333333333333,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s15b1",
+      "seconds": 4.0,
+      "line_ids": [
+        "e01-l14-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s15b2",
+      "seconds": 2.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s16b1",
+      "seconds": 2.0,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s16b2",
+      "seconds": 4.4,
+      "line_ids": [
+        "e01-l15-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s16b3",
+      "seconds": 2.6,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "two_shot_action",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s17b1",
+      "seconds": 3.0,
+      "line_ids": [
+        "e01-l16-harry.mp3"
+      ],
+      "speakers": [
+        "HARRY"
+      ],
+      "visible_characters": [
+        "HARRY"
+      ],
+      "frame_refs": [
+        "harry_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s18b1",
+      "seconds": 4.5,
+      "line_ids": [
+        "e01-l17-draconia.mp3"
+      ],
+      "speakers": [
+        "DRACONIA"
+      ],
+      "visible_characters": [
+        "DRACONIA"
+      ],
+      "frame_refs": [
+        "draconia_front_close",
+        "yule_ball_location"
+      ]
+    },
+    {
+      "id": "e01s18b2",
+      "seconds": 1.5,
+      "line_ids": [],
+      "speakers": [],
+      "visible_characters": [],
+      "frame_refs": [
+        "yule_ball_location"
+      ]
+    }
+  ]
+}

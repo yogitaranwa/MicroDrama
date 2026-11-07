@@ -1,0 +1,14 @@
+test_audio_missing (test_reference_bridge.Tests) ... ok
+test_audio_mutated (test_reference_bridge.Tests) ... ok
+test_cycle (test_reference_bridge.Tests) ... ok
+test_duplicate_camera_membership (test_reference_bridge.Tests) ... ok
+test_hash_change (test_reference_bridge.Tests) ... ok
+test_parent_missing (test_reference_bridge.Tests) ... ok
+test_prepared_not_rendered (test_reference_bridge.Tests) ... ok
+test_reference_hash_mismatch (test_reference_bridge.Tests) ... ok
+test_view_missing (test_reference_bridge.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK

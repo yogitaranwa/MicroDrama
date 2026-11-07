@@ -1,0 +1,106 @@
+{
+  "title": "Harry Potter: The Missing Minute",
+  "type": "production_outline_not_execution_manifest",
+  "estimated_seconds": 285,
+  "timing": "Unmeasured; rough scene estimates must be replaced with actual recorded dialogue and edit timing",
+  "full_film_status": "not_generated",
+  "characters": [
+    "harry",
+    "hermione",
+    "lily",
+    "toddler_harry"
+  ],
+  "offscreen_character": [
+    "james"
+  ],
+  "locations": [
+    "corridor",
+    "classroom",
+    "potter_kitchen"
+  ],
+  "continuity": {
+    "harry": "messy dark hair, round glasses, school shirt/red tie/black robe; injured palm only after climax",
+    "hermione": "bushy brown hair, school shirt/red tie/black robe; injured hand only after scene4",
+    "classroom": "table center, basin on table, window camera-left, door behind Hermione",
+    "screen_positions": "Harry left, Hermione right within classroom two-shots; reverse angles preserve eyelines",
+    "props": [
+      "one shallow stone Pensieve",
+      "Ministry evidence tag",
+      "Harry wristwatch",
+      "Harry wand",
+      "Hermione wand"
+    ],
+    "state_changes": [
+      "watch stops after memory entry",
+      "Hermione injured after first physical rejection",
+      "memories of Hermione erode",
+      "kitchen intrudes into classroom",
+      "basin destroyed; Harry palm burned; memories restored except kitchen"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "scene1",
+      "title": "The voice",
+      "estimated_seconds": 35
+    },
+    {
+      "id": "scene2",
+      "title": "Breakfast",
+      "estimated_seconds": 35
+    },
+    {
+      "id": "scene3",
+      "title": "The impossible viewer",
+      "estimated_seconds": 40
+    },
+    {
+      "id": "scene4",
+      "title": "The bargain",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "scene5",
+      "title": "The price",
+      "estimated_seconds": 45
+    },
+    {
+      "id": "scene6",
+      "title": "The choice",
+      "estimated_seconds": 55
+    },
+    {
+      "id": "scene7",
+      "title": "What remains",
+      "estimated_seconds": 30
+    }
+  ],
+  "test": {
+    "purpose": "Two connected shots testing visible action and character persistence, without dialogue or story-completeness claims",
+    "additional_credit_cap": 258,
+    "planned_credits": 242,
+    "jobs": [
+      {
+        "id": "pensieve-reference",
+        "kind": "image",
+        "credits": 50
+      },
+      {
+        "id": "reach",
+        "kind": "video",
+        "seconds": 4,
+        "credits": 96
+      },
+      {
+        "id": "intervention",
+        "kind": "video",
+        "seconds": 4,
+        "credits": 96
+      }
+    ],
+    "voice": "none; visual proof only",
+    "sound": "locally synthesized non-dialogue atmosphere if used; not final soundtrack",
+    "continuation": "Second clip uses actual last frame from first; refuse if first clip violates character/layout/action requirements",
+    "result": "Rough silent visual proof completed; 242 credits. Choreography and camera deviations remain; not final accepted footage."
+  }
+}

@@ -1,0 +1,24 @@
+{
+ "n": 1,
+ "seconds": 12,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "You humiliated me in front of half the school, Potter. That mistaken identity bit was cruel and calculated.",
+   "emotion": "sharp indignation",
+   "expression": "hands fisting the oversized lapels, chin thrust upward"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "Filch is wheezing toward us through the archway right now. We argue later if we still can.",
+   "emotion": "flat urgency",
+   "expression": "eyes fixed on the archway, hand drifting to wand pocket"
+  },
+  {
+   "speaker": "Argus Filch",
+   "text": "Somebody is out of bed again tonight, and I will find every last one of you before the professors do.",
+   "emotion": "wheezy menace, suspicious",
+   "expression": "lantern raised in the archway, breath rasping"
+  }
+ ]
+}

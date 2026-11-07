@@ -1,0 +1,15 @@
+row,beat,source_asset,duration_seconds,start_seconds,end_seconds,line_ids
+1,1,shot01-entry-usable-cut-7s.mp4,7.084,0,7.084,
+2,2,shot02-draconia-pull Pro lip sync,6.5,7.084,13.584,1
+3,3,shot03-frozen-guest-local-9s.mp4,9.0,13.584,22.584,"2,3"
+4,4,shot04-reflection Pro lip sync,8.0,22.584,30.584,4
+5,5,shot05-arrow-volley-local Pro lip sync,6.042,30.584,36.626,"5,6"
+6,6,shot06-ward-mark Pro lip sync,9.0,36.626,45.626,"7,8"
+7,7,shot07-strings-wand Pro lip sync,6.459,45.626,52.085,9
+8,8,shot08-armor-trolley-01.mp4,8.0,52.085,60.085,10
+9,9,shot09-trolley-mask-01.mp4,7.292,60.085,67.377,
+10,10,shot10-floor-grid Pro lip sync + local reframed crop,9.0,67.377,76.377,"11,12"
+11,11a,shot11-action-usable-cut-4s.mp4,3.959,76.377,80.336,
+12,11b,shot11b-marks-01.mp4 + local hands-only line14 insert,4.459,80.336,84.795,"13,14"
+13,12a,shot12a-marks-close Pro lip sync (silent visual),4.292,84.795,89.087,
+14,12b,shot12b-draconia-reaction Pro lip sync,5.167,89.087,94.254,15

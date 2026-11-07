@@ -1,0 +1,2876 @@
+{
+  "series_id": "harry_draconia_yule_ball_s1",
+  "season": 1,
+  "source": "Original agent-written 10-episode alternate Yule Ball arc, expanded to the established 64-second episode format after latest user steering; not model or reel copied",
+  "episodes": [
+    {
+      "id": "e01",
+      "title": "A Name in Ice",
+      "draft_seconds": 64,
+      "setup": "At the first new Yule Ball, an enchanted dance card writes Harry and Draconia as partners.",
+      "turn": "The card freezes the floor when they refuse.",
+      "cliffhanger": "The doors swing open by themselves and the first candle flame bends toward the hidden stair",
+      "shots": [
+        {
+          "id": "e01s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s01l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide slow push through floating candles",
+          "action": "Harry enters the glittering Yule Ball alone while Draconia crosses the floor from the opposite doors",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "program"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            },
+            {
+              "id": "ball-program",
+              "description": "folded Yule Ball programme"
+            }
+          ]
+        },
+        {
+          "id": "e01s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s02l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close insert on enchanted card",
+          "action": "A silver dance card snaps open and green ink writes their names together",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e01s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s03l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "two-shot circling them",
+          "action": "The orchestra stops as frost races across the dance floor around their shoes",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            },
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e01s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s04l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low angle on cracked floor",
+          "action": "The polished floor splits in a perfect dance-step pattern and green light breathes through it",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e01s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static wide through snowy arch",
+          "action": "Harry and Draconia look back at the sealed ballroom doors as candle flames turn green behind the glass",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e01s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s06l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "close dolly around sealed doors",
+          "action": "Draconia tests the frozen door handle; green frost spells ONE STEP in her palm",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e01s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s07l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "overhead detail of frost geometry",
+          "action": "Harry kneels and maps the cracks against the silent four-beat pulse of the candles",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "card",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e01s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [],
+          "camera": "macro on the dance card",
+          "action": "The card flips itself over and stamps BOTH NAMES REQUIRED in silver ink",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e01s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e01s09l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "handheld two-shot through snow",
+          "action": "Draconia steps onto the first glowing crack before Harry can stop her, daring the floor to answer",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "wand"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e01s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide from the orchestra platform",
+          "action": "The doors swing open by themselves and the first candle flame bends toward the hidden stair",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "wand"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e01s01l1",
+          "speaker": "harry",
+          "text": "I came for ten quiet minutes, not a war reunion.",
+          "performance": "sighs, dry and guarded"
+        },
+        {
+          "id": "e01s02l1",
+          "speaker": "draconia",
+          "text": "Tell your scar to stop picking my partners.",
+          "performance": "angry, sharp wit"
+        },
+        {
+          "id": "e01s03l1",
+          "speaker": "harry",
+          "text": "That was not my spell.",
+          "performance": "curious, alarmed"
+        },
+        {
+          "id": "e01s04l1",
+          "speaker": "draconia",
+          "text": "Then congratulations, Potter. The floor hates both of us.",
+          "performance": "nervous, controlled"
+        },
+        {
+          "id": "e01s06l1",
+          "speaker": "draconia",
+          "text": "It is not locking us out. It is inviting us back in.",
+          "performance": "curious, wary"
+        },
+        {
+          "id": "e01s07l1",
+          "speaker": "harry",
+          "text": "Every crack lands on a beat. This is choreography, not damage.",
+          "performance": "curious, controlled"
+        },
+        {
+          "id": "e01s09l1",
+          "speaker": "draconia",
+          "text": "Then let us give it a count it did not expect.",
+          "performance": "excited, impulsive"
+        }
+      ]
+    },
+    {
+      "id": "e02",
+      "title": "The Rehearsal",
+      "draft_seconds": 64,
+      "setup": "The card will not open the hall until its chosen partners practice the old waltz.",
+      "turn": "Their forced steps awaken mirror images below them.",
+      "cliffhanger": "They step through the mirror's cold surface as the reflected Draconia curtsies to them",
+      "shots": [
+        {
+          "id": "e02s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s01l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "tracking shot around snowy colonnade",
+          "action": "The card pulls Harry and Draconia into a practice frame beneath the arches",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e02s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s02l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close-up hands and wands",
+          "action": "Their wands spark green and gold when they take formal dance positions",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e02s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s03l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "overhead crane looking down",
+          "action": "Their shadows complete a perfect waltz even while their bodies stumble apart",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e02s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s04l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "rack focus from real faces to mirror faces",
+          "action": "A tall mirror shows the pair dancing flawlessly, but the reflected Draconia keeps moving alone",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            }
+          ]
+        },
+        {
+          "id": "e02s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static close on mirror surface",
+          "action": "The mirrored Harry turns and points beneath the floor",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e02s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s06l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide symmetrical shot",
+          "action": "The mirrored partners bow to each other while the real Harry and Draconia remain still",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e02s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s07l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "playful circling camera",
+          "action": "Draconia deliberately misses a step; the mirror snaps to the correct one and taps the glass",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e02s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow tilt down mirror",
+          "action": "The reflected ballroom dissolves into the buried undercroft, one stair at a time",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e02s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e02s09l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on Harry checking the doors",
+          "action": "Harry counts the seconds between candle flickers and finds the same rhythm in the lock",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "card",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e02s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low angle behind them",
+          "action": "They step through the mirror's cold surface as the reflected Draconia curtsies to them",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "wand"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e02s01l1",
+          "speaker": "harry",
+          "text": "One rehearsal. Then we burn the card.",
+          "performance": "angry, clipped"
+        },
+        {
+          "id": "e02s02l1",
+          "speaker": "draconia",
+          "text": "Try not to lead like you are chasing a Snitch.",
+          "performance": "whispers, tense humor"
+        },
+        {
+          "id": "e02s03l1",
+          "speaker": "harry",
+          "text": "The steps are older than the school.",
+          "performance": "curious, uneasy"
+        },
+        {
+          "id": "e02s04l1",
+          "speaker": "draconia",
+          "text": "Potter, why is she still dancing?",
+          "performance": "nervous, whispered"
+        },
+        {
+          "id": "e02s06l1",
+          "speaker": "harry",
+          "text": "The reflection is half a count ahead. It is showing the next move, not the last one.",
+          "performance": "curious, analytical"
+        },
+        {
+          "id": "e02s07l1",
+          "speaker": "draconia",
+          "text": "Finally, a partner who admits when I am right.",
+          "performance": "laughs, delighted"
+        },
+        {
+          "id": "e02s09l1",
+          "speaker": "harry",
+          "text": "We have nine minutes before the guests are readmitted.",
+          "performance": "nervous, precise"
+        }
+      ]
+    },
+    {
+      "id": "e03",
+      "title": "Green and Silver",
+      "draft_seconds": 64,
+      "setup": "Draconia recognizes the music as an old house ward, not a dance tune.",
+      "turn": "Harry hears a familiar voice hidden inside the spell.",
+      "cliffhanger": "The hidden stair spirals down around a column of green music",
+      "shots": [
+        {
+          "id": "e03s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s01l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "macro on vibrating glass orb",
+          "action": "A glass music orb plays the waltz backward while frost curls over the tables",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb",
+            "candelabra"
+          ],
+          "recurring_props": [
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            },
+            {
+              "id": "silver-candelabra",
+              "description": "silver candelabra with green-flamed candles"
+            }
+          ]
+        },
+        {
+          "id": "e03s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s02l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on Harry as sound drops away",
+          "action": "Harry touches the orb and the hall becomes silent except for a woman humming",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb"
+          ],
+          "recurring_props": [
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            }
+          ]
+        },
+        {
+          "id": "e03s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s03l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "side tracking between them",
+          "action": "Draconia steadies the orb while Harry's wand hand trembles",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e03s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s04l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low dolly over frosted floor",
+          "action": "Green frost writes Lily across the dance steps, then scratches it out",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e03s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static shaft of green light",
+          "action": "A hidden stair opens beneath the final dance step",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e03s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s06l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "intimate close two-shot",
+          "action": "Draconia recognizes the backward lullaby from old Malfoy nursery wards and goes still",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e03s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s07l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on Harry's ear and the orb",
+          "action": "The hidden woman's humming resolves into Lily's name beneath the melody",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "orb"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e03s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [],
+          "camera": "macro on the cracking orb",
+          "action": "A thin fracture crosses the glass orb, leaking silver notes that harden into stairs",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e03s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e03s09l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on joined hands",
+          "action": "Draconia catches Harry's wrist before he can follow the sound alone",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb",
+            "wand"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e03s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "descending crane shot",
+          "action": "The hidden stair spirals down around a column of green music",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e03s01l1",
+          "speaker": "draconia",
+          "text": "This is not music. It is a Slytherin warning.",
+          "performance": "curious, urgent"
+        },
+        {
+          "id": "e03s02l1",
+          "speaker": "harry",
+          "text": "I know that voice. I have heard it my whole life.",
+          "performance": "sad, stunned"
+        },
+        {
+          "id": "e03s03l1",
+          "speaker": "draconia",
+          "text": "Then listen, but do not follow it alone.",
+          "performance": "softly, protective"
+        },
+        {
+          "id": "e03s04l1",
+          "speaker": "harry",
+          "text": "It knows her name.",
+          "performance": "whispers, shaken"
+        },
+        {
+          "id": "e03s06l1",
+          "speaker": "draconia",
+          "text": "My grandmother sang this when the family vault was about to bite.",
+          "performance": "sad, unsettled"
+        },
+        {
+          "id": "e03s07l1",
+          "speaker": "harry",
+          "text": "She sang it forward. Someone buried her inside it backward.",
+          "performance": "whispers, grief-struck"
+        },
+        {
+          "id": "e03s09l1",
+          "speaker": "draconia",
+          "text": "Stay with my voice, not hers. Count my steps.",
+          "performance": "softly, urgent"
+        }
+      ]
+    },
+    {
+      "id": "e04",
+      "title": "Steps in the Dark",
+      "draft_seconds": 64,
+      "setup": "Harry and Draconia descend into the undercroft where the first Yule Ball was buried.",
+      "turn": "The spell forces them through a vertical dance over broken stone.",
+      "cliffhanger": "The carved floor opens a ledger: APOLOGY, DEBT, PARTNER, PRICE",
+      "shots": [
+        {
+          "id": "e04s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s01l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "handheld follow down spiral stairs",
+          "action": "Harry lights the stairway while Draconia tests each step with her wand",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e04s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s02l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide vertical shot",
+          "action": "Stone platforms rise and turn like dancers, forcing the pair to leap in time with the music",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            },
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e04s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s03l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "spinning two-shot",
+          "action": "Harry catches Draconia mid-turn as a platform drops away under her",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e04s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s04l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on carved names",
+          "action": "The floor illuminates old partner names, ending with MALFOY in green",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e04s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static low angle",
+          "action": "A root splits the carved MALFOY name and wraps around the silver ribbon on Draconia's wrist",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e04s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s06l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "fast lateral track",
+          "action": "The platforms reverse direction, forcing Harry to read the rhythm three moves ahead",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e04s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s07l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "slow-motion leap",
+          "action": "Draconia leaps before the mark and laughs when the stone rises to meet her",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e04s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "close on root and ribbon",
+          "action": "The root tightens around the silver ribbon and pulls Draconia toward the carved MALFOY name",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e04s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e04s09l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "over-shoulder rescue",
+          "action": "Harry cuts the root only after Draconia anchors her feet on the carved partner mark",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e04s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low static on glowing floor",
+          "action": "The carved floor opens a ledger: APOLOGY, DEBT, PARTNER, PRICE",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "ribbon"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e04s01l1",
+          "speaker": "harry",
+          "text": "Stay on the carved steps. The gaps are moving.",
+          "performance": "nervous, focused"
+        },
+        {
+          "id": "e04s02l1",
+          "speaker": "draconia",
+          "text": "If I fall, I am taking your reputation with me.",
+          "performance": "laughs, frightened wit"
+        },
+        {
+          "id": "e04s03l1",
+          "speaker": "harry",
+          "text": "I have you. Move on my count.",
+          "performance": "excited, commanding"
+        },
+        {
+          "id": "e04s04l1",
+          "speaker": "draconia",
+          "text": "No. My family paid for this dance in secrets.",
+          "performance": "sad, angry"
+        },
+        {
+          "id": "e04s06l1",
+          "speaker": "harry",
+          "text": "Pattern changes on the seventh beat. Wait for my mark.",
+          "performance": "nervous, strategic"
+        },
+        {
+          "id": "e04s07l1",
+          "speaker": "draconia",
+          "text": "Your seventh beat is late. My sixth is better.",
+          "performance": "laughs, exhilarated"
+        },
+        {
+          "id": "e04s09l1",
+          "speaker": "harry",
+          "text": "Do not pull away from it. Step into the mark and make it carry you.",
+          "performance": "excited, precise"
+        }
+      ]
+    },
+    {
+      "id": "e05",
+      "title": "The House Debt",
+      "draft_seconds": 64,
+      "setup": "The undercroft demands a truthful apology from each chosen partner.",
+      "turn": "Draconia's apology would expose a Malfoy betrayal tied to Harry's family.",
+      "cliffhanger": "Harry chooses not to demand the rest; the stair seals as the spell retreats upstairs",
+      "shots": [
+        {
+          "id": "e05s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s01l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close two-shot lit by wand tips",
+          "action": "The carved floor asks for a debt, each word appearing as frost on stone",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e05s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s02l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow push on Draconia",
+          "action": "Draconia reads the green words and hides them with her sleeve",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e05s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s03l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "over-shoulder Harry",
+          "action": "Harry lowers his wand instead of pressing her",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e05s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s04l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low angle as steps collapse upward",
+          "action": "Draconia seals the stair with green fire and chooses the ballroom over the truth",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            },
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e05s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide rush through frozen dancers",
+          "action": "The music snaps back on above them and every candle flares green",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "orb"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            },
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            }
+          ]
+        },
+        {
+          "id": "e05s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s06l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on frost words",
+          "action": "Harry traces the ledger order and realizes the price changes if the apology is mutual",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "card",
+            "wand"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e05s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s07l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "tight close on Draconia",
+          "action": "Draconia shakes her head as the words reveal MALFOY BETRAYED EVANS",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e05s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [],
+          "camera": "static wide on green fire",
+          "action": "The undercroft writes the first debt in fire: WHO LET THE DANCE WAKE?",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e05s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s09l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "two-shot in green light",
+          "action": "Draconia admits part of the truth without naming the betrayer",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e05s10",
+          "seconds": 6.4,
+          "line_ids": [
+            "e05s10l1"
+          ],
+          "location": "undercroft",
+          "location_description": "A forgotten stone undercroft beneath the Great Hall, carved dance steps in the floor, roots in the cracks and old green spell-light.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on Harry lowering his wand",
+          "action": "Harry chooses not to demand the rest; the stair seals as the spell retreats upstairs",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e05s01l1",
+          "speaker": "harry",
+          "text": "What does it want from us?",
+          "performance": "curious, wary"
+        },
+        {
+          "id": "e05s02l1",
+          "speaker": "draconia",
+          "text": "A confession. Mine would burn what is left of my name.",
+          "performance": "whispers, afraid"
+        },
+        {
+          "id": "e05s03l1",
+          "speaker": "harry",
+          "text": "Then we find another way. No one gets sacrificed tonight.",
+          "performance": "softly, resolute"
+        },
+        {
+          "id": "e05s04l1",
+          "speaker": "draconia",
+          "text": "Remember that choice when you hate me tomorrow.",
+          "performance": "sad, controlled"
+        },
+        {
+          "id": "e05s06l1",
+          "speaker": "harry",
+          "text": "It does not need your name. It needs a true exchange. That is a loophole.",
+          "performance": "curious, intent"
+        },
+        {
+          "id": "e05s07l1",
+          "speaker": "draconia",
+          "text": "Some loopholes are just prettier traps, Potter.",
+          "performance": "sad, guarded"
+        },
+        {
+          "id": "e05s09l1",
+          "speaker": "draconia",
+          "text": "My family fed the song a Potter memory. I buried the proof.",
+          "performance": "whispers, ashamed"
+        },
+        {
+          "id": "e05s10l1",
+          "speaker": "harry",
+          "text": "Then we make it ask for the truth when you are ready, not when it is hungry.",
+          "performance": "softly, steady"
+        }
+      ]
+    },
+    {
+      "id": "e06",
+      "title": "The Broken Bow",
+      "draft_seconds": 64,
+      "setup": "The enchantment freezes the Yule Ball guests in the middle of the first dance.",
+      "turn": "Harry and Draconia cross the moving floor while spell-light hunts them.",
+      "cliffhanger": "The center circle contracts until only one partner mark remains under Harry's feet",
+      "shots": [
+        {
+          "id": "e06s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s01l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "tracking low over moving floorboards",
+          "action": "Frozen couples tilt like statues while Harry and Draconia weave between them",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "program"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            },
+            {
+              "id": "ball-program",
+              "description": "folded Yule Ball programme"
+            }
+          ]
+        },
+        {
+          "id": "e06s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s02l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "whip pan with spell streaks",
+          "action": "Green bolts chase them across the floor; Harry deflects one into a floating candle",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            },
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e06s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s03l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow-motion two-shot",
+          "action": "Draconia pulls Harry through a falling ribbon of silver light and lands in the correct step",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e06s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s04l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on faceless conductor",
+          "action": "The orchestra conductor turns without a face and points its bow at Harry",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "orb"
+          ],
+          "recurring_props": [
+            {
+              "id": "glass-orb",
+              "description": "small glass music orb containing the waltz spell"
+            }
+          ]
+        },
+        {
+          "id": "e06s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static overhead",
+          "action": "The dancers rotate outward, leaving Harry and Draconia isolated in the center circle",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e06s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s06l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "rhythmic tracking shot",
+          "action": "Draconia counts the frozen dancers aloud and spots the beat before each floor panel moves",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "program",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e06s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s07l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on conductor bow",
+          "action": "Harry notices the faceless conductor lag behind the actual music",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "orb",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e06s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [],
+          "camera": "wide frozen tableau",
+          "action": "The frozen guests rotate one exact step, forming a green-and-silver compass around the pair",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "program"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e06s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e06s09l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close two-shot mid-spin",
+          "action": "Draconia changes the count and forces the compass to open a path",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e06s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "overhead static",
+          "action": "The center circle contracts until only one partner mark remains under Harry's feet",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "candles"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e06s01l1",
+          "speaker": "draconia",
+          "text": "Do not break the rhythm. It is counting us.",
+          "performance": "nervous, urgent"
+        },
+        {
+          "id": "e06s02l1",
+          "speaker": "harry",
+          "text": "Left spin, now. Do not let go.",
+          "performance": "excited, protective"
+        },
+        {
+          "id": "e06s03l1",
+          "speaker": "draconia",
+          "text": "You are heavy for a savior.",
+          "performance": "laughs, breathless"
+        },
+        {
+          "id": "e06s04l1",
+          "speaker": "harry",
+          "text": "It wants me alone.",
+          "performance": "whispers, realizing"
+        },
+        {
+          "id": "e06s06l1",
+          "speaker": "draconia",
+          "text": "Four beats forward, two sideways, one dramatic disaster. I adore a predictable curse.",
+          "performance": "excited, playful"
+        },
+        {
+          "id": "e06s07l1",
+          "speaker": "harry",
+          "text": "The conductor is not leading. It is copying something under the floor.",
+          "performance": "curious, analytical"
+        },
+        {
+          "id": "e06s09l1",
+          "speaker": "draconia",
+          "text": "Try to look impressed, Harry. I just outdanced a haunting.",
+          "performance": "laughs, breathless"
+        }
+      ]
+    },
+    {
+      "id": "e07",
+      "title": "What the Mirror Saw",
+      "draft_seconds": 64,
+      "setup": "The mirror gallery reveals the memory Draconia tried to bury.",
+      "turn": "Harry learns she sabotaged the old curse years ago, not helped it.",
+      "cliffhanger": "Draconia places her hand beside his on the glass, not quite touching",
+      "shots": [
+        {
+          "id": "e07s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s01l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow dolly past mirrors",
+          "action": "Every mirror shows a different year of the Yule Ball spell, ending with a younger Draconia breaking a green seal",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            }
+          ]
+        },
+        {
+          "id": "e07s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s02l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close Draconia and reflection",
+          "action": "Draconia faces the reflected version of herself refusing to look away",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e07s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s03l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "over-shoulder Harry",
+          "action": "Harry touches the mirror and sees his own childhood bedroom flash inside",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e07s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s04l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static symmetrical two-shot",
+          "action": "Green cracks spread from Harry's scar across the mirror surface",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            }
+          ]
+        },
+        {
+          "id": "e07s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "macro on breaking glass",
+          "action": "The mirror writes POTTER in green and shatters inward without falling",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e07s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s06l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "quiet close two-shot",
+          "action": "Harry asks why Draconia buried the proof instead of asking for help",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "mirror",
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e07s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s07l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "close Draconia profile",
+          "action": "Draconia admits pride was the only Malfoy heirloom she wanted to keep",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e07s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [],
+          "camera": "reflection flashback",
+          "action": "The mirror shows Lily's melody being stolen through a green-silver dance card",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e07s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s09l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on Harry",
+          "action": "Harry sees his mother hum the same tune in a memory the curse should not own",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "mirror"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e07s10",
+          "seconds": 6.4,
+          "line_ids": [
+            "e07s10l1"
+          ],
+          "location": "mirror_gallery",
+          "location_description": "A narrow castle gallery of tall antique mirrors, cold blue moonlight, dark frames reflecting the Yule Ball below.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static broken symmetry",
+          "action": "Draconia places her hand beside his on the glass, not quite touching",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "ribbon"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e07s01l1",
+          "speaker": "harry",
+          "text": "You tried to stop this before I ever knew it existed.",
+          "performance": "softly, stunned"
+        },
+        {
+          "id": "e07s02l1",
+          "speaker": "draconia",
+          "text": "I failed. In my family, that is the same as helping.",
+          "performance": "sad, bitter"
+        },
+        {
+          "id": "e07s03l1",
+          "speaker": "harry",
+          "text": "Why does it have my memories?",
+          "performance": "curious, afraid"
+        },
+        {
+          "id": "e07s04l1",
+          "speaker": "draconia",
+          "text": "Because it did not wake for me. It woke for you.",
+          "performance": "whispers, shaken"
+        },
+        {
+          "id": "e07s06l1",
+          "speaker": "harry",
+          "text": "You were a child. Why carry it alone?",
+          "performance": "softly, direct"
+        },
+        {
+          "id": "e07s07l1",
+          "speaker": "draconia",
+          "text": "Because admitting fear feels like handing someone a knife.",
+          "performance": "whispers, vulnerable"
+        },
+        {
+          "id": "e07s09l1",
+          "speaker": "harry",
+          "text": "It stole the safest thing I had.",
+          "performance": "sad, barely controlled"
+        },
+        {
+          "id": "e07s10l1",
+          "speaker": "draconia",
+          "text": "Then we steal it back. Loudly, badly, together.",
+          "performance": "excited, fierce"
+        }
+      ]
+    },
+    {
+      "id": "e08",
+      "title": "The Uninvited",
+      "draft_seconds": 64,
+      "setup": "A faceless champion forms from the broken mirror and claims the final waltz.",
+      "turn": "Draconia shields Harry, reversing the role the curse expects.",
+      "cliffhanger": "Harry reaches through the fading curse and offers his hand without looking away from her",
+      "shots": [
+        {
+          "id": "e08s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s01l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide hero shot amid green sparks",
+          "action": "Mirror shards assemble into a faceless dancer in antique black robes",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e08s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s02l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "fast circling combat shot",
+          "action": "The champion and Harry trade green and gold spell arcs over the moving floor",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e08s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s03l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow-motion impact frame",
+          "action": "Draconia steps in front of Harry and catches a curse on her silver ribbon",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e08s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s04l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on her face in green light",
+          "action": "Draconia faces the champion as her ribbon burns without harming her",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e08s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low static wide",
+          "action": "The champion freezes mid-step and the frozen guests breathe again for one heartbeat",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e08s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s06l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "combat wide",
+          "action": "Harry marks the champion's delayed turn and directs Draconia to the open side",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "wand",
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e08s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s07l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "fast circling shot",
+          "action": "Draconia ignores the count, spins early, and makes the champion copy the wrong partner",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e08s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "slow-motion ribbon burn",
+          "action": "The silver ribbon absorbs the curse and reveals the hidden Malfoy seal",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e08s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s09l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "intimate close",
+          "action": "Draconia completes the confession in front of the champion and the waking guests",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e08s10",
+          "seconds": 6.4,
+          "line_ids": [
+            "e08s10l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "low two-shot",
+          "action": "Harry reaches through the fading curse and offers his hand without looking away from her",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e08s01l1",
+          "speaker": "harry",
+          "text": "It is using the old champion. Wand up.",
+          "performance": "angry, focused"
+        },
+        {
+          "id": "e08s02l1",
+          "speaker": "draconia",
+          "text": "Its left turn is late. Break on three.",
+          "performance": "excited, precise"
+        },
+        {
+          "id": "e08s03l1",
+          "speaker": "draconia",
+          "text": "Not him. Not again.",
+          "performance": "angry, desperate"
+        },
+        {
+          "id": "e08s04l1",
+          "speaker": "draconia",
+          "text": "I hid the debt because I was ashamed. I am not hiding now.",
+          "performance": "softly, breaking"
+        },
+        {
+          "id": "e08s06l1",
+          "speaker": "harry",
+          "text": "Break on three. I will hold its pattern; you break its rhythm.",
+          "performance": "angry, strategic"
+        },
+        {
+          "id": "e08s07l1",
+          "speaker": "draconia",
+          "text": "Three is so predictable. Try now.",
+          "performance": "laughs, daring"
+        },
+        {
+          "id": "e08s09l1",
+          "speaker": "draconia",
+          "text": "I hid the proof because I wanted one choice my family did not make for me.",
+          "performance": "whispers, breaking open"
+        },
+        {
+          "id": "e08s10l1",
+          "speaker": "harry",
+          "text": "Then choose now. Not because the card says it.",
+          "performance": "softly, certain"
+        }
+      ]
+    },
+    {
+      "id": "e09",
+      "title": "The Last Dance",
+      "draft_seconds": 64,
+      "setup": "The curse can only end if both partners choose the dance without being forced.",
+      "turn": "Harry answers Draconia's confession with his own.",
+      "cliffhanger": "A green bow of light rises over the Forbidden Forest and answers the waltz",
+      "shots": [
+        {
+          "id": "e09s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s01l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow circle around center floor",
+          "action": "Harry offers his hand to Draconia while the card burns between them",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e09s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s02l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on joined hands",
+          "action": "Draconia takes his hand and the green card turns silver",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "card",
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            },
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e09s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s03l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "sweeping overhead waltz shot",
+          "action": "They dance one clean turn and the floor repairs beneath every step",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e09s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s04l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "impact zoom on shattering champion",
+          "action": "The faceless champion bows, then shatters into harmless mirror dust",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "mirror",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "tall-mirror",
+              "description": "tall antique mirror in a black frame"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e09s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "static wide through opening doors",
+          "action": "Every candle turns white as the courtyard doors blow open toward the dark forest",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles"
+          ],
+          "recurring_props": [
+            {
+              "id": "floating-candles",
+              "description": "floating wax candles used as ball lights"
+            }
+          ]
+        },
+        {
+          "id": "e09s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s06l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "playful close",
+          "action": "Draconia looks at the waking guests and reaches for a joke before courage",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e09s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s07l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close on Harry",
+          "action": "Harry lets the strategy drop and answers plainly",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "card"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e09s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [],
+          "camera": "overhead full ballroom",
+          "action": "The guests wake one by one as the repaired floor turns silver beneath the chosen dance",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles",
+            "program"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e09s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e09s09l1"
+          ],
+          "location": "great_hall",
+          "location_description": "The candlelit Great Hall dressed for a new Yule Ball: enchanted ceiling snowfall, long green and silver garlands, polished dance floor and floating candles.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "slow push toward near kiss",
+          "action": "Draconia leans in as the final candle turns white, then the courtyard doors burst open",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "candles"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e09s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide toward forest",
+          "action": "A green bow of light rises over the Forbidden Forest and answers the waltz",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "wand",
+            "ribbon"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e09s01l1",
+          "speaker": "harry",
+          "text": "I spent years blaming easy targets because the real ones were dead.",
+          "performance": "sad, honest"
+        },
+        {
+          "id": "e09s02l1",
+          "speaker": "draconia",
+          "text": "Then we are both done being haunted by other people's names.",
+          "performance": "quiet, resolute"
+        },
+        {
+          "id": "e09s03l1",
+          "speaker": "harry",
+          "text": "One dance. No prophecy, no debt. Just us.",
+          "performance": "whispers, tender"
+        },
+        {
+          "id": "e09s04l1",
+          "speaker": "draconia",
+          "text": "I hate that you dance better when terrified.",
+          "performance": "laughs, relieved"
+        },
+        {
+          "id": "e09s06l1",
+          "speaker": "draconia",
+          "text": "If this ends badly, I am blaming your footwork.",
+          "performance": "nervous, bright"
+        },
+        {
+          "id": "e09s07l1",
+          "speaker": "harry",
+          "text": "For once, I do not want the safest plan. I want this dance.",
+          "performance": "quiet, vulnerable"
+        },
+        {
+          "id": "e09s09l1",
+          "speaker": "draconia",
+          "text": "Of course the castle waits for the exact wrong second.",
+          "performance": "laughs, frustrated"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "title": "Midnight Candles",
+      "draft_seconds": 64,
+      "setup": "The ball is saved, but the forest sends one final answer.",
+      "turn": "Draconia leaves before anyone can define what changed.",
+      "cliffhanger": "The ribbon seals itself with green wax: SECOND DANCE, MIDNIGHT, BRING THE HEIR OF SLYTHERIN",
+      "shots": [
+        {
+          "id": "e10s01",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s01l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "handheld follow through snow",
+          "action": "Guests wake behind them while Harry follows Draconia into the snow",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "program"
+          ],
+          "recurring_props": [
+            {
+              "id": "ball-program",
+              "description": "folded Yule Ball programme"
+            }
+          ]
+        },
+        {
+          "id": "e10s02",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s02l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close two-shot under arch",
+          "action": "Harry stops her gently as snow gathers on their robes",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e10s03",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s03l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "close on Draconia's expression",
+          "action": "Draconia almost steps closer, then pulls back and presses the silver ribbon into his hand",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            }
+          ]
+        },
+        {
+          "id": "e10s04",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s04l1"
+          ],
+          "location": "forest_edge",
+          "location_description": "The snowy edge of the Forbidden Forest at night, black trees, ground mist and distant castle lights.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide static from behind Harry",
+          "action": "Green light moves between the Forbidden Forest trees in the shape of a bowing dancer",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "wand"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            },
+            {
+              "id": "wand",
+              "description": "slender wizard wand"
+            }
+          ]
+        },
+        {
+          "id": "e10s05",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "forest_edge",
+          "location_description": "The snowy edge of the Forbidden Forest at night, black trees, ground mist and distant castle lights.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "macro on ribbon",
+          "action": "The ribbon unfolds into a new invitation: SECOND DANCE, MIDNIGHT, BRING THE HEIR OF SLYTHERIN",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "card"
+          ],
+          "recurring_props": [
+            {
+              "id": "silver-ribbon",
+              "description": "silver ribbon sealed with green wax"
+            },
+            {
+              "id": "dance-card",
+              "description": "enchanted Yule Ball dance card with moving green ink"
+            }
+          ]
+        },
+        {
+          "id": "e10s06",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s06l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "playful tracking shot",
+          "action": "Draconia tries to turn the almost-kiss into a joke before it becomes real",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "program"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e10s07",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s07l1"
+          ],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "harry"
+          ],
+          "camera": "close two-shot",
+          "action": "Harry refuses the deflection without pushing her",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e10s08",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "courtyard",
+          "location_description": "A moonlit stone courtyard outside the Great Hall, snow gathering on arches, frosted windows glowing warm from the ball.",
+          "visible_characters": [
+            "draconia"
+          ],
+          "camera": "close on ribbon handoff",
+          "action": "Draconia presses the silver ribbon into his palm and closes his fingers around it",
+          "wardrobe": "Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e10s09",
+          "seconds": 6.4,
+          "line_ids": [
+            "e10s09l1"
+          ],
+          "location": "forest_edge",
+          "location_description": "The snowy edge of the Forbidden Forest at night, black trees, ground mist and distant castle lights.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "wide static",
+          "action": "The bowing light retreats between the trees, leaving one silver footprint at a time",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "wand"
+          ],
+          "recurring_props": []
+        },
+        {
+          "id": "e10s10",
+          "seconds": 6.4,
+          "line_ids": [],
+          "location": "forest_edge",
+          "location_description": "The snowy edge of the Forbidden Forest at night, black trees, ground mist and distant castle lights.",
+          "visible_characters": [
+            "harry",
+            "draconia"
+          ],
+          "camera": "macro invitation reveal",
+          "action": "The ribbon seals itself with green wax: SECOND DANCE, MIDNIGHT, BRING THE HEIR OF SLYTHERIN",
+          "wardrobe": "Harry wears the same formal black Yule Ball dress robes, white shirt, dark trousers, glasses and polished shoes in every shot; Draconia wears the same emerald-silver Yule Ball gown under formal dark robes, platinum hair in a low twisted style, silver earrings and wand holster",
+          "props": [
+            "ribbon",
+            "card"
+          ],
+          "recurring_props": []
+        }
+      ],
+      "lines": [
+        {
+          "id": "e10s01l1",
+          "speaker": "draconia",
+          "text": "Do not make this noble, Potter. It was one dance.",
+          "performance": "nervous, defensive"
+        },
+        {
+          "id": "e10s02l1",
+          "speaker": "harry",
+          "text": "Then give me one honest thing before you go.",
+          "performance": "softly, earnest"
+        },
+        {
+          "id": "e10s03l1",
+          "speaker": "draconia",
+          "text": "I wanted the card to choose us.",
+          "performance": "whispers, exposed"
+        },
+        {
+          "id": "e10s04l1",
+          "speaker": "harry",
+          "text": "Draconia, the forest is answering.",
+          "performance": "curious, alarmed"
+        },
+        {
+          "id": "e10s06l1",
+          "speaker": "draconia",
+          "text": "One dance, one haunting, zero sensible decisions. A perfect evening.",
+          "performance": "laughs, nervous"
+        },
+        {
+          "id": "e10s07l1",
+          "speaker": "harry",
+          "text": "I asked for honesty, not a review of my decisions.",
+          "performance": "softly, dry"
+        },
+        {
+          "id": "e10s09l1",
+          "speaker": "draconia",
+          "text": "That is either an invitation or a threat. Wonderful. My favorite kind.",
+          "performance": "excited, uneasy"
+        }
+      ]
+    }
+  ]
+}

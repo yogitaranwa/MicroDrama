@@ -1,0 +1,111 @@
+{
+ "title": "The Confession in the Tower",
+ "hook": "Harry and Draconia flee the Yule Ball noise, bickering over his jacket and her humiliation, while Filch's wheezing lantern cuts the dark behind them.",
+ "beats": [
+  {
+   "n": 1,
+   "sheet_step": "HOOK",
+   "location": "Grand Staircase alcove",
+   "camera": "Low angle tracking back as they retreat; Filch's lantern light sweeps wall",
+   "action": "Harry adjusts collar; Draconia kicks wall. Filch emerges wheezing, lantern raised, halting them.",
+   "turn": "Forced alliance against Filch replaces open hostility.",
+   "speakers": [
+    "Harry",
+    "Draconia",
+    "Filch"
+   ],
+   "seconds": 11
+  },
+  {
+   "n": 2,
+   "sheet_step": "INCITING",
+   "location": "Corridor outside Astronomy Tower",
+   "camera": "Two-shot walking; portraits' eyes follow in background",
+   "action": "Draconia halts, pulls a folded parchment from bodice—sealed with Malfoy crest wax—and shoves it at Harry.",
+   "turn": "Secret object surfaces: a coded note implicating her father in ingredient smuggling.",
+   "speakers": [
+    "Draconia",
+    "Harry"
+   ],
+   "seconds": 10
+  },
+  {
+   "n": 3,
+   "sheet_step": "ESCALATION 1",
+   "location": "Astronomy Tower base staircase",
+   "camera": "Steadicam spiraling up stone steps behind them",
+   "action": "They climb; a loose step crumbles—Harry catches Draconia's wrist; lumos flares revealing dust-choked air.",
+   "turn": "New location, physical danger, and first intentional touch.",
+   "speakers": [
+    "Harry",
+    "Draconia"
+   ],
+   "seconds": 11
+  },
+  {
+   "n": 4,
+   "sheet_step": "ESCALATION 2",
+   "location": "Astronomy Tower observation deck",
+   "camera": "Wide through arched window; Yule Ball fireworks bloom below",
+   "action": "Pansy steps from shadow, holding empty vial; sneers 'Father's orders, Draconia.' Vial shatters at her feet.",
+   "turn": "Side character raises stakes: Pansy knows the meeting and threatens exposure.",
+   "speakers": [
+    "Pansy",
+    "Draconia"
+   ],
+   "seconds": 10
+  },
+  {
+   "n": 5,
+   "sheet_step": "REVERSAL",
+   "location": "Trapdoor to roof platform",
+   "camera": "Close-up on Harry's face lit by wand; Draconia's reflection in telescope lens",
+   "action": "Harry reads note by lumos: 'Delivery midnight—tower roof.' He shows her; her panic confirms she lied about 'friend.'",
+   "turn": "Harry learns Draconia concealed the true recipient: her father's agent.",
+   "speakers": [
+    "Harry",
+    "Draconia"
+   ],
+   "seconds": 12
+  },
+  {
+   "n": 6,
+   "sheet_step": "ALL IS LOST",
+   "location": "Roof platform, open sky",
+   "camera": "Handheld, wind whipping robes; clouds swallow stars",
+   "action": "Cloaked figure Apparates with a crack—snatches note, shoves Draconia backward; Harry lunges, wand raised.",
+   "turn": "Trust shatters; physical danger arrives; Draconia realizes she was bait.",
+   "speakers": [
+    "Harry",
+    "Draconia"
+   ],
+   "seconds": 13
+  },
+  {
+   "n": 7,
+   "sheet_step": "CHOICE",
+   "location": "Roof edge / gargoyle ledge",
+   "camera": "Over-the-shoulder down 50-foot drop to courtyard",
+   "action": "Harry casts 'Arresto Momentum' on falling Draconia, but recoil hurls him onto icy ledge; cloak figure Disapparates with note.",
+   "turn": "Harry sacrifices safety to save her; evidence lost; both stranded.",
+   "speakers": [
+    "Harry",
+    "Draconia"
+   ],
+   "seconds": 14
+  },
+  {
+   "n": 8,
+   "sheet_step": "CLIFFHANGER",
+   "location": "Gargoyle ledge, freezing wind",
+   "camera": "Extreme close-up on parchment fragment caught in Harry's frozen fingers",
+   "action": "Draconia shivering, pulls Harry's collar—reveals a second, identical wax seal on his inner cuff: matching Malfoy crest.",
+   "turn": "Revelation: Harry carries a twin seal—he's been investigating her family all term.",
+   "speakers": [
+    "Draconia"
+   ],
+   "seconds": 14
+  }
+ ],
+ "cliffhanger": "Draconia holds up Harry's cuff: 'You've been wearing my family's seal under your sleeve all night. Who are you really working for, Potter?'"
+}

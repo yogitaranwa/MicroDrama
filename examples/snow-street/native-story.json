@@ -1,0 +1,378 @@
+{
+ "title": "Only Training",
+ "note": "Original anime comedy micro-drama in the format of a short viral fan video: a girl lies to her stern father, a cheerful boy walks into the lie, hook ending. 16:9, one locked snowy street, burned-in captions, a cut every 4-6 seconds. No borrowed characters, names or voices.",
+ "aspect": "16:9",
+ "logline": "A girl swears to her stern father that she was only training, right until the boy she was definitely not meeting waves hello.",
+ "voices": {
+  "Lyra": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+  "Aldric": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+  "Kai": "cheerful, warm teenage boy with a slightly breathy easygoing voice, friendly and oblivious"
+ },
+ "style": "2D anime, soft cel shading, clean linework, painterly snowy backgrounds, cinematic winter light, limited-animation look, consistent character design",
+ "scenes": {
+  "street": {
+   "set": "a snowy cobblestone shopping street in a mountain academy town, dark timber shopfronts with glowing windows and a hanging brass kettle sign on the left, a stone archway and a clock tower in the distance, deep snow banks along both sides, pale blue overcast light",
+   "plate": "street-plate",
+   "plate_prompt": "2D anime background painting, 16:9, an empty snowy cobblestone shopping street in a mountain academy town: dark timber shopfronts with glowing yellow windows and a hanging brass kettle sign on the left, a stone archway and a clock tower in the distance, deep snow banks along both sides, pale blue overcast light, soft cel shading, painterly detail. No people, no text, no watermark."
+  }
+ },
+ "references": {
+  "masters": {
+   "lyra-master": "2D anime character design sheet portrait, 16:9 composition with the character centered: a teenage girl with very long straight blonde hair, bright green eyes, a green-and-black school robe over a white shirt with a green tie, a small silver crest on the chest. Neutral expression, mouth closed, front-facing, plain pale background. Clean linework, soft cel shading. No text, no watermark.",
+   "aldric-master": "2D anime single-figure head-and-shoulders portrait (NOT a turnaround or design sheet, exactly one figure, one view), 16:9 composition with the character centered: a tall stern man in his fifties with long straight silver-white hair, narrow pale eyes, a long black coat with a high collar. Neutral cold expression, mouth closed, front-facing, plain pale background. Clean linework, soft cel shading. No text, no watermark.",
+   "kai-master": "2D anime character design sheet portrait, 16:9 composition with the character centered: a cheerful teenage boy with messy brown hair, round amber-tinted goggles pushed up on his forehead, a red scarf, a dark school robe with a red tie. Friendly neutral expression, mouth closed, front-facing, plain pale background. Clean linework, soft cel shading. No text, no watermark."
+  },
+  "frames": {
+   "f1-wide": {
+    "scene": "street",
+    "refs": [
+     "lyra-master",
+     "aldric-master"
+    ],
+    "prompt": "2D anime, 16:9 wide shot down the street: Lyra in the foreground right turning her head in surprise, mouth closed; tall Aldric stands behind her at left, looming, his cane planted in the snow, expression cold. Light snow falling. No text, no watermark."
+   },
+   "f2-mid": {
+    "scene": "street",
+    "refs": [
+     "lyra-master",
+     "aldric-master"
+    ],
+    "prompt": "2D anime, 16:9 medium two-shot: Lyra at right with her hands raised in a nervous defensive gesture, a forced smile, mouth closed; Aldric at left looking down at her with a flat unimpressed stare. Same street behind them. No text, no watermark."
+   },
+   "f3-lyra": {
+    "scene": "street",
+    "refs": [
+     "lyra-master"
+    ],
+    "prompt": "2D anime, 16:9 close-up of Lyra, shoulders and face, arms folded, chin lifted, a smug proud look, mouth closed, eyes open and bright, the snowy street softly blurred behind. No text, no watermark."
+   },
+   "f4-aldric": {
+    "scene": "street",
+    "refs": [
+     "aldric-master"
+    ],
+    "prompt": "2D anime, 16:9 close-up of Aldric, shoulders and face, one eyebrow slightly raised, cold narrow eyes, mouth closed, the snowy street softly blurred behind. No text, no watermark."
+   },
+   "f5-kai-far": {
+    "scene": "street",
+    "refs": [
+     "kai-master"
+    ],
+    "prompt": "2D anime, 16:9 wide shot of Kai walking toward camera far down the street, hands in his pockets, his breath visible as steam, mouth closed, relaxed. Small in frame, the kettle sign and shopfronts clearly visible. No text, no watermark."
+   },
+   "f6-kai-wave": {
+    "scene": "street",
+    "refs": [
+     "kai-master"
+    ],
+    "prompt": "2D anime, 16:9 medium shot of Kai on the street, one hand raised in a friendly wave, a bright easy smile with mouth closed, the snowy street behind him. No text, no watermark."
+   },
+   "f7-two": {
+    "scene": "street",
+    "refs": [
+     "aldric-master",
+     "kai-master"
+    ],
+    "prompt": "2D anime, 16:9 medium two-shot facing each other: Kai at left looking up cheerfully, Aldric at right looking down at him with a cold unreadable face, mouths closed, the cane planted in the snow. No text, no watermark."
+   }
+  },
+  "frame_for": {
+   "s01-father": "f1-wide",
+   "s03-smug": "f3-lyra",
+   "s04-oh": "f4-aldric",
+   "s05-hmph": "f3-lyra",
+   "s06-kai": "f5-kai-far",
+   "s07-shock": "f3-lyra",
+   "s08-hey": "f6-kai-wave",
+   "s09-friend": "f7-two",
+   "s10-hello": "f6-kai-wave",
+   "s11-tell": "f4-aldric",
+   "s12-connection": "f4-aldric",
+   "s02a-lie": "f2-mid",
+   "s02b-cold": "f4-aldric"
+  }
+ },
+ "shots": [
+  {
+   "id": "s01-father",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Lyra spins around to face the camera in surprise, her face and mouth clearly visible, as tall Aldric looms behind her; snow drifts down; her eyes go wide, her whole body jolts.",
+   "camera": "Wide shot, locked.",
+   "sound": {
+    "ambience": "soft wind and quiet snowfall, distant muffled town sounds",
+    "effects": [
+     "a sharp startled gasp and a snow crunch under her boots"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Lyra",
+      "voice": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+      "line": "Father!",
+      "delivery": "startled, high and squeaky"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s02a-lie",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Lyra waves her hands, forcing a nervous smile and talking too fast, while tall Aldric stands silent beside her.",
+   "camera": "Medium two-shot, locked, Lyra is the one talking.",
+   "sound": {
+    "ambience": "soft wind and quiet snowfall",
+    "effects": [
+     "fabric flapping as she waves her arms"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Lyra",
+      "voice": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+      "line": "Really, it's only training!",
+      "delivery": "too fast, nervous laugh"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s02b-cold",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Aldric stares down at her, unmoved, and answers in a flat cold voice without blinking.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "soft wind and quiet snowfall",
+    "effects": [
+     "a slow breath of cold air"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Aldric",
+      "voice": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+      "line": "In the snow. Coat open.",
+      "delivery": "flat, dry, unconvinced"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03-smug",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Lyra folds her arms, lifts her chin and puffs up with exaggerated pride, eyes sparkling.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "soft wind",
+    "effects": [
+     "a proud little huff"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Lyra",
+      "voice": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+      "line": "Me, with a commoner? Impossible!",
+      "delivery": "smug, theatrical"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04-oh",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Aldric lifts one eyebrow, his cold eyes narrowing a fraction; a slow, dangerous calm.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "soft wind, snow settling",
+    "effects": [
+     "the tap of his cane in the snow"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Aldric",
+      "voice": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+      "line": "Oh? Is that so?",
+      "delivery": "soft, amused, dangerous"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s05-hmph",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Lyra shuts her eyes in smug satisfaction, nodding to herself with her arms still folded.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "soft wind",
+    "effects": [
+     "a satisfied hum"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Lyra",
+      "voice": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+      "line": "Hmph. Obviously.",
+      "delivery": "smug, eyes closed"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s06-kai",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Far down the street Kai strolls toward the camera with his hands in his pockets, his breath steaming, completely carefree.",
+   "camera": "Wide shot, locked.",
+   "sound": {
+    "ambience": "soft wind and quiet snowfall, distant town sounds",
+    "effects": [
+     "slow footsteps crunching in deep snow"
+    ]
+   }
+  },
+  {
+   "id": "s07-shock",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Lyra freezes, her face drains of colour and she screams in comic horror; a jagged lightning bolt flashes across the frame as her eyes shrink to white dots.",
+   "camera": "Close-up that snaps into an extreme close-up of one wide eye.",
+   "sound": {
+    "ambience": "sudden dead silence under the scream",
+    "effects": [
+     "a loud comedic lightning crack and a rising stinger",
+     "a sharp inhale"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Lyra",
+      "voice": "bright, quick teenage girl with a clear expressive voice, lightly sarcastic, a little squeaky when panicking",
+      "line": "Why is HE here?!",
+      "delivery": "panicked scream, squeaky"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08-hey",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Kai spots them and waves with a big cheerful smile, totally oblivious.",
+   "camera": "Medium shot, locked.",
+   "sound": {
+    "ambience": "soft wind and quiet snowfall",
+    "effects": [
+     "a glove swish as he waves"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Kai",
+      "voice": "cheerful, warm teenage boy with a slightly breathy easygoing voice, friendly and oblivious",
+      "line": "Oh, hey, Lyra!",
+      "delivery": "bright, friendly"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s09-friend",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 6,
+   "visual": "Aldric slowly turns his head toward Kai with a cold unreadable face; Kai smiles up at him, still oblivious.",
+   "camera": "Medium two-shot, locked, a very slow push.",
+   "sound": {
+    "ambience": "soft wind, a tense hush",
+    "effects": [
+     "the slow creak of his coat as he turns"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Aldric",
+      "voice": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+      "line": "And you are... my daughter's friend?",
+      "delivery": "slow, icy courtesy"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s10-hello",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "Kai gives a cheerful little bow, grinning, completely missing the tension.",
+   "camera": "Medium shot, locked.",
+   "sound": {
+    "ambience": "soft wind",
+    "effects": [
+     "a scarf rustle as he bows"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Kai",
+      "voice": "cheerful, warm teenage boy with a slightly breathy easygoing voice, friendly and oblivious",
+      "line": "Kai Orren! Nice to meet you, sir.",
+      "delivery": "bright, polite, oblivious"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s11-tell",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 4,
+   "visual": "A slow, thin smile spreads across Aldric's face, but his eyes stay ice cold.",
+   "camera": "Close-up, locked, very slow push.",
+   "sound": {
+    "ambience": "soft wind, a low tense drone of wind",
+    "effects": [
+     "a faint leather creak of his glove tightening on the cane"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Aldric",
+      "voice": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+      "line": "Tell me something, boy.",
+      "delivery": "soft, smiling, menacing"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s12-connection",
+   "scene_id": "street",
+   "location": "snowy-street",
+   "seconds": 6,
+   "visual": "Extreme close-up of Aldric's eyes and thin smile as he leans in; the smile never reaches his eyes.",
+   "camera": "Extreme close-up, very slow push.",
+   "sound": {
+    "ambience": "wind dropping to a heavy silence",
+    "effects": [
+     "a low rising tension drone"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Aldric",
+      "voice": "deep, cold, slow aristocratic man in his fifties, quiet menace, every word measured",
+      "line": "What exactly is your connection to my daughter?",
+      "delivery": "slow, quiet, terrifying"
+     }
+    ]
+   }
+  }
+ ],
+ "end_card": "What will Kai say?",
+ "hook_title": "She swore it was only training..."
+}

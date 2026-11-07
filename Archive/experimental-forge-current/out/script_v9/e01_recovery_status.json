@@ -1,0 +1,43 @@
+{
+  "script": "The Debt of Champions",
+  "summary": {
+    "planned_shots": 24,
+    "by_kind": {
+      "speaker": 19,
+      "visual": 5
+    },
+    "speakers": [
+      "Argus Filch",
+      "Draconia Malfoy",
+      "Harry Potter",
+      "Pansy Parkinson",
+      "Professor McGonagall"
+    ],
+    "multi_speaker_clips": [],
+    "total_seconds": 110.8,
+    "reaction_seconds": 0
+  },
+  "dialogue_preservation": {
+    "ok": true,
+    "script_lines": 19,
+    "planned_lines": 19,
+    "missing": [],
+    "duplicated": [],
+    "order_broken": [],
+    "multi_line_clips": []
+  },
+  "required_still_labels": [
+    "character:Argus Filch:angle:front",
+    "character:Draconia Malfoy:angle:front",
+    "character:Harry Potter:angle:front",
+    "character:Pansy Parkinson:angle:front",
+    "character:Professor McGonagall:angle:front",
+    "location:Astronomy Tower stairwell",
+    "location:Corridor outside the Great Hall",
+    "location:Hidden passage behind the tapestry",
+    "location:Seventh-floor corridor, Room of Requirement wall"
+  ],
+  "status": "planning_only_not_rendered",
+  "audio_approval": "not_verified",
+  "paid_generation": "blocked_pending_total_cap"
+}

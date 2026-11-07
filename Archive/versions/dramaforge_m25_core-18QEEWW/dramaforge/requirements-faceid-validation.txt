@@ -1,0 +1,9 @@
+# Separate environment only. These exact library versions imported the pinned
+# upstream SDXL FaceID API on2026-11-06. NOT an inference/GPU-compatibility lock.
+# Reuse an appropriate CUDA torch/torchvision pair for the target GPU separately.
+diffusers==0.25.1
+transformers==4.37.2
+huggingface-hub==0.25.2
+accelerate==0.26.1
+insightface==0.7.3
+onnxruntime==1.20.1

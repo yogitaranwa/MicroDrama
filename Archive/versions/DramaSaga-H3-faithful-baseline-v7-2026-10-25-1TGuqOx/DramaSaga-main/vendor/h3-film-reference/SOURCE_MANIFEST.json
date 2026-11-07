@@ -1,0 +1,60 @@
+{
+  "source": "User-supplied h3-film-main.zip, recovered Drive file 1nk-ybBjijI15pTgrQI57mHv5dwT1JoH4",
+  "source_review_zip": "Drive file 1tLlUSO9wEUaqypmigRLOYqw6NXyE7Fxf, SHA256 70b15f46f545744e96d235631f46f0450f74800a58806908fa64d75775794ebc",
+  "self_identified_upstream": "[private-project-source] (private)",
+  "internal_source_labels": {
+    "repo_cut_from_lab": "5c20bcc",
+    "clean_repo_status": "5755047",
+    "repo_cut_date": "2026-10-12"
+  },
+  "upstream_head_commit_verified": false,
+  "root_source_license_verified": false,
+  "fidelity": "byte-exact to the user-supplied source-review ZIP; original comments and attribution preserved; not a claim of verified upstream HEAD",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b0484916330f86821b9b216ee6b322392bf91a88fb03f84ef4cc3ec4a0f7d9d4",
+      "bytes": 413280
+    },
+    {
+      "path": "agent/h3film/check-prompt.mjs",
+      "sha256": "bda7f48d5e694cc00f68e8c0bc73bfd21c68e053ef169120cb7a8e0cc997d7e4",
+      "bytes": 2115
+    },
+    {
+      "path": "agent/h3film/join.mjs",
+      "sha256": "68cb16b72374f33735f05ded789c68944920009f4bfbf6faa673dd0ef924832c",
+      "bytes": 8938
+    },
+    {
+      "path": "agent/h3film/render-all.mjs",
+      "sha256": "2a55fe1b77192530a90683b03b21aa013946b17e99a90ae7c50367d1bf1c4d67",
+      "bytes": 37665
+    },
+    {
+      "path": "research/h3/modal_h3.py",
+      "sha256": "842ecc59ce09f6fedf2aebf67f0876b0411c15f63942761084fc2f5aa71792c1",
+      "bytes": 6567
+    },
+    {
+      "path": "research/h3/runpod/comfy_r2v.py",
+      "sha256": "3587ca8a94d95f0e7c9a06045518d93130b77a202e1bacd9c784ef244bfd537e",
+      "bytes": 14225
+    },
+    {
+      "path": "research/h3/runpod/r2v_v1.json",
+      "sha256": "1d927b51d05405fa0d2683593822882c7cf8a6d5f9742817863338e7efe069a3",
+      "bytes": 5165
+    },
+    {
+      "path": "research/h3/soundtrack.mjs",
+      "sha256": "ea609c9f84b0dbfff3fb0d7eb4db4badee93a087a7406928e56458dd46ce17aa",
+      "bytes": 41919
+    },
+    {
+      "path": "research/h3/tools-film.mjs",
+      "sha256": "c3622c146d020541f75a725dfec895248481957d2f4717c09e5912fcf123b376",
+      "bytes": 47667
+    }
+  ]
+}

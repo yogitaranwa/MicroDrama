@@ -1,0 +1,115 @@
+{
+  "clip_id": "harry-draconia-e01-original-h3-v4-line-audio-guides",
+  "files": [
+    {
+      "filename": "dialogue.wav",
+      "bytes": 1205478,
+      "sha256": "a4f82d28a3c1d576bec78d841ff7698c13d2fc768b54f9e0f7c292806793e8b1"
+    },
+    {
+      "filename": "guide-L1-mid.wav",
+      "bytes": 74166,
+      "sha256": "fb0fdbdcd388e01e5211ba100859d0afbf5cb504317060970deb41dd2054a649"
+    },
+    {
+      "filename": "guide-L1-start.wav",
+      "bytes": 148254,
+      "sha256": "517792f8032270d72ea4fe7c03c5f1d20d8abc09024e0feaeee859b5a66b84e1"
+    },
+    {
+      "filename": "guide-L2-mid.wav",
+      "bytes": 112974,
+      "sha256": "3edc83f0c46e3b58022488d33b21488626bb72b8c1d8c7c87f43d95d42abe959"
+    },
+    {
+      "filename": "guide-L2-start.wav",
+      "bytes": 225870,
+      "sha256": "9365df4a7df386143bd176c9df8e4d8f2bf249d10a64e50591508cc8955264bf"
+    },
+    {
+      "filename": "guide-L3-mid.wav",
+      "bytes": 112974,
+      "sha256": "7f0087486acfe4b9b5244d14e1184c59ac022be8ba9fdf835e9997a6c25c6f20"
+    },
+    {
+      "filename": "guide-L3-start.wav",
+      "bytes": 225870,
+      "sha256": "0168cd8c8e7e066eaf7db9b990206d9ffc9a0bdf226a912a52c1102d04475048"
+    },
+    {
+      "filename": "guide-L4-mid.wav",
+      "bytes": 91806,
+      "sha256": "52c9e8b0b57494d9eb9824b1b944a9682851819288e0fd6681cebf807199a079"
+    },
+    {
+      "filename": "guide-L4-start.wav",
+      "bytes": 183534,
+      "sha256": "2045e6bf928e669e9f8e035adddb27a8b81e4e5b45e3eeafd5a38751e9462275"
+    },
+    {
+      "filename": "guide-L5-mid.wav",
+      "bytes": 102390,
+      "sha256": "f1d481a00914cc86e4a1a86f70aa53a746ac112eee1e4a88590be4deeb266dd6"
+    },
+    {
+      "filename": "guide-L5-start.wav",
+      "bytes": 204702,
+      "sha256": "a0ee77562b70fe907358fc448a98f3f755ce1c10d22099843ba277e6d5ed2b36"
+    },
+    {
+      "filename": "guide-L6-mid.wav",
+      "bytes": 84750,
+      "sha256": "d7a15b4e21ef61ad7354d2480cb4d98ed547e939352a87d0999a1b03c813b76b"
+    },
+    {
+      "filename": "guide-L6-start.wav",
+      "bytes": 169422,
+      "sha256": "ca0160d614687cd382d19f0e795fd2003b2b53dad11939b14f3b906d822c484f"
+    },
+    {
+      "filename": "ref-draconia-front-close.png",
+      "bytes": 2185515,
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "filename": "ref-draconia-fullbody.png",
+      "bytes": 2494163,
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d"
+    },
+    {
+      "filename": "ref-draconia-speaking-profile.png",
+      "bytes": 2223356,
+      "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e"
+    },
+    {
+      "filename": "ref-harry-front-close.png",
+      "bytes": 2072868,
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    {
+      "filename": "ref-harry-fullbody.png",
+      "bytes": 2062177,
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a"
+    },
+    {
+      "filename": "ref-harry-speaking-profile.png",
+      "bytes": 1964313,
+      "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909"
+    },
+    {
+      "filename": "ref-two-shot-action.png",
+      "bytes": 2373958,
+      "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+    },
+    {
+      "filename": "ref-two-shot-dialogue.png",
+      "bytes": 2218896,
+      "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36"
+    },
+    {
+      "filename": "ref-yule-ball-location.png",
+      "bytes": 3056670,
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+    }
+  ]
+}

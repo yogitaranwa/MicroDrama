@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "seconds": 13,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "You dissect my posture like a potion ingredient while the castle freezes around us. That clinical detachment infuriates me more than open hostility ever could.",
+   "emotion": "barely controlled anger",
+   "expression": "jaw muscles flexing, eyes locked on his face without blinking"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "I watch because looking away would let you vanish into the story your surname writes for you. Someone needs to witness the moment you choose differently.",
+   "emotion": "quiet intensity",
+   "expression": "head tilted slightly, breath steady despite the cold corridor air"
+  }
+ ]
+}

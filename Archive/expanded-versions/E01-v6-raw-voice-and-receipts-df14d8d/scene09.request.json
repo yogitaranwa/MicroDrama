@@ -1,0 +1,29 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[panicked] Draconia, say something. I can't see your face. Did it hit you? Did anything come over the table?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[shaken] I'm here. I don't think I'm hit. Give me a moment. Your hand's still in mine, Harry. You can stop searching for it."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[panicked] That wasn't there before. The string was round my wrist, not there. Why have you got the same thing?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[shaken] I don't know. I can see it's the same mark. I don't know why it's on both of us."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[panicked] We broke the step. The chandelier hit the ice. I saw it happen. Tell me that did something besides put these on us."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4109
+}

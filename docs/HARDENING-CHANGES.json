@@ -1,0 +1,137 @@
+[
+  {
+    "path": "archive/rendering/render_batch.py",
+    "sha256": "2ed75bc7178c089016dca2479dd5daee9ca813451bd7299054be22783e06bb08",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/bridge.py",
+    "sha256": "8f1686f266d84ce6047431d3316b75a6ae76704a49fd1a95117afa7265b34bb3",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/execution.py",
+    "sha256": "5f5b2be9b605d41e588d003a44f5a971ee631279fa326106faf1088d6a0bde28",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/images.py",
+    "sha256": "a620698aba610e7b2b01108edb2d31fdf7f904564874dfc56fa2a1f88fa6a32f",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/live.py",
+    "sha256": "9d6be6ea831fbdede8966a96e8135672d6e28dc529a03162ec4258494ca0b57d",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/mechanical.py",
+    "sha256": "d7db1652707af5c766ddbf1ca135fa02ad22d57ded9cf186335b7c38f8bd8d56",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/audiofirst/media_review.py",
+    "sha256": "124bdc46aae5cdfc6876c92de32d8b081d98d1aac00902571f9a33ee0542194a",
+    "status": "added"
+  },
+  {
+    "path": "magicdrama/audiofirst/voices.py",
+    "sha256": "3ed398386e11853540946a9f7f529b346face7ef80ab6189e5dcc3b393d923d2",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/clients/magichour.py",
+    "sha256": "019a317d34066073372a187ce003d2e543b6684f388a809cd75913e7d628cd4b",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/clients/tts.py",
+    "sha256": "4da3eb40b10b37a21cf4602b57e6e573b8e24c5a5be2301337b6f3aee9e178a4",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/governor.py",
+    "sha256": "224f74150b0bc3892f7995fbe2a43ae5c5503ebf1f41c5b3bb90a3dafb778970",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/production.py",
+    "sha256": "b94608b04ee3b956cac54f1a64f7d62aef85b6f81c6738c8e737b382a5ff3735",
+    "status": "changed"
+  },
+  {
+    "path": "magicdrama/stages/assembly.py",
+    "sha256": "b7ee3458234ee3820c58121211ce33637be36b8d3443530f86fbab61292f239f",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/cabin_reroll.py",
+    "sha256": "8c466ba7b047639c34d28e1445f3eafb57712371f08e71a388beeaee22498cc5",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/cabin_test.py",
+    "sha256": "3a698c464c5cf180045ebe864ec6408511cbc5ce5c89ee97e85f7366ccbc5cc4",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/prep_s4kf.py",
+    "sha256": "e14b90730e874520835462f71933f37630140824dc7aaeae91f56a18a525edb9",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/render_ep.py",
+    "sha256": "2024fb567a7212f53b5e520ad9620b79bcce1cc55b73608b8c88a986b99a33e1",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/render_step.py",
+    "sha256": "578c4236121e9090630cfa04268a7a777cf8ab514e2fbc7b3d883a8a11a1c36a",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/the-honesty-intern/06_code_and_logs/qa_render_batch.py",
+    "sha256": "e147d1d92e0d04a82925517cbff4d49cd1c752a8e15674f5b746e8ef420b17a9",
+    "status": "changed"
+  },
+  {
+    "path": "render_v5/the-honesty-intern/06_code_and_logs/render_honesty.py",
+    "sha256": "49d5e9157220d193d5862c4a2b46bdb5ef24c4c86035e4f99f3d4a4875640ac3",
+    "status": "changed"
+  },
+  {
+    "path": "scripts/neon-shadows-magichour/06_code_and_logs/render_neon.py",
+    "sha256": "a09937fda6ad945fcd4a73798b51c0adf9059d3f00108c9d5a83402090bc6eb3",
+    "status": "changed"
+  },
+  {
+    "path": "tests/helpers.py",
+    "sha256": "142d78b56b904e1c7ad456ff126904fb0adfe6e6b06b816f812fd5f9ac248b28",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_assembly_integration.py",
+    "sha256": "c476ba631f10e1418ed3dbeabbe83b0cb8d7c9b532d3610e0e1d7443d64c1161",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_execution.py",
+    "sha256": "cb442a1b7ef69265db073c1458bc8f55e820b5ee2a28fd7dd3df46505de8f232",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_hardening.py",
+    "sha256": "b2fd247fb60f7555763aa3d595b4b5126afecc300cf0071242b6b97a66c61c88",
+    "status": "added"
+  },
+  {
+    "path": "tests/test_mechanical.py",
+    "sha256": "4ad467002bc4b0f82eca156be2051025858a5138cd529d2d933d68cd671f7dfe",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_render_pipeline.py",
+    "sha256": "66bda8239b73cab2981f5e72f29c55b4284181ee4820ce0fb009598f36aa0676",
+    "status": "changed"
+  }
+]

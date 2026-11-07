@@ -1,0 +1,20 @@
+[
+ {
+  "plan_n": 1,
+  "prompt": "Cinematic vertical video. stone castle balcony at dusk, candles, view over towers, warm candlelight. Character: young woman, pale blonde slicked hair, green-and-silver Slytherin-style uniform, sharp features, proud posture. Draconia speaks in Hogwarts balcony. Action (only this): Draconia waits, annoyed, checking her phone. Dialogue: \"He forgot. Typical.\"",
+  "num_frames": 33,
+  "steps": 40
+ },
+ {
+  "plan_n": 2,
+  "prompt": "Cinematic vertical video. stone castle balcony at dusk, candles, view over towers, warm candlelight. Character: young woman, pale blonde slicked hair, green-and-silver Slytherin-style uniform, sharp features, proud posture. Draconia speaks in Hogwarts balcony. Action (only this): she turns and spots pink roses on the railing. Dialogue: \"Pink roses? Wait...\"",
+  "num_frames": 33,
+  "steps": 40
+ },
+ {
+  "plan_n": 3,
+  "prompt": "Cinematic vertical video. stone castle balcony at dusk, candles, view over towers, warm candlelight. Character: young woman, pale blonde slicked hair, green-and-silver Slytherin-style uniform, sharp features, proud posture. Draconia speaks in Hogwarts balcony. Action (only this): she smells a rose and laughs softly. Dialogue: \"You actually remembered.\"",
+  "num_frames": 33,
+  "steps": 40
+ }
+]

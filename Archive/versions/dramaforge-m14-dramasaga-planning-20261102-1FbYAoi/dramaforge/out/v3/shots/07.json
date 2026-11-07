@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "seconds": 18,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "My thumb catches on a splinter near the sconce, the rough wood grounding me against the urge to reach for my wand. The corridor stretches farther than I remembered, each shadow a potential conversation I am not ready to have.",
+   "emotion": "quietly anxious",
+   "expression": "fingers dragging slowly over stone, gaze fixed on the grain rather than her face"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "You trace the wall like a blind man memorizing a room he plans to flee, yet your shoulders remain squared toward the stairs. That stillness frightens me more than any hex you could cast.",
+   "emotion": "unsettled perception",
+   "expression": "head tilted, one hand hovering near her hip as if to steady herself"
+  }
+ ]
+}

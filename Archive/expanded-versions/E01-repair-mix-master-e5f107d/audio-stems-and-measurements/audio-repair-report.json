@@ -1,0 +1,19 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "scope": "audio repair only, not final episode",
+  "emotional_listen": false,
+  "phone_speaker_listen": false,
+  "duration": 94.25399092970521,
+  "placed_lines": 15,
+  "music_preroll_removed_seconds": 1.65,
+  "integrated_lufs": -18.467954034280346,
+  "sample_peak_dbfs": -2.0,
+  "opening_0_0.5s_rms_dbfs": -27.576062551021813,
+  "tail_0.5s_rms_dbfs": -27.737779323412095,
+  "source_sha256": {
+    "Harry-Draconia-YuleBall-E01-v32-voice-final.mp3": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5",
+    "Grand_Dark_Waltz_Moderato.mp3": "9513466c6b9622ee62090d60d52ec821c9e46b32d341f764d0c06596a136bee4",
+    "e01-v43-assembly-plan.json": "7923d9524ea2b1b74fe6a81550d23421d9307e39306876a7260a94d1a00cea51",
+    "E01_shot_plan_v43_timed.json": "2e5f2a6efc5cc3c43d00be6bcee1537652bf77fadde68baf8ae929b714bdce09"
+  }
+}

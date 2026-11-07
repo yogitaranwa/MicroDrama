@@ -1,0 +1,22 @@
+{
+  "script_sha256": "f8c22b8ca289c7b96e00e962032db182b0cb0d699be600cde8f7d81610d7a355",
+  "review_kind": "explicit script-intent explanation; not listener approval",
+  "warnings": [
+    {
+      "line": 2,
+      "text": "The floor marks anyone who stops. Keep dancing.",
+      "resolution": "Danger clue and immediate imperative to keep Harry moving; directly motivated by guest freezing."
+    },
+    {
+      "line": 5,
+      "text": "The arrows land after the second beat.",
+      "resolution": "Harry identifies observed impact timing to plan evasive action; the following line commands the changed step."
+    },
+    {
+      "line": 6,
+      "text": "Then move on the beat, not after it.",
+      "resolution": "Draconia gives Harry a specific urgent evasion instruction. Imperative sentence is intentionally human intent even without a subject pronoun."
+    }
+  ],
+  "status": "HEURISTIC_WARNINGS_EXPLAINED_NOT_AUDIO_APPROVED"
+}

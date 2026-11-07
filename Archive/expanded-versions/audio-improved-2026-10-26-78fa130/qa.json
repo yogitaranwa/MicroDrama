@@ -1,0 +1,435 @@
+{
+ "generated": "2026-10-26T02:29:06+0530",
+ "model": "eleven_v3",
+ "settings": {
+  "stability": 0.35,
+  "similarity_boost": 0.75
+ },
+ "episodes": {
+  "e01": {
+   "lines": [
+    {
+     "line": 1,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[urgent]"
+     ],
+     "chars": 35,
+     "file": "e01-line-01.mp3",
+     "seconds": 2.116
+    },
+    {
+     "line": 2,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[rushed]"
+     ],
+     "chars": 36,
+     "file": "e01-line-02.mp3",
+     "seconds": 2.116
+    },
+    {
+     "line": 3,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 27,
+     "file": "e01-line-03.mp3",
+     "seconds": 1.959
+    },
+    {
+     "line": 4,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[rushed]"
+     ],
+     "chars": 38,
+     "file": "e01-line-04.mp3",
+     "seconds": 2.038
+    },
+    {
+     "line": 5,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 24,
+     "file": "e01-line-05.mp3",
+     "seconds": 1.881
+    },
+    {
+     "line": 6,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[laughs]",
+      "[rushed]"
+     ],
+     "chars": 36,
+     "file": "e01-line-06.mp3",
+     "seconds": 2.273
+    },
+    {
+     "line": 7,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[softly]"
+     ],
+     "chars": 18,
+     "file": "e01-line-07.mp3",
+     "seconds": 2.116
+    },
+    {
+     "line": 8,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 10,
+     "file": "e01-line-08.mp3",
+     "seconds": 0.993
+    },
+    {
+     "line": 9,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[laughs]"
+     ],
+     "chars": 35,
+     "file": "e01-line-09.mp3",
+     "seconds": 3.004
+    },
+    {
+     "line": 10,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 11,
+     "file": "e01-line-10.mp3",
+     "seconds": 0.758
+    },
+    {
+     "line": 11,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[urgent]"
+     ],
+     "chars": 35,
+     "file": "e01-line-11.mp3",
+     "seconds": 2.116
+    },
+    {
+     "line": 12,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 23,
+     "file": "e01-line-12.mp3",
+     "seconds": 2.194
+    },
+    {
+     "line": 13,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[interrupting]",
+      "[rushed]"
+     ],
+     "chars": 43,
+     "file": "e01-line-13.mp3",
+     "seconds": 1.646
+    },
+    {
+     "line": 14,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 34,
+     "file": "e01-line-14.mp3",
+     "seconds": 3.239
+    },
+    {
+     "line": 15,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[softly]"
+     ],
+     "chars": 26,
+     "file": "e01-line-15.mp3",
+     "seconds": 2.194
+    },
+    {
+     "line": 16,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 16,
+     "file": "e01-line-16.mp3",
+     "seconds": 0.914
+    },
+    {
+     "line": 17,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 20,
+     "file": "e01-line-17.mp3",
+     "seconds": 1.489
+    }
+   ],
+   "total_dialogue_seconds": 33.05
+  },
+  "e02": {
+   "lines": [
+    {
+     "line": 1,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 19,
+     "file": "e02-line-01.mp3",
+     "seconds": 1.306
+    },
+    {
+     "line": 2,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[whispers]"
+     ],
+     "chars": 46,
+     "file": "e02-line-02.mp3",
+     "seconds": 2.847
+    },
+    {
+     "line": 4,
+     "speaker": "HARRY",
+     "tags": [
+      "[nervous]"
+     ],
+     "chars": 45,
+     "file": "e02-line-04.mp3",
+     "seconds": 2.769
+    },
+    {
+     "line": 5,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 34,
+     "file": "e02-line-05.mp3",
+     "seconds": 1.881
+    },
+    {
+     "line": 6,
+     "speaker": "HARRY",
+     "tags": [
+      "[angry]"
+     ],
+     "chars": 53,
+     "file": "e02-line-06.mp3",
+     "seconds": 3.788
+    },
+    {
+     "line": 7,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[laughs]",
+      "[rushed]"
+     ],
+     "chars": 51,
+     "file": "e02-line-07.mp3",
+     "seconds": 5.251
+    },
+    {
+     "line": 8,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 39,
+     "file": "e02-line-08.mp3",
+     "seconds": 3.709
+    },
+    {
+     "line": 9,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 49,
+     "file": "e02-line-09.mp3",
+     "seconds": 3.866
+    },
+    {
+     "line": 10,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 57,
+     "file": "e02-line-10.mp3",
+     "seconds": 4.049
+    },
+    {
+     "line": 11,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 51,
+     "file": "e02-line-11.mp3",
+     "seconds": 5.251
+    },
+    {
+     "line": 12,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[urgent]"
+     ],
+     "chars": 63,
+     "file": "e02-line-12.mp3",
+     "seconds": 4.362
+    },
+    {
+     "line": 13,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 57,
+     "file": "e02-line-13.mp3",
+     "seconds": 3.971
+    },
+    {
+     "line": 14,
+     "speaker": "HARRY",
+     "tags": [
+      "[urgent]",
+      "[angry]"
+     ],
+     "chars": 45,
+     "file": "e02-line-14.mp3",
+     "seconds": 2.194
+    }
+   ],
+   "total_dialogue_seconds": 45.24
+  },
+  "e03": {
+   "lines": [
+    {
+     "line": 1,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[urgent]"
+     ],
+     "chars": 51,
+     "file": "e03-line-01.mp3",
+     "seconds": 3.082
+    },
+    {
+     "line": 2,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 49,
+     "file": "e03-line-02.mp3",
+     "seconds": 4.206
+    },
+    {
+     "line": 3,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[rushed]"
+     ],
+     "chars": 40,
+     "file": "e03-line-03.mp3",
+     "seconds": 2.691
+    },
+    {
+     "line": 4,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 46,
+     "file": "e03-line-04.mp3",
+     "seconds": 2.847
+    },
+    {
+     "line": 5,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[urgent]",
+      "[rushed]"
+     ],
+     "chars": 47,
+     "file": "e03-line-05.mp3",
+     "seconds": 2.429
+    },
+    {
+     "line": 6,
+     "speaker": "HARRY",
+     "tags": [
+      "[nervous]"
+     ],
+     "chars": 22,
+     "file": "e03-line-06.mp3",
+     "seconds": 2.194
+    },
+    {
+     "line": 7,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 23,
+     "file": "e03-line-07.mp3",
+     "seconds": 3.318
+    },
+    {
+     "line": 8,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 45,
+     "file": "e03-line-08.mp3",
+     "seconds": 4.598
+    },
+    {
+     "line": 9,
+     "speaker": "DRACONIA",
+     "tags": [
+      "[rushed]"
+     ],
+     "chars": 71,
+     "file": "e03-line-09.mp3",
+     "seconds": 4.206
+    },
+    {
+     "line": 10,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 51,
+     "file": "e03-line-10.mp3",
+     "seconds": 3.631
+    },
+    {
+     "line": 11,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 81,
+     "file": "e03-line-11.mp3",
+     "seconds": 4.754
+    },
+    {
+     "line": 12,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 69,
+     "file": "e03-line-12.mp3",
+     "seconds": 5.564
+    },
+    {
+     "line": 13,
+     "speaker": "DRACONIA",
+     "tags": [],
+     "chars": 44,
+     "file": "e03-line-13.mp3",
+     "seconds": 3.709
+    },
+    {
+     "line": 14,
+     "speaker": "HARRY",
+     "tags": [],
+     "chars": 41,
+     "file": "e03-line-14.mp3",
+     "seconds": 4.519
+    }
+   ],
+   "total_dialogue_seconds": 51.75
+  }
+ },
+ "skipped": [
+  {
+   "episode": "e02",
+   "line": 3,
+   "reason": "no accepted voice id for CURSE; needs voice selection"
+  },
+  {
+   "episode": "e02",
+   "line": 15,
+   "reason": "no accepted voice id for CURSE; needs voice selection"
+  }
+ ],
+ "submitted_characters": 1756
+}

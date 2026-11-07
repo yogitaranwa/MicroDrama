@@ -1,0 +1,174 @@
+{
+  "asr": {
+    "wall_seconds": 1.220011316999944,
+    "expected_words": 22,
+    "actual_words": [
+      {
+        "word": " And",
+        "start": 0.0,
+        "end": 0.74,
+        "probability": 0.6697624921798706
+      },
+      {
+        "word": " so,",
+        "start": 0.74,
+        "end": 1.08,
+        "probability": 0.9775935411453247
+      },
+      {
+        "word": " my",
+        "start": 1.38,
+        "end": 1.42,
+        "probability": 0.9705315828323364
+      },
+      {
+        "word": " fellow",
+        "start": 1.42,
+        "end": 1.76,
+        "probability": 0.9993556141853333
+      },
+      {
+        "word": " Americans",
+        "start": 1.76,
+        "end": 2.26,
+        "probability": 0.8722729682922363
+      },
+      {
+        "word": " ask",
+        "start": 2.26,
+        "end": 3.88,
+        "probability": 0.6376599073410034
+      },
+      {
+        "word": " not",
+        "start": 3.88,
+        "end": 4.56,
+        "probability": 0.8001708388328552
+      },
+      {
+        "word": " what",
+        "start": 4.56,
+        "end": 5.7,
+        "probability": 0.8815895915031433
+      },
+      {
+        "word": " your",
+        "start": 5.7,
+        "end": 6.02,
+        "probability": 0.9849659204483032
+      },
+      {
+        "word": " country",
+        "start": 6.02,
+        "end": 6.36,
+        "probability": 0.9968919157981873
+      },
+      {
+        "word": " can",
+        "start": 6.36,
+        "end": 6.76,
+        "probability": 0.9956187605857849
+      },
+      {
+        "word": " do",
+        "start": 6.76,
+        "end": 7.02,
+        "probability": 0.9985679388046265
+      },
+      {
+        "word": " for",
+        "start": 7.02,
+        "end": 7.26,
+        "probability": 0.9881354570388794
+      },
+      {
+        "word": " you",
+        "start": 7.26,
+        "end": 8.06,
+        "probability": 0.9906342029571533
+      },
+      {
+        "word": " ask",
+        "start": 8.06,
+        "end": 8.66,
+        "probability": 0.1805209070444107
+      },
+      {
+        "word": " what",
+        "start": 8.66,
+        "end": 8.94,
+        "probability": 0.9809548854827881
+      },
+      {
+        "word": " you",
+        "start": 8.94,
+        "end": 9.28,
+        "probability": 0.9906407594680786
+      },
+      {
+        "word": " can",
+        "start": 9.28,
+        "end": 9.5,
+        "probability": 0.9960654377937317
+      },
+      {
+        "word": " do",
+        "start": 9.5,
+        "end": 9.72,
+        "probability": 0.9979473948478699
+      },
+      {
+        "word": " for",
+        "start": 9.72,
+        "end": 9.92,
+        "probability": 0.997748076915741
+      },
+      {
+        "word": " your",
+        "start": 9.92,
+        "end": 10.24,
+        "probability": 0.9936968684196472
+      },
+      {
+        "word": " country.",
+        "start": 10.24,
+        "end": 10.5,
+        "probability": 0.998767614364624
+      }
+    ],
+    "word_errors": 0,
+    "wer": 0.0,
+    "alignment_rejected": "Low-confidence or invalid actual-audio word timing"
+  },
+  "vision": {
+    "description": " The woman is wearing a white shirt and a blue blazer. She is also wearing a white tie. She is holding a pair of glasses in her hands.",
+    "status": "uncalibrated_description_not_acceptance",
+    "speech_verified": false,
+    "lip_sync_verified": false,
+    "wall_seconds": 7.710396421000041
+  },
+  "tracking": {
+    "rejected": "Missing/ambiguous face: no speaker track",
+    "wall_seconds": 0.8306339739999657,
+    "note": "Static repeated portrait, not moving-mouth or sync ground truth."
+  },
+  "face_detection": {
+    "faces": 1,
+    "landmarks_per_face": [
+      478
+    ],
+    "threshold": 0.5,
+    "identity_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/openai/whisper/main/tests/jfk.flac",
+      "sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715"
+    },
+    {
+      "url": "https://storage.googleapis.com/mediapipe-assets/business-person.png",
+      "sha256": "1f61cf0603cef77ffca4e24848ddf8290b5651d03b957e93b742c9ef963b5c11"
+    }
+  ],
+  "limits": "Single public speech and static portrait smoke tests, not accuracy benchmarks. H3 inference and semantic acceptance unverified."
+}

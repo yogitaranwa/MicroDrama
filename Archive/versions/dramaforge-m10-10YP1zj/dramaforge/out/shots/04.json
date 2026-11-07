@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "seconds": 13,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "This tunnel goes straight up to the seventh floor, if the map is right. We can dodge Filch and reach the tower before midnight.",
+   "emotion": "urgent focus",
+   "expression": "crouching low, wand tip lighting the damp stone as he gestures ahead"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "You expect me to crawl through filth because you kicked a grate open? My robes are ruined and Pansy holds my father's wrath in an envelope.",
+   "emotion": "sharp resentment",
+   "expression": "jaw tight, brushing dust from her sleeve while refusing to meet his eyes"
+  }
+ ]
+}

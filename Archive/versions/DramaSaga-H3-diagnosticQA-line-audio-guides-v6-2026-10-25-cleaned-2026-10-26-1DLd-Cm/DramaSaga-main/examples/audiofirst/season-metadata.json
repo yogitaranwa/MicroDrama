@@ -1,0 +1,10 @@
+{
+  "series_id": "winter_letters",
+  "season": 1,
+  "canon": {
+    "characters": [{"id": "clerk", "wardrobe": "navy coat"}, {"id": "neighbor", "wardrobe": "brown jacket"}],
+    "facts": [],
+    "unresolved": [],
+    "ending": "Replace with the actual accepted season ending before packaging."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[upset] We can't leave her like that. She's still reaching for someone. If I can get my wand clear, I can try to break the ice."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[worried] And if you stop beside her, I'll have two people I can't get out. Watch your heel. Look at what's happening to it."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[upset] It was doing the same thing to me. I didn't even feel it. I was going to stand right there."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[worried] You saw someone who needed help. I'm not telling you that was wrong. I'm telling you the floor doesn't care why you stop."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[upset] Do you think I don't understand that? I understand it. I just don't know how to walk away while she's looking at us."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[worried] I don't know how to help her yet. I wish I had something better to say, but I don't. We need to find what's doing this."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[upset] Then that's what we're doing. We're not finding a door and pretending we didn't see her. If we get a chance, we go back."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[worried] If we can reach her without being caught ourselves, yes. But don't pull away from me without telling me. I nearly lost you just then."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4102
+}

@@ -1,0 +1,587 @@
+{
+  "status": "incompatible_without_adapter",
+  "analysis_kind": "source_AST_and_real_input_schema_not_generation",
+  "source_manifest": "compatibility/current-beats-normalized.json",
+  "manifest_sha256": "9accd0cd8b339fc2aaaec6eef98b9931cbd13c701726712bbc8edafe9aab73dc",
+  "pipeline_sha256": "682e1c2b6f726815ac4af34a09569af5309487ff48dbaf8c326305db68bf04e7",
+  "call_keywords": [
+    "progress",
+    "prompt",
+    "reference_image_paths"
+  ],
+  "keyword_expansion": false,
+  "backend_defaults": {
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "duration": 8
+  },
+  "required_controls": {
+    "locked_audio_file": {
+      "passed": false,
+      "required_on_visible_speech": true
+    },
+    "per_shot_seconds": {
+      "passed": false
+    },
+    "aspect_ratio": {
+      "passed": false,
+      "required": "9:16"
+    },
+    "resolution": {
+      "passed": false
+    }
+  },
+  "shots": [
+    {
+      "shot_id": "e01s01b1",
+      "planned_seconds": 5.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s02b1",
+      "planned_seconds": 4.7,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s02b2",
+      "planned_seconds": 2,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s02b3",
+      "planned_seconds": 3.3,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s03b1",
+      "planned_seconds": 3.9,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s03b2",
+      "planned_seconds": 0.6,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s03b3",
+      "planned_seconds": 3.5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s04b1",
+      "planned_seconds": 3.5,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s04b2",
+      "planned_seconds": 1.5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s05b1",
+      "planned_seconds": 0.8333333333333334,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s05b2",
+      "planned_seconds": 7.166666666666667,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s06b1",
+      "planned_seconds": 2.5,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s06b2",
+      "planned_seconds": 0.5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s06b3",
+      "planned_seconds": 4.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s07b1",
+      "planned_seconds": 6.0,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s07b2",
+      "planned_seconds": 2.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s08b1",
+      "planned_seconds": 4.0,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s08b2",
+      "planned_seconds": 3.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s09b1",
+      "planned_seconds": 1.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s09b2",
+      "planned_seconds": 4.0,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s10b1",
+      "planned_seconds": 0.8333333333333334,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s10b2",
+      "planned_seconds": 5.166666666666667,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s11b1",
+      "planned_seconds": 3.0,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s12b1",
+      "planned_seconds": 5.0,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s12b2",
+      "planned_seconds": 2.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s13b1",
+      "planned_seconds": 3.5,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s13b2",
+      "planned_seconds": 1.5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s14b1",
+      "planned_seconds": 3.566666666666667,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s14b2",
+      "planned_seconds": 1.4333333333333333,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s15b1",
+      "planned_seconds": 4.0,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s15b2",
+      "planned_seconds": 2.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s16b1",
+      "planned_seconds": 2.0,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s16b2",
+      "planned_seconds": 4.4,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s16b3",
+      "planned_seconds": 2.6,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s17b1",
+      "planned_seconds": 3.0,
+      "visible_speakers": [
+        "HARRY"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s18b1",
+      "planned_seconds": 4.5,
+      "visible_speakers": [
+        "DRACONIA"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s18b2",
+      "planned_seconds": 1.5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    }
+  ],
+  "summary": {
+    "shots": 37,
+    "planned_seconds": 113.0,
+    "default_backend_seconds_without_adapter": 296,
+    "visible_speech_shots": 17,
+    "blocked_shots": 37,
+    "e01_shots": 18,
+    "locked_audio_files": 17,
+    "audio_hashes_match": true,
+    "comparison_scope": "source manifest pre-trim beats; local trim overrides analyzed separately; not generated media"
+  },
+  "caveat": "No repository code imported, no generation, no output-quality or current-production verdict. Manifest version must be checked separately.",
+  "current_input_audio": [
+    {
+      "shot": 2,
+      "file": "e01-l01-draconia.mp3",
+      "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559",
+      "lock_matches": true,
+      "duration": 8.672653,
+      "manifest_line_dur": 9.0,
+      "carrier_seconds": 4.7
+    },
+    {
+      "shot": 3,
+      "file": "e01-l02-draconia.mp3",
+      "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5",
+      "lock_matches": true,
+      "duration": 6.922449,
+      "manifest_line_dur": 7.0,
+      "carrier_seconds": 3.9
+    },
+    {
+      "shot": 4,
+      "file": "e01-l03-harry.mp3",
+      "sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937",
+      "lock_matches": true,
+      "duration": 3.709388,
+      "manifest_line_dur": 4.0,
+      "carrier_seconds": 3.5
+    },
+    {
+      "shot": 5,
+      "file": "e01-l04-draconia.mp3",
+      "sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af",
+      "lock_matches": true,
+      "duration": 7.157551,
+      "manifest_line_dur": 7.0,
+      "carrier_seconds": 7.166666666666667
+    },
+    {
+      "shot": 6,
+      "file": "e01-l05-harry.mp3",
+      "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f",
+      "lock_matches": true,
+      "duration": 5.564082,
+      "manifest_line_dur": 6.0,
+      "carrier_seconds": 2.5
+    },
+    {
+      "shot": 7,
+      "file": "e01-l06-draconia.mp3",
+      "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+      "lock_matches": true,
+      "duration": 7.392653,
+      "manifest_line_dur": 7.0,
+      "carrier_seconds": 6.0
+    },
+    {
+      "shot": 8,
+      "file": "e01-l07-draconia.mp3",
+      "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+      "lock_matches": true,
+      "duration": 5.642449,
+      "manifest_line_dur": 6.0,
+      "carrier_seconds": 4.0
+    },
+    {
+      "shot": 9,
+      "file": "e01-l08-harry.mp3",
+      "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+      "lock_matches": true,
+      "duration": 3.970612,
+      "manifest_line_dur": 4.0,
+      "carrier_seconds": 4.0
+    },
+    {
+      "shot": 10,
+      "file": "e01-l09-draconia.mp3",
+      "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+      "lock_matches": true,
+      "duration": 5.146122,
+      "manifest_line_dur": 5.0,
+      "carrier_seconds": 5.166666666666667
+    },
+    {
+      "shot": 11,
+      "file": "e01-l10-harry.mp3",
+      "sha256": "a00b2257fb52cdfe3e476f3bde57e0a84c25b1a4ba5200bffdd96f3d0c6efac5",
+      "lock_matches": true,
+      "duration": 2.194286,
+      "manifest_line_dur": 2.0,
+      "carrier_seconds": 3.0
+    },
+    {
+      "shot": 12,
+      "file": "e01-l11-draconia.mp3",
+      "sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a",
+      "lock_matches": true,
+      "duration": 5.877551,
+      "manifest_line_dur": 6.0,
+      "carrier_seconds": 5.0
+    },
+    {
+      "shot": 13,
+      "file": "e01-l12-harry.mp3",
+      "sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad",
+      "lock_matches": true,
+      "duration": 3.866122,
+      "manifest_line_dur": 4.0,
+      "carrier_seconds": 3.5
+    },
+    {
+      "shot": 14,
+      "file": "e01-l13-draconia.mp3",
+      "sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207",
+      "lock_matches": true,
+      "duration": 3.552653,
+      "manifest_line_dur": 4.0,
+      "carrier_seconds": 3.566666666666667
+    },
+    {
+      "shot": 15,
+      "file": "e01-l14-harry.mp3",
+      "sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176",
+      "lock_matches": true,
+      "duration": 5.250612,
+      "manifest_line_dur": 5.0,
+      "carrier_seconds": 4.0
+    },
+    {
+      "shot": 16,
+      "file": "e01-l15-draconia.mp3",
+      "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d",
+      "lock_matches": true,
+      "duration": 6.426122,
+      "manifest_line_dur": 6.0,
+      "carrier_seconds": 4.4
+    },
+    {
+      "shot": 17,
+      "file": "e01-l16-harry.mp3",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+      "lock_matches": true,
+      "duration": 2.272653,
+      "manifest_line_dur": 2.0,
+      "carrier_seconds": 3.0
+    },
+    {
+      "shot": 18,
+      "file": "e01-l17-draconia.mp3",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+      "lock_matches": true,
+      "duration": 4.675918,
+      "manifest_line_dur": 5.0,
+      "carrier_seconds": 4.5
+    }
+  ]
+}

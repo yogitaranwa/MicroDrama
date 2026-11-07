@@ -1,0 +1,19 @@
+{
+  "clip_id": "harry-draconia-e01-h3film-baseline-v1",
+  "workflow_sha256": "c039fd3a846cc94f07f82c19cf9b074aec9582e625ba82e21129320a0b6eb0fd",
+  "runner_sha256": "3587ca8a94d95f0e7c9a06045518d93130b77a202e1bacd9c784ef244bfd537e",
+  "node_count": 35,
+  "file_count": 10,
+  "transport_substitution": "modal.Cls.from_name(...).render.remote captured graph/files and returned no bytes; no network/GPU call",
+  "seed": 419433329744414,
+  "rows": 576,
+  "ratio": "9:16",
+  "audio_mode": "inpaint",
+  "exact_audio_file": {
+    "path": "evidence/h3film-baseline/harry-draconia-e01-h3film-baseline-v1.dialogue-exact-13.12s.wav",
+    "bytes": 1157262,
+    "sha256": "ce64fbb7a8650e77e3d6dde7316eba1939968d32dc680520b6cc640addc2a58f"
+  },
+  "source_fidelity": "byte-exact to user-supplied source-review ZIP; upstream HEAD unverified",
+  "restored_source_revalidation": "semantic graph equal after normalizing run-specific upload names and output suffix"
+}

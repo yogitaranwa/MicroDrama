@@ -1,0 +1,13 @@
+E01 v6 voice review candidate, 25 October 2026
+Exact approved v6 spoken text, 76 lines. Harry: Peter Harwood; Draconia: Amelia. Sparse scene-level emotion tags, eleven_v3 stability0.35. Ten scene requests, one attempt each, no rerolls.8,609spoken characters,9,319submitted with tags. Actual receipts4,102included credits; live usage2,999→7,101of131,000. Overage₹0, limit extension0. No topup/new plan/video.
+
+Dry review audio only, no music/SFX and no action pauses/blocking. Combined MP3 duration598.88seconds (9:59), not old94seconds. No mechanical speech speed-up. Loudness measured-18.2LUFS, truepeak-2.2dBFS.
+
+Machine transcript compared1,720words: all words in order except one Draconia rendered as Traconia by transcription during armor warning, scene6. This is a pronunciation flag, not proof of audible mispronunciation. Full listening needed for pronunciation, voice identity and emotional delivery. Tags and machine transcripts do not certify fear/anger/naturalness.
+
+Approximate scene starts:1 0:00;2 0:38;3 1:44;4 2:35;5 3:40;6 4:59;7 5:48;8 6:29;9 7:59;10 8:36. Raw MP3 container offsets differ slightly from combined decoded output. Exact raw scene-duration timeline in JSON. These are voice review navigation, not film timestamps.
+
+Source contract: https://elevenlabs.io/docs/api-reference/text-to-dialogue/convert-with-timestamps
+Cost references: https://elevenlabs.io/pricing ; https://help.elevenlabs.io/hc/en-us/articles/35869113958801-How-much-does-it-cost-to-generate-using-Eleven-v3
+
+Next: user audio review before video or further generation. No claim of final episode acceptance.

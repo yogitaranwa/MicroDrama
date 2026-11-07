@@ -1,0 +1,12 @@
+test_duck_and_peak (test_audio_repair.AudioRepairTests) ... ok
+test_duplicate_line_reject (test_audio_repair.AudioRepairTests) ... ok
+test_every_line_placed (test_audio_repair.AudioRepairTests) ... ok
+test_missing_line_reject (test_audio_repair.AudioRepairTests) ... ok
+test_music_short_reject (test_audio_repair.AudioRepairTests) ... ok
+test_overlap_reject (test_audio_repair.AudioRepairTests) ... ok
+test_truncation_reject (test_audio_repair.AudioRepairTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.015s
+
+OK

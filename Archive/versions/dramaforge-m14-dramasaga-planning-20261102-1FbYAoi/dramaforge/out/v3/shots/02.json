@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "seconds": 12,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "The champagne tasted like ash long before the glass emptied. I remain because the alternative requires walking past my father's expectations in the entrance hall.",
+   "emotion": "brittle defiance masking exhaustion",
+   "expression": "fingers whitening around the flute stem, chin lifted, eyes fixed on a distant torch"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "Your father isn't here tonight. The professors have retreated to the staff table, and the corridors belong to whoever dares keep walking.",
+   "emotion": "quiet challenge laced with understanding",
+   "expression": "shoulders relaxed, head tilted slightly, gaze steady on her face"
+  }
+ ]
+}

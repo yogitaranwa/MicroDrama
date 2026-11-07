@@ -1,0 +1,264 @@
+{
+  "episode": "E01",
+  "version": "v4.3-gate-requirements-script-mapped",
+  "derived_from": "Original E01_script_v3.md action table, delivered assembly windows, FAILURE.TXT defect evidence; original audit preserved unchanged",
+  "note": "Actions are acceptance requirements, not proof or observed success. Original script numbering differs from some audit labels. Current v3 dialogue windows retained. Proposed v44 line14 move is separate, not silently applied.",
+  "beats": [
+    {
+      "beat": "1",
+      "start": 0,
+      "end": 7.084,
+      "required_actions": [
+        "Harry enters alone at natural walking speed",
+        "black spark opens above Harry in the window reflection"
+      ],
+      "lines": [],
+      "original_script_shot": "1"
+    },
+    {
+      "beat": "2",
+      "start": 7.084,
+      "end": 13.584,
+      "required_actions": [
+        "Draconia notices the spark",
+        "Draconia drops her programme",
+        "Draconia pulls Harry into the dancers",
+        "Draconia remains readable while saying line 1"
+      ],
+      "lines": [
+        {
+          "line": 1,
+          "start": 7.184,
+          "end": 11.454
+        }
+      ],
+      "original_script_shot": "2"
+    },
+    {
+      "beat": "3",
+      "start": 13.584,
+      "end": 22.584,
+      "required_actions": [
+        "ice arrows strike the space Harry left",
+        "a guest stops running and freezes",
+        "glowing floor marks spread around her shoes",
+        "Harry and Draconia continue moving"
+      ],
+      "lines": [
+        {
+          "line": 2,
+          "start": 14.484,
+          "end": 18.024
+        },
+        {
+          "line": 3,
+          "start": 18.684,
+          "end": 20.094
+        }
+      ],
+      "original_script_shot": "3"
+    },
+    {
+      "beat": "4",
+      "start": 22.584,
+      "end": 30.584,
+      "required_actions": [
+        "masked figure in the window mirrors their first step",
+        "Harry notices the reflection",
+        "Draconia visibly confirms she sees it"
+      ],
+      "lines": [
+        {
+          "line": 4,
+          "start": 23.384,
+          "end": 25.364
+        }
+      ],
+      "original_script_shot": "4"
+    },
+    {
+      "beat": "5",
+      "start": 30.584,
+      "end": 36.626,
+      "required_actions": [
+        "arrows strike after the second orchestra beat",
+        "Harry shifts their step early",
+        "the next arrow visibly misses"
+      ],
+      "lines": [
+        {
+          "line": 5,
+          "start": 31.184,
+          "end": 34.104
+        },
+        {
+          "line": 6,
+          "start": 34.184,
+          "end": 36.464
+        }
+      ],
+      "original_script_shot": "5"
+    },
+    {
+      "beat": "6",
+      "start": 36.626,
+      "end": 45.626,
+      "required_actions": [
+        "Harry studies the green mark in the arrow holes",
+        "Draconia recognizes the ward mark",
+        "Draconia visibly loses her composure during lines 7-8"
+      ],
+      "lines": [
+        {
+          "line": 7,
+          "start": 37.426,
+          "end": 39.296
+        },
+        {
+          "line": 8,
+          "start": 39.826,
+          "end": 42.986
+        }
+      ],
+      "original_script_shot": "6"
+    },
+    {
+      "beat": "7",
+      "start": 45.626,
+      "end": 52.085,
+      "required_actions": [
+        "silver orchestra strings tear free",
+        "strings whip across the floor",
+        "Harry raises a slim wooden wand, not a blade"
+      ],
+      "lines": [
+        {
+          "line": 9,
+          "start": 46.226,
+          "end": 49.796
+        }
+      ],
+      "original_script_shot": "7"
+    },
+    {
+      "beat": "8",
+      "start": 52.085,
+      "end": 60.085,
+      "required_actions": [
+        "Harry cuts two strings with a wand charm",
+        "third string wraps Harry wrist",
+        "Draconia snaps it with her heel",
+        "empty armor steps out of the shadows"
+      ],
+      "lines": [
+        {
+          "line": 10,
+          "start": 52.785,
+          "end": 55.655
+        }
+      ],
+      "original_script_shot": "8"
+    },
+    {
+      "beat": "9",
+      "start": 60.085,
+      "end": 67.377,
+      "required_actions": [
+        "Draconia kicks the trolley and it strikes armor",
+        "Harry turns her stumble into a dance step",
+        "masked figure on floor copies them"
+      ],
+      "lines": [],
+      "original_script_shot": "9"
+    },
+    {
+      "beat": "10",
+      "start": 67.377,
+      "end": 76.377,
+      "required_actions": [
+        "glowing waltz grid pulls their feet",
+        "Harry points to the red table",
+        "Harry and Draconia deliver lines 11-12 with readable faces"
+      ],
+      "lines": [
+        {
+          "line": 11,
+          "start": 67.977,
+          "end": 70.097
+        },
+        {
+          "line": 12,
+          "start": 70.777,
+          "end": 74.907
+        }
+      ],
+      "original_script_shot": "10"
+    },
+    {
+      "beat": "11a",
+      "start": 76.377,
+      "end": 80.336,
+      "required_actions": [
+        "Draconia flips table as a shield, not a glide",
+        "Harry redirects charm with wooden wand",
+        "chandelier falls and strikes ice at natural speed"
+      ],
+      "lines": [],
+      "original_script_shot": "11"
+    },
+    {
+      "beat": "11b",
+      "start": 80.336,
+      "end": 84.795,
+      "required_actions": [
+        "green and silver marks burn around joined hands",
+        "Draconia says line 13 with visible fear",
+        "under CURRENT v3 timing only, line14 must be on camera by Harry at82.336-84.096; hands-only insert is rejected"
+      ],
+      "lines": [
+        {
+          "line": 13,
+          "start": 80.736,
+          "end": 81.966
+        },
+        {
+          "line": 14,
+          "start": 82.336,
+          "end": 84.096
+        }
+      ],
+      "original_script_shot": "11"
+    },
+    {
+      "beat": "12a",
+      "start": 84.795,
+      "end": 89.087,
+      "required_actions": [
+        "doors seal",
+        "faceless masked figure bows",
+        "Harry looks hurt and suspicious at Draconia",
+        "v3 shot is silent; proposed v44 requires Harry on-camera line14 here, only after an explicitly revised timeline exists"
+      ],
+      "lines": [],
+      "original_script_shot": "12"
+    },
+    {
+      "beat": "12b",
+      "start": 89.087,
+      "end": 94.254,
+      "required_actions": [
+        "Draconia maintains eye contact",
+        "Draconia visibly says line 15 somberly"
+      ],
+      "lines": [
+        {
+          "line": 15,
+          "start": 89.587,
+          "end": 93.487
+        }
+      ],
+      "original_script_shot": "12"
+    }
+  ],
+  "dialogue_windows_note": "Line windows are the assembly plan's v3 placements; reuse them for gap-level measurement of the music bed."
+}

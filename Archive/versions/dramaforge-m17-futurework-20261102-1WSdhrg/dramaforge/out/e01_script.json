@@ -1,0 +1,209 @@
+{
+ "title": "The Debt of Champions",
+ "hook": "The Great Hall doors slam shut behind them\u2014silence crashes down like a ward.",
+ "shots": [
+  {
+   "n": 1,
+   "location": "Hogwarts Grand Staircase \u2014 Landing",
+   "camera": "Low handheld push-in, 24mm, shallow depth",
+   "action": "Harry leans against cold stone, adjusting dress robes. Draconia storms down the last steps, heels clicking, yanking off one elbow glove with her teeth.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "Don't pretend you didn't see me hex Crabbe's drink.",
+     "emotion": "breathless adrenaline, daring him to flinch"
+    },
+    {
+     "speaker": "Harry",
+     "text": "I saw. I also saw you miss Goyle by three inches.",
+     "emotion": "flat, eyes tracking her hands"
+    }
+   ],
+   "seconds": 6
+  },
+  {
+   "n": 2,
+   "location": "Corridor Outside Great Hall",
+   "camera": "Steadicam walking backwards in front of them",
+   "action": "They walk fast, not side-by-side\u2014Harry half a step ahead, Draconia crowding his shoulder. Torchlight catches silver thread in her robes.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "You were counting?",
+     "emotion": "sharp laugh, genuine delight"
+    },
+    {
+     "speaker": "Harry",
+     "text": "Always. You favor your left wrist on the backswing.",
+     "emotion": "clinical, filed away for later"
+    }
+   ],
+   "seconds": 5
+  },
+  {
+   "n": 3,
+   "location": "Abandoned Charms Corridor \u2014 Alcove",
+   "camera": "Tight two-shot, 35mm, rack focus between faces",
+   "action": "Harry stops. Draconia overshoots, spins. A suit of armor's shadow crosses them. Distant waltz music thumps through walls.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "Why follow me?",
+     "emotion": "sudden vulnerability masked by sneer"
+    },
+    {
+     "speaker": "Harry",
+     "text": "You looked like you were heading somewhere you shouldn't. Alone.",
+     "emotion": "quiet challenge, not looking away"
+    }
+   ],
+   "seconds": 6
+  },
+  {
+   "n": 4,
+   "location": "Same Alcove",
+   "camera": "Over Harry's shoulder, close on Draconia",
+   "action": "Draconia's thumb rubs her Dark Mark sleeve. She catches him watching. Her other hand snaps to her wand.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "Protective, Potter? Or just curious what the Death Eater's daughter does at midnight?",
+     "emotion": "venom cracking at the edges"
+    },
+    {
+     "speaker": "Harry",
+     "text": "Neither. You're the only one who doesn't lie to me. Even when you're lying.",
+     "emotion": "weird intimacy, whisper-close"
+    }
+   ],
+   "seconds": 7
+  },
+  {
+   "n": 5,
+   "location": "Same Alcove",
+   "camera": "Wide, both in frame, Dutch angle creeping in",
+   "action": "A beat of charged silence. Draconia exhales, shoulders dropping. She tosses her glove at his feet.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "Pick it up. You've earned a favor. One. No questions.",
+     "emotion": "reckless, throwing a gauntlet"
+    },
+    {
+     "speaker": "Harry",
+     "text": "I don't want your favors.",
+     "emotion": "steel, but he bends to retrieve it"
+    }
+   ],
+   "seconds": 6
+  },
+  {
+   "n": 6,
+   "location": "Same Alcove",
+   "camera": "Extreme close-up: glove in Harry's hand",
+   "action": "He turns the silk inside-out. A tiny silver key is stitched into the lining. Draconia's reflection in his glasses freezes.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "That's... not mine.",
+     "emotion": "genuine panic, first crack in armor"
+    },
+    {
+     "speaker": "Harry",
+     "text": "Then whose?",
+     "emotion": "predatory calm, pocketing it"
+    }
+   ],
+   "seconds": 5
+  },
+  {
+   "n": 7,
+   "location": "Corridor Intersection",
+   "camera": "Whip pan to long corridor end \u2014 Filch's cat eyes glow",
+   "action": "Mrs. Norris screams. They break apart\u2014Harry left, Draconia right\u2014project-ownerive, synchronized. Footsteps approach heavy and fast.",
+   "lines": [
+    {
+     "speaker": "Filch (O.S.)",
+     "text": "Students! Out of bed!",
+     "emotion": "wheezing rage, getting closer"
+    }
+   ],
+   "seconds": 4
+  },
+  {
+   "n": 8,
+   "location": "Moving Staircase \u2014 Mid-Swing",
+   "camera": "Handheld sprint, stairs shifting underfoot",
+   "action": "Harry grabs Draconia's wrist, pulls her onto a moving stair segment. They ride it sideways, faces inches apart, wind in her hair.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "You're holding me.",
+     "emotion": "breathless, not pulling away"
+    },
+    {
+     "speaker": "Harry",
+     "text": "You're welcome.",
+     "emotion": "dark amusement, not letting go"
+    }
+   ],
+   "seconds": 6
+  },
+  {
+   "n": 9,
+   "location": "Astronomy Tower Base \u2014 Stone Archway",
+   "camera": "Static wide, tower looming above them",
+   "action": "They land breathless on cold flags. The key burns in Harry's pocket. Draconia smooths her hair, mask slipping back into place.",
+   "lines": [
+    {
+     "speaker": "Draconia",
+     "text": "Midnight. Astronomy Tower. Bring the key. Come alone.",
+     "emotion": "command masking desperation"
+    },
+    {
+     "speaker": "Harry",
+     "text": "If it's a trap, I'll hex you first.",
+     "emotion": "promise, not threat"
+    }
+   ],
+   "seconds": 6
+  },
+  {
+   "n": 10,
+   "location": "Astronomy Tower \u2014 Spiral Stairs",
+   "camera": "POV Harry climbing, wand lumos lighting stone",
+   "action": "Harry ascends alone. 117 steps. His shadow stretches. A door at the top stands ajar, faint blue light spilling.",
+   "lines": [],
+   "seconds": 8
+  },
+  {
+   "n": 11,
+   "location": "Astronomy Tower \u2014 Observatory",
+   "camera": "Slow push through doorway, Harry's silhouette",
+   "action": "The room is empty. Telescope pointed at nothing. A single parchment on the desk: *I couldn't. \u2014 D.* The window is open. Owl wingbeats fade into night.",
+   "lines": [
+    {
+     "speaker": "Harry",
+     "text": "Draconia.",
+     "emotion": "hollow, realization crashing"
+    }
+   ],
+   "seconds": 7
+  },
+  {
+   "n": 12,
+   "location": "Astronomy Tower \u2014 Observatory",
+   "camera": "Extreme close-up: Harry's hand closing on parchment",
+   "action": "He crumples it. The key sears through his pocket. Behind him, the heavy oak door clicks shut\u2014lock engaging from outside. No wandlight. Just moonlight on stone.",
+   "lines": [
+    {
+     "speaker": "Harry",
+     "text": "Lumos.",
+     "emotion": "nothing happens \u2014 pure dread"
+    }
+   ],
+   "seconds": 5
+  }
+ ],
+ "cliffhanger": "The key burns hot against his thigh. The door is locked from the OUTSIDE. And someone just whispered 'Accio key' from the shadows behind the telescope."
+}

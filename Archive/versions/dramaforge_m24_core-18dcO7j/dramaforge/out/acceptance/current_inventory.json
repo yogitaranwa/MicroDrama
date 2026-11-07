@@ -1,0 +1,150 @@
+{
+  "as_of_local": "2026-11-06T03:05:00+05:30",
+  "overall": "incomplete",
+  "paid_execution": "held: conditional approval not yet applicable",
+  "components": {
+    "multitalk": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "per-person audio JSON builder",
+        "render-plan bridge",
+        "fresh still/audio hashes and project gates",
+        "actual subprocess executor"
+      ],
+      "executed": [
+        "local parser/contract/regression tests",
+        "local CLI import attempt failed at accelerator check"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "audio-driven generation",
+        "two-person lip-sync and identity review"
+      ],
+      "remaining": [
+        "isolated compatible dependencies",
+        "base+audio-model merged checkpoint layout",
+        "real T4 compatibility and VRAM test"
+      ]
+    },
+    "infinitetalk": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "audio input builder",
+        "render-plan bridge",
+        "fresh gate/hash checks",
+        "explicit separate InfiniteTalk checkpoint argument",
+        "actual subprocess executor"
+      ],
+      "executed": [
+        "local parser/contract/regression tests",
+        "local CLI import attempt failed at accelerator check"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "dubbing generation",
+        "lip-sync and identity review"
+      ],
+      "remaining": [
+        "isolated compatible dependencies",
+        "base and separate audio-model weights",
+        "real T4 compatibility and VRAM test"
+      ]
+    },
+    "vace": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "CLI builder",
+        "new prepared job with explicit checkpoint/frame/step controls",
+        "gated hash-checking visual executor",
+        "private official-library GPU trial"
+      ],
+      "executed": [
+        "local parser/contract/regression tests"
+      ],
+      "in_flight": "Version1 still Running at02:56; isolated environment installed; CLIhelp failed missingmatplotlib; separate core library subprocess pending with90-minute timeout; hourly recovery03:57",
+      "not_executed_confirmed": [
+        "successful GPU model load",
+        "successful reference-conditioned video",
+        "visual quality review"
+      ],
+      "remaining": [
+        "recover actual runtime result",
+        "fix exact runtime failures if any",
+        "review generated pixels if successful",
+        "wire a validated host path into production"
+      ]
+    },
+    "pulid": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "corrected SDXL-Lightning driver instead of FLUX assumption",
+        "prepared still job and hash/gate-enforcing executor"
+      ],
+      "executed": [
+        "local upstream-signature and regression checks"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "identity-conditioned still generation",
+        "visual identity review"
+      ],
+      "remaining": [
+        "isolated original dependency stack",
+        "model license review including non-commercial InsightFace antelopev2",
+        "GPU memory test",
+        "full inference and visual check"
+      ]
+    },
+    "portable_attention": {
+      "implemented": [
+        "explicit opt-in chunked scaled-dot-product attention",
+        "single-device and full-attention-only safeguards",
+        "optional Turing fp16 config override"
+      ],
+      "executed": [
+        "CPU numerical mask tests",
+        "actual Tesla T4 numerical comparison: maximum absolute difference0.0"
+      ],
+      "not_executed_confirmed": [
+        "validated complete model output"
+      ],
+      "remaining": [
+        "New mixed-RoPE/value dtype correction passes CPU test, actual CUDA test prepared but not run",
+        "model-level correctness, performance and quality evidence"
+      ]
+    },
+    "legacy_wan_seed_test": {
+      "executed": [
+        "two matched prompt/settings clips differing only in seeds42/43",
+        "download and output hash verification",
+        "actual sampled-frame visual inspection"
+      ],
+      "scope": "visual seed sensitivity only, no voice, reference-image or two-person proof"
+    },
+    "episode_one": {
+      "implemented": [
+        "recovered owned v9 script",
+        "lossless 24-shot/19-line/4-location planner adaptation",
+        "asset and voice readiness inventory"
+      ],
+      "not_executed": [
+        "approved final v9 audio",
+        "locked v9-specific complete asset bank",
+        "connected short two-person proof",
+        "full episode render",
+        "continuous watch/listen and final signoff"
+      ],
+      "remaining": [
+        "five final voice IDs unresolved",
+        "new v9 locations/extra identities/wardrobe/props missing",
+        "conditional spend authority unmet",
+        "model integrations unproven"
+      ]
+    }
+  },
+  "local_tests": {
+    "full_suite_last_run": "485 passed+30subtests; one pre-existing MoviePy last-frame warning",
+    "note": "Includes streaming subprocess tests and mixed-dtype numerical test. Model calls are stubbed in executor control-flow tests, not inference."
+  },
+  "completion_rule": "Local tests, copied source and CLI help do not establish full coding/runtime completion or approve episode generation."
+}

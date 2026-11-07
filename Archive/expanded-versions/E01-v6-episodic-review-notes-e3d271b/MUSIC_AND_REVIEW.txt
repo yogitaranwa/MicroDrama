@@ -1,0 +1,17 @@
+Existing v6 voices split at complete scene boundaries, no voice regeneration, changed words, mechanical speech speed-up or mid-line cuts. Audio review candidates only, no final film pacing claim.
+E1 scenes1-3 2:34.48 rescue/frozen guest/reflection.
+E2 scenes4-5 2:24.56 arrow timing/Malfoy argument/string warning.
+E3 scenes6-8 2:59.76 wrist/trolley/forced pattern/table plan.
+E4 scenes9-10 2:00.08 table/chandelier aftermath/marks/empty mask/intercepted warning.
+No action staging pauses or SFX added. E1 stopping point is a conversational scene exit, not a strong newly written cliffhanger; E3 carries the action into E4. These are proposed divisions of the current recording, not a recanonized season.
+
+Dark Dance by Kevin MacLeod (incompetech.com)
+https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100398
+Licensed under Creative Commons Attribution4.0
+https://creativecommons.org/licenses/by/4.0/
+Free-attribution license source: https://incompetech.com/music/royalty-free/licenses/
+Music source reused from preserved earlier licensed tense candidate. Changes:0.05s preroll trim, excerpt/loop, level adjustment, speech-triggered ducking,0.8s music-only closing fade. No speech fade. Tense fit is a candidate, not listening approval. Repeated cue may be noticeable across episodes. No romantic/waltz cue substituted.
+
+Measured mix LUFS/truepeak: E1-18.4/-3.8;E2-18.0/-4.4;E3-18.5/-4.6;E4-18.3/-4.9. Machine transcript of E1 screened against source; no large dropped passage detected, one stop/stopped recognition variation. Whole dry source already screened; emotion/speaker identity still requires actual listening. Music cannot fix the rejected acting. No new voice credits used.
+
+Next decision: review cut structure/music balance, then select a short specific emotional retake excerpt if desired rather than another whole batch. No retake started or approved by this file.

@@ -1,0 +1,49 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] You recognized it. Don't tell me to watch my feet. I am watching my feet, and I'm asking you what that mark is."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[defensive] It's a Malfoy ward. I thought it was dead. I didn't think there was anything left that could do this."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] Your family's magic is firing arrows at us, and you were going to wait until when to tell me? Until another one missed?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[defensive] I recognized it just now. You saw me recognize it. Don't turn that into me knowing everything before you walked into the room."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] You knew to pull me into the dance. You knew not to stop. Every time I ask something, there's another thing you haven't said."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[defensive] I saw what happened to the people who stopped. That's not the same as knowing how to undo it. I am frightened too, Harry."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] Then tell me what you know, even if it isn't enough. I can deal with you being frightened. I can't deal with guessing which answers you're keeping from me."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[defensive] I know whose ward it is. I thought it couldn't work anymore. I don't know who's using it now. That's what I can tell you."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] All right. Then we start there. But if you recognize something else, I need to hear it before I have to ask."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[defensive] Behind you. Harry, raise your wand. Those strings are coming straight at us."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4105
+}

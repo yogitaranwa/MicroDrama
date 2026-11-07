@@ -1,0 +1,3614 @@
+{
+  "manifest_total": 28704,
+  "approval_ref": "[private-record-reference]",
+  "started": "2026-10-26T09:08:07+0530",
+  "shots": [
+    {
+      "ep": "e01",
+      "shot": 3,
+      "state": "released_provider_rejection",
+      "intended": 768,
+      "balance_before": 131219,
+      "error": "HTTP 422 {\"code\":\"unprocessable_entity\",\"message\":\"The prompt must include @two_shot_dialogue, @two_shot_action, @yule_ball_location.\"}",
+      "evidence": "provider_rejection"
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "state": "gate_failed",
+      "intended": 768,
+      "balance_before": 131219,
+      "job": "cmvon6a7x0lbfjx014iasjln8",
+      "charged": 768,
+      "downloaded": "e01-s03.mp4",
+      "verify": {
+        "clip": "production-2026-10-26/e01-s03.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 720,
+          "h": 1280,
+          "dur": "8.034000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.23,
+        "lag_s": 0.94,
+        "asr_clip": "The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+        "asr_ref": "Dance with me right now. The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+        "asr_match": false,
+        "motion": {
+          "frames": 240,
+          "mean": 10.22,
+          "min": 2.09,
+          "max": 26.18,
+          "near_static": 0,
+          "sampled": 239
+        }
+      },
+      "gate_fails": [
+        "audio honor 0.23 (ref ignored - first dialogue line dropped from clip)",
+        "REVIEW REQUIRED - ASR text delta: clip missing 'Dance with me right now.'"
+      ],
+      "note": "NO automatic reroll per standing rule; awaiting main decision"
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "state": "verified",
+      "intended": 768,
+      "balance_before": 130451,
+      "job": "cmvoo3i0801oxix01comk8lhv",
+      "charged": 768,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 720,
+          "h": 1280,
+          "dur": "8.034000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.213,
+        "lag_s": 0.96,
+        "asr_clip": "Dance with me right now. The floor won't touch us while we're moving. You may scream at me the moment we're alive.",
+        "asr_ref": "Dance with me right now. The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+        "asr_match": false,
+        "motion": {
+          "frames": 240,
+          "mean": 7.37,
+          "min": 0.01,
+          "max": 26.59,
+          "near_static": 3,
+          "sampled": 239
+        }
+      },
+      "gate_fails": [
+        "audio honor 0.21",
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Dance with me right now. The floor won't touch us while we're moving. You may sc' ref='Dance with me right now. The floor won't touch us while we're moving.  You may s'"
+      ],
+      "gate_warns": [
+        "static frames 3/239 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 1,
+      "state": "verified",
+      "intended": 480,
+      "balance_before": 129683,
+      "job": "cmvoovag40qjahy010cvqf5io",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 720,
+          "h": 1280,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 150,
+          "mean": 2.09,
+          "min": 0.46,
+          "max": 5.22,
+          "near_static": 1,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 1/149 sampled (a hold can be legit; review timestamps)"
+      ],
+      "note": "non-dialogue shot; envelope/ASR gates not applicable (no ref audio); fps/dur/motion/audio-track pass"
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "state": "verified",
+      "intended": 960,
+      "balance_before": 129203,
+      "job": "cmvop50tz02dyix01ou8ouq3g",
+      "charged": 960,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 720,
+          "h": 1280,
+          "dur": "10.031000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.189,
+        "lag_s": -0.44,
+        "asr_clip": "Potter, don't turn around, look at me, only at me, and walk over here slowly.",
+        "asr_ref": "Potter don't turn around, look at me, only at me, and walk over here slowly.",
+        "asr_match": true,
+        "motion": {
+          "frames": 300,
+          "mean": 5.5,
+          "min": 0.85,
+          "max": 14.05,
+          "near_static": 0,
+          "sampled": 299
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.19 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ],
+      "note": "gate classification corrected 09:08 IST per main 08:48:24 (no waveform-copy requirement for Wan3 resynthesis); hard gates all pass: fps 30/1, audio track, ASR word-diff exact vs canonical line; emotion judgment reserved for human listen (Stage B review)"
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvov6s31000hho019qyp71bu",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvov7t780hsvh501ajq2etkb",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp2gtg405bvho0182wi7bz3",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp4udsy06uiho01r1tp8msy",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 384,
+      "job": "cmvp4ykgh06wwho010oa46y8x",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.423,
+        "lag_s": 0.64,
+        "asr_clip": "That was your plan?  Drop the ceiling on the whole hull?",
+        "asr_ref": "That was your plan. Drop the ceiling on the whole hall.",
+        "asr_match": false,
+        "motion": {
+          "frames": 120,
+          "mean": 1.35,
+          "min": 0.24,
+          "max": 3.25,
+          "near_static": 10,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='That was your plan?  Drop the ceiling on the whole hull?' ref='That was your plan. Drop the ceiling on the whole hall.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.42 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 10/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 1,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5ihyr07bqjq01zu22bbdb",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5rucv0e4bg501ihi2jdsk",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5sjc801kthv01k80sqorg",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 3,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5t86907d0hv01zglbecu7",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5ugyh0ds4g801irruep89",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5vhwc0dskg8014775uvtw",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 3,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5w7pk0dteg8017kpybwbg",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 4,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5x0ii01nnhv01hmoqrsu1",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 4,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5xoyd07igho01j28avi6t",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 5,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5ye0j07hfhv01zlaw7gnk",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 5,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp5zfx306m2id01vckue02m",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp604zx07i4hv010dge94x6",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp60tih07nght01f610cao2",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 3,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp627gk07jhhv019ubi0z2f",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 7,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6388207k4hv017dr2o84i",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 7,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp63wnn07mvho014nujce6e",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 8,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp64l7l07pxjq011awk1mux",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 8,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp65ayg07qhjq015xd9hxbg",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 9,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp66boy07lwhv01akd5hcm0",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 9,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6783g06r0id01vwsfcym4",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 10,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp68ajm01twhv011eravx67",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 10,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp69j6101uvhv01g2wlzwx5",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 11,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6a9cg07rjho0135tfr0fh",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 12,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6bac701w8hv01frr79qaa",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 12,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6bul300vljp018ouk22er",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 13,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6c95306u2id01szsnwku4",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 13,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6cxu506uiid01ii7p3yke",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 15,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6e65f01y3hv01axj17uiu",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 15,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6euxg07x1ht015zvibh07",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6fjms0e6vg8015xkczi98",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 2,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6gla60e7og801tie2w3dr",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 3,
+      "stage": "frames",
+      "state": "superseded",
+      "intended": 50,
+      "job": "cmvp6ha6w07z8jq019qbsdbw8",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 17,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6iasl07yyht012yufuh1p",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 18,
+      "beat": 1,
+      "stage": "frames",
+      "state": "submitted",
+      "intended": 50,
+      "job": "cmvp6iygz080vjq01778s2b3i",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 18,
+      "beat": 2,
+      "stage": "frames",
+      "state": "superseded",
+      "intended": 50,
+      "job": "cmvp6jmzo03wlhy01g3glgolv",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 14,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp6lj99012hjp010di50kng",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 0.98,
+          "min": 0.05,
+          "max": 2.06,
+          "near_static": 11,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 11/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 1,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 480,
+      "job": "cmvp6pwz1026khv015qluas67",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 150,
+          "mean": 0.9,
+          "min": 0.11,
+          "max": 2.5,
+          "near_static": 31,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 31/149 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 480,
+      "job": "cmvp6u2nr076pid01p0xqrznp",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.239,
+        "lag_s": 0.4,
+        "asr_clip": "Potter don't turn around look at me only at me and walk over here slowly",
+        "asr_ref": "Potter don't turn around, look at me, only at me, and walk over here slowly.",
+        "asr_match": true,
+        "motion": {
+          "frames": 150,
+          "mean": 1.95,
+          "min": 0.62,
+          "max": 6.58,
+          "near_static": 0,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.24 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 3,
+      "stage": "frames",
+      "state": "finalized",
+      "intended": 50,
+      "job": "cmvp7551i0ep1g801t164awie",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 18,
+      "beat": 2,
+      "stage": "frames",
+      "state": "finalized",
+      "intended": 50,
+      "job": "cmvp75tlv04bohy015g6knjvy",
+      "charged": 50
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp782iu01i9jp019ng5nz2j",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 1.7,
+          "min": 0.19,
+          "max": 4.3,
+          "near_static": 15,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 15/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 3,
+      "stage": "video",
+      "state": "verified",
+      "intended": 288,
+      "job": "cmvp79bq50es6g801s3dqf6zi",
+      "charged": 288,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b3.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "3.019000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 90,
+          "mean": 1.19,
+          "min": 0.24,
+          "max": 3.06,
+          "near_static": 4,
+          "sampled": 89
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 4/89 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 18,
+      "beat": 2,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 192,
+      "job": "cmvp7d1vs01mbjp01r10cdj7u",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 2.15,
+          "min": 0.03,
+          "max": 18.26,
+          "near_static": 38,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [
+        "mannequin risk: 38/59 sampled frames static"
+      ],
+      "gate_warns": []
+    },
+    {
+      "ep": "e01",
+      "shot": 2,
+      "beat": 3,
+      "stage": "video",
+      "state": "verified",
+      "intended": 384,
+      "job": "cmvp7i4j70004gb01lkwwz4pn",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b3.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 120,
+          "mean": 6.96,
+          "min": 1.55,
+          "max": 15.8,
+          "near_static": 0,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": []
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 384,
+      "job": "cmvp7l8ws07phid01feom573n",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.18,
+        "lag_s": 0.08,
+        "asr_clip": "Dance with me right now. The floor won't touch us while we're moving. You may scream at me the moment we're alive.",
+        "asr_ref": "Dance with me right now. The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+        "asr_match": false,
+        "motion": {
+          "frames": 120,
+          "mean": 4.57,
+          "min": 0.27,
+          "max": 12.01,
+          "near_static": 10,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Dance with me right now. The floor won't touch us while we're moving. You may sc' ref='Dance with me right now. The floor won't touch us while we're moving.  You may s'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.18 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 10/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 4,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 384,
+      "job": "cmvp7zbtm00ebg90172739s8f",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.478,
+        "lag_s": 0.3,
+        "asr_clip": "Fine, I'm dancing now tell me what those things are and why they want me",
+        "asr_ref": "Fine, I'm dancing.  Now tell me what those things are and why they want me.",
+        "asr_match": false,
+        "motion": {
+          "frames": 120,
+          "mean": 1.68,
+          "min": 0.53,
+          "max": 4.31,
+          "near_static": 0,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Fine, I'm dancing now tell me what those things are and why they want me' ref='Fine, I'm dancing.  Now tell me what those things are and why they want me.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.48 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp80wa9020vjp01lwsi4rre",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 11.35,
+          "min": 0.01,
+          "max": 34.53,
+          "near_static": 2,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 2/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp83cdf04vuhy01f5ozvwi3",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 4.87,
+          "min": 0.68,
+          "max": 10.08,
+          "near_static": 0,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [],
+      "note_dup": "duplicate of cmvp80wa9020vjp01lwsi4rre (gate-stop lost artifact record); finalize only, no resubmit"
+    },
+    {
+      "ep": "e01",
+      "shot": 3,
+      "beat": 3,
+      "stage": "video",
+      "state": "verified",
+      "intended": 384,
+      "job": "cmvp86jld04y2hy01wahhlodn",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b3.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 120,
+          "mean": 2.85,
+          "min": 0.29,
+          "max": 11.91,
+          "near_static": 25,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 25/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 4,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp8wzbk02kljp01413rrufd",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 5.65,
+          "min": 0.97,
+          "max": 12.5,
+          "near_static": 0,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": []
+    },
+    {
+      "ep": "e01",
+      "shot": 5,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp8zemb000li701iwf06lu0",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 4.3,
+          "min": 0.34,
+          "max": 13.86,
+          "near_static": 4,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 4/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 5,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 768,
+      "job": "cmvp91637001gi701vs194kl6",
+      "charged": 768,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "8.034000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.399,
+        "lag_s": 0.88,
+        "asr_clip": "It's a long story and it ends with you breathing.  Eyes on the ceiling potter, not on me.",
+        "asr_ref": "It's a long story, and it ends with you breathing.  Eyes on the ceiling, Potter, not on me.",
+        "asr_match": true,
+        "motion": {
+          "frames": 240,
+          "mean": 2.79,
+          "min": 0.25,
+          "max": 11.83,
+          "near_static": 23,
+          "sampled": 239
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.40 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 23/239 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 288,
+      "job": "cmvp96ngu0fz1g8011vq8ru3g",
+      "charged": 288,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "3.019000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.464,
+        "lag_s": -0.5,
+        "asr_clip": "The arrows land on the orchestra's offbeat, change your step with me, half a beat late on my-",
+        "asr_ref": "The arrows land on the orchestra's offbeat.  Change your step with me, half a beat late on my count.",
+        "asr_match": false,
+        "motion": {
+          "frames": 90,
+          "mean": 5.21,
+          "min": 1.34,
+          "max": 12.36,
+          "near_static": 0,
+          "sampled": 89
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='The arrows land on the orchestra's offbeat, change your step with me, half a bea' ref='The arrows land on the orchestra's offbeat.  Change your step with me, half a be'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.46 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 7,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 576,
+      "job": "cmvp9fvoo00jhin01qcewju26",
+      "charged": 576,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "6.038000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.577,
+        "lag_s": -1.0,
+        "asr_clip": "You counted clever boy then count faster the music won't slow down for you",
+        "asr_ref": "You counted clever boy, then count faster, the music won't slow down for us.",
+        "asr_match": false,
+        "motion": {
+          "frames": 180,
+          "mean": 8.78,
+          "min": 0.01,
+          "max": 26.45,
+          "near_static": 1,
+          "sampled": 179
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='You counted clever boy then count faster the music won't slow down for you' ref='You counted clever boy, then count faster, the music won't slow down for us.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.58 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 1/179 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvp9hp7605tehy01thfrc3hu",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 2.22,
+          "min": 0.18,
+          "max": 5.63,
+          "near_static": 12,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 12/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 6,
+      "beat": 3,
+      "stage": "video",
+      "state": "verified",
+      "intended": 384,
+      "job": "cmvp9uc60061khy01x3nuqpwr",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b3.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 120,
+          "mean": 3.08,
+          "min": 0.39,
+          "max": 6.75,
+          "near_static": 1,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 1/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 8,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 384,
+      "job": "cmvpa3pgu00yein01lsymd9ys",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.43,
+        "lag_s": 0.96,
+        "asr_clip": "Show off. Even you can't cut all three.",
+        "asr_ref": "Show off. Even you can't cut all three.",
+        "asr_match": true,
+        "motion": {
+          "frames": 120,
+          "mean": 1.93,
+          "min": 0.27,
+          "max": 5.92,
+          "near_static": 18,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.43 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 18/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 7,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpa6pzj04cuhv01omwk42pz",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 2.86,
+          "min": 0.23,
+          "max": 7.19,
+          "near_static": 7,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 7/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 8,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 288,
+      "job": "cmvpa9hpv0gn4g801pd0vd0bu",
+      "charged": 288,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "3.019000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 90,
+          "mean": 1.78,
+          "min": 0.2,
+          "max": 5.09,
+          "near_static": 15,
+          "sampled": 89
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 15/89 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 9,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpabnyl04g6hv01enfrbl4t",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 4.66,
+          "min": 0.09,
+          "max": 12.25,
+          "near_static": 10,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 10/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 9,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 384,
+      "job": "cmvpadrhc04huhv013eqrfhi9",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.429,
+        "lag_s": 0.36,
+        "asr_clip": "Efficient. Remind me to applaud once the orchestra gives me my hand back.",
+        "asr_ref": "Efficient. Remind me to applaud once the orchestra gives me my hand back.",
+        "asr_match": true,
+        "motion": {
+          "frames": 120,
+          "mean": 1.03,
+          "min": 0.27,
+          "max": 3.88,
+          "near_static": 23,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.43 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 23/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 10,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpagjbq0158gm010w65a3kx",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 4.13,
+          "min": 0.36,
+          "max": 7.67,
+          "near_static": 1,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 1/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 10,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 576,
+      "job": "cmvpaikcq014vih011n6rukn3",
+      "charged": 576,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "6.038000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.157,
+        "lag_s": -0.36,
+        "asr_clip": "I meant to do that, the trolley was always part of the plan.",
+        "asr_ref": "I meant to do that. The trolley was always part of the plan.",
+        "asr_match": true,
+        "motion": {
+          "frames": 180,
+          "mean": 3.96,
+          "min": 0.48,
+          "max": 20.88,
+          "near_static": 2,
+          "sampled": 179
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.16 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 2/179 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 11,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 288,
+      "job": "cmvpamdbb0aoqjq01dypf4fyp",
+      "charged": 288,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s11-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "3.019000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.394,
+        "lag_s": 1.0,
+        "asr_clip": "No, you didn't. Thanks for the catch anyway.",
+        "asr_ref": "No, you didn't. Thanks for the catch anyway.",
+        "asr_match": true,
+        "motion": {
+          "frames": 90,
+          "mean": 3.86,
+          "min": 0.97,
+          "max": 11.09,
+          "near_static": 0,
+          "sampled": 89
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "envelope corr 0.39 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 12,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 480,
+      "job": "cmvpar2m701coin01isdej2rk",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.356,
+        "lag_s": 0.1,
+        "asr_clip": "He's using the waltz grid every proper step we dance together seals another door",
+        "asr_ref": "He's using the waltz grid.  Every proper step we dance together seals another door.",
+        "asr_match": false,
+        "motion": {
+          "frames": 150,
+          "mean": 2.69,
+          "min": 0.69,
+          "max": 8.71,
+          "near_static": 0,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='He's using the waltz grid every proper step we dance together seals another door' ref='He's using the waltz grid.  Every proper step we dance together seals another do'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.36 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 13,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 384,
+      "job": "cmvpav3f604rohv012nd31ac8",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.436,
+        "lag_s": 0.52,
+        "asr_clip": "Then we dance it wrong on purpose.  Break the grid with me.",
+        "asr_ref": "Then we dance it wrong on purpose, break the grid with me.",
+        "asr_match": false,
+        "motion": {
+          "frames": 120,
+          "mean": 2.3,
+          "min": 0.27,
+          "max": 10.15,
+          "near_static": 11,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Then we dance it wrong on purpose.  Break the grid with me.' ref='Then we dance it wrong on purpose, break the grid with me.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.44 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 11/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 12,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpazb5u008zfw01zocyfztr",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 0.96,
+          "min": 0.2,
+          "max": 2.06,
+          "near_static": 10,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 10/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 13,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpb3pka0arsho01i7w1zhk0",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 4.05,
+          "min": 1.49,
+          "max": 10.34,
+          "near_static": 0,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": []
+    },
+    {
+      "ep": "e01",
+      "shot": 15,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 384,
+      "job": "cmvpb63zu0b1ajq01pzd3fjld",
+      "charged": 384,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "4.040000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.296,
+        "lag_s": -0.56,
+        "asr_clip": "Left side, three beats, the red table, flip it on my mark and hold it over us.",
+        "asr_ref": "Left side, three beats, the red table.  Flip it on my mark and hold it over us.",
+        "asr_match": false,
+        "motion": {
+          "frames": 120,
+          "mean": 2.58,
+          "min": 0.26,
+          "max": 11.99,
+          "near_static": 26,
+          "sampled": 119
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Left side, three beats, the red table, flip it on my mark and hold it over us.' ref='Left side, three beats, the red table.  Flip it on my mark and hold it over us.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.30 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 26/119 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 15,
+      "beat": 2,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpba53101n1gm013bz1ghm2",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 2.5,
+          "min": 0.83,
+          "max": 5.11,
+          "near_static": 0,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": []
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 1,
+      "stage": "video",
+      "state": "verified",
+      "intended": 192,
+      "job": "cmvpbcc9w01ncih01veataijy",
+      "charged": 192,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "2.020000"
+        },
+        "audio_track": true,
+        "motion": {
+          "frames": 60,
+          "mean": 1.46,
+          "min": 0.19,
+          "max": 4.47,
+          "near_static": 14,
+          "sampled": 59
+        }
+      },
+      "gate_fails": [],
+      "gate_warns": [
+        "static frames 14/59 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 16,
+      "beat": 2,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 480,
+      "job": "cmvpbeb2v0h9wg801g0ana4bm",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b2.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.552,
+        "lag_s": -0.62,
+        "asr_clip": "Harry, it has our names. Both of them burned right in.",
+        "asr_ref": "Harry.  It has our names.  Both of them burned right in.",
+        "asr_match": false,
+        "motion": {
+          "frames": 150,
+          "mean": 1.67,
+          "min": 0.31,
+          "max": 9.05,
+          "near_static": 26,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Harry, it has our names. Both of them burned right in.' ref='Harry.  It has our names.  Both of them burned right in.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.55 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 26/149 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 17,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 288,
+      "job": "cmvpbi8dh01txin0172d3w3uz",
+      "charged": 288,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s17-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "3.019000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.452,
+        "lag_s": 0.98,
+        "asr_clip": "Draconia, look at me. What did you do?",
+        "asr_ref": "Triconia, look at me, what did you do?",
+        "asr_match": false,
+        "motion": {
+          "frames": 90,
+          "mean": 1.28,
+          "min": 0.22,
+          "max": 3.56,
+          "near_static": 10,
+          "sampled": 89
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Draconia, look at me. What did you do?' ref='Triconia, look at me, what did you do?'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.45 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 10/89 sampled (a hold can be legit; review timestamps)"
+      ]
+    },
+    {
+      "ep": "e01",
+      "shot": 18,
+      "beat": 1,
+      "stage": "video",
+      "state": "gate_failed",
+      "intended": 480,
+      "job": "cmvpblox7002ui701cjvvg4bi",
+      "charged": 480,
+      "verify": {
+        "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b1.mp4",
+        "video": {
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "w": 716,
+          "h": 1284,
+          "dur": "5.039000"
+        },
+        "audio_track": true,
+        "envelope_correlation": 0.572,
+        "lag_s": 0.7,
+        "asr_clip": "I spent weeks trying to warn you, you never once listened.",
+        "asr_ref": "I spent weeks trying to warn you.  You never once listened.",
+        "asr_match": false,
+        "motion": {
+          "frames": 150,
+          "mean": 2.08,
+          "min": 0.29,
+          "max": 5.94,
+          "near_static": 18,
+          "sampled": 149
+        }
+      },
+      "gate_fails": [
+        "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='I spent weeks trying to warn you, you never once listened.' ref='I spent weeks trying to warn you.  You never once listened.'"
+      ],
+      "gate_warns": [
+        "envelope corr 0.57 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+        "static frames 18/149 sampled (a hold can be legit; review timestamps)"
+      ]
+    }
+  ],
+  "charged_total": 17506,
+  "done": true,
+  "stage_shots": {
+    "e01:14#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b1-start.png",
+        "sha256": "b85574253e5f7cd8cfd8201c6dc1e71fa4617a3307e902ed73b1b684186af20d",
+        "job": "cmvp4udsy06uiho01r1tp8msy",
+        "acceptance_ref": "main:2026-10-26T16:18:51+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b1.mp4",
+        "sha256": "ada0dfe2e33f854a868292f40cec9003ae973014878f762e251f4231aa034a94",
+        "job": "cmvp4ykgh06wwho010oa46y8x",
+        "upstream_sha256": "b85574253e5f7cd8cfd8201c6dc1e71fa4617a3307e902ed73b1b684186af20d",
+        "config_sha256": "6c71ea0532c0d97609dab4141c45b4459bcdd75787e7465d44087207a3534843",
+        "acceptance_ref": "[private-record-reference]",
+        "acceptance_actor": "user",
+        "acceptance_reason": "Sole gate fail is an ASR word delta (hull/hall) on the clip's native audio, which assemble drops mechanically - the sha-locked approved take is the shipped soundtrack. User reviewed this exact clip and accepted its quality bar (hair drift, shield dissipation) at the cited wamid; reuse approved under the 15,811cr e01 cap.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='That was your plan?  Drop the ceiling on the whole hull?' ref='That was your plan. Drop the ceiling on the whole hall.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.42 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 10/119 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "4.040000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.423,
+            "lag_s": 0.64,
+            "asr_clip": "That was your plan?  Drop the ceiling on the whole hull?",
+            "asr_ref": "That was your plan. Drop the ceiling on the whole hall.",
+            "asr_match": false,
+            "motion": {
+              "frames": 120,
+              "mean": 1.35,
+              "min": 0.24,
+              "max": 3.25,
+              "near_static": 10,
+              "sampled": 119
+            }
+          }
+        }
+      }
+    },
+    "e01:14#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b2-start.png",
+        "sha256": "927bb80eec90095234fec48cbdfad678c7a92b8b8559e61bd27ff40cdd974023",
+        "job": "cmvov7t780hsvh501ajq2etkb",
+        "acceptance_ref": "main handoff received 2026-10-26T11:55:30+0530 from agent-01M2T9EHS09VQ5RTF6NBY24JM5",
+        "acceptance_actor": "main",
+        "acceptance_source_type": "main_handoff_timestamp"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b2.mp4",
+        "sha256": "16f67ecccacd35d5b88fff5ce1693bead7a7a973d1a7aaccb4d6781b3bffd9b8",
+        "job": "cmvp6lj99012hjp010di50kng",
+        "gen_s": 2,
+        "trim_s": 1.4333333333333333,
+        "upstream_sha256": "927bb80eec90095234fec48cbdfad678c7a92b8b8559e61bd27ff40cdd974023",
+        "config_sha256": "2db96d00bf3be354544a2bc2cb2892afdcdf9e883c038744cca03b483259e4f5"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-b2-fx.wav",
+        "sha256": "0ac0ad902e45bdb2bb13782a7c014d147d024a14fcff0f89a51b36c55e672a67",
+        "upstream_sha256": "16f67ecccacd35d5b88fff5ce1693bead7a7a973d1a7aaccb4d6781b3bffd9b8"
+      }
+    },
+    "e01:1#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01-b1-start.png",
+        "sha256": "3ed16535b9b8bb931fb04bd1e8c5947e84e6a130c5f9fc8d59efb6efe3d362fc",
+        "job": "cmvp5ihyr07bqjq01zu22bbdb",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01-b1.mp4",
+        "sha256": "d4ecef0d1af58228086b908ed13b4884a9cd51f076d6164f4143265586c787a0",
+        "job": "cmvp6pwz1026khv015qluas67",
+        "gen_s": 5,
+        "trim_s": 5.0,
+        "upstream_sha256": "3ed16535b9b8bb931fb04bd1e8c5947e84e6a130c5f9fc8d59efb6efe3d362fc",
+        "config_sha256": "62e6cf98be4c5a23e2439613a1739bcf85113e6f90e8e3196c8e556e28e03bc6"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01-b1-fx.wav",
+        "sha256": "803fc968c6ec3051f424754cc69db4ab03636df7713940c9afbaa5fac0966aa1",
+        "upstream_sha256": "d4ecef0d1af58228086b908ed13b4884a9cd51f076d6164f4143265586c787a0"
+      }
+    },
+    "e01:2#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b1-start.png",
+        "sha256": "efab3f4a93aaa8ab892ccab5d49490eb311e52393cebdf4ebcd656989ebba6ab",
+        "job": "cmvp5rucv0e4bg501ihi2jdsk",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b1.mp4",
+        "sha256": "56b46bc896bafb0124e6f79ec049f5fc1a57fa309f837f61ed66c64cc87d040d",
+        "job": "cmvp6u2nr076pid01p0xqrznp",
+        "gen_s": 5,
+        "trim_s": 4.7,
+        "upstream_sha256": "efab3f4a93aaa8ab892ccab5d49490eb311e52393cebdf4ebcd656989ebba6ab",
+        "config_sha256": "d7c6cfe69118f451066cb29e91b7ff2dc8172980f5f093e3687912ae1bb2ae2a",
+        "local_edit": {
+          "kind": "despark_derivative",
+          "original_file": "e01-s02-b1.orig.mp4",
+          "original_sha256": "1cc4c9c4a32188155352825d07bad3ce96662ba713cf068f873fbaf182796523",
+          "derivative_sha256": "56b46bc896bafb0124e6f79ec049f5fc1a57fa309f837f61ed66c64cc87d040d",
+          "record": "local-edits.json",
+          "approval": "main:2026-10-26T18:06:14+05:30",
+          "scope": "sampled visual review + temporal screen only; faint background streak/specks carried to final playback review",
+          "reversible": "copy e01-s02-b1.orig.mp4 over e01-s02-b1.mp4 and restore sha256 to original_sha256"
+        }
+      }
+    },
+    "e01:2#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b2-start.png",
+        "sha256": "1e55c35b5097c084f611318a9544b24a55aa8b9c9a144be4164669bbf9c2d371",
+        "job": "cmvp5sjc801kthv01k80sqorg",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b2.mp4",
+        "sha256": "453db3a128f5915078d6107a25c29e4ab270bd9d9ba56a95e635f9a446097d4b",
+        "job": "cmvp782iu01i9jp019ng5nz2j",
+        "gen_s": 2,
+        "trim_s": 2,
+        "upstream_sha256": "1e55c35b5097c084f611318a9544b24a55aa8b9c9a144be4164669bbf9c2d371",
+        "config_sha256": "8b146b035e47ef6f1c9ba46d215a92aecbaa7732b91e6905a5bab5539d8d4d8c"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b2-fx.wav",
+        "sha256": "06ff0d481469129c8e2b68dfc0ee3c25ac46e8be439c59aab950dd4b338a57e0",
+        "upstream_sha256": "453db3a128f5915078d6107a25c29e4ab270bd9d9ba56a95e635f9a446097d4b"
+      }
+    },
+    "e01:2#b3": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b3-start.png",
+        "sha256": "8b755992135819456cefc27389f24fa8fc0da53276b8549a661febfa0919bfeb",
+        "job": "cmvp5t86907d0hv01zglbecu7",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b3.mp4",
+        "sha256": "61e56db43bfd647f2c7477e3bd7f81d59e5b401667dd5e96ad5d613d5ccb7f0b",
+        "job": "cmvp7i4j70004gb01lkwwz4pn",
+        "gen_s": 4,
+        "trim_s": 3.3,
+        "upstream_sha256": "8b755992135819456cefc27389f24fa8fc0da53276b8549a661febfa0919bfeb",
+        "config_sha256": "2a6fc8aa965e2291a88aa3e70abf66b17b1a54be99e48b86fe2880df2df90a71"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-b3-fx.wav",
+        "sha256": "0d855f1172f97db552a00fd96ce92ee0f9e85168eb87f1247247682dc363ada2",
+        "upstream_sha256": "61e56db43bfd647f2c7477e3bd7f81d59e5b401667dd5e96ad5d613d5ccb7f0b"
+      }
+    },
+    "e01:3#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b1-start.png",
+        "sha256": "87bba7338a221105ed78c53aa0d9c97f1500f01ecb8638ef622165eebc5f1ab6",
+        "job": "cmvp5ugyh0ds4g801irruep89",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b1.mp4",
+        "sha256": "926625d63e169a6de2c1413c3181d7138fe9863d71864f17426f5e45b6adfa48",
+        "job": "cmvp7l8ws07phid01feom573n",
+        "upstream_sha256": "87bba7338a221105ed78c53aa0d9c97f1500f01ecb8638ef622165eebc5f1ab6",
+        "config_sha256": "b578f1ebc6492bf6b4f5e4a7efad703d2e30592e21ef810d2c9685f7cdf6cb66",
+        "acceptance_ref": "main:2026-10-26T17:45:55+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main reviewed actual clip: hand grip, Draconia pulls Harry into dance correct. Raw video ASR delta waived ONLY for final approved-take remux/lipsync path; raw speech not certified; original gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Dance with me right now. The floor won't touch us while we're moving. You may sc' ref='Dance with me right now. The floor won't touch us while we're moving.  You may s'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.18 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 10/119 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "4.040000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.18,
+            "lag_s": 0.08,
+            "asr_clip": "Dance with me right now. The floor won't touch us while we're moving. You may scream at me the moment we're alive.",
+            "asr_ref": "Dance with me right now. The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+            "asr_match": false,
+            "motion": {
+              "frames": 120,
+              "mean": 4.57,
+              "min": 0.27,
+              "max": 12.01,
+              "near_static": 10,
+              "sampled": 119
+            }
+          }
+        }
+      }
+    },
+    "e01:3#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b2-start.png",
+        "sha256": "d15afe454a3661dac81d11532bd7bcebeaaf278d65883040d17137e9dd0f785d",
+        "job": "cmvp5vhwc0dskg8014775uvtw",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b2.mp4",
+        "sha256": "5704b6b419c256f4eb51f604e738d4ff095249756626cec115082b3df6ea4567",
+        "job": "cmvp83cdf04vuhy01f5ozvwi3",
+        "gen_s": 2,
+        "trim_s": 0.6,
+        "upstream_sha256": "d15afe454a3661dac81d11532bd7bcebeaaf278d65883040d17137e9dd0f785d",
+        "config_sha256": "6bf60aa1b3a79ebec8b77b718ffc45f183b7172c59fd9377e9ac7d77d413f3d6"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b2-fx.wav",
+        "sha256": "a685b1eefb5dfcab0bdb081945c0bbe0f6a315625dd622f752db53c9786de0bf",
+        "upstream_sha256": "5704b6b419c256f4eb51f604e738d4ff095249756626cec115082b3df6ea4567"
+      }
+    },
+    "e01:3#b3": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b3-start.png",
+        "sha256": "a6f1d8ea49eff10cd94cf3d5361ac230e6ed59821c3221c8a7209423e7ec3b5b",
+        "job": "cmvp5w7pk0dteg8017kpybwbg",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b3.mp4",
+        "sha256": "df62f0f72e4bf4114ce744dbe67fb555e29a3ec31c0e08eb74a8957437ff9197",
+        "job": "cmvp86jld04y2hy01wahhlodn",
+        "gen_s": 4,
+        "trim_s": 3.5,
+        "upstream_sha256": "a6f1d8ea49eff10cd94cf3d5361ac230e6ed59821c3221c8a7209423e7ec3b5b",
+        "config_sha256": "aa3636c72ad55c31367a7c1131748723bf7a262ba2f9a9c6c933bb44091ee1fd"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_silence_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-b3-fx.wav",
+        "sha256": "22ff211f4f52b3b5d0ff2dab4ccf1d21df59153d391169d546053502150e8db2",
+        "upstream_sha256": "df62f0f72e4bf4114ce744dbe67fb555e29a3ec31c0e08eb74a8957437ff9197",
+        "acceptance_ref": "main:2026-10-26T18:42:40+05:30",
+        "acceptance_actor": "main"
+      }
+    },
+    "e01:4#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b1-start.png",
+        "sha256": "cb13c5ec70449c71e349f8ad36e77d4f580a6807d251f7275bf43bf7db2d62f6",
+        "job": "cmvp5x0ii01nnhv01hmoqrsu1",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b1.mp4",
+        "sha256": "c588b4d011aa7ba982c8b74f2e1e56e4da5927ac4142eefa00a0ae3951989cfc",
+        "job": "cmvp7zbtm00ebg90172739s8f",
+        "upstream_sha256": "cb13c5ec70449c71e349f8ad36e77d4f580a6807d251f7275bf43bf7db2d62f6",
+        "config_sha256": "31288382606e7a7628cc79694acd2c2d7706fa877754c3d5df6dc3f1dd8a7014",
+        "acceptance_ref": "main:2026-10-26T18:03:54+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main reviewed actual clip: Harry speaking, partner hand on shoulder coherent. Raw video ASR delta (punctuation only) waived ONLY for final sha-locked take remux/lipsync path; raw speech not certified; fit/no-truncation checks mandatory; original gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Fine, I'm dancing now tell me what those things are and why they want me' ref='Fine, I'm dancing.  Now tell me what those things are and why they want me.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.48 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "4.040000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.478,
+            "lag_s": 0.3,
+            "asr_clip": "Fine, I'm dancing now tell me what those things are and why they want me",
+            "asr_ref": "Fine, I'm dancing.  Now tell me what those things are and why they want me.",
+            "asr_match": false,
+            "motion": {
+              "frames": 120,
+              "mean": 1.68,
+              "min": 0.53,
+              "max": 4.31,
+              "near_static": 0,
+              "sampled": 119
+            }
+          }
+        }
+      }
+    },
+    "e01:4#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b2-start.png",
+        "sha256": "5f078864c51b9e930b57941a65550d58e0922e0c57ea0791d94ac4a602869a75",
+        "job": "cmvp5xoyd07igho01j28avi6t",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b2.mp4",
+        "sha256": "1da8a7b199de56570f4c2dc44b08153e7dc02bd5605a7e601c8b0cf226f577e8",
+        "job": "cmvp8wzbk02kljp01413rrufd",
+        "gen_s": 2,
+        "trim_s": 1.5,
+        "upstream_sha256": "5f078864c51b9e930b57941a65550d58e0922e0c57ea0791d94ac4a602869a75",
+        "config_sha256": "a00720d2c619139a1b35f5231810797c2cf334a9487a0a0256a03c8b6437fab2"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-b2-fx.wav",
+        "sha256": "214b9095265d606f34e4746b6db30df2d4d63c2fbe58f1918c28540f8d185036",
+        "upstream_sha256": "1da8a7b199de56570f4c2dc44b08153e7dc02bd5605a7e601c8b0cf226f577e8"
+      }
+    },
+    "e01:5#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b1-start.png",
+        "sha256": "f629015cc39678b8ff8dce996139959a59529fff972aba1e07ac7b9aebee7c3a",
+        "job": "cmvp5ye0j07hfhv01zlaw7gnk",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b1.mp4",
+        "sha256": "8a17698e0050a9e9e8e1b4945177a4afad512058ee033db3844a9f18712a93c8",
+        "job": "cmvp8zemb000li701iwf06lu0",
+        "gen_s": 2,
+        "trim_s": 0.8333333333333334,
+        "upstream_sha256": "f629015cc39678b8ff8dce996139959a59529fff972aba1e07ac7b9aebee7c3a",
+        "config_sha256": "6969491d3faaba6b756583a8a6554184c162397754043cde509aec51939c7c3b"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b1-fx.wav",
+        "sha256": "21875ec3e1ab39c8fa94780e44d362300d9a92b0247ebd9adb92752c3abaad11",
+        "upstream_sha256": "8a17698e0050a9e9e8e1b4945177a4afad512058ee033db3844a9f18712a93c8"
+      }
+    },
+    "e01:5#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b2-start.png",
+        "sha256": "616b580210843eaa5b539c7cb243c79e08af8d050817091258ed65e8640874c0",
+        "job": "cmvp5zfx306m2id01vckue02m",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-b2.mp4",
+        "sha256": "a9b563bd7b3f2855bc626c06b1827b81e1e446317012b8bf3a13a808283e546f",
+        "job": "cmvp91637001gi701vs194kl6",
+        "gen_s": 8,
+        "trim_s": 7.166666666666667,
+        "upstream_sha256": "616b580210843eaa5b539c7cb243c79e08af8d050817091258ed65e8640874c0",
+        "config_sha256": "f7974cee8722227f8d15d2717f07fe1beb4a89b19cbceae0531ca61549cf892b"
+      }
+    },
+    "e01:6#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b1-start.png",
+        "sha256": "cdeb437d0ab78ea465fe58f954f9a7db26f718defa2380becbe8ea0052ab7e15",
+        "job": "cmvp604zx07i4hv010dge94x6",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b1.mp4",
+        "sha256": "745b485821cd2301229f062e06c81284ecf138b0711fcf0cd47ca1546bd208b9",
+        "job": "cmvp96ngu0fz1g8011vq8ru3g",
+        "upstream_sha256": "cdeb437d0ab78ea465fe58f954f9a7db26f718defa2380becbe8ea0052ab7e15",
+        "config_sha256": "b86c3c38233b97dd72755bbd38d550c472055d9126826aae09374745656b2cb2",
+        "acceptance_ref": "main:2026-10-26T18:25:40+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Conditional accept: sampled visual reviewed by main; approved take e01-l05-harry.mp3 (5.56s, never cut) first sentence ends 2.22s inside the 2.5s b1 window (0.28s margin); remaining words (2.84-5.4s) run over b2 insert and b3 offscreen per canon; raw video ASR delta is over-speech noise, video audio dropped at assemble; final lipsync/playback check mandatory; original gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='The arrows land on the orchestra's offbeat, change your step with me, half a bea' ref='The arrows land on the orchestra's offbeat.  Change your step with me, half a be'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.46 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "3.019000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.464,
+            "lag_s": -0.5,
+            "asr_clip": "The arrows land on the orchestra's offbeat, change your step with me, half a beat late on my-",
+            "asr_ref": "The arrows land on the orchestra's offbeat.  Change your step with me, half a beat late on my count.",
+            "asr_match": false,
+            "motion": {
+              "frames": 90,
+              "mean": 5.21,
+              "min": 1.34,
+              "max": 12.36,
+              "near_static": 0,
+              "sampled": 89
+            }
+          }
+        }
+      }
+    },
+    "e01:6#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b2-start.png",
+        "sha256": "c5cab802f4d2414627814162f2bf5ef74ebc79795e952df50573b983238a7c7d",
+        "job": "cmvp60tih07nght01f610cao2",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b2.mp4",
+        "sha256": "4840a287504a87f2cdd1466635f0df365fd04a1f7293dbee69c420fb85da2aaf",
+        "job": "cmvp9hp7605tehy01thfrc3hu",
+        "gen_s": 2,
+        "trim_s": 0.5,
+        "upstream_sha256": "c5cab802f4d2414627814162f2bf5ef74ebc79795e952df50573b983238a7c7d",
+        "config_sha256": "b5119767fe54d515fe441c34ca48d1a6d8969ca70aabb423744e3f1d5245ee99"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b2-fx.wav",
+        "sha256": "138fd104deed1bdc47b61f3fce23f9f11a0541880fd4c5a2c58abf992038f3d8",
+        "upstream_sha256": "4840a287504a87f2cdd1466635f0df365fd04a1f7293dbee69c420fb85da2aaf"
+      }
+    },
+    "e01:6#b3": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b3-start.png",
+        "sha256": "b2667986d6447f5b403e094b64330a32850210a60f6eb1932b07b00ce69b77c0",
+        "job": "cmvp627gk07jhhv019ubi0z2f",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b3.mp4",
+        "sha256": "5011e5b1626a3f5d71795ad2352bf768dd34b7020b2f69772fb486b79e64ce15",
+        "job": "cmvp9uc60061khy01x3nuqpwr",
+        "gen_s": 4,
+        "trim_s": 4.0,
+        "upstream_sha256": "b2667986d6447f5b403e094b64330a32850210a60f6eb1932b07b00ce69b77c0",
+        "config_sha256": "0f822ee5f4444d805163158e3cb6211d59c0fcac26cdce59dfe9e268ddce74f4"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_silence_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-b3-fx.wav",
+        "sha256": "0be1531d2bf44120ecbc839ed4129d59a4c95cf196d64ee571bc5a75e9be3768",
+        "upstream_sha256": "5011e5b1626a3f5d71795ad2352bf768dd34b7020b2f69772fb486b79e64ce15",
+        "acceptance_ref": "main:2026-10-26T18:02:26+05:30",
+        "acceptance_actor": "main"
+      }
+    },
+    "e01:7#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b1-start.png",
+        "sha256": "e445c26cb3a35574eae0cfee4596a9c93b77ef6aa63458f0a1286343d13577fe",
+        "job": "cmvp6388207k4hv017dr2o84i",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b1.mp4",
+        "sha256": "c776ec3ec7adaca1d4b7f6e944eee0339562d4ffc50dd842d5b7e063e310b450",
+        "job": "cmvp9fvoo00jhin01qcewju26",
+        "upstream_sha256": "e445c26cb3a35574eae0cfee4596a9c93b77ef6aa63458f0a1286343d13577fe",
+        "config_sha256": "21aa25e012fe48c4ff328b9eefe84c6a06ce9f51a910d8c48fde0b07765c8a4b",
+        "acceptance_ref": "main:2026-10-26T18:44:47+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Conditional accept: main reviewed sampled sheet (Draconia identity, expressions, hand/dance consistent). Approved take e01-l06-draconia.mp3 (7.39s) uncut across b1+b2; raw video ASR delta is take-vs-canon you/us question kept UNRESOLVED in audio QA, not approval of a changed word; final lipsync/playback check pending; gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='You counted clever boy then count faster the music won't slow down for you' ref='You counted clever boy, then count faster, the music won't slow down for us.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.58 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 1/179 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "6.038000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.577,
+            "lag_s": -1.0,
+            "asr_clip": "You counted clever boy then count faster the music won't slow down for you",
+            "asr_ref": "You counted clever boy, then count faster, the music won't slow down for us.",
+            "asr_match": false,
+            "motion": {
+              "frames": 180,
+              "mean": 8.78,
+              "min": 0.01,
+              "max": 26.45,
+              "near_static": 1,
+              "sampled": 179
+            }
+          }
+        }
+      }
+    },
+    "e01:7#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b2-start.png",
+        "sha256": "e670999fa1a65088469552af288112fde54ec736d70d5fbb6e1d0358f852ec55",
+        "job": "cmvp63wnn07mvho014nujce6e",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b2.mp4",
+        "sha256": "c4e35174fdf55b468bc9c52cabc81234b6753ebded58df4403a743b502da3582",
+        "job": "cmvpa6pzj04cuhv01omwk42pz",
+        "gen_s": 2,
+        "trim_s": 2.0,
+        "upstream_sha256": "e670999fa1a65088469552af288112fde54ec736d70d5fbb6e1d0358f852ec55",
+        "config_sha256": "fad895e1e0e4c42daa3cb321de4a9285a944387303830ea8f317a8548bc596ab"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-b2-fx.wav",
+        "sha256": "a5537d5223f626f41b0cdab34199c4ffd7ffe984ded5d120cc50645ab78f9718",
+        "upstream_sha256": "c4e35174fdf55b468bc9c52cabc81234b6753ebded58df4403a743b502da3582"
+      }
+    },
+    "e01:8#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b1-start.png",
+        "sha256": "554c5a33de7ee247e7280c8ed072f225cc91a3bd8f60fc9e2fe937e0c3156c64",
+        "job": "cmvp64l7l07pxjq011awk1mux",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b1.mp4",
+        "sha256": "7d1615daced16c6714e950be79afae1f8c8fe71d600d6729983a452f9372c8c8",
+        "job": "cmvpa3pgu00yein01lsymd9ys",
+        "gen_s": 4,
+        "trim_s": 4.0,
+        "upstream_sha256": "554c5a33de7ee247e7280c8ed072f225cc91a3bd8f60fc9e2fe937e0c3156c64",
+        "config_sha256": "e2a8e8748c079d556497733ea60783a8a2591674d1c51f8bbba827a92db35a31"
+      }
+    },
+    "e01:8#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b2-start.png",
+        "sha256": "b366b791b0c036bd6608e9dfbd10e148c277af3f965de08b92c2b0f140b5048e",
+        "job": "cmvp65ayg07qhjq015xd9hxbg",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b2.mp4",
+        "sha256": "45fd8a48e2731e90995f072efc82c042aafc8364e624ee94608b7a858720d981",
+        "job": "cmvpa9hpv0gn4g801pd0vd0bu",
+        "gen_s": 3,
+        "trim_s": 3.0,
+        "upstream_sha256": "b366b791b0c036bd6608e9dfbd10e148c277af3f965de08b92c2b0f140b5048e",
+        "config_sha256": "95cf6342faed2fdd31cee0bdffdbac37453f399d0c9f2e7f5c1b2b255077f2f7"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-b2-fx.wav",
+        "sha256": "0f5f798d6a0f606f49ccf3382372ae0a2fd8051b1dfcd2fde99833d41dc415dc",
+        "upstream_sha256": "45fd8a48e2731e90995f072efc82c042aafc8364e624ee94608b7a858720d981"
+      }
+    },
+    "e01:9#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b1-start.png",
+        "sha256": "daf1ebf5496483cc970b5d494f41c16b69334afcff132e10e0a4dc7592b8b3e0",
+        "job": "cmvp66boy07lwhv01akd5hcm0",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b1.mp4",
+        "sha256": "8c1de2fa2f42e1352ba6f37760f0073efee81aff0484ab6fa761b1aeef380628",
+        "job": "cmvpabnyl04g6hv01enfrbl4t",
+        "gen_s": 2,
+        "trim_s": 1.0,
+        "upstream_sha256": "daf1ebf5496483cc970b5d494f41c16b69334afcff132e10e0a4dc7592b8b3e0",
+        "config_sha256": "72a1b4afe2ac63154d6478f194df2627b5f06fcafd5caadc1eced2c5b1c19dd4"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b1-fx.wav",
+        "sha256": "025965543d9f21b38a6789cf1d6fca6040cc154139793dff9741a4f80a45f321",
+        "upstream_sha256": "8c1de2fa2f42e1352ba6f37760f0073efee81aff0484ab6fa761b1aeef380628"
+      }
+    },
+    "e01:9#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b2-start.png",
+        "sha256": "d2a586836e7f6e85e6bb9c7151c0636c1a9c257b0891c7ad35fb5b953ed186ca",
+        "job": "cmvp6783g06r0id01vwsfcym4",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-b2.mp4",
+        "sha256": "14b4ff7c82dfeac4451b5987ef85458a4b530c5a170935224d3bf6153285cefa",
+        "job": "cmvpadrhc04huhv013eqrfhi9",
+        "gen_s": 4,
+        "trim_s": 4.0,
+        "upstream_sha256": "d2a586836e7f6e85e6bb9c7151c0636c1a9c257b0891c7ad35fb5b953ed186ca",
+        "config_sha256": "e8e3f3097abc0c6254c40bb0ba5bbe153b05bc0e68ecd6941f508591a0a0dcbc"
+      }
+    },
+    "e01:10#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b1-start.png",
+        "sha256": "801efcd0161990607500008cd8d3b76c438eadd10ec1bb0c29c82a6cd9856957",
+        "job": "cmvp68ajm01twhv011eravx67",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b1.mp4",
+        "sha256": "56b619367e8fe6f8b22a1a0f45b884e0d71cbaade5670e4081633e25ffdfefdd",
+        "job": "cmvpagjbq0158gm010w65a3kx",
+        "gen_s": 2,
+        "trim_s": 0.8333333333333334,
+        "upstream_sha256": "801efcd0161990607500008cd8d3b76c438eadd10ec1bb0c29c82a6cd9856957",
+        "config_sha256": "b967062545271ec5c48bae1adf8bcb104843f38b56b546b0d163c8b549de3ef2"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b1-fx.wav",
+        "sha256": "cc431999f1d28c87d725178cad07d1c6811af92f800260d263736c9374e67b24",
+        "upstream_sha256": "56b619367e8fe6f8b22a1a0f45b884e0d71cbaade5670e4081633e25ffdfefdd"
+      }
+    },
+    "e01:10#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b2-start.png",
+        "sha256": "3cec63b3cdf359dd6b82fcaa5575c31eefe06e6ccf7f0089c53c7880f61fd77c",
+        "job": "cmvp69j6101uvhv01g2wlzwx5",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-b2.mp4",
+        "sha256": "9bfcb0feebf505108a4abb872ac64430cc607b34417af378e95ca67812590889",
+        "job": "cmvpaikcq014vih011n6rukn3",
+        "gen_s": 6,
+        "trim_s": 5.166666666666667,
+        "upstream_sha256": "3cec63b3cdf359dd6b82fcaa5575c31eefe06e6ccf7f0089c53c7880f61fd77c",
+        "config_sha256": "2c72fb36216145381542f897736399e66fb33eb34ea82955981a18f75ccc934b"
+      }
+    },
+    "e01:11#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s11-b1-start.png",
+        "sha256": "7303f06fbec1e61154631db21d02824b1ec271a00203dcab4ea536a909cc605b",
+        "job": "cmvp6a9cg07rjho0135tfr0fh",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s11-b1.mp4",
+        "sha256": "69ee4ffa1b811464042b272d1165531c2eac96c1a7cccba4ad7b886b34d50da8",
+        "job": "cmvpamdbb0aoqjq01dypf4fyp",
+        "gen_s": 3,
+        "trim_s": 3.0,
+        "upstream_sha256": "7303f06fbec1e61154631db21d02824b1ec271a00203dcab4ea536a909cc605b",
+        "config_sha256": "0f3b463c78376a37666f1217d28e1812865299771c226bda7725631d2c7cc0d9"
+      }
+    },
+    "e01:12#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b1-start.png",
+        "sha256": "f49cc56dcda02fb45f10882c2d8936a1aa21a49c227e05eaf91b6256b37894cf",
+        "job": "cmvp6bac701w8hv01frr79qaa",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b1.mp4",
+        "sha256": "d577ee8b59589d6ede02998c635a46a9f5dbc4c999d323781cddf92d1a6efdd1",
+        "job": "cmvpar2m701coin01isdej2rk",
+        "upstream_sha256": "f49cc56dcda02fb45f10882c2d8936a1aa21a49c227e05eaf91b6256b37894cf",
+        "config_sha256": "ad9cad10df010f843dd67921e87f9dd3f3d030e6450891d1f71e6a7bee2eb9d4",
+        "acceptance_ref": "main:2026-10-26T19:09:29+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Conditional accept after take-fit proof (take e01-l11-draconia.mp3 5.88s uncut across b1+b2) and reversible reframed derivative removing lower-third double exposure; raw ASR delta explained (take truncation in gate ref); final motion/lipsync acceptance pending; gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='He's using the waltz grid every proper step we dance together seals another door' ref='He's using the waltz grid.  Every proper step we dance together seals another do'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.36 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "5.039000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.356,
+            "lag_s": 0.1,
+            "asr_clip": "He's using the waltz grid every proper step we dance together seals another door",
+            "asr_ref": "He's using the waltz grid.  Every proper step we dance together seals another door.",
+            "asr_match": false,
+            "motion": {
+              "frames": 150,
+              "mean": 2.69,
+              "min": 0.69,
+              "max": 8.71,
+              "near_static": 0,
+              "sampled": 149
+            }
+          }
+        },
+        "local_edit": {
+          "kind": "reframe_pushin_derivative",
+          "original_file": "e01-s12-b1.orig.mp4",
+          "original_sha256": "bff9d3af1bb4339f627cbdee89c0db2b8382b80729566c70102c0e7da22edbd7",
+          "derivative_sha256": "d577ee8b59589d6ede02998c635a46a9f5dbc4c999d323781cddf92d1a6efdd1",
+          "method": "top-anchored digital push-in 1.0x to 1.5x between 1.7s and 2.6s, hold 1.5x, cx 0.46W, lanczos; audio copied",
+          "approval": "main:2026-10-26T19:09:29+05:30",
+          "scope": "removes lower-third double exposure; temporal/edge continuity check before final; softness from 1.5x upscale",
+          "reversible": "copy e01-s12-b1.orig.mp4 over e01-s12-b1.mp4 and restore sha256"
+        }
+      }
+    },
+    "e01:12#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b2-start.png",
+        "sha256": "4bbd57d92286e76d64abb39ddc5b98335edfa06261a1d717e108279c3e190a43",
+        "job": "cmvp6bul300vljp018ouk22er",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-b2.mp4",
+        "sha256": "aaf87ce0c9998b20cf32d7ad3e48583eaf8b241a66497fa2c2dd0451412aa5cc",
+        "job": "cmvpazb5u008zfw01zocyfztr",
+        "gen_s": 2,
+        "trim_s": 2.0,
+        "upstream_sha256": "4bbd57d92286e76d64abb39ddc5b98335edfa06261a1d717e108279c3e190a43",
+        "config_sha256": "b052bb942e1d057fadf660c3ca9d76354b7abd7dbff5e7abb7168feb4e8b9e4e"
+      }
+    },
+    "e01:13#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b1-start.png",
+        "sha256": "3ca1e65c8db60c0ab2eee3264b45540615f05dc63d439a491f41088b95200bc3",
+        "job": "cmvp6c95306u2id01szsnwku4",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b1.mp4",
+        "sha256": "b4afaa4401dafa14f3483ef27f5b3c494779b6c774831e7a7a2943fd4c808b29",
+        "job": "cmvpav3f604rohv012nd31ac8",
+        "upstream_sha256": "3ca1e65c8db60c0ab2eee3264b45540615f05dc63d439a491f41088b95200bc3",
+        "config_sha256": "97c1121db2a353011f085c87510dfb445b23a022869ada674a6a5363852f3dd3",
+        "acceptance_ref": "main:2026-10-26T19:12:54+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Conditional accept: sampled sheet reviewed by main (Harry identity stable; magical grid overlay on lower foreground kept for b2 continuity review, not asserted as canon); take e01-l12-harry.mp3 3.87s uncut across b1+b2; ASR delta punctuation only; final sync/playback pending; gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Then we dance it wrong on purpose.  Break the grid with me.' ref='Then we dance it wrong on purpose, break the grid with me.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.44 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 11/119 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "4.040000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.436,
+            "lag_s": 0.52,
+            "asr_clip": "Then we dance it wrong on purpose.  Break the grid with me.",
+            "asr_ref": "Then we dance it wrong on purpose, break the grid with me.",
+            "asr_match": false,
+            "motion": {
+              "frames": 120,
+              "mean": 2.3,
+              "min": 0.27,
+              "max": 10.15,
+              "near_static": 11,
+              "sampled": 119
+            }
+          }
+        }
+      }
+    },
+    "e01:13#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b2-start.png",
+        "sha256": "1ca1b64205f6284699a97324670c455372f92a15cc901d8c1d9218698ce3fd3d",
+        "job": "cmvp6cxu506uiid01ii7p3yke",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-b2.mp4",
+        "sha256": "7532d66f8ed771d030080a08542e8a7518991d282de4f26709c816e4238cd910",
+        "job": "cmvpb3pka0arsho01i7w1zhk0",
+        "gen_s": 2,
+        "trim_s": 1.5,
+        "upstream_sha256": "1ca1b64205f6284699a97324670c455372f92a15cc901d8c1d9218698ce3fd3d",
+        "config_sha256": "0f8d3293cdf8d6a90fd3b3327e0a4f26fc98b7b0123ef2e3d4347662e48a196c"
+      }
+    },
+    "e01:15#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b1-start.png",
+        "sha256": "52ed16a76b59dcff2431337ff406a57a3e43a66b15d1beb590681a560861b824",
+        "job": "cmvp6e65f01y3hv01axj17uiu",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b1.mp4",
+        "sha256": "4ce775b9d4695c7e177ebd865804214bbde840b0e09eb34ad08c229b5d4dd41e",
+        "job": "cmvpb63zu0b1ajq01pzd3fjld",
+        "upstream_sha256": "52ed16a76b59dcff2431337ff406a57a3e43a66b15d1beb590681a560861b824",
+        "config_sha256": "ce01d45e2efc5350207d5284254a7b22b03668f5b8064e08a45419ccad31d652",
+        "acceptance_ref": "main:2026-10-26T19:31:06+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main approved earlier-cut A: assembly uses only frames 0-3.5s (crest first seen 3.67s) then b2 insert; take unchanged; gate failure preserved; motion/sync unverified",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Left side, three beats, the red table, flip it on my mark and hold it over us.' ref='Left side, three beats, the red table.  Flip it on my mark and hold it over us.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.30 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 26/119 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "4.040000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.296,
+            "lag_s": -0.56,
+            "asr_clip": "Left side, three beats, the red table, flip it on my mark and hold it over us.",
+            "asr_ref": "Left side, three beats, the red table.  Flip it on my mark and hold it over us.",
+            "asr_match": false,
+            "motion": {
+              "frames": 120,
+              "mean": 2.58,
+              "min": 0.26,
+              "max": 11.99,
+              "near_static": 26,
+              "sampled": 119
+            }
+          }
+        }
+      }
+    },
+    "e01:15#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b2-start.png",
+        "sha256": "da7c3bc729814fd78576ff868b85781a853d79ecdd5d4bcd4f7955c2849c8e02",
+        "job": "cmvp6euxg07x1ht015zvibh07",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-b2.mp4",
+        "sha256": "de9de889ba68e43a8ee2843fa646e495ec2f8312a011dd0396adcd572416b1b3",
+        "job": "cmvpba53101n1gm013bz1ghm2",
+        "gen_s": 2,
+        "trim_s": 2.0,
+        "upstream_sha256": "da7c3bc729814fd78576ff868b85781a853d79ecdd5d4bcd4f7955c2849c8e02",
+        "config_sha256": "675daa67625d6d57d57044a90713cd4883632a157754a9b60508f7ee7727bbe6"
+      }
+    },
+    "e01:16#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b1-start.png",
+        "sha256": "7460662d6eee4278461783948491d4ae054b382d397406be00654d28d5127d23",
+        "job": "cmvp6fjms0e6vg8015xkczi98",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b1.mp4",
+        "sha256": "e614b109374bfe8089bc9416a53a4ed3a433761719241bfaa0cb1716fb15c964",
+        "job": "cmvpbcc9w01ncih01veataijy",
+        "gen_s": 2,
+        "trim_s": 2.0,
+        "upstream_sha256": "7460662d6eee4278461783948491d4ae054b382d397406be00654d28d5127d23",
+        "config_sha256": "3540ffdc053e7cb46645a9a6d34865e3fd8244703150e515e67bbc9ad0f014fb"
+      }
+    },
+    "e01:16#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b2-start.png",
+        "sha256": "dd893571074c85077ba4dbad13f0614b35220f03e7107bc36e0098b34f5bb99b",
+        "job": "cmvp6gla60e7og801tie2w3dr",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b2.mp4",
+        "sha256": "7922cc0e661859d0c31d622e2f513274abe619f7176ccd7579c70e61fd21d0bd",
+        "job": "cmvpbeb2v0h9wg801g0ana4bm",
+        "upstream_sha256": "dd893571074c85077ba4dbad13f0614b35220f03e7107bc36e0098b34f5bb99b",
+        "config_sha256": "b5c4c4caf4345735510e18c5044d17e6c3226c80f40ee4b9ac87eaf03fd3ae96",
+        "acceptance_ref": "main:2026-10-26T19:30:33+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main conditional accept (sampled sheets); burned/of-them take-fit: ASR delta punctuation only; take continues over b3 (fits uncut); gate failure preserved; motion/lipsync/sync unverified",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Harry, it has our names. Both of them burned right in.' ref='Harry.  It has our names.  Both of them burned right in.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.55 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 26/149 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b2.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "5.039000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.552,
+            "lag_s": -0.62,
+            "asr_clip": "Harry, it has our names. Both of them burned right in.",
+            "asr_ref": "Harry.  It has our names.  Both of them burned right in.",
+            "asr_match": false,
+            "motion": {
+              "frames": 150,
+              "mean": 1.67,
+              "min": 0.31,
+              "max": 9.05,
+              "near_static": 26,
+              "sampled": 149
+            }
+          }
+        }
+      }
+    },
+    "e01:16#b3": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b3-start.png",
+        "sha256": "09922c4e1c96e001c524fe91f854f019ddb277eb19c3a942ea6a2c95c2bb4cc2",
+        "job": "cmvp7551i0ep1g801t164awie",
+        "acceptance_ref": "main:2026-10-26T17:23:36+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b3.mp4",
+        "sha256": "e051979546eaf87049f036b6721a73030a3e575a141d6943e7cce619057d6881",
+        "job": "cmvp79bq50es6g801s3dqf6zi",
+        "gen_s": 3,
+        "trim_s": 2.6,
+        "upstream_sha256": "09922c4e1c96e001c524fe91f854f019ddb277eb19c3a942ea6a2c95c2bb4cc2",
+        "config_sha256": "45f06b430b6b3a461d8b3ebefa25e3de00ffaf09a2641104d668784490fd1d37"
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_silence_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b3-fx.wav",
+        "sha256": "b2a7baaf51f573faac80b89da86704a636a6593b265991e28f4b6bf8987f07a8",
+        "upstream_sha256": "e051979546eaf87049f036b6721a73030a3e575a141d6943e7cce619057d6881",
+        "acceptance_ref": "main:2026-10-26T18:42:40+05:30",
+        "acceptance_actor": "main"
+      }
+    },
+    "e01:17#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s17-b1-start.png",
+        "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383",
+        "job": "cmvp6iasl07yyht012yufuh1p",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s17-b1.mp4",
+        "sha256": "b0b48249c980016374bc30656a3aba6e88ba360fd62c72049e6d891bdd49c74b",
+        "job": "cmvpbi8dh01txin0172d3w3uz",
+        "upstream_sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383",
+        "config_sha256": "4cb7fcdd46f87e90e7cb3f044e6b709cddee95ada98abb56a750bf4ccca83ee6",
+        "acceptance_ref": "main:2026-10-26T19:30:33+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main conditional accept (sampled sheet); ref ASR 'Triconia' is take transcription noise, 3 free whisper runs with name prompt hear Draconia, no-prompt runs give Traconia/Triconia; name pronunciation stays on audio QA; gate failure preserved; motion/lipsync unverified",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='Draconia, look at me. What did you do?' ref='Triconia, look at me, what did you do?'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.45 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 10/89 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s17-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "3.019000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.452,
+            "lag_s": 0.98,
+            "asr_clip": "Draconia, look at me. What did you do?",
+            "asr_ref": "Triconia, look at me, what did you do?",
+            "asr_match": false,
+            "motion": {
+              "frames": 90,
+              "mean": 1.28,
+              "min": 0.22,
+              "max": 3.56,
+              "near_static": 10,
+              "sampled": 89
+            }
+          }
+        }
+      }
+    },
+    "e01:18#b1": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b1-start.png",
+        "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441",
+        "job": "cmvp6iygz080vjq01778s2b3i",
+        "acceptance_ref": "main:2026-10-26T17:09:20+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b1.mp4",
+        "sha256": "8df05e1a6d920d912790d1a59043cdb60a78694901a442f4a23da08e9c10ecc4",
+        "job": "cmvpblox7002ui701cjvvg4bi",
+        "upstream_sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441",
+        "config_sha256": "8f8e175495433dda0eb2025c19b1ae20dfe5d81907cbe42de8f7d173ccd44134",
+        "acceptance_ref": "main:2026-10-26T19:30:33+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main conditional accept (sampled sheets); ASR delta punctuation only; take words end 4.30 inside b1 window; gate failure preserved; motion/lipsync/sync unverified",
+        "gate_override": {
+          "gate_fails": [
+            "REVIEW REQUIRED - ASR text delta (may be whisper-base noise, may be dropped content): clip='I spent weeks trying to warn you, you never once listened.' ref='I spent weeks trying to warn you.  You never once listened.'"
+          ],
+          "gate_warns": [
+            "envelope corr 0.57 vs ref (expected ~0.2: Wan3 resynthesizes; not an emotion signal)",
+            "static frames 18/149 sampled (a hold can be legit; review timestamps)"
+          ],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b1.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "5.039000"
+            },
+            "audio_track": true,
+            "envelope_correlation": 0.572,
+            "lag_s": 0.7,
+            "asr_clip": "I spent weeks trying to warn you, you never once listened.",
+            "asr_ref": "I spent weeks trying to warn you.  You never once listened.",
+            "asr_match": false,
+            "motion": {
+              "frames": 150,
+              "mean": 2.08,
+              "min": 0.29,
+              "max": 5.94,
+              "near_static": 18,
+              "sampled": 149
+            }
+          }
+        }
+      }
+    },
+    "e01:18#b2": {
+      "frames": {
+        "stage": "frames",
+        "state": "frame_accepted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2-start.png",
+        "sha256": "994fccb1235842f409da545065272cd5ca64ffb0ac820acce57b15e470d8de71",
+        "job": "cmvp75tlv04bohy015g6knjvy",
+        "acceptance_ref": "main:2026-10-26T17:23:36+05:30",
+        "acceptance_actor": "main"
+      },
+      "video": {
+        "stage": "video",
+        "state": "video_verified",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2.mp4",
+        "sha256": "4bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86",
+        "job": "cmvp7d1vs01mbjp01r10cdj7u",
+        "upstream_sha256": "994fccb1235842f409da545065272cd5ca64ffb0ac820acce57b15e470d8de71",
+        "config_sha256": "e9d3432f925627273f33f759f174cb48d0c312d854e5f8f4c83cf752482aad29",
+        "acceptance_ref": "main:2026-10-26T17:35:12+05:30",
+        "acceptance_actor": "main",
+        "acceptance_reason": "Main reviewed actual clip: green bow-light grows, ice-crusted doors close over wrecked hall, final closed door; no-person environment insert, static pixel heuristic waived for this unit only; original gate failure preserved.",
+        "gate_override": {
+          "gate_fails": [
+            "mannequin risk: 38/59 sampled frames static"
+          ],
+          "gate_warns": [],
+          "verify": {
+            "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2.mp4",
+            "video": {
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "w": 716,
+              "h": 1284,
+              "dur": "2.020000"
+            },
+            "audio_track": true,
+            "motion": {
+              "frames": 60,
+              "mean": 2.15,
+              "min": 0.03,
+              "max": 18.26,
+              "near_static": 38,
+              "sampled": 59
+            }
+          }
+        }
+      },
+      "fx": {
+        "stage": "fx",
+        "state": "fx_extracted",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2-fx.wav",
+        "sha256": "fcb43bf93eaf91f69329a5f21763c842b17fa75c43bd668f1350b6083035f08c",
+        "upstream_sha256": "4bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86"
+      }
+    },
+    "e01:3": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03-assembled-preview.mp4",
+        "sha256": "a1898e4e94e51751cfc97c5d50b201623d19a7342eedecc257ffa424d560ae81",
+        "mode": "preview-mux",
+        "audio": "e01-l02-draconia.mp3",
+        "audio_sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s03-b2"
+        ]
+      }
+    },
+    "e01:15": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s15-assembled-preview.mp4",
+        "sha256": "ec10d6878c24c1ace506ba247831fb2a788c737828bad44e678c66862ad7c0ad",
+        "mode": "preview-mux",
+        "audio": "e01-l14-harry.mp3",
+        "audio_sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s15-b2"
+        ]
+      }
+    },
+    "e01:1": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01-assembled-preview.mp4",
+        "sha256": "189cf46a081e1a1652abf959f6348ee889a28625290e46df99d56fe65bf73060",
+        "mode": "preview-passthrough",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s01-b1"
+        ]
+      }
+    },
+    "e01:2": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02-assembled-preview.mp4",
+        "sha256": "152fb2b486a9310e63f683343f9152f16ed6173c4ff2e3b94abafb31a6404e1c",
+        "mode": "preview-mux",
+        "audio": "e01-l01-draconia.mp3",
+        "audio_sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s02-b2",
+          "e01-s02-b3"
+        ]
+      }
+    },
+    "e01:4": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s04-assembled-preview.mp4",
+        "sha256": "ec54254dade8a9cff93623ccf6efd058d564d0b1283887f62ea9c305760e86a2",
+        "mode": "preview-mux",
+        "audio": "e01-l03-harry.mp3",
+        "audio_sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s04-b2"
+        ]
+      }
+    },
+    "e01:5": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s05-assembled-preview.mp4",
+        "sha256": "557ec21142a7271ed8ca524ebc3bd513ae81176f428013995e64591c2e327c14",
+        "mode": "preview-mux",
+        "audio": "e01-l04-draconia.mp3",
+        "audio_sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s05-b1"
+        ]
+      }
+    },
+    "e01:6": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s06-assembled-preview.mp4",
+        "sha256": "a9339d45fa635c98153b635fc6bffa5d308385f13da968297245fa2dfd330121",
+        "mode": "preview-mux",
+        "audio": "e01-l05-harry.mp3",
+        "audio_sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s06-b2"
+        ]
+      }
+    },
+    "e01:7": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s07-assembled-preview.mp4",
+        "sha256": "109580f60835f060e846b3393804b197fb63ad3249b68a52c449da1f2632b89e",
+        "mode": "preview-mux",
+        "audio": "e01-l06-draconia.mp3",
+        "audio_sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s07-b2"
+        ]
+      }
+    },
+    "e01:8": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s08-assembled-preview.mp4",
+        "sha256": "761bbcf9ba4b20db8b64b4b8da7033efb4c356ea55c834538969671fc37a39ed",
+        "mode": "preview-mux",
+        "audio": "e01-l07-draconia.mp3",
+        "audio_sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s08-b2"
+        ]
+      }
+    },
+    "e01:9": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s09-assembled-preview.mp4",
+        "sha256": "b4e16f55cf91de2198d3974b8c9eb05c307e0708f871055fbe5b91f6a78d058e",
+        "mode": "preview-mux",
+        "audio": "e01-l08-harry.mp3",
+        "audio_sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s09-b1"
+        ]
+      }
+    },
+    "e01:10": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s10-assembled-preview.mp4",
+        "sha256": "79a880f9b7ae284470b66f4d6141a44e99b37351e91e63768239dee7a5969e1c",
+        "mode": "preview-mux",
+        "audio": "e01-l09-draconia.mp3",
+        "audio_sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s10-b1"
+        ]
+      }
+    },
+    "e01:11": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s11-assembled-preview.mp4",
+        "sha256": "3fb93adfe8b4f060b604fd19c36640379c74262ce6d9d19cda70da7497cd1714",
+        "mode": "preview-mux",
+        "audio": "e01-l10-harry.mp3",
+        "audio_sha256": "a00b2257fb52cdfe3e476f3bde57e0a84c25b1a4ba5200bffdd96f3d0c6efac5",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": []
+      }
+    },
+    "e01:12": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s12-assembled-preview.mp4",
+        "sha256": "b9de0c6d353012a692d9abee696c001c063046f3ff9f244f67f2e8479d6e2074",
+        "mode": "preview-mux",
+        "audio": "e01-l11-draconia.mp3",
+        "audio_sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s12-b2"
+        ]
+      }
+    },
+    "e01:13": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s13-assembled-preview.mp4",
+        "sha256": "db64ced872bc96520b7b1d2c002368877a02e65b191f916cb3e42c926750a306",
+        "mode": "preview-mux",
+        "audio": "e01-l12-harry.mp3",
+        "audio_sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s13-b2"
+        ]
+      }
+    },
+    "e01:14": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s14-assembled-preview.mp4",
+        "sha256": "dbc83d71deedf791d3066fb5b15b16a077f4681e35a33957c5adc69271851168",
+        "mode": "preview-mux",
+        "audio": "e01-l13-draconia.mp3",
+        "audio_sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s14-b2"
+        ]
+      }
+    },
+    "e01:16": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-assembled-preview.mp4",
+        "sha256": "9040d45af0159faef237f7a94d4779795f7abf397f5b8fd4508bc84e75cdc206",
+        "mode": "preview-mux",
+        "audio": "e01-l15-draconia.mp3",
+        "audio_sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s16-b1"
+        ]
+      }
+    },
+    "e01:17": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s17-assembled-preview.mp4",
+        "sha256": "377ae8a0cdac6f5e72d40770657326e8e00def44bda625705fa1326c3fc6e0f9",
+        "mode": "preview-mux",
+        "audio": "e01-l16-harry.mp3",
+        "audio_sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": []
+      }
+    },
+    "e01:18": {
+      "assemble": {
+        "stage": "assemble",
+        "state": "assembled_preview",
+        "artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-assembled-preview.mp4",
+        "sha256": "d9d38d47d299b350a60d443f911dbcac5d65661d1bee319d0c6066c860546853",
+        "mode": "preview-mux",
+        "audio": "e01-l17-draconia.mp3",
+        "audio_sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+        "source_video_job": null,
+        "inputs_sha256": null,
+        "fx": [],
+        "fx_missing": [
+          "e01-s18-b2"
+        ]
+      }
+    }
+  },
+  "frame_replacements": [
+    {
+      "key": "e01:16#b3",
+      "rejected_artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s16-b3-start-rejected.png",
+      "rejected_sha256": "db4cd23827fc072c20425b3c740b7d08b62f309d123a4a1148c4b0183000a843",
+      "rejection_reason": "Invented inscription 'Amaria' instead of canonical 'Draconia' on the larger hand, and 'Harry' sits on the smaller hand that canon assigns to Draconia - wrong name text and wrong hand mapping for the burned-names insert the line depends on (main pixel verdict).",
+      "replacement_ref": "[private-record-reference]",
+      "at": "2026-10-26T17:21:52+0530"
+    },
+    {
+      "key": "e01:18#b2",
+      "rejected_artifact": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s18-b2-start-rejected.png",
+      "rejected_sha256": "6565bd88acd0b76717686c8d1bb2f9ca8d34799155068e8a1fd9db27502b0163",
+      "rejection_reason": "Chandelier hangs intact and lit in this post-crash wide; canon has it crashed in s16 b1 and lying crashed in s16 b2 - continuity failure. Doors/ice/bow-light composition otherwise canon (main pixel verdict).",
+      "replacement_ref": "[private-record-reference]",
+      "at": "2026-10-26T17:22:24+0530"
+    }
+  ],
+  "stopped": "assemble stage batch done"
+}

@@ -1,0 +1,38 @@
+Midnight Waltz
+HOOK: Harry catches Draconia alone in the corridor, the tension thicker than the candle smoke.
+TOTAL 122s
+
+[1] Hogwarts Corridor - Night | Close-up over shoulder | 10s
+  Harry adjusts his cuff, looking past Draconia.
+  Harry Potter (quiet observation; adjusts his cuff, eyes fixed on the corridor beyond her shoulder): The Great Hall emptied faster than I expected. The music still bleeds through the stone walls, a muffled heartbeat.
+  Draconia Malfoy (bitter amusement; arms crossed, chin lifted, gaze sharpening on his face): Everyone flees the moment the spectacle ends. They pretend the night meant something more than stolen champagne.
+[2] Hogwarts Corridor - Night | Wide angle | 11s
+  Draconia stops, clutching her empty champagne flute.
+  Draconia Malfoy (brittle defiance masking exhaustion; fingers whitening around the flute stem, chin lifted, eyes fixed on a distant torch): The champagne tasted like ash long before the glass emptied. I remain because the alternative requires walking past my father's expectations in the entrance hall.
+  Harry Potter (quiet challenge laced with understanding; shoulders relaxed, head tilted slightly, gaze steady on her face): Your father isn't here tonight. The professors have retreated to the staff table, and the corridors belong to whoever dares keep walking.
+[3] Hogwarts Corridor - Night | Eye-level | 12s
+  Harry steps forward, hand on the stone wall.
+  Harry Potter (quiet intensity; steps closer, fingers brushing cold stone, eyes fixed on her face without blinking): Distance has never protected either of us from the choices our families made long before we arrived at this castle. I stopped pretending otherwise the night Voldemort returned in the graveyard.
+  Draconia Malfoy (sharp defensiveness masking hurt; chin lifts, jaw tightens, one hand presses flat against the corridor wall behind her): My father chose his allegiance before I could walk, yet you stand there acting as though my silence tonight equals consent to everything he built. I have spent years untangling his decisions from my own.
+[4] Hogwarts Corridor - Night | Close-up on face | 10s
+  Draconia sets the flute on a side table.
+  Draconia Malfoy (quiet defiance masking tremor; eyes fixed on the instrument, jaw tight, thumb brushing metal): The flute finds the cold marble without a sound, and I refuse to watch whether it rolls. My fingers linger on the stem longer than necessary, tracing the gold filigree like a promise I cannot keep.
+  Harry Potter (measured recognition; head tilted slightly, gaze tracking her hand, posture relaxed but alert): You set it down instead of throwing it, which means you still believe the night can be salvaged. That restraint is the only thing separating us from the history we both inherited.
+[5] Hogwarts Corridor - Night | Over Harry's shoulder | 13s
+  Harry's eyes search hers.
+  Harry Potter (quietly analytical; head tilted slightly, gaze sweeping from her clenched jaw to the corridor corners): Your jaw tightens whenever his name surfaces, yet your eyes dart toward the stairs instead of the doors. That contradiction tells me more than any denial you might offer.
+  Draconia Malfoy (brittle defiance; shoulders squaring, chin lifting as her eyes flicker between the staircase and his face): I learned to mask fear before I mastered my first spell, Potter. The stairs lead to a dormitory where I must pretend tonight never happened, and the doors lead to questions I cannot answer.
+[6] Hogwarts Corridor - Night | Wide angle | 12s
+  Draconia's jaw tightens, breath visible in the chill.
+  Draconia Malfoy (barely controlled anger; jaw muscles flexing, eyes locked on his face without blinking): You dissect my posture like a potion ingredient while the castle freezes around us. That clinical detachment infuriates me more than open hostility ever could.
+  Harry Potter (quiet intensity; head tilted slightly, breath steady despite the cold corridor air): I watch because looking away would let you vanish into the story your surname writes for you. Someone needs to witness the moment you choose differently.
+[7] Hogwarts Corridor - Night | Close-up on hands | 11s
+  Harry's fingers trace the wall grain.
+  Harry Potter (quietly anxious; fingers dragging slowly over stone, gaze fixed on the grain rather than her face): My thumb catches on a splinter near the sconce, the rough wood grounding me against the urge to reach for my wand. The corridor stretches farther than I remembered, each shadow a potential conversation I am not ready to have.
+  Draconia Malfoy (unsettled perception; head tilted, one hand hovering near her hip as if to steady herself): You trace the wall like a blind man memorizing a room he plans to flee, yet your shoulders remain squared toward the stairs. That stillness frightens me more than any hex you could cast.
+[8] Hogwarts Corridor - Night | Eye-level | 14s
+  Draconia meets his gaze, mask slipping.
+  Draconia Malfoy (raw vulnerability; holds his gaze unblinking, chin trembling slightly, fingers pressing white against cold stone): The mask you insist on naming cracked the moment you refused to let me walk away from this corridor. I have spent seven years perfecting the expression my surname demands, yet your gaze strips it away like a revealing charm.
+  Harry Potter (quiet intensity; steps closer, shoulders relaxing, hand hovering near wand without drawing it): Then stop performing the role they assigned you and show me what remains when the performance ends. I have watched you calculate every consequence since first year, but tonight you chose the staircase instead of the exit.
+
+CLIFFHANGER: Draconia's voice drops low, the words unspoken hanging in the stale air.

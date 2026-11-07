@@ -1,0 +1,251 @@
+{
+  "status": "incompatible_without_adapter",
+  "analysis_kind": "source_AST_and_real_input_schema_not_generation",
+  "source_manifest": "existing-0219/dramasaga/examples/r2v/e01-shots.json",
+  "manifest_sha256": "e3f333a881bf96afd8d7b1b3433e37ed5b09581ccb6cfa91dcad4a390f5d9f49",
+  "pipeline_sha256": "682e1c2b6f726815ac4af34a09569af5309487ff48dbaf8c326305db68bf04e7",
+  "call_keywords": [
+    "progress",
+    "prompt",
+    "reference_image_paths"
+  ],
+  "keyword_expansion": false,
+  "backend_defaults": {
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "duration": 8
+  },
+  "required_controls": {
+    "locked_audio_file": {
+      "passed": false,
+      "required_on_visible_speech": true
+    },
+    "per_shot_seconds": {
+      "passed": false
+    },
+    "aspect_ratio": {
+      "passed": false,
+      "required": "9:16"
+    },
+    "resolution": {
+      "passed": false
+    }
+  },
+  "shots": [
+    {
+      "shot_id": "e01s01",
+      "planned_seconds": 5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s02",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s03",
+      "planned_seconds": 6,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s04",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s05",
+      "planned_seconds": 6,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s06",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s07",
+      "planned_seconds": 4,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s08",
+      "planned_seconds": 7,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s09",
+      "planned_seconds": 5,
+      "visible_speakers": [],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s10",
+      "planned_seconds": 7,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s11",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s12",
+      "planned_seconds": 6,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s13",
+      "planned_seconds": 6,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s14",
+      "planned_seconds": 6,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s15",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s16",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s17",
+      "planned_seconds": 5,
+      "visible_speakers": [
+        "harry"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    },
+    {
+      "shot_id": "e01s18",
+      "planned_seconds": 2,
+      "visible_speakers": [
+        "draconia"
+      ],
+      "blocking_mismatches": [
+        "planned_duration_not_forwarded",
+        "vertical_aspect_not_forwarded",
+        "locked_voice_waveform_not_forwarded"
+      ]
+    }
+  ],
+  "summary": {
+    "shots": 18,
+    "planned_seconds": 95,
+    "default_backend_seconds_without_adapter": 144,
+    "visible_speech_shots": 15,
+    "blocked_shots": 18
+  },
+  "caveat": "No repository code imported, no generation, no output-quality or current-production verdict. Manifest version must be checked separately."
+}

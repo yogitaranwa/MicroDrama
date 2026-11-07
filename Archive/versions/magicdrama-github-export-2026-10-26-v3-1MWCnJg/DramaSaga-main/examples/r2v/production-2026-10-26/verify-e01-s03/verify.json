@@ -1,0 +1,24 @@
+{
+ "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s03.mp4",
+ "video": {
+  "r_frame_rate": "30/1",
+  "avg_frame_rate": "30/1",
+  "w": 720,
+  "h": 1280,
+  "dur": "8.034000"
+ },
+ "audio_track": true,
+ "envelope_correlation": 0.213,
+ "lag_s": 0.96,
+ "asr_clip": "Dance with me right now. The floor won't touch us while we're moving. You may scream at me the moment we're alive.",
+ "asr_ref": "Dance with me right now. The floor won't touch us while we're moving.  You may scream at me the moment we're alive.",
+ "asr_match": false,
+ "motion": {
+  "frames": 240,
+  "mean": 7.37,
+  "min": 0.01,
+  "max": 26.59,
+  "near_static": 3,
+  "sampled": 239
+ }
+}

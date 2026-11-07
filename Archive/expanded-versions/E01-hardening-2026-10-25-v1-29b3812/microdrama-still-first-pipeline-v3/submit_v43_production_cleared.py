@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+raise RuntimeError("Historical one-off paid submission script retired. No network call made. Use reviewed manifest/ledger execution after separate approval.")
+import concurrent.futures,json,os,pathlib,requests,sys,time
+KEY=pathlib.Path(os.environ['MH_KEYFILE']).read_text().strip(); BASE='https://api.magichour.ai'; H={'Authorization':'Bearer '+KEY,'Content-Type':'application/json'}
+ROOT=pathlib.Path('/tmp/e01-v43-timed-reconciled-sequence'); OUT=pathlib.Path('/tmp/e01-v43-production-cleared'); OUT.mkdir(exist_ok=True); STATE=pathlib.Path('/tmp/e01-v43-production-cleared-jobs.json')
+BIBLE="Preserve the accepted identities and wardrobe exactly: Harry has messy black hair, round glasses, white dress shirt, plain black long tie, black buttoned waistcoat, dark trousers, polished black formal shoes, and a plain black formal robe with a thin red inner lining. Draconia has platinum blonde hair in a braided updo made only of hair, the emerald embroidered sleeveless Yule gown with sheer dark green shoulder drapes, and emerald formal shoes. Cinematic photorealistic only. No anime, illustration, readable text, tiara, crown, headpiece, long side braid, skates, blades, weapons, extra fingers, distorted faces, or extra people."
+def req(m,p,**kw):
+ r=requests.request(m,BASE+p,headers=H,timeout=180,**kw)
+ if r.status_code>=400: print(m,p,r.status_code,r.text[:1500],file=sys.stderr)
+ r.raise_for_status(); return r.json()
+def upload(path):
+ item=req('POST','/v1/files/upload-urls',json={'items':[{'extension':path.suffix.lstrip('.').lower(),'type':'image'}]})['items'][0]
+ with path.open('rb') as f:
+  r=requests.put(item['upload_url'],data=f,headers={'Content-Type':'application/octet-stream'},timeout=180); r.raise_for_status()
+ return item['file_path']
+def submit(state):
+ if 'uploads' not in state:
+  state['uploads']={k:upload(ROOT/f'{k}.png') for k in ['shot01-entry-spark','shot01-entry-push-end','shot04-masked-window-reflection','shot10-floor-grid-red-table','shot11a-table-chandelier-action']}; STATE.write_text(json.dumps(state,indent=2))
+ if 'jobs' not in state:
+  u=state['uploads']
+  specs=[
+   ('shot01-entry-production-720p',7,u['shot01-entry-spark'],u['shot01-entry-push-end'],'One monotonic slow forward push-in as Harry walks alone through the candlelit Yule Ball. Do not reverse direction or loop the walk. He remains the only foreground person. The black curse spark flickers only in the window reflection. '+BIBLE),
+   ('shot04-reflection-production-720p',8,u['shot04-masked-window-reflection'],u['shot04-masked-window-reflection'],'Harry and Draconia continue one slow controlled waltz sequence. The faint blue masked figure remains one consistent silhouette inside the window glass and copies their step; it does not multiply and does not enter the physical ballroom. '+BIBLE),
+   ('shot11-action-production-720p',4,u['shot10-floor-grid-red-table'],u['shot11a-table-chandelier-action'],'Advance from the red-table setup into the action anchor: Draconia pulls the red banquet table up as a shield while the chandelier drops toward the ice and the green and silver marks ignite around their joined hands. Preserve geography, wardrobe and Harry\'s sleek polished black formal shoes. '+BIBLE),
+  ]
+  def one(spec):
+   name,secs,start,end,prompt=spec
+   payload={'name':'Harry Draconia E01 v4.3 production cleared '+name,'end_seconds':secs,'model':'minimax-h3','resolution':'720p','audio':False,'style':{'prompt':prompt},'assets':{'image_file_path':start,'end_image_file_path':end}}
+   return {'name':name,'job':req('POST','/v1/image-to-video',json=payload),'payload':prompt,'seconds':secs}
+  with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex: state['jobs']=list(ex.map(one,specs))
+  STATE.write_text(json.dumps(state,indent=2))
+ return state
+def poll(rec):
+ jid=rec['job']['id']
+ while True:
+  d=req('GET',f'/v1/video-projects/{jid}'); rec['details']=d
+  if d.get('status') in {'complete','error','canceled'}: break
+  time.sleep(6)
+ rec['downloaded_paths']=[]
+ if d.get('status')=='complete':
+  for i,dl in enumerate(d.get('downloads') or [],1):
+   p=OUT/f"{rec['name']}-{i:02d}.mp4"; rr=requests.get(dl['url'],timeout=300); rr.raise_for_status(); p.write_bytes(rr.content); rec['downloaded_paths'].append(str(p))
+ return rec
+state=json.loads(STATE.read_text()) if STATE.exists() else {}
+state=submit(state)
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex: state['jobs']=list(ex.map(poll,state['jobs']))
+STATE.write_text(json.dumps(state,indent=2))
+print(json.dumps([{'name':r['name'],'id':r['job']['id'],'status':r['details'].get('status'),'credits_charged':r['details'].get('credits_charged'),'downloads':r.get('downloaded_paths',[]),'error':r['details'].get('error')} for r in state['jobs']],indent=2))

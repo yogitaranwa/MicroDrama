@@ -1,0 +1,158 @@
+{
+ "series_id": "harry_draconia_yule_ball_s1",
+ "verified_on": "2026-10-26",
+ "source": "Harry-Draconia-YuleBall-S1-2026-10-25 Drive folder bank manifest; bytes hashed from the Drive PNGs on 2026-10-26",
+ "references": [
+  {
+   "id": "ref-harry-front-close",
+   "name": "harry_front_close",
+   "kind": "character",
+   "views": [
+    "front",
+    "close"
+   ],
+   "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+   "version": 1,
+   "characters": [
+    "harry"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-harry-speaking-profile",
+   "name": "harry_speaking_profile",
+   "kind": "character",
+   "views": [
+    "three_quarter",
+    "profile"
+   ],
+   "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909",
+   "version": 1,
+   "characters": [
+    "harry"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-harry-fullbody",
+   "name": "harry_fullbody",
+   "kind": "character",
+   "views": [
+    "full_body",
+    "wide"
+   ],
+   "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+   "version": 1,
+   "characters": [
+    "harry"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-draconia-front-close",
+   "name": "draconia_front_close",
+   "kind": "character",
+   "views": [
+    "front",
+    "close"
+   ],
+   "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+   "version": 1,
+   "characters": [
+    "draconia"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-draconia-speaking-profile",
+   "name": "draconia_speaking_profile",
+   "kind": "character",
+   "views": [
+    "three_quarter",
+    "profile"
+   ],
+   "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e",
+   "version": 1,
+   "characters": [
+    "draconia"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-draconia-fullbody",
+   "name": "draconia_fullbody",
+   "kind": "character",
+   "views": [
+    "full_body",
+    "wide"
+   ],
+   "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+   "version": 1,
+   "characters": [
+    "draconia"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-two-shot-dialogue",
+   "name": "two_shot_dialogue",
+   "kind": "character",
+   "views": [
+    "wide",
+    "three_quarter"
+   ],
+   "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36",
+   "version": 1,
+   "characters": [
+    "harry",
+    "draconia"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-two-shot-action",
+   "name": "two_shot_action",
+   "kind": "character",
+   "views": [
+    "wide",
+    "full_body"
+   ],
+   "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+   "version": 1,
+   "characters": [
+    "harry",
+    "draconia"
+   ],
+   "primary": true
+  },
+  {
+   "id": "ref-yule-ball-location",
+   "name": "yule_ball_location",
+   "kind": "location",
+   "views": [
+    "wide"
+   ],
+   "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+   "version": 1,
+   "characters": [],
+   "primary": true,
+   "location": "great_hall"
+  },
+  {
+   "id": "ref-two-shot-dialogue-glasses",
+   "name": "two_shot_dialogue_glasses",
+   "kind": "character",
+   "views": [
+    "wide",
+    "three_quarter"
+   ],
+   "sha256": "298598f9627d9846daad165ec7c4b770f7f54a2f77b2346579f395b248dd1bae",
+   "version": 1,
+   "characters": [
+    "harry",
+    "draconia"
+   ],
+   "primary": false
+  }
+ ]
+}

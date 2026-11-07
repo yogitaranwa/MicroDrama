@@ -1,0 +1,457 @@
+{
+  "included": [
+    {
+      "name": "CODE-HARDENING-REPORT.txt",
+      "member": "713_CODE-HARDENING-REPORT.txt",
+      "sha256": "107272c741cd49d68451ac2431694b252a99efb5d993cd09fcf08a8eaae9e6e9",
+      "original_sha256": "107272c741cd49d68451ac2431694b252a99efb5d993cd09fcf08a8eaae9e6e9",
+      "bytes": 7463,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_real_mouth_track_threshold040_v6.json",
+      "member": "714_Harry_Draconia_E01_original_H3_Modal_real_mouth_track_threshold040_v6.json",
+      "sha256": "ee3f2f822c8373f664f71d7299805604765f3fa67675bfea00df9f7e9fe1dee6",
+      "original_sha256": "ee3f2f822c8373f664f71d7299805604765f3fa67675bfea00df9f7e9fe1dee6",
+      "bytes": 352349,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_real_whole_line_QA_diagnostic_v6.json",
+      "member": "715_Harry_Draconia_E01_original_H3_Modal_real_whole_line_QA_diagnostic_v6.json",
+      "sha256": "117eef50104ba3bebf1884d1a90796d64c43156b41e168dd41f8bdbaccbb510a",
+      "original_sha256": "117eef50104ba3bebf1884d1a90796d64c43156b41e168dd41f8bdbaccbb510a",
+      "bytes": 5540,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_real_whole_line_QA_threshold040.json",
+      "member": "716_Harry_Draconia_E01_original_H3_Modal_real_whole_line_QA_threshold040.json",
+      "sha256": "56da280a5094a249bee56be9cb3bd862b60283a2145374bcd183be9f8bce21d6",
+      "original_sha256": "56da280a5094a249bee56be9cb3bd862b60283a2145374bcd183be9f8bce21d6",
+      "bytes": 5557,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_real_mouth_track_threshold040.json",
+      "sha256": "ee3f2f822c8373f664f71d7299805604765f3fa67675bfea00df9f7e9fe1dee6",
+      "duplicate_of": "714_Harry_Draconia_E01_original_H3_Modal_real_mouth_track_threshold040_v6.json"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_V4_cost_report.json",
+      "member": "718_Harry_Draconia_E01_original_H3_Modal_V4_cost_report.json",
+      "sha256": "b878d5dd1749b600b921848e635f32a52489c231d75750b68b4a79bf003c6f21",
+      "original_sha256": "32bff2c4234ae503f6b861dd0bc97296437056d011597e16d92b1f6ca5ad6279",
+      "bytes": 1138,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_V4_audio_sync_metrics.json",
+      "member": "719_Harry_Draconia_E01_original_H3_Modal_V4_audio_sync_metrics.json",
+      "sha256": "46a6c3458fed3e02065a67aa38e44d5ea2638998b83c043f51d249d49486ebd5",
+      "original_sha256": "46a6c3458fed3e02065a67aa38e44d5ea2638998b83c043f51d249d49486ebd5",
+      "bytes": 1328,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_V4_real_mouth_track.json",
+      "member": "720_Harry_Draconia_E01_original_H3_Modal_V4_real_mouth_track.json",
+      "sha256": "7663af70d2a42596d395d85b8ab170d5fd5495768ef420e4293b5bcdccc9dbfb",
+      "original_sha256": "7663af70d2a42596d395d85b8ab170d5fd5495768ef420e4293b5bcdccc9dbfb",
+      "bytes": 315996,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Harry_Draconia_E01_original_H3_Modal_V4_real_whole_line_QA.json",
+      "member": "721_Harry_Draconia_E01_original_H3_Modal_V4_real_whole_line_QA.json",
+      "sha256": "83fe036c2e3f072bd1409425e7c5ebc5cd3edb74aee630e35d7aa29c1a44d43b",
+      "original_sha256": "83fe036c2e3f072bd1409425e7c5ebc5cd3edb74aee630e35d7aa29c1a44d43b",
+      "bytes": 4324,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "preflight-e01-s02-frame.json",
+      "member": "722_preflight-e01-s02-frame.json",
+      "sha256": "4586def351e4a4df807891139facbc70f097882e0cb3d5e72b2f603a15fd5138",
+      "original_sha256": "4586def351e4a4df807891139facbc70f097882e0cb3d5e72b2f603a15fd5138",
+      "bytes": 2353,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "e01-project-report-2026-10-26.md",
+      "member": "723_e01-project-report-2026-10-26.md",
+      "sha256": "15818d7bba81266d2a7277ff2720adb2eddd0e396495979476056d6c1fa4d6ab",
+      "original_sha256": "f7125e65524dbddb34abd16bbaadb5ae4d9edc316dafcf2a7af7f98d8f297e11",
+      "bytes": 4451,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "e01-composition-manifest.md",
+      "member": "724_e01-composition-manifest.md",
+      "sha256": "7c3fd2b685cfe155a6a1a8540b86b4f5211ae5ff65e849c0c6bd6b913c736cb2",
+      "original_sha256": "7c3fd2b685cfe155a6a1a8540b86b4f5211ae5ff65e849c0c6bd6b913c736cb2",
+      "bytes": 3045,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "e01-failure-analysis-2026-10-26.md",
+      "member": "725_e01-failure-analysis-2026-10-26.md",
+      "sha256": "d7aa93c45896e5d7972d75fa6f50c79b2138a1b20b1e327aca4538ee3ad62c7d",
+      "original_sha256": "d7aa93c45896e5d7972d75fa6f50c79b2138a1b20b1e327aca4538ee3ad62c7d",
+      "bytes": 4421,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "intended-request-e01-s02.json",
+      "member": "726_intended-request-e01-s02.json",
+      "sha256": "d7a06e13805b8897590772c874c631fe02cdabafc1545d7d28994e3b29da34fc",
+      "original_sha256": "d7a06e13805b8897590772c874c631fe02cdabafc1545d7d28994e3b29da34fc",
+      "bytes": 1593,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "intended-request-e01-s01.json",
+      "member": "727_intended-request-e01-s01.json",
+      "sha256": "b0e859dfca800236723927e666c86031a9edcaa512f0ecdd83d7d1cd9a353655",
+      "original_sha256": "b0e859dfca800236723927e666c86031a9edcaa512f0ecdd83d7d1cd9a353655",
+      "bytes": 1133,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "intended-request-e01-s03.json",
+      "member": "728_intended-request-e01-s03.json",
+      "sha256": "d9b9bacb28a414dac3a926785b8776099a69adfb480bd6c73cc200c21028f35e",
+      "original_sha256": "d9b9bacb28a414dac3a926785b8776099a69adfb480bd6c73cc200c21028f35e",
+      "bytes": 1689,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "gate-report-e01s03.md",
+      "member": "729_gate-report-e01s03.md",
+      "sha256": "5df2aad8721ce5eb019b78e7578e391f75872923b5ae930b04ccee5a12c88bf2",
+      "original_sha256": "5df2aad8721ce5eb019b78e7578e391f75872923b5ae930b04ccee5a12c88bf2",
+      "bytes": 2126,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "intended-request-e01-s02.json",
+      "member": "730_intended-request-e01-s02.json",
+      "sha256": "1393ec059b9e83c849ee33248c3ec3bf518d780ca6569002208a332e05d98d4d",
+      "original_sha256": "1393ec059b9e83c849ee33248c3ec3bf518d780ca6569002208a332e05d98d4d",
+      "bytes": 1523,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "intended-request-e01-s03.json",
+      "sha256": "d9b9bacb28a414dac3a926785b8776099a69adfb480bd6c73cc200c21028f35e",
+      "duplicate_of": "728_intended-request-e01-s03.json"
+    },
+    {
+      "name": "intended-request-e01-s01.json",
+      "member": "732_intended-request-e01-s01.json",
+      "sha256": "5346df49035d00c06d836515b754475421b788c5f58fd8f2b1f0692ddb26d5bb",
+      "original_sha256": "5346df49035d00c06d836515b754475421b788c5f58fd8f2b1f0692ddb26d5bb",
+      "bytes": 987,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "magicdrama E01 recovery recommendation 2026-10-27",
+      "member": "733_magicdrama_E01_recovery_recommendation_2026-10-27",
+      "sha256": "7f1316db2cc94348a31d0f2e6661e35ae89acfcf68539522d323ea07e104f789",
+      "original_sha256": "f9685bf2b28379e06c27e989d18c90bea251e5dc121c322464945e977c6b19b0",
+      "bytes": 3378,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "Xiaoyunque_AI_Microdrama_Research.txt",
+      "member": "734_Xiaoyunque_AI_Microdrama_Research.txt",
+      "sha256": "9feba46c228af8578834dced52be3c8726d4e18a8af7f0a77f9100c7b106ec05",
+      "original_sha256": "6bb11068ffbeb8c49fa03802804219570947a9827ba0f557c3e57429acd531a3",
+      "bytes": 33826,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "dramaforge_m25_INSTALL.txt",
+      "member": "735_dramaforge_m25_INSTALL.txt",
+      "sha256": "8fc58e1b6746a4b11c934b7b7a4ad8361e81d8f306effb39cfb536bb2a4d1e53",
+      "original_sha256": "17d5ebce6e74d81e33f6333221cb53bbf7af17052d090e33794275cb3a3ea759",
+      "bytes": 3134,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "README-master-parts.txt",
+      "member": "741_README-master-parts.txt",
+      "sha256": "8c1471da824752d9ab1920af57136093f832ec8af6bac7361db3bbbbdf2af73b",
+      "original_sha256": "8c1471da824752d9ab1920af57136093f832ec8af6bac7361db3bbbbdf2af73b",
+      "bytes": 110,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "No-charge-postcrash-blocking-assessment.txt",
+      "member": "742_No-charge-postcrash-blocking-assessment.txt",
+      "sha256": "dc67ae8afc957f80094b3ba3139b9e6e2877e979ab9062878995c52b392339d0",
+      "original_sha256": "0207066413a5d03ddd06b6dc174ba09f0095eb9a90c997782efa6a3c65c7cf6d",
+      "bytes": 5902,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "ACCOUNT-AND-REALLOCATION-checked2037.txt",
+      "member": "743_ACCOUNT-AND-REALLOCATION-checked2037.txt",
+      "sha256": "f0da1ff71a6ca539b47579f4f8139bff2616b995a9716feffbbd7510f01b1fae",
+      "original_sha256": "1c87c5105cf559a480affeedca4bc3418d1d07286b6f9d8a0939a2db7584a4b1",
+      "bytes": 4407,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "NEXT-COMPARISON-costs-and-inputs.txt",
+      "member": "744_NEXT-COMPARISON-costs-and-inputs.txt",
+      "sha256": "cd8eddcf5c4ccb05b89d68ce5a5aea3ce6f78d6053d93f62ee38f1bf5b1b608c",
+      "original_sha256": "cd8eddcf5c4ccb05b89d68ce5a5aea3ce6f78d6053d93f62ee38f1bf5b1b608c",
+      "bytes": 5855,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "READ-ME-hybrid-status.txt",
+      "member": "745_READ-ME-hybrid-status.txt",
+      "sha256": "8c8d91f6b61038c989bb0ca43aa5598b22e801533c07614df0b0aaedd8816fcc",
+      "original_sha256": "8c8d91f6b61038c989bb0ca43aa5598b22e801533c07614df0b0aaedd8816fcc",
+      "bytes": 2055,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "qa.json",
+      "member": "752_qa.json",
+      "sha256": "cd9a2c070e323eaca98a6da92cb2550987eaa7ac6cd40484a01c63ebcec30447",
+      "original_sha256": "cd9a2c070e323eaca98a6da92cb2550987eaa7ac6cd40484a01c63ebcec30447",
+      "bytes": 12710,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "delivery-notes.json",
+      "member": "753_delivery-notes.json",
+      "sha256": "4b332bb35f302ddd99239b92a7dfd2778121cfcf4e2ed1fe005023e9db4e1807",
+      "original_sha256": "4b332bb35f302ddd99239b92a7dfd2778121cfcf4e2ed1fe005023e9db4e1807",
+      "bytes": 9711,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "sweep-video.log",
+      "member": "754_sweep-video.log",
+      "sha256": "a8114eba8faf36c104a6f3cf45f43a6cc2a8a5898e88656baa5678c495219a1a",
+      "original_sha256": "a8114eba8faf36c104a6f3cf45f43a6cc2a8a5898e88656baa5678c495219a1a",
+      "bytes": 20801,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "shot-manifest-wan30.json",
+      "member": "755_shot-manifest-wan30.json",
+      "sha256": "9accd0cd8b339fc2aaaec6eef98b9931cbd13c701726712bbc8edafe9aab73dc",
+      "original_sha256": "9accd0cd8b339fc2aaaec6eef98b9931cbd13c701726712bbc8edafe9aab73dc",
+      "bytes": 116495,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "production_prompts.py",
+      "member": "756_production_prompts.py",
+      "sha256": "4ed434e63308ede0777ba9efbf3c8fcd16fd33f67774270c79f172a62687a463",
+      "original_sha256": "4ed434e63308ede0777ba9efbf3c8fcd16fd33f67774270c79f172a62687a463",
+      "bytes": 8655,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "stages.py",
+      "member": "757_stages.py",
+      "sha256": "3ed2e3b455091eab934bd6572f3e38bc4c43447326d3941e4fa0c2f106ab15dd",
+      "original_sha256": "3ed2e3b455091eab934bd6572f3e38bc4c43447326d3941e4fa0c2f106ab15dd",
+      "bytes": 14585,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "production_runner.py",
+      "member": "759_production_runner.py",
+      "sha256": "f0d863a97f2a0818d02e9370987f5280964f6258da1bd1df10d14df7b1a8bb88",
+      "original_sha256": "f0d863a97f2a0818d02e9370987f5280964f6258da1bd1df10d14df7b1a8bb88",
+      "bytes": 102050,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "trim-overrides.json",
+      "member": "760_trim-overrides.json",
+      "sha256": "497b2e51c32da39dded292ccb30e87729242634b82119dd38f3169d6f81e9bd3",
+      "original_sha256": "497b2e51c32da39dded292ccb30e87729242634b82119dd38f3169d6f81e9bd3",
+      "bytes": 403,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "run-receipts.json",
+      "member": "761_run-receipts.json",
+      "sha256": "d0d1d141f6ed559379173596ac982c5b3cb1d8730fe485ab0bde00a513762812",
+      "original_sha256": "c1e8d8e998a9915053f207a210ef75d2c932ff187bf9965a3a715eef4cc4ce10",
+      "bytes": 132264,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "qa-annotations.json",
+      "member": "762_qa-annotations.json",
+      "sha256": "8feea9c43071ad8f3faa17219fa6179c55be01c79e17ea80e65de222bf1b09eb",
+      "original_sha256": "8feea9c43071ad8f3faa17219fa6179c55be01c79e17ea80e65de222bf1b09eb",
+      "bytes": 784,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "local-edits.json",
+      "member": "763_local-edits.json",
+      "sha256": "1522f47b29fd0ef1070b90ce808e6279709de3f21752bd110b293e0c04413a67",
+      "original_sha256": "1522f47b29fd0ef1070b90ce808e6279709de3f21752bd110b293e0c04413a67",
+      "bytes": 2201,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "accepted-audio-sha256-lock.json",
+      "member": "764_accepted-audio-sha256-lock.json",
+      "sha256": "be7bdf5f21be00abf84f711f7cfecfda781f6e982c91f1a2f4ade39db9fd4920",
+      "original_sha256": "be7bdf5f21be00abf84f711f7cfecfda781f6e982c91f1a2f4ade39db9fd4920",
+      "bytes": 4214,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "feasibility.md",
+      "member": "765_feasibility.md",
+      "sha256": "4e0bbdd29a9f8d6260055bc6a5b389636c134c97e7c7d87b8fc5d16125384e45",
+      "original_sha256": "466d2ea155e738e8d3536369d022540c3db04b398158fa84cb86bd115c61657b",
+      "bytes": 5655,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "SUPERSEDED_WRONG_shotlist.md",
+      "member": "766_SUPERSEDED_WRONG_shotlist.md",
+      "sha256": "a506d5c58d6c8d3d3eb94d35c0d9794f82647b1cf75a464360360ceab1f4b875",
+      "original_sha256": "a506d5c58d6c8d3d3eb94d35c0d9794f82647b1cf75a464360360ceab1f4b875",
+      "bytes": 2114,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "shotlist_v2.md",
+      "member": "767_shotlist_v2.md",
+      "sha256": "382e9f039d02809871c21048f294ac888c94b1df5bee0e3027f99429f789d750",
+      "original_sha256": "382e9f039d02809871c21048f294ac888c94b1df5bee0e3027f99429f789d750",
+      "bytes": 2270,
+      "role": "historical record, not current authority or quality acceptance"
+    },
+    {
+      "name": "notes.md",
+      "member": "768_notes.md",
+      "sha256": "e595a98d3ebd0da53c6d7ec1ae77355898c91e1fdbb6b818904cbf61b98202fc",
+      "original_sha256": "e595a98d3ebd0da53c6d7ec1ae77355898c91e1fdbb6b818904cbf61b98202fc",
+      "bytes": 2155,
+      "role": "historical record, not current authority or quality acceptance"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "magic-hour-v13-clip3-ad-cards-lockup-11s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "magic-hour-v13-clip2-ask-thinking-12s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "magic-hour-v13-clip1-title-sidebar-13s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "magic-hour-v13-clip1-title-sidebar-13s-cap10k.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "hero-edit-magic-hour-ugc-form.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-single-site-reveal-perspective-7s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-single-composer-typing-press-5s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-gen7-plane-gallery-clone-analytics-seo-12s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-gen5-asks-nav-stats-11s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-gen2-describe-composer-thinking-site-15s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-gen1-wall-verdict-page-12s.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "test_production_runner.py",
+      "reason": "potential credential content withheld"
+    },
+    {
+      "name": "clip3.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "clip2.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "clip1.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "v13-clip3.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "v13-clip2.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "v13-clip1.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip8.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip7.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip6.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip5.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip4.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip3.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip2.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    },
+    {
+      "name": "orchids-clip1.txt",
+      "reason": "unrelated software/product launch film material, not MicroDrama narrative project"
+    }
+  ],
+  "finite_scope": "70 outside-home text/code records from bounded 1500-item project metadata inventory; 713 other text/code records already under final project home"
+}

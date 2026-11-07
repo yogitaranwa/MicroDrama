@@ -1,0 +1,18 @@
+[
+  {
+    "ref": 1,
+    "job": {
+      "id": "cmvnxs7en0e71fz018cbhy66v",
+      "frame_cost": 50,
+      "credits_charged": 50
+    }
+  },
+  {
+    "ref": 2,
+    "job": {
+      "id": "cmvnxs7sw0e73fz01panwyj3a",
+      "frame_cost": 50,
+      "credits_charged": 50
+    }
+  }
+]

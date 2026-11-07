@@ -1,0 +1,22 @@
+{
+  "baseline": "DramaSaga-MicroDrama-2026-10-20-privacy-clean.zip",
+  "date": "2026-10-25",
+  "added": [],
+  "changed": [
+    "README.md",
+    "SOURCE_MANIFEST.json",
+    "CHANGE_SUMMARY.json",
+    "portable/README.md",
+    "requirements/local.txt",
+    "tests/test_portable_runtime.py"
+  ],
+  "removed": [],
+  "tests": 228,
+  "notes": [
+    "Kaggle runtime fix: cap PyAV below 19 for the pinned faster-whisper 1.2.1 release",
+    "Added a regression test for the PyAV cap; 228 tests passed locally",
+    "Kaggle T4 x2 validation recorded in the README; H3 inference remains untested and hardware-limited",
+    "Privacy-clean DramaSaga-main layout, attribution and no-key/no-weight limits preserved"
+  ],
+  "unchanged_count": 166
+}

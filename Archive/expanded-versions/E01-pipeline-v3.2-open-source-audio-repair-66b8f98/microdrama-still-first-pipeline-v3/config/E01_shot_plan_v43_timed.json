@@ -1,0 +1,273 @@
+{
+  "episode": "E01",
+  "version": "v4.3-timed",
+  "target_seconds": 100,
+  "audio_source": "/tmp/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+  "audio_duration_seconds": 49.4,
+  "line_boundaries_note": "Boundaries use waveform silence inspection, not raw API normalized alignment. Placement shifts each line into its visual beat while preserving duration and order.",
+  "lines": [
+    {
+      "line": 1,
+      "speaker": "DRACONIA",
+      "text": "Potter, don't turn around. Take my hand and move.",
+      "source_start": 0.0,
+      "source_end": 4.27
+    },
+    {
+      "line": 2,
+      "speaker": "DRACONIA",
+      "text": "The floor marks anyone who stops. Keep dancing.",
+      "source_start": 5.04,
+      "source_end": 8.58
+    },
+    {
+      "line": 3,
+      "speaker": "HARRY",
+      "text": "Tell me you're not serious.",
+      "source_start": 9.22,
+      "source_end": 10.63
+    },
+    {
+      "line": 4,
+      "speaker": "HARRY",
+      "text": "That reflection is copying us.",
+      "source_start": 11.05,
+      "source_end": 13.03
+    },
+    {
+      "line": 5,
+      "speaker": "HARRY",
+      "text": "The arrows land after the second beat.",
+      "source_start": 13.63,
+      "source_end": 16.55
+    },
+    {
+      "line": 6,
+      "speaker": "DRACONIA",
+      "text": "Then move on the beat, not after it.",
+      "source_start": 17.14,
+      "source_end": 19.42
+    },
+    {
+      "line": 7,
+      "speaker": "HARRY",
+      "text": "You knew what this was.",
+      "source_start": 19.96,
+      "source_end": 21.83
+    },
+    {
+      "line": 8,
+      "speaker": "DRACONIA",
+      "text": "It's a Malfoy ward mark. I thought it was dead.",
+      "source_start": 22.39,
+      "source_end": 25.55
+    },
+    {
+      "line": 9,
+      "speaker": "DRACONIA",
+      "text": "The music is carrying the curse. Cut those strings.",
+      "source_start": 26.34,
+      "source_end": 29.91
+    },
+    {
+      "line": 10,
+      "speaker": "DRACONIA",
+      "text": "The suits of armor are moving. We need that trolley.",
+      "source_start": 30.58,
+      "source_end": 33.45
+    },
+    {
+      "line": 11,
+      "speaker": "DRACONIA",
+      "text": "The floor is pulling us into the pattern.",
+      "source_start": 34.05,
+      "source_end": 36.17
+    },
+    {
+      "line": 12,
+      "speaker": "HARRY",
+      "text": "Then we break it. Left side, three beats, red table.",
+      "source_start": 36.77,
+      "source_end": 40.9
+    },
+    {
+      "line": 13,
+      "speaker": "DRACONIA",
+      "text": "They've marked us both.",
+      "source_start": 41.38,
+      "source_end": 42.61
+    },
+    {
+      "line": 14,
+      "speaker": "HARRY",
+      "text": "You knew more than you said.",
+      "source_start": 43.25,
+      "source_end": 45.01
+    },
+    {
+      "line": 15,
+      "speaker": "DRACONIA",
+      "text": "I sent you a warning. Someone made sure it never reached you.",
+      "source_start": 45.5,
+      "source_end": 49.4
+    }
+  ],
+  "beats": [
+    {
+      "beat": "1",
+      "time": "0.0-7.0",
+      "visual": "shot01-entry-spark",
+      "audio": []
+    },
+    {
+      "beat": "2",
+      "time": "7.0-15.0",
+      "visual": "shot02-draconia-pull",
+      "audio": [
+        {
+          "line": 1,
+          "place": "8.00-12.27"
+        }
+      ]
+    },
+    {
+      "beat": "3",
+      "time": "15.0-24.0",
+      "visual": "shot03-floor-warning-insert",
+      "audio": [
+        {
+          "line": 2,
+          "place": "16.00-19.54"
+        },
+        {
+          "line": 3,
+          "place": "20.00-21.41"
+        }
+      ]
+    },
+    {
+      "beat": "4",
+      "time": "24.0-32.0",
+      "visual": "shot04-masked-window-reflection",
+      "audio": [
+        {
+          "line": 4,
+          "place": "25.20-27.19"
+        }
+      ]
+    },
+    {
+      "beat": "5",
+      "time": "32.0-41.0",
+      "visual": "shot05-arrow-volley-timing",
+      "audio": [
+        {
+          "line": 5,
+          "place": "33.00-35.92"
+        },
+        {
+          "line": 6,
+          "place": "36.80-39.08"
+        }
+      ]
+    },
+    {
+      "beat": "6",
+      "time": "41.0-50.0",
+      "visual": "shot06-ward-mark",
+      "audio": [
+        {
+          "line": 7,
+          "place": "42.50-44.37"
+        },
+        {
+          "line": 8,
+          "place": "45.00-48.16"
+        }
+      ]
+    },
+    {
+      "beat": "7",
+      "time": "50.0-59.0",
+      "visual": "shot07-strings-wand",
+      "audio": [
+        {
+          "line": 9,
+          "place": "51.00-54.57"
+        }
+      ]
+    },
+    {
+      "beat": "8",
+      "time": "59.0-67.0",
+      "visual": "shot08-armor-trolley-insert",
+      "audio": [
+        {
+          "line": 10,
+          "place": "60.50-63.37"
+        }
+      ]
+    },
+    {
+      "beat": "9",
+      "time": "67.0-75.0",
+      "visual": "shot09-trolley-mask",
+      "audio": []
+    },
+    {
+      "beat": "10",
+      "time": "75.0-84.0",
+      "visual": "shot10-floor-grid-red-table",
+      "audio": [
+        {
+          "line": 11,
+          "place": "76.50-78.62"
+        },
+        {
+          "line": 12,
+          "place": "79.50-83.63"
+        }
+      ]
+    },
+    {
+      "beat": "11a",
+      "time": "84.0-88.0",
+      "visual": "shot11a-table-chandelier-action",
+      "audio": []
+    },
+    {
+      "beat": "11b",
+      "time": "88.0-91.5",
+      "visual": "shot11b-masked-marks",
+      "audio": [
+        {
+          "line": 13,
+          "place": "88.30-89.66"
+        }
+      ]
+    },
+    {
+      "beat": "12a",
+      "time": "91.5-95.0",
+      "visual": "shot12a-harry-marks-close",
+      "audio": [
+        {
+          "line": 14,
+          "place": "92.00-93.76"
+        }
+      ]
+    },
+    {
+      "beat": "12b",
+      "time": "95.0-100.0",
+      "visual": "shot12b-draconia-reaction",
+      "audio": [
+        {
+          "line": 15,
+          "place": "95.50-99.40"
+        }
+      ]
+    }
+  ],
+  "tool_constraint": "Magic Hour image-to-video takes one start image and optional end image only; it does not hard-pin intermediate stills."
+}

@@ -1,0 +1,14 @@
+# main env (python 3.12)
+langchain>=0.3.26,<1
+langchain-community>=0.3.27,<1
+langchain-openai>=0.3.27,<1
+langgraph<1
+instructor
+anthropic
+moviepy>=2.2.1
+pysubs2
+opentimelineio
+scenedetect[opencv]
+opencv-python-headless
+# audio env (python 3.12, separate venv; torch CPU or CUDA)
+# torch torchaudio chatterbox-tts kokoro whisperx soundfile pyloudnorm

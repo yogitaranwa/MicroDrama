@@ -1,0 +1,207 @@
+{
+  "title": "Harry Potter - The Uninvited Guest",
+  "status": "production_in_progress",
+  "total_seconds": 56,
+  "shots": [
+    {
+      "id": "s01-hall",
+      "seconds": 5,
+      "frames": 120,
+      "start_seconds": 0,
+      "action": "Lively lunch, owls cross above the tables.",
+      "references": [
+        "hall-master",
+        "harry-master",
+        "hermione-master",
+        "ron-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s02-hermione",
+      "seconds": 3,
+      "frames": 72,
+      "start_seconds": 5,
+      "action": "Hermione teases Ron, lowering her book.",
+      "references": [
+        "hall-master",
+        "hermione-master"
+      ],
+      "line_id": "hermione-lunch",
+      "status": "planned"
+    },
+    {
+      "id": "s03-ron",
+      "seconds": 4,
+      "frames": 96,
+      "start_seconds": 8,
+      "action": "Ron answers dryly, fork safely below his mouth.",
+      "references": [
+        "hall-master",
+        "ron-master"
+      ],
+      "line_id": "ron-lunch",
+      "status": "planned"
+    },
+    {
+      "id": "s04-table",
+      "seconds": 3,
+      "frames": 72,
+      "start_seconds": 12,
+      "action": "Harry smiles at Ron; an owl beside a letter becomes still.",
+      "references": [
+        "hall-master",
+        "harry-master",
+        "hermione-master",
+        "ron-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s05-owls",
+      "seconds": 3,
+      "frames": 72,
+      "start_seconds": 15,
+      "action": "An owl on a beam turns toward the entrance; others wheel upward.",
+      "references": [
+        "hall-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s06-impact",
+      "seconds": 5,
+      "frames": 120,
+      "start_seconds": 18,
+      "action": "First impact. Ron freezes, glances toward the entrance and speaks.",
+      "references": [
+        "hall-master",
+        "ron-master"
+      ],
+      "line_id": "ron-impact",
+      "status": "planned"
+    },
+    {
+      "id": "s07-warning",
+      "seconds": 4,
+      "frames": 96,
+      "start_seconds": 23,
+      "action": "Hermione rises, gives a firm warning; dust falls.",
+      "references": [
+        "hall-master",
+        "hermione-master"
+      ],
+      "line_id": "hermione-warning",
+      "status": "planned"
+    },
+    {
+      "id": "s08-collapse",
+      "seconds": 5,
+      "frames": 120,
+      "start_seconds": 27,
+      "action": "Cracked entrance arch bursts inward; foreground students shelter.",
+      "references": [
+        "hall-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s09-foot",
+      "seconds": 4,
+      "frames": 96,
+      "start_seconds": 32,
+      "action": "One huge dragon forefoot plants into the rubble.",
+      "references": [
+        "hall-master",
+        "dragon-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s10-dragon",
+      "seconds": 6,
+      "frames": 144,
+      "start_seconds": 36,
+      "action": "Dragon forces its shoulders through the breach, wings folded.",
+      "references": [
+        "hall-master",
+        "dragon-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s11-harry",
+      "seconds": 4,
+      "frames": 96,
+      "start_seconds": 42,
+      "action": "Harry holds his wand low, then lifts it and protects his friends.",
+      "references": [
+        "hall-master",
+        "harry-master"
+      ],
+      "line_id": "harry-warning",
+      "status": "planned"
+    },
+    {
+      "id": "s12-reveal",
+      "seconds": 4,
+      "frames": 96,
+      "start_seconds": 46,
+      "action": "Black-robed Voldemort steps from beside the dragon foreleg.",
+      "references": [
+        "hall-master",
+        "dragon-master",
+        "voldemort-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    },
+    {
+      "id": "s13-voldemort",
+      "seconds": 3,
+      "frames": 72,
+      "start_seconds": 50,
+      "action": "Voldemort finds Harry in the crowd and speaks quietly.",
+      "references": [
+        "hall-master",
+        "voldemort-master"
+      ],
+      "line_id": "voldemort-line",
+      "status": "planned"
+    },
+    {
+      "id": "s14-eyes",
+      "seconds": 3,
+      "frames": 72,
+      "start_seconds": 53,
+      "action": "Extreme close-up of Voldemort eyes, a flicker of orange reflected light.",
+      "references": [
+        "voldemort-master"
+      ],
+      "line_id": null,
+      "status": "planned"
+    }
+  ],
+  "model": "kling-3.0",
+  "resolution": "720p",
+  "native_audio": false,
+  "voices": "fixed Magic Hour character presets, exact text, separate standard lip sync",
+  "credit_cap": 5000,
+  "planned_video_credits": 2688,
+  "planned_image_credits": 850,
+  "planned_lipsync_credits": 552,
+  "repair_reserve": "All rejects and replacements count within the same 5000 cap. No cap increase inferred.",
+  "continuity": {
+    "trio": "Hermione left, Harry center, Ron right in trio views; black school robes, red/gold ties; warm afternoon lunch",
+    "hall": "one tall stone entrance at far north end; intact until s08; dragon travels from breach into the hall",
+    "dragon": "charcoal scales, folded wings, two horns, amber eyes, same feet across inserts",
+    "voldemort": "pale bald face, serpentine nostrils, pale grey eyes, plain black robes",
+    "sound": "continuous hall ambience fades into quiet before second impact; original local designed effects; fixed voices, no native speech"
+  }
+}

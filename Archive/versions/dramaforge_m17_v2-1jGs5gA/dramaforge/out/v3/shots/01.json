@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "seconds": 10,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "The Great Hall emptied faster than I expected. The music still bleeds through the stone walls, a muffled heartbeat.",
+   "emotion": "quiet observation",
+   "expression": "adjusts his cuff, eyes fixed on the corridor beyond her shoulder"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "Everyone flees the moment the spectacle ends. They pretend the night meant something more than stolen champagne.",
+   "emotion": "bitter amusement",
+   "expression": "arms crossed, chin lifted, gaze sharpening on his face"
+  }
+ ]
+}

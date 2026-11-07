@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "seconds": 12,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "B Parkinson wrote this note, so Pansy is the one holding something over you. That explains why you vanished from the ball early.",
+   "emotion": "cold realization",
+   "expression": "eyes fixed on the parchment, jaw tightening as the name registers"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "Hand it back this instant, Potter, or I will make you regret reading a single word. My business with Pansy is mine alone.",
+   "emotion": "desperate fury",
+   "expression": "hand snatching for the paper, knuckles white, breath sharp and shallow"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[urgent] You nearly went down. I knew you were going to kick it, but I didn't know you were going to throw your whole weight after it."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[breathing heavily] Neither did I. My foot slipped. Are you all right? You caught me with the arm it just hurt."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[angry] I'll find out when we aren't doing this. For now, stay close enough that I don't have to catch you from across the room."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[quietly] Harry, I'm not trying to make this harder for you. I saw it coming and there wasn't time to do it neatly."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[frightened] I know you weren't. I thought I'd lost you for a second. That's what I'm trying to say."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[firmly] It isn't just in the glass anymore. Look past the chair. It's here, and it's still doing what we do."
+    }
+  ],
+  "settings": {
+    "stability": 0.2
+  },
+  "seed": 7207
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "scope": "Harry/Draconia H3 feel preview route",
+  "changed": [
+    "magicdrama/audiofirst/providers.py",
+    "magicdrama/audiofirst/live.py",
+    "tests/test_audiofirst.py",
+    "tests/test_live_execution.py"
+  ],
+  "tests": 231,
+  "notes": [
+    "Added explicit Magic Hour MiniMax H3 text-to-video reference route with image/video/audio references",
+    "Default season aspect ratio remains 9:16; 16:9 was used only for the explicit reference preview",
+    "Route is actual H3 but does not expose project-owner-style timed MiniMaxH3AddGuide pins through Magic Hour",
+    "231 unit tests pass with python3 -m unittest discover -s tests -q"
+  ]
+}

@@ -1,0 +1,21 @@
+chat_model:
+  init_args:
+    model: nvidia/nemotron-3-ultra-550b-a55b
+    model_provider: openai
+    api_key:            # set from NVIDIA_API_KEY env at run time
+    base_url: https://integrate.api.nvidia.com/v1
+    timeout: 60         # stall limit; fallback handled in forge.llm
+  max_requests_per_minute: 30
+  max_requests_per_day: 2000
+image_generator:
+  class_path: tools.ImageGeneratorMagicHourAPI
+  init_args: {api_key: , model: flux-schnell, credits_per_image: 5}
+  max_requests_per_minute: 10
+  max_requests_per_day: 500
+video_generator:
+  class_path: tools.VideoGeneratorMagicHourAPI
+  init_args: {api_key: , model: wan-3.0, resolution: 720p, credits_per_second: 24}
+  max_requests_per_minute: 2
+  max_requests_per_day: 50
+image_selection: {num_candidates: 1}
+working_dir: .working_dir/idea2video

@@ -1,0 +1,226 @@
+{
+  "version": "v4.3-assembly-plan-v3",
+  "base_duration_seconds": 94.254,
+  "story_beats_selected": 14,
+  "candidate_assets": 18,
+  "candidate_note": "18 candidate assets exist: 14 generated 720p clips plus 4 local candidates. Four generated clips are rejected (shot1 full, shot3, shot5, shot11a full). The selected 14-row assembly uses 10 generated clips plus 4 local candidates.",
+  "beats": [
+    {
+      "beat": "1",
+      "start": 0,
+      "end": 7.084,
+      "asset": "shot01-entry-usable-cut-7s.mp4",
+      "lines": []
+    },
+    {
+      "beat": "2",
+      "start": 7.084,
+      "end": 13.584,
+      "asset": "shot02-draconia-pull Pro lip sync",
+      "lines": [
+        {
+          "line": 1,
+          "start": 7.184,
+          "end": 11.454
+        }
+      ]
+    },
+    {
+      "beat": "3",
+      "start": 13.584,
+      "end": 22.584,
+      "asset": "shot03-frozen-guest-local-9s.mp4",
+      "lines": [
+        {
+          "line": 2,
+          "start": 14.484,
+          "end": 18.024
+        },
+        {
+          "line": 3,
+          "start": 18.684,
+          "end": 20.094
+        }
+      ]
+    },
+    {
+      "beat": "4",
+      "start": 22.584,
+      "end": 30.584,
+      "asset": "shot04-reflection Pro lip sync",
+      "lines": [
+        {
+          "line": 4,
+          "start": 23.384,
+          "end": 25.364
+        }
+      ]
+    },
+    {
+      "beat": "5",
+      "start": 30.584,
+      "end": 36.626,
+      "asset": "shot05-arrow-volley-local Pro lip sync",
+      "lines": [
+        {
+          "line": 5,
+          "start": 31.184,
+          "end": 34.104
+        },
+        {
+          "line": 6,
+          "start": 34.184,
+          "end": 36.464
+        }
+      ]
+    },
+    {
+      "beat": "6",
+      "start": 36.626,
+      "end": 45.626,
+      "asset": "shot06-ward-mark Pro lip sync",
+      "lines": [
+        {
+          "line": 7,
+          "start": 37.426,
+          "end": 39.296
+        },
+        {
+          "line": 8,
+          "start": 39.826,
+          "end": 42.986
+        }
+      ]
+    },
+    {
+      "beat": "7",
+      "start": 45.626,
+      "end": 52.085,
+      "asset": "shot07-strings-wand Pro lip sync",
+      "lines": [
+        {
+          "line": 9,
+          "start": 46.226,
+          "end": 49.796
+        }
+      ]
+    },
+    {
+      "beat": "8",
+      "start": 52.085,
+      "end": 60.085,
+      "asset": "shot08-armor-trolley-01.mp4",
+      "lines": [
+        {
+          "line": 10,
+          "start": 52.785,
+          "end": 55.655
+        }
+      ]
+    },
+    {
+      "beat": "9",
+      "start": 60.085,
+      "end": 67.377,
+      "asset": "shot09-trolley-mask-01.mp4",
+      "lines": []
+    },
+    {
+      "beat": "10",
+      "start": 67.377,
+      "end": 76.377,
+      "asset": "shot10-floor-grid Pro lip sync + local reframed crop",
+      "lines": [
+        {
+          "line": 11,
+          "start": 67.977,
+          "end": 70.097
+        },
+        {
+          "line": 12,
+          "start": 70.777,
+          "end": 74.907
+        }
+      ]
+    },
+    {
+      "beat": "11a",
+      "start": 76.377,
+      "end": 80.336,
+      "asset": "shot11-action-usable-cut-4s.mp4",
+      "lines": []
+    },
+    {
+      "beat": "11b",
+      "start": 80.336,
+      "end": 84.795,
+      "asset": "shot11b-marks-01.mp4 + local hands-only line14 insert",
+      "lines": [
+        {
+          "line": 13,
+          "start": 80.736,
+          "end": 81.966
+        },
+        {
+          "line": 14,
+          "start": 82.336,
+          "end": 84.096
+        }
+      ]
+    },
+    {
+      "beat": "12a",
+      "start": 84.795,
+      "end": 89.087,
+      "asset": "shot12a-marks-close Pro lip sync (silent visual)",
+      "lines": []
+    },
+    {
+      "beat": "12b",
+      "start": 89.087,
+      "end": 94.254,
+      "asset": "shot12b-draconia-reaction Pro lip sync",
+      "lines": [
+        {
+          "line": 15,
+          "start": 89.587,
+          "end": 93.487
+        }
+      ]
+    }
+  ],
+  "line_count": 15,
+  "lines_preserved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "selected_asset_count": {
+    "generated": 10,
+    "local": 4,
+    "total": 14
+  },
+  "rejected_assets": [
+    "shot01 full 720p",
+    "shot03 generated 720p",
+    "shot05 generated 720p",
+    "shot11a full 720p"
+  ],
+  "zero_credit_qa_changes": [
+    "Line 14 moved from shot12a to shot11b after dense mouth review found no visible Harry mouth movement in shot12a Pro output.",
+    "Shot11b was split locally at 2.0s: line13 stays on the full marks view; line14 uses a hands/marks-only crop with no faces, so it is genuinely offscreen dialogue rather than visible closed-mouth speech.",
+    "Shot10 was locally reframed to remove a source-generated dark horizontal band across the upper background."
+  ]
+}

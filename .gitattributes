@@ -1,0 +1,6 @@
+# Raw project media, never ZIP/binary fragments in place of full outputs.
+Outputs/** filter=lfs diff=lfs merge=lfs -text
+ProjectInputReferences/** filter=lfs diff=lfs merge=lfs -text
+docs/EngineeringReview/*.pdf filter=lfs diff=lfs merge=lfs -text
+docs/EngineeringReview/*.jpg filter=lfs diff=lfs merge=lfs -text
+docs/EngineeringReview/*.png filter=lfs diff=lfs merge=lfs -text

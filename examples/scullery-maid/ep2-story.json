@@ -1,0 +1,309 @@
+{
+ "title": "The Billionaire's Scullery Maid - Episode 2",
+ "aspect": "9:16",
+ "style": "Cinematic photorealistic live-action drama, glossy vertical short-drama look, 9:16 portrait framing, shallow depth of field, high contrast, warm natural skin tones, consistent faces and wardrobe",
+ "voices": {
+  "Chloe": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+  "Ethan": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+  "Peterson": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+  "Young Chloe": "bright, kind, gentle young teenage girl",
+  "Young Ethan": "hoarse, wary, quiet teenage boy",
+  "Mark": "crisp, efficient, respectful man in his thirties",
+  "Vivian": "silky, sweet, slow woman in her late forties with poison underneath",
+  "Sasha": "sharp, mocking, gossipy young woman",
+  "Leo": "weak but warm young teenage boy",
+  "Grandfather": "old, gravelly, commanding man in his seventies"
+ },
+ "hook_title": "Years ago, a girl saved a boy in the rain...",
+ "end_card": "Chloe's stepmother is watching... Episode 3 next",
+ "scenes": {
+  "street": {
+   "set": "a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade",
+   "plate": "street-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade. Empty, no people. No text, no watermark."
+  },
+  "penthouse": {
+   "set": "a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves",
+   "plate": "penthouse-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves. Empty, no people. No text, no watermark."
+  },
+  "mansion": {
+   "set": "a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall",
+   "plate": "mansion-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall. Empty, no people. No text, no watermark."
+  },
+  "office": {
+   "set": "a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows",
+   "plate": "office-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows. Empty, no people. No text, no watermark."
+  },
+  "boardroom": {
+   "set": "a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors",
+   "plate": "boardroom-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors. Empty, no people. No text, no watermark."
+  },
+  "airstrip": {
+   "set": "a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing",
+   "plate": "airstrip-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing. Empty, no people. No text, no watermark."
+  },
+  "rooftop": {
+   "set": "the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below",
+   "plate": "rooftop-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below. Empty, no people. No text, no watermark."
+  },
+  "study": {
+   "set": "a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window",
+   "plate": "study-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window. Empty, no people. No text, no watermark."
+  }
+ },
+ "shots": [
+  {
+   "id": "e2-s01-boy",
+   "scene_id": "street",
+   "location": "street",
+   "seconds": 4,
+   "visual": "Caption: years ago. The thin bruised teenage boy, penniless and soaked, sits curled against the wall in the pouring rain, shivering.",
+   "camera": "Slow push-in.",
+   "sound": {
+    "ambience": "heavy rain pouring on the street, water dripping, distant city traffic",
+    "effects": [
+     "rain hammering",
+     "a shaky breath"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e2-s02-eat",
+   "scene_id": "street",
+   "location": "street",
+   "seconds": 6,
+   "visual": "The teenage girl kneels under her yellow umbrella and holds out her lunch box to him, smiling kindly. Only the girl speaks.",
+   "camera": "Medium shot, gentle handheld.",
+   "sound": {
+    "ambience": "heavy rain pouring on the street, water dripping, distant city traffic",
+    "effects": [
+     "rain drumming on the umbrella"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Young Chloe",
+      "voice": "bright, kind, gentle young teenage girl",
+      "line": "Here, eat. Nobody's watching.",
+      "delivery": "kind, gentle"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s03-string",
+   "scene_id": "street",
+   "location": "street",
+   "seconds": 6,
+   "visual": "The girl ties a thin red string around the boy's left wrist while he eats, looking into his eyes. Only the girl speaks.",
+   "camera": "Close-up on the wrist, then her face.",
+   "sound": {
+    "ambience": "heavy rain pouring on the street, water dripping, distant city traffic",
+    "effects": [
+     "rain"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Young Chloe",
+      "voice": "bright, kind, gentle young teenage girl",
+      "line": "So you remember someone cares about you.",
+      "delivery": "soft, warm"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s04-promise",
+   "scene_id": "street",
+   "location": "street",
+   "seconds": 6,
+   "visual": "The boy looks at the red string, then up at her with wet eyes. Only the boy speaks; the girl listens silently.",
+   "camera": "Push-in on the boy.",
+   "sound": {
+    "ambience": "heavy rain pouring on the street, water dripping, distant city traffic",
+    "effects": [
+     "rain"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Young Ethan",
+      "voice": "hoarse, wary, quiet teenage boy",
+      "line": "One day I'll come back for you. I promise.",
+      "delivery": "hoarse, earnest"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s05-wrist",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 4,
+   "visual": "The same faded red string on a grown man's wrist. Ethan paces restlessly by the window at night.",
+   "camera": "Close on the wrist, tilt up to his face.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [
+     "slow restless footsteps"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e2-s06-found",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 8,
+   "visual": "Mark walks in and hands Ethan a thin manila folder. Only Mark speaks.",
+   "camera": "Medium shot, slow push-in on Mark.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [
+     "the folder changing hands"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mark",
+      "voice": "crisp, efficient, respectful man in his thirties",
+      "line": "Sir, we found her. After you were forced to leave the country, her family went under.",
+      "delivery": "respectful, serious"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s07-brother",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 6,
+   "visual": "Mark continues, grave. Ethan opens the folder in silence. Only Mark speaks.",
+   "camera": "Medium close-up on Mark.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [
+     "a page turning"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mark",
+      "voice": "crisp, efficient, respectful man in his thirties",
+      "line": "She's been working herself to the bone to afford her brother's treatment.",
+      "delivery": "quiet, grave"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s08-fists",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 4,
+   "visual": "Ethan clenches his fists until his knuckles turn white, jaw tight, silent.",
+   "camera": "Close-up, slow push-in.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [
+     "leather creaking as his fist tightens"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e2-s09a-identity",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 6,
+   "visual": "A dark, protective smile crosses Ethan's face. Only Ethan speaks.",
+   "camera": "Close-up.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Do not reveal my true identity to her yet, Mark.",
+      "delivery": "low, decisive"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s09b-appoint",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 6,
+   "visual": "Ethan gives the order, eyes cold and certain. Only Ethan speaks.",
+   "camera": "Close-up, slight push-in.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Appoint her as my personal assistant tomorrow morning.",
+      "delivery": "low, decisive"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s10-stepping",
+   "scene_id": "penthouse",
+   "location": "penthouse",
+   "seconds": 6,
+   "visual": "Ethan turns to the window, his reflection cold in the glass. Only Ethan speaks.",
+   "camera": "Medium close-up from the side.",
+   "sound": {
+    "ambience": "quiet penthouse at night, a faint hum of the city far below",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Let's see how many people in this company have been stepping on her.",
+      "delivery": "quiet, dangerous"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e2-s11-vivian",
+   "scene_id": "mansion",
+   "location": "mansion",
+   "seconds": 4,
+   "visual": "Vivian listens to someone on the phone, sipping red wine; her sweet smile slowly turns cold. She does not speak.",
+   "camera": "Slow push-in.",
+   "sound": {
+    "ambience": "a quiet mansion at night, a clock ticking softly",
+    "effects": [
+     "wine swirling in the glass",
+     "a faint phone voice"
+    ],
+    "dialogue": []
+   }
+  }
+ ],
+ "frame_for": {
+  "e2-s01-boy": "e2-boy",
+  "e2-s02-eat": "e2-girl",
+  "e2-s03-string": "e2-girl",
+  "e2-s04-promise": "e2-girl",
+  "e2-s05-wrist": "e2-ethan",
+  "e2-s06-found": "e2-mark",
+  "e2-s07-brother": "e2-mark",
+  "e2-s08-fists": "e2-ethan",
+  "e2-s09a-identity": "e2-ethan",
+  "e2-s09b-appoint": "e2-ethan",
+  "e2-s10-stepping": "e2-ethan",
+  "e2-s11-vivian": "e2-vivian"
+ }
+}

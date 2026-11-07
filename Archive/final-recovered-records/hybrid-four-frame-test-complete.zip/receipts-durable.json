@@ -1,0 +1,227 @@
+{
+  "cap": 200,
+  "count": 4,
+  "no_retries": true,
+  "no_video": true,
+  "approval_ref": "[private-record-reference]",
+  "account_before": {
+    "id": "cmux6s32o0163kl01fczlz0bj",
+    "email": "account@example.invalid",
+    "tier": "creator",
+    "credits": 113663,
+    "subscription": null
+  },
+  "started_at": "2026-10-26T21:03:53+0530",
+  "uploads": {
+    "e01-s17-b1-start.png": {
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/e5d9c39d-3fdc-445b-8e16-d4f0ed004a07-image-0.png",
+      "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383"
+    },
+    "ref-harry-front-close.png": {
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/09591584-2dbe-440c-a992-689719e9247c-image-0.png",
+      "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+    },
+    "aftermath-existing-frame-0.7s.png": {
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/3dab543c-6cc8-472e-8571-9adf556f8fd1-image-0.png",
+      "sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315"
+    },
+    "e01-s18-b1-start.png": {
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/686b70fd-7bde-4227-8e83-3777899cfeba-image-0.png",
+      "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441"
+    },
+    "ref-draconia-front-close.png": {
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/081639c6-5b46-4ce3-9cfb-25f14686fa64-image-0.png",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    }
+  },
+  "jobs": [
+    {
+      "name": "harry-A",
+      "state": "downloaded",
+      "quote": 50,
+      "submitted_at": "2026-10-26T21:03:54+0530",
+      "body": {
+        "name": "hybrid-research-harry-A",
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "resolution": "1k",
+        "aspect_ratio": "9:16",
+        "style": {
+          "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Harry wears round wire glasses, white shirt, black dress robes with deep red lapel lining, and a narrow STRAIGHT DARK NECKTIE hanging vertically below the collar. Explicitly replace the erroneous bowtie in references1/2. No bowtie. Harry occupies left/center, looks distinctly to screen RIGHT toward offscreen Draconia, never into lens. Concern settling into dry relief after surviving the crash. Tight chest-up three-quarter close-up, camera near her shoulder, a soft sliver of Draconia shoulder at far right edge; readable face, eye-level shot. Keep a small soft-focused floor-level wreckage glimpse in depth where composition permits, never float wreckage."
+        },
+        "assets": {
+          "image_file_paths": [
+            "api-assets/cmux6s32o0163kl01fczlz0bj/e5d9c39d-3fdc-445b-8e16-d4f0ed004a07-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/09591584-2dbe-440c-a992-689719e9247c-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/3dab543c-6cc8-472e-8571-9adf556f8fd1-image-0.png"
+          ]
+        }
+      },
+      "response": {
+        "id": "cmvpf2neq00t5hm01imhfl288",
+        "frame_cost": 50,
+        "credits_charged": 50
+      },
+      "id": "cmvpf2neq00t5hm01imhfl288",
+      "charged": 50,
+      "balance_after": 113613,
+      "provider_details": {
+        "id": "cmvpf2neq00t5hm01imhfl288",
+        "name": "hybrid-research-harry-A",
+        "status": "complete",
+        "image_count": 1,
+        "type": "AI_IMAGE_EDITOR",
+        "created_at": "2026-10-26T15:33:54.818Z",
+        "enabled": true,
+        "total_frame_cost": 50,
+        "credits_charged": 50,
+        "error": null
+      },
+      "output": "harry-A.png",
+      "sha256": "3583d25cff5b75cc2b53a931083e5192aabf8eb7f56eca878eba513d2451e3f9"
+    },
+    {
+      "name": "harry-B",
+      "state": "downloaded",
+      "quote": 50,
+      "submitted_at": "2026-10-26T21:03:55+0530",
+      "body": {
+        "name": "hybrid-research-harry-B",
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "resolution": "1k",
+        "aspect_ratio": "9:16",
+        "style": {
+          "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Harry wears round wire glasses, white shirt, black dress robes with deep red lapel lining, and a narrow STRAIGHT DARK NECKTIE hanging vertically below the collar. Explicitly replace the erroneous bowtie in references1/2. No bowtie. Harry occupies left/center, looks distinctly to screen RIGHT toward offscreen Draconia, never into lens. Concern settling into dry relief after surviving the crash. Slightly wider waist-up reverse close-up at eye level, enough lower background to show fallen metal/crystal at floor level behind him, not a reinstated ceiling fixture. Draconia stays offscreen right. Restrained expression, mouth relaxed, no broad grin."
+        },
+        "assets": {
+          "image_file_paths": [
+            "api-assets/cmux6s32o0163kl01fczlz0bj/e5d9c39d-3fdc-445b-8e16-d4f0ed004a07-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/09591584-2dbe-440c-a992-689719e9247c-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/3dab543c-6cc8-472e-8571-9adf556f8fd1-image-0.png"
+          ]
+        }
+      },
+      "response": {
+        "id": "cmvpf2o1400t7hm01o9lg03fa",
+        "frame_cost": 50,
+        "credits_charged": 50
+      },
+      "id": "cmvpf2o1400t7hm01o9lg03fa",
+      "charged": 50,
+      "balance_after": 113563,
+      "provider_details": {
+        "id": "cmvpf2o1400t7hm01o9lg03fa",
+        "name": "hybrid-research-harry-B",
+        "status": "complete",
+        "image_count": 1,
+        "type": "AI_IMAGE_EDITOR",
+        "created_at": "2026-10-26T15:33:55.625Z",
+        "enabled": true,
+        "total_frame_cost": 50,
+        "credits_charged": 50,
+        "error": null
+      },
+      "output": "harry-B.png",
+      "sha256": "95711fd66f63ee84b58ad26825b598adfbbac79bd3d0b4ef2df516dc4c664fbf"
+    },
+    {
+      "name": "draconia-A",
+      "state": "downloaded",
+      "quote": 50,
+      "submitted_at": "2026-10-26T21:03:56+0530",
+      "body": {
+        "name": "hybrid-research-draconia-A",
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "resolution": "1k",
+        "aspect_ratio": "9:16",
+        "style": {
+          "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Draconia has the same braided platinum-blonde updo, earrings and fitted dark emerald green gold-embroidered gown as reference2. Draconia occupies right/center, turns her eyes and nose distinctly to screen LEFT toward offscreen Harry, never into lens, no frontal stare. Wry breathless disbelief after surviving the crash. Chest-up reciprocal reverse close-up at eye level, Harry remains offscreen left. Keep both eyes and face readable despite looking left. A soft floor-level wreckage glimpse in depth if plausible, not a giant object over her head."
+        },
+        "assets": {
+          "image_file_paths": [
+            "api-assets/cmux6s32o0163kl01fczlz0bj/686b70fd-7bde-4227-8e83-3777899cfeba-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/081639c6-5b46-4ce3-9cfb-25f14686fa64-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/3dab543c-6cc8-472e-8571-9adf556f8fd1-image-0.png"
+          ]
+        }
+      },
+      "response": {
+        "id": "cmvpf2p9600eihy01ekh7h53z",
+        "frame_cost": 50,
+        "credits_charged": 50
+      },
+      "id": "cmvpf2p9600eihy01ekh7h53z",
+      "charged": 50,
+      "balance_after": 113513,
+      "provider_details": {
+        "id": "cmvpf2p9600eihy01ekh7h53z",
+        "name": "hybrid-research-draconia-A",
+        "status": "complete",
+        "image_count": 1,
+        "type": "AI_IMAGE_EDITOR",
+        "created_at": "2026-10-26T15:33:57.210Z",
+        "enabled": true,
+        "total_frame_cost": 50,
+        "credits_charged": 50,
+        "error": null
+      },
+      "output": "draconia-A.png",
+      "sha256": "eb5007d001cf77f0cef30e1b6495cd490a0eccf977616494b74a2ed577c2bc06"
+    },
+    {
+      "name": "draconia-B",
+      "state": "downloaded",
+      "quote": 50,
+      "submitted_at": "2026-10-26T21:03:57+0530",
+      "body": {
+        "name": "hybrid-research-draconia-B",
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "resolution": "1k",
+        "aspect_ratio": "9:16",
+        "style": {
+          "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Draconia has the same braided platinum-blonde updo, earrings and fitted dark emerald green gold-embroidered gown as reference2. Draconia occupies right/center, turns her eyes and nose distinctly to screen LEFT toward offscreen Harry, never into lens, no frontal stare. Wry breathless disbelief after surviving the crash. Slightly wider waist-up reciprocal reverse close-up, camera on the SAME side of their conversational axis, screen-left gaze. Lower background reveals fallen chandelier fragments on icy floor. Harry stays offscreen left. No extra people or posing for portrait."
+        },
+        "assets": {
+          "image_file_paths": [
+            "api-assets/cmux6s32o0163kl01fczlz0bj/686b70fd-7bde-4227-8e83-3777899cfeba-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/081639c6-5b46-4ce3-9cfb-25f14686fa64-image-0.png",
+            "api-assets/cmux6s32o0163kl01fczlz0bj/3dab543c-6cc8-472e-8571-9adf556f8fd1-image-0.png"
+          ]
+        }
+      },
+      "response": {
+        "id": "cmvpf2pvz00t9hm012zicc7md",
+        "frame_cost": 50,
+        "credits_charged": 50
+      },
+      "id": "cmvpf2pvz00t9hm012zicc7md",
+      "charged": 50,
+      "balance_after": 113463,
+      "provider_details": {
+        "id": "cmvpf2pvz00t9hm012zicc7md",
+        "name": "hybrid-research-draconia-B",
+        "status": "complete",
+        "image_count": 1,
+        "type": "AI_IMAGE_EDITOR",
+        "created_at": "2026-10-26T15:33:58.031Z",
+        "enabled": true,
+        "total_frame_cost": 50,
+        "credits_charged": 50,
+        "error": null
+      },
+      "output": "draconia-B.png",
+      "sha256": "1afbcadfbe14b3d78b81747c690674099a8f403f97ee50896a84e073ab51ef2b"
+    }
+  ],
+  "charged_total": 200,
+  "account_after": {
+    "id": "cmux6s32o0163kl01fczlz0bj",
+    "email": "account@example.invalid",
+    "tier": "creator",
+    "credits": 113463,
+    "subscription": null
+  }
+}

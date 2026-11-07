@@ -1,0 +1,22 @@
+PROPOSED SCENE DESIGN / LOCAL CONTROL PACKAGE
+26Oct2026. No new image/video/lip generation, no spend, no production edits.
+
+What this enables
+A single explicit blocking design governs both views instead of unrelated character closeups. Source overlay is a proposal on real aftermath pixels. Top-down map is a relative schematic, NOT a surveyed room. Both characters are proposed near the icy table, before the floor wreckage; a common master must establish these marks before either reverse closeup is accepted. Exact locked takes and dramatic intent are bound in one scene-contract. Compiled-preparation is non-submittable scene design data, not provider execution or approval.
+
+Story, unchanged
+s17 Harry: 'Draconia. Look at me. What did you do?' Controlled alarm/accusation.3s.
+s18 Draconia: 'I spent weeks trying to warn you. You never once listened.' Fear while holding ground.4.5s.
+Then existing1.5s room/green-light insert.9s comparison window, not episode completion. Locked MP3 hashes retained, not changed. Current research four-frame relief/humor prompts are rejected as dramatic drift.
+
+Visual controls
+Harry left, looks right; Draconia right, looks left. Both closeup cameras and master are on near side of one axis, at matched eye height. Opposite views need side-specific architecture consistent with this map, not the same frontal-window plate behind each person. Straight dark necktie is manifest authority, even though canonical/current portrait pixels contain bowtie. Iced aftermath, collapsed principal chandelier floor wreckage, broken suspension, surviving side candles. Identity/wardrobe/readable mouth and actual story intent must pass together.
+
+Local implementation
+code/build_scene.py generates two boards, scene-contract.json and compiled-preparation.json using existing files only. code/validate_scene.py checks source/proposal distinction, paid guard, camera axis, exact line/timing/intent and take hash. Eight tests pass including refusals for spend, invented observed status, axis crossing, emotion drift, changed line, hash mismatch and timing drift. Those tests establish guard behavior, NOT visual or performance quality. build_scene additionally checks projected gaze sign for proposed camera/target pairs. No network library/API code added.
+
+What remains missing
+These actor marks, camera positions and room reconstruction are proposed, not found in existing footage. Actual common-master imagery doesn't exist in inspected material. A 2D single-room source cannot prove hidden reverse-camera wall geometry or precise lens/FOV. No photoreal two-actor composite fabricated. No actor performance, mutual gaze, mouth timing, motion continuity or synchronized finished clip proven by a schematic. No spending suggested as inevitable; this can guide a clearly labeled storyboard or stop here. Any execution is a separate authorized decision.
+
+Source
+Aftermath frame e01-s18-b2.mp4 at0.7s, source video SHA2564bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86, PNG hash in contract. Dialogue/intent from current sanitized E01manifest s17/s18. Existing no-charge coverage assessment records observations separately. Boards visually inspected, master-camera overlap fixed and rechecked before delivery.

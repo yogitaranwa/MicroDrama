@@ -1,0 +1,49 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[scared] I'm trying to turn away from it. I can feel myself trying, but my feet keep taking me back. Harry, can you feel that?"
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] Yes. Don't fight it so hard you fall. Give me a second to look. It's making us repeat the step, and the figure knows where we'll be."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[scared] Can you break the floor lines with your wand? If you can open one gap, we might be able to get out of the pattern."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] I can't keep aiming down while those things are coming at us. There's another way. The red table on our left. Could you turn it onto its side?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[scared] If you get me close enough to reach under the edge. Why? Harry, look at me. What are you about to bring down?"
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] The chandelier. Across the ice, not on us. I need the table between us and whatever comes off it when it hits."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[scared] You can't see where all of it will fall. If a piece comes over the top, that table won't stop it."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] I know. I don't have a safe version. But I can see the table and I can reach the chandelier. If we keep taking this step, that thing reaches us."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[scared] Get me to the edge. Give me the count before you cast, and don't let go until I've got both hands on it."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] Three beats. We move on the third. If you can't get hold of it, tell me. Don't try to make it work just because I've started."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4108
+}

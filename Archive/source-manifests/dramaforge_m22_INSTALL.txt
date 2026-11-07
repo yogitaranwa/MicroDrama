@@ -1,0 +1,42 @@
+DRAMAFORGE m22 CORE + m20 VENDORED SOURCE CHECKPOINT
+
+This is not a finished episode. No GPU inference has passed yet.
+
+Download these five normal ZIP files and extract ALL FIVE into the same
+empty folder. Each ZIP begins at dramaforge/ and can be extracted normally.
+There is no binary concatenation step. Core alone has the pipeline code;
+the other four packages supply the vendored repository source.
+
+Core:
+https://drive.google.com/file/d/1VcOD4XCGjwzs4oQsjMbrWw2P8d4HtbD8/view?usp=drivesdk&account=private
+MultiTalk:
+https://drive.google.com/file/d/1QTo49ft4UV_AALLto6_kIlHjtf2unmfN/view?usp=drivesdk&account=private
+InfiniteTalk:
+https://drive.google.com/file/d/1yY3PGjYKmjJYW48ojBR5XkcpIRaSuJhq/view?usp=drivesdk&account=private
+VACE:
+https://drive.google.com/file/d/1gGqDVoinNhOnP_eeohR_6lRpiBoKGc5X/view?usp=drivesdk&account=private
+PuLID:
+https://drive.google.com/file/d/1oPTfhweuoNX-OPFkUJ2P985E8t1zLSqe/view?usp=drivesdk&account=private
+
+Local verification: 465 tests passed, plus 30 subtests. Code/contract tests
+are not successful model inference. Model weights are not included.
+
+Read dramaforge/docs/releases/m20_status.md and
+third_party/VENDORED.md before any GPU setup or model use.
+PuLID's actual bundled pipeline is SDXL, not FLUX. InsightFace face-model
+non-commercial conditions apply. Existing model-specific requirements may
+conflict; prepare separate model environments rather than one shared install.
+No paid generation until a total spending cap is approved.
+
+Script selected: out/script_v9/e01_script_v9.json, The Debt of Champions.
+This is existing project material. Franchise commercial rights are not cleared.
+
+All m20 ZIPs were downloaded back from Drive and SHA256 checked against
+the originals. The m22 core is separately re-downloaded and checked. m20 combined extraction verified 669 files with zero mismatches. m22 adds validated optional final-voice settings and an audio/asset-readiness report. m21 added gate-enforcing local execution and lossless v9 script recovery. See status document for limits.
+
+SHA256
+fc9473e33124796bafaef2bbef97ed70839505ee917e0e7f298821638d02583e  dramaforge_m20_multitalk.zip
+fa260f6deff0123fe64ef9269d222604827ab00870e8444abe2ba0de9e4e12ef  dramaforge_m22_core.zip
+87f33ceb2faf6213330e336b7af8990c2358d5b89bca298e0f70bddca03bf0ea  dramaforge_m20_infinitetalk.zip
+255eb1bdd5f4df778333566f3c0115b35f1a2b111751fe0f2b14d320f19f9b59  dramaforge_m20_pulid.zip
+2b291d34cb65bb031c5d127e1a857dcf4c432c98c9459a0e72b5cd4ebd3c4809  dramaforge_m20_vace.zip

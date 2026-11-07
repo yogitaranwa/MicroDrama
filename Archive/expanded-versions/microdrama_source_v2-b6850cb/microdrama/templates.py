@@ -1,0 +1,85 @@
+TEMPLATES = {
+    "hidden_identity": {
+        "name": "Hidden identity",
+        "premise": "A lead everyone underestimates secretly holds enormous power, wealth or status.",
+        "engine": "dramatic irony: the audience knows the secret, the cast does not",
+        "hook_patterns": ["public humiliation of the lead in the first 2 seconds", "a stranger bows to the lead, ignored by the bullies"],
+        "twist_patterns": ["the villain's boss walks in and defers to the lead", "a phone call exposes the lead's true title"],
+        "cliffhanger_patterns": ["the lead's secret is almost revealed, then cut at the reveal", "a black car arrives and someone says the lead's real name"],
+    },
+    "revenge": {
+        "name": "Revenge",
+        "premise": "A wronged lead returns with a plan to take apart the people who destroyed them.",
+        "engine": "slow-burn payoff: every scene lands one precise blow",
+        "hook_patterns": ["the lead smiles while being fired or betrayed", "a past photo is burned in close-up"],
+        "twist_patterns": ["the villain's ally was the lead's plant all along", "the evidence is already in the lead's hands"],
+        "cliffhanger_patterns": ["a recording starts playing in the middle of the villain's speech", "the lead says: this was only the first name on the list"],
+    },
+    "betrayal": {
+        "name": "Betrayal and affair",
+        "premise": "A trusted partner or friend is caught in a lie that changes everything.",
+        "engine": "gossip: secrets, evidence, public exposure",
+        "hook_patterns": ["a message notification lights up the wrong phone", "the lead overhears a whispered confession"],
+        "twist_patterns": ["the other person is someone close to the lead", "the lover is the lead's boss"],
+        "cliffhanger_patterns": ["a door opens and the third person walks in", "the partner says: I never loved you, I needed your name"],
+    },
+    "ceo_romance": {
+        "name": "Contract marriage / CEO romance",
+        "premise": "A forced or fake arrangement between opposites turns into real feeling under pressure.",
+        "engine": "tension and almost-moments with status conflict",
+        "hook_patterns": ["the cold CEO says: sign it or lose everything", "a stranger is mistaken for the fiance"],
+        "twist_patterns": ["the CEO has been protecting the lead secretly", "the rival reveals a clause nobody read"],
+        "cliffhanger_patterns": ["almost-kiss interrupted by a shocking call", "the CEO's ex appears claiming the same ring"],
+    },
+    "supernatural": {
+        "name": "Werewolf / vampire / supernatural",
+        "premise": "An ordinary human is pulled into a hidden bloodline war.",
+        "engine": "forbidden bond plus danger and reveals of rank",
+        "hook_patterns": ["glowing eyes in a mirror", "the lead is claimed in public by a feared alpha"],
+        "twist_patterns": ["the lead's bloodline outranks everyone", "the trusted ally is the traitor"],
+        "cliffhanger_patterns": ["the moon rises and the lead's body changes", "the council doors open and every head bows"],
+    },
+    "mafia": {
+        "name": "Mafia / crime family",
+        "premise": "Loyalty and love collide inside a ruthless family business.",
+        "engine": "threat, loyalty tests, sudden violence implied not shown",
+        "hook_patterns": ["a gun slides across a dinner table", "the lead is told: you know too much"],
+        "twist_patterns": ["the informant is the don's own child", "the lead was the target of the hit all along"],
+        "cliffhanger_patterns": ["lights go out and a single gunshot", "the don says: choose who dies"],
+    },
+    "family_inheritance": {
+        "name": "Family and inheritance",
+        "premise": "A reading of a will or family gathering explodes old resentments and secrets.",
+        "engine": "ensemble gossip, shifting alliances, class conflict",
+        "hook_patterns": ["the will names the least expected heir", "a lookalike child appears at the funeral"],
+        "twist_patterns": ["the will has a hidden second page", "the heir was swapped at birth"],
+        "cliffhanger_patterns": ["a DNA result is read aloud and cut", "the lawyer says: there is one more beneficiary, standing in this room"],
+    },
+}
+
+STRUCTURE = {
+    "hook_window_s": 3,
+    "beats": [
+        ("hook", 0.00, 0.08),
+        ("setup", 0.08, 0.25),
+        ("escalation", 0.25, 0.60),
+        ("twist", 0.60, 0.85),
+        ("cliffhanger", 0.85, 1.00),
+    ],
+    "max_words_per_second": 2.6,
+    "min_shot_s": 2.0,
+    "max_shot_s": 8.0,
+    "max_main_characters": 4,
+}
+
+PRINCIPLES = [
+    "Open on conflict or a visual question inside the first 3 seconds. No scene setting, no greetings.",
+    "One clear emotional target per episode: the audience should want to see someone punished or rescued.",
+    "Every shot changes something: new information, a power shift, or an escalation.",
+    "Dialogue is short, blunt and quotable. Max 14 words per line. Subtext through reaction shots.",
+    "Include one reversal at about 60 to 85 percent of the runtime that flips who holds power.",
+    "End on an unresolved reveal or threat, cut mid-moment, with a specific open question.",
+    "Use close-ups on faces for emotion and a held beat before each reveal.",
+    "Make the villain easy to hate and the lead easy to root for within 10 seconds.",
+    "Plant one detail early (object, line, name) that pays off at the twist.",
+]

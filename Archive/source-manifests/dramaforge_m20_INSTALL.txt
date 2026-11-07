@@ -1,0 +1,42 @@
+DRAMAFORGE m20 CHECKPOINT
+
+This is not a finished episode. No GPU inference has passed yet.
+
+Download these five normal ZIP files and extract ALL FIVE into the same
+empty folder. Each ZIP begins at dramaforge/ and can be extracted normally.
+There is no binary concatenation step. Core alone has the pipeline code;
+the other four packages supply the vendored repository source.
+
+Core:
+https://drive.google.com/file/d/1fDna8_KtmmMdeGok_L1FVJXQi2ZPMLV8/view?usp=drivesdk&account=private
+MultiTalk:
+https://drive.google.com/file/d/1QTo49ft4UV_AALLto6_kIlHjtf2unmfN/view?usp=drivesdk&account=private
+InfiniteTalk:
+https://drive.google.com/file/d/1yY3PGjYKmjJYW48ojBR5XkcpIRaSuJhq/view?usp=drivesdk&account=private
+VACE:
+https://drive.google.com/file/d/1gGqDVoinNhOnP_eeohR_6lRpiBoKGc5X/view?usp=drivesdk&account=private
+PuLID:
+https://drive.google.com/file/d/1oPTfhweuoNX-OPFkUJ2P985E8t1zLSqe/view?usp=drivesdk&account=private
+
+Local verification: 461 tests passed, plus 30 subtests. Code/contract tests
+are not successful model inference. Model weights are not included.
+
+Read dramaforge/docs/releases/m20_status.md and
+third_party/VENDORED.md before any GPU setup or model use.
+PuLID's actual bundled pipeline is SDXL, not FLUX. InsightFace face-model
+non-commercial conditions apply. Existing model-specific requirements may
+conflict; prepare separate model environments rather than one shared install.
+No paid generation until a total spending cap is approved.
+
+Script selected: out/script_v9/e01_script_v9.json, The Debt of Champions.
+This is existing project material. Franchise commercial rights are not cleared.
+
+All five ZIPs were downloaded back from Drive and SHA256 checked against
+the originals. Combined extraction verified 669 files with zero mismatches.
+
+SHA256
+fc9473e33124796bafaef2bbef97ed70839505ee917e0e7f298821638d02583e  dramaforge_m20_multitalk.zip
+5f964c1a25ccbbf69b85896eb24bc000ce65386b36d851847e2b383ec094ee56  dramaforge_m20_core.zip
+87f33ceb2faf6213330e336b7af8990c2358d5b89bca298e0f70bddca03bf0ea  dramaforge_m20_infinitetalk.zip
+255eb1bdd5f4df778333566f3c0115b35f1a2b111751fe0f2b14d320f19f9b59  dramaforge_m20_pulid.zip
+2b291d34cb65bb031c5d127e1a857dcf4c432c98c9459a0e72b5cd4ebd3c4809  dramaforge_m20_vace.zip

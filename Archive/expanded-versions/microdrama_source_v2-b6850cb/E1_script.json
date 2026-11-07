@@ -1,0 +1,167 @@
+{
+  "title": "The Substitute",
+  "logline": "A disgraced idol trainee hides as a substitute teacher and a student recognises her voice.",
+  "cliffhanger": "Jun-ho knows her old stage name Luna. What does he want, and what is his secret?",
+  "next_episode_teaser": "Pop Quiz: Mina fakes a chemistry lesson while Jun-ho blackmails her gently.",
+  "shots": [
+    {
+      "idx": 1,
+      "start_s": 0,
+      "dur_s": 5,
+      "beat": "hook",
+      "visual": "Close on a school corridor at dawn, a young woman in a beige cardigan and a teacher lanyard freezes as a faint singing voice leaks from a student's earphone, her own voice from an old audition recording",
+      "camera": "Tight close-up, slow push-in",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Mina",
+      "dialogue": "That is my voice. Why is it playing here?",
+      "emotion": "shock",
+      "sfx_music": "muffled audition clip, single piano note"
+    },
+    {
+      "idx": 2,
+      "start_s": 5,
+      "dur_s": 6,
+      "beat": "setup",
+      "visual": "Mina turns toward a tall student in a school blazer leaning on a locker, one earphone in, calmly watching her as other students stream past in soft morning light",
+      "camera": "Medium two-shot, eye level",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Jun-ho",
+      "dialogue": "Substitute teacher? You are early, Ms. Park.",
+      "emotion": "dry",
+      "sfx_music": "light school ambience"
+    },
+    {
+      "idx": 3,
+      "start_s": 11,
+      "dur_s": 6,
+      "beat": "setup",
+      "visual": "Mina in the teachers' lounge hides behind a coffee cup while a colleague points at a class list, the name Jun-ho Seo, class president, circled in red",
+      "camera": "Over-the-shoulder, handheld",
+      "characters": [
+        "Mina"
+      ],
+      "speaker": "Mina",
+      "dialogue": "Quiet class, right? Please say quiet.",
+      "emotion": "panicked comedy",
+      "sfx_music": "quirky pizzicato"
+    },
+    {
+      "idx": 4,
+      "start_s": 17,
+      "dur_s": 6,
+      "beat": "escalation",
+      "visual": "Mina tries to sneak out the back door of the lounge but runs into Ari Cho carrying a tray of banana milk, who gasps and blocks the way",
+      "camera": "Medium shot, quick pan",
+      "characters": [
+        "Mina",
+        "Ari"
+      ],
+      "speaker": "Ari",
+      "dialogue": "You took a teaching job at THAT school? Are you insane?",
+      "emotion": "comic alarm",
+      "sfx_music": "comic sting"
+    },
+    {
+      "idx": 5,
+      "start_s": 23,
+      "dur_s": 6,
+      "beat": "escalation",
+      "visual": "Mina drags Ari into a narrow supply closet, whispering urgently, the door cracked open so a stripe of light falls across her worried face",
+      "camera": "Close two-shot, shallow depth of field",
+      "characters": [
+        "Mina",
+        "Ari"
+      ],
+      "speaker": "Mina",
+      "dialogue": "Nobody knows who I was. Keep it that way.",
+      "emotion": "urgent",
+      "sfx_music": "low tension bed begins"
+    },
+    {
+      "idx": 6,
+      "start_s": 29,
+      "dur_s": 6,
+      "beat": "escalation",
+      "visual": "Mina stands before a classroom of thirty students, writing her name on a whiteboard with a trembling marker, Jun-ho in the back row watching with one earphone in",
+      "camera": "Wide classroom shot, then slow push to Jun-ho",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Mina",
+      "dialogue": "Hello. I am Ms. Park. I teach chemistry. Sort of.",
+      "emotion": "nervous",
+      "sfx_music": "chalk squeak, class murmur"
+    },
+    {
+      "idx": 7,
+      "start_s": 35,
+      "dur_s": 6,
+      "beat": "twist",
+      "visual": "Jun-ho raises his hand and calmly asks whether she can sing a note for the class, holding up his phone with her old stage-name video paused on screen",
+      "camera": "Close-up on phone screen, rack focus to Mina's face",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Jun-ho",
+      "dialogue": "Ma'am, can you sing me an A? Like in this video?",
+      "emotion": "knowing",
+      "sfx_music": "music drops out"
+    },
+    {
+      "idx": 8,
+      "start_s": 41,
+      "dur_s": 6,
+      "beat": "twist",
+      "visual": "Mina forces a laugh, the students whispering and filming, while Ari watches through the classroom door window, hands over her mouth",
+      "camera": "Handheld medium, quick cuts",
+      "characters": [
+        "Mina",
+        "Ari"
+      ],
+      "speaker": "Mina",
+      "dialogue": "That is not me. That is, um, my cousin.",
+      "emotion": "flustered",
+      "sfx_music": "whispers swell"
+    },
+    {
+      "idx": 9,
+      "start_s": 47,
+      "dur_s": 7,
+      "beat": "cliffhanger",
+      "visual": "After class Jun-ho stays behind, the room empty, rain on the windows, and he sets her old audition tape down on her desk, Mina frozen beside the whiteboard",
+      "camera": "Slow push-in on desk, two-shot",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Jun-ho",
+      "dialogue": "Your secret is safe with me. Mine is not.",
+      "emotion": "calm",
+      "sfx_music": "soft piano motif"
+    },
+    {
+      "idx": 10,
+      "start_s": 54,
+      "dur_s": 6,
+      "beat": "cliffhanger",
+      "visual": "Jun-ho walks to the door, turns with a small knowing smile and says her old stage name quietly, while Mina stares at him in the grey rain light",
+      "camera": "Medium close-up on Jun-ho, cut to Mina's frozen face",
+      "characters": [
+        "Mina",
+        "Jun-ho"
+      ],
+      "speaker": "Jun-ho",
+      "dialogue": "See you tomorrow, Luna.",
+      "emotion": "knowing",
+      "sfx_music": "heartbeat, cut to silence"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[whispers] Harry, are you hurt? You're holding your breath. I need you to tell me if it caught you."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] It didn't. I thought it had for a second. Listen to the orchestra. There are two beats before each one lands."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] You heard that while it was coming at your head? I heard the ice hit. I didn't hear anything before it."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[frustrated] I wasn't listening the first time either. But it's the same phrase. If I'm right, we can move before it chooses where we're standing."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[quietly] And if you're wrong, we're moving into an arrow instead of away from one. Tell me exactly what you want me to do."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[frightened] Come across me on the second beat. Not away from me, across. I'll turn us. I know it looks too narrow, but I think there's room."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[angry] I thought we'd left it too late. For a moment I couldn't tell if you'd moved or if I'd pulled you down."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[voice trembling] You didn't pull me down. I nearly tripped over my own foot. Please don't tell me you thought I had that under control."
+    }
+  ],
+  "settings": {
+    "stability": 0.2
+  },
+  "seed": 7204
+}

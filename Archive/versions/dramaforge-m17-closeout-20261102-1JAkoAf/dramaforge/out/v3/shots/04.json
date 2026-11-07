@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "seconds": 17,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "The flute finds the cold marble without a sound, and I refuse to watch whether it rolls. My fingers linger on the stem longer than necessary, tracing the gold filigree like a promise I cannot keep.",
+   "emotion": "quiet defiance masking tremor",
+   "expression": "eyes fixed on the instrument, jaw tight, thumb brushing metal"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "You set it down instead of throwing it, which means you still believe the night can be salvaged. That restraint is the only thing separating us from the history we both inherited.",
+   "emotion": "measured recognition",
+   "expression": "head tilted slightly, gaze tracking her hand, posture relaxed but alert"
+  }
+ ]
+}

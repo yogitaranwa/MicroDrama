@@ -1,0 +1,2659 @@
+{
+  "added_archive_snapshots": 42,
+  "excluded_new_source_files": [
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/templates.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b8c9dc5a66b0a14af18b162544de03886d351e221e4b925888dd5521fa06515e"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/storyteller.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1b4c5274b81c7907388eb0dd95a8885697bbb67260188f12d36efda73b844eb6"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/validate.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "011414678a978ec0691fa67bf05a8336c0d0b0eef4b3af8454766cdd3f2df3fb"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/backend.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b9c4de5d22fbfa91ac34470915d9dc688277ca284e2a37bf9ea6cacafa1302b2"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/pipeline.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "835a8ce2e3dbeea57d9ccc85172c9fa0794a1bb51b6bab67a5a0c79bf496b621"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/schema.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d4442069c4e75d9053012fb4cdaa675566e5eee7433b7749198f84a4a32bf0ba"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/governor.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f53e26835ad779ce6717276b7562b44a2651abcff8aef5d9f55dd10f75a1f7a2"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/llm.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9d937effe806f2c680abebf9cf894af633f4ae887dd4cd44d58cddc968f37ce9"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/__init__.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "79809b4dcc34ac19b55a1db3d71baf18b6e70ab74f901f8c2211e2a4e98a5a57"
+    },
+    {
+      "version": "microdrama_source_v2.tgz",
+      "path": "Archive/expanded-versions/microdrama_source_v2-b6850cb/microdrama/__pycache__/config.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6db4e07fecadbbf6b540d858bfb551615a0a4a1a81b4656829af52009f71aa2b"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/benchmark.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fd00028808d89e7678481a2165d7bf12409883823b7156a8e31a8670169b0596"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/storyteller.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f6b230f69261bdb3f08fd3d956c8b8ae103ad8055772ba72890c4e028558bce"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/backend.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "26fb8086f3dc7ae3f66564c72e70cc6552c74fb1c16b8b987f4f77793f7e1d77"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/validate.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ab6b5d800f9b53dbbc7efaf34cba41c59cb8471a68620bfdcc53e345e36e8e6d"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/llm.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9e6ae4097694a5720bf0a509384fbbaaa357ba9d993ce3783da312e292fe7922"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/__init__.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3e8ac34c404fe3537301c23b6825532fc588c87edef3172d7396120b304f1021"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/templates.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "08e850cffd46fb6dd72d6dfe2dafb4a843e06eff6e87ed6dfbc250910e398789"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/pipeline.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1cfc1fd69247da1bbbc9d842afab5bb2987df393e8b3f6c0df30ed59575af43c"
+    },
+    {
+      "version": "microdrama_source.tgz",
+      "path": "Archive/expanded-versions/microdrama_source-154fb3d/microdrama/__pycache__/schema.cpython-310.pyc",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "686dfdc3d864d034b3ae392e1044b23b2c4fe086b8daffb225083dff27999c15"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-E01-production-package.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-E01-production-package-0b88248/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "238714d4bb40417de60b7791758f8a54f8cad277791845d5b585fc09e88ebbf0"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-E01-production-package.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-E01-production-package-0b88248/Harry_Draconia_E01_action_scene_v1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1a46362b3c4a39ca4a2990e2a0eb52d6fad8c4d7fda1ddc5a1a0222ff41e3c0"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "17ed56121d1e8950bfd8cd5170af55a2cea2a16020a5a137a302c423bb5a533b"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7a88b00a6c770968d4d1323fffe152f138b200fc619e025a99db5c1c81fdd1e4"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b6854733f575b4ac3084c690740a70c5b9bdcc59ff0c188fa88c540315e81584"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene04.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f9a4bbff374c76c64b3a0dd89b7ea082f259c676d568a5b825233760468aa157"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene05.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fbc729a9f5d4b46d70d6c0d6134f31f81981efce2a300bf74e4cd2e53c917d11"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene06.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "efa101e127d7da2bf7b2197919fd657ca2feb19bf13f61c8540d0ff897d77d19"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene07.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9fbbbf232ef13b78a6ce1010e6eb4ad28a348b90b994923c75072f579f0c5655"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene08.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5a43663d1ee5e47e86824b829561016e5b5e121f3c3d14f75de7d87542816a64"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene09.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "92e5f34b5d00d469699f608347e51db836ea3baff28c9272c2350a8e0a185da1"
+    },
+    {
+      "version": "E01-v6-raw-voice-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d/scene10.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4216097f394a62a65036c4eb0adcd095f5844d2a6819233a4568f848304e41dd"
+    },
+    {
+      "version": "E01-repair-music-stem.zip",
+      "path": "Archive/expanded-versions/E01-repair-music-stem-c286027/audio-stems-and-measurements/music-ducked.flac",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "20b69f137309b1e5361a4447ba4ccfb7da007c3950b9d19a036a3334871d5f44"
+    },
+    {
+      "version": "E01-repair-mix-master.zip",
+      "path": "Archive/expanded-versions/E01-repair-mix-master-e5f107d/audio-stems-and-measurements/audio-review-candidate.flac",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "245196125f3646cd6f5b21737bf25e27f2431e7ff0cca89b9b94e273e063631c"
+    },
+    {
+      "version": "E01-repair-dialogue-stem.zip",
+      "path": "Archive/expanded-versions/E01-repair-dialogue-stem-e16f80c/audio-stems-and-measurements/dialogue-timed.flac",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3acd45771a2960881675a3972c41b64dd9b8086310376f7c1f33ccb31e25cb14"
+    },
+    {
+      "version": "E01-repair-code-evidence.zip",
+      "path": "Archive/expanded-versions/E01-repair-code-evidence-912dc10/E01-audio-remix-REVIEW-CANDIDATE.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7771457ba766c33e2505dcfc6fe6fe35b4882415845c25ea9e0df31c91030108"
+    },
+    {
+      "version": "E01-repair-code-evidence.zip",
+      "path": "Archive/expanded-versions/E01-repair-code-evidence-912dc10/E01-audio-repair-waveform.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2b8d8571434cffebe0efcca0bb14d25d114978111e9aeda6e52a28ae8d6e28a6"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/.pytest_cache/CACHEDIR.TAG",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/.pytest_cache/v/cache/nodeids",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "590e8ca6c704df0d14ab1866c118f118cd7a56fb07472289627b244383ad0cc1"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-dark-dance.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b759491e70a8619fe37a488bf2db8a6357d19feab13d45197428ab0fb7da06f"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-grand-waltz.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0b43cec604107d073f26d9729fc73d7f6f98a2a4471b43705b1caf2849413843"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2/microdrama-still-first-pipeline-v3/artifacts/shot07-action-peak-candidate-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f4a352f535c4e236c2bca89a09b7a8e0c8740207e1f3f68446fbc3776540ccf"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3-314958f/microdrama-still-first-pipeline-v3/artifacts/shot07-action-peak-candidate-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f4a352f535c4e236c2bca89a09b7a8e0c8740207e1f3f68446fbc3776540ccf"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3-314958f/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3-314958f/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-dark-dance.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b759491e70a8619fe37a488bf2db8a6357d19feab13d45197428ab0fb7da06f"
+    },
+    {
+      "version": "microdrama-still-first-pipeline-v3.zip",
+      "path": "Archive/expanded-versions/microdrama-still-first-pipeline-v3-314958f/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-grand-waltz.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0b43cec604107d073f26d9729fc73d7f6f98a2a4471b43705b1caf2849413843"
+    },
+    {
+      "version": "e01-v43-production-720p-part2.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part2-f767519/shot06-ward-mark-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "23c4666b18a2e33d344ec2e6e22268133948b184549b6ac5dde26acce45600a8"
+    },
+    {
+      "version": "e01-v43-production-720p-part2.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part2-f767519/shot08-armor-trolley-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c1f029d612fed53f0ad5f349ab4c975d963854f3deb9110f05c304a25f875569"
+    },
+    {
+      "version": "e01-v43-production-720p-part2.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part2-f767519/shot09-trolley-mask-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ac796fc75ba393e5d2150d1ee13e6c096b334ae27601d2d2f621c6b7d73e5c7f"
+    },
+    {
+      "version": "e01-v43-production-720p-part1.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part1-4192f1b/shot02-draconia-pull-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f604361701515dd623fe78fb8b82c35105a6506cab28b29a68e9f293031dd486"
+    },
+    {
+      "version": "e01-v43-production-720p-part1.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part1-4192f1b/shot05-arrow-volley-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "46bb581ee8cd696e136ad49414e52f452d56c85a897d58d1d354fcd0fe547264"
+    },
+    {
+      "version": "e01-v43-production-720p-part1.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part1-4192f1b/shot07-strings-wand-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9211c65cccc03dcaba3add76318c534d63cf2b50a5482f48121e291d4c322677"
+    },
+    {
+      "version": "e01-v43-production-720p-part3.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8/shot03-floor-warning-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "69c494df7d1b262e2cfabea55627c230b60ed87c21fd23d0dc7d38bc3b069b60"
+    },
+    {
+      "version": "e01-v43-production-720p-part3.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8/shot10-floor-grid-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ed89b9eea4c5a2b23fa9060f073a352ae43b2d08fd809be0eb327018c1113ab9"
+    },
+    {
+      "version": "e01-v43-production-720p-part3.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8/shot11b-marks-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4ee92eddd54b1d7d2fab8723a01aa4e058f596aa4536272ff4cc837f5665e924"
+    },
+    {
+      "version": "e01-v43-production-720p-part3.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8/shot12a-marks-close-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "574335d5d001ba82e13b2aed3d7e4f8ab834a9b15ba186f1c88d5e3dccd5f1d3"
+    },
+    {
+      "version": "e01-v43-production-720p-part3.zip",
+      "path": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8/shot12b-draconia-reaction-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a1d09e26f44c4b7a9dfe3920728f3f38d86673b53e4515e4741b13accee0f598"
+    },
+    {
+      "version": "e01-v43-local-motion-fixes.zip",
+      "path": "Archive/expanded-versions/e01-v43-local-motion-fixes-e94e128/e01-v43-local-motion-fixes/shot03-frozen-guest-local-9s.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e2a6bf4bb4467a47aae8339dd6d47a2f66e519041abb05caa261b5e2576f9e13"
+    },
+    {
+      "version": "e01-v43-local-motion-fixes.zip",
+      "path": "Archive/expanded-versions/e01-v43-local-motion-fixes-e94e128/e01-v43-local-motion-fixes/shot03-local-dense.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4d53e5ffcbbb827c7c8952a2217786db70abec9c2636e8d79375cfccf112a8b7"
+    },
+    {
+      "version": "e01-v43-local-motion-fixes.zip",
+      "path": "Archive/expanded-versions/e01-v43-local-motion-fixes-e94e128/e01-v43-local-motion-fixes/shot05-local-dense.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9fde1370170b93b166f8ebc981f60acfd60fdd58927a12df7a44a5ecbabff2ba"
+    },
+    {
+      "version": "e01-v43-local-motion-fixes.zip",
+      "path": "Archive/expanded-versions/e01-v43-local-motion-fixes-e94e128/e01-v43-local-motion-fixes/shot05-arrow-volley-local-6s.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4cef63bda5886b2df8d91026b2c71e97be1552d41b69879dab9c1f01dba295a9"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot05-arrow-volley-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a925f250bf80e8b523488bdcfea072307cc6db4de8e740ee7b1e90630073fc30"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot12a-marks-close-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9effc84e4a06ba7e3505f3fbf5c08210e94a0bedeee7c8f94ae1956eedbb3305"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot10-floor-grid-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "679f0fe95118dac635ebf0b29a82204fd788e1507af7871837ba049f1db18511"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot05-arrow-volley-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "45b4d8b44d4f0f9094fca4af2883ce12ae7f544bbd11c4a87793f9bf0da87834"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot11b-marks-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "836d311be048d08c88499e16f5bd333568d6945a24ff3a821335cf4828476e9e"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot08-armor-trolley-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "68c76d8469c56229d992db9b2ead0f30f511717bba19593090b5d9e6613b7edb"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/remaining-first-five-combined.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6cd40fe9b290a2a3604dfc65e4c15ac30619daea0f63730a74556b499b8459ad"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot12b-draconia-reaction-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4260e3114b70533c608b1888b6c07294702fa7590a929cc7b4134151cb4a55b3"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/remaining-second-four-combined.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "035677ce8fb3bc1ffa397ec8200ed79e763e329e3fbd39c8c790ed3042e3819f"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot03-floor-warning-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "749eab482197950ab842c5efd11c09c59961734c7963a00a2a2299709ef7614f"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot10-floor-grid-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7d5560583034e0b703fe8f03aad3cbfb2b2e2bbe2cff3bb372a983e3a83e1f89"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot08-armor-trolley-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d81efd0191afd2b251c649d3120258e1381a62e9032c119e6905a784fb395c2d"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot11b-marks-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ecf09ee2eaf282a2c3065009aee53a01180b028b7f55e2dd64e9c3db3d32a7a7"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot06-ward-mark-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3efe17774a957a4a4acc71e48996be2f9ebf1c7c8ca63c3a958915dbfbfb1211"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot12b-draconia-reaction-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1b0fba2fa9d3d09fdd1d4ff5d86b15d29371b409d3e74c51bbaa4e60e20b8d32"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot02-draconia-pull-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bff74775d6989520a3de9e2fa18e5f2f55e0bcfda15a1f4ba917a5cca1d83ace"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot09-trolley-mask-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "395bfb215e7318ebb04c01481b8e4186b7456d95764a05f94e055d82346bcc4a"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot09-trolley-mask-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b7cb087cbf3a214fd4752d1d617edf7a39aa4328cb31a89ddbd56ee43f56eece"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot12a-marks-close-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "93826867cfa141be6c0120382ef633a4e73bada36d192acb2e87c40326272b6e"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot06-ward-mark-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f5bc358eaef1456b2f9277a39111bf176a7559fb270c5443a4fb44e4c6d83f23"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot03-floor-warning-labeled.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f2a7b84137b800941a7ffdac343dc2529e42f7ae21e3c87e75c4864d7c6cae7a"
+    },
+    {
+      "version": "E01-v43-remaining-motion-test-contacts.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4/shot02-draconia-pull-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9464bcae706c362a2812a4b77d95b43d35d54d274b53085d48c9714f1be1697e"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot10-floor-grid-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "90ae03baac39825c7ed85713d9e92760216676d9282e3907983b27ad3a88729c"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot02-draconia-pull-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ea9678c94aae5f541c1056b8ee0a86a74235c112d7d59dac53400f9607cc8f9d"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot06-ward-mark-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bb730bf6178bbb7153f44cc498082d8bd2cbbf858744435e6c2f37b88cf63d55"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot05-arrow-volley-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7369172a02e2d8c91635befa9d1975a132167185f23668d4d3b5d7dd2bfe4e23"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot12a-marks-close-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5894bcbbcac901243872deaf02e18aebade878d8d4cc5f237bed68e81444429d"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot03-floor-warning-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4a98302e54a43b9079041b0e5d57d826b553d3bd457d9040a85f06dafc8e7ea7"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot09-trolley-mask-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fb8b637249321ea4e98e4515fa3c0a140ded6f76ca1fe4c93c0219e7fb299e1c"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot11b-marks-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d7a07c16c05b6a23d4a908ffa3e626b09ef334c65c8312f3b40cf12b93bdab8a"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot12b-draconia-reaction-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b62640db07e5fc2c5ec295edf39e44cec1ae9178dad49cf8555316305587a30c"
+    },
+    {
+      "version": "E01-v43-remaining-motion-tests-480p.zip",
+      "path": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061/shot08-armor-trolley-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bc2395779053eff76ac38a41993305c9ebd035e46bd6d89424485943b43ccd4e"
+    },
+    {
+      "version": "E01-v43-usable-local-cuts.zip",
+      "path": "Archive/expanded-versions/E01-v43-usable-local-cuts-6e807bc/shot01-entry-usable-cut-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "48a0d53d68682b7e7f4925adfe81d91fe3eb39fcfeb57fd6ecfe93e92117b216"
+    },
+    {
+      "version": "E01-v43-usable-local-cuts.zip",
+      "path": "Archive/expanded-versions/E01-v43-usable-local-cuts-6e807bc/shot11-action-usable-cut-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "21dffa390569bebaf5e7fc2f7d4b78bcbccca3c660523fd84ca266524fd7e52f"
+    },
+    {
+      "version": "E01-v43-usable-local-cuts.zip",
+      "path": "Archive/expanded-versions/E01-v43-usable-local-cuts-6e807bc/shot11-action-usable-cut-4s.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8e4646d49e69cdfca8c30c6d7c80178213d31c476f9744c4c4cf9e507fa42bcf"
+    },
+    {
+      "version": "E01-v43-usable-local-cuts.zip",
+      "path": "Archive/expanded-versions/E01-v43-usable-local-cuts-6e807bc/shot01-entry-usable-cut-7s.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "db0bbacb1d7282f589242538b6cf46e4825513b3591909f1794f46066dd37180"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f08.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a37984ec10204697fe5f125f13d51d1644d32187d3fd4517857b209a193acd86"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f03.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ebddae22c036b53a755bb6fbe60d9b4a44e38096d135abc709d766c9b3206f8c"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f06.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c09e04507491ccdf375d0b47b182bf422c66d21575f0b151eabaaa0aa62bfc72"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f05.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "76ad0451a2990c691b38c539c7249fd3852c9fe76ed6c3e083f91057793298c6"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f10.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2c132a0bfec5951acbce275fa1b7bb2cdd346920eb9e6a84c43c83e6faa59506"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f02.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ec8863cf8289c9d217b8dab0fde25a3916a7dbc6a7cda6dba9394091927342c7"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f07.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bc1a6c93cd63bbffaccf1ca79ef5f25c6ce16ad0f1f488432d408051c7afa79c"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f01.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "864e78095201ace8a53c4390a1315b0f7cc2f18f16e865641e88311389a856fd"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f04.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a8c9b4a9bdc354b65f9123079692de8ce066dafb14e9f1bfbe816a867f5b119b"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-frames/f09.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1575e53a8399db0e7ebe3d8e91daf9d8376d8cbff9acd9c022f9c94168c4cf0b"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot11-dense-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9fb94032fedc2e941503d898e15871f69fe0a1485a8e13933a3ec44534d8c144"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3b4c434d28d1c2ecd48b245bbc4d329aa9850d771e4f21ccad97c3960f119566"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f16.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "689c1ad26953a24dcb65881c2ff1821691207c0f2a07a61e853d2bb5a952ebd1"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f14.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d582cf36cb905f3d180718cab9189a64d1c1b1a4a927574ed00c3164506d929c"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f12.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2f0f9a5984bd0d68f394f59f98923db913025b35cb8c8d6f184f554fe8f327b4"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f08.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f29a85396becbde26be9dc7bec483a9f50fcd366e3491fba4c8b35ad0652188"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f13.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a47884471a2bd8d796fff28a1ba5f6b7e82fbb0e519f03b1ec4cb8bf7e090ca"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f03.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "be78be73fcedf4b7c627cb628e83ba160f330b0de7f453bf39c7d2fb94a19e3a"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f06.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "25791131d49bf23ff721843feca52504265ed83325f3ac9bad2d1dffb3b30981"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f05.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c1d9040d01e11f5196f469f3ebe7bb449223c1981e6feca0ef2dd790bcf6ed05"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f10.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7a1acfea88a7af8fe762aa024619815304789e43311f8a4c1014092df5775036"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f02.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "044c4ebf0a991a8aa65eeb599f89b4200b54bee5a4fa211c2f443e8081e2487f"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f11.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "68d5d3523a50cc6e921e5f28f2a7a7cab7eb75e1e12e2aa0425ba0c5a6022476"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f15.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "980669c74421a13708b05761bb38a21b9b7f56a7e093821b151d82454c364424"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f07.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1bac3d8187ac942581e085f58f18847e3d8d6bca5595caec64937187626e803d"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f01.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "53dc77b9c85ceac4f20118899fdb06fd67b30a006206ce2cfe1217525f2466d9"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f04.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "61c9c4cbaf2c5a7b621657183a39b43d3ca6b149481ae90892c06e80bf30583f"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot01-dense-frames/f09.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8efce2f0f949347d3c34e84bc70f5b0fea8e7b2fb953f84b9e57b9c20c4f0629"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/shot11-action-production-720p-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "65f1e941714469a217a6b1e42826f74779851429f9bbd5480db7a33981e68518"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/shot01-entry-production-720p-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5977e9623044ea5183ed8559fb3a02242031369d573b3e099c8b76cac8f31615"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f12.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e81e506fc6e68c5440962d97ffcb536392400fd6faaf7bcfd7577823dc101347"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f08.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "44eec05eba857db5b17c9d5ee741549ee2ef6cdaea241ebac0d0d937db9545da"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f03.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "daa480339e79a3f9ded664c97ded44c25e2438d61e6332f53b6b72a746c10f15"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f06.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "031892d88a32d9ae4d8962718be77dd5461d1a3c9b2e8b856889b2c14a5daf24"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f05.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2d1b966ad137cacd3de722fc4d9e94d826d2b3981aaf061ecbd44a862b95b38f"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f10.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "de63ea7737243ec6040a2ed506e85ff8202d21f590db4fc66d0ba19d0a580942"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f02.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4bbf8fba828636ea2fd41219e27da7371b7ac8200e6ad1adf253bc5adc1e690c"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f11.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4494be2c554b4209a62737d5f077e9aa411c8778225cea4c6b67e5ee17e694ca"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f07.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "634dee7070a8ef61a1f9b7bf04ed78fc7b3b939305da193ee8c367ce64f08b64"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f01.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e01f384c3576df628c27a1fd5dea072831b5e98fbb639534e170808df31f4bdd"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f04.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b51042eb5e3e07e74040cb755f6216ff1e1ca86a4b475580d02d344a8ce7716e"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-frames/f09.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "543c2a2839642f54b09f2cae56691a499779349ec6c92fdfc13b51046d09e93f"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/prod-shot04-dense-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5210d02c108892051da6811882535136bc794b33fa17abc70d306b733e0bfe5a"
+    },
+    {
+      "version": "E01-v43-production-cleared-720p.zip",
+      "path": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda/shot04-reflection-production-720p-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3301294a50f5ad385421d807706e3eb2e1d2df91a4d016d648615da112fc192a"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot02-draconia-pull.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ce6b6d56376dec85e2b18a4fd26d3bd57caa7df3a4d746151be447a0ad02a88b"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot07-strings-wand.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dafde0594d7b1b47775550f4f46141325e9e01dc4a3233f72cd37ec7f14dbe18"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot10-floor-grid-red-table.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c7ee81076867e26b7768062b08bec585be572e6cee1dcdc5427a7e7f1066d8a0"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot04-masked-window-reflection.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "49ab76462f08b8571d584cea9f70a3eec22161679aa2dda732bbbdf322c21cf4"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot08-armor-trolley-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "72fd5dd6092cb062d3808ea2240010d9d28f311cf8587d86408182aae146e014"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot03-floor-warning-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7502c7fea8456fd066c605f7017e25a9ad9bc6351cf99dce343d3a192ea3aea4"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot12a-harry-marks-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e6c1295c0bced0f664fcccb780cbd7e40d0a3528f8eacb042132e762474fab9a"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot11b-masked-marks.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "857de2af9de03955b61e7d4e980141a94b6c9b76c4dde9d69a2d379821783e4a"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot05-arrow-volley-timing.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b39c1327c24b3594c2e46346ad86c084d015f110d14ab03d906a27e0c32ac999"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot01-entry-push-end.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "79fff78037f3768e85a4249e6e408b13e1e5d2155ca7c96406d542f3c7ac56ed"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot09-trolley-mask.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c3e6e508e7bf6a881e5948f6c1f296ec3df2053073447092bb1d46bd6b899ecc"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot12b-draconia-reaction.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1aabc7d69740fb3445059df8a39fc2faf4e67b5cb7d6cd30f849eb9a7076050"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot11a-table-chandelier-action.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a35a20fa97f8aa7c183685f959346a65298931ef1dc6e2cfb799b28f0684f84d"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot01-entry-spark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "64abd4eb4918511510db88b4f7a9cb5e733379ade0c65cae7f6a95c51d41fffb"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence-updated.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0/shot06-ward-mark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "be73368d5cfb9a9b5001242e62f3178491e30ebfe7884ab8cf74a1e7263375c7"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot01-entry-motion-01-frames/f3.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a0004e7b4e1704484a1c8f0c0f7d7b9ca4c19d2bbd68adc773b7a630f6655c21"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot01-entry-motion-01-frames/f1.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b8e0d4673ae89999ce1d702124a081e0f822f64694d8e05740cfa5243e4310b9"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot01-entry-motion-01-frames/f2.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "86e34fcea69aec4f1d81e02b18deabfa58a155f4919c4145faabc99f1d371152"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot11-table-chandelier-action-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "36004d73e60b48413a33827d0f9fb769dfac1c4c82a5afd5e37c75f751dfcd8d"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot04-reflection-motion-01-frames/f3.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7ea78cc70e7566281c99ef9c16288f178ef3b3aa46cddf80316618eaf455b53a"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot04-reflection-motion-01-frames/f1.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "fd52664ba8079bf0374fb151732dc5591a34cd02e090c8351bd8383238024221"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot04-reflection-motion-01-frames/f2.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3a7296a543158deac9a0277a8b5b0ee77cfd9953d9d4e823374c18821470d658"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot07-strings-wand-motion-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9c5d491094e5a640397a6e418af4de2b0cd6668cf432b54f41a35067ebf8d31e"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot01-entry-motion-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "55444af0a2a2989fd91389866d6c83f1202f0e41680c45871e555cb1647b2cc1"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot07-strings-wand-motion-01-frames/f3.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f16edbb8234971a7fe979b001c1dc1ec4546b1d773da734db7d374b1d6596efc"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot07-strings-wand-motion-01-frames/f1.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d695f506119c35365b6405477ab6c08714327bba9c235f0a2d59fd0270f7e448"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot07-strings-wand-motion-01-frames/f2.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dd66456a43eb17b776f89248492489afd4cd54db0e78fdd416fb67b48602b3bb"
+    },
+    {
+      "version": "E01-v43-bounded-motion-tests.zip",
+      "path": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30/shot04-reflection-motion-01.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d9ce7bd778a461c5b162cc716a50920fd7281bda0db0052dc8f2a19282285b84"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot02-draconia-pull.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ce6b6d56376dec85e2b18a4fd26d3bd57caa7df3a4d746151be447a0ad02a88b"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot07-strings-wand.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dafde0594d7b1b47775550f4f46141325e9e01dc4a3233f72cd37ec7f14dbe18"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot10-floor-grid-red-table.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c7ee81076867e26b7768062b08bec585be572e6cee1dcdc5427a7e7f1066d8a0"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot04-masked-window-reflection.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "49ab76462f08b8571d584cea9f70a3eec22161679aa2dda732bbbdf322c21cf4"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot08-armor-trolley-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b830beac6ed14e0ab40a237745bb9ef768b2e0100383e7d26fa01bc813ccc5d2"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot03-floor-warning-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7502c7fea8456fd066c605f7017e25a9ad9bc6351cf99dce343d3a192ea3aea4"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot12a-harry-marks-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e6c1295c0bced0f664fcccb780cbd7e40d0a3528f8eacb042132e762474fab9a"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot11b-masked-marks.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "857de2af9de03955b61e7d4e980141a94b6c9b76c4dde9d69a2d379821783e4a"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot05-arrow-volley-timing.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b39c1327c24b3594c2e46346ad86c084d015f110d14ab03d906a27e0c32ac999"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot09-trolley-mask.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c3e6e508e7bf6a881e5948f6c1f296ec3df2053073447092bb1d46bd6b899ecc"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot12b-draconia-reaction.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1aabc7d69740fb3445059df8a39fc2faf4e67b5cb7d6cd30f849eb9a7076050"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot11a-table-chandelier-action.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "56ced6e9d84b6761a3f8692936df866a7247d3c6dfb5fc48504c26e1f3a419ef"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot01-entry-spark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "64abd4eb4918511510db88b4f7a9cb5e733379ade0c65cae7f6a95c51d41fffb"
+    },
+    {
+      "version": "E01-v43-timed-reconciled-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4/shot06-ward-mark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "be73368d5cfb9a9b5001242e62f3178491e30ebfe7884ab8cf74a1e7263375c7"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot02-draconia-pull.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ce6b6d56376dec85e2b18a4fd26d3bd57caa7df3a4d746151be447a0ad02a88b"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot07-strings-wand.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dafde0594d7b1b47775550f4f46141325e9e01dc4a3233f72cd37ec7f14dbe18"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot10-floor-grid-red-table.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c7ee81076867e26b7768062b08bec585be572e6cee1dcdc5427a7e7f1066d8a0"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot04-masked-window-reflection.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "49ab76462f08b8571d584cea9f70a3eec22161679aa2dda732bbbdf322c21cf4"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot11-masked-marks.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "857de2af9de03955b61e7d4e980141a94b6c9b76c4dde9d69a2d379821783e4a"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot08-armor-trolley-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b20326f05c14c9a4e1e4752fcb717e96c16c4e0dd19893919e65e331c5a239f9"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot03-floor-warning-insert.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7502c7fea8456fd066c605f7017e25a9ad9bc6351cf99dce343d3a192ea3aea4"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot12a-harry-marks-close.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e6c1295c0bced0f664fcccb780cbd7e40d0a3528f8eacb042132e762474fab9a"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot05-arrow-volley-timing.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b39c1327c24b3594c2e46346ad86c084d015f110d14ab03d906a27e0c32ac999"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot09-trolley-mask.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c3e6e508e7bf6a881e5948f6c1f296ec3df2053073447092bb1d46bd6b899ecc"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot12b-draconia-reaction.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1aabc7d69740fb3445059df8a39fc2faf4e67b5cb7d6cd30f849eb9a7076050"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot01-entry-spark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "64abd4eb4918511510db88b4f7a9cb5e733379ade0c65cae7f6a95c51d41fffb"
+    },
+    {
+      "version": "E01-v42-reconciled-still-sequence.zip",
+      "path": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef/shot06-ward-mark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "be73368d5cfb9a9b5001242e62f3178491e30ebfe7884ab8cf74a1e7263375c7"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot02-draconia-pull.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "573b77c201bc906ce7516ab2b9e3a4da58e9317b17f5039659f2ef6bcbd24d88"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot07-strings-wand.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c8fa5b4257c6c5ca1c5779dd0fc4e734fe4b517538e2c178e9088f650aa34d18"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot10-floor-grid-red-table.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f521b16ee9c6281e419844581b2359789d0e87a37d38f7a516f85606089a11ba"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot12a-harry-marks.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "172597137fb3d78c1f0f493dd2ed36ab6c8f1e140e1e0324112abd046d620a6e"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot11-masked-advance.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "947347b4de40b2061aa5a0cc9d959767aa7533ccfa9259a277c9e96b2da5e9ad"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot04-masked-reflection.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1a129e8abaea8fca4a88d16e9b577df3c2667ac9816991d8a3ac1bb3dd4c6e68"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot08-armor-trolley.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6602740425819b54f785b052f492e8aaa17d233c3491b358f41af904382f0427"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot09-trolley-mask.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b88ca6de2554d6c58a0e8828588a6b4811ffc1c94d038bb7addabdce924d0eb0"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot05-arrow-volley-reference.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot12b-draconia-reaction.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot01-entry-spark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "96295c37d005679a44ae7f3b92cdd326a40df00bd86b6d9b479ab392c29b81bd"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot06-ward-mark.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "de60a57ae2563a625d159f4d03609be9c3a3462a3e99532eebd5744cdac15f9c"
+    },
+    {
+      "version": "E01-v41-accepted-key-anchors.zip",
+      "path": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce/shot03-floor-warning.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d1303480c0db347ba2e475e2594a8c0256693e29ab5bcd5212bae841df4b7787"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26-74cfb43/Harry_Draconia_E09_voice_scene_v1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "85496914da5648e42b908f3bd9b254c7c91d07a163db48136293ef6107c5c602"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-66b8f98/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-dark-dance.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b759491e70a8619fe37a488bf2db8a6357d19feab13d45197428ab0fb7da06f"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-66b8f98/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-grand-waltz.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0b43cec604107d073f26d9729fc73d7f6f98a2a4471b43705b1caf2849413843"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-66b8f98/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-66b8f98/microdrama-still-first-pipeline-v3/artifacts/shot07-action-peak-candidate-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f4a352f535c4e236c2bca89a09b7a8e0c8740207e1f3f68446fbc3776540ccf"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/pilot-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1ccca1fa2d671ac12a1b4b008ffd14bf190cb495ac7a4b786e55423b77c452ef"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/ref2-locked.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "891954ac29cdad745d9a13ac55dec87245072a4af37177f1560cc0984cb945ff"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/pilot2.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c02609673bd5c3bae393236dc2b5dbbd66ec63ae7efd1999d0b0792b73b8cd12"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/pilot3.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0114105c36ba4e7f123947d0e82ea4ea5344818f6ee5cdc6cfc263396510f0a2"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/female-continuity-source.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f1aabc7d69740fb3445059df8a39fc2faf4e67b5cb7d6cd30f849eb9a7076050"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/pilot1.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5be73ef086db82a4b6ff470eccf888ff763db58bf8625f3e0f909a06f42566fa"
+    },
+    {
+      "version": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314/male-continuity-source.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b779d2a2e005302d48da1423020c38361d4dcb301e1dd652292c83b9fe29728"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene07.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b8cac38d10edaddfd88c430516c181ef41cb87e45d15fc08c40882e405d0c71c"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene08.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1d780618c6182fc8fc78f62c6af468793cd981b4f556e47cd98b7b20d87ad9c4"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0a681dce33a6021dbda3b2d1c1ab59d97cbd118f4e13e47449f3ffb92eed1d92"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene06.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c6f954fa0b6c9a25dee51e29236271d03bd497edc9269bea1fe6e46374d7e567"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/E01-v7-dry-voice-REVIEW.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "040e74931f21b1c49cccf6e4b1e0656b311cde0b4d55a06315d6fa49a5cad0a1"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/E03-v7-dry-voice-REVIEW.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "aa01199ec08a05e58d01ce49ba686c2a824a85d1484fc6593d87e1c3f5988134"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene04.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "44e81072c1831da1cb2cfb6abf072b54f526ab34f847991f02737b72196f33f9"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "095cb1cbae6760bd27f5c8c7fb5f80ec05608c057aeafd25f30c4b1bcd1833fc"
+    },
+    {
+      "version": "E01-E03-voice-redo-interim-sources.zip",
+      "path": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2/scene02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "eb0650606fa330e34ce4e6892d97431cb0e361e4f72a89ec59c82dd9adbbef29"
+    },
+    {
+      "version": "E01-34s-shot4-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot4-sources-cba14ee/shot4-motion.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9ea1717d93cef551b8753b7ade1d8fba09c2fdbf02039b262cab2217904182fc"
+    },
+    {
+      "version": "E01-34s-shot4-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot4-sources-cba14ee/shot4-synced.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "161f8a9aeebf62c9afd5411bb53cba6f586e8554330253bfc1f73a2fda08fa0e"
+    },
+    {
+      "version": "E01-34s-shot4-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot4-sources-cba14ee/line4.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c26d4eb0b4175514b9797bc46f595ec1ee4ec751cf9fd83549acc69a4c9a961d"
+    },
+    {
+      "version": "E01-34s-shot3-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot3-sources-8acda2a/shot3-motion.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "27596230c637db41a062a065493a89005324944746ff15f91978971e6b35db56"
+    },
+    {
+      "version": "E01-34s-shot3-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot3-sources-8acda2a/shot3-synced.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7cf033dc850b0a931f49931825f06d3f3adf89ca54fa2edc6cd155b5e159968b"
+    },
+    {
+      "version": "E01-34s-shot3-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot3-sources-8acda2a/line3.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "29a2526678ea8bb754a239812b85c2db889d4b9399a7dca5c6eaac8dd139f76a"
+    },
+    {
+      "version": "E01-34s-shot2-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot2-sources-01974cc/shot2-motion.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "da812f84a8f2eb57f7d93570a18449f5a72bda67c4bfba605dcf896a4c31e74a"
+    },
+    {
+      "version": "E01-34s-shot2-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot2-sources-01974cc/shot2-synced.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "88630d2d8c181e9fd2f5dd32d07d780509a38e6ae74f9926c72e643e68279c6e"
+    },
+    {
+      "version": "E01-34s-shot2-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot2-sources-01974cc/line2.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ba6a5dfdb0228c9704b5dc2772029e737a06d6ddfd0d593db750c07349361c8f"
+    },
+    {
+      "version": "E01-34s-shot1-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot1-sources-5463d9f/shot1-motion.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b647da83a9bca7daec756efd2b820e5024d979a658ba78175521133457c36b6c"
+    },
+    {
+      "version": "E01-34s-shot1-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot1-sources-5463d9f/shot1-synced.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b5853d5d06c5226f5e17b98281b0080c2453cbd7df1ff3dfb30596df4183cc3c"
+    },
+    {
+      "version": "E01-34s-shot1-sources.zip",
+      "path": "Archive/expanded-versions/E01-34s-shot1-sources-5463d9f/line1.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6ada5d9966b34eb576d8becfeee7d718c97775d19ad031816804ba10c6309328"
+    },
+    {
+      "version": "E01-34s-test-references-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-34s-test-references-and-receipts-aa6c5dc/motion-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c9159ad3209ff0b48a50e0a242fe6bccb1f7b6968daa531194888f0fda8e8ecc"
+    },
+    {
+      "version": "E01-34s-test-references-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-34s-test-references-and-receipts-aa6c5dc/harry-crop.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "79268bb1d79df3f9027dcbca86b93efe78dba6e2968cd848503112268bb5231d"
+    },
+    {
+      "version": "E01-34s-test-references-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-34s-test-references-and-receipts-aa6c5dc/draconia-ref.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d30b4acde85ef2f21ef52993bdb34b1e9e06dd815d5c5c54b7c2ed5dd07366ac"
+    },
+    {
+      "version": "E01-34s-test-references-and-receipts.zip",
+      "path": "Archive/expanded-versions/E01-34s-test-references-and-receipts-aa6c5dc/sync-contact.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "93d55b39bfab31e63ab7e9f8b6e8710a83bb315615083a1d0a5d3412d54398ee"
+    },
+    {
+      "version": "E01-recognition-short-test-raw-receipt.zip",
+      "path": "Archive/expanded-versions/E01-recognition-short-test-raw-receipt-42fedba/raw.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d384d4211cb6f5b972f902b4a2b7e62b6feec67c820b4284b12d8d89b302024c"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING-3c65891/microdrama-still-first-pipeline-v3/artifacts/shot07-action-peak-candidate-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f4a352f535c4e236c2bca89a09b7a8e0c8740207e1f3f68446fbc3776540ccf"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING-3c65891/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-dark-dance.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b759491e70a8619fe37a488bf2db8a6357d19feab13d45197428ab0fb7da06f"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING-3c65891/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-grand-waltz.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0b43cec604107d073f26d9729fc73d7f6f98a2a4471b43705b1caf2849413843"
+    },
+    {
+      "version": "E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING.zip",
+      "path": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING-3c65891/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l01-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l02-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l03-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l04-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l05-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l06-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a00b2257fb52cdfe3e476f3bde57e0a84c25b1a4ba5200bffdd96f3d0c6efac5"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l12-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l15-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l16-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e01-l17-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l01-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "77083b98c9efe2225e7c97bcd3392c8419089fd749cfb954fae2acb1ccc101b0"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l02-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "742b1b62a9645efd76a7aca1c98574415bbb09be052081762665ea8d3099976f"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l03-curse.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "342c858da8b4874ee8d15120b89007177693ff88a4554f53dd315f92cd1eb93c"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l04-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9c13209bd6ce4237477b4ee8be6cc40c17afb40afafc532eb8d922f323680e5a"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l05-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "99a12c2df001603cb239c7ea38a247029bba6926c636e7ded36487163eeb8eb0"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l06-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6aa38a198059964fbac5681aa4d4e9cbddcda7bc5b17daa8800dacd39995a448"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "78799891e20c829186f6d7ca7db0a0ba7c239121b223f11306bc340449e395a6"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "62e7236b187a925779a3b61077cdf37cfc2edda69d0dacd96dec9dc287091d98"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "161a2dea8f58105ac5a26d6350578101b3eaf1e58a3147304b1b6b02efcf84b0"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "14f2cadc0bc2f78bc0b5e3afd4fe5fb25732278c1777a43fed9cc3b9cdefea79"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "84d0daca5eeb8c39eeab016a7d2d54f3034731cc5902a792726d968c880bad45"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l12-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5f8fd43faff9ac024de12d00cd87e1ca0b2759a2e3693af7d104997e54b4290b"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4051b6d0fbcf76c7e6439a27fe204394f2856a588a250a49f3b850961e54061e"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b4d5789ac1bb92d52da4f067bca96fe4ff586044f9867444461aeca1a3630fbd"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e02-l15-curse.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "69a6ebb4501c22337d8d2757c861a5ff8513ada20bae3aa65b0536553df607be"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l01-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7f6990d12c552bca7d240b9963856e72ce9b81b19ab8a3ddf419e8cff5a18aae"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l02-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7b6844c20e0678fa1ebbe589e87a76a0c53c5cb837e8575c54c635a5dfa89f71"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l03-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d26218d01d6da55d7e9958f92904782b61d2a9b4dba0e21c5ba76308ce5f6b38"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l04-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "203c507c87f2441245c74de56cf845fc2da55dab34b1ec77b2f89a3b47c2fbbe"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l05-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b9788da0c50d2b002210bc19013a279e5631e5e1fa4a71b2195c66442740b6b9"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l06-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b76645b60d3380cb0acbc70fe954e7426e42e00684565c505e6aa3473cd08fd"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l07-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "21a51cb3e1152b2e8e0ad0b0463dea1f9243d99c36e81c52f7dfdb62343ce697"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l08-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7cdb290e0ebb3acd3a2818d7b4e6095aedc73a614d2c5c2dcc1fb1e74d5dcb33"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l09-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b1b03e59b2f606cc1db539c452b63acafe7f6dabc278e78cdc7312b2cc72a82c"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l10-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a8acf64875b418281979710650bbcebd563083eca3324869b8e54659244f9e71"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l11-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cf71e529a070ec0af4fd7600369b824c30c77ac055d1625db7e34f92b22f9746"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l12-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6e5a64f29ba843c64a46100256ab42224af48417eb05391195c02297af6e4da3"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l13-draconia.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "031c2044da3e3a100b55b4b0f0d0c2ab7851f6000dc4638519a4ab8dc7b48a01"
+    },
+    {
+      "version": "harry-rev-audio-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0/e03-l14-harry.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e4399866e03d16a17eba3790677f926ec4fad65443b805f80d352c9ea625b1f3"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/chris-line1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "16e6bf4b585c7f73534f770ed95e471ad13f6ef88c6e79dd06478a08e8a6e416"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/chris-line2.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "33a3db836eb05817d6bc01d6609626afbd3f737f87d1755c1046ff5531d6711f"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/eric-line1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bb3a1a83251927a1fd45ff8b04ef2279ad621c51f95e8e03925194489e2e3e13"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/eric-line2.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bfa3b5689b7383f464ef3017f01e84c5163b02a25faeb39d3f20cb5b3c800385"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/george-line1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cf72ffa4e853fea79675adb0c4dc8932a8018f03b948fea3926c6b2abe4f871f"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/george-line2.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "403dca47df9e5d057f1fa5eb45ca4651bef45512501b05dc23012fb52c2d0d02"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/peter-line1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dbe33fa90c84e4793b812625e8d8a3063960e24051a3ecdafa7f0b194222a7cd"
+    },
+    {
+      "version": "harry-voice-test-2026-10-26.zip",
+      "path": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8/peter-line2.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dcb0ab403f00d4c8774d387d148b746d6eb48c72d2e70384c9d57735ed2b1596"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5ca966db7c6689e8ab9d711d6c3845342174f6f6b6275645fee5c55a3c80d776"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "da07075effe3181398c43cf3d822c0a792a152d53ebaeaac213c0a46fceae110"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-04.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8505c71e919ecad15bb3ec9c8ccaec4c3eb8d87299ef1b5d8001254acc931daf"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "72ea6d38e42578aa2fcce60fab9ae765ec578b47f46fd3d618325c9dddaacc27"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-13.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3f28a4a784dfc1d43df959aaf8bb60af21615dedbb0b233fe663b254933558fc"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-05.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f331bd333f1090a849b93a56811326ed2cc3d481a6772dd76e6223af38e7598"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-11.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bb759682aa9d34f6e2677d533c12a436bc3855fda987e5b48830caafc797b72b"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-12.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a13c5c7f34961f5a865274b1d2c9ddbb4c125c3665119672d8b1c8456468c4ee"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-15.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e4e4891cebec4d49ad255f345293ee142ac1848b0e4ea6babf1f173d87b5188a"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-17.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "863d60f7d75c00aa123cf290475bfabc13a1103bb1913eb1703396fd28a07a27"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-16.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3578cbf9b20371cf5c0e4d65ac27ac9c6e55d6455a68d49e11a7b8a0a1b691cb"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-14.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a7a3368615f3eee2a42b641812280fc4d7b40acd540930a329ae5506b54015cf"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-09.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8837c26d8a252de4f6182a37be0b699c230f3619e6eaa61a39a93f266df08dfc"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-07.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "aa61b5c6b497ecb0e2eff9f217b19428717784b1083461c5246f9152fd9dc975"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-06.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a1b7ae5e108b7a7c48e6df57cdbbc5f1f2ea60a61bf0a2d7c08920850ed1ae1e"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-08.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b09281a9b54ba3d8afe3cc2ed99df403ed814c9ae5d140cd37160ebdcefbeea9"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e01/e01-line-10.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2743af4592bdf8bfb0fbfea9c096ddbc11127c95b2b4e4e536002e88512c77b0"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-05.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6454b97737d7880930d85afc17b962a9d8bd3c96ba26a814952e7c217c9f1f06"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-11.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2e5db725b31a77fe381d79c1546cf484832a120724ed351a94f7dea528eed2f5"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-14.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5148f6d2bd0fdab372526f61590ea38ed4950d4da6ce30e0b628fc8f5495af59"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-06.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a08ff3b6eee71a3a137a79c88e9881e0be56c9d6de9834dc909039fcb51de449"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-12.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0942237d5098debeb64973403f14c3fdded8cf3e1e37748b1b78bd5de5c5f471"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a0d6e713aef8005ffd94126d90dfdcc846990951481ae6eb5e5d22c99f332fa2"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-13.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "714009863515e3dd15a63b4903227bfcabb0ec482c84a5eb212b7ad13faada15"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-07.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "461c4ceae5e78594f82fcbf0543a3165b82e67e4304c3e761cf7d91c0b3856ec"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-04.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c887ce5c7ce4234375a4c40469b8764f3473342ed2c9de661d7c8304cc0041ae"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-08.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0baeb57d1bcf359164d302d1db666d945319dc1638cd550dad43a0086a955f00"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-10.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "765da2650220c84879f98e1d499784f3b82027302cc19e6be8316aff81f33422"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "32f197494a0aba682be8a9c441f094466f6f6c6734463e0a163813b235ba8192"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-09.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c8a94a4a985f7e788b339e97d7c0a647d3676d12ddcf6eba90187f05b3775ee5"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-05.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5c4a9fb392eb826c1924ca7a98c37f7b5902d8611b791ad899494039eca43d04"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-04.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "30c35065cb5f8024a6dd376c4892419db0bd5777893bb9b786048628c0712c9b"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "871229d3cd5f38982da6fda238533171f785778012dd63564b223c739e91a537"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-14.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3aeabe8116293361d8f7b2b1a398f96504fb4a9809eceefc762b8749506c9515"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-06.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "51cbfb48175563b1092e90b8710ea0a197effdf4f312b9bb2629b559e1ab4a30"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-07.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cb5316e6c0ce998057518461858acfd0012e0bab7d15ffdd0da1f6e1957b0881"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-08.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "631f33c8ccf2154fc2bf60d7adc9570a892a2059354a3e63ed4a0dc58b8280bf"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-09.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3e917bdb400447195f6c78479e37d1859faafe2e880c529831af3e364c99acc4"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d2219c1665dd683688e3a37a0ad0a19586ca567df3dddf6c2396437bec54e2c3"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a399f76632c56b704cf2151f704c533d97cd740ef093ad1c71e9c68940e02969"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-11.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "304c3de8d317214c1523aa349cc01a80ecd22426108a31e0853009037caa8eeb"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-12.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b11e3ab5cd553379328ba3302456c7736d3060a0ca088e940a80bd0da9df2ab"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-10.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "92ddb1fcc58a6e8311f1f4cfffc55a0c55315b0a289d011821181c2717c74722"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e03/e03-line-13.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bca6003d4455d0df9bec81cff80d4639fcc2996da579815b9722baf08fbb0939"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-15.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3ee53b7d91e96a55ae47c83cde48f4d81f154ba5643408fa9dd2cf234c4de3cf"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/e02/e02-line-03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c8173eac6d9f3602f807c5f5efef250ffa413d6c6fe3da0ad818018cb8d26c9c"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/previews-e01.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6da795e9ce62e20db02a7ca384c81d1f7292418a5cc1d741b42767c7cdb56336"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/previews-e02.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5380b499c4d08c996d921bac41c162669ccc366da4022216196ef58e13b36553"
+    },
+    {
+      "version": "audio-improved-2026-10-26.zip",
+      "path": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130/previews-e03.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8feb204ee1cf063ab5f4f5c64fd3032d3f78b69f68ba82bb6b228eeb07ddb2d0"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-7646c00/Harry_Draconia_E09_voice_scene_v1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "85496914da5648e42b908f3bd9b254c7c91d07a163db48136293ef6107c5c602"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-d7ac3d6/Harry_Draconia_E09_voice_scene_v1.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "85496914da5648e42b908f3bd9b254c7c91d07a163db48136293ef6107c5c602"
+    },
+    {
+      "version": "E01-hardening-2026-10-25-v1.zip",
+      "path": "Archive/expanded-versions/E01-hardening-2026-10-25-v1-29b3812/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-dark-dance.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b759491e70a8619fe37a488bf2db8a6357d19feab13d45197428ab0fb7da06f"
+    },
+    {
+      "version": "E01-hardening-2026-10-25-v1.zip",
+      "path": "Archive/expanded-versions/E01-hardening-2026-10-25-v1-29b3812/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-E01-v32-final-music-grand-waltz.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0b43cec604107d073f26d9729fc73d7f6f98a2a4471b43705b1caf2849413843"
+    },
+    {
+      "version": "E01-hardening-2026-10-25-v1.zip",
+      "path": "Archive/expanded-versions/E01-hardening-2026-10-25-v1-29b3812/microdrama-still-first-pipeline-v3/artifacts/audio/Harry-Draconia-YuleBall-E01-v32-voice-final.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "baa75544b697814db72c756339f229927169f60e278e72a6300e595295978ba5"
+    },
+    {
+      "version": "E01-hardening-2026-10-25-v1.zip",
+      "path": "Archive/expanded-versions/E01-hardening-2026-10-25-v1-29b3812/microdrama-still-first-pipeline-v3/artifacts/shot07-action-peak-candidate-01.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "0f4a352f535c4e236c2bca89a09b7a8e0c8740207e1f3f68446fbc3776540ccf"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/filch.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f350573c990c8de26a8f25d6c71c39407a1a3580cda9de3c32bb961b7a4f00f6"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/potter.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8d75f33297fca0c3411bdd35068ce2b5ff6b98449527e2602054a166c6b63710"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/mcgonagall.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d97d0bc9026d0ff66eca5893681c161c7d9f38f08d27e25104e95374ee224fa8"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/parkinson.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b1320d04f1ff61fcae3573ef9f61a07811cc942910f613f2ec313c8dab8947b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/malfoy.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6240ce7a30aa3c14758d91176dc5fb9f00b9c95c655899baec7f32eed29f0430"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/parkinson.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "33a187851f5dd079998584dee4fa5cf88062d531b4ee45141fcdb8a2a1166ed0"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/mcgonagall.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a5f3fe191431b81150de1f0db95db29853f8a695e856816aa497aefc1b5a1689"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/potter.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3fdd5b6b13c872bf1fde735e967594840cea9e5a8165623e05f4f6c42fcc181e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/filch.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "50750fc7899546afe37cc718ac8fbb73dc5f4fd942eedd0e672b20e558aa6e43"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/refs/malfoy.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "b33696af8ab75ce17e262f8c434ac67ffa53f91f08c74603fb96891e0e457c01"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/audio/e01_chatterbox_draft_v8.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3c533e43ef2697dad635d758d1c10c06fc7d34cee2f44dc4ee2e2010c43d747e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/audio/e01_chatterbox_draft_v7.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9c08392c49b5f85fb6fbbe89164d7b975da192e5ee9f6650d57cd0cd5d4d2a11"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/audio/e01_chatterbox_draft_v9.mp3",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4c3d18ca789061f86d3f9bfb979be4e4ff08ddfeadeaed343d8daec5987ba6f3"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/lipsync_tests/ls_real.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "335f48b141c9e6704c35c737dd589a75a1cf4e2f86e77c4bb4b3e970ca3ebcac"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/lipsync_tests/mt_real.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cff5c640e7b1818ede94919c079855d5c84a9e9f14346baf49f908d178b4ff01"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/docs/mp_retest.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9167a7bc2eae574621d5d98198ff134729c36e0a4214af5a7eeb5463242efdf1"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/vimax",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "cc27cb4b0dae3d192e0a20c3bf92bdeb7069371c8dfda0bcca06409624d9b314"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/.pytest_cache/v/cache/lastfailed",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/.pytest_cache/v/cache/nodeids",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2c42ab88296d6392ed97f0d3197dc1449ba1f4a3c2edb2f02f83c712d5314336"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/.pytest_cache/CACHEDIR.TAG",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/assets/vimax.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8850d2cb9b2df48fc96f6d6e3388d133d7bc7c81e5d801df7f384fa567a0f6de"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/assets/vimax-web-ui.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "908240f386dd6856cd40877ce452dd0e75ecbbc420d17a8d5fbbaddf2aa87076"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/assets/logo2.jpeg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "984efa12db10f378f37ba0576be90517658ed5c4a4146f2483121e9ae8fbd800"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/assets/logo.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2fb97620f1515b94de007f5b5cde23e51aaa84a5cdc1eb91c021bb46b4cae3f0"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/assets/pipe.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dca19575d5c512b93d0eab2359cc75878da2064d4ef0e1f44aaf6accc04d6e0a"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/assets/none_quant_efficiency.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "a08c6e0ba766b37d9001e80c62706b155eed6edd1fd8cbc32f3730f947f301da"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/assets/efficiency.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bffd7023920efeccb77b471dc8144a25054e2c3f78f9cf99a01ae13598a79caf"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/single/single1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5a47d458721c4a7419d3c8ef9a5c3d89cf161ab31de9451b9bb4f321a37bc705"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/single/1.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ba2733897f561f747e6508734bff4eeee29d0a73638e5c39c0c0b806701d4e8b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/2/multi2.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "95bce20a7ed654515b33cdbda435fa152405215ae7e098ee16c8e04c4eac3f49"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/2/1.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "51eb6a408a8b5b33a732378e2a38e7412ba273186b85c324ec6a099d23fe38af"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/1/2.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "753120ceadbdab3ce206423a1419f73018695682787414ca2f4613306be50bfc"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/1/multi1.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "210b89972b810e760d15828323186771a56f1220e806b09fe06b0584a9f55537"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/1/1.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8397a9b3c0add26384afe7e544e36cbc4806d8f2d7c705e11bb2897dc1bc993b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/3/1-woman.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3e1ebd7ae1587ebc7f0986f8b61e7fcc99c6fb57fbb15ab9373968e701afc8bf"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/3/1-man.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d304fd88850d6673649d1844db2894e03bf5a775123048eebcb01ab3b79bff5e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/multitalk/examples/multi/3/multi3.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dbe21be842c62c26cba264630b96aa775cc739dfc3b02cbc8da44a9eb8b9671e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/assets/logo.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "659cb91680bef58fc262db9764fa497adeacf36d695a7e2da10c2964cbd06866"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/assets/InfiniteTalk_paper.pdf",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "dcefdbb788a7f10aa941adf642a8f511fbb99b874e8dd271b9067caefa6b41b2"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/assets/pipeline.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "089cac2e05d0858949ec1cfdf0241274790b0eafd9318f8b5810f5ef6008ee72"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/assets/logo2.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "37cc96290dede43f9bac0d0ab1f6cae20cc431eaa5bf1908a9185720dfca2a3c"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/single/1.wav",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ba2733897f561f747e6508734bff4eeee29d0a73638e5c39c0c0b806701d4e8b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/single/ref_video.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3cb07cbfa63576d8b06eb2954cc56d1b089764f0a9428da867348810d6cb9071"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/single/ref_image.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "5a47d458721c4a7419d3c8ef9a5c3d89cf161ab31de9451b9bb4f321a37bc705"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/multi/1-woman.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "3e1ebd7ae1587ebc7f0986f8b61e7fcc99c6fb57fbb15ab9373968e701afc8bf"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/multi/1-man.WAV",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d304fd88850d6673649d1844db2894e03bf5a775123048eebcb01ab3b79bff5e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/infinitetalk/examples/multi/ref_img.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "210b89972b810e760d15828323186771a56f1220e806b09fe06b0584a9f55537"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/eva_clip/bpe_simple_vocab_16e6.txt.gz",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/models/.gitkeep",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/pengwei.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1d163eb4cc3244e063895263490ee5abc199fe915e6dae9aadbdfb435523644c"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/rihanna.webp",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "8b4e0f9e4fa1421b89d4bed91a121b3aca5f97e89c3d39823670cf0c2bcdc278"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/hinton.jpeg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "85ef976b2e60ff65eb664851b00c8999c2993b56f601e4629be41e55c57f643b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/liuyifei.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "d9dfdaaac866ac410dfaa7a624c674ff027ca36728ae656be8d03891883bf53d"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/lifeifei.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "c7b26e78b94ccd8c30a40efca3c52c8a04573188b41eb4b3d1fc517ec8577b35"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/lecun.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2730103b6b9ebaf47b44ef9a9d7fbb722de7878a101af09f0b85f8dfadb4c8a4"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/example_inputs/zcy.webp",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "7c041ede58322e0a22352380fbf40e8c8c94d0a9f4b9abfb7b685f3d8978c59d"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/benchmarks/.gitkeep",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/models/.gitkeep",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/videos/test.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "2195efbd92773f1ee262154577c700e9c3b7a4d7d04b1a2ac421db0879c696b0"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/videos/test2.mp4",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "4d25f98bf41afa5ccb348d82f3a68343e477ec058758d556fb7452db7a83e45d"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/materials/tasks.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "1f1c4b3f3e6ae927880fbe2f9a46939cc98824bb56c2753c975a2e3c4820830b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/materials/gr_pre_demo.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6939180a97bd5abfc8d90bef6b31e949c591e2d75f5719e0eac150871d4aaae2"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/materials/teaser.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "87ce75e8dcbf1536674d3a951326727e0aff80192f52cf7388b34c03f13f711f"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/materials/gr_infer_demo.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "9b4f0df3c602da88e707262029d78284b3b5857e2bac413edef6f117e3ddb8be"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/images/test3.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "bee71955dac07594b21937c2354ab5b7bd3f3321447202476178dab5ceead497"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/images/test.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "71549d76843c4ee220f37f45e87f0dfc22079d1bc5fbe3f52fe2ded2b9454a3b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/images/test2.jpg",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "6c4f0e303dbd514c1d521d358f623be3d9e0f4cd3632fd7c1f9ad928809f73cc"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/images/snake.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "60ae5e275f64de6ca99c5e63eaea6812fe09a6d7e7a233e483e700122ad08124"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/images/girl.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f461a83c0772dbe93a05ae6b8ce9fa77f0e7f5facb4402685b5410c0dc18397f"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/masks/test.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "ce96ef3a97161a312daf2d28bff1560bb629f8ad3a8ce8a1ba6ab5950821e1c3"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/assets/masks/test2.png",
+      "reason": "non-source media/cache/binary excluded from code review",
+      "sha256": "f84378743e57678d8a21c5ce7f0a6b570a4ef2c5d7cf24379b4f6319bd05e329"
+    }
+  ],
+  "sanitized_new_source_files": [
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26-74cfb43/research/runpod-pricing-search.json",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "39dc585ca25da54879c883058366c473903685a86f8669ed6a190d0ae1a23898"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-7646c00/research/renderer-feasibility.json",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "88ad726a2fab855ec41c7043dc24ec3ecd78016e570c087df1048b0c2ae2341b"
+    },
+    {
+      "version": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2.zip",
+      "path": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-7646c00/research/runpod-pricing-search.json",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "39dc585ca25da54879c883058366c473903685a86f8669ed6a190d0ae1a23898"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/tests_forge/test_future_work_m17.py",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "8b6e8e669c26c4fea4deae23230c0b2c6a1b22d167b8e230e517c855ce5309df"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/out/e01_script.json",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "e1290f995cfab22bfa8b4e77f91d461fb73114a874e9386196ac6ba27f28889e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/README.md",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "0cd3cce7260861eb5fcb15f1049d1a962156bed1d49473e3e2e31e1fdbe16d42"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/app_v1_1.py",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "27ffb8d5a9c601d3798251197376ef81be3ba781401a31cf9e040baff9a3370e"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/app.py",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "f8b7130bfd35a0c2f3879eb8aada2bd0457b182e5efc107287107819abe0c83b"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/pulid/app_flux.py",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "7dcff4762aa46086f3e5f36b46229592045957d2976290dec7c89acf7ea77621"
+    },
+    {
+      "version": "dramaforge_m19-reconstructed.zip",
+      "path": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst/dramaforge/third_party/vace/pyproject.toml",
+      "reason": "privacy redaction and/or cleared notebook outputs",
+      "original_sha256": "a4fd64a9a1e5b6e1f719c80da5efd0a221a42d01c16afcd5f196edef1a607cd1"
+    }
+  ],
+  "whole_identifier_changes": [
+    "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26-74cfb43/code/write_harry_yule_story.py",
+    "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-d7ac3d6/code/write_harry_yule_story.py",
+    "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-7646c00/code/write_harry_yule_story.py"
+  ],
+  "private_operational_records_withheld": []
+}

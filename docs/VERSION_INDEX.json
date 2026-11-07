@@ -1,0 +1,912 @@
+[
+  {
+    "name": "dramaforge_selectable_audio_route_checkpoint.zip",
+    "sha256": "ef004db13e3d5a87b32940ab95c0825c4ee398a51ea94db58ad3f1bfa6e5ce15",
+    "folder": "Archive/versions/dramaforge_selectable_audio_route_checkpoint-1aXhMYE",
+    "original_files": 163
+  },
+  {
+    "name": "dramaforge_selectable_audio_route_1338_preserved.zip",
+    "sha256": "ef004db13e3d5a87b32940ab95c0825c4ee398a51ea94db58ad3f1bfa6e5ce15",
+    "duplicate_of": "Archive/versions/dramaforge_selectable_audio_route_checkpoint-1aXhMYE"
+  },
+  {
+    "name": "dramaforge_selectable_audio_route_hardened.zip",
+    "sha256": "00dface5ce6e80fbed7a4b0359894c6f9a29118f2e6b72be9826952a0f5eaa9c",
+    "folder": "Archive/versions/dramaforge_selectable_audio_route_hardened-1T2Vk_i",
+    "original_files": 163
+  },
+  {
+    "name": "dramaforge_audio_timing_runtime_checkpoint.zip",
+    "sha256": "6b6a0e0a0bfc014e05c1f9bafc170f3bd6ad84f6406dd148640664fb99c0cc2a",
+    "folder": "Archive/versions/dramaforge_audio_timing_runtime_checkpoint-1MywHdc",
+    "original_files": 155
+  },
+  {
+    "name": "dramaforge_audio_norm_timeout_checkpoint.zip",
+    "sha256": "6ccbbd66abde7180701492817bafea4121aba44bc9c94951e1cabbd455ee19aa",
+    "folder": "Archive/versions/dramaforge_audio_norm_timeout_checkpoint-1LvI4-m",
+    "original_files": 148
+  },
+  {
+    "name": "dramaforge_audio_context_tested_checkpoint.zip",
+    "sha256": "e0b91bc14d5f677b3442362189afd34ae7b1c1e94111e049eb18acbe0646e003",
+    "folder": "Archive/versions/dramaforge_audio_context_tested_checkpoint-14RfzZq",
+    "original_files": 147
+  },
+  {
+    "name": "dramaforge_audio_context_fix_checkpoint.zip",
+    "sha256": "f0465ed87b2d7bdd1001b31804efb6a648b088a1b3d3572978badf1fd3b6c94b",
+    "folder": "Archive/versions/dramaforge_audio_context_fix_checkpoint-1AQGlqA",
+    "original_files": 120
+  },
+  {
+    "name": "dramaforge_audio_t5_fix_checkpoint.zip",
+    "sha256": "e5cc5a6b0f517855e8b01f5221885b04ccf160b94410c82d43f5ff2b5bec7a30",
+    "folder": "Archive/versions/dramaforge_audio_t5_fix_checkpoint-1ei1bJr",
+    "original_files": 114
+  },
+  {
+    "name": "dramaforge_post_m25_validation_checkpoint.zip",
+    "sha256": "69451a67b64bf91e778a8b8ff75ce2a5d8478ae42e58accfd94d43b17023d5b5",
+    "folder": "Archive/versions/dramaforge_post_m25_validation_checkpoint-1NLrtyL",
+    "original_files": 115
+  },
+  {
+    "name": "dramaforge_m25_faceid_2.zip",
+    "sha256": "e616c2b3632b3f0b597fd5df596a76087e891a88264091b24b6d091fa9b98f8a",
+    "folder": "Archive/versions/dramaforge_m25_faceid_2-1bSb7aU",
+    "original_files": 10
+  },
+  {
+    "name": "dramaforge_m25_faceid_4.zip",
+    "sha256": "980f9cc06866a07530a7591917bd6c4e64fcc1de7c0ab46e5fb362167554e8a1",
+    "folder": "Archive/versions/dramaforge_m25_faceid_4-19wHxJo",
+    "original_files": 20
+  },
+  {
+    "name": "dramaforge_m25_faceid_3.zip",
+    "sha256": "9eb2ac7599b80f1af60ca9f2780d108f2a410b6ae497530cb8a80c54ec54c37c",
+    "folder": "Archive/versions/dramaforge_m25_faceid_3-1Xwzz7N",
+    "original_files": 9
+  },
+  {
+    "name": "dramaforge_m25_faceid_1.zip",
+    "sha256": "7075fee4e9ac8ab9c143acbbb6db8a00ad353183ea41a1ef713a869258ddf98b",
+    "folder": "Archive/versions/dramaforge_m25_faceid_1-1dRB-P5",
+    "original_files": 18
+  },
+  {
+    "name": "dramaforge_m25_core.zip",
+    "sha256": "e8bec1b83ef79337107c2bf8ba6ee44c5473bdd5019a939db33630b6e27b3e05",
+    "folder": "Archive/versions/dramaforge_m25_core-18QEEWW",
+    "original_files": 387
+  },
+  {
+    "name": "dramaforge_m24_core.zip",
+    "sha256": "1098f5d8d9aacd10aae8477f922bc8ae438fe319f4e1a9abe23b8de107085849",
+    "folder": "Archive/versions/dramaforge_m24_core-18dcO7j",
+    "original_files": 375
+  },
+  {
+    "name": "dramaforge_m23_core.zip",
+    "sha256": "db17a00ad95700c41c91e42553aab588b5c8f0ca08ac7029fd04291141bd0857",
+    "folder": "Archive/versions/dramaforge_m23_core-120WaNw",
+    "original_files": 363
+  },
+  {
+    "name": "dramaforge_m22_core.zip",
+    "sha256": "fa260f6deff0123fe64ef9269d222604827ab00870e8444abe2ba0de9e4e12ef",
+    "folder": "Archive/versions/dramaforge_m22_core-1VcOD4X",
+    "original_files": 358
+  },
+  {
+    "name": "dramaforge_m21_core.zip",
+    "sha256": "c7134caf358ae7f535064c3f9b4fd9df42e3266e8dc05ca4671413ce4ddee494",
+    "folder": "Archive/versions/dramaforge_m21_core-1Nxp55o",
+    "original_files": 357
+  },
+  {
+    "name": "dramaforge_m20_pulid.zip",
+    "sha256": "255eb1bdd5f4df778333566f3c0115b35f1a2b111751fe0f2b14d320f19f9b59",
+    "folder": "Archive/versions/dramaforge_m20_pulid-1oPTfhw",
+    "original_files": 62
+  },
+  {
+    "name": "dramaforge_m20_vace.zip",
+    "sha256": "2b291d34cb65bb031c5d127e1a857dcf4c432c98c9459a0e72b5cd4ebd3c4809",
+    "folder": "Archive/versions/dramaforge_m20_vace-1gGqDVo",
+    "original_files": 118
+  },
+  {
+    "name": "dramaforge_m20_infinitetalk.zip",
+    "sha256": "87f33ceb2faf6213330e336b7af8990c2358d5b89bca298e0f70bddca03bf0ea",
+    "folder": "Archive/versions/dramaforge_m20_infinitetalk-1yY3PGj",
+    "original_files": 67
+  },
+  {
+    "name": "dramaforge_m20_multitalk.zip",
+    "sha256": "fc9473e33124796bafaef2bbef97ed70839505ee917e0e7f298821638d02583e",
+    "folder": "Archive/versions/dramaforge_m20_multitalk-1QTo49f",
+    "original_files": 73
+  },
+  {
+    "name": "dramaforge_m20_core.zip",
+    "sha256": "5f964c1a25ccbbf69b85896eb24bc000ce65386b36d851847e2b383ec094ee56",
+    "folder": "Archive/versions/dramaforge_m20_core-1fDna8_",
+    "original_files": 349
+  },
+  {
+    "name": "dramaforge_m17_v15.zip",
+    "sha256": "43b0216bae2ec9ddade943d94f401ba84214bcbe9284d2cd0bc2425e30e4a2bf",
+    "folder": "Archive/versions/dramaforge_m17_v15-1DKhx-y",
+    "original_files": 330
+  },
+  {
+    "name": "dramaforge_m17_v14.zip",
+    "sha256": "331dd9f30af0eae104dd32fee9bbe0bc170a38add6e6dbab4960a6994ba533b7",
+    "folder": "Archive/versions/dramaforge_m17_v14-1yOoWoP",
+    "original_files": 328
+  },
+  {
+    "name": "dramaforge_m17_v13.zip",
+    "sha256": "999198e3996681fb6937b3f8c7b4140c68a1bba5c1839e8cc5a5ae8c8f084d0a",
+    "folder": "Archive/versions/dramaforge_m17_v13-1k12I8-",
+    "original_files": 327
+  },
+  {
+    "name": "dramaforge_m17_v12.zip",
+    "sha256": "0a395aa38f3a12b0454f5643f7c0b982371e1f8ea4ccbe852c175f6b5557bbbb",
+    "folder": "Archive/versions/dramaforge_m17_v12-10tALCo",
+    "original_files": 327
+  },
+  {
+    "name": "dramaforge_m17_v11.zip",
+    "sha256": "bd3dd069a24826f627c549a388540c51cea0e0640254534aa4f3dd51841f9a1c",
+    "folder": "Archive/versions/dramaforge_m17_v11-1x0FD9L",
+    "original_files": 325
+  },
+  {
+    "name": "dramaforge_m17_v10.zip",
+    "sha256": "22ddc3b25567d65e04cae70a4e544c6dc70239d3eb074052e40665945f4f4c82",
+    "folder": "Archive/versions/dramaforge_m17_v10-1zA60D7",
+    "original_files": 322
+  },
+  {
+    "name": "dramaforge_m17_v9.zip",
+    "sha256": "d259ef9f90ce9431cc5c331abdd5f6a3cb48dcc4b5e5661f4265635f509e3d0e",
+    "folder": "Archive/versions/dramaforge_m17_v9-1etcIPd",
+    "original_files": 322
+  },
+  {
+    "name": "dramaforge_m17_v8.zip",
+    "sha256": "365df081362d3c86acadd644bd1ef9bda3e04da24881bd4cf3f45ffc27e55945",
+    "folder": "Archive/versions/dramaforge_m17_v8-10N3s7X",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v7.zip",
+    "sha256": "1f2c2f2e68f4606eece4fb93c86b8fb5046b0e346f46e8da77ff54a1b20bfd53",
+    "folder": "Archive/versions/dramaforge_m17_v7-16K3iau",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v6.zip",
+    "sha256": "29e238e7fdf36a4c9a594da240c79d83d32133379aaefd7585bcd358ea77d9fd",
+    "folder": "Archive/versions/dramaforge_m17_v6-1idEnWh",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v5.zip",
+    "sha256": "b71c84e6810aad043b4ac27033644ccd15d9d878c06c8c24a50259bd5d94583b",
+    "folder": "Archive/versions/dramaforge_m17_v5-1fl4bS0",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v4.zip",
+    "sha256": "f698d943fb92894fa848920e0d9be548065c11d3850ce1eb01763d61a98fcd2a",
+    "folder": "Archive/versions/dramaforge_m17_v4-1IXMQZ3",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v3.zip",
+    "sha256": "669a98d0496638014c7881db808a9318b19951022ec9963c951ee28554148795",
+    "folder": "Archive/versions/dramaforge_m17_v3-1TC-6Is",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge_m17_v2.zip",
+    "sha256": "99e1d133df346f32ccabb7adc509b74d1a99e2a5a51e083a154dc44e122aded8",
+    "folder": "Archive/versions/dramaforge_m17_v2-1jGs5gA",
+    "original_files": 321
+  },
+  {
+    "name": "dramaforge-m17-closeout2-20261102.zip",
+    "sha256": "88a8e14f0076226fc7781706f6372e99621df190de43b1926c5a292c70d59ca7",
+    "folder": "Archive/versions/dramaforge-m17-closeout2-20261102-1FWrjuC",
+    "original_files": 320
+  },
+  {
+    "name": "dramaforge-m17-closeout-20261102.zip",
+    "sha256": "59ee6c1cf7bb81a5437a05633305edda132505b789d534bd8c45aca7d7fc4c2a",
+    "folder": "Archive/versions/dramaforge-m17-closeout-20261102-1JAkoAf",
+    "original_files": 320
+  },
+  {
+    "name": "dramaforge-m17-futurework-20261102.zip",
+    "sha256": "a8acf85c0e109e501a2d7b8e3cc6e628f13327252e875f55158fc4701876ba36",
+    "folder": "Archive/versions/dramaforge-m17-futurework-20261102-1WSdhrg",
+    "original_files": 324
+  },
+  {
+    "name": "dramaforge-m15-hardened-20261102.zip",
+    "sha256": "b55611322ec15d2ca06d6f2520f06298d54566636a17afdbdae0da440e83437a",
+    "folder": "Archive/versions/dramaforge-m15-hardened-20261102-1LCJcCf",
+    "original_files": 310
+  },
+  {
+    "name": "dramaforge-m15-hardened-20261102-before-default-resume.zip",
+    "sha256": "e5bdf5c889e61173a5d70c0cf78af53f4ef5d2a871287a1cdd290c14565286a7",
+    "folder": "Archive/versions/dramaforge-m15-hardened-20261102-before-default-resume-1ld9FC0",
+    "original_files": 310
+  },
+  {
+    "name": "dramaforge-m14-dramasaga-planning-20261102.zip",
+    "sha256": "8f792c5d724c594a9b317e31488ffa7b022181005c3cb7b86af281e6a10078de",
+    "folder": "Archive/versions/dramaforge-m14-dramasaga-planning-20261102-1FbYAoi",
+    "original_files": 308
+  },
+  {
+    "name": "dramaforge-m13.zip",
+    "sha256": "59f60ab7a44510a2bcbe1ef4d7d38534bacb5495ab6ed27253501dd47bd390d7",
+    "folder": "Archive/versions/dramaforge-m13-1C4gkoH",
+    "original_files": 301
+  },
+  {
+    "name": "dramaforge-m12.zip",
+    "sha256": "06975c1172250f6b43a44c3d9c623b4b5c3fc9d50e80019175ce49f0400d0449",
+    "folder": "Archive/versions/dramaforge-m12-1QfREII",
+    "original_files": 298
+  },
+  {
+    "name": "dramaforge-m11.zip",
+    "sha256": "903d2b99fc31b0f2ae432fab8cfd52dc69e9cdec09af5568b9ce666ee4c9ff52",
+    "folder": "Archive/versions/dramaforge-m11-1-bckj5",
+    "original_files": 297
+  },
+  {
+    "name": "dramaforge-m11.zip",
+    "sha256": "903d2b99fc31b0f2ae432fab8cfd52dc69e9cdec09af5568b9ce666ee4c9ff52",
+    "duplicate_of": "Archive/versions/dramaforge-m11-1-bckj5"
+  },
+  {
+    "name": "dramaforge-m10b.zip",
+    "sha256": "1081d346d49a2e007e76f65696f7d910bf53a146b5742c0887f1d234f6c8c515",
+    "folder": "Archive/versions/dramaforge-m10b-11Nm3EI",
+    "original_files": 291
+  },
+  {
+    "name": "dramaforge-m10.zip",
+    "sha256": "1b523c4afc286b40d69e0aa1af42957ef77ce3571cce01f34996d93733104d9e",
+    "folder": "Archive/versions/dramaforge-m10-10YP1zj",
+    "original_files": 291
+  },
+  {
+    "name": "dramaforge-m9.zip",
+    "sha256": "572d52f7b625a070070c64ae099a84dd2c232c900924329792eb544fa423f355",
+    "folder": "Archive/versions/dramaforge-m9-1KfVh7l",
+    "original_files": 280
+  },
+  {
+    "name": "dramaforge-m8.zip",
+    "sha256": "a93df5c35e9fcced255ed7ca24860a6d0f41fe3b71668c09d606d95581e7fee0",
+    "folder": "Archive/versions/dramaforge-m8-1iTWyHL",
+    "original_files": 275
+  },
+  {
+    "name": "dramaforge-m7f.zip",
+    "sha256": "63c5e5abe98768235aeef966e53dd0f53b18a1351866f36f0ac8af0cac3ea062",
+    "folder": "Archive/versions/dramaforge-m7f-1wqsDeh",
+    "original_files": 271
+  },
+  {
+    "name": "dramaforge-m7e.zip",
+    "sha256": "db3a2d8fc90b525971f80b2758a6a908c9b0a897042163bced3ae76bac86dae3",
+    "folder": "Archive/versions/dramaforge-m7e-1eCWU9p",
+    "original_files": 270
+  },
+  {
+    "name": "dramaforge-m7d.zip",
+    "sha256": "e5e97811a7d09a050938b95bdce00252882b43b6287032e65d8f4441e447a1b9",
+    "folder": "Archive/versions/dramaforge-m7d-12ooy1c",
+    "original_files": 267
+  },
+  {
+    "name": "dramaforge-m7c.zip",
+    "sha256": "ed479ff5f64320964f70f64e6dd1758e33eaa605ed779eb1913b3d9f5feacc32",
+    "folder": "Archive/versions/dramaforge-m7c-1mvnvZU",
+    "original_files": 267
+  },
+  {
+    "name": "dramaforge-m7b.zip",
+    "sha256": "9043c503d2ad9ccefbaa3a0852bf207404eff5d7893951547df50101181456e7",
+    "folder": "Archive/versions/dramaforge-m7b-116ymiQ",
+    "original_files": 266
+  },
+  {
+    "name": "dramaforge-m7.zip",
+    "sha256": "61bd03869684dbb7f02ac0365a3e9579626ef2704ba396f0f271c728b20b399e",
+    "folder": "Archive/versions/dramaforge-m7-1cZP1t4",
+    "original_files": 266
+  },
+  {
+    "name": "dramaforge-m6.zip",
+    "sha256": "70df0939413a13896cd9e1a56cef3f28d1715ec990b8096f76c702e81509553d",
+    "folder": "Archive/versions/dramaforge-m6-1pSSKcE",
+    "original_files": 266
+  },
+  {
+    "name": "dramaforge-m5.zip",
+    "sha256": "b9a62b89e96c6d324de2ec47dce6e42bd2218b5d7aab6838080ee6264e8d99e0",
+    "folder": "Archive/versions/dramaforge-m5-1uxLhEH",
+    "original_files": 266
+  },
+  {
+    "name": "dramaforge-m4.zip",
+    "sha256": "5a58e2d5c856169a312f00986df5051139c88f9123cc3dcd5140fc18c0bd4a34",
+    "folder": "Archive/versions/dramaforge-m4-1uy8-mu",
+    "original_files": 263
+  },
+  {
+    "name": "dramaforge-m3.zip",
+    "sha256": "55c8081690eff8aaea48e9ad5b46e00589a8b940bf54b91114096c266a1fd16e",
+    "folder": "Archive/versions/dramaforge-m3-1rX1KVX",
+    "original_files": 257
+  },
+  {
+    "name": "dramaforge-m1.zip",
+    "sha256": "8c16d30e9954c17b4a99cf6fda180d208834113d9b1ef420945530c9bb5524c9",
+    "folder": "Archive/versions/dramaforge-m1-1uBXkIm",
+    "original_files": 214
+  },
+  {
+    "name": "DramaSaga-MicroDrama-2026-10-20-privacy-clean.zip",
+    "sha256": "5a2ed7c0cefb0834efb10a1c0ed323fe1d2f9afc8ee409034b16cf1203b6dc8b",
+    "folder": "Archive/versions/DramaSaga-MicroDrama-2026-10-20-privacy-clean-1BT92_8",
+    "original_files": 172
+  },
+  {
+    "name": "DramaSaga-MicroDrama-2026-10-20-portable-runtime.zip",
+    "sha256": "6622719da62b2673dbf19f678f26859b7ab183871830eca80201cbed4931e335",
+    "folder": "Archive/versions/DramaSaga-MicroDrama-2026-10-20-portable-runtime-18YC71e",
+    "original_files": 172
+  },
+  {
+    "name": "DramaSaga-MicroDrama-2026-10-20-free-local-completion.zip",
+    "sha256": "498decc56b8dc436c6746d11b96d6aa9c151e6e2c8cd3321306367553d994c8b",
+    "folder": "Archive/versions/DramaSaga-MicroDrama-2026-10-20-free-local-completion-1iGTDFw",
+    "original_files": 145
+  },
+  {
+    "name": "DramaSaga-MicroDrama-2026-10-20-full-code.zip",
+    "sha256": "8bdc6993318e7836c877ad40e3f45a5886e4ce4a98fca4458e8a2c47eea74c5a",
+    "folder": "Archive/versions/DramaSaga-MicroDrama-2026-10-20-full-code-1LFpf23",
+    "original_files": 136
+  },
+  {
+    "name": "dramasaga-r2v-2026-10-26-gated-SOURCE-REVIEW-not-production.zip",
+    "sha256": "91e98224c4ae8de52645e801bc2a00c0e8d2a54c2865351ad225c153d9cfe454",
+    "folder": "Archive/versions/dramasaga-r2v-2026-10-26-gated-SOURCE-REVIEW-not-production-1X9L_8b",
+    "original_files": 217
+  },
+  {
+    "name": "dramasaga-r2v-2026-10-26-gated-v2-SOURCE-REVIEW-not-production.zip",
+    "sha256": "f2b487b9e351b95dcc35ea2fab871c181909941de7e99afaa4ccef5ae05b15b6",
+    "folder": "Archive/versions/dramasaga-r2v-2026-10-26-gated-v2-SOURCE-REVIEW-not-production-1xQrPnM",
+    "original_files": 213
+  },
+  {
+    "name": "magicdrama-v12-2026-10-26.zip",
+    "sha256": "8c1cb7f28762dcc7564931c75cdb9af25320c62fdfee5f4d6f58525f6215a42b",
+    "folder": "Archive/versions/magicdrama-v12-2026-10-26-19lPV2W",
+    "original_files": 245
+  },
+  {
+    "name": "magicdrama-v11-2026-10-26.zip",
+    "sha256": "b80daae85d7bc434439e14fcc07b805a6aeddc9e0a657e876856a9a6481fff0b",
+    "folder": "Archive/versions/magicdrama-v11-2026-10-26-1nu0V0R",
+    "original_files": 245
+  },
+  {
+    "name": "magicdrama-v10-2026-10-26.zip",
+    "sha256": "265b57bb5509583c9f6e5f56f6ffa9f3b224b39ebd7ebc2b89517c454f25a9da",
+    "folder": "Archive/versions/magicdrama-v10-2026-10-26-16MomAr",
+    "original_files": 245
+  },
+  {
+    "name": "magicdrama-v9-2026-10-26.zip",
+    "sha256": "328770a9f106afab11c85753d53c4dc5b56f46408356aeef04a1757c757fb8a7",
+    "folder": "Archive/versions/magicdrama-v9-2026-10-26-15ebVSE",
+    "original_files": 245
+  },
+  {
+    "name": "magicdrama-v8-2026-10-26.zip",
+    "sha256": "8f04b5b9c0b524e4239735a95c1245daa7af4ce1eed763e5171131ed93ad32d0",
+    "folder": "Archive/versions/magicdrama-v8-2026-10-26-1cCDPdS",
+    "original_files": 249
+  },
+  {
+    "name": "magicdrama-v7-2026-10-26.zip",
+    "sha256": "731984d150e3b3d1d9531721d26e46f9a5ad301c7325367f668ca321e01e5c53",
+    "folder": "Archive/versions/magicdrama-v7-2026-10-26-1iEoGNR",
+    "original_files": 249
+  },
+  {
+    "name": "magicdrama-v6-2026-10-26.zip",
+    "sha256": "8c3d155698ddc3ef6643ee3f1cf5ce300a0e08b3550087c38d8f39b3597a2dd1",
+    "folder": "Archive/versions/magicdrama-v6-2026-10-26-1X9Fl5l",
+    "original_files": 249
+  },
+  {
+    "name": "magicdrama-v5-2026-10-26.zip",
+    "sha256": "56077fc5f998ed4c6d6b0630461a22962947de250af15fd96461ff2251ab8c0b",
+    "folder": "Archive/versions/magicdrama-v5-2026-10-26-1luGwee",
+    "original_files": 249
+  },
+  {
+    "name": "magicdrama-github-export-2026-10-26-v3.zip",
+    "sha256": "6f308a60066982dbe00434c8e4ebb4688b52d0a0191ad02a0d49f9b9a7163061",
+    "folder": "Archive/versions/magicdrama-github-export-2026-10-26-v3-1MWCnJg",
+    "original_files": 276
+  },
+  {
+    "name": "magicdrama-github-export-2026-10-26.zip",
+    "sha256": "aad94535502982f0689715001632acb71ae77aa5479837d9a69b9deb125820c4",
+    "folder": "Archive/versions/magicdrama-github-export-2026-10-26-1LEq02n",
+    "original_files": 213
+  },
+  {
+    "name": "DramaSaga-H3-original-route-modal-safety-v2-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "fc2475e2a4cc4c922b7c07f88417e8595fccf1835fdddd259fc728a3ce058746",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-modal-safety-v2-2026-10-25-cleaned-2026-10-26-1c69mMF",
+    "original_files": 169
+  },
+  {
+    "name": "DramaSaga-H3-original-route-modal-safety-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "bf3e608595f68bf4b08f20d3f49e27c20ae2368a48f9f6f6126af1f7c106059a",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-modal-safety-2026-10-25-cleaned-2026-10-26-1RADXHa",
+    "original_files": 169
+  },
+  {
+    "name": "DramaSaga-H3-line-audio-guides-realQA-v5-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "1a89772abe0bf3c69520df97427525fc0e5d3b13996c747a4b3666ffb5aa553a",
+    "folder": "Archive/versions/DramaSaga-H3-line-audio-guides-realQA-v5-2026-10-25-cleaned-2026-10-26-1tWV69n",
+    "original_files": 176
+  },
+  {
+    "name": "DramaSaga-H3-real-video-QA-v4-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "00a1a098307874c948bdc2c07acfd63a15f367e2a2752c952635a66fe34c1926",
+    "folder": "Archive/versions/DramaSaga-H3-real-video-QA-v4-2026-10-25-cleaned-2026-10-26-1ZvyzaP",
+    "original_files": 172
+  },
+  {
+    "name": "DramaSaga-H3-midpoint-pin-qa-v3_1-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "04fe8820ad224089fbcec6dd78f05cbdcd2f3efdee89029fc0c1abcb2b4adc5e",
+    "folder": "Archive/versions/DramaSaga-H3-midpoint-pin-qa-v3_1-2026-10-25-cleaned-2026-10-26-1thLVA6",
+    "original_files": 170
+  },
+  {
+    "name": "DramaSaga-H3-midpoint-pin-qa-v3-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "eddc68a90b3c48632cc9ce11b69c52dd684651dff9ad5912fae2fdb5961c15a4",
+    "folder": "Archive/versions/DramaSaga-H3-midpoint-pin-qa-v3-2026-10-25-cleaned-2026-10-26-1lz_E13",
+    "original_files": 170
+  },
+  {
+    "name": "DramaSaga-open-source-audio-repair-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "1a1050f6acd673b5852005611d79078dee5f3a2c39c631687a9f537d1ccacc75",
+    "folder": "Archive/versions/DramaSaga-open-source-audio-repair-2026-10-25-cleaned-2026-10-26-1jhAG1h",
+    "original_files": 175
+  },
+  {
+    "name": "DramaSaga-hardening-2026-10-25-v1-cleaned-2026-10-26.zip",
+    "sha256": "2a8284311553b85cbccfe11214c539e532943dec910a292c6bc2d48beff835fe",
+    "folder": "Archive/versions/DramaSaga-hardening-2026-10-25-v1-cleaned-2026-10-26-1npiMmC",
+    "original_files": 171
+  },
+  {
+    "name": "DramaSaga-H3-diagnosticQA-line-audio-guides-v6-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "10229d564d984f89f6339f0cec77df671ff7b4ad2f4aa8381ac69a48b7319c75",
+    "folder": "Archive/versions/DramaSaga-H3-diagnosticQA-line-audio-guides-v6-2026-10-25-cleaned-2026-10-26-1DLd-Cm",
+    "original_files": 177
+  },
+  {
+    "name": "DramaSaga-open-source-audio-repair-2026-10-25-PRE-HARDENING-cleaned-2026-10-26.zip",
+    "sha256": "26cdf61644ee03250b8d67b9e156088e4090b39682f9bfde2dfcfe915aa85138",
+    "folder": "Archive/versions/DramaSaga-open-source-audio-repair-2026-10-25-PRE-HARDENING-cleaned-2026-10-26-1zXf4lZ",
+    "original_files": 166
+  },
+  {
+    "name": "DramaSaga-main-audiofirst-2026-10-25-mechanical-gate-cleaned-2026-10-26.zip",
+    "sha256": "70db0cbdb6c7bedbc6bd2d93f96794d9b1fced21ecc613fbf5d332073e6830a7",
+    "folder": "Archive/versions/DramaSaga-main-audiofirst-2026-10-25-mechanical-gate-cleaned-2026-10-26-1uwvcT1",
+    "original_files": 153
+  },
+  {
+    "name": "DramaSaga-main-audiofirst-2026-10-25-cleaned-2026-10-26.zip",
+    "sha256": "9841a2d8200262b3d37c1cfa822da01a75d0918ec0b89762fd4607e63183b6ff",
+    "folder": "Archive/versions/DramaSaga-main-audiofirst-2026-10-25-cleaned-2026-10-26-1FplSVN",
+    "original_files": 146
+  },
+  {
+    "name": "dramasaga-r2v-2026-10-26.zip",
+    "sha256": "384fe307b315f147e2cfcc82ac439749bf6066c754e04f0c364b33fd7a50ca9b",
+    "folder": "Archive/versions/dramasaga-r2v-2026-10-26-1_Fhhgt",
+    "original_files": 191
+  },
+  {
+    "name": "magicdrama-github-export-2026-10-25.zip",
+    "sha256": "28033eb604acfc2e134c5b6aa0f033949b3978a508a459e91181aabc11220d54",
+    "folder": "Archive/versions/magicdrama-github-export-2026-10-25-10dvwjw",
+    "original_files": 174
+  },
+  {
+    "name": "DramaSaga-open-source-audio-repair-2026-10-25.zip",
+    "sha256": "37ef76a1f576465a68d0e9f78312ff3b1b1da1a1dabad250aa69997f2d8a76cb",
+    "folder": "Archive/versions/DramaSaga-open-source-audio-repair-2026-10-25-1B321Ej",
+    "original_files": 183
+  },
+  {
+    "name": "DramaSaga-open-source-audio-repair-2026-10-25-PRE-HARDENING.zip",
+    "sha256": "72441e11dcdb30c5248826b384f757e5270530c45dc2129a4442b53dcb5c4d4d",
+    "folder": "Archive/versions/DramaSaga-open-source-audio-repair-2026-10-25-PRE-HARDENING-1iOxVNf",
+    "original_files": 174
+  },
+  {
+    "name": "DramaSaga-hardening-2026-10-25-v1.zip",
+    "sha256": "7f5a3b3e7aba657288b064c72f3125122a7baa897677d680a2374e5a03c4c732",
+    "folder": "Archive/versions/DramaSaga-hardening-2026-10-25-v1-1X4tz2X",
+    "original_files": 179
+  },
+  {
+    "name": "DramaSaga-main-audiofirst-2026-10-25-mechanical-gate.zip",
+    "sha256": "5e2619c86f3bc56fa048c7e7dfb7a1f58b1468bbae9da875ff9ca714df508f8e",
+    "folder": "Archive/versions/DramaSaga-main-audiofirst-2026-10-25-mechanical-gate-1sObl6a",
+    "original_files": 161
+  },
+  {
+    "name": "DramaSaga-main-audiofirst-2026-10-25.zip",
+    "sha256": "9270ce761cb1c4b90e624f85ed2dab228bc603ad9bb27de8c9b1ee38583f6633",
+    "folder": "Archive/versions/DramaSaga-main-audiofirst-2026-10-25-1jw6hpM",
+    "original_files": 154
+  },
+  {
+    "name": "DramaSaga-H3-faithful-baseline-v7-2026-10-25.zip",
+    "sha256": "bee9f1b7fdfb2053c91147d3d3cd40e08e43e053061d9876836c9a0d5f6f5f3e",
+    "folder": "Archive/versions/DramaSaga-H3-faithful-baseline-v7-2026-10-25-1TGuqOx",
+    "original_files": 322
+  },
+  {
+    "name": "DramaSaga-H3-diagnosticQA-line-audio-guides-v6-2026-10-25.zip",
+    "sha256": "c797943fea3ba41f9d4e90bd3d2eb520865dfc73b99406de8056cc0316a08fc4",
+    "folder": "Archive/versions/DramaSaga-H3-diagnosticQA-line-audio-guides-v6-2026-10-25-1H6KNvw",
+    "original_files": 187
+  },
+  {
+    "name": "DramaSaga-H3-line-audio-guides-realQA-v5-2026-10-25.zip",
+    "sha256": "e49c044652405138eee21860b320d565afe35dc55566c3ca47607f229f4fc3bb",
+    "folder": "Archive/versions/DramaSaga-H3-line-audio-guides-realQA-v5-2026-10-25-1L1g52O",
+    "original_files": 186
+  },
+  {
+    "name": "DramaSaga-H3-real-video-QA-v4-2026-10-25.zip",
+    "sha256": "ce7984bd9b56b77bf8147885c7ef1261febe1aa7150ec848f04597c6276229fd",
+    "folder": "Archive/versions/DramaSaga-H3-real-video-QA-v4-2026-10-25-1bxnBvu",
+    "original_files": 182
+  },
+  {
+    "name": "DramaSaga-H3-midpoint-pin-qa-v3_1-2026-10-25.zip",
+    "sha256": "d7709f5b4d19d3bef9f2ad8419db4d68ebae69b29e2885a7a34d33104d690d95",
+    "folder": "Archive/versions/DramaSaga-H3-midpoint-pin-qa-v3_1-2026-10-25-1UYKou1",
+    "original_files": 180
+  },
+  {
+    "name": "DramaSaga-H3-midpoint-pin-qa-v3-2026-10-25.zip",
+    "sha256": "7f7b78fe73afa44a45865be63084d5c65789bed6d77343560dd4d3d864c2a2b1",
+    "folder": "Archive/versions/DramaSaga-H3-midpoint-pin-qa-v3-2026-10-25-1Oa9wQP",
+    "original_files": 180
+  },
+  {
+    "name": "DramaSaga-H3-original-route-modal-safety-v2-2026-10-25.zip",
+    "sha256": "822753cea2822b3bb2cf80f231e81c0d0091f73a5a66f70ac5b24cc92a52f7f0",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-modal-safety-v2-2026-10-25-1q2DSsV",
+    "original_files": 179
+  },
+  {
+    "name": "DramaSaga-H3-original-route-modal-safety-2026-10-25.zip",
+    "sha256": "10b7ea713162adfe6146458aee60148ca9be479b3cc6ee95fe35f2e46c189df0",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-modal-safety-2026-10-25-1aYWKt4",
+    "original_files": 179
+  },
+  {
+    "name": "DramaSaga-H3-original-route-stress-2026-10-25.zip",
+    "sha256": "74666e56b74a4029e5a37da8acbe914a4df3996b1a8df8137ac46d685ef887c8",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-stress-2026-10-25-1gmxfGl",
+    "original_files": 179
+  },
+  {
+    "name": "DramaSaga-H3-original-route-audit-2026-10-25.zip",
+    "sha256": "7c360ba0f48d7c3efed0979c90cfeb9f6cdd127ce3046f711176460841ed4919",
+    "folder": "Archive/versions/DramaSaga-H3-original-route-audit-2026-10-25-1SWd4G6",
+    "original_files": 177
+  },
+  {
+    "name": "DramaSaga Harry H3 preview route patch - 2026-10-25.zip",
+    "sha256": "622adaa4b23b20cf91084580a803a01b15429cf65f5b8234183f1449fb2bd2cb",
+    "folder": "Archive/versions/DramaSaga-Harry-H3-preview-route-patch---2026-10-25-1dcEoBS",
+    "original_files": 6
+  },
+  {
+    "name": "magicdrama-audiofirst-voices-pacing-2026-10-25.zip",
+    "sha256": "dd1072b2bded0fd7fd2d35d1c9b4da1ef5853f7924df607e83a08459de4fa69f",
+    "folder": "Archive/versions/magicdrama-audiofirst-voices-pacing-2026-10-25-1c1d8o_",
+    "original_files": 4
+  },
+  {
+    "name": "DramaSaga-MicroDrama-2026-10-25-av-fix-privacy-clean.zip",
+    "sha256": "113dfda6e6327ddbab56edbc742054694d1fe4686d18b348b20ac54d13082d70",
+    "folder": "Archive/versions/DramaSaga-MicroDrama-2026-10-25-av-fix-privacy-clean-1KitDZS",
+    "original_files": 172
+  },
+  {
+    "name": "microdrama_source_v2.tgz",
+    "sha256": "b6850cb0d9b5225a4259365fbba1c088a75f0fbe486d4f0878f9be9f8fcfb6cd",
+    "folder": "Archive/expanded-versions/microdrama_source_v2-b6850cb",
+    "original_files": 23
+  },
+  {
+    "name": "microdrama_source.tgz",
+    "sha256": "154fb3d83a4bffc5de8f29bea5e9caf255ba568e5b1cf5f4d93100e6df3f6f8e",
+    "folder": "Archive/expanded-versions/microdrama_source-154fb3d",
+    "original_files": 18
+  },
+  {
+    "name": "Harry-Draconia-YuleBall-E01-production-package.zip",
+    "sha256": "0b882489b041c536ef8ca68543e8dd1e12aa4774db803872f031e16dcb48d2c8",
+    "folder": "Archive/expanded-versions/Harry-Draconia-YuleBall-E01-production-package-0b88248",
+    "original_files": 14
+  },
+  {
+    "name": "E01-v6-raw-voice-and-receipts.zip",
+    "sha256": "df14d8d30df962b7a77d97102e663cf8ce2be45b49d02344196dd5a5aaf3395b",
+    "folder": "Archive/expanded-versions/E01-v6-raw-voice-and-receipts-df14d8d",
+    "original_files": 46
+  },
+  {
+    "name": "E01-repair-music-stem.zip",
+    "sha256": "c286027e4735e28ed0d32b8e87fde399b037bda302dd49decfc918be72e73059",
+    "folder": "Archive/expanded-versions/E01-repair-music-stem-c286027",
+    "original_files": 1
+  },
+  {
+    "name": "E01-repair-mix-master.zip",
+    "sha256": "e5f107df808cf1be831d8e6052b4beb936c697516a01d3e308579f117798fcaf",
+    "folder": "Archive/expanded-versions/E01-repair-mix-master-e5f107d",
+    "original_files": 3
+  },
+  {
+    "name": "E01-repair-dialogue-stem.zip",
+    "sha256": "e16f80cc95f61655dd3f385fb89f5332ea5fc7fc2b4810fb9e3eea54238a6018",
+    "folder": "Archive/expanded-versions/E01-repair-dialogue-stem-e16f80c",
+    "original_files": 1
+  },
+  {
+    "name": "E01-repair-code-evidence.zip",
+    "sha256": "912dc1070d795e126acc0e9b96fe75f0a9489e3083499751e5b83b7f417e3bf3",
+    "folder": "Archive/expanded-versions/E01-repair-code-evidence-912dc10",
+    "original_files": 14
+  },
+  {
+    "name": "microdrama-still-first-pipeline-v3.1-delivery-gate.zip",
+    "sha256": "779b1c2c49fe55145394cb51d2c3d1786753a5c08276fb3595a6400c9913ab4e",
+    "folder": "Archive/expanded-versions/microdrama-still-first-pipeline-v3.1-delivery-gate-779b1c2",
+    "original_files": 68
+  },
+  {
+    "name": "microdrama-still-first-pipeline-v3.zip",
+    "sha256": "314958f724d33667271a71abb49ee6276d552a58205ecc43fc81fd536e98c185",
+    "folder": "Archive/expanded-versions/microdrama-still-first-pipeline-v3-314958f",
+    "original_files": 58
+  },
+  {
+    "name": "e01-v43-production-720p-part2.zip",
+    "sha256": "f767519784e133a8c05a32fd0ec075611ec39bd2896dee839cdfb866f0692e18",
+    "folder": "Archive/expanded-versions/e01-v43-production-720p-part2-f767519",
+    "original_files": 3
+  },
+  {
+    "name": "e01-v43-production-720p-part1.zip",
+    "sha256": "4192f1b6239f9fdfbf7b09edeb735f82e59a6e9be8199f8ad31ba57cedf38b4f",
+    "folder": "Archive/expanded-versions/e01-v43-production-720p-part1-4192f1b",
+    "original_files": 3
+  },
+  {
+    "name": "e01-v43-production-720p-part3.zip",
+    "sha256": "bab20c853210a9cefbd912e0d2f531d8b806244ab24598fb13f6ac6141ad5c23",
+    "folder": "Archive/expanded-versions/e01-v43-production-720p-part3-bab20c8",
+    "original_files": 5
+  },
+  {
+    "name": "e01-v43-local-motion-fixes.zip",
+    "sha256": "e94e128c05f6a0ea138581fa879b92dd3dc79638fb835a73913ecde98838b9a7",
+    "folder": "Archive/expanded-versions/e01-v43-local-motion-fixes-e94e128",
+    "original_files": 4
+  },
+  {
+    "name": "E01-v43-remaining-motion-test-contacts.zip",
+    "sha256": "92ccdd43986f4af6a22ead434db39e767bfa8a7d47299c0e10aff4a4760bef30",
+    "folder": "Archive/expanded-versions/E01-v43-remaining-motion-test-contacts-92ccdd4",
+    "original_files": 22
+  },
+  {
+    "name": "E01-v43-remaining-motion-tests-480p.zip",
+    "sha256": "b4ec0611052ba4d4887174c6b5f28fcdd28aa601aa685e133220e9e2c1fa9aea",
+    "folder": "Archive/expanded-versions/E01-v43-remaining-motion-tests-480p-b4ec061",
+    "original_files": 10
+  },
+  {
+    "name": "E01-v43-usable-local-cuts.zip",
+    "sha256": "6e807bc77f1a75e1aa073ce5161899feb3e5cefac386e6ca35867261dbd1ec96",
+    "folder": "Archive/expanded-versions/E01-v43-usable-local-cuts-6e807bc",
+    "original_files": 4
+  },
+  {
+    "name": "E01-v43-production-cleared-720p.zip",
+    "sha256": "e13bcdaacd06ae208511457363c16fc4581b712bab65f37049df22553a6fca5a",
+    "folder": "Archive/expanded-versions/E01-v43-production-cleared-720p-e13bcda",
+    "original_files": 44
+  },
+  {
+    "name": "E01-v43-timed-reconciled-sequence-updated.zip",
+    "sha256": "a53dbf0b49746fac5c8b29609da0ad8aa5592e787db0f168ec948fdf1a92b766",
+    "folder": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-updated-a53dbf0",
+    "original_files": 17
+  },
+  {
+    "name": "E01-v43-bounded-motion-tests.zip",
+    "sha256": "a0a0a307c729eb49b4be566ee1d79e2a5520846bf86d9d298190352dbc958a2d",
+    "folder": "Archive/expanded-versions/E01-v43-bounded-motion-tests-a0a0a30",
+    "original_files": 13
+  },
+  {
+    "name": "E01-v43-timed-reconciled-sequence.zip",
+    "sha256": "64c8be4a0173cf7ba40e7123410585a0900ff575f38d088fc30a497b2a58a30d",
+    "folder": "Archive/expanded-versions/E01-v43-timed-reconciled-sequence-64c8be4",
+    "original_files": 16
+  },
+  {
+    "name": "E01-v42-reconciled-still-sequence.zip",
+    "sha256": "b8906ef91b752a5ec0a98c414916406b6f284f163c991c6b6d9ea8e1056c4325",
+    "folder": "Archive/expanded-versions/E01-v42-reconciled-still-sequence-b8906ef",
+    "original_files": 14
+  },
+  {
+    "name": "E01-v41-accepted-key-anchors.zip",
+    "sha256": "9d852ce0767af890eeda20eb2ac24001d733dd215d15bab0f7bdf4f0a5f4fc1f",
+    "folder": "Archive/expanded-versions/E01-v41-accepted-key-anchors-9d852ce",
+    "original_files": 13
+  },
+  {
+    "name": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26.zip",
+    "sha256": "74cfb433b03a313b302e6098224d78f2152deff2b8bd17ccbb49bd6f001fd2d1",
+    "folder": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-cleaned-2026-10-26-74cfb43",
+    "original_files": 24
+  },
+  {
+    "name": "E01-pipeline-v3.2-open-source-audio-repair.zip",
+    "sha256": "66b8f9874031398f4b37dc4332a1ffffdb76af58d089b74ff1ce6ca7f9d84edd",
+    "folder": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-66b8f98",
+    "original_files": 91
+  },
+  {
+    "name": "E01-continuity-pilot-FAILED-raws-and-receipts.zip",
+    "sha256": "acc03143d4d12646a57e92b02bab8534a91dcd4222ba1d3cfbe9b9859c517357",
+    "folder": "Archive/expanded-versions/E01-continuity-pilot-FAILED-raws-and-receipts-acc0314",
+    "original_files": 16
+  },
+  {
+    "name": "E01-E03-voice-redo-interim-sources.zip",
+    "sha256": "f93edf270129195244107f66406c36d44922d681c04bcb8e0b89e6e9508cff7c",
+    "folder": "Archive/expanded-versions/E01-E03-voice-redo-interim-sources-f93edf2",
+    "original_files": 33
+  },
+  {
+    "name": "E01-34s-shot4-sources.zip",
+    "sha256": "cba14ee81f373a4bccfcff82fdb9c67e4b1124740c33a7eb4bb49ead49048d98",
+    "folder": "Archive/expanded-versions/E01-34s-shot4-sources-cba14ee",
+    "original_files": 3
+  },
+  {
+    "name": "E01-34s-shot3-sources.zip",
+    "sha256": "8acda2a18ba15daee472c03938fa23b5a769f755ceede6168e47ea4add400881",
+    "folder": "Archive/expanded-versions/E01-34s-shot3-sources-8acda2a",
+    "original_files": 3
+  },
+  {
+    "name": "E01-34s-shot2-sources.zip",
+    "sha256": "01974cc37edec8799fd8ae11c252b8a7d56780266bc4ff5f46ad4c4cbf214ba7",
+    "folder": "Archive/expanded-versions/E01-34s-shot2-sources-01974cc",
+    "original_files": 3
+  },
+  {
+    "name": "E01-34s-shot1-sources.zip",
+    "sha256": "5463d9fe3386ff2840c115637afdf2767431ffd472d096f7116a95642ca9966c",
+    "folder": "Archive/expanded-versions/E01-34s-shot1-sources-5463d9f",
+    "original_files": 3
+  },
+  {
+    "name": "E01-34s-test-references-and-receipts.zip",
+    "sha256": "aa6c5dc7fbdd742b61218fdf1f0bd727160044802198a77915b3c1988d28d159",
+    "folder": "Archive/expanded-versions/E01-34s-test-references-and-receipts-aa6c5dc",
+    "original_files": 19
+  },
+  {
+    "name": "E01-recognition-short-test-raw-receipt.zip",
+    "sha256": "42fedbacd4e6f43f3694992ba6879a1c692f262e7d9774af2761730df80570c3",
+    "folder": "Archive/expanded-versions/E01-recognition-short-test-raw-receipt-42fedba",
+    "original_files": 4
+  },
+  {
+    "name": "E01-v6-episodic-review-notes.zip",
+    "sha256": "e3d271b8b177ed9fccf98d64c34e5d3c48d87942ee679b2047b4373218005d80",
+    "folder": "Archive/expanded-versions/E01-v6-episodic-review-notes-e3d271b",
+    "original_files": 3
+  },
+  {
+    "name": "E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING.zip",
+    "sha256": "3c65891283393ec251cc166ed10e99427f2145215b32dff1e3cab0b2be667ea6",
+    "folder": "Archive/expanded-versions/E01-pipeline-v3.2-open-source-audio-repair-PRE-HARDENING-3c65891",
+    "original_files": 82
+  },
+  {
+    "name": "harry-rev-audio-2026-10-26.zip",
+    "sha256": "03b0ad0f0ce07700185017b76b1bd461c574dc5d5f8d3c4ece6a18232440724a",
+    "folder": "Archive/expanded-versions/harry-rev-audio-2026-10-26-03b0ad0",
+    "original_files": 47
+  },
+  {
+    "name": "harry-voice-test-2026-10-26.zip",
+    "sha256": "18c26e845a13a40d17b5e78ce93736de2550051abf10e512fd9c4fd452768b4b",
+    "folder": "Archive/expanded-versions/harry-voice-test-2026-10-26-18c26e8",
+    "original_files": 8
+  },
+  {
+    "name": "audio-improved-2026-10-26.zip",
+    "sha256": "78fa1306ef612220a8de829021e3f336749cb8542ce48b7b77b8a8144c56ef1e",
+    "folder": "Archive/expanded-versions/audio-improved-2026-10-26-78fa130",
+    "original_files": 51
+  },
+  {
+    "name": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2.zip",
+    "sha256": "7646c004ec58fb9cc068c83b5f4531c15892bcea1820a620a64e89b4741c3de1",
+    "folder": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-v2-7646c00",
+    "original_files": 24
+  },
+  {
+    "name": "Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25.zip",
+    "sha256": "d7ac3d6fe0ef8328845990b246a9b49f7896d305301751529aacf4fb0a99b28f",
+    "folder": "Archive/expanded-versions/Harry-Draconia-YuleBall-S1-audiofirst-2026-10-25-d7ac3d6",
+    "original_files": 16
+  },
+  {
+    "name": "E01-hardening-2026-10-25-v1.zip",
+    "sha256": "29b38125482aa385ce15cee9523f18b3ccc6f8c07d4159479e7af41c8b8f5867",
+    "folder": "Archive/expanded-versions/E01-hardening-2026-10-25-v1-29b3812",
+    "original_files": 87
+  },
+  {
+    "name": "dramaforge_m19-reconstructed.zip",
+    "sha256": "22e6ff8908a3013e986af77baabb509fad5d38c193485f49ec430b84db16a4dd",
+    "folder": "Archive/expanded-versions/dramaforge_m19-reconstructed-reconst",
+    "original_files": 666
+  }
+]

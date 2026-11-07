@@ -1,0 +1,1286 @@
+{
+ "model": "wan-3.0",
+ "res": "720p",
+ "fps_actual_verified": 30,
+ "rate_cr_per_s": 96,
+ "rule": "dialogue shot = ceil(line+0.5s reaction), holds = design; no rerolls; probe not counted",
+ "shots": [
+  {
+   "episode": "e01",
+   "shot": 1,
+   "designed_s": 5,
+   "action": "GREAT HALL, candlelit Yule Ball. Snow hangs motionless under the enchanted ceiling. Harry enters alone, dressed plainly, watching reflections instead of people. In every window reflection, Draconia is already looking at him.",
+   "speaker": null,
+   "line": null,
+   "line_dur": null,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "frame": {
+    "refs": [
+     "harry_front_close",
+     "harry_fullbody",
+     "yule_ball_location"
+    ],
+    "prompt": "Candlelit Yule Ball in the Great Hall from the location reference. Medium shot. The black-haired boy with round glasses and dark red-trimmed dress robes from the references walks calmly between the dancing couples, fully solid and present, facing left. In the tall window pane beside him: a sharp, clear reflected silhouette of a motionless watching figure that is NOT present in the hall itself. His eyeline is just catching the reflection. Background: formally dressed dancing couples, chandeliers, glowing waltz-grid lines on the marble floor. Face, hair, wardrobe and proportions identical to the references. Match the staging, framing and lighting of the location reference. Photorealistic, cinematic candlelight."
+   },
+   "framing_class": "wide_action",
+   "dialogue_on_screen": false
+  },
+  {
+   "episode": "e01",
+   "shot": 2,
+   "designed_s": 5,
+   "action": "Draconia sees a black spark forming above Harry's head. Her smile vanishes. She drops her programme and runs through the dancers.",
+   "speaker": "DRACONIA",
+   "line": "Potter, don't turn around! Look at me - only at me - and walk over her",
+   "line_dur": 9.0,
+   "shot_s": 10,
+   "billing_s": 10,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l01-draconia.mp3",
+   "asr_sim": 0.979,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 4.7,
+     "framing_class": "cu_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close on Draconia: her smile vanishes as she sees the black spark above Harry's head; she calls out to him, urgent and controlled.",
+     "frame": {
+      "refs": [
+       "draconia_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references: her smile vanishing, eyes locked up and to the side, mouth open mid-call, urgent. Face large, mouth clearly visible, simple candlelit background. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 2,
+     "framing_class": "insert",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Insert: a small black spark crackling with white-hot points above Harry's unsuspecting head, seen past his hair and shoulder; no speaking face on screen.",
+     "frame": {
+      "refs": [
+       "harry_fullbody",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: over the black-haired boy's shoulder and hair from behind, a small black spark crackling with bright white-hot points hanging in the air above his head against the bright window. No face visible. Match the location lighting. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 3,
+     "dur_s": 3.3,
+     "framing_class": "wide_action",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Draconia's paper programme slips from her fingers and falls; she runs through the dancing couples toward Harry.",
+     "frame": {
+      "refs": [
+       "draconia_fullbody",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the platinum-blonde woman in the green embroidered gown from the references runs through formally dressed dancing couples, a paper programme falling from her fingers behind her, the black-haired boy with round glasses visible ahead of her. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 3,
+   "designed_s": 6,
+   "action": "Ice arrows strike where Harry stood. Draconia grabs his hand and drags him onto the dance floor as screams rise.",
+   "speaker": "DRACONIA",
+   "line": "Dance with me right now. The floor won't touch us while we're moving -",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e01-l02-draconia.mp3",
+   "asr_sim": 0.991,
+   "frame": {
+    "refs": [
+     "two_shot_action",
+     "draconia_front_close",
+     "harry_front_close",
+     "yule_ball_location"
+    ],
+    "prompt": "Candlelit Yule Ball in the Great Hall from the location reference. Wide shot. The platinum-blonde woman in the green embroidered gown from the references has just reached the black-haired boy with round glasses and dark red-trimmed dress robes from the references; she grips his arm, pulling him toward her, both fully in frame head to feet. Between and above them: a black crackle of dark magic bursting into a bright impact point. At their feet: a shallow crater of shattered marble with glowing waltz-grid lines fracturing across it; feet and floor grid fully visible in frame. Background: formally dressed dancers recoiling, chandeliers. Both faces identical to the references. Match the location reference's lighting. Photorealistic, cinematic candlelight."
+   },
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 3.9,
+     "framing_class": "two_shot_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close two-shot: Draconia grabs Harry's hand and drags him onto the dance floor, speaking the first sentence to his face, urgent and commanding.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "draconia_front_close",
+       "harry_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot on the platinum-blonde woman in the green embroidered gown gripping the black-haired boy's hand and pulling him onto the dance floor; she speaks directly to him, mouth clearly visible, urgent command on her face, both faces readable. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 0.6,
+     "framing_class": "insert",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Insert: their joined hands and her grip tightening as dancers scatter around them; no speaking face on screen.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: two joined hands, her pale fingers gripping his hand tight, green embroidered sleeve and dark dress robe cuff visible, blurred dancing couples and candlelight behind. No faces. Match the location lighting. Photorealistic."
+     }
+    },
+    {
+     "id": 3,
+     "dur_s": 3.5,
+     "framing_class": "wide_action",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Wide on the dance floor: Draconia pulls Harry into the dance among scattering couples as her voice continues offscreen; arrows strike the floor where they stood.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "draconia_fullbody",
+       "harry_fullbody",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the platinum-blonde woman in the green embroidered gown pulling the black-haired boy in dress robes into a dance among scattering couples, crystalline ice arrows striking the floor tiles behind them. Both figures full body, faces small and not readable. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 4,
+   "designed_s": 5,
+   "action": "Harry lets her lead, scanning the floor, ceiling and wand positions while keeping his face controlled.",
+   "speaker": "HARRY",
+   "line": "Fine - I'm dancing. Now tell me what those things are, and why they wa",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l03-harry.mp3",
+   "asr_sim": 0.986,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 5,
+   "designed_s": 6,
+   "action": "Another volley punches into the floor between dancers. Draconia spins Harry out of the impact line, hair whipping across her face.",
+   "speaker": "DRACONIA",
+   "line": "It's a long story, and it ends with you breathing. Eyes on the ceiling",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e01-l04-draconia.mp3",
+   "asr_sim": 0.988,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 6,
+   "designed_s": 5,
+   "action": "Harry notices the arrows land on the orchestra's offbeat. He changes their steps by half a beat. The next arrows miss by inches.",
+   "speaker": "HARRY",
+   "line": "The arrows land on the orchestra's offbeat. Change your step with me -",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l05-harry.mp3",
+   "asr_sim": 0.99,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 2.5,
+     "framing_class": "cu_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close on Harry mid-dance: his eyes flick to the falling arrows as he speaks the first sentence, realization landing.",
+     "frame": {
+      "refs": [
+       "harry_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in dress robes from the references: mid-dance, eyes flicking upward toward falling ice arrows, mouth open mid-speech, realization on his face. Face large, mouth clearly visible. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 0.5,
+     "framing_class": "insert",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Insert: ice arrows striking the orchestra's instruments on the offbeat, strings snapping; no speaking face on screen.",
+     "frame": {
+      "refs": [
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: crystalline ice arrows striking a violin and harp in a small orchestra on a raised platform, silver strings snapping and whipping, candlelight glinting off ice. No faces. Match the location lighting. Photorealistic."
+     }
+    },
+    {
+     "id": 3,
+     "dur_s": 4.0,
+     "framing_class": "wide_action",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Wide: Harry shifts their step by half a beat; the next volley of ice arrows misses them by inches as his voice continues offscreen.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "draconia_fullbody",
+       "harry_fullbody",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the black-haired boy in dress robes leading the platinum-blonde woman in the green embroidered gown through a sharp half-beat step change on the dance floor, crystalline ice arrows shattering on the tiles just beside them. Both figures full body, faces small and not readable. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 7,
+   "designed_s": 4,
+   "action": "Draconia grins despite the chaos, delighted that he saw it.",
+   "speaker": "DRACONIA",
+   "line": "You counted. Clever boy. Then count faster - the music won't slow down",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l06-draconia.mp3",
+   "asr_sim": 0.986,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 8,
+   "designed_s": 7,
+   "action": "The orchestra instruments split apart. Silver strings whip across the hall. Harry cuts two with a precise slashing charm; a third wraps his wrist.",
+   "speaker": "DRACONIA",
+   "line": "Show-off. Even you can't cut all three.",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l07-draconia.mp3",
+   "asr_sim": 0.972,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 4.0,
+     "framing_class": "cu_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close on Draconia: a sharp, delighted smirk as Harry's charm cuts the first strings - 'Show-off.' - then her smirk turns to a warning as a third silver string whips toward them: 'Even you can't cut all three.'",
+     "frame": {
+      "refs": [
+       "draconia_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references: sharp delighted smirk tightening into a tense warning, eyes tracking something whipping through the air beside her, mouth clearly visible mid-speech. Face large. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 3.0,
+     "framing_class": "wide_action",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Wide: the third silver string wraps Harry's wrist and yanks; Draconia lunges to catch him.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "draconia_fullbody",
+       "harry_fullbody",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: a glowing silver string wrapped around the black-haired boy's wrist pulling him off balance; the platinum-blonde woman in the green embroidered gown lunging to catch his arm. Both figures full body, faces small. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 9,
+   "designed_s": 5,
+   "action": "Draconia snaps the string with her heel, pulls Harry upright, and keeps dancing because the floor punishes stillness.",
+   "speaker": "HARRY",
+   "line": "Efficient. Remind me to applaud once the orchestra gives me my hand ba",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e01-l08-harry.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 10,
+   "designed_s": 7,
+   "action": "Six empty suits of armor march from the shadows. Draconia kicks a drinks trolley into the first, laughs, and ducks as it swings.",
+   "speaker": "DRACONIA",
+   "line": "I meant to do that. The trolley was always part of the plan.",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l09-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 11,
+   "designed_s": 5,
+   "action": "Harry catches her before she falls, turns the rescue into the next dance step, and studies the masked figure forming at the center of the floor.",
+   "speaker": "HARRY",
+   "line": "No, you didn't. Thanks for the catch anyway.",
+   "line_dur": 2.0,
+   "shot_s": 3,
+   "billing_s": 3,
+   "refs": [
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e01-l10-harry.mp3",
+   "asr_sim": 0.988,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 12,
+   "designed_s": 6,
+   "action": "The masked figure copies their movements. Each copied step seals another exit with ice.",
+   "speaker": "DRACONIA",
+   "line": "He's using the waltz grid. Every proper step we dance together seals a",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l11-draconia.mp3",
+   "asr_sim": 0.969,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 13,
+   "designed_s": 6,
+   "action": "Harry sees the floor pattern: every proper waltz step feeds the curse. He deliberately breaks form.",
+   "speaker": "HARRY",
+   "line": "Then we dance it wrong on purpose. Break the grid with me.",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l12-harry.mp3",
+   "asr_sim": 0.946,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 14,
+   "designed_s": 6,
+   "action": "They improvise. Draconia spins under Harry's shield charm; the redirected spell hits the chandelier chain. The chandelier groans above the students.",
+   "speaker": "DRACONIA",
+   "line": "That was your plan? Drop the ceiling on the whole hall?",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e01-l13-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 3.4,
+     "framing_class": "two_shot_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close two-shot: Draconia turns on Harry mid-spin, incredulous - 'That was your plan?' - then jabs a finger upward at the groaning chandelier, finishing with rising disbelief.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "draconia_front_close",
+       "harry_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot: the platinum-blonde woman in the green embroidered gown turned toward the black-haired boy in dress robes, incredulous, jabbing a finger upward, mouth clearly visible mid-speech; both faces readable. Identical faces, hair, wardrobe to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 1.6,
+     "framing_class": "insert",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Insert from below: the huge chandelier groaning on its chain high above the dance floor, candles swaying; no speaking face on screen.",
+     "frame": {
+      "refs": [
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Low-angle insert looking straight up: a massive candle-lit chandelier hanging from a straining chain high above the hall, flames swaying, stone ceiling vault behind. No people. Match the location lighting. Photorealistic."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 15,
+   "designed_s": 5,
+   "action": "Harry points to a red velvet banquet table. Draconia understands instantly, flips it with a levitation charm, and uses it as a shield.",
+   "speaker": "HARRY",
+   "line": "Left side, three beats, the red table. Flip it on my mark and hold it ",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l14-harry.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 16,
+   "designed_s": 5,
+   "action": "The chandelier crashes into the frozen floor. Ice swallows it. The masked figure applauds without sound. Green and silver ribbons burn onto Harry and Draconia's hands.",
+   "speaker": "DRACONIA",
+   "line": "Harry... it has our names. Both of them, burned right in.",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l15-draconia.mp3",
+   "asr_sim": 0.99,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true,
+   "beats": [
+    {
+     "id": 1,
+     "dur_s": 4.4,
+     "framing_class": "cu_dialogue",
+     "camera": "static",
+     "carries_line": true,
+     "action": "Close on Draconia: she stares at her hand and breathes 'Harry...', the pause held on her dawning dread, then turns her palm toward him, voice low - 'it has our names.'",
+     "frame": {
+      "refs": [
+       "draconia_front_close",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references: staring down at her own hand, dawning dread, then lifting her eyes toward someone off-frame, mouth clearly visible mid-speech. Face large. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight."
+     }
+    },
+    {
+     "id": 2,
+     "dur_s": 2.6,
+     "framing_class": "insert",
+     "camera": "static",
+     "carries_line": false,
+     "action": "Insert: their two hands side by side, green and silver ribbon-marks burning into the skin as names; her voice continues over the insert.",
+     "frame": {
+      "refs": [
+       "two_shot_action",
+       "yule_ball_location"
+      ],
+      "prompt": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: two hands side by side, a smaller pale hand and a larger hand, glowing green and silver ribbon-like marks burned into the skin forming written names, embers at the edges. No faces. Match the location lighting. Photorealistic, cinematic candlelight."
+     }
+    }
+   ]
+  },
+  {
+   "episode": "e01",
+   "shot": 17,
+   "designed_s": 5,
+   "action": "The doors seal. Outside the windows, the Forbidden Forest answers with a bow-shaped green light. Harry turns on Draconia, controlled but alarmed.",
+   "speaker": "HARRY",
+   "line": "Draconia. Look at me. What did you do?",
+   "line_dur": 2.0,
+   "shot_s": 3,
+   "billing_s": 3,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e01-l16-harry.mp3",
+   "asr_sim": 0.986,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e01",
+   "shot": 18,
+   "designed_s": 2,
+   "action": "Close on Draconia: scared for the first time, but she does not step back. Cut to black.",
+   "speaker": "DRACONIA",
+   "line": "I spent weeks trying to warn you. You never once listened.",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": true,
+   "audio": "e01-l17-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 1,
+   "designed_s": 6,
+   "action": "Immediately after E01. The scorched ribbon-marks glow on both their hands. Students flee; the doors seal with ice crawling across them.",
+   "speaker": null,
+   "line": null,
+   "line_dur": null,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "framing_class": "wide_action",
+   "dialogue_on_screen": false
+  },
+  {
+   "episode": "e02",
+   "shot": 2,
+   "designed_s": 5,
+   "action": "Harry grabs Draconia's wrist, turning the marked hand toward her face. Controlled fury, low voice.",
+   "speaker": "HARRY",
+   "line": "Warn me about what? You've had weeks to find the words, Draconia - try",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l01-harry.mp3",
+   "asr_sim": 0.987,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 3,
+   "designed_s": 5,
+   "action": "Draconia pulls free, chin up, but her eyes flick to the ice. The orchestra reassembles itself, instruments rising.",
+   "speaker": "DRACONIA",
+   "line": "Not here. This hall listens, Potter - and I refuse to feed it.",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l02-draconia.mp3",
+   "asr_sim": 0.983,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 4,
+   "designed_s": 6,
+   "action": "The chandeliers dim to a single spotlight on the dance floor. A voice with no source: a waltz count, patient and wrong.",
+   "speaker": "CURSE",
+   "line": "One. Two. Three.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l03-curse.mp3",
+   "asr_sim": 0.963,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 5,
+   "designed_s": 6,
+   "action": "Ice flows across the floor in waltz-grid lines. Reflections of Harry and Draconia step OUT of the iced floor, smiling, and take starting dance positions.",
+   "speaker": "HARRY",
+   "line": "Tell me those things are only reflections. Tell me they are not us.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l04-harry.mp3",
+   "asr_sim": 0.992,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 6,
+   "designed_s": 5,
+   "action": "Draconia's reflection curtsies to her. She does not curtsey back.",
+   "speaker": "DRACONIA",
+   "line": "They're what this trial expects us to become. Don't you dare bow back.",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l05-draconia.mp3",
+   "asr_sim": 0.977,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 7,
+   "designed_s": 7,
+   "action": "The reflections attack mid-step: mirrored Harry slashes at Harry's ribs with a rapier of ice; he parries with a chair-leg, furious at the improvisation.",
+   "speaker": "HARRY",
+   "line": "It copied my footing, but it can't copy my temper. Watch.",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e02-l06-harry.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 8,
+   "designed_s": 6,
+   "action": "Draconia duels her own reflection and loses ground, until she stops dueling properly: a trip, an elbow, a grin. The reflection shatters.",
+   "speaker": "DRACONIA",
+   "line": "It dances better than me. Lucky for us, I cheat better than it.",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e02-l07-draconia.mp3",
+   "asr_sim": 0.992,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 9,
+   "designed_s": 6,
+   "action": "The curse-count accelerates. Ice-grid tightens, herding them onto the floor's center mark: the exact starting position of the cursed waltz.",
+   "speaker": "HARRY",
+   "line": "It's not attacking us anymore. It's casting us, like actors in its reh",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l08-harry.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 10,
+   "designed_s": 7,
+   "action": "Draconia reads the ribbon-marks on her own hand, recognizing the pattern, and goes still in a way she hasn't all night.",
+   "speaker": "DRACONIA",
+   "line": "This is the founding trial - my family's trial, Potter. It only releas",
+   "line_dur": 8.0,
+   "shot_s": 9,
+   "billing_s": 9,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l09-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 11,
+   "designed_s": 6,
+   "action": "Harry steps onto the center mark and offers his hand, formal, eyes hard.",
+   "speaker": "HARRY",
+   "line": "Then we finish it together. And afterward, you tell me everything.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e02-l10-harry.mp3",
+   "asr_sim": 0.952,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 12,
+   "designed_s": 7,
+   "action": "They dance properly for the first time: sharp, correct, in sync. The ice-grid feeds on each correct step, glowing brighter, exits sealing faster.",
+   "speaker": "DRACONIA",
+   "line": "Every right step feeds it, and every wrong one punishes us. It's not a",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e02-l11-draconia.mp3",
+   "asr_sim": 0.989,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 13,
+   "designed_s": 7,
+   "action": "Harry deliberately breaks the form again; the floor cracks and throws him down. Draconia pulls him up before the ice closes over his hand.",
+   "speaker": "DRACONIA",
+   "line": "Every wrong step takes a piece of you and keeps it. Stop testing it, H",
+   "line_dur": 6.0,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l12-draconia.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 14,
+   "designed_s": 7,
+   "action": "Close on Draconia: she looks at the crest-mark burning into her palm and makes a decision.",
+   "speaker": "DRACONIA",
+   "line": "There is a forfeit step. A Malfoy can end this trial by yielding the p",
+   "line_dur": 8.0,
+   "shot_s": 9,
+   "billing_s": 9,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l13-draconia.mp3",
+   "asr_sim": 0.982,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 15,
+   "designed_s": 7,
+   "action": "Harry processes what \"yielding the pair-bond\" costs before she can look away; the count hits the final bar.",
+   "speaker": "HARRY",
+   "line": "Don't you dare pay that price alone. Not for me.",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e02-l14-harry.mp3",
+   "asr_sim": 0.989,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e02",
+   "shot": 16,
+   "designed_s": 7,
+   "action": "The reflections reform behind them as perfect dancers and bow. The floor opens a stairwell of ice under the center mark, breathing cold air up at them. Cut to black.",
+   "speaker": "CURSE",
+   "line": "Rehearsal two. Bring your honesty.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": true,
+   "audio": "e02-l15-curse.mp3",
+   "asr_sim": 0.985,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 1,
+   "designed_s": 6,
+   "action": "The ice stairwell spits them into a cellared dock under the castle: two old brooms chained to a post, the Black Lake black beyond an arched opening.",
+   "speaker": null,
+   "line": null,
+   "line_dur": null,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "framing_class": "wide_action",
+   "dialogue_on_screen": false
+  },
+  {
+   "episode": "e03",
+   "shot": 2,
+   "designed_s": 5,
+   "action": "Harry works the chain with a snapping charm while Draconia watches the stair. Ice begins crawling down the steps after them.",
+   "speaker": "DRACONIA",
+   "line": "Whatever you think you found down here, we are leaving right now.",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l01-draconia.mp3",
+   "asr_sim": 0.992,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 3,
+   "designed_s": 6,
+   "action": "Harry finds it: a page torn from a trial record, crest-stamped, a name burned halfway out. He shows her.",
+   "speaker": "HARRY",
+   "line": "This is your family's handwriting, Draconia, written before the ball. ",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l02-harry.mp3",
+   "asr_sim": 0.994,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 4,
+   "designed_s": 6,
+   "action": "Draconia slashes the chain with one cut, throws him a broom instead of an answer, and kicks off into the wind.",
+   "speaker": "DRACONIA",
+   "line": "Fly first. You can hate me properly once we're at altitude.",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l03-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 5,
+   "designed_s": 7,
+   "action": "They burst out over the frozen lake: moonlight, black ice, wind. Behind them the castle windows light up in sequence, watching.",
+   "speaker": null,
+   "line": null,
+   "line_dur": null,
+   "shot_s": 7,
+   "billing_s": 7,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "framing_class": "wide_action",
+   "dialogue_on_screen": false
+  },
+  {
+   "episode": "e03",
+   "shot": 6,
+   "designed_s": 7,
+   "action": "Ice spears rise from the lake surface in pursuit lines, homing like the arrows did. Harry weaves; one grazes his cloak and freezes the hem solid.",
+   "speaker": "HARRY",
+   "line": "It's the same count as the ballroom! The storm is following the waltz!",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l04-harry.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 7,
+   "designed_s": 6,
+   "action": "Draconia hears it too: the wind carries the curse-count. She drags her broom left on the offbeat; the spears miss by inches.",
+   "speaker": "DRACONIA",
+   "line": "Then stop flying on the beat! Break your rhythm, now!",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l05-draconia.mp3",
+   "asr_sim": 0.961,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 8,
+   "designed_s": 7,
+   "action": "A spear takes Harry's broom's tail. He drops, catches the bristles one-handed, hanging over the ice.",
+   "speaker": "HARRY",
+   "line": "A little help would be lovely right about now!",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l06-harry.mp3",
+   "asr_sim": 0.989,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 9,
+   "designed_s": 8,
+   "action": "Draconia dives against the count, catches his wrist, and hauls him across her broom. The effort costs her: the crest-mark flares and she goes white.",
+   "speaker": "DRACONIA",
+   "line": "I've got you. Hold on to me - I've got you.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e03-l07-draconia.mp3",
+   "asr_sim": 0.974,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 10,
+   "designed_s": 7,
+   "action": "Flying doubled, slower, spears gaining. Harry watches her face, not the spears: the mark, the cost, the page.",
+   "speaker": "HARRY",
+   "line": "You knew. Before the ball ever started, you knew some part of this.",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l08-harry.mp3",
+   "asr_sim": 0.992,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 11,
+   "designed_s": 7,
+   "action": "Draconia doesn't look at him. Wind, ice, the count. Then it breaks out of her.",
+   "speaker": "DRACONIA",
+   "line": "The warning spell was mine. I knew the trial wakes for a paired witnes",
+   "line_dur": 8.0,
+   "shot_s": 9,
+   "billing_s": 9,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l09-draconia.mp3",
+   "asr_sim": 0.991,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 12,
+   "designed_s": 7,
+   "action": "Harry, anger and relief colliding because her warning is the only reason he survived E01.",
+   "speaker": "HARRY",
+   "line": "You used me. You picked me as the other half of a pair I never agreed ",
+   "line_dur": 4.0,
+   "shot_s": 5,
+   "billing_s": 5,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l10-harry.mp3",
+   "asr_sim": 0.993,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 13,
+   "designed_s": 7,
+   "action": "Draconia, the defiance gone quiet:",
+   "speaker": "DRACONIA",
+   "line": "I picked the one person who wouldn't run. That wasn't strategy, Harry.",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l11-draconia.mp3",
+   "asr_sim": 0.994,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 14,
+   "designed_s": 7,
+   "action": "The Forbidden Forest edge rises ahead. The bow-shaped green light from E01 answers from the trees. The spears STOP at the shoreline like a border.",
+   "speaker": "HARRY",
+   "line": "The lake lets go of us at the forest. That's not rescue, Draconia - th",
+   "line_dur": 5.0,
+   "shot_s": 6,
+   "billing_s": 6,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": false,
+   "audio": "e03-l12-harry.mp3",
+   "asr_sim": 0.988,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 15,
+   "designed_s": 6,
+   "action": "They land hard in the snow. Draconia's legs buckle once; Harry catches her before deciding to. The green light brightens, patient.",
+   "speaker": "DRACONIA",
+   "line": "A second dance, at midnight. It's not threatening us - it's inviting u",
+   "line_dur": 7.0,
+   "shot_s": 8,
+   "billing_s": 8,
+   "refs": [
+    "draconia",
+    "harry"
+   ],
+   "two_body": true,
+   "cliffhanger": false,
+   "audio": "e03-l13-draconia.mp3",
+   "asr_sim": 0.986,
+   "framing_class": "two_shot_dialogue",
+   "dialogue_on_screen": true
+  },
+  {
+   "episode": "e03",
+   "shot": 16,
+   "designed_s": 6,
+   "action": "Close on Harry: choice written plain, anger not gone, but he doesn't let go of her arm. Cut to black.",
+   "speaker": "HARRY",
+   "line": "Then we go in honest. All of it, tonight. Together.",
+   "line_dur": 3.0,
+   "shot_s": 4,
+   "billing_s": 4,
+   "refs": [
+    "harry"
+   ],
+   "two_body": false,
+   "cliffhanger": true,
+   "audio": "e03-l14-harry.mp3",
+   "asr_sim": 0.989,
+   "framing_class": "cu_dialogue",
+   "dialogue_on_screen": true
+  }
+ ],
+ "total_shots": 50,
+ "total_s": 299,
+ "total_cr": 28704
+}

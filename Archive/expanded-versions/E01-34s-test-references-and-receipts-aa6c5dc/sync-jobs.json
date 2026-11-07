@@ -1,0 +1,38 @@
+[
+  {
+    "shot": 1,
+    "duration": 9.6,
+    "job": {
+      "id": "cmvnwpy3g0lurj80114c2am0n",
+      "estimated_frame_cost": 231,
+      "credits_charged": 231
+    }
+  },
+  {
+    "shot": 2,
+    "duration": 7.119999999999999,
+    "job": {
+      "id": "cmvnwq5950dgofz011rzg9l1k",
+      "estimated_frame_cost": 171,
+      "credits_charged": 171
+    }
+  },
+  {
+    "shot": 3,
+    "duration": 8.560000000000002,
+    "job": {
+      "id": "cmvnwqdsk0hmifu014x5yre5o",
+      "estimated_frame_cost": 206,
+      "credits_charged": 206
+    }
+  },
+  {
+    "shot": 4,
+    "duration": 8.32,
+    "job": {
+      "id": "cmvnwqmcm001gh301kw66xcy8",
+      "estimated_frame_cost": 200,
+      "credits_charged": 200
+    }
+  }
+]

@@ -1,0 +1,338 @@
+{
+ "title": "The Billionaire's Scullery Maid - Episode 1: The Bucket",
+ "aspect": "9:16",
+ "voices": {
+  "Chloe": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+  "Ethan": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+  "Peterson": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared"
+ },
+ "style": "Cinematic photorealistic live-action drama, glossy vertical short-drama look, 9:16 portrait framing, shallow depth of field, high contrast, warm natural skin tones, consistent faces and wardrobe",
+ "hook_title": "He kicked the janitor's bucket... then the CEO walked in",
+ "end_card": "Who is Chloe Gray? Episode 2 next...",
+ "scenes": {
+  "lobby": {
+   "set": "the ground-floor lobby of a luxury corporate tower at night: a vast pristine white marble floor, gold letters reading VANCE on a black stone wall, glass elevators, tall windows with cold blue night light, nobody else around",
+   "plate": "lobby-plate",
+   "plate_prompt": "Photorealistic cinematic interior photograph, 9:16 vertical: the ground-floor lobby of a luxury corporate tower at night: a vast pristine white marble floor, gold letters reading VANCE on a black stone wall, glass elevators, tall windows with cold blue night light, nobody else around. Empty, no people. No text other than the VANCE letters, no watermark."
+  },
+  "stairwell": {
+   "set": "a bare concrete emergency stairwell with grey steps, a glowing green exit sign and harsh flat fluorescent light",
+   "plate": "stair-plate",
+   "plate_prompt": "Photorealistic cinematic interior photograph, 9:16 vertical: a bare concrete emergency stairwell with grey steps, a glowing green exit sign and harsh flat fluorescent light. Empty, no people. No text, no watermark."
+  }
+ },
+ "references": {
+  "masters": {
+   "chloe-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A slim 24-year-old woman with long dark-brown hair tied in a low ponytail, brown eyes, no makeup, tired but proud face, a plain grey janitor uniform with a small white name tag reading C. GRAY. No captions, no watermark.",
+   "ethan-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A tall handsome 27-year-old man with black swept-back hair, a sharp jaw, piercing ice-grey eyes, a tailored charcoal three-piece suit, a silver watch on his left wrist with a thin faded red string bracelet just below it. No captions, no watermark.",
+   "peterson-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A heavy-set 45-year-old man with slicked-back thinning hair, a thin moustache, a shiny navy suit with a gold tie clip, holding a smartphone, an arrogant smug face. No captions, no watermark."
+  },
+  "frames": {
+   "f01-hands": {
+    "scene": "lobby",
+    "refs": [
+     "chloe-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical close-up: Chloe kneeling on the marble floor, her red raw hands squeezing a grey mop into a yellow plastic mop bucket, her tired face above, mouth closed. No captions, no watermark."
+   },
+   "f02-kick": {
+    "scene": "lobby",
+    "refs": [
+     "peterson-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical low-angle shot: Peterson striding across the marble lobby talking on his phone, his polished brown leather shoe just about to kick a yellow plastic mop bucket on the floor, mouth closed. No captions, no watermark."
+   },
+   "f03-peterson": {
+    "scene": "lobby",
+    "refs": [
+     "peterson-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot, waist-up: Peterson in the lobby, phone in one hand, furious red face, dirty water splashed on his trousers, glaring down at someone off-screen, mouth closed. No captions, no watermark."
+   },
+   "f04-chloe": {
+    "scene": "lobby",
+    "refs": [
+     "chloe-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Chloe standing straight in her grey janitor uniform, both hands gripping a mop handle, calm defiant eyes looking up at someone off-screen, mouth closed, the yellow bucket by her feet. No captions, no watermark."
+   },
+   "f05-catch": {
+    "scene": "lobby",
+    "refs": [
+     "peterson-master",
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Peterson with his right hand raised high to slap, and Ethan beside him gripping Peterson's wrist mid-air with one strong hand, the silver watch and red string visible on Ethan's wrist. Peterson shocked, Ethan cold. Mouths closed. No captions, no watermark."
+   },
+   "f06-ethan": {
+    "scene": "lobby",
+    "refs": [
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Ethan in the lobby, chest-up, cold piercing grey eyes looking at someone off-screen, absolute authority, mouth closed. No captions, no watermark."
+   },
+   "f07-stair": {
+    "scene": "stairwell",
+    "refs": [
+     "chloe-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe in her grey janitor uniform pressed back against the concrete wall of the stairwell, one hand over her mouth, eyes wet with tears, a yellow mop bucket beside her. No captions, no watermark."
+   }
+  },
+  "frame_for": {
+   "s01-hands": "f01-hands",
+   "s02-kick": "f02-kick",
+   "s03-blind": "f03-peterson",
+   "s04-job": "f04-chloe",
+   "s05-dare": "f03-peterson",
+   "s06-catch": "f05-catch",
+   "s07-staff": "f06-ethan",
+   "s08a-sir": "f05-catch",
+   "s08b-lesson": "f03-peterson",
+   "s09-really": "f06-ethan",
+   "s10-wrong": "f04-chloe",
+   "s11-stair": "f07-stair"
+  }
+ },
+ "shots": [
+  {
+   "id": "s01-hands",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 4,
+   "visual": "Chloe squeezes dirty mop water into the bucket, her knuckles white and aching; loud arrogant footsteps approach and she looks up.",
+   "camera": "Slow push-in on her hands and face.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "dripping water",
+     "loud hard-soled footsteps echoing closer"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "s02-kick",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 4,
+   "visual": "Peterson, talking on his phone, deliberately kicks the yellow bucket; dirty water splashes violently across the marble and over his polished shoes.",
+   "camera": "Low angle, quick tilt down to the splash.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "a hard plastic kick",
+     "a big splash of water across marble"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "s03-blind",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 8,
+   "visual": "Peterson looks down at his ruined wet shoes, his face contorting with rage, and jabs his finger at the janitor in front of him.",
+   "camera": "Medium shot, slight handheld sway.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "water dripping from his trousers"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "Are you blind, trash?! Look at my shoes! They cost more than your yearly salary!",
+      "delivery": "roaring, furious"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04-job",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 6,
+   "visual": "Chloe calmly stands up, grips her mop and refuses to shrink away, looking him straight in the eye.",
+   "camera": "Medium close-up, slow push-in.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "the mop handle creaks in her grip"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Chloe",
+      "voice": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+      "line": "You kicked the bucket, Manager Peterson. I was doing my job.",
+      "delivery": "calm, quiet, firm"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s05-dare",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 4,
+   "visual": "Peterson, insulted, raises his hand high to slap her.",
+   "camera": "Medium shot, quick push-in.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "a sharp angry intake of breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "You dare talk back to me?!",
+      "delivery": "outraged shout"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s06-catch",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 4,
+   "visual": "A strong manicured hand catches Peterson's wrist mid-air; Peterson freezes; the whole lobby goes dead silent.",
+   "camera": "Medium shot, then a slight push-in on the gripped wrist.",
+   "sound": {
+    "ambience": "sudden total silence in the lobby",
+    "effects": [
+     "a sharp slap of a hand gripping a wrist"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "s07-staff",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 6,
+   "visual": "Ethan stares at Peterson with ice-cold eyes, still gripping his wrist.",
+   "camera": "Medium close-up, slow push-in.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "a low tense hum"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Is this how you treat my staff, Peterson?",
+      "delivery": "quiet, cold as a knife"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08a-sir",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 4,
+   "visual": "Peterson, his wrist still held by the silent Ethan, instantly turns pale and stammers.",
+   "camera": "Medium shot, quick push-in on Peterson.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "a nervous gulp"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "M-Mr. Vance! No, sir!",
+      "delivery": "panicked stammering"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08b-lesson",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 8,
+   "visual": "Peterson cringes and bows his head, pointing down at the janitor, with a fake nervous laugh.",
+   "camera": "Medium shot, handheld.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "nervous shuffling of shoes"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "This... this garbage disposal girl was being careless! I was just teaching her a lesson.",
+      "delivery": "stammering, whiny, fake laugh"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s09-really",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 6,
+   "visual": "Ethan ignores Peterson and looks down at Chloe; the coldness in his eyes shatters into pure shock; he steps closer.",
+   "camera": "Medium close-up, gentle push-in.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "a single soft footstep"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Chloe? It's really you...",
+      "delivery": "a stunned whisper"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s10-wrong",
+   "scene_id": "lobby",
+   "location": "lobby",
+   "seconds": 6,
+   "visual": "Chloe, panicked and ashamed, hides her face, pulls away and grabs her bucket.",
+   "camera": "Medium close-up, handheld.",
+   "sound": {
+    "ambience": "the quiet echoing hum of an empty marble lobby at night, a faint air-conditioning drone",
+    "effects": [
+     "the plastic bucket handle rattles"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Chloe",
+      "voice": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+      "line": "You have the wrong person, sir.",
+      "delivery": "quick, shaky, avoiding his eyes"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s11-stair",
+   "scene_id": "stairwell",
+   "location": "stairwell",
+   "seconds": 4,
+   "visual": "Chloe leans back against the stairwell wall, hand over her mouth, tears falling silently.",
+   "camera": "Slow push-in on her face.",
+   "sound": {
+    "ambience": "the hollow buzz of fluorescent lights in a concrete stairwell",
+    "effects": [
+     "a heavy door swinging shut",
+     "her shaky breathing"
+    ],
+    "dialogue": []
+   }
+  }
+ ]
+}

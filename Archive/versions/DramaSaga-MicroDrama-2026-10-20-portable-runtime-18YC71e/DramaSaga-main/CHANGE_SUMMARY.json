@@ -1,0 +1,51 @@
+{
+  "baseline": "DramaSaga-MicroDrama-2026-10-20-free-local-completion.zip",
+  "date": "2026-10-20",
+  "added": [
+    "evidence/CPU_RESULTS.md",
+    "evidence/cpu_smoke.json",
+    "evidence/h3_download_size.json",
+    "evidence/installed_model_sources.json",
+    "magicdrama/audiofirst/mouth_tracker.py",
+    "magicdrama/audiofirst/transformers_vision.py",
+    "portable/COMFY_TEMPLATE_LICENSE.txt",
+    "portable/H3_LICENSE.txt",
+    "portable/README.md",
+    "portable/doctor.py",
+    "portable/finalize_h3.py",
+    "portable/h3.py",
+    "portable/h3_api_template.json",
+    "portable/h3_bindings.json",
+    "portable/h3_clip.example.json",
+    "portable/h3_config.example.json",
+    "portable/install_comfy.py",
+    "portable/models.py",
+    "portable/portable_runtime.ipynb",
+    "portable/prepare_h3_inputs.py",
+    "portable/run.py",
+    "portable/setup.ps1",
+    "portable/setup.sh",
+    "portable/smoke.py",
+    "portable/sources.lock.json",
+    "requirements/local.txt",
+    "tests/test_portable_runtime.py"
+  ],
+  "changed": [
+    ".gitignore",
+    "AUDIO_FIRST.md",
+    "CHANGE_SUMMARY.json",
+    "EXPORT_NOTES.md",
+    "README.md",
+    "SOURCE_MANIFEST.json",
+    "magicdrama/audiofirst/h3_local.py",
+    "magicdrama/audiofirst/quality.py"
+  ],
+  "removed": [],
+  "unchanged_count": 137,
+  "tests": 227,
+  "notes": [
+    "New private release; previous files untouched",
+    "Official local CPU models installed and smoke-tested, strict low-confidence timing/tracking reject",
+    "H3 GPU inference and Windows/hosted-notebook execution unverified"
+  ]
+}

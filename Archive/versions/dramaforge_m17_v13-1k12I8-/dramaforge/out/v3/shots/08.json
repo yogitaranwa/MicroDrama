@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "seconds": 19,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "The mask you insist on naming cracked the moment you refused to let me walk away from this corridor. I have spent seven years perfecting the expression my surname demands, yet your gaze strips it away like a revealing charm.",
+   "emotion": "raw vulnerability",
+   "expression": "holds his gaze unblinking, chin trembling slightly, fingers pressing white against cold stone"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "Then stop performing the role they assigned you and show me what remains when the performance ends. I have watched you calculate every consequence since first year, but tonight you chose the staircase instead of the exit.",
+   "emotion": "quiet intensity",
+   "expression": "steps closer, shoulders relaxing, hand hovering near wand without drawing it"
+  }
+ ]
+}

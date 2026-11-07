@@ -1,0 +1,8 @@
+Current E01 pipeline (sanitized, no secrets, no generated video). Do not run paid stages.
+Layout: examples/r2v = Harry/Draconia "Yule Ball" 3-episode microdrama (e01 done to preview; e02/e03 not produced).
+- shot-manifest-wan30.json: 18 shots, 37 beats per E01; each shot has line, audio take file, beats[{id,dur_s,audio_intent,...prompt}], refs.
+- production_runner.py: Magic Hour Wan 3.0 image/ref-to-video submit+poll, hard budget guard (needs --approved-cap and user approval ref + MAGICHOUR_KEY_FILE env; refuses otherwise), duplicate-spend guard, stop-on-error. stages.py: assemble / lipsync / edit stages. verify_shot.py: frame/ASR gates.
+- accepted-audio/: ElevenLabs locked takes (sha-locked, never altered), delivery-notes.json (older line text; locked take wins).
+- harry-draconia-reference-bank.json: character/location refs. production-2026-10-26/: run-receipts.json (ledger), local-edits.json, qa-annotations.json, trim-overrides.json, e01-beat-canon.txt.
+- Constraints: providers Magic Hour (video 96 cr/s, lipsync ~1 cr/frame) + ElevenLabs (audio done). Output 9:16 720x1280, ~5s beats, voices-only preview + captions. Locked takes must be used as-is; video audio dropped at assemble. Python 3.10, ffmpeg 4.4, 1 CPU, 1 GB RAM, no GPU in sandbox. Paid hold: no generation, no lipsync. Quality bar: wardrobe/set continuity across shots, mouth/voice sync, no dead silence, readable captions. Known failures: crest/gown drift between shots, 24 s silence (FX beats undecided), lipsync never run.
+- Reference-reel traits (user-supplied): consistent outfits per character, burned-in short caption chunks, letterboxed picture on black 9:16 canvas.

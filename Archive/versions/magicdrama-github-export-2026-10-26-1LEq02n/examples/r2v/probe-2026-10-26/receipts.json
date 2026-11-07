@@ -1,0 +1,49 @@
+{
+  "manifest_id": "probe-r2v-e01s07-s10-2026-10-26",
+  "manifest_sha256": "97d76da909786a12635304157829ad0a3dfd0f89a9f584762a86e7b21723e729",
+  "started": "2026-10-26T02:24:22+0530",
+  "uploads": [
+    {
+      "name": "e01s07l1-then-count-faster.wav",
+      "sha256": "ca0160d614687cd382d19f0e795fd2003b2b53dad11939b14f3b906d822c484f",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-image-0.png"
+    },
+    {
+      "name": "e01s08l1-show-off.wav",
+      "sha256": "95eb2c931c71f3d9270e8ddc552dbc00c4dc0919f8368d39eaf77aa2ac57433d",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-image-1.png"
+    },
+    {
+      "name": "e01s09l1-efficient.wav",
+      "sha256": "5269f88e1a9436cffa4b4d03cfa19c697e981b93bcb67f67580ec3a43c417f58",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-image-2.png"
+    },
+    {
+      "name": "e01s10l1-i-definitely-planned-that.wav",
+      "sha256": "37728fde7443f0c53efe20e49e5ffd95a3bf555f3a0625cd09b71da71e2ecf65",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-image-3.png"
+    },
+    {
+      "name": "ref-draconia-front-close.png",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-audio-4.wav"
+    },
+    {
+      "name": "ref-draconia-fullbody.png",
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-audio-5.wav"
+    },
+    {
+      "name": "ref-harry-fullbody.png",
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-audio-6.wav"
+    },
+    {
+      "name": "ref-yule-ball-location.png",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/382d9ec0-1456-4bc8-8920-177938bad262-audio-7.wav"
+    }
+  ],
+  "jobs": [],
+  "stopped": "submit e01s07 HTTP 422: {\"code\":\"unprocessable_entity\",\"message\":\"The prompt must include @audio_e01s07.\"}"
+}

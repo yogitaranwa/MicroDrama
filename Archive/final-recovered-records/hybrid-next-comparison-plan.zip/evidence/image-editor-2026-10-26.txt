@@ -1,0 +1,833 @@
+AI Image Editor API Reference - Magic Hour Docs - Magic Hour API Docs
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Magic Hour API Docs
+home page
+Search...
+⌘
+K
+Search...
+Navigation
+Image Projects
+AI Image Editor API Reference - Magic Hour Docs
+Documentation
+API Reference
+Webhook Reference
+Changelog
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.ai_image_editor.generate(
+assets
+=
+{
+"image_file_paths"
+: [
+"/path/to/1234.png"
+]},
+style
+=
+{
+"prompt"
+:
+"Give me sunglasses"
+},
+name
+=
+"Ai Image Editor image"
+,
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.aiImageEditor.generate(
+  {
+    assets: { imageFilePaths: ["/path/to/1234.png", "/path/to/1235.png"] },
+    name: "Ai Image Editor image",
+    style: { prompt: "Give me sunglasses" },
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	ai_image_editor "github.com/magichourhq/magic-hour-go/resources/v1/ai_image_editor"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.AiImageEditor.Create(ai_image_editor.CreateRequest{
+		AspectRatio: nullable.NewValue(types.V1AiImageEditorCreateBodyAspectRatioEnum11),
+		Assets: types.V1AiImageEditorCreateBodyAssets{
+			ImageFilePaths: nullable.NewValue([]string{
+				"api-assets/id/1234.png",
+				"api-assets/id/1235.png",
+			}),
+		},
+		ImageCount: nullable.NewValue(1.0),
+		Model:      nullable.NewValue(types.V1AiImageEditorCreateBodyModelEnumFlux2Klein),
+		Name:       nullable.NewValue("My Ai Image Editor image"),
+		Resolution: nullable.NewValue(types.V1AiImageEditorCreateBodyResolutionEnum640px),
+		Style: types.V1AiImageEditorCreateBodyStyle{
+			Prompt: "Give me sunglasses",
+		},
+	})
+}
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .ai_image_editor()
+    .create(magic_hour::resources::v1::ai_image_editor::CreateRequest {
+        aspect_ratio: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyAspectRatioEnum::Enum11,
+        ),
+        assets: magic_hour::models::V1AiImageEditorCreateBodyAssets {
+            image_file_paths: Some(
+                vec![
+                    "api-assets/id/1234.png".to_string(), "api-assets/id/1235.png"
+                    .to_string()
+                ],
+            ),
+            ..Default::default()
+        },
+        image_count: Some(1.0),
+        model: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyModelEnum::Flux2Klein,
+        ),
+        name: Some("My Ai Image Editor image".to_string()),
+        resolution: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyResolutionEnum::Enum640px,
+        ),
+        style: magic_hour::models::V1AiImageEditorCreateBodyStyle {
+            prompt: "Give me sunglasses".to_string(),
+            ..Default::default()
+        },
+    })
+    .await;
+curl --request POST \
+     --url https://api.magichour.ai/v1/ai-image-editor \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "name": "My Ai Image Editor image",
+  "image_count": 1,
+  "model": "flux-2-klein",
+  "aspect_ratio": "1:1",
+  "resolution": "640px",
+  "style": {
+    "prompt": "Give me sunglasses"
+  },
+  "assets": {
+    "image_file_paths": [
+      "api-assets/id/1234.png",
+      "api-assets/id/1235.png"
+    ]
+  }
+}
+'
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/ai-image-editor",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Ai Image Editor image',
+    'image_count' => 1,
+    'model' => 'flux-2-klein',
+    'aspect_ratio' => '1:1',
+    'resolution' => '640px',
+    'style' => [
+        'prompt' => 'Give me sunglasses'
+    ],
+    'assets' => [
+        'image_file_paths' => [
+                'api-assets/id/1234.png',
+                'api-assets/id/1235.png'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/ai-image-editor")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Ai Image Editor image\",\"image_count\":1,\"model\":\"flux-2-klein\",\"aspect_ratio\":\"1:1\",\"resolution\":\"640px\",\"style\":{\"prompt\":\"Give me sunglasses\"},\"assets\":{\"image_file_paths\":[\"api-assets/id/1234.png\",\"api-assets/id/1235.png\"]}}")
+  .asString();
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/ai-image-editor")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"style\": {\n    \"prompt\": \"Give me sunglasses\"\n  },\n  \"assets\": {\n    \"image_file_paths\": [\n      \"api-assets/id/1234.png\",\n      \"api-assets/id/1235.png\"\n    ]\n  },\n  \"name\": \"My Ai Image Editor image\",\n  \"image_count\": 1,\n  \"model\": \"flux-2-klein\",\n  \"aspect_ratio\": \"1:1\",\n  \"resolution\": \"640px\"\n}"
+
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+5
+}
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+{
+  "code": "not_found",
+  "message": "<string>"
+}
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+Image Projects
+AI Image Editor API Reference - Magic Hour Docs
+OpenAI
+Open in ChatGPT
+Edit images with AI.
+OpenAI
+Open in ChatGPT
+POST
+/
+v1
+/
+ai-image-editor
+Try it
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.ai_image_editor.generate(
+assets
+=
+{
+"image_file_paths"
+: [
+"/path/to/1234.png"
+]},
+style
+=
+{
+"prompt"
+:
+"Give me sunglasses"
+},
+name
+=
+"Ai Image Editor image"
+,
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.aiImageEditor.generate(
+  {
+    assets: { imageFilePaths: ["/path/to/1234.png", "/path/to/1235.png"] },
+    name: "Ai Image Editor image",
+    style: { prompt: "Give me sunglasses" },
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	ai_image_editor "github.com/magichourhq/magic-hour-go/resources/v1/ai_image_editor"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.AiImageEditor.Create(ai_image_editor.CreateRequest{
+		AspectRatio: nullable.NewValue(types.V1AiImageEditorCreateBodyAspectRatioEnum11),
+		Assets: types.V1AiImageEditorCreateBodyAssets{
+			ImageFilePaths: nullable.NewValue([]string{
+				"api-assets/id/1234.png",
+				"api-assets/id/1235.png",
+			}),
+		},
+		ImageCount: nullable.NewValue(1.0),
+		Model:      nullable.NewValue(types.V1AiImageEditorCreateBodyModelEnumFlux2Klein),
+		Name:       nullable.NewValue("My Ai Image Editor image"),
+		Resolution: nullable.NewValue(types.V1AiImageEditorCreateBodyResolutionEnum640px),
+		Style: types.V1AiImageEditorCreateBodyStyle{
+			Prompt: "Give me sunglasses",
+		},
+	})
+}
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .ai_image_editor()
+    .create(magic_hour::resources::v1::ai_image_editor::CreateRequest {
+        aspect_ratio: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyAspectRatioEnum::Enum11,
+        ),
+        assets: magic_hour::models::V1AiImageEditorCreateBodyAssets {
+            image_file_paths: Some(
+                vec![
+                    "api-assets/id/1234.png".to_string(), "api-assets/id/1235.png"
+                    .to_string()
+                ],
+            ),
+            ..Default::default()
+        },
+        image_count: Some(1.0),
+        model: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyModelEnum::Flux2Klein,
+        ),
+        name: Some("My Ai Image Editor image".to_string()),
+        resolution: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyResolutionEnum::Enum640px,
+        ),
+        style: magic_hour::models::V1AiImageEditorCreateBodyStyle {
+            prompt: "Give me sunglasses".to_string(),
+            ..Default::default()
+        },
+    })
+    .await;
+curl --request POST \
+     --url https://api.magichour.ai/v1/ai-image-editor \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "name": "My Ai Image Editor image",
+  "image_count": 1,
+  "model": "flux-2-klein",
+  "aspect_ratio": "1:1",
+  "resolution": "640px",
+  "style": {
+    "prompt": "Give me sunglasses"
+  },
+  "assets": {
+    "image_file_paths": [
+      "api-assets/id/1234.png",
+      "api-assets/id/1235.png"
+    ]
+  }
+}
+'
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/ai-image-editor",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Ai Image Editor image',
+    'image_count' => 1,
+    'model' => 'flux-2-klein',
+    'aspect_ratio' => '1:1',
+    'resolution' => '640px',
+    'style' => [
+        'prompt' => 'Give me sunglasses'
+    ],
+    'assets' => [
+        'image_file_paths' => [
+                'api-assets/id/1234.png',
+                'api-assets/id/1235.png'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/ai-image-editor")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Ai Image Editor image\",\"image_count\":1,\"model\":\"flux-2-klein\",\"aspect_ratio\":\"1:1\",\"resolution\":\"640px\",\"style\":{\"prompt\":\"Give me sunglasses\"},\"assets\":{\"image_file_paths\":[\"api-assets/id/1234.png\",\"api-assets/id/1235.png\"]}}")
+  .asString();
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/ai-image-editor")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"style\": {\n    \"prompt\": \"Give me sunglasses\"\n  },\n  \"assets\": {\n    \"image_file_paths\": [\n      \"api-assets/id/1234.png\",\n      \"api-assets/id/1235.png\"\n    ]\n  },\n  \"name\": \"My Ai Image Editor image\",\n  \"image_count\": 1,\n  \"model\": \"flux-2-klein\",\n  \"aspect_ratio\": \"1:1\",\n  \"resolution\": \"640px\"\n}"
+
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+5
+}
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+{
+  "code": "not_found",
+  "message": "<string>"
+}
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+Authorizations
+​
+Authorization
+string
+header
+required
+Bearer authentication header of the form
+Bearer <api_key>
+, where
+<api_key>
+is your API key. To get your API key, go to
+Developer Hub
+and click "Create new API Key".
+Body
+application/json
+Body
+​
+style
+object
+required
+Show
+child attributes
+​
+assets
+object
+required
+Provide the assets for image edit
+Show
+child attributes
+​
+name
+string
+default:
+Ai Image Editor - dateTime
+Give your image a custom name for easy identification.
+Example
+:
+"My Ai Image Editor image"
+​
+image_count
+enum<number>
+default:
+1
+Number of images to generate. Maximum varies by model. Defaults to 1 if not specified.
+Available options
+:
+1
+,
+4
+,
+9
+,
+16
+Example
+:
+1
+​
+model
+enum<string>
+The AI model to use for image editing. Each model has different capabilities and costs.
+Models:
+default
+- Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.
+flux-2-klein
+- from 5 credits/image
+Supported resolutions: 640px, 1k, 2k
+Available for tiers: free, creator, pro, business
+Max additional input images: 5
+gpt-image-2
+- from 50 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+gpt-image-2.5-flare
+- from 100 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+krea-2
+- from 10 credits/image
+Supported resolutions: 640px, 1k
+Available for tiers: free, creator, pro, business
+Max additional input images: 1
+nano-banana
+- from 50 credits/image
+Supported resolutions: 640px, 1k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+nano-banana-2
+- from 100 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+nano-banana-2-lite
+- from 50 credits/image
+Supported resolutions: 640px, 1k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+nano-banana-2.1
+- from 50 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+nano-banana-pro
+- from 150 credits/image
+Supported resolutions: 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+qwen-edit
+- from 10 credits/image
+Supported resolutions: 640px, 1k, 2k
+Available for tiers: free, creator, pro, business
+Max additional input images: 2
+qwen-image-2.1
+- from 10 credits/image
+Supported resolutions: 640px, 1k, 2k
+Available for tiers: free, creator, pro, business
+Max additional input images: 2
+seedream-v4
+- from 40 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+seedream-v4.5
+- from 50 credits/image
+Supported resolutions: 640px, 1k, 2k, 4k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+seedream-v5-pro
+- from 75 credits/image
+Supported resolutions: 640px, 1k, 2k
+Available for tiers: creator, pro, business
+Max additional input images: 9
+Available options
+:
+default
+,
+qwen-image-2.1
+,
+gpt-image-2
+,
+nano-banana-2
+,
+flux-2-klein
+,
+nano-banana-pro
+,
+seedream-v5-pro
+,
+seedream-v4.5
+,
+nano-banana-2.1
+,
+qwen-edit
+,
+nano-banana-2-lite
+,
+krea-2
+,
+gpt-image-2.5-flare
+,
+seedream-v4
+,
+nano-banana
+Example
+:
+"flux-2-klein"
+​
+aspect_ratio
+enum<string>
+The aspect ratio of the output image(s). If not specified, defaults to
+auto
+.
+Available options
+:
+auto
+,
+16:9
+,
+9:16
+,
+4:3
+,
+3:2
+,
+1:1
+,
+4:5
+,
+2:3
+Example
+:
+"1:1"
+​
+resolution
+enum<string>
+Maximum resolution (longest edge) for the output image.
+Options:
+640px
+— up to 640px
+1k
+— up to 1024px
+2k
+— up to 2048px
+4k
+— up to 4096px
+auto
+—
+Deprecated.
+Mapped server-side from your subscription tier to the best matching resolution the model supports
+Per-model support:
+flux-2-klein
+- 640px, 1k, 2k
+gpt-image-2
+- 640px, 1k, 2k, 4k
+gpt-image-2.5-flare
+- 640px, 1k, 2k, 4k
+krea-2
+- 640px, 1k
+nano-banana
+- 640px, 1k
+nano-banana-2
+- 640px, 1k, 2k, 4k
+nano-banana-2-lite
+- 640px, 1k
+nano-banana-2.1
+- 640px, 1k, 2k, 4k
+nano-banana-pro
+- 1k, 2k, 4k
+qwen-edit
+- 640px, 1k, 2k
+qwen-image-2.1
+- 640px, 1k, 2k
+seedream-v4
+- 640px, 1k, 2k, 4k
+seedream-v4.5
+- 640px, 1k, 2k, 4k
+seedream-v5-pro
+- 640px, 1k, 2k
+Note: Resolution availability depends on the model and your subscription tier.
+Available options
+:
+auto
+,
+640px
+,
+1k
+,
+2k
+,
+4k
+Example
+:
+"640px"
+Response
+200
+application/json
+Success
+Success
+​
+id
+string
+required
+Unique ID of the image. Use it with the
+Get image Project API
+to fetch status and downloads.
+Example
+:
+"cuid-example"
+​
+credits_charged
+integer
+required
+The amount of credits deducted from your account to generate the image. We charge credits right when the request is made.
+If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.
+Example
+:
+5
+Was this page helpful?
+Yes
+No
+Suggest edits
+Raise issue

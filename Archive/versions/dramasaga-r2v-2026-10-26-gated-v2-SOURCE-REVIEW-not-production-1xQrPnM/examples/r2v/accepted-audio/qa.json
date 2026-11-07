@@ -1,0 +1,370 @@
+[
+ {
+  "file": "e01-l01-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 9,
+  "asr_similarity": 0.979,
+  "text": "Potter, don't turn around! Look at me - only at me - and walk over here slowly.",
+  "transcript": "Potter, don't turn around. Look at me, only at me, and walk over here slowly."
+ },
+ {
+  "file": "e01-l02-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.991,
+  "text": "Dance with me right now. The floor won't touch us while we're moving - you may scream at me the moment we're alive.",
+  "transcript": "Dance with me right now. The floor won't touch us while we're moving. You may scream at me the moment we're alive."
+ },
+ {
+  "file": "e01-l03-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.986,
+  "text": "Fine - I'm dancing. Now tell me what those things are, and why they want me.",
+  "transcript": "Fine, I'm dancing. Now tell me what those things are and why they want me."
+ },
+ {
+  "file": "e01-l04-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.988,
+  "text": "It's a long story, and it ends with you breathing. Eyes on the ceiling, Potter - not on me.",
+  "transcript": "It's a long story and it ends with you breathing. Eyes on the ceiling, Potter, not on me."
+ },
+ {
+  "file": "e01-l05-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 6,
+  "asr_similarity": 0.99,
+  "text": "The arrows land on the orchestra's offbeat. Change your step with me - half a beat late, on my count.",
+  "transcript": "The arrows land on the orchestra's offbeat. Change your step with me, half a beat late, on my count."
+ },
+ {
+  "file": "e01-l06-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.986,
+  "text": "You counted. Clever boy. Then count faster - the music won't slow down for us.",
+  "transcript": "You counted, clever boy. Then count faster. The music won't slow down for us."
+ },
+ {
+  "file": "e01-l07-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.972,
+  "text": "Show-off. Even you can't cut all three.",
+  "transcript": "Show off. Even you can't cut all three."
+ },
+ {
+  "file": "e01-l08-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.993,
+  "text": "Efficient. Remind me to applaud once the orchestra gives me my hand back.",
+  "transcript": "Efficient. Remind me to applaud once the orchestra gives me my hand back."
+ },
+ {
+  "file": "e01-l09-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 5,
+  "asr_similarity": 0.991,
+  "text": "I meant to do that. The trolley was always part of the plan.",
+  "transcript": "I meant to do that. The trolley was always part of the plan."
+ },
+ {
+  "file": "e01-l10-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 2,
+  "asr_similarity": 0.988,
+  "text": "No, you didn't. Thanks for the catch anyway.",
+  "transcript": "No, you didn't. Thanks for the catch anyway."
+ },
+ {
+  "file": "e01-l11-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.969,
+  "text": "He's using the waltz grid. Every proper step we dance together seals another door.",
+  "transcript": "He's using the walks grid. Every proper step we dance together seals another door."
+ },
+ {
+  "file": "e01-l12-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.946,
+  "text": "Then we dance it wrong on purpose. Break the grid with me.",
+  "transcript": "And we dance it wrong on purpose. Break the grid with me."
+ },
+ {
+  "file": "e01-l13-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 4,
+  "asr_similarity": 0.991,
+  "text": "That was your plan? Drop the ceiling on the whole hall?",
+  "transcript": "That was your plan, drop the ceiling on the whole hall."
+ },
+ {
+  "file": "e01-l14-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 5,
+  "asr_similarity": 0.993,
+  "text": "Left side, three beats, the red table. Flip it on my mark and hold it over us.",
+  "transcript": "Left side, three beats, the red table. Flip it on my mark and hold it over us."
+ },
+ {
+  "file": "e01-l15-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.99,
+  "text": "Harry... it has our names. Both of them, burned right in.",
+  "transcript": "Harry, it has our names. Both of them burned right in."
+ },
+ {
+  "file": "e01-l16-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 2,
+  "asr_similarity": 0.986,
+  "text": "Draconia. Look at me. What did you do?",
+  "transcript": "Draconia, look at me. What did you do?"
+ },
+ {
+  "file": "e01-l17-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 5,
+  "asr_similarity": 0.991,
+  "text": "I spent weeks trying to warn you. You never once listened.",
+  "transcript": "I spent weeks trying to warn you. You never once listened."
+ },
+ {
+  "file": "e02-l01-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 5,
+  "asr_similarity": 0.987,
+  "text": "Warn me about what? You've had weeks to find the words, Draconia - try them now.",
+  "transcript": "Warn me about what? You've had weeks to find the words, Draconia. Try them now."
+ },
+ {
+  "file": "e02-l02-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.983,
+  "text": "Not here. This hall listens, Potter - and I refuse to feed it.",
+  "transcript": "Not here. This hall listens, Potter, and I refuse to feed it."
+ },
+ {
+  "file": "e02-l03-curse.mp3",
+  "speaker": "CURSE",
+  "dur_s": 3,
+  "asr_similarity": 0.963,
+  "text": "One. Two. Three.",
+  "transcript": "one two three"
+ },
+ {
+  "file": "e02-l04-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 3,
+  "asr_similarity": 0.992,
+  "text": "Tell me those things are only reflections. Tell me they are not us.",
+  "transcript": "Tell me those things are only reflections. Tell me they are not us."
+ },
+ {
+  "file": "e02-l05-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 5,
+  "asr_similarity": 0.977,
+  "text": "They're what this trial expects us to become. Don't you dare bow back.",
+  "transcript": "They what this trial expects us to become. Don't you dare bow back."
+ },
+ {
+  "file": "e02-l06-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.991,
+  "text": "It copied my footing, but it can't copy my temper. Watch.",
+  "transcript": "It copied my footing, but it can't copy my temper. Watch."
+ },
+ {
+  "file": "e02-l07-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.992,
+  "text": "It dances better than me. Lucky for us, I cheat better than it.",
+  "transcript": "It dances better than me. Lucky for us, I cheat better than it."
+ },
+ {
+  "file": "e02-l08-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.993,
+  "text": "It's not attacking us anymore. It's casting us, like actors in its rehearsal.",
+  "transcript": "It's not attacking us anymore. It's casting us, like actors in its rehearsal."
+ },
+ {
+  "file": "e02-l09-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 8,
+  "asr_similarity": 0.991,
+  "text": "This is the founding trial - my family's trial, Potter. It only releases the pair that finishes the waltz together.",
+  "transcript": "This is the founding trial, my family's trial, Potter. It only releases the pair that finishes the waltz together."
+ },
+ {
+  "file": "e02-l10-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 3,
+  "asr_similarity": 0.952,
+  "text": "Then we finish it together. And afterward, you tell me everything.",
+  "transcript": "Can we finish it together? And afterward, you tell me everything."
+ },
+ {
+  "file": "e02-l11-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.989,
+  "text": "Every right step feeds it, and every wrong one punishes us. It's not a dance, Potter - it's a lesson.",
+  "transcript": "Every right step feeds it, and every wrong one punishes us. It's not a dance, Potter. It's a lesson."
+ },
+ {
+  "file": "e02-l12-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 6,
+  "asr_similarity": 0.993,
+  "text": "Every wrong step takes a piece of you and keeps it. Stop testing it, Harry.",
+  "transcript": "Every wrong step takes a piece of you and keeps it. Stop testing it, Harry."
+ },
+ {
+  "file": "e02-l13-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 8,
+  "asr_similarity": 0.982,
+  "text": "There is a forfeit step. A Malfoy can end this trial by yielding the pair-bond. I just didn't want to pay that price.",
+  "transcript": "There is a forfeit step. Malfoy can end this trial by yielding the pair bond. I just didn't want to pay that price."
+ },
+ {
+  "file": "e02-l14-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.989,
+  "text": "Don't you dare pay that price alone. Not for me.",
+  "transcript": "Don't you dare pay that price alone, not for me."
+ },
+ {
+  "file": "e02-l15-curse.mp3",
+  "speaker": "CURSE",
+  "dur_s": 3,
+  "asr_similarity": 0.985,
+  "text": "Rehearsal two. Bring your honesty.",
+  "transcript": "Rehearsal two. Bring your honesty."
+ },
+ {
+  "file": "e03-l01-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 5,
+  "asr_similarity": 0.992,
+  "text": "Whatever you think you found down here, we are leaving right now.",
+  "transcript": "Whatever you think you found down here, we are leaving right now."
+ },
+ {
+  "file": "e03-l02-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.994,
+  "text": "This is your family's handwriting, Draconia, written before the ball. Start talking.",
+  "transcript": "This is your family's handwriting, Draconia, written before the ball. Start talking."
+ },
+ {
+  "file": "e03-l03-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 4,
+  "asr_similarity": 0.991,
+  "text": "Fly first. You can hate me properly once we're at altitude.",
+  "transcript": "Fly first. You can hate me properly once we're at altitude."
+ },
+ {
+  "file": "e03-l04-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.993,
+  "text": "It's the same count as the ballroom! The storm is following the waltz!",
+  "transcript": "It's the same count as the ballroom. The storm is following the waltz."
+ },
+ {
+  "file": "e03-l05-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 4,
+  "asr_similarity": 0.961,
+  "text": "Then stop flying on the beat! Break your rhythm, now!",
+  "transcript": "Then stop flying on the beach. Break your rhythm now."
+ },
+ {
+  "file": "e03-l06-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 3,
+  "asr_similarity": 0.989,
+  "text": "A little help would be lovely right about now!",
+  "transcript": "A little help would be lovely right about now."
+ },
+ {
+  "file": "e03-l07-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 3,
+  "asr_similarity": 0.974,
+  "text": "I've got you. Hold on to me - I've got you.",
+  "transcript": "I've got you. Hold on to me. I've got you."
+ },
+ {
+  "file": "e03-l08-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.992,
+  "text": "You knew. Before the ball ever started, you knew some part of this.",
+  "transcript": "You knew. Before the ball ever started, you knew some part of this."
+ },
+ {
+  "file": "e03-l09-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 8,
+  "asr_similarity": 0.991,
+  "text": "The warning spell was mine. I knew the trial wakes for a paired witness - I swear I didn't know it would mark you.",
+  "transcript": "The warning spell was mine. I knew the trial wakes for a paired witness. I swear I didn't know it would mark you."
+ },
+ {
+  "file": "e03-l10-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 4,
+  "asr_similarity": 0.993,
+  "text": "You used me. You picked me as the other half of a pair I never agreed to join?",
+  "transcript": "You used me. You picked me as the other half of a pair I never agreed to join."
+ },
+ {
+  "file": "e03-l11-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.994,
+  "text": "I picked the one person who wouldn't run. That wasn't strategy, Harry. That was the mistake.",
+  "transcript": "I picked the one person who wouldn't run. That wasn't strategy, Harry. That was the mistake."
+ },
+ {
+  "file": "e03-l12-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 5,
+  "asr_similarity": 0.988,
+  "text": "The lake lets go of us at the forest. That's not rescue, Draconia - those are directions.",
+  "transcript": "The lake, let's go of us at the forest. That's not rescue Draconia, those are directions."
+ },
+ {
+  "file": "e03-l13-draconia.mp3",
+  "speaker": "DRACONIA",
+  "dur_s": 7,
+  "asr_similarity": 0.986,
+  "text": "A second dance, at midnight. It's not threatening us - it's inviting us in.",
+  "transcript": "A second dance at midnight. It's not threatening us. It's inviting us in."
+ },
+ {
+  "file": "e03-l14-harry.mp3",
+  "speaker": "HARRY",
+  "dur_s": 3,
+  "asr_similarity": 0.989,
+  "text": "Then we go in honest. All of it, tonight. Together.",
+  "transcript": "Then we go in honest, all of it, tonight, together."
+ }
+]

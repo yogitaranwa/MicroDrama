@@ -1,0 +1,16 @@
+{
+  "scene": 5,
+  "submitted": 1263,
+  "before_count": 4494,
+  "after_count": 4494,
+  "delta": 0,
+  "headers": {
+    "request-id": "7Ncz2qpwC4Tu6pthxwNn",
+    "history-item-id": "JBhsAWgfIhc0AWJaojhg",
+    "character-cost": "556"
+  },
+  "overage": {
+    "amount": "0",
+    "currency": "inr"
+  }
+}

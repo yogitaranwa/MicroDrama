@@ -1,0 +1,108 @@
+{
+ "title": "The Confession in the Tower",
+ "hook": "Draconia Malfoy, wearing Harry's dress robes over her Yule Ball gown, snaps: \"You humiliated me in front of half the school, Potter. That 'mistaken identity' bit was cruel.\"",
+ "beats": [
+  {
+   "n": 1,
+   "sheet_step": "HOOK",
+   "location": "Grand Staircase alcove",
+   "camera": "Tight two-shot, shallow depth of field on their faces",
+   "action": "Harry adjusts his collar; Draconia paces in his oversized jacket, voice rising until Filch's wheeze cuts through the stone archway",
+   "turn": "A shared enemy (Filch) forces momentary truce between rivals",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 12
+  },
+  {
+   "n": 2,
+   "sheet_step": "INCITING",
+   "location": "Library restricted section",
+   "camera": "Over-the-shoulder through candle-lit shelves; Madam Pince's silhouette glides past",
+   "action": "Draconia slips a folded parchment into a hollowed-out book; Harry plucks it out, reading a name—\"B. Parkinson\"—before she snatches it back",
+   "turn": "Physical proof of blackmail surfaces; Harry learns Pansy holds leverage over Draconia",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 13
+  },
+  {
+   "n": 3,
+   "sheet_step": "ESCALATION 1",
+   "location": "Greenhouse Three (night-blooming)",
+   "camera": "Low angle through dripping orchids; moonlight fractures through glass panes",
+   "action": "Pansy steps from behind a Venomous Tentacula, waving the same parchment: \"Father's letter to yours. One owl and Draconia's betrayal is public.\"",
+   "turn": "Pansy corners them in a locked greenhouse—no witnesses, no escape, minutes until curfew ends",
+   "speakers": [
+    "Draconia Malfoy",
+    "Pansy Parkinson"
+   ],
+   "seconds": 14
+  },
+  {
+   "n": 4,
+   "sheet_step": "ESCALATION 2",
+   "location": "Dungeons corridor near Slytherin common room",
+   "camera": "Handheld tracking behind Harry as he pulls Draconia toward a grating",
+   "action": "Harry kicks loose a rusted grate revealing a smugglers' tunnel; they crawl inside as Mrs. Norris's eyes glow behind them",
+   "turn": "Forced into the castle's underbelly; the tunnel connects to the seventh-floor corridor",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 14
+  },
+  {
+   "n": 5,
+   "sheet_step": "REVERSAL",
+   "location": "Smugglers' tunnel (emerging behind a tapestry on seventh floor)",
+   "camera": "Close-up on Harry's hand brushing a dusty vial on a shelf; cut to Draconia's recognition",
+   "action": "Harry pockets a lacewing-fly vial identical to ones Draconia supplied; she realizes he's been hunting the same thefts she's been feeding",
+   "turn": "Each discovers the other lied about their true purpose tonight",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 13
+  },
+  {
+   "n": 6,
+   "sheet_step": "ALL IS LOST",
+   "location": "Room of Requirement (manifested as a dead-end stone cell)",
+   "camera": "Wide from ceiling; door vanishes behind them, McGonagall's voice muffled through walls",
+   "action": "McGonagall pounds the hidden door: \"Open up! I know you're in there.\" Harry throws the Invisibility Cloak over Draconia, faces the door alone",
+   "turn": "Harry chooses visible arrest to buy Draconia escape—sacrificing his record for her secret",
+   "speakers": [
+    "Professor McGonagall",
+    "Harry Potter"
+   ],
+   "seconds": 14
+  },
+  {
+   "n": 7,
+   "sheet_step": "CHOICE",
+   "location": "Seventh-floor corridor (outside Room of Requirement)",
+   "camera": "Tracking beside Harry as McGonagall marches him toward Gryffindor Tower",
+   "action": "Harry hands McGonagall the pilfered vial without breaking stride: \"Evidence, Professor. The real thief is still in the Room.\"",
+   "turn": "Harry redirects suspicion to an absent thief, protecting Draconia's identity while accepting detention",
+   "speakers": [
+    "Harry Potter",
+    "Professor McGonagall"
+   ],
+   "seconds": 14
+  },
+  {
+   "n": 8,
+   "sheet_step": "CLIFFHANGER",
+   "location": "Owlery (Draconia apparates under Cloak, gasping)",
+   "camera": "Static wide, owls scattering; a school barn owl drops a parchment at her feet",
+   "action": "The parchment unfurls itself—black ink forming fresh words: \"Polyjuice batch ready. Midnight. Astronomy Tower. —B.\"",
+   "turn": "The stolen ingredients weren't for a simple potion; someone is brewing Polyjuice in Hogwarts tonight",
+   "speakers": [],
+   "seconds": 14
+  }
+ ],
+ "cliffhanger": "The parchment unfurls itself—black ink forming fresh words: \"Polyjuice batch ready. Midnight. Astronomy Tower. —B.\""
+}

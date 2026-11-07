@@ -1,0 +1,21 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "text": "[sad] I spent years blaming easy targets because the real ones were dead.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "text": "[softly] Then we are both done being haunted by other people's names.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "text": "[whispers] One dance. No prophecy, no debt. Just us.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "text": "[laughs] I hate that you dance better when terrified.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    }
+  ]
+}

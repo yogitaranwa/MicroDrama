@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "seconds": 13,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "The ink moves by itself, and I never wrote these words. It says the Polyjuice is ready at midnight in the Astronomy Tower, signed with one letter.",
+   "emotion": "stunned disbelief sharpening into cold resolve",
+   "expression": "eyes locked on the parchment, breath barely moving, fingers tightening around the cloak's edge"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "Pansy's threat bought me hours, but this note buys me a target. I will be in that tower before the clock strikes twelve.",
+   "emotion": "quiet fury hardening into deliberate purpose",
+   "expression": "jaw sets, parchment crushed into a fist, body turning toward the window"
+  }
+ ]
+}

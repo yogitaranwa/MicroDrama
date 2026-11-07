@@ -1,0 +1,88 @@
+[
+  {
+    "repo": "Systran/faster-whisper-tiny.en",
+    "commit": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+    "license": "mit",
+    "files": [
+      {
+        "path": "faster-whisper-tiny.en/model.bin",
+        "sha256": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a"
+      },
+      {
+        "path": "faster-whisper-tiny.en/vocabulary.txt",
+        "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      },
+      {
+        "path": "faster-whisper-tiny.en/config.json",
+        "sha256": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5"
+      },
+      {
+        "path": "faster-whisper-tiny.en/tokenizer.json",
+        "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      {
+        "path": "faster-whisper-tiny.en/README.md",
+        "sha256": "1b7816626bf0548e4b71a467f4112b4592924bc818e3117f19aefcc50ce4b6aa"
+      }
+    ]
+  },
+  {
+    "repo": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "commit": "7e3e67edbbed1bf9888184d9df282b700a323964",
+    "license": "apache-2.0",
+    "files": [
+      {
+        "path": "SmolVLM-256M-Instruct/vocab.json",
+        "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/merges.txt",
+        "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/tokenizer_config.json",
+        "sha256": "36c6fd44d07d10fd8180ee6b46dcccf69fb7c06753968ff0d7e17b8bfe17b777"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/processor_config.json",
+        "sha256": "e7bff42da73ae9eec9042ef20e066e11f1ee20f025358ff79131e3c0fb549b46"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/model.safetensors",
+        "sha256": "74dea5904032e5ae99a2e0eef5179e6ac0f1dedc3ab0c7c2a5d4d387c843203e"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/chat_template.json",
+        "sha256": "a68ad1a42681ae44eacd109ff8dd56a840f761c03d72f4ff4c515d092f882168"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/config.json",
+        "sha256": "b70fb4bfde88df9eeebc9d8ff523733b8bf70d6c9b06c610325960e06ae9db52"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/generation_config.json",
+        "sha256": "067a2a54e5f87162ecac6e0e911cc4665fc8f7f3324794ecbac0f76badb56636"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/tokenizer.json",
+        "sha256": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/preprocessor_config.json",
+        "sha256": "6cb6e36d6fcb88ca1502c4a26750715dc3e7dedddc9a8f17b27d8d167d1457e7"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/special_tokens_map.json",
+        "sha256": "aa0ff906077086dfa9734a7f97f68c825877a48f9468807be65504495cdeef09"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/added_tokens.json",
+        "sha256": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a"
+      },
+      {
+        "path": "SmolVLM-256M-Instruct/README.md",
+        "sha256": "0b687c656b2587d84cb85003825746f8b3a08497dff4ed51b54b1090719fa512"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+Grand Dark Waltz candidate rejected by user for tense-scene fit. Current candidate uses Dark Dance by Kevin MacLeod, CC-BY4, all original voice takes/timing unchanged. User called dialogue okayish, not final emotional approval. New candidate listening verdict pending.

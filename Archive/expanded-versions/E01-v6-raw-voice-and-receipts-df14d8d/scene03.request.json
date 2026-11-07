@@ -1,0 +1,33 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] There's someone in the glass, over my shoulder. Don't turn us around. I want to see what it does if we change direction."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[nervous] I can see the mask. Are you sure it isn't another couple behind us? The reflection's full of people."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] There. Nobody else did that. It waited for me, then took the same step. Whatever it is, it's watching us."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[nervous] Or following us. I don't like the way it's closing the distance. Can you still see it when we turn away from the window?"
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[tense] Not yet. I can't watch it and watch the floor at the same time. Tell me before you change the step, will you?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[nervous] I will. And don't keep looking over my shoulder like that. Every time you do, I think something's already behind me."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4103
+}

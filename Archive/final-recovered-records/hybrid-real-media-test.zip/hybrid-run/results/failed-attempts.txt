@@ -1,0 +1,6 @@
+Preserved limitations and failed paths:
+1. python executable name unavailable; used installed python3. No installation.
+2. ViMax original full process not attempted: needs Python>=3.12 while current runtime is3.10, no matching dependencies/source-execution exception. Default call incompatible with locked audio,9:16 and per-beat durations.
+3. First attachment send syntax rejected before sending; corrected repeated attachment flags. No duplicate sends or external changes.
+4. Runtime overload after source inspection: folder existence verified by live metadata before continuation. No repeated create.
+5. Actual s17/s18 hybrid assembly succeeds mechanically but fails story-continuity bar because intact chandelier remains in dialogue backgrounds. Original mouth motion remains unsynced. No quality pass claimed.

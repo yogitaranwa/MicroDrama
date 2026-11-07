@@ -1,0 +1,1323 @@
+[1] Models and Credit Costs - Magic Hour API Docs — docs.magichour.ai
+https://docs.magichour.ai/api-reference/models
+
+Models and Credit Costs - Magic Hour API Docs
+
+# Models and Credit Costs
+
+Every model available through the API, what it supports, and what it costs in credits.
+
+Magic Hour exposes multiple models per endpoint. Pass the one you want in the `model` field, or omit it to get `default`, which tracks our current recommendation and changes over time. Credits are charged per generation. Video cost scales with duration, image cost with resolution and image count. Failed generations are never charged.
+
+Video models
+
+Available on text to video and image to video.
+
+Choose your first model
+
+Start with a model available on the free plan. Free-plan access still uses credits. Available on free and paid plans
+
+- LTX 2.5 (`ltx-2.5`) — our recommended starting point, especially for fast generations.
+- MiniMax H3 (`minimax-h3`) — a high-quality alternative.
+
+For either model on the free plan, set `resolution` to `480p`. Requires a paid plan
+
+- Kling 3.0 (`kling-3.0`) — our recommendation for strong quality and value.
+- Seedance 2.5 (`seedance-2.5`) — choose this for state-of-the-art quality.
+
+Pass the model ID in `model` to select it explicitly. See the endpoint reference for supported durations and resolutions, and the credit-cost table below to compare costs.
+
+Video model reference
+
+| Model | Best for | Resolutions | Durations (seconds) | Audio |
+| --- | --- | --- | --- | --- |
+| `gemini-omni-1.1` | Precise short clips, first and last frames, and high resolution | 360p, 720p, 1080p, 4k | 3, 4, 5, 6, 7, 8, 9, 10 | No |
+| `ltx-2.5` | Fast output for general scenes and clips up to 60 seconds | 480p, 720p, 1080p | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 | Yes, no extra credits |
+| `minimax-h3` | Native-audio video with flexible duration | 480p, 720p, 1080p | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30 | Yes, no extra credits |
+| `wan-2.2` | Strong physics, camera moves, and motion | 480p, 720p, 1080p | 3, 4, 5, 6, 7, 8, 9, 10, 15 | No |
+| `wan-3.0` | Native-audio video, long clips, and end-frame control | 480p, 720p, 1080p | 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30 | Yes, no extra credits |
+| `kling-2.6` | Great for action, motion blur, and camera moves | 720p, 1080p | 5, 10 | No |
+| `kling-3.0` | Best overall quality for cinematic storytelling | 720p, 1080p, 4k | 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | Yes, costs extra |
+| `veo3.1-lite` | Veo quality at a more accessible cost | 720p, 1080p | 4, 6, 8, 16, 24, 32, 40, 48, 56 | Yes, costs extra |
+| `veo3.1` | Google’s model. Highest realism and detail | 720p, 1080p | 4, 6, 8, 16, 24, 32, 40, 48, 56 | Yes, costs extra |
+| `seedance-1.5` | Smooth, consistent motion with precision | 480p, 720p, 1080p | 4, 5, 6, 7, 8, 9, 10, 11, 12 | Yes, costs extra |
+| `seedance-2.0-mini` | Fast, consistent video with strong motion quality | 480p, 720p | 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | Yes, no extra credits |
+| `seedance-2.0` | Top quality with reference-to-video control | 480p, 720p | 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | Yes, no extra credits |
+| `seedance-2.5` | Highest quality with superior realism, detail, and motion | 480p, 720p | 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 | Yes, no extra credits |
+| `sora-2` | Open AI’s model. Great for creativity and viral clips | 720p | 4, 8, 12, 24, 36, 48, 60 | Yes, no extra credits |
+
+`default` resolves to `kling-3.0` on paid tiers and `ltx-2.5` on the free tier. Free typically requests `480p`; paid plans (Creator, Pro, Business) can request the higher resolutions a model supports, at that resolution’s credit cost. `wan-3.0` requires a paid plan at every resolution. The deprecated `kling-2.5-audio` and `veo3.1-audio` values are equivalent to passing the base model with `audio: true`.
+
+Video credit costs
+
+Credits per second of output. For text-to-video and image-to-video, multiply by `end_seconds` to estimate a job. For endpoints that trim an input, the clip duration is `end_seconds - start_seconds`.
+
+| Model | 360p | 480p | 720p | 1080p | 4k | With audio |
+| --- | --- | --- | --- | --- | --- | --- |
+| `gemini-omni-1.1` | 48 | — | 144 | 192 | 384 | Not supported |
+| `ltx-2.5` | — | 24 | 48 | 72 | — | Included |
+| `minimax-h3` | — | 24 | 48 | 72 | — | Included |
+| `wan-2.2` | — | 24 | 48 | 72 | — | Not supported |
+| `wan-3.0` | — | 48 | 96 | 180 | — | Included |
+| `kling-2.6` | — | — | 36 | 72 | — | Not supported |
+| `kling-3.0` | — | — | 48 | 72 | 240 | +24 at 720p, 1080p; +48 at 4k |
+| `veo3.1-lite` | — | — | 48 | 72 | — | +24 |
+| `veo3.1` | — | — | 96 | 120 | — | +24 |
+| `seedance-1.5` | — | 30 | 60 | 90 | — | 2× the base rate |
+| `seedance-2.0-mini` | — | 96 | 192 | — | — | Included |
+| `seedance-2.0` | — | 144 | 288 | — | — | Included |
+| `seedance-2.5` | — | 288 | 576 | — | — | Included |
+| `sora-2` | — | — | 120 | — | — | Included |
+
+The video formula is `duration × output fps × resolution multiplier`. Because output fps varies by model, two models at the same resolution can cost different amounts per second.
+
+Legacy model values
+
+The endpoints still accept `ltx-2`, `ltx-2.3`, `kling-2.5`, `kling-1.6`, `seedance` for backwards compatibility, but these are no longer recommended and are absent from the tables above. New integrations should use a documented model. AI video editor has its own roster: `gemini-omni-1.1` and `ltx-2.5`, defaulting to `ltx-2.5` on the free tier and `gemini-omni-1.1` on paid tiers. On this endpoint, the accepted `ltx-2.3` value maps to `ltx-2.5`; deprecated `gemini-omni` maps to `gemini-omni-1.1`.
+
+Image models
+
+Available on AI image generator and AI image editor.
+
+| Model | Generate | Edit | Resolutions | From | Tiers |
+| --- | --- | --- | --- | --- | --- |
+| `flux-schnell` | Yes | — | 640px, 1k, 2k | 5 credits | free, creator, pro, business |
+| `flux-2-klein` | Yes | Yes | 640px, 1k, 2k | 5 credits | free, creator, pro, business |
+| `z-image-turbo` | Yes | — | 640px, 1k, 2k | 5 credits | free, creator, pro, business |
+| `seedream-v4` | Yes | Yes | 640px, 1k, 2k, 4k | 40 credits | creator, pro, business |
+| `seedream-v5-pro` | Yes | Yes | 640px, 1k, 2k | 75 credits | creator, pro, business |
+| `nano-banana` | Yes | Yes | 640px, 1k | 50 credits | creator, pro, business |
+| `nano-banana-2-lite` | Yes | Yes | 640px, 1k | 50 credits | creator, pro, business |
+| `nano-banana-2` | Yes | Yes | 640px, 1k, 2k, 4k | 100 credits | creator, pro, business |
+| `nano-banana-2.1` | Yes | Yes | 640px, 1k, 2k, 4k | 50 credits | creator, pro, business |
+| `nano-banana-pro` | Yes | Yes | 1k, 2k, 4k | 150 credits | creator, pro, business |
+| `gpt-image-2` | Yes | Yes | 640px, 1k, 2k, 4k | 50 credits | creator, pro, business |
+| `gpt-image-2.5-flare` | Yes | Yes | 640px, 1k, 2k, 4k | 100 credits | creator, pro, business |
+| `krea-2` | Yes | Yes | 640px, 1k | 10 credits | free, creator, pro, business |
+| `qwen-edit` | — | Yes | 640px, 1k, 2k | 10 credits | free, creator, pro, business |
+| `qwen-image-2.1` | Yes | Yes | 640px, 1k, 2k | 10 credits | free, creator, pro, business |
+| `seedream-v4.5` | — | Yes | 640px, 1k, 2k, 4k | 50 credits | creator, pro, business |
+
+“From” is the cost of a single image at the model’s lowest resolution. Cost depends on the model, resolution, and image count; do not assume every batch costs the single-image rate multiplied by the count. For example, `nano-banana-2.1` costs 50 credits for one image at `640px` or `1k`, and 150 credits total for a grid of 4, 9, or 16 images. Free-plan image models are available at `640px`. Larger resolutions require a paid plan even if the model is available on the free plan.
+
+| Model | Allowed image counts (generator) | Max additional input images (editor) |
+| --- | --- | --- |
+| `flux-schnell` | 1, 2, 3, 4 | — |
+| `flux-2-klein` | 1 | 5 |
+| `z-image-turbo` | 1, 2, 3, 4 | — |
+| `seedream-v4` | 1, 2, 3, 4 | 9 |
+| `seedream-v5-pro` | 1, 2, 3, 4 | 9 |
+| `nano-banana` | 1, 2, 3, 4 | 9 |
+| `nano-banana-2-lite` | 1, 2, 3, 4 | 9 |
+| `nano-banana-2` | 1, 4, 9, 16 | 9 |
+| `nano-banana-2.1` | 1, 4, 9, 16 | 9 |
+| `nano-banana-pro` | 1, 4, 9, 16 | 9 |
+| `gpt-image-2` | 1, 2, 3, 4 | 9 |
+| `gpt-image-2.5-flare` | 1, 2, 3, 4 | 9 |
+| `krea-2` | 1 | 1 |
+| `qwen-edit` | — | 2 |
+| `qwen-image-2.1` | 1, 2, 3, 4 | 2 |
+| `seedream-v4.5` | — | 9 |
+
+Reference costs
+
+These endpoints use tool-specific pricing. Some rates vary by resolution or output settings.
+
+| Endpoint | Credits |
+| --- | --- |
+| AI Clothes Changer | 25 per image |
+| AI Face Editor | 1 per edit |
+| AI GIF Generator | 50 per GIF |
+| AI Headshot Generator | 50 per headshot |
+| AI Meme Generator | 10 per meme |
+| AI QR Code Generator | Free |
+| Body Swap | 50+ per image, based on resolution |
+| Face Swap Photo | 10 per image |
+| Head Swap | 10 per image |
+| Image Background Remover | 5 per image |
+| Photo Colorizer | 10 per image |
+| AI Voice Generator | 0.1 per character, rounded up |
+| AI Voice Cloner | 0.1 per generated character, rounded up |
+
+AI Image Upscaler
+
+Cost depends on `style.mode` and `scale_factor`.
+
+| Mode and scale | Credits |
+| --- | --- |
+| `preserve`, 2x | 25 per image |
+| `balanced` or `creative`, 2x | 50 per image |
+| `preserve`, 4x | 100 per image |
+| `balanced` or `creative`, 4x | 200 per image |
+
+Duration-based endpoints
+
+These charge by output length rather than per generation.
+
+| Endpoint | Credits |
+| --- | --- |
+| Animation | 24 credits/second at 24fps |
+| Audio to Video | 24 credits/second at 480p, 48 at 720p, 72 at 1080p |
+| Auto Subtitle Generator | ~4.8 credits/second at 24fps |
+| Character Replace | 48 credits/second at 480p, 96 at 720p |
+| Face Swap Video | 24 credits/second at 24fps |
+| Lip Sync | 1 credit/frame, doubled on `pro` |
+| AI Talking Photo | 20 credits/second prompted, 48 realistic |
+| Video to Video | 48 credits/second at 24fps |
+
+Video jobs return an estimate in `credits_charged` on the create response. The final amount is corrected once the render finishes and the true frame rate is known. Read `credits_charged` from the get-details response for the actual charge.
+
+Estimating before you build
+
+- Credits to dollars — usage-based rates give the per-credit price for each tier, including volume discounts.
+- Cost calculator — model your monthly spend across endpoints and volumes.
+- Mock server — develop against sample responses without spending credits.
+- Current balance — call `GET /v1/account` to read the credits currently available to the API key’s account.
+
+[2] AI Image Editor - Magic Hour API Docs — docs.magichour.ai
+https://docs.magichour.ai/api-reference/image-projects/ai-image-editor
+
+AI Image Editor - Magic Hour API Docs
+
+```
+from magic_hour import Client
+from os import getenv
+
+client = Client(token=getenv("MAGIC_HOUR_API_KEY"))
+res = client.v1.ai_image_editor.generate(
+    assets={"image_file_paths": ["/path/to/1234.png"]},
+    style={"prompt": "Give me sunglasses"},
+    name="Ai Image Editor image",
+    wait_for_completion=True,
+    download_outputs=True,
+    download_directory="."
+)
+```
+
+```
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.aiImageEditor.generate(
+  {
+    assets: { imageFilePaths: ["/path/to/1234.png", "/path/to/1235.png"] },
+    name: "Ai Image Editor image",
+    style: { prompt: "Give me sunglasses" },
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+```
+
+```
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	ai_image_editor "github.com/magichourhq/magic-hour-go/resources/v1/ai_image_editor"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.AiImageEditor.Create(ai_image_editor.CreateRequest{
+		AspectRatio: nullable.NewValue(types.V1AiImageEditorCreateBodyAspectRatioEnum11),
+		Assets: types.V1AiImageEditorCreateBodyAssets{
+			ImageFilePaths: nullable.NewValue([]string{
+				"api-assets/id/1234.png",
+				"api-assets/id/1235.png",
+			}),
+		},
+		ImageCount: nullable.NewValue(1.0),
+		Model:      nullable.NewValue(types.V1AiImageEditorCreateBodyModelEnumFlux2Klein),
+		Name:       nullable.NewValue("My Ai Image Editor image"),
+		Resolution: nullable.NewValue(types.V1AiImageEditorCreateBodyResolutionEnum640px),
+		Style: types.V1AiImageEditorCreateBodyStyle{
+			Prompt: "Give me sunglasses",
+		},
+	})
+}
+```
+
+```
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .ai_image_editor()
+    .create(magic_hour::resources::v1::ai_image_editor::CreateRequest {
+        aspect_ratio: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyAspectRatioEnum::Enum11,
+        ),
+        assets: magic_hour::models::V1AiImageEditorCreateBodyAssets {
+            image_file_paths: Some(
+                vec![
+                    "api-assets/id/1234.png".to_string(), "api-assets/id/1235.png"
+                    .to_string()
+                ],
+            ),
+            ..Default::default()
+        },
+        image_count: Some(1.0),
+        model: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyModelEnum::Flux2Klein,
+        ),
+        name: Some("My Ai Image Editor image".to_string()),
+        resolution: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyResolutionEnum::Enum640px,
+        ),
+        style: magic_hour::models::V1AiImageEditorCreateBodyStyle {
+            prompt: "Give me sunglasses".to_string(),
+            ..Default::default()
+        },
+    })
+    .await;
+```
+
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/ai-image-editor",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Ai Image Editor image',
+    'image_count' => 1,
+    'model' => 'flux-2-klein',
+    'aspect_ratio' => '1:1',
+    'resolution' => '640px',
+    'style' => [
+        'prompt' => 'Give me sunglasses'
+    ],
+    'assets' => [
+        'image_file_paths' => [
+                'api-assets/id/1234.png',
+                'api-assets/id/1235.png'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+```
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/ai-image-editor")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Ai Image Editor image\",\"image_count\":1,\"model\":\"flux-2-klein\",\"aspect_ratio\":\"1:1\",\"resolution\":\"640px\",\"style\":{\"prompt\":\"Give me sunglasses\"},\"assets\":{\"image_file_paths\":[\"api-assets/id/1234.png\",\"api-assets/id/1235.png\"]}}")
+  .asString();
+```
+
+```
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/ai-image-editor")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"style\": {\n    \"prompt\": \"Give me sunglasses\"\n  },\n  \"assets\": {\n    \"image_file_paths\": [\n      \"api-assets/id/1234.png\",\n      \"api-assets/id/1235.png\"\n    ]\n  },\n  \"name\": \"My Ai Image Editor image\",\n  \"image_count\": 1,\n  \"model\": \"flux-2-klein\",\n  \"aspect_ratio\": \"1:1\",\n  \"resolution\": \"640px\"\n}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```
+{
+  "id": "cuid-example",
+  "credits_charged": 5
+}
+```
+
+```
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+```
+
+# AI Image Editor
+
+```
+from magic_hour import Client
+from os import getenv
+
+client = Client(token=getenv("MAGIC_HOUR_API_KEY"))
+res = client.v1.ai_image_editor.generate(
+    assets={"image_file_paths": ["/path/to/1234.png"]},
+    style={"prompt": "Give me sunglasses"},
+    name="Ai Image Editor image",
+    wait_for_completion=True,
+    download_outputs=True,
+    download_directory="."
+)
+```
+
+```
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.aiImageEditor.generate(
+  {
+    assets: { imageFilePaths: ["/path/to/1234.png", "/path/to/1235.png"] },
+    name: "Ai Image Editor image",
+    style: { prompt: "Give me sunglasses" },
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+```
+
+```
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	ai_image_editor "github.com/magichourhq/magic-hour-go/resources/v1/ai_image_editor"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.AiImageEditor.Create(ai_image_editor.CreateRequest{
+		AspectRatio: nullable.NewValue(types.V1AiImageEditorCreateBodyAspectRatioEnum11),
+		Assets: types.V1AiImageEditorCreateBodyAssets{
+			ImageFilePaths: nullable.NewValue([]string{
+				"api-assets/id/1234.png",
+				"api-assets/id/1235.png",
+			}),
+		},
+		ImageCount: nullable.NewValue(1.0),
+		Model:      nullable.NewValue(types.V1AiImageEditorCreateBodyModelEnumFlux2Klein),
+		Name:       nullable.NewValue("My Ai Image Editor image"),
+		Resolution: nullable.NewValue(types.V1AiImageEditorCreateBodyResolutionEnum640px),
+		Style: types.V1AiImageEditorCreateBodyStyle{
+			Prompt: "Give me sunglasses",
+		},
+	})
+}
+```
+
+```
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .ai_image_editor()
+    .create(magic_hour::resources::v1::ai_image_editor::CreateRequest {
+        aspect_ratio: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyAspectRatioEnum::Enum11,
+        ),
+        assets: magic_hour::models::V1AiImageEditorCreateBodyAssets {
+            image_file_paths: Some(
+                vec![
+                    "api-assets/id/1234.png".to_string(), "api-assets/id/1235.png"
+                    .to_string()
+                ],
+            ),
+            ..Default::default()
+        },
+        image_count: Some(1.0),
+        model: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyModelEnum::Flux2Klein,
+        ),
+        name: Some("My Ai Image Editor image".to_string()),
+        resolution: Some(
+            magic_hour::models::V1AiImageEditorCreateBodyResolutionEnum::Enum640px,
+        ),
+        style: magic_hour::models::V1AiImageEditorCreateBodyStyle {
+            prompt: "Give me sunglasses".to_string(),
+            ..Default::default()
+        },
+    })
+    .await;
+```
+
+```
+curl --request POST \
+     --url https://api.magichour.ai/v1/ai-image-editor \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "name": "My Ai Image Editor image",
+  "image_count": 1,
+  "model": "flux-2-klein",
+  "aspect_ratio": "1:1",
+  "resolution": "640px",
+  "style": {
+    "prompt": "Give me sunglasses"
+  },
+  "assets": {
+    "image_file_paths": [
+      "api-assets/id/1234.png",
+      "api-assets/id/1235.png"
+    ]
+  }
+}
+'
+```
+
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/ai-image-editor",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Ai Image Editor image',
+    'image_count' => 1,
+    'model' => 'flux-2-klein',
+    'aspect_ratio' => '1:1',
+    'resolution' => '640px',
+    'style' => [
+        'prompt' => 'Give me sunglasses'
+    ],
+    'assets' => [
+        'image_file_paths' => [
+                'api-assets/id/1234.png',
+                'api-assets/id/1235.png'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+```
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/ai-image-editor")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Ai Image Editor image\",\"image_count\":1,\"model\":\"flux-2-klein\",\"aspect_ratio\":\"1:1\",\"resolution\":\"640px\",\"style\":{\"prompt\":\"Give me sunglasses\"},\"assets\":{\"image_file_paths\":[\"api-assets/id/1234.png\",\"api-assets/id/1235.png\"]}}")
+  .asString();
+```
+
+```
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/ai-image-editor")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"style\": {\n    \"prompt\": \"Give me sunglasses\"\n  },\n  \"assets\": {\n    \"image_file_paths\": [\n      \"api-assets/id/1234.png\",\n      \"api-assets/id/1235.png\"\n    ]\n  },\n  \"name\": \"My Ai Image Editor image\",\n  \"image_count\": 1,\n  \"model\": \"flux-2-klein\",\n  \"aspect_ratio\": \"1:1\",\n  \"resolution\": \"640px\"\n}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```
+{
+  "id": "cuid-example",
+  "credits_charged": 5
+}
+```
+
+```
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+```
+
+#### Authorizations
+
+string header required
+
+Bearer authentication header of the form `Bearer <api_key>`, where `<api_key>` is your API key. To get your API key, go to Developer Hub and click "Create new API Key".
+
+#### Body
+
+application/json
+
+style
+
+object required
+
+assets
+
+object required
+
+Provide the assets for image edit
+
+Show child attributes
+
+name
+
+string default: Ai Image Editor - dateTime
+
+Give your image a custom name for easy identification.
+
+`"My Ai Image Editor image"`
+
+image_count
+
+enum default: 1
+
+Number of images to generate. Maximum varies by model. Defaults to 1 if not specified.
+
+`1`, `4`, `9`, `16` 
+
+Example:
+
+`1`
+
+model
+
+enum 
+
+The AI model to use for image editing. Each model has different capabilities and costs.
+
+Models:
+
+- `default` - Use the model we recommend, which will change over time. This is recommended unless you need a specific model. This is the default behavior.
+- `flux-2-klein` - from 5 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k
+- Available for tiers: free, creator, pro, business
+- Max additional input images: 5
+- `gpt-image-2` - from 50 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `gpt-image-2.5-flare` - from 100 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `krea-2` - from 10 credits/image 
+
+- Supported resolutions: 640px, 1k
+- Available for tiers: free, creator, pro, business
+- Max additional input images: 1
+- `nano-banana` - from 50 credits/image 
+
+- Supported resolutions: 640px, 1k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `nano-banana-2` - from 100 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `nano-banana-2-lite` - from 50 credits/image 
+
+- Supported resolutions: 640px, 1k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `nano-banana-2.1` - from 50 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `nano-banana-pro` - from 150 credits/image 
+
+- Supported resolutions: 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `qwen-edit` - from 10 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k
+- Available for tiers: free, creator, pro, business
+- Max additional input images: 2
+- `qwen-image-2.1` - from 10 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k
+- Available for tiers: free, creator, pro, business
+- Max additional input images: 2
+- `seedream-v4` - from 40 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `seedream-v4.5` - from 50 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k, 4k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+- `seedream-v5-pro` - from 75 credits/image 
+
+- Supported resolutions: 640px, 1k, 2k
+- Available for tiers: creator, pro, business
+- Max additional input images: 9
+
+Available options: 
+
+`default`, 
+
+`qwen-image-2.1`, 
+
+`gpt-image-2`, 
+
+`nano-banana-2`, 
+
+`flux-2-klein`, 
+
+`nano-banana-pro`, 
+
+`seedream-v5-pro`, 
+
+`seedream-v4.5`, 
+
+`nano-banana-2.1`, 
+
+`qwen-edit`, 
+
+`nano-banana-2-lite`, 
+
+`krea-2`, 
+
+`gpt-image-2.5-flare`, 
+
+`seedream-v4`, 
+
+`nano-banana` 
+
+`"flux-2-klein"`
+
+aspect_ratio
+
+enum 
+
+The aspect ratio of the output image(s). If not specified, defaults to `auto`.
+
+`auto`, `16:9`, `9:16`, `4:3`, `3:2`, `1:1`, `4:5`, `2:3` 
+
+`"1:1"`
+
+resolution
+
+enum 
+
+Maximum resolution (longest edge) for the output image.
+
+- `640px` — up to 640px
+- `1k` — up to 1024px
+- `2k` — up to 2048px
+- `4k` — up to 4096px
+- `auto` — Deprecated. Mapped server-side from your subscription tier to the best matching resolution the model supports
+
+Per-model support:
+
+- `flux-2-klein` - 640px, 1k, 2k
+- `gpt-image-2` - 640px, 1k, 2k, 4k
+- `gpt-image-2.5-flare` - 640px, 1k, 2k, 4k
+- `krea-2` - 640px, 1k
+- `nano-banana` - 640px, 1k
+- `nano-banana-2` - 640px, 1k, 2k, 4k
+- `nano-banana-2-lite` - 640px, 1k
+- `nano-banana-2.1` - 640px, 1k, 2k, 4k
+- `nano-banana-pro` - 1k, 2k, 4k
+- `qwen-edit` - 640px, 1k, 2k
+- `qwen-image-2.1` - 640px, 1k, 2k
+- `seedream-v4` - 640px, 1k, 2k, 4k
+- `seedream-v4.5` - 640px, 1k, 2k, 4k
+- `seedream-v5-pro` - 640px, 1k, 2k
+
+Note: Resolution availability depends on the model and your subscription tier.
+
+`auto`, `640px`, `1k`, `2k`, `4k` 
+
+`"640px"`
+
+#### Response
+
+200
+
+application/json
+
+Success
+
+Success
+
+id
+
+Unique ID of the image. Use it with the Get image Project API to fetch status and downloads.
+
+`"cuid-example"`
+
+credits_charged
+
+integer required
+
+The amount of credits deducted from your account to generate the image. We charge credits right when the request is made.
+
+If an error occurred while generating the image(s), credits will be refunded and this field will be updated to include the refund.
+
+`5`
+
+[3] Generate Asset Upload Urls API Reference - Magic Hour Docs - Magic Hour API Docs — docs.magichour.ai
+https://docs.magichour.ai/api-reference/files/generate-asset-upload-urls
+
+Generate Asset Upload Urls API Reference - Magic Hour Docs - Magic Hour API Docs
+
+```
+from magic_hour import Client
+from os import getenv
+
+client = Client(token=getenv("MAGIC_HOUR_API_KEY"))
+res = client.v1.files.upload_urls.create(
+    items=[
+        {"extension": "mp4", "type_": "video"},
+        {"extension": "mp3", "type_": "audio"},
+    ]
+)
+```
+
+```
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.files.uploadUrls.create({
+  items: [
+    { extension: "mp4", type: "video" },
+    { extension: "mp3", type: "audio" },
+  ],
+});
+```
+
+```
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	upload_urls "github.com/magichourhq/magic-hour-go/resources/v1/files/upload_urls"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.Files.UploadUrls.Create(upload_urls.CreateRequest{
+		Items: []types.V1FilesUploadUrlsCreateBodyItemsItem{
+			types.V1FilesUploadUrlsCreateBodyItemsItem{
+				Extension: "mp4",
+				Type:      types.V1FilesUploadUrlsCreateBodyItemsItemTypeEnumVideo,
+			},
+			types.V1FilesUploadUrlsCreateBodyItemsItem{
+				Extension: "mp3",
+				Type:      types.V1FilesUploadUrlsCreateBodyItemsItemTypeEnumAudio,
+			},
+		},
+	})
+}
+```
+
+```
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .files()
+    .upload_urls()
+    .create(magic_hour::resources::v1::files::upload_urls::CreateRequest {
+        items: vec![
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItem { extension :
+            "mp4".to_string(), type_ :
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItemTypeEnum::Video
+            }, magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItem { extension :
+            "mp3".to_string(), type_ :
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItemTypeEnum::Audio }
+        ],
+    })
+    .await;
+```
+
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/files/upload-urls",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'items' => [
+        [
+                'type' => 'video',
+                'extension' => 'mp4'
+        ],
+        [
+                'type' => 'audio',
+                'extension' => 'mp3'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+```
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/files/upload-urls")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"items\":[{\"type\":\"video\",\"extension\":\"mp4\"},{\"type\":\"audio\",\"extension\":\"mp3\"}]}")
+  .asString();
+```
+
+```
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/files/upload-urls")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"items\": [\n    {\n      \"type\": \"video\",\n      \"extension\": \"mp4\"\n    },\n    {\n      \"type\": \"audio\",\n      \"extension\": \"mp3\"\n    }\n  ]\n}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```
+{
+  "items": [
+    {
+      "upload_url": "https://videos.magichour.ai/api-assets/id/video.mp4?auth-value=1234567890",
+      "expires_at": "2024-07-25T16:56:21.932Z",
+      "file_path": "api-assets/id/video.mp4"
+    },
+    {
+      "upload_url": "https://videos.magichour.ai/api-assets/id/audio.mp3?auth-value=1234567890",
+      "expires_at": "2024-07-25T16:56:21.932Z",
+      "file_path": "api-assets/id/audio.mp3"
+    }
+  ]
+}
+```
+
+```
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "not_found",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+```
+
+# Generate Asset Upload Urls API Reference - Magic Hour Docs
+
+Generates a list of pre-signed upload URLs for the assets required. This API is only necessary if you want to upload to Magic Hour’s storage. Refer to the Input Files Guide for more details.
+
+The response array will match the order of items in the request body.
+
+Valid file extensions per asset type:
+
+- video: mp4, m4v, mov, webm
+- audio: mp3, wav, aac, flac, webm, weba, m4a, opus, ogg, oga, aiff, amr
+- image: png, jpg, jpeg, jfif, heic, heif, webp, avif, jp2, tiff, tif, bmp
+- gif: gif, webp, webm
+
+> Note: `gif` is only supported for face swap API `video_file_path` field.
+
+Once you receive an upload URL, send a `PUT` request to upload the file directly.
+
+Example:
+
+```
+curl -X PUT --data '@/path/to/file/video.mp4' \
+  https://videos.magichour.ai/api-assets/id/video.mp4?<auth params from the API response>
+
+```
+
+```
+from magic_hour import Client
+from os import getenv
+
+client = Client(token=getenv("MAGIC_HOUR_API_KEY"))
+res = client.v1.files.upload_urls.create(
+    items=[
+        {"extension": "mp4", "type_": "video"},
+        {"extension": "mp3", "type_": "audio"},
+    ]
+)
+```
+
+```
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.files.uploadUrls.create({
+  items: [
+    { extension: "mp4", type: "video" },
+    { extension: "mp3", type: "audio" },
+  ],
+});
+```
+
+```
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	upload_urls "github.com/magichourhq/magic-hour-go/resources/v1/files/upload_urls"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.Files.UploadUrls.Create(upload_urls.CreateRequest{
+		Items: []types.V1FilesUploadUrlsCreateBodyItemsItem{
+			types.V1FilesUploadUrlsCreateBodyItemsItem{
+				Extension: "mp4",
+				Type:      types.V1FilesUploadUrlsCreateBodyItemsItemTypeEnumVideo,
+			},
+			types.V1FilesUploadUrlsCreateBodyItemsItem{
+				Extension: "mp3",
+				Type:      types.V1FilesUploadUrlsCreateBodyItemsItemTypeEnumAudio,
+			},
+		},
+	})
+}
+```
+
+```
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .files()
+    .upload_urls()
+    .create(magic_hour::resources::v1::files::upload_urls::CreateRequest {
+        items: vec![
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItem { extension :
+            "mp4".to_string(), type_ :
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItemTypeEnum::Video
+            }, magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItem { extension :
+            "mp3".to_string(), type_ :
+            magic_hour::models::V1FilesUploadUrlsCreateBodyItemsItemTypeEnum::Audio }
+        ],
+    })
+    .await;
+```
+
+```
+curl --request POST \
+     --url https://api.magichour.ai/v1/files/upload-urls \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "items": [
+    {
+      "type": "video",
+      "extension": "mp4"
+    },
+    {
+      "type": "audio",
+      "extension": "mp3"
+    }
+  ]
+}
+'
+```
+
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/files/upload-urls",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'items' => [
+        [
+                'type' => 'video',
+                'extension' => 'mp4'
+        ],
+        [
+                'type' => 'audio',
+                'extension' => 'mp3'
+        ]
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+```
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/files/upload-urls")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"items\":[{\"type\":\"video\",\"extension\":\"mp4\"},{\"type\":\"audio\",\"extension\":\"mp3\"}]}")
+  .asString();
+```
+
+```
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/files/upload-urls")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"items\": [\n    {\n      \"type\": \"video\",\n      \"extension\": \"mp4\"\n    },\n    {\n      \"type\": \"audio\",\n      \"extension\": \"mp3\"\n    }\n  ]\n}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```
+{
+  "items": [
+    {
+      "upload_url": "https://videos.magichour.ai/api-assets/id/video.mp4?auth-value=1234567890",
+      "expires_at": "2024-07-25T16:56:21.932Z",
+      "file_path": "api-assets/id/video.mp4"
+    },
+    {
+      "upload_url": "https://videos.magichour.ai/api-assets/id/audio.mp3?auth-value=1234567890",
+      "expires_at": "2024-07-25T16:56:21.932Z",
+      "file_path": "api-assets/id/audio.mp3"
+    }
+  ]
+}
+```
+
+```
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+```
+
+```
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+```
+
+string header required
+
+Bearer authentication header of the form `Bearer <api_key>`, where `<api_key>` is your API key. To get your API key, go to Developer Hub and click "Create new API Key".
+
+#### Body
+
+object[] required
+
+The list of assets to upload. The response array will match the order of items in the request body.
+
+Minimum array length: `1`
+
+Show child attributes
+
+`[ { "type": "video", "extension": "mp4" }, { "type": "audio", "extension": "mp3" }]`
+
+#### Response
+
+Success
+
+Success
+
+The list of upload URLs and file paths for the assets. The response array will match the order of items in the request body. Refer to the Input Files Guide for more details.
+
+Example:
+
+`[ { "upload_url": "https://videos.magichour.ai/api-assets/id/video.mp4?auth-value=1234567890", "expires_at": "2024-07-25T16:56:21.932Z", "file_path": "api-assets/id/video.mp4" }, { "upload_url": "https://videos.magichour.ai/api-assets/id/audio.mp3?auth-value=1234567890", "expires_at": "2024-07-25T16:56:21.932Z", "file_path": "api-assets/id/audio.mp3" }]`

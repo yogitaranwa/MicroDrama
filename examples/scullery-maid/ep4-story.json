@@ -1,0 +1,344 @@
+{
+ "title": "The Billionaire's Scullery Maid - Episode 4",
+ "aspect": "9:16",
+ "style": "Cinematic photorealistic live-action drama, glossy vertical short-drama look, 9:16 portrait framing, shallow depth of field, high contrast, warm natural skin tones, consistent faces and wardrobe",
+ "voices": {
+  "Chloe": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+  "Ethan": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+  "Peterson": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+  "Young Chloe": "bright, kind, gentle young teenage girl",
+  "Young Ethan": "hoarse, wary, quiet teenage boy",
+  "Mark": "crisp, efficient, respectful man in his thirties",
+  "Vivian": "silky, sweet, slow woman in her late forties with poison underneath",
+  "Sasha": "sharp, mocking, gossipy young woman",
+  "Leo": "weak but warm young teenage boy",
+  "Grandfather": "old, gravelly, commanding man in his seventies"
+ },
+ "hook_title": "\"What is this trash doing in a board meeting?\"",
+ "end_card": "Vivian took Leo... Final episode next",
+ "scenes": {
+  "street": {
+   "set": "a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade",
+   "plate": "street-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade. Empty, no people. No text, no watermark."
+  },
+  "penthouse": {
+   "set": "a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves",
+   "plate": "penthouse-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves. Empty, no people. No text, no watermark."
+  },
+  "mansion": {
+   "set": "a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall",
+   "plate": "mansion-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall. Empty, no people. No text, no watermark."
+  },
+  "office": {
+   "set": "a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows",
+   "plate": "office-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows. Empty, no people. No text, no watermark."
+  },
+  "boardroom": {
+   "set": "a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors",
+   "plate": "boardroom-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors. Empty, no people. No text, no watermark."
+  },
+  "airstrip": {
+   "set": "a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing",
+   "plate": "airstrip-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing. Empty, no people. No text, no watermark."
+  },
+  "rooftop": {
+   "set": "the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below",
+   "plate": "rooftop-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below. Empty, no people. No text, no watermark."
+  },
+  "study": {
+   "set": "a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window",
+   "plate": "study-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window. Empty, no people. No text, no watermark."
+  }
+ },
+ "shots": [
+  {
+   "id": "e4-s01-thief",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 6,
+   "visual": "Peterson points at Chloe, desperate and sneering. Only Peterson speaks.",
+   "camera": "Medium shot, handheld.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "But Mr. Vance, she's just a low-class thief! She probably snuck in to-",
+      "delivery": "loud, fast, cut off"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s02-silence",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan slams his hand on the mahogany table like a gunshot; the room shakes. Only Ethan speaks.",
+   "camera": "Close-up, sharp push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "a hand slamming on wood like a gunshot",
+     "cups rattling"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Silence!",
+      "delivery": "thunderous"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s03a-meet",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan, his hand gently on Chloe's trembling shoulder, faces the terrified board. Only Ethan speaks.",
+   "camera": "Medium shot.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Everyone, meet Chloe Gray.",
+      "delivery": "booming with pride"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s03b-shares",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 8,
+   "visual": "Ethan announces it to the stunned board, his hand still on Chloe's shoulder. Only Ethan speaks.",
+   "camera": "Slow push-in on Ethan.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "the board murmuring in shock"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "As of this exact moment, she has been transferred 49% of Vance Enterprises' shares.",
+      "delivery": "booming with pride"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s04-fiancee",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan says it proudly; the board gasps. Only Ethan speaks.",
+   "camera": "Push-in on Ethan.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "the board gasping"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "And she is my fiancée.",
+      "delivery": "proud, certain"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s05-recognise",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 6,
+   "visual": "Chloe's jaw drops; she looks up at Ethan as he smiles down at her, sees the red string on his wrist, and recognises the boy from the rain. Nobody speaks.",
+   "camera": "Slow push-in on her eyes.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "a soft heartbeat",
+     "faint rain echo"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e4-s06-knees",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 6,
+   "visual": "Peterson falls to his knees, his face drained of colour. Only Peterson speaks.",
+   "camera": "Medium shot, high angle.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "knees hitting the floor"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "F-Fiancée?! No... that's impossible!",
+      "delivery": "shaking, horrified"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s07a-fired",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan looks down at the ruined manager, eyes flashing with malice. Only Ethan speaks.",
+   "camera": "Low angle.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Peterson, you're fired.",
+      "delivery": "cold, controlled fury"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s07b-never",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 8,
+   "visual": "Ethan leans closer, merciless. Only Ethan speaks.",
+   "camera": "Slow push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "And I have personally ensured that no company in this country will ever hire you again.",
+      "delivery": "cold, controlled fury"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s08-garbage",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan gives the order without looking away. Only Ethan speaks.",
+   "camera": "Close-up.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "security footsteps rushing in"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "Security, throw this garbage out.",
+      "delivery": "flat, icy"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s09-promise",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 8,
+   "visual": "The tension melts; Ethan turns fully to Chloe, his icy face gone warm, and takes her hand. Only Ethan speaks, softly.",
+   "camera": "Medium close two-shot, Ethan is talking.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "distant shouting fading away"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "I promised I'd come back for you, Chloe. No one will ever hurt you again.",
+      "delivery": "soft whisper"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e4-s10-tears",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Chloe smiles through her rising tears. Nobody speaks.",
+   "camera": "Close-up.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "soft emotional music swell"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e4-s11-call",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 6,
+   "visual": "Chloe's phone rings; she answers, and her face drains of colour. Only Chloe speaks.",
+   "camera": "Push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "a phone ringing"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Chloe",
+      "voice": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+      "line": "Discharged? By his guardian? Vivian?",
+      "delivery": "disbelief turning to fear"
+     }
+    ]
+   }
+  }
+ ],
+ "frame_for": {
+  "e4-s01-thief": "e3-podium",
+  "e4-s02-silence": "e3-ethan-chair",
+  "e4-s03a-meet": "e4-together",
+  "e4-s03b-shares": "e4-together",
+  "e4-s04-fiancee": "e4-together",
+  "e4-s05-recognise": "e4-chloe",
+  "e4-s06-knees": "e4-knees",
+  "e4-s07a-fired": "e4-ethan-stand",
+  "e4-s07b-never": "e4-ethan-stand",
+  "e4-s08-garbage": "e4-ethan-stand",
+  "e4-s09-promise": "e4-together",
+  "e4-s10-tears": "e4-chloe",
+  "e4-s11-call": "e4-phone"
+ }
+}

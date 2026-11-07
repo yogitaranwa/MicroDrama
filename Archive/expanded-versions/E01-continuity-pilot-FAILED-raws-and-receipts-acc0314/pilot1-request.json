@@ -1,0 +1,13 @@
+{
+  "name": "E01-threeparts-consistency-pilot-shot1-ONCE",
+  "model": "minimax-h3",
+  "resolution": "720p",
+  "audio": false,
+  "end_seconds": 7,
+  "assets": {
+    "image_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/0cafd2b4-f049-41aa-a8c6-fc1873981bb0-image-0.png"
+  },
+  "style": {
+    "prompt": "Photorealistic film. LOCKED STATIC CAMERA, constant chest-up medium close-up, ZERO zoom, ZERO push-in. Preserve exact face, braided blonde hair, emerald dress neckline and shoulder drape throughout. The woman looks slightly toward screen left, at the man just off camera, NEVER into the camera. She urgently warns him, frightened breath but trying to stay quiet, small lip and jaw movement. Small natural breathing, no big head turns. The background is stationary. Do not change costume, necklace or face. No new objects or characters."
+  }
+}

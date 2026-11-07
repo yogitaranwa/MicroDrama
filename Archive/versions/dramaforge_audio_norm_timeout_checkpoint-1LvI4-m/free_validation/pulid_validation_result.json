@@ -1,0 +1,19 @@
+{
+  "backend": "pulid",
+  "version": 1,
+  "source_url": "[private-project-source]",
+  "output_url": "[private-project-source]",
+  "runtime_status": "passed",
+  "notebook_seconds": 223.0,
+  "executor_seconds": 130.92,
+  "steps": 4,
+  "visual_status": "rejected",
+  "visual_reasons": [
+    "illustrated/plastic rather than photoreal",
+    "childlike proportions and younger face",
+    "rectangular instead of round glasses",
+    "green garment, belt and brown shoes instead of approved wardrobe",
+    "full body instead of prompted closeup"
+  ],
+  "output_sha256": "ee3a5f01b497c87d78cc8e188ab3f681093c7e748dc38de2aa8f975621662952"
+}

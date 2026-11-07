@@ -1,0 +1,177 @@
+[
+  {
+    "path": "assemble_v43_final_v3.py",
+    "sha256": "c955b55b39c43a3ab371b25f429212f2dd9f2d9437074b2f943418750aef98ae",
+    "status": "changed"
+  },
+  {
+    "path": "microdrama/assembly_safety.py",
+    "sha256": "03176531b66acdafcd512a55051b8ed73b88a6864507b4a0ac6dafff0eac4d30",
+    "status": "added"
+  },
+  {
+    "path": "microdrama/detectors.py",
+    "sha256": "3614d34314d5495b996199bd40981beb60121a3196660af43ce157624a9e0434",
+    "status": "changed"
+  },
+  {
+    "path": "microdrama/reviewgate.py",
+    "sha256": "aa0ab64716d2334ce83b3ea199e5144ce7ea778672142b21304f4ce96097ab8d",
+    "status": "changed"
+  },
+  {
+    "path": "microdrama/stitch.py",
+    "sha256": "c5a6ac9968f935d920c996ca57b6d39312327cf02040da887452a11e4060808a",
+    "status": "changed"
+  },
+  {
+    "path": "run_pipeline.py",
+    "sha256": "99af1ee223a1d8b902a8ee7cb7abe773aff2cd9c14373805566d41d5d80064f8",
+    "status": "changed"
+  },
+  {
+    "path": "submit_key_anchor_batch_v38.py",
+    "sha256": "7396edc9bc52701482b129e94fe3f4ee1bb264944904b7b0541a5503a6dd2bd1",
+    "status": "changed"
+  },
+  {
+    "path": "submit_key_anchor_repair_v39.py",
+    "sha256": "23d59e9a06aae120d748dd1c968c03c89fe869e7fb0fc05827f8674e586c9ae1",
+    "status": "changed"
+  },
+  {
+    "path": "submit_key_anchor_shot11_v40.py",
+    "sha256": "f7019fafbecc6c2f0ca401e64abde3e6b7492f626533ad86403058515db56adc",
+    "status": "changed"
+  },
+  {
+    "path": "submit_shot04_reflection_edit_v42.py",
+    "sha256": "1401df1b0625020d33eb5d9a037308119d52566edc5825fb750f81c8ad12f587",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_batch_v3.py",
+    "sha256": "848077c5ea2a4dde9a8b83bf8f0e7bccca29e3f61981bf2070420b99abb2d1e8",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_batch_v31.py",
+    "sha256": "56dae170261eae4d2b782c6197c905a09837bd30d70a55713cf36dceed6457f1",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_batch_v32.py",
+    "sha256": "2772c52c67e995da561f4c71f2e733ab308a4b38147a7b972eac51f4a5c0fdd9",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_edit_dialogue_v37.py",
+    "sha256": "3902bb2c75466eb0037385f81f36bf3dfd4659b06983aa18ba4c19303731d42f",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_edit_tiara.py",
+    "sha256": "1373547b9e57a0481c4d7caea9f24b72a01210e792541c2c311b5036fcfd4cb1",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_reverse_v35.py",
+    "sha256": "ddcb4d9d609bb2469052b7c02cd2f22ba41703fae4b252ef4a669dcf2f58fb96",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_reverse_v36.py",
+    "sha256": "c2a3d135e71632bb6544ad03c46818635e9b6958f8a91eca6879892f508b9dda",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_v33.py",
+    "sha256": "93962e08dee903a47bc808b0d34dec60b4fd2701a90673519e889f1e97725d2f",
+    "status": "changed"
+  },
+  {
+    "path": "submit_still_shot12_v34.py",
+    "sha256": "6e243cae20181ec9f8c32f493980b08b65961e06d6833ed839f807db40ea90e5",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_bounded_motion_and_action.py",
+    "sha256": "1119a704801f31ce3071d49ab96200c6082cc41d746f5dfadee0ca2f7dea1031",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_final_motion_fixes.py",
+    "sha256": "61aabc39cba2a8d08ff1d1a2263da5894519670f364afb713d79dc9ec0e8de4e",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_lipsync_pro_batch.py",
+    "sha256": "e019bdd269c7fe1ecee82cab3b9eee83efda740ddd504a6b21b977578d38d43d",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_lipsync_pro_test.py",
+    "sha256": "84cef2a8a99f6d3e9c2eb3ae26dd076c51b011419cf75bde0c2461f7714dd6d8",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_production_cleared.py",
+    "sha256": "6536b295201b261f9b28b0265217fbd3cf3058af40e9f57cec531ba97d299b60",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_recovery_motion.py",
+    "sha256": "96d3f0002cad77444dab43341c20dba9eac53eee90df15d41691170cf77a0533",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_remaining_motion_tests.py",
+    "sha256": "11dccddb924ec9ef08e2c500be0406b7534ee4e95d54bd74b35ab4507cadc9db",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_remaining_production.py",
+    "sha256": "9bf9c3e6f8f1d76b6c860925d7bd0ad2c1349849bedd53e58e46741e7cb364c1",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_shoe_and_shot7_fixes.py",
+    "sha256": "13705c0156fd6eab7b851dda7a6a5a13f2b7b5af681aa0feed5ced0c200f1936",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_shot11_chandelier_fall_edit.py",
+    "sha256": "bc1321d2a8918b75e4cdce458d9720d6c2eb555228603eaf1c499310630e7fae",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_shot11_robe_edit.py",
+    "sha256": "9a106ec3997c2621f825f21156971b0f60354fe21cdd63434eada9138d3ee36c",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_shot11_sleek_shoe_edit.py",
+    "sha256": "01a38dc9a16079bc39d08726d7d914ec18d540106e33b7fbd46d998eb0dcadd0",
+    "status": "changed"
+  },
+  {
+    "path": "submit_v43_targeted_fix_tests.py",
+    "sha256": "28cae14ea226d3c131befa45628d2ac894657a5cb06b1a98b9b9c7f5a9320b4f",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_assemble_cli.py",
+    "sha256": "c5ca60f7ad9d06f061f36dcaa5e1e963477c1c67c31e454684460856a21e9e32",
+    "status": "changed"
+  },
+  {
+    "path": "tests/test_hardening.py",
+    "sha256": "f732b6584a5aa2b50e3ac322a36f0b67df36d0d9daac63c3538e4da9c42eaf29",
+    "status": "added"
+  },
+  {
+    "path": "tests/test_reviewgate.py",
+    "sha256": "acf7b8676b4467144678951b623a02303310122eb729284618cf67f02a70363c",
+    "status": "changed"
+  }
+]

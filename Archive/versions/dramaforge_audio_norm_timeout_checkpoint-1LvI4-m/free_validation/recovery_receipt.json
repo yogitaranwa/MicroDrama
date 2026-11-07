@@ -1,0 +1,12 @@
+{
+  "source": "m25 nine archives, manifest hashes verified; exact recorded later edit commands reapplied",
+  "files": {
+    "forge/integrations/execute.py": "79f114496ce44394235e22cd22c12e96cd14103b2fac2acfb3881d0c609267ea",
+    "forge/integrations/weight_layout.py": "754b8dcc34ab180d5a782e96407e3cbef2ad5f372bd782e200667f850baf37f6",
+    "forge/integrations/audio_t4_driver.py": "490650397fe8be08c507f80fb411b037a8a0026bfcab4cc8513c65469117a981",
+    "tests_forge/test_audio_validation_controls.py": "641530fe49df0571aa164cb81c4fc6cd6d343a46c3ca87ff3ae9ced63706ae56",
+    "tests_forge/test_audio_t4_profile.py": "87a17685fc00afe116a0320cd14dfd436222e24fb9602596d47caa4804e3e827"
+  },
+  "audio_source": "recovered existing v9 Chatterbox draft audio, not Chris final",
+  "reference_sha256": "585fbb46c6fa1a6175ef8458626c6708502d870a4575c5508d4c80db35f03de5"
+}

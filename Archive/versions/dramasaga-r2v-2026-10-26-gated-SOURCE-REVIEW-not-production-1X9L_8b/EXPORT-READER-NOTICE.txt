@@ -1,0 +1,10 @@
+====================================================================
+SOURCE / REVIEW EXPORT - THIS IS NOT PRODUCTION OUTPUT
+====================================================================
+This archive contains source code, manifests and documentation only.
+It contains NO production media and NO finished episode video.
+Final deliverable media is exported separately and only after every
+episode's chain verifies fresh (assemble fingerprints + lipsync
+linkage + episode fingerprint) at export time. Do not treat anything
+in this archive as viewable product.
+====================================================================

@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "seconds": 10,
+ "lines": [
+  {
+   "speaker": "Professor McGonagall",
+   "text": "Open this door right now, Potter. I will not have students vanish from a school event while the caretaker chases shadows.",
+   "emotion": "stern authority edged with exhaustion",
+   "expression": "square jaw, wand leveled at the seam of the hidden door, eyes narrowed against the dim torchlight"
+  },
+  {
+   "speaker": "Harry Potter",
+   "text": "I slipped away for air, Professor. No one else is here and the cloak never left my trunk.",
+   "emotion": "flat calm masking adrenaline",
+   "expression": "shoulders deliberately relaxed, hands open at his sides, gaze steady on her face"
+  }
+ ]
+}

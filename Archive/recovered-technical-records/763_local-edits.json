@@ -1,0 +1,36 @@
+[
+ {
+  "unit": "e01:2#b1",
+  "kind": "local_unpaid_edit_candidate",
+  "original": "e01-s02-b1.mp4",
+  "original_sha256": "1cc4c9c4a32188155352825d07bad3ce96662ba713cf068f873fbaf182796523",
+  "candidate": "e01-s02-b1-despark-candidate.mp4",
+  "candidate_sha256": "56b46bc896bafb0124e6f79ec049f5fc1a57fa309f837f61ed66c64cc87d040d",
+  "audio_stream_md5_original": "MD5=9fe44928205d1acae6d57504409dc43a",
+  "audio_stream_md5_candidate": "MD5=bdefd4e5be49e8399cbab4c964c20bf3",
+  "method": "frames 33-99 (1.1-3.3s): spark blob mask, two clean refs (frames 28,103) ECC-affine aligned (params temporally smoothed sigma 3), time-weighted blend, feathered; speckle pass; other frames untouched pixels",
+  "approval": "main:2026-10-26T18:03:54+05:30 conditional acceptance for assembly review; temporal screen reported",
+  "status": "candidate_not_wired_into_stage_artifact",
+  "audio_note": "PCM identical over common length; candidate audio tail trimmed ~0.02s to video end (-shortest); deliverable voice is the sha-locked take muxed at assemble anyway"
+ },
+ {
+  "unit": "e01:12#b1",
+  "original": "e01-s12-b1.orig.mp4",
+  "original_sha256": "bff9d3af1bb4339f627cbdee89c0db2b8382b80729566c70102c0e7da22edbd7",
+  "derivative": "e01-s12-b1.mp4",
+  "derivative_sha256": "d577ee8b59589d6ede02998c635a46a9f5dbc4c999d323781cddf92d1a6efdd1",
+  "method": "top-anchored digital push-in 1.0x to 1.5x between 1.7s and 2.6s, hold 1.5x, cx 0.46W, lanczos; audio copied",
+  "approval": "main:2026-10-26T19:09:29+05:30"
+ },
+ {
+  "unit": "e01:15#b1",
+  "kind": "local_unpaid_edit_candidate",
+  "original": "e01-s15-b1.mp4",
+  "original_sha256": "4ce775b9d4695c7e177ebd865804214bbde840b0e09eb34ad08c229b5d4dd41e",
+  "candidate": "e01-s15-b1-cut105-candidate.mp4",
+  "candidate_sha256": "835b55933b7d045f08cad24251c734fbe56871bf310e3584449e25597c623337",
+  "method": "frames 0-104 (3.5s) kept, re-encode crf12; crest first visible ~3.67s, last kept frame 3.47s; take unchanged; no freeze/stretch",
+  "approval": "main:2026-10-26T19:31:06+05:30 approved earlier-cut A",
+  "status": "wired via trim-overrides.json (assemble/lipsync/edit apply apply_trim_overrides); original clip file unchanged, assembly uses frames 0-3.5s"
+ }
+]

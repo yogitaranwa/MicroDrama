@@ -1,0 +1,14 @@
+{
+  "name": "E01-34s-argument-sync-shot3-ONCE",
+  "start_seconds": 0,
+  "end_seconds": 8.56,
+  "max_fps_limit": 24,
+  "assets": {
+    "video_source": "file",
+    "video_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/afb05f4a-0f6a-4ad7-be59-43db0de7d9f4-video-0.mp4",
+    "audio_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/afb05f4a-0f6a-4ad7-be59-43db0de7d9f4-audio-1.wav"
+  },
+  "style": {
+    "generation_mode": "lite"
+  }
+}

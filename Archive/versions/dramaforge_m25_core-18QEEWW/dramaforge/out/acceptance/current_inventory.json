@@ -1,0 +1,188 @@
+{
+  "as_of_local": "2026-11-06T07:23:45+05:30",
+  "overall": "incomplete",
+  "paid_execution": "USER HOLD: no further generation or spending until code-first boundary clarified",
+  "components": {
+    "multitalk": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "per-person audio JSON builder",
+        "render-plan bridge",
+        "fresh still/audio hashes and project gates",
+        "actual subprocess executor",
+        "real loader-layout preflight and streamed process runner"
+      ],
+      "executed": [
+        "local parser/contract/regression tests",
+        "local CLI import attempt failed at accelerator check"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "audio-driven generation",
+        "two-person lip-sync and identity review"
+      ],
+      "remaining": [
+        "isolated compatible dependencies",
+        "base+audio-model merged checkpoint layout",
+        "real T4 compatibility and VRAM test"
+      ]
+    },
+    "infinitetalk": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "audio input builder",
+        "render-plan bridge",
+        "fresh gate/hash checks",
+        "explicit separate InfiniteTalk checkpoint argument",
+        "actual subprocess executor",
+        "real loader-layout preflight and streamed process runner"
+      ],
+      "executed": [
+        "local parser/contract/regression tests",
+        "local CLI import attempt failed at accelerator check"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "dubbing generation",
+        "lip-sync and identity review"
+      ],
+      "remaining": [
+        "isolated compatible dependencies",
+        "base and separate audio-model weights",
+        "real T4 compatibility and VRAM test"
+      ]
+    },
+    "vace": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "CLI builder",
+        "new prepared job with explicit checkpoint/frame/step controls",
+        "gated hash-checking visual executor",
+        "private official-library GPU trial",
+        "opt-in generalized t4_dual_staged executor profile",
+        "production streamed process runner with timeout cleanup"
+      ],
+      "executed": [
+        "local parser/contract/regression tests",
+        "Version2 official VACE1.3B pinned weights downloaded",
+        "Version2 actual WanVace model construction completed at339.6s",
+        "Version2 mixed-dtype fp32 q/k +fp16 v GPU numerical comparison passed",
+        "Version3 CLIhelp passed with headless matplotlib",
+        "Version3 positive/negative T5 GPU1 finite encoding completed in1.3s total",
+        "Version4 reference-conditioned17frame video generated/downloaded/hash matched and frame0/8/16 inspected"
+      ],
+      "not_executed_confirmed": [
+        "photoreal v9 production quality",
+        "dialogue and lipsync",
+        "two-person reference adherence",
+        "production executor route validation",
+        "new generalized staged executor route has not run"
+      ],
+      "remaining": [
+        "optional production-route validation only after E01 review gates; no blind retry"
+      ],
+      "runtime_results": {
+        "version1": "failed:90-minute core subprocess timeout; captured inference log unavailable",
+        "version2": "failed:45-minute subprocess timeout; model loaded, repeated faulthandler stacks in CPU-half T5 forward; no video",
+        "version3": "failed after362.1s: GPU0 VAE source encode OOM attempted884MiB with555MiB free; no video",
+        "version4": "success529.7s:17frames8steps,159.866s generate, output hash matches runtime inference.json"
+      }
+    },
+    "pulid": {
+      "implemented": [
+        "pinned full upstream source with license",
+        "corrected SDXL-Lightning driver instead of FLUX assumption",
+        "prepared still job and hash/gate-enforcing executor"
+      ],
+      "executed": [
+        "local upstream-signature and regression checks",
+        "actual upstream library import+inference signature in separate PuLID environment, no constructor"
+      ],
+      "not_executed": [
+        "GPU model load",
+        "identity-conditioned still generation",
+        "visual identity review"
+      ],
+      "remaining": [
+        "target-GPU inference dependency validation",
+        "cached model weights and license conditions for personal research",
+        "GPU memory/load test",
+        "actual inference and visual review"
+      ]
+    },
+    "portable_attention": {
+      "implemented": [
+        "explicit opt-in chunked scaled-dot-product attention",
+        "single-device and full-attention-only safeguards",
+        "optional Turing fp16 config override"
+      ],
+      "executed": [
+        "CPU numerical mask tests",
+        "actual Tesla T4 numerical comparison: maximum absolute difference0.0",
+        "Version2 actual Tesla T4 mixed-dtype float32 q/k and float16 v numerical check passed"
+      ],
+      "not_executed_confirmed": [
+        "validated complete model output"
+      ],
+      "remaining": [
+        "New mixed-RoPE/value dtype correction passes CPU test, actual CUDA test prepared but not run",
+        "model-level correctness, performance and quality evidence"
+      ]
+    },
+    "legacy_wan_seed_test": {
+      "executed": [
+        "two matched prompt/settings clips differing only in seeds42/43",
+        "download and output hash verification",
+        "actual sampled-frame visual inspection"
+      ],
+      "scope": "visual seed sensitivity only, no voice, reference-image or two-person proof"
+    },
+    "episode_one": {
+      "implemented": [
+        "recovered owned v9 script",
+        "lossless 24-shot/19-line/4-location planner adaptation",
+        "asset and voice readiness inventory"
+      ],
+      "not_executed": [
+        "connected short two-person proof",
+        "full episode render",
+        "continuous watch/listen and final signoff"
+      ],
+      "remaining": [
+        "proof angle stills then actual animation/lipsync",
+        "duration choice:132.344s full script versus old120s target",
+        "source continuity choices Draco/Draconia and B.P./P.P.",
+        "user code-first stop supersedes production approval until resolved"
+      ],
+      "executed": [
+        "five character and four location references generated, inspected, user approved and hash locked",
+        "five actual voice auditions user approved at1.27x",
+        "all19 v9 dialogue lines generated;2589cumulativechars; five accepted takes reused",
+        "combined dialogue transcript checked;122.544s dialogue"
+      ]
+    },
+    "ip_adapter_faceid": {
+      "implemented": [
+        "full pinned IP-Adapter upstream source and license",
+        "actual SDXL FaceID driver with cached checkpoints and exactly-one-face guard",
+        "angle-matrix bridge to deterministic single-identity prompt batch",
+        "fresh reference hash/current still-lock validation and persistent hold"
+      ],
+      "executed": [
+        "actual upstream imports and constructor/generate signatures in separate FaceID environment",
+        "local preparation and hold tests"
+      ],
+      "not_executed": [
+        "CUDA model construction",
+        "face embedding extraction",
+        "image generation or visual identity review"
+      ],
+      "scope": "local personal noncommercial research only; no hosted API compatibility claim"
+    }
+  },
+  "local_tests": {
+    "full_suite_last_run": "510passed+30subtests; one pre-existing MoviePy last-frame warning",
+    "note": "Includes streaming subprocess tests and mixed-dtype numerical test. Model calls are stubbed in executor control-flow tests, not inference."
+  },
+  "completion_rule": "Local tests, copied source and CLI help do not establish full coding/runtime completion or approve episode generation."
+}

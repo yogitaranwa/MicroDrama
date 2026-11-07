@@ -1,0 +1,942 @@
+{
+  "route": "original_h3_comfy_modal",
+  "status": "planned_not_runtime_validated",
+  "live_enabled": false,
+  "prompt": "Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied soundtrack is the exact timing source; draw the picture against it and do not invent dialogue.\nReference identity anchors: Image 1 Harry front close, Image 2 Harry speaking profile, Image 3 Harry full body, Image 4 Draconia front close, Image 5 Draconia speaking profile, Image 6 Draconia full body, Image 7 Harry and Draconia dialogue two-shot, Image 8 Harry and Draconia action two-shot, Image 9 the empty candlelit Yule Ball location.\nKeep Harry as the same black-haired man with round glasses and black/red formal robes. Keep Draconia as the same platinum-blonde braided woman in the emerald gown. Preserve both identities, costumes, realistic faces and cinematic lighting.\nAction timing:\n0.00-1.68s: Draconia is clearly visible and urgently warns Harry; keep her face and mouth framed for the whole line.\n1.68-4.24s: Draconia pulls Harry into a fast dance turn; keep her face and mouth framed for the whole line while ice arrows flash past.\n4.24-6.80s: Harry is clearly visible as he challenges her; keep his face and mouth framed for the whole line and do not cut away to Draconia until his line ends.\n6.80-8.88s: Draconia answers; keep her face and mouth framed for the whole line.\n8.88-11.20s: Harry follows the offbeat step; keep his face and mouth framed for the whole line.\n11.20-13.12s: Draconia corrects the count and pulls him clear; keep her face and mouth framed for the whole line and do not let Harry's back occlude her mouth.\nThe ballroom location matches Image 9. Dynamic motion is allowed only while the active speaker remains visible.",
+  "reference_images": [
+    "ref-harry-front-close.png",
+    "ref-harry-speaking-profile.png",
+    "ref-harry-fullbody.png",
+    "ref-draconia-front-close.png",
+    "ref-draconia-speaking-profile.png",
+    "ref-draconia-fullbody.png",
+    "ref-two-shot-dialogue.png",
+    "ref-two-shot-action.png",
+    "ref-yule-ball-location.png"
+  ],
+  "clip": {
+    "seconds": 13.12,
+    "audio_asset": "dialogue.wav",
+    "width": 576,
+    "height": 1024,
+    "pins": [
+      {
+        "seconds": 0.0,
+        "asset": "ref-two-shot-dialogue.png",
+        "role": "opening_two_shot"
+      },
+      {
+        "seconds": 0.84,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L1",
+        "speaker": "draconia",
+        "role": "dialogue_midpoint"
+      },
+      {
+        "seconds": 1.68,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L2",
+        "speaker": "draconia",
+        "role": "line_boundary"
+      },
+      {
+        "seconds": 2.96,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L2",
+        "speaker": "draconia",
+        "role": "dialogue_midpoint"
+      },
+      {
+        "seconds": 4.24,
+        "asset": "ref-harry-speaking-profile.png",
+        "line_id": "L3",
+        "speaker": "harry",
+        "role": "line_boundary"
+      },
+      {
+        "seconds": 5.52,
+        "asset": "ref-harry-speaking-profile.png",
+        "line_id": "L3",
+        "speaker": "harry",
+        "role": "dialogue_midpoint"
+      },
+      {
+        "seconds": 6.8,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L4",
+        "speaker": "draconia",
+        "role": "line_boundary"
+      },
+      {
+        "seconds": 7.84,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L4",
+        "speaker": "draconia",
+        "role": "dialogue_midpoint"
+      },
+      {
+        "seconds": 8.88,
+        "asset": "ref-harry-speaking-profile.png",
+        "line_id": "L5",
+        "speaker": "harry",
+        "role": "line_boundary"
+      },
+      {
+        "seconds": 10.04,
+        "asset": "ref-harry-speaking-profile.png",
+        "line_id": "L5",
+        "speaker": "harry",
+        "role": "dialogue_midpoint"
+      },
+      {
+        "seconds": 11.2,
+        "asset": "ref-two-shot-action.png",
+        "role": "action_boundary"
+      },
+      {
+        "seconds": 12.16,
+        "asset": "ref-draconia-speaking-profile.png",
+        "line_id": "L6",
+        "speaker": "draconia",
+        "role": "dialogue_midpoint"
+      }
+    ]
+  },
+  "compiled": {
+    "workflow": {
+      "92": {
+        "inputs": {
+          "filename_prefix": "video/MiniMax_H3_PC1_R2V_T8_Cache",
+          "format": "auto",
+          "codec": "auto",
+          "video": [
+            "130",
+            0
+          ]
+        },
+        "class_type": "SaveVideo",
+        "_meta": {
+          "title": "Save Video"
+        }
+      },
+      "119": {
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+          "title": "Load VAE"
+        }
+      },
+      "120": {
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        },
+        "class_type": "VAELoader",
+        "_meta": {
+          "title": "Load VAE"
+        }
+      },
+      "121": {
+        "inputs": {
+          "samples": [
+            "125",
+            0
+          ],
+          "vae": [
+            "120",
+            0
+          ]
+        },
+        "class_type": "VAEDecodeAudio",
+        "_meta": {
+          "title": "VAE Decode Audio"
+        }
+      },
+      "122": {
+        "inputs": {
+          "samples": [
+            "125",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ]
+        },
+        "class_type": "VAEDecode",
+        "_meta": {
+          "title": "VAE Decode"
+        }
+      },
+      "123": {
+        "inputs": {
+          "sampler_name": "res_multistep"
+        },
+        "class_type": "KSamplerSelect",
+        "_meta": {
+          "title": "KSamplerSelect"
+        }
+      },
+      "124": {
+        "inputs": {
+          "scheduler": "simple",
+          "steps": 25,
+          "denoise": 1,
+          "model": [
+            "142",
+            0
+          ]
+        },
+        "class_type": "BasicScheduler",
+        "_meta": {
+          "title": "BasicScheduler"
+        }
+      },
+      "125": {
+        "inputs": {
+          "noise": [
+            "129",
+            0
+          ],
+          "guider": [
+            "126",
+            0
+          ],
+          "sampler": [
+            "123",
+            0
+          ],
+          "sigmas": [
+            "124",
+            0
+          ],
+          "latent_image": [
+            "md_av",
+            0
+          ]
+        },
+        "class_type": "SamplerCustomAdvanced",
+        "_meta": {
+          "title": "SamplerCustomAdvanced"
+        }
+      },
+      "126": {
+        "inputs": {
+          "model": [
+            "142",
+            0
+          ],
+          "conditioning": [
+            "md_pin11",
+            0
+          ]
+        },
+        "class_type": "BasicGuider",
+        "_meta": {
+          "title": "Basic Guider"
+        }
+      },
+      "127": {
+        "inputs": {
+          "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        },
+        "class_type": "UNETLoader",
+        "_meta": {
+          "title": "Load Diffusion Model"
+        }
+      },
+      "128": {
+        "inputs": {
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+          "type": "minimax",
+          "device": "default"
+        },
+        "class_type": "CLIPLoader",
+        "_meta": {
+          "title": "Load CLIP"
+        }
+      },
+      "129": {
+        "inputs": {
+          "noise_seed": 419433329744414
+        },
+        "class_type": "RandomNoise",
+        "_meta": {
+          "title": "RandomNoise"
+        }
+      },
+      "130": {
+        "inputs": {
+          "fps": 24,
+          "bit_depth": 8,
+          "images": [
+            "122",
+            0
+          ],
+          "audio": [
+            "121",
+            0
+          ]
+        },
+        "class_type": "CreateVideo",
+        "_meta": {
+          "title": "Create Video"
+        }
+      },
+      "131": {
+        "inputs": {
+          "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+          "values.a": [
+            "132",
+            0
+          ]
+        },
+        "class_type": "ComfyMathExpression",
+        "_meta": {
+          "title": "Math Expression"
+        }
+      },
+      "132": {
+        "inputs": {
+          "value": 5
+        },
+        "class_type": "PrimitiveFloat",
+        "_meta": {
+          "title": "Float (Duration)"
+        }
+      },
+      "136": {
+        "inputs": {
+          "prompt": [
+            "138",
+            0
+          ],
+          "width": 576,
+          "height": 1024,
+          "length": 328,
+          "ref_image_size": "max",
+          "clip": [
+            "128",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "audio_vae": [
+            "120",
+            0
+          ],
+          "ref_images.ref_image_0": [
+            "refimg1",
+            0
+          ],
+          "ref_images.ref_image_1": [
+            "refimg2",
+            0
+          ],
+          "ref_images.ref_image_2": [
+            "refimg3",
+            0
+          ],
+          "ref_images.ref_image_3": [
+            "refimg4",
+            0
+          ],
+          "ref_images.ref_image_4": [
+            "refimg5",
+            0
+          ],
+          "ref_images.ref_image_5": [
+            "refimg6",
+            0
+          ],
+          "ref_images.ref_image_6": [
+            "refimg7",
+            0
+          ],
+          "ref_images.ref_image_7": [
+            "refimg8",
+            0
+          ],
+          "ref_images.ref_image_8": [
+            "refimg9",
+            0
+          ]
+        },
+        "class_type": "MiniMaxH3ReferenceToVideo",
+        "_meta": {
+          "title": "MiniMax H3 Reference to Video"
+        }
+      },
+      "138": {
+        "inputs": {
+          "value": "Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied soundtrack is the exact timing source; draw the picture against it and do not invent dialogue.\nReference identity anchors: Image 1 Harry front close, Image 2 Harry speaking profile, Image 3 Harry full body, Image 4 Draconia front close, Image 5 Draconia speaking profile, Image 6 Draconia full body, Image 7 Harry and Draconia dialogue two-shot, Image 8 Harry and Draconia action two-shot, Image 9 the empty candlelit Yule Ball location.\nKeep Harry as the same black-haired man with round glasses and black/red formal robes. Keep Draconia as the same platinum-blonde braided woman in the emerald gown. Preserve both identities, costumes, realistic faces and cinematic lighting.\nAction timing:\n0.00-1.68s: Draconia is clearly visible and urgently warns Harry; keep her face and mouth framed for the whole line.\n1.68-4.24s: Draconia pulls Harry into a fast dance turn; keep her face and mouth framed for the whole line while ice arrows flash past.\n4.24-6.80s: Harry is clearly visible as he challenges her; keep his face and mouth framed for the whole line and do not cut away to Draconia until his line ends.\n6.80-8.88s: Draconia answers; keep her face and mouth framed for the whole line.\n8.88-11.20s: Harry follows the offbeat step; keep his face and mouth framed for the whole line.\n11.20-13.12s: Draconia corrects the count and pulls him clear; keep her face and mouth framed for the whole line and do not let Harry's back occlude her mouth.\nThe ballroom location matches Image 9. Dynamic motion is allowed only while the active speaker remains visible."
+        },
+        "class_type": "PrimitiveStringMultiline",
+        "_meta": {
+          "title": "Input Text (Prompt)"
+        }
+      },
+      "141": {
+        "inputs": {
+          "sage_attention": "auto",
+          "allow_compile": false,
+          "model": [
+            "127",
+            0
+          ]
+        },
+        "class_type": "PathchSageAttentionKJ",
+        "_meta": {
+          "title": "Patch Sage Attention KJ"
+        }
+      },
+      "142": {
+        "inputs": {
+          "residual_diff_threshold": 0.12,
+          "start_percent": 0.08,
+          "end_percent": 0.95,
+          "max_consecutive_hits": 2,
+          "cache_device": "cpu",
+          "metric_stride": 8,
+          "verbose": false,
+          "model": [
+            "141",
+            0
+          ]
+        },
+        "class_type": "MiniMaxH3BlockCacheT8",
+        "_meta": {
+          "title": "MiniMax H3 Block Cache (T8)"
+        }
+      },
+      "151": {
+        "inputs": {
+          "value": 576
+        },
+        "class_type": "PrimitiveInt",
+        "_meta": {
+          "title": "desired_width"
+        }
+      },
+      "152": {
+        "inputs": {
+          "value": 1024
+        },
+        "class_type": "PrimitiveInt",
+        "_meta": {
+          "title": "desired_height"
+        }
+      },
+      "refimg1": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-front-close.png"
+        }
+      },
+      "refimg2": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-speaking-profile.png"
+        }
+      },
+      "refimg3": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-fullbody.png"
+        }
+      },
+      "refimg4": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-front-close.png"
+        }
+      },
+      "refimg5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "refimg6": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-fullbody.png"
+        }
+      },
+      "refimg7": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-two-shot-dialogue.png"
+        }
+      },
+      "refimg8": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-two-shot-action.png"
+        }
+      },
+      "refimg9": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-yule-ball-location.png"
+        }
+      },
+      "md_audio": {
+        "class_type": "LoadAudio",
+        "inputs": {
+          "audio": "dialogue.wav"
+        }
+      },
+      "md_aenc": {
+        "class_type": "VAEEncodeAudio",
+        "inputs": {
+          "audio": [
+            "md_audio",
+            0
+          ],
+          "vae": [
+            "120",
+            0
+          ]
+        }
+      },
+      "md_mask": {
+        "class_type": "SolidMask",
+        "inputs": {
+          "value": 0.0,
+          "width": 8,
+          "height": 8
+        }
+      },
+      "md_keep": {
+        "class_type": "SetLatentNoiseMask",
+        "inputs": {
+          "samples": [
+            "md_aenc",
+            0
+          ],
+          "mask": [
+            "md_mask",
+            0
+          ]
+        }
+      },
+      "md_av": {
+        "class_type": "LTXVConcatAVLatent",
+        "inputs": {
+          "video_latent": [
+            "136",
+            1
+          ],
+          "audio_latent": [
+            "md_keep",
+            0
+          ]
+        }
+      },
+      "md_image0": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-two-shot-dialogue.png"
+        }
+      },
+      "md_pin0": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "136",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image0",
+            0
+          ],
+          "frame_idx": 0
+        }
+      },
+      "md_image1": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin1": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin0",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image1",
+            0
+          ],
+          "frame_idx": 20
+        }
+      },
+      "md_image2": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin2": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin1",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image2",
+            0
+          ],
+          "frame_idx": 40
+        }
+      },
+      "md_image3": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin3": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin2",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image3",
+            0
+          ],
+          "frame_idx": 71
+        }
+      },
+      "md_image4": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-speaking-profile.png"
+        }
+      },
+      "md_pin4": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin3",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image4",
+            0
+          ],
+          "frame_idx": 102
+        }
+      },
+      "md_image5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-speaking-profile.png"
+        }
+      },
+      "md_pin5": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin4",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image5",
+            0
+          ],
+          "frame_idx": 132
+        }
+      },
+      "md_image6": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin6": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin5",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image6",
+            0
+          ],
+          "frame_idx": 163
+        }
+      },
+      "md_image7": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin7": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin6",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image7",
+            0
+          ],
+          "frame_idx": 188
+        }
+      },
+      "md_image8": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-speaking-profile.png"
+        }
+      },
+      "md_pin8": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin7",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image8",
+            0
+          ],
+          "frame_idx": 213
+        }
+      },
+      "md_image9": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-harry-speaking-profile.png"
+        }
+      },
+      "md_pin9": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin8",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image9",
+            0
+          ],
+          "frame_idx": 241
+        }
+      },
+      "md_image10": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-two-shot-action.png"
+        }
+      },
+      "md_pin10": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin9",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image10",
+            0
+          ],
+          "frame_idx": 269
+        }
+      },
+      "md_image11": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "ref-draconia-speaking-profile.png"
+        }
+      },
+      "md_pin11": {
+        "class_type": "MiniMaxH3AddGuide",
+        "inputs": {
+          "positive": [
+            "md_pin10",
+            0
+          ],
+          "vae": [
+            "119",
+            0
+          ],
+          "latent": [
+            "136",
+            1
+          ],
+          "image": [
+            "md_image11",
+            0
+          ],
+          "frame_idx": 292
+        }
+      }
+    },
+    "workflow_sha256": "2c64b85c8362de7564f148b95b477134b5d3e8a331b2ec277d9da213671acecd",
+    "frames": 328,
+    "fps": 24,
+    "padded_audio_seconds": 13.666666666666666,
+    "trim_to_seconds": 13.12,
+    "live_enabled": false,
+    "status": "compiled_not_runtime_validated",
+    "required": "licensed installed H3 model/runtime and explicit local compute permission"
+  },
+  "required_before_execution": [
+    "verified compute account and workspace role",
+    "provider-side hard usage and spend limits",
+    "explicit one-job spend approval",
+    "staged input SHA verification",
+    "post-render sync QA with visible-speaker mouth track",
+    "whole-line mouth-motion QA for every dialogue line"
+  ],
+  "dialogue_midpoint_pin_coverage": [
+    {
+      "seconds": 0.84,
+      "asset": "ref-draconia-speaking-profile.png",
+      "line_id": "L1",
+      "speaker": "draconia",
+      "role": "dialogue_midpoint"
+    },
+    {
+      "seconds": 2.96,
+      "asset": "ref-draconia-speaking-profile.png",
+      "line_id": "L2",
+      "speaker": "draconia",
+      "role": "dialogue_midpoint"
+    },
+    {
+      "seconds": 5.52,
+      "asset": "ref-harry-speaking-profile.png",
+      "line_id": "L3",
+      "speaker": "harry",
+      "role": "dialogue_midpoint"
+    },
+    {
+      "seconds": 7.84,
+      "asset": "ref-draconia-speaking-profile.png",
+      "line_id": "L4",
+      "speaker": "draconia",
+      "role": "dialogue_midpoint"
+    },
+    {
+      "seconds": 10.04,
+      "asset": "ref-harry-speaking-profile.png",
+      "line_id": "L5",
+      "speaker": "harry",
+      "role": "dialogue_midpoint"
+    },
+    {
+      "seconds": 12.16,
+      "asset": "ref-draconia-speaking-profile.png",
+      "line_id": "L6",
+      "speaker": "draconia",
+      "role": "dialogue_midpoint"
+    }
+  ],
+  "clip_id": "harry-draconia-e01-original-h3-midpoint-pin-corrective-v3",
+  "root_cause_fix": "Boundary-only guide pins anchored line starts but had no strength or segment ownership; add an active-speaker pin at every line midpoint while preserving the exact-audio inpaint.",
+  "proposed_not_executed": true
+}

@@ -1,0 +1,48 @@
+{
+  "source": "Supplied h3-film-main.zip",
+  "upstream": "[private-project-source]",
+  "commit_verified": false,
+  "files": [
+    {
+      "path": "agent/h3film/check-prompt.mjs",
+      "sha256": "bda7f48d5e694cc00f68e8c0bc73bfd21c68e053ef169120cb7a8e0cc997d7e4",
+      "bytes": 2115
+    },
+    {
+      "path": "agent/h3film/join.mjs",
+      "sha256": "ac9b725dc674589f07ff2f2e0277836b4a8e3fcd1b59ef34cd68d3c9667d0db5",
+      "bytes": 8950
+    },
+    {
+      "path": "agent/h3film/render-all.mjs",
+      "sha256": "a4794ce45b681c140b4c52c77fd664bb41fae058a20065c34252f836871f0e91",
+      "bytes": 37705
+    },
+    {
+      "path": "research/h3/modal_h3.py",
+      "sha256": "842ecc59ce09f6fedf2aebf67f0876b0411c15f63942761084fc2f5aa71792c1",
+      "bytes": 6567
+    },
+    {
+      "path": "research/h3/runpod/comfy_r2v.py",
+      "sha256": "1e56d0022e9a07b6cb983cba3d5527b3c584c2fcd136aa10237b00930ede5590",
+      "bytes": 14229
+    },
+    {
+      "path": "research/h3/runpod/r2v_v1.json",
+      "sha256": "1d927b51d05405fa0d2683593822882c7cf8a6d5f9742817863338e7efe069a3",
+      "bytes": 5165
+    },
+    {
+      "path": "research/h3/soundtrack.mjs",
+      "sha256": "bfc33ffa5dce041a5d255f7e2ca40f7a190e85b0176663e72ebd3ba6753665ad",
+      "bytes": 41935
+    },
+    {
+      "path": "research/h3/tools-film.mjs",
+      "sha256": "8929178502e6c875f6d42bb7fa5f1a16a19729d1d76af60ddb42440c42223775",
+      "bytes": 47694
+    }
+  ],
+  "comment_sanitization": "Nonfunctional personal commentary sanitized; source attribution retained."
+}

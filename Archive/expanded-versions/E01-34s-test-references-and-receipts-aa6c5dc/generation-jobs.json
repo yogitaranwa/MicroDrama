@@ -1,0 +1,42 @@
+[
+  {
+    "shot": 1,
+    "speaker": "Harry",
+    "seconds": 10,
+    "job": {
+      "id": "cmvnwkv660je6hu01ss6s43l5",
+      "estimated_frame_cost": 480,
+      "credits_charged": 480
+    }
+  },
+  {
+    "shot": 2,
+    "speaker": "Draconia",
+    "seconds": 8,
+    "job": {
+      "id": "cmvnwkvix025ojx019vninmot",
+      "estimated_frame_cost": 384,
+      "credits_charged": 384
+    }
+  },
+  {
+    "shot": 3,
+    "speaker": "Harry",
+    "seconds": 9,
+    "job": {
+      "id": "cmvnwkvx901rxk601dbvdz0s4",
+      "estimated_frame_cost": 432,
+      "credits_charged": 432
+    }
+  },
+  {
+    "shot": 4,
+    "speaker": "Draconia",
+    "seconds": 9,
+    "job": {
+      "id": "cmvnwkwb00hivfu01brzckkox",
+      "estimated_frame_cost": 432,
+      "credits_charged": 432
+    }
+  }
+]

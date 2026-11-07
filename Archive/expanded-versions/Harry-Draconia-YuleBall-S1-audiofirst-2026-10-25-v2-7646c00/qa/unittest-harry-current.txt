@@ -1,0 +1,13 @@
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+[nvidia] m attempt start max_tokens=2000 wall=150s
+/tmp/tmp81zj5yea/asset/source.pending: Invalid data found when processing input
+----------------------------------------------------------------------
+Ran 228 tests in 5.654s
+
+OK

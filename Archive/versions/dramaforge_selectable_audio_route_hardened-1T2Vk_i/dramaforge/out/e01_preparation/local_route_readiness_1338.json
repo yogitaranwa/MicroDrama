@@ -1,0 +1,25 @@
+{
+  "source": "local restored repository inspection, not live remote inventory",
+  "plan_path": "out/script_v9/e01_plan_recovered.json",
+  "plan_sha256": "51e11464543bfbf1a5f54478d50bffd0b84ff322f293f61de0c754937e3dda4d",
+  "plan_shots": 24,
+  "dialogue_shots": 19,
+  "stored_plan_seconds": 110.80000000000003,
+  "ready": false,
+  "generation_hold": {
+    "held": true,
+    "reason": "Finish code integration and verification before any further generation or spend",
+    "source_message_id": "[private-record-reference]",
+    "as_of": "2026-11-06T07:15:42+05:30"
+  },
+  "missing_local_states": [
+    "still_lock.json",
+    "local_infinitetalk_acceptance.json",
+    "local_multitalk_acceptance.json",
+    "local_infinitetalk_execution.json",
+    "local_multitalk_execution.json"
+  ],
+  "warning": "Recovered v9 plan timing is an older110.8s planning artifact, not measured1.27x production dialogue. Paid assets may exist elsewhere; no claim that they do not exist. Do not feed stale plan timing into production. Supplied actual source audio must pass duration preflight; preserve approved words and speed.",
+  "code_status": "selectable guarded orchestration and reviewed continuation/assembly paths implemented; E01 not model-executed or accepted",
+  "local_tests": "565passed+30subtests; one existingMoviePyendframewarning"
+}

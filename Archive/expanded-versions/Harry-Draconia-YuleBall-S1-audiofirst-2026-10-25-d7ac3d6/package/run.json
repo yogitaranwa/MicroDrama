@@ -1,0 +1,44 @@
+{
+  "mode": "offline",
+  "paid_requests": 0,
+  "live_enabled": false,
+  "completed": [
+    "brief_validation",
+    "continuation_validation",
+    "writing_request",
+    "story_structure_validation",
+    "image_first_plan",
+    "tagged_dialogue_plan",
+    "music_sfx_cues",
+    "subtitle_policy"
+  ],
+  "blocked": [
+    {
+      "stage": "reference_images",
+      "reason": "No image synthesis executed; API/keys disabled"
+    },
+    {
+      "stage": "voice_audio",
+      "reason": "No voice synthesis executed; API/keys disabled"
+    },
+    {
+      "stage": "picture_shots",
+      "reason": "No video/GPU execution; API/keys and spend disabled; H3 license clearance pending"
+    },
+    {
+      "stage": "soundtrack_assets",
+      "reason": "No track selected/downloaded; each license and content must be verified"
+    },
+    {
+      "stage": "true_3d",
+      "reason": "Reference-render planning only; no reconstruction/rigging engine implemented"
+    },
+    {
+      "stage": "final_season_video",
+      "reason": "No synthesized images/audio/video. No movie, final subtitles or finished-season ZIP claimed."
+    }
+  ],
+  "image_count": 123,
+  "image_credits": 6150,
+  "voice_tagged_characters": 4038
+}

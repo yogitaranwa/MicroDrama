@@ -1,0 +1,385 @@
+[
+  {
+    "src_shot": 1,
+    "location": "Corridor outside the Great Hall",
+    "action": "Draconia presses a finger to her lips, eyes cutting to the corner. Hook.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "Do not even breathe, Potter. Filch is ten steps away, and if he catches us out of bed tonight, I lose far more than a Saturday.",
+      "emotion": "urgent whisper, fear under bravado",
+      "source_seconds": 5.5
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 5.5,
+    "plan_n": 1
+  },
+  {
+    "src_shot": 2,
+    "location": "Corridor outside the Great Hall",
+    "action": "Filch's lantern swings into frame, light sliding under a stone doorway.",
+    "sub": 1,
+    "kind": "visual",
+    "speaker": null,
+    "line": null,
+    "camera": "visual",
+    "seconds": 1.7,
+    "plan_n": 2
+  },
+  {
+    "src_shot": 3,
+    "location": "Corridor outside the Great Hall",
+    "action": "Harry's eyes flick from the lantern light to her face, a half smile he cannot hide.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "You promised me the party would be dull and safe, Malfoy. I am beginning to think you lied about both.",
+      "emotion": "dry amusement over tension",
+      "source_seconds": 4.4
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 4.4,
+    "plan_n": 3
+  },
+  {
+    "src_shot": 4,
+    "location": "Corridor outside the Great Hall",
+    "action": "She lifts her chin, stung and delighted at once.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "I never lie, I only choose which truths to share. Besides, I do not run from anyone, and I will not start with a caretaker.",
+      "emotion": "proud, indignant, secretly thrilled",
+      "source_seconds": 5.3
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 5.3,
+    "plan_n": 4
+  },
+  {
+    "src_shot": 5,
+    "location": "Corridor outside the Great Hall",
+    "action": "Filch shuffles into the amber light, lantern raised, background students dark, soft-focus, on screen under 2 s behind him.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Argus Filch",
+    "line": {
+      "speaker": "Argus Filch",
+      "text": "I can smell perfume and mischief in this corridor, my sweet little rule breakers. Come out now, and I may only hang you by your thumbs.",
+      "emotion": "wheezing menace, relishing it",
+      "source_seconds": 5.5
+    },
+    "camera": "single:Argus Filch",
+    "seconds": 5.5,
+    "plan_n": 5
+  },
+  {
+    "src_shot": 6,
+    "location": "Corridor outside the Great Hall",
+    "action": "Harry grabs her wrist and nods at a tapestry.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "Take my hand and follow me behind that tapestry before he reaches us. We can argue about your dignity once we are out of sight.",
+      "emotion": "controlled urgency, a flash of command",
+      "source_seconds": 5.3
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 5.3,
+    "plan_n": 6
+  },
+  {
+    "src_shot": 7,
+    "location": "Hidden passage behind the tapestry",
+    "action": "They stumble through the passage. Dust, dripping stone.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "For someone who never runs from anyone, you are moving remarkably fast through this tunnel, Malfoy. I am barely keeping up.",
+      "emotion": "teasing, breathless",
+      "source_seconds": 4.5
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 4.5,
+    "plan_n": 7
+  },
+  {
+    "src_shot": 8,
+    "location": "Hidden passage behind the tapestry",
+    "action": "She brushes grime from her gown, furious and trying not to laugh.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "This is a strategic retreat conducted with great dignity. The ruined hem of this gown is entirely your fault.",
+      "emotion": "mock outrage, laughter fighting through",
+      "source_seconds": 4.2
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 4.2,
+    "plan_n": 8
+  },
+  {
+    "src_shot": 9,
+    "location": "Hidden passage behind the tapestry",
+    "action": "Harry's hand unfolds a crumpled parchment sealed with the initials B.P.",
+    "sub": 1,
+    "kind": "visual",
+    "speaker": null,
+    "line": null,
+    "camera": "visual",
+    "seconds": 1.7,
+    "plan_n": 9
+  },
+  {
+    "src_shot": 10,
+    "location": "Hidden passage behind the tapestry",
+    "action": "Harry holds the note up between them.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "I found this note outside the ballroom, and it carries Pansy's initials. She was waiting for you tonight, and I need to understand why.",
+      "emotion": "quiet, probing, genuinely worried",
+      "source_seconds": 5.1
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 5.1,
+    "plan_n": 10
+  },
+  {
+    "src_shot": 11,
+    "location": "Hidden passage behind the tapestry",
+    "action": "Her eyes harden. Her hand snaps toward the parchment.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "Give me that parchment this instant, Potter. Whatever Pansy knows about my family is my burden, and I will not let you read a single line.",
+      "emotion": "cold fear turning to rage",
+      "source_seconds": 5.5
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 5.5,
+    "plan_n": 11
+  },
+  {
+    "src_shot": 12,
+    "location": "Hidden passage behind the tapestry",
+    "action": "Pansy's outline stands in the dark where the tunnel opens, background students dark, soft-focus, on screen under 2 s.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Pansy Parkinson",
+    "line": {
+      "speaker": "Pansy Parkinson",
+      "text": "How very touching, Draco, and how typical of you. My father's owl reaches Lucius by dawn, unless you hand me your prefect badge tomorrow morning. Consider it the price of my silence.",
+      "emotion": "silky, smug, savouring the threat",
+      "source_seconds": 6.6
+    },
+    "camera": "single:Pansy Parkinson",
+    "seconds": 6.6,
+    "plan_n": 12
+  },
+  {
+    "src_shot": 13,
+    "location": "Hidden passage behind the tapestry",
+    "action": "She steps toward the silhouette, voice cracking at the edges.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "You have always hidden behind your father's name, Parkinson. Step into the light and say that to my face if you dare.",
+      "emotion": "wounded fury, voice shaking",
+      "source_seconds": 4.7
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 4.7,
+    "plan_n": 13
+  },
+  {
+    "src_shot": 14,
+    "location": "Hidden passage behind the tapestry",
+    "action": "The silhouette is gone. Harry lowers his voice, piecing it together.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "Three nights ago I found Polyjuice ingredients in her trunk, and every missing one has led here. She used your scandal as a distraction while she stole.",
+      "emotion": "slow realisation, steady voice",
+      "source_seconds": 5.7
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 5.7,
+    "plan_n": 14
+  },
+  {
+    "src_shot": 15,
+    "location": "Hidden passage behind the tapestry",
+    "action": "The anger drains out of her face, replaced by something raw.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "She played me from the very beginning, and I thought I was the one hunting her. We have been chasing the same snake in opposite directions all night.",
+      "emotion": "stunned, softer, hurt and relieved",
+      "source_seconds": 5.8
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 5.8,
+    "plan_n": 15
+  },
+  {
+    "src_shot": 16,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "A glass vial rolls across the flagstones into a pool of doorway light.",
+    "sub": 1,
+    "kind": "visual",
+    "speaker": null,
+    "line": null,
+    "camera": "visual",
+    "seconds": 1.7,
+    "plan_n": 16
+  },
+  {
+    "src_shot": 17,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "McGonagall's silhouette fills the glowing doorway.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Professor McGonagall",
+    "line": {
+      "speaker": "Professor McGonagall",
+      "text": "Potter, Malfoy, stay exactly where you are. Two students missing from the ball and a caretaker shouting about shadows is no coincidence.",
+      "emotion": "stern, tired authority",
+      "source_seconds": 4.7
+    },
+    "camera": "single:Professor McGonagall",
+    "seconds": 4.7,
+    "plan_n": 17
+  },
+  {
+    "src_shot": 18,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "Harry holds up the vial, stepping forward.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "Professor, someone is brewing Polyjuice inside the Room of Requirement tonight. I found this vial by the tapestry, and I can prove it if you let us look.",
+      "emotion": "bold, quick, pleading",
+      "source_seconds": 5.8
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 5.8,
+    "plan_n": 18
+  },
+  {
+    "src_shot": 19,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "She studies him over her spectacles, unmoved.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Professor McGonagall",
+    "line": {
+      "speaker": "Professor McGonagall",
+      "text": "A vial in your pocket and a story at midnight prove nothing, Mr Potter. You have both earned detention every Saturday until June.",
+      "emotion": "disbelief hardening into steel",
+      "source_seconds": 4.9
+    },
+    "camera": "single:Professor McGonagall",
+    "seconds": 4.9,
+    "plan_n": 19
+  },
+  {
+    "src_shot": 20,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "A wall clock, minute hand sliding toward five minutes to midnight.",
+    "sub": 1,
+    "kind": "visual",
+    "speaker": null,
+    "line": null,
+    "camera": "visual",
+    "seconds": 1.7,
+    "plan_n": 20
+  },
+  {
+    "src_shot": 21,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "Ink crawls across the parchment on its own.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "Look at my palm, Potter, because the ink is moving by itself. It says the Polyjuice will be ready at midnight in the Astronomy Tower, signed with a single letter.",
+      "emotion": "eerie wonder, barely breathing",
+      "source_seconds": 6.2
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 6.2,
+    "plan_n": 21
+  },
+  {
+    "src_shot": 22,
+    "location": "Seventh-floor corridor, Room of Requirement wall",
+    "action": "Harry reads over her shoulder, the colour leaving his face.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Harry Potter",
+    "line": {
+      "speaker": "Harry Potter",
+      "text": "That is not Pansy's handwriting, and I do not recognise the letter at the bottom. Whoever wrote it knew we would find this tonight.",
+      "emotion": "low alarm, quiet dread",
+      "source_seconds": 5.1
+    },
+    "camera": "single:Harry Potter",
+    "seconds": 5.1,
+    "plan_n": 22
+  },
+  {
+    "src_shot": 23,
+    "location": "Astronomy Tower stairwell",
+    "action": "She hikes her gown and sprints up the stairs, Harry behind her.",
+    "sub": 1,
+    "kind": "speaker",
+    "speaker": "Draconia Malfoy",
+    "line": {
+      "speaker": "Draconia Malfoy",
+      "text": "The clock strikes twelve in four minutes, and I will stand in that tower before it does. Whoever signed that letter is waiting, and I intend to see their face.",
+      "emotion": "resolute, defiant, afraid and refusing to show it",
+      "source_seconds": 6.2
+    },
+    "camera": "single:Draconia Malfoy",
+    "seconds": 6.2,
+    "plan_n": 23
+  },
+  {
+    "src_shot": 24,
+    "location": "Astronomy Tower stairwell",
+    "action": "The door swings open on a cloaked figure holding a glowing vial against the midnight moon. Hard cut to black on the first chime.",
+    "sub": 1,
+    "kind": "visual",
+    "speaker": null,
+    "line": null,
+    "camera": "visual",
+    "seconds": 3.0,
+    "plan_n": 24
+  }
+]

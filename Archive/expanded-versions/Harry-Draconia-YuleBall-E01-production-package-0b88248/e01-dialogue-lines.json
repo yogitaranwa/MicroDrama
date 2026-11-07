@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "text": "Potter, don't turn around.",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 0.0,
+    "end": 1.6800000000000002,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-01.wav",
+    "duration": 1.68
+  },
+  {
+    "line": 2,
+    "text": "Dance now, insult me later.",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 1.6800000000000002,
+    "end": 4.24,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-02.wav",
+    "duration": 2.56
+  },
+  {
+    "line": 3,
+    "text": "This is how Slytherins ask?",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 4.24,
+    "end": 6.799000000000001,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-03.wav",
+    "duration": 2.559
+  },
+  {
+    "line": 4,
+    "text": "It's how they keep you alive.",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 6.799000000000001,
+    "end": 8.88,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-04.wav",
+    "duration": 2.081
+  },
+  {
+    "line": 5,
+    "text": "They follow the offbeat.",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 8.88,
+    "end": 11.200000000000001,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-05.wav",
+    "duration": 2.32
+  },
+  {
+    "line": 6,
+    "text": "Then count faster.",
+    "source": "/tmp/Harry_Draconia_E01_action_scene_v1.mp3",
+    "start": 11.200000000000001,
+    "end": 13.120000000000001,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-06.wav",
+    "duration": 1.92
+  },
+  {
+    "line": 7,
+    "text": "Show off.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 0.0,
+    "end": 1.44,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-07.wav",
+    "duration": 1.44
+  },
+  {
+    "line": 8,
+    "text": "Efficient.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 1.44,
+    "end": 2.0789999999999997,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-08.wav",
+    "duration": 0.639
+  },
+  {
+    "line": 9,
+    "text": "I definitely planned that.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 2.0789999999999997,
+    "end": 3.8400000000000003,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-09.wav",
+    "duration": 1.761
+  },
+  {
+    "line": 10,
+    "text": "You didn't.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 3.8400000000000003,
+    "end": 5.12,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-10.wav",
+    "duration": 1.28
+  },
+  {
+    "line": 11,
+    "text": "He's using the Waltz grid.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 5.12,
+    "end": 6.800000000000001,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-11.wav",
+    "duration": 1.68
+  },
+  {
+    "line": 12,
+    "text": "Then we break the grid.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 6.800000000000001,
+    "end": 8.56,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-12.wav",
+    "duration": 1.76
+  },
+  {
+    "line": 13,
+    "text": "That was your plan.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 8.56,
+    "end": 10.000000000000002,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-13.wav",
+    "duration": 1.44
+  },
+  {
+    "line": 14,
+    "text": "Left side, three beats, red table.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 10.000000000000002,
+    "end": 12.720000000000002,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-14.wav",
+    "duration": 2.72
+  },
+  {
+    "line": 15,
+    "text": "It has our names.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 12.720000000000002,
+    "end": 14.079,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-15.wav",
+    "duration": 1.359
+  },
+  {
+    "line": 16,
+    "text": "What did you do?",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 14.079,
+    "end": 15.360000000000003,
+    "voice_id": "4dZr8J4CBeokyRkTRpoN",
+    "audio": "/tmp/e01-line-audio/line-16.wav",
+    "duration": 1.281
+  },
+  {
+    "line": 17,
+    "text": "I tried to warn you.",
+    "source": "/tmp/Harry_Draconia_E01_remaining_dialogue_v1.mp3",
+    "start": 15.360000000000003,
+    "end": 17.68,
+    "voice_id": "ZF6FPAbjXT4488VcRRnw",
+    "audio": "/tmp/e01-line-audio/line-17.wav",
+    "duration": 2.32
+  }
+]

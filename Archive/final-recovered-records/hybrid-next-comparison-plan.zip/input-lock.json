@@ -1,0 +1,33 @@
+[
+  {
+    "file": "e01-s18-b1-start.png",
+    "sha256": "9d58537a52c4328722d0d7d3552e713f0edee4c089708565c8d2ef45a5f5f441"
+  },
+  {
+    "file": "ref-yule-ball-location.png",
+    "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+    "matches_bank": true
+  },
+  {
+    "file": "ref-harry-front-close.png",
+    "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+    "matches_bank": true
+  },
+  {
+    "file": "ref-draconia-front-close.png",
+    "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+    "matches_bank": true
+  },
+  {
+    "file": "e01-s17-b1-start.png",
+    "sha256": "bad6fd094533d1d68d7d536ff0d74d35530fa1e3b42409819dc6030489920383"
+  },
+  {
+    "file": "aftermath-existing-frame-0.7s.png",
+    "sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315",
+    "derived_from": "e01-s18-b2.mp4",
+    "source_sha256": "4bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86",
+    "timestamp_seconds": 0.7,
+    "pixel_review": "fallen chandelier/ice/green window light confirmed; smaller ceiling fixture exists, do not remove unrelated fixtures blindly"
+  }
+]

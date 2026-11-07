@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "seconds": 17,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "I found these Polyjuice ingredients in Pansy's trunk three nights ago, and I have tracked every missing one since. She stole them to make a disguise, and she used you as her perfect distraction.",
+   "emotion": "grim realisation",
+   "expression": "holds up a glass vial, eyes narrowing as he watches her face shift from fury to shock"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "She played me from the start, using my desperation to cover her theft while I scrambled to protect my father's name. We have been chasing the same snake in different directions this entire time.",
+   "emotion": "stunned betrayal turning cold",
+   "expression": "hand rises to her throat, fingers tightening on the borrowed robe fabric as understanding hardens her jaw"
+  }
+ ]
+}

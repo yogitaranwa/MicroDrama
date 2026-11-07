@@ -1,0 +1,449 @@
+{
+  "119": {
+    "_meta": {
+      "title": "Load VAE"
+    },
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "_meta": {
+      "title": "Load VAE"
+    },
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "121": {
+    "_meta": {
+      "title": "VAE Decode Audio"
+    },
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "122": {
+    "_meta": {
+      "title": "VAE Decode"
+    },
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "123": {
+    "_meta": {
+      "title": "KSamplerSelect"
+    },
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "124": {
+    "_meta": {
+      "title": "BasicScheduler"
+    },
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "denoise": 1,
+      "model": [
+        "142",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 25
+    }
+  },
+  "125": {
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "guider": [
+        "126",
+        0
+      ],
+      "latent_image": [
+        "av",
+        0
+      ],
+      "noise": [
+        "129",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ]
+    }
+  },
+  "126": {
+    "_meta": {
+      "title": "Basic Guider"
+    },
+    "class_type": "BasicGuider",
+    "inputs": {
+      "conditioning": [
+        "136",
+        0
+      ],
+      "model": [
+        "142",
+        0
+      ]
+    }
+  },
+  "127": {
+    "_meta": {
+      "title": "Load Diffusion Model"
+    },
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "_meta": {
+      "title": "Load CLIP"
+    },
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "device": "default",
+      "type": "minimax"
+    }
+  },
+  "129": {
+    "_meta": {
+      "title": "RandomNoise"
+    },
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 419433329744414
+    }
+  },
+  "130": {
+    "_meta": {
+      "title": "Create Video"
+    },
+    "class_type": "CreateVideo",
+    "inputs": {
+      "audio": [
+        "121",
+        0
+      ],
+      "bit_depth": 8,
+      "fps": 24,
+      "images": [
+        "122",
+        0
+      ]
+    }
+  },
+  "131": {
+    "_meta": {
+      "title": "Math Expression"
+    },
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "132",
+        0
+      ]
+    }
+  },
+  "132": {
+    "_meta": {
+      "title": "Float (Duration)"
+    },
+    "class_type": "PrimitiveFloat",
+    "inputs": {
+      "value": 13.12
+    }
+  },
+  "136": {
+    "_meta": {
+      "title": "MiniMax H3 Reference to Video"
+    },
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "clip": [
+        "128",
+        0
+      ],
+      "height": [
+        "152",
+        0
+      ],
+      "length": [
+        "131",
+        1
+      ],
+      "prompt": [
+        "138",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "aud1",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "img1",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "img2",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "img3",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "img4",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "img5",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "img6",
+        0
+      ],
+      "ref_images.ref_image_6": [
+        "img7",
+        0
+      ],
+      "ref_images.ref_image_7": [
+        "img8",
+        0
+      ],
+      "ref_images.ref_image_8": [
+        "img9",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "width": [
+        "151",
+        0
+      ]
+    }
+  },
+  "138": {
+    "_meta": {
+      "title": "Input Text (Prompt)"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied soundtrack is the exact timing source; perform the dialogue to the soundtrack and do not invent dialogue.\nReference identity anchors: Image 1 Harry front close, Image 2 Harry speaking profile, Image 3 Harry full body, Image 4 Draconia front close, Image 5 Draconia speaking profile, Image 6 Draconia full body, Image 7 Harry and Draconia dialogue two-shot, Image 8 Harry and Draconia action two-shot, Image 9 the empty candlelit Yule Ball location.\nKeep Harry as the same black-haired man with round glasses and black/red formal robes. Keep Draconia as the same platinum-blonde braided woman in the emerald gown. Preserve both identities, costumes, realistic faces and cinematic lighting.\nWhole-line framing:\n0.00-1.68s: Draconia is clearly visible and urgently warns Harry; keep her face and unobstructed mouth framed for the whole line.\n1.68-4.24s: Draconia pulls Harry into a fast dance turn; keep her face and unobstructed mouth framed for the whole line while ice arrows flash past.\n4.24-6.80s: Harry is clearly visible as he challenges her; keep his face and unobstructed mouth framed for the whole line and do not cut away to Draconia until his line ends.\n6.80-8.88s: Draconia answers; keep her face and unobstructed mouth framed for the whole line.\n8.88-11.20s: Harry follows the offbeat step; keep his face and unobstructed mouth framed for the whole line.\n11.20-13.12s: Draconia corrects the count and pulls him clear; keep her face and unobstructed mouth framed for the whole line and do not let Harry's back occlude her mouth.\nThe ballroom location matches Image 9. Dynamic motion is allowed only while the active speaker remains visible.\n"
+    }
+  },
+  "141": {
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "inputs": {
+      "allow_compile": false,
+      "model": [
+        "127",
+        0
+      ],
+      "sage_attention": "auto"
+    }
+  },
+  "142": {
+    "_meta": {
+      "title": "MiniMax H3 Block Cache (T8)"
+    },
+    "class_type": "MiniMaxH3BlockCacheT8",
+    "inputs": {
+      "cache_device": "cpu",
+      "end_percent": 0.95,
+      "max_consecutive_hits": 2,
+      "metric_stride": 8,
+      "model": [
+        "141",
+        0
+      ],
+      "residual_diff_threshold": 0.12,
+      "start_percent": 0.08,
+      "verbose": false
+    }
+  },
+  "151": {
+    "_meta": {
+      "title": "desired_width"
+    },
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 576
+    }
+  },
+  "152": {
+    "_meta": {
+      "title": "desired_height"
+    },
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 1024
+    }
+  },
+  "92": {
+    "_meta": {
+      "title": "Save Video"
+    },
+    "class_type": "SaveVideo",
+    "inputs": {
+      "codec": "auto",
+      "filename_prefix": "video/harry-draconia-e01-h3film-baseline-v1-1804d78d",
+      "format": "auto",
+      "video": [
+        "130",
+        0
+      ]
+    }
+  },
+  "aenc": {
+    "class_type": "VAEEncodeAudio",
+    "inputs": {
+      "audio": [
+        "aud1",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "akeep": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "mask": [
+        "amask",
+        0
+      ],
+      "samples": [
+        "aenc",
+        0
+      ]
+    }
+  },
+  "amask": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "height": 8,
+      "value": 0.0,
+      "width": 8
+    }
+  },
+  "aud1": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "a96e4a5e-fit13.12s-60c0baa1.wav"
+    }
+  },
+  "av": {
+    "class_type": "LTXVConcatAVLatent",
+    "inputs": {
+      "audio_latent": [
+        "akeep",
+        0
+      ],
+      "video_latent": [
+        "136",
+        1
+      ]
+    }
+  },
+  "img1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "0a594d2c-ref-harry-front-close.png"
+    }
+  },
+  "img2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fa627edc-ref-harry-speaking-profile.png"
+    }
+  },
+  "img3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "d9caa514-ref-harry-fullbody.png"
+    }
+  },
+  "img4": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "bb64686d-ref-draconia-front-close.png"
+    }
+  },
+  "img5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "6f358b25-ref-draconia-speaking-profile.png"
+    }
+  },
+  "img6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ae08ca1f-ref-draconia-fullbody.png"
+    }
+  },
+  "img7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "4b6cc4d2-ref-two-shot-dialogue.png"
+    }
+  },
+  "img8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "8ca89816-ref-two-shot-action.png"
+    }
+  },
+  "img9": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "9e613b09-ref-yule-ball-location.png"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "status": "process_completed_quality_not_accepted",
+  "output": "hybrid-e01-s17-s18-process-test.mp4",
+  "output_sha256": "ab919c668dd1b682499fb2930bcb70b8a73839ba7f6013304ec75aa8e0643772",
+  "duration": 9.0,
+  "dimensions": [
+    540,
+    960
+  ],
+  "fps": "30/1",
+  "audio_bindings": [
+    {
+      "file": "e01-l16-harry.mp3",
+      "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+      "duration": 2.272653
+    },
+    {
+      "file": "e01-l17-draconia.mp3",
+      "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+      "duration": 4.675918
+    }
+  ],
+  "master_pcm_sha256": "d2f7a7fdec14e37cbb21c87981a59b2ee90b8c31ea898d419e2d261852b9d9ec",
+  "audio_note": "Original MP3 bytes preserved. Decode/resample/pad only; MP4 AAC is lossy, not byte-identical PCM.",
+  "timeline": [
+    {
+      "source": "e01-s17-b1.mp4",
+      "source_sha256": "b0b48249c980016374bc30656a3aba6e88ba360fd62c72049e6d891bdd49c74b",
+      "seconds": 3.0
+    },
+    {
+      "source": "e01-s18-b1.mp4",
+      "source_sha256": "8df05e1a6d920d912790d1a59043cdb60a78694901a442f4a23da08e9c10ecc4",
+      "seconds": 4.5
+    },
+    {
+      "source": "e01-s18-b2.mp4",
+      "source_sha256": "4bd9a6c0611f3d5365f0395eab4cdb9f037055364d8aea53c5232fe021307f86",
+      "seconds": 1.5
+    }
+  ],
+  "camera_plan": [
+    {
+      "id": "harry_cu",
+      "shots": [
+        "s17b1"
+      ],
+      "parent": null
+    },
+    {
+      "id": "draconia_cu",
+      "shots": [
+        "s18b1"
+      ],
+      "parent": "harry_cu",
+      "reason": "same conversation location and reverse speaker coverage; supplied footage, not new angle generation"
+    },
+    {
+      "id": "hall_insert",
+      "shots": [
+        "s18b2"
+      ],
+      "parent": null,
+      "reason": "establishing aftermath insert; no speaker face"
+    }
+  ],
+  "visual_review": {
+    "source_sampling": "3 samples per beat in hybrid-source-review.png",
+    "identity": "readable adult faces across selected samples",
+    "wardrobe": "Harry red-lined robe/black bow tie; Draconia green gown in selected source frames",
+    "continuity_failed": [
+      "Intact hanging chandeliers remain in dialogue backgrounds despite prior crash in plot",
+      "Draconia close-up moves toward near-lens gaze"
+    ],
+    "lip_sync": "not verified; original generated mouths remain, no lipsync run"
+  },
+  "sources": "ViMax-inspired explicit camera provenance and candidate review, combined with original production locked-audio/timing approach. No external repository code executed or copied.",
+  "scope": "No new generation and no production merge. This demonstrates an executable local hybrid edit path, not improved photoreal synthesis.",
+  "audio_export_check": {
+    "sample_rate": 48000,
+    "master_samples": 432000,
+    "mp4_decoded_samples": 432128,
+    "aligned_correlation": 0.9999990102493361,
+    "rms_sample_error": 0.00015783426351845264,
+    "note": "Codec integrity/timing comparison only. No perceptual acting or lip-sync proof."
+  }
+}

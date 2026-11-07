@@ -1,0 +1,40 @@
+STATUS CORRECTION20:39 IST: INITIAL50CREDIT GAP UNRESOLVED. Prior later-anchor equality is not full reconciliation. ALL PAID WORK PAUSED.
+The first ledger balance131219 minus charged17506 implies113713, versus live113663:50 lower. Later123935/7234 implies131169 initial,50 lower. Need provider/history evidence to attribute. Conservative possible E01 spend13996 would leave2107, or1907after200test, NOT confirmed1957. Main notified. Remaining text preserves original analysis, superseded where this warning conflicts.
+
+READ-ONLY COST / ACCOUNT RECONCILIATION
+Checked26Oct2026 about20:37 IST. No spend, upload to Magic Hour, new model call or production change.
+
+LIVE ACCOUNT
+GET https://api.magichour.ai/v1/account
+Account email:account@example.invalid
+Account id:cmux6s32o0163kl01fczlz0bj
+Tier:creator
+Credits:113663
+Subscription:null (not evidence of no plan, billing rate or extra entitlement)
+No key recorded in this file or package. Secret temporary file removed after GET.
+
+BUDGET SCOPES
+- Overall historical ledger charged_total17506 includes3560 pre-session charges, so current episode-session spend13946.
+- Read-only live balance113663 matches the verified production checkpoint formula123935-(17506-7234)=113663.
+- Equivalent episode-session baseline127609:127609-13946=113663. This is derived arithmetic. Historical17:52 report explicitly recorded3560 pre-session and5594 session of9154 overall; not independent new user authority.
+- Current E01 session cap16103 leaves2157. User18:10:54 'Yes approved' directly followed18:04:02 request raising15911->16103 to cover the duplicate192 and continue full planned E01.
+- This remaining2157 was reserved for planned lipsync. Current hold blocks it; no new use inferred.
+- Overall28704 in old root ledger is the older three-episode manifest total and is not the remaining/reallocated allowance for this test.
+
+PROPOSAL WITHIN EXISTING CAP, NOT AUTOMATIC CAP INCREASE
+- Stage1 four independent NB2.1/1k frame candidates:200credits. If user explicitly reallocates from held lip reserve, session rises13946->14146, remaining2157->1957. It displaces200credits of the old lip plan. No video auto-advance.
+- Conditional video3s+5s Wan3.0/720p:768credits. If later approved, session14914, remaining1189.
+- Conditional lip windows3s+4.5s at30fps lite:225credit estimate. If later approved, session15139, remaining964.
+- Total1193 experiment fits arithmetically inside2157 only by displacing1193credits of planned remaining lip budget. It does not imply the original whole-episode lip plan can still finish inside cap. Recompute later actual windows and frame settlement before deciding.
+- No new credits purchase or cap increase is inherently required for frame test. User may choose reallocation, approve an increased cap separately, or keep hold. Main owns proposal and approval conversation.
+- Rates checked current official models and endpoint docs:NB2.1 one image640px/1k50credits; Wan3.0/720p96credits/s; lite lip1credit/frame,Pro doubled. Subscription null does not supply a currency conversion. Exact account-specific dollar cost not established and not needed for existing-credit cap arithmetic.
+
+LIMITS
+Account/price reads establish current balance/tier/public costs, not permission. No generation submitted. Candidate images are not guaranteed, frame passes are not video/lip passes. Existing documented necktie and aftermath camera geometry still govern. No ViMax source execution exception needed for this existing-provider path.
+
+SOURCES
+https://docs.magichour.ai/api-reference/models
+https://docs.magichour.ai/api-reference/image-projects/ai-image-editor
+https://docs.magichour.ai/api-reference/video-projects/image-to-video
+https://docs.magichour.ai/api-reference/video-projects/lip-sync
+Internal provenance: current production ledger from live Drive19:46 backup; original WhatsApp18:04 offer/18:10 approval; production17:52 baseline checkpoint. Original channel approval retained by parent, not external receipt authority.

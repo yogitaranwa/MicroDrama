@@ -1,0 +1,293 @@
+{
+ "id": "probe-r2v-e01s07-s10-2026-10-26-v5-rebind-draft",
+ "status": "DRAFT - pending user acceptance of 2026-10-26 re-voice (Chris) pass and fresh probe GO; original 1,104-cr approval bound to superseded audio",
+ "created": "2026-10-26",
+ "model": "minimax-h3",
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "catalog_verified_on": "2026-10-26",
+ "jobs": [
+  {
+   "id": "probe-r2v-e01s07",
+   "shot_id": "e01s07",
+   "provider": "magichour",
+   "request": {
+    "method": "POST",
+    "endpoint": "/v1/text-to-video",
+    "body": {
+     "name": "e01s07",
+     "model": "minimax-h3",
+     "end_seconds": 7,
+     "resolution": "720p",
+     "aspect_ratio": "9:16",
+     "audio": true,
+     "references": [
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-draconia-front-close.png",
+       "name": "draconia_front_close"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-yule-ball-location.png",
+       "name": "yule_ball_location"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/audio-new/e01-line-06.mp3",
+       "name": "audio_e01s07"
+      }
+     ],
+     "style": {
+      "prompt": "Draconia grins despite the chaos Camera: close Keep @draconia_front_close identical to the reference in face, hair, wardrobe and proportions. Use @yule_ball_location for the location layout, lighting and dressing. Spoken dialogue and delivery follow @audio_e01s07."
+     }
+    }
+   },
+   "quote": {
+    "amount": 336,
+    "unit": "credits",
+    "verified_on": "2026-10-26",
+    "source_url": "https://docs.magichour.ai/api-reference/models"
+   },
+   "reference_binding": {
+    "images": [
+     {
+      "id": "ref-draconia-front-close",
+      "name": "draconia_front_close"
+     },
+     {
+      "id": "ref-yule-ball-location",
+      "name": "yule_ball_location"
+     }
+    ],
+    "audio": {
+     "name": "audio_e01s07",
+     "source_wav": "audio-new/e01-line-06.mp3",
+     "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+     "sourced_from": "PENDING ACCEPTANCE 2026-10-26 re-voice pass (Chris/Amelia/Daniel, eleven_v3); user has NOT yet approved this audio or the probe spend"
+    }
+   }
+  },
+  {
+   "id": "probe-r2v-e01s08",
+   "shot_id": "e01s08",
+   "provider": "magichour",
+   "request": {
+    "method": "POST",
+    "endpoint": "/v1/text-to-video",
+    "body": {
+     "name": "e01s08",
+     "model": "minimax-h3",
+     "end_seconds": 7,
+     "resolution": "720p",
+     "aspect_ratio": "9:16",
+     "audio": true,
+     "references": [
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-harry-fullbody.png",
+       "name": "harry_fullbody"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-yule-ball-location.png",
+       "name": "yule_ball_location"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/audio-new/e01-line-07.mp3",
+       "name": "audio_e01s08"
+      }
+     ],
+     "style": {
+      "prompt": "Silver strings whip across the hall; Harry cuts two, a third wraps his wrist Camera: wide Keep @harry_fullbody identical to the reference in face, hair, wardrobe and proportions. Use @yule_ball_location for the location layout, lighting and dressing. Spoken dialogue and delivery follow @audio_e01s08."
+     }
+    }
+   },
+   "quote": {
+    "amount": 336,
+    "unit": "credits",
+    "verified_on": "2026-10-26",
+    "source_url": "https://docs.magichour.ai/api-reference/models"
+   },
+   "reference_binding": {
+    "images": [
+     {
+      "id": "ref-harry-fullbody",
+      "name": "harry_fullbody"
+     },
+     {
+      "id": "ref-yule-ball-location",
+      "name": "yule_ball_location"
+     }
+    ],
+    "audio": {
+     "name": "audio_e01s08",
+     "source_wav": "audio-new/e01-line-07.mp3",
+     "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+     "sourced_from": "PENDING ACCEPTANCE 2026-10-26 re-voice pass (Chris/Amelia/Daniel, eleven_v3); user has NOT yet approved this audio or the probe spend"
+    }
+   }
+  },
+  {
+   "id": "probe-r2v-e01s09",
+   "shot_id": "e01s09",
+   "provider": "magichour",
+   "request": {
+    "method": "POST",
+    "endpoint": "/v1/text-to-video",
+    "body": {
+     "name": "e01s09",
+     "model": "minimax-h3",
+     "end_seconds": 5,
+     "resolution": "720p",
+     "aspect_ratio": "9:16",
+     "audio": true,
+     "references": [
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-draconia-front-close.png",
+       "name": "draconia_front_close"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-yule-ball-location.png",
+       "name": "yule_ball_location"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/audio-new/e01-line-08.mp3",
+       "name": "audio_e01s09"
+      }
+     ],
+     "style": {
+      "prompt": "Draconia snaps the string with her heel and keeps dancing Camera: close Keep @draconia_front_close identical to the reference in face, hair, wardrobe and proportions. Use @yule_ball_location for the location layout, lighting and dressing. Spoken dialogue and delivery follow @audio_e01s09."
+     }
+    }
+   },
+   "quote": {
+    "amount": 240,
+    "unit": "credits",
+    "verified_on": "2026-10-26",
+    "source_url": "https://docs.magichour.ai/api-reference/models"
+   },
+   "reference_binding": {
+    "images": [
+     {
+      "id": "ref-draconia-front-close",
+      "name": "draconia_front_close"
+     },
+     {
+      "id": "ref-yule-ball-location",
+      "name": "yule_ball_location"
+     }
+    ],
+    "audio": {
+     "name": "audio_e01s09",
+     "source_wav": "audio-new/e01-line-08.mp3",
+     "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+     "sourced_from": "PENDING ACCEPTANCE 2026-10-26 re-voice pass (Chris/Amelia/Daniel, eleven_v3); user has NOT yet approved this audio or the probe spend"
+    }
+   }
+  },
+  {
+   "id": "probe-r2v-e01s10",
+   "shot_id": "e01s10",
+   "provider": "magichour",
+   "request": {
+    "method": "POST",
+    "endpoint": "/v1/text-to-video",
+    "body": {
+     "name": "e01s10",
+     "model": "minimax-h3",
+     "end_seconds": 7,
+     "resolution": "720p",
+     "aspect_ratio": "9:16",
+     "audio": true,
+     "references": [
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-draconia-fullbody.png",
+       "name": "draconia_fullbody"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/ref-yule-ball-location.png",
+       "name": "yule_ball_location"
+      },
+      {
+       "file_path": "api-assets/PENDING_UPLOAD/audio-new/e01-line-09.mp3",
+       "name": "audio_e01s10"
+      }
+     ],
+     "style": {
+      "prompt": "Six empty suits of armor march in; Draconia kicks a drinks trolley into the first Camera: wide Keep @draconia_fullbody identical to the reference in face, hair, wardrobe and proportions. Use @yule_ball_location for the location layout, lighting and dressing. Spoken dialogue and delivery follow @audio_e01s10."
+     }
+    }
+   },
+   "quote": {
+    "amount": 336,
+    "unit": "credits",
+    "verified_on": "2026-10-26",
+    "source_url": "https://docs.magichour.ai/api-reference/models"
+   },
+   "reference_binding": {
+    "images": [
+     {
+      "id": "ref-draconia-fullbody",
+      "name": "draconia_fullbody"
+     },
+     {
+      "id": "ref-yule-ball-location",
+      "name": "yule_ball_location"
+     }
+    ],
+    "audio": {
+     "name": "audio_e01s10",
+     "source_wav": "audio-new/e01-line-09.mp3",
+     "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+     "sourced_from": "PENDING ACCEPTANCE 2026-10-26 re-voice pass (Chris/Amelia/Daniel, eleven_v3); user has NOT yet approved this audio or the probe spend"
+    }
+   }
+  }
+ ],
+ "budget": {
+  "cap_credits": 1104,
+  "quoted_total_credits": 1248,
+  "scope": "exactly these 4 jobs; stop after 4; no rerolls, no model upgrades, no auto-resubmit on failure; on ANY validation error or unknown API outcome: STOP immediately, no fallback, no auto-retry, report the raw outcome"
+ },
+ "contiguity": {
+  "sequence": [
+   "e01s07",
+   "e01s08",
+   "e01s09",
+   "e01s10"
+  ],
+  "declared_cut_states": [
+   {
+    "cut": "e01s07->e01s08",
+    "end": "Draconia grinning mid-dance, close; both dancing on the corrected beat",
+    "start": "wide of the same floor position, both dancing"
+   },
+   {
+    "cut": "e01s08->e01s09",
+    "end": "Harry's right wrist wrapped by a silver string, two cut strings falling",
+    "start": "Draconia at Harry's wrapped wrist; the wrap must be visible"
+   },
+   {
+    "cut": "e01s09->e01s10",
+    "end": "Draconia pulling Harry upright, both back in dance hold",
+    "start": "wide, both upright in dance hold"
+   }
+  ]
+ },
+ "review_required_before_further_spend": [
+  "full-speed human watch+listen of actual API output",
+  "audio-content identification (reference words / other speech / ambience / silence)",
+  "lip-motion plausibility against heard words (human judgment; mouth-tracker is a screen only)",
+  "identity vs bank PNGs per visible character per shot",
+  "action vs script beat per shot",
+  "emotional delivery vs E01 detailing addendum lines 6-9",
+  "cut-by-cut end/start state match per declared_cut_states"
+ ],
+ "documented_unknowns": [
+  "audio-reference semantics undocumented (soundtrack vs voice direction vs exact waveform)",
+  "whether audio references count toward the 10-reference cap",
+  "per-reference size/format limits",
+  "audio:true toggle vs audio-reference interaction; audio:true is an EXPERIMENTAL choice so the job can carry an audio track at all - whether the model uses the reference is exactly what the probe measures, no quality claim is made or implied"
+ ],
+ "destination": {
+  "drive_folder_id": "1ImqQb81qldPfKrdsWzacYgnqtz0734Tn",
+  "note": "probe outputs and review notes land in the dramasaga folder"
+ },
+ "manifest_sha256": "b83873fdd5cc8e6b1fe67f701c46c2e7bbc9ca1513e6816c9e857295d35d2b26"
+}

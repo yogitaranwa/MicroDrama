@@ -1,0 +1,2369 @@
+{
+ "rules": {
+  "chain": true,
+  "activity": true
+ },
+ "title": "Cold Cycle",
+ "logline": "At 2 a.m. in an empty laundromat a stranger washes one red scarf; the woman folding clothes understands it is all he has left of someone.",
+ "aspect": "16:9",
+ "bible": {
+  "format": "16:9, 24 fps, 35 mm lens equivalent, shallow depth of field, soft natural film grain, restrained naturalistic colour, no stylised grading, handheld-steady realism",
+  "set": "a small 24-hour laundromat at 2 a.m. in the rain: south wall with a glass front door at the left end and a large rain-streaked shop window with a red neon glow; north wall with a row of five white front-loading washing machines numbered 3 to 7 (7 at the right end), a notice board with a yellow LOST CAT flyer above machines 3 and 4, a glowing blue vending machine and a green wall clock reading 2:04 at the east end; east wall with stacked steel dryers; west wall with a WASH & FOLD price sign and two orange plastic chairs; a steel folding table in the middle; pale grey vinyl floor",
+  "geography": "NORA stands on the north side of the steel folding table, in the aisle in front of washing machines 5 and 6, and stays on that spot. DEV stands at washing machine 7 at the east end of the aisle and stays on that spot. They are about one metre apart. Shots from NORA'S SIDE look west-south-west from just behind Dev's shoulder: behind Nora is the west wall with the WASH & FOLD sign and the two orange chairs. Shots from DEV'S SIDE look east-north-east from just behind Nora's shoulder: behind Dev are washing machines 6 and 7, the blue-glowing vending machine, the green wall clock and the stacked steel dryers. Never swap the two backgrounds. Keep every object where it is.",
+  "lighting": "The light never changes: cold overhead fluorescent light (about 5000 K) from above, warm red neon wash through the south window on the floor and the near edge of the table, a blue glow from the vending machine on anything near the east end; the same in every shot. Nobody touches a light switch. Only the red neon outside flickers once, in the first shot.",
+  "performance": "Naturalistic and restrained, like a film: micro-expressions, small hand movements, no grins, no wide-eyed shock, no big gestures. Nora is gentle and observant; Dev is hollowed out and polite. Nobody raises their voice and nobody cries openly.",
+  "wardrobe_props": "Nora: mustard raincoat worn open over a cream knit sweater, dark jeans, white trainers, dark hair in a loose bun with one strand free on the left, a pale blue towel in her hands. Dev: grey zip hoodie (hood down), dark jeans, wet black trainers, short damp dark hair, two-day stubble. Prop: one folded deep-red wool scarf with a frayed end, three brass laundromat tokens.",
+  "set_short": "a small laundromat at night: steel folding table in the middle, a row of white washing machines numbered 3 to 7 on the north wall, blue vending machine and green clock at the east end, stacked dryers on the east wall, WASH & FOLD sign and two orange chairs on the west wall, rain on the south window with red neon",
+  "geography_short": "Nora stands north of the table in front of machines 5-6; Dev stands at machine 7, about a metre away. Nora's side looks toward the west wall (sign and orange chairs behind her); Dev's side looks toward machines 6-7, the vending machine and clock behind him. Never swap backgrounds.",
+  "lighting_rule": "Unchanging cold fluorescent light from above, red neon wash from the south window, blue vending-machine glow at the east end. No switch is touched.",
+  "wardrobe_short": "Nora: mustard raincoat open over a cream sweater, jeans, white trainers, hair in a bun. Dev: grey zip hoodie (hood down), dark jeans, damp dark hair, stubble.",
+  "performance_short": "Naturalistic and restrained: micro-expressions only, no grins, no shock, no big gestures."
+ },
+ "voices": {
+  "Nora": "calm, low, warm woman in her early thirties, gentle and a little tired, speaking softly",
+  "Dev": "quiet, hoarse man in his late thirties, tired, restrained, every word careful"
+ },
+ "plate": {
+  "id": "laundromat-plate",
+  "file": "laundromat-plate.png"
+ },
+ "portraits": {
+  "Nora": "nora-master.png",
+  "Dev": "dev-master.png"
+ },
+ "shots": [
+  {
+   "id": "c1-wide",
+   "title": "Rain",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "Establish the empty laundromat and Nora alone, folding.",
+   "start_state": "From the front door looking north-east across the whole laundromat: Nora at the steel table folding a towel, the row of washing machines on the far wall, the vending machine glow at the right, rain on the window.",
+   "end_state": "Nora has turned her head a few degrees toward the sound of footsteps outside.",
+   "camera": {
+    "size": "wide",
+    "angle": "eye level",
+    "movement": "very slow push in about 5%",
+    "lens": "24 mm"
+   },
+   "lighting": "Unchanging; the red neon flickers once at 2.0 s.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Nora folds a pale blue towel in thirds in a steady rhythm."
+    },
+    {
+     "t0": 1.0,
+     "t1": 2.0,
+     "text": "She smooths it flat with both palms and pauses, listening to the rain."
+    },
+    {
+     "t0": 2.0,
+     "t1": 2.2,
+     "text": "The red neon outside flickers once."
+    },
+    {
+     "t0": 2.2,
+     "t1": 3.2,
+     "text": "She lifts the towel, shakes it out and starts a new fold."
+    },
+    {
+     "t0": 3.2,
+     "t1": 4.0,
+     "text": "Her head turns a few degrees toward the door as a faint bell jingle sounds outside. No one speaks."
+    }
+   ],
+   "performance": "Quiet, unhurried, alone.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a faint bell jingle just before the door opens"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "From the front door looking north-east across the whole laundromat: Nora at the steel table folding a towel, the row of washing machines on the far wall, the vending machine glow at the right, rain on the window.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "folding towels from her grey basket onto the steel table"
+   }
+  },
+  {
+   "id": "c2-look",
+   "title": "The Bell",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "Nora notices someone coming in.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands, alone in frame, the west wall with the WASH & FOLD sign and two orange chairs behind her, the glass front door at the left edge.",
+   "end_state": "Nora looks back down at the towel.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 0.8,
+     "text": "Her hands keep folding while her eyes lift toward the door."
+    },
+    {
+     "t0": 0.8,
+     "t1": 1.4,
+     "text": "The door bell rings; her hands stop mid-fold."
+    },
+    {
+     "t0": 1.4,
+     "t1": 2.6,
+     "text": "Her eyes follow someone entering, tracking slowly across the room."
+    },
+    {
+     "t0": 2.6,
+     "t1": 4.0,
+     "text": "She breathes out slowly, looks back down at the towel and resumes folding. No one speaks."
+    }
+   ],
+   "performance": "Mild surprise, no smile.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "the door bell rings",
+     "wet hurried footsteps on vinyl"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands, alone in frame, the west wall with the WASH & FOLD sign and two orange chairs behind her, the glass front door at the left edge.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "folding a towel, then glancing at the door as the bell rings"
+   }
+  },
+  {
+   "id": "c3-enter",
+   "title": "Dev Enters",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "A wet stranger comes in.",
+   "start_state": "From the dryer end of the room looking west: the glass front door in the middle distance with Dev just inside it, hood up, rain on his shoulders, a clear plastic bag in his left hand; the shop window at the left; the WASH & FOLD sign and two orange chairs on the far wall.",
+   "end_state": "Dev walks east across the room toward the washing machines, hood down.",
+   "camera": {
+    "size": "wide",
+    "angle": "eye level",
+    "movement": "slow drift about 3%",
+    "lens": "24 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Dev shakes rain off his shoulders and lowers his hood; wet footprints on the floor."
+    },
+    {
+     "t0": 1.0,
+     "t1": 2.4,
+     "text": "He looks around the room once, avoiding eye contact."
+    },
+    {
+     "t0": 2.4,
+     "t1": 4.0,
+     "text": "He walks east into the room toward the washing machines, clutching the bag. No one speaks."
+    }
+   ],
+   "performance": "Weary, polite, self-contained.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "the door bell settles",
+     "wet footsteps"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "From the dryer end of the room looking west: the glass front door in the middle distance with Dev just inside it, hood up, rain on his shoulders, a clear plastic bag in his left hand; the shop window at the left; the WASH & FOLD sign and two orange chairs on the far wall.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "shaking off the rain, then reading the numbers on the washing machines to find one that is free"
+   },
+   "arrival": {
+    "Dev": {
+     "from": "the front door",
+     "to": "the row of washing machines",
+     "why": "he needs a machine to wash one thing",
+     "then": "he reads the numbers on the machines and heads for machine 7"
+    }
+   }
+  },
+  {
+   "id": "c4-tokens-offer",
+   "title": "Spare Tokens",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "Nora offers help.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; the back of Dev's shoulder in a grey hoodie soft in the right foreground; behind her the west wall with the WASH & FOLD sign and two orange chairs.",
+   "end_state": "Nora holds the towel against her chest, waiting for his answer.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Nora watches him come to the machine, the towel in her hands."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks softly and kindly; her eyes soften and she holds the towel against her chest."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "She waits for his answer."
+    }
+   ],
+   "performance": "Kind, unhurried.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a faint breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Nora",
+      "voice": "calm, low, warm woman in her early thirties, gentle and a little tired, speaking softly",
+      "line": "Cards only. I have spare tokens.",
+      "delivery": "soft, kind, unhurried"
+     }
+    ]
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; the back of Dev's shoulder in a grey hoodie soft in the right foreground; behind her the west wall with the WASH & FOLD sign and two orange chairs.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "folding a towel while watching him read the coin instructions"
+   },
+   "arrival": {
+    "Dev": {
+     "from": "the middle of the room",
+     "to": "machine 7",
+     "why": "it is the last free machine",
+     "then": "he reads the coin-slot instructions"
+    }
+   }
+  },
+  {
+   "id": "c5-thank",
+   "title": "Thank You",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "Dev accepts, surprised by the kindness.",
+   "start_state": "Dev, standing at washing machine 7, grey hoodie, looking toward the camera; Nora's mustard shoulder soft in the left foreground; behind him washing machines 6 and 7, the blue-glowing vending machine, the green wall clock and the stacked steel dryers.",
+   "end_state": "Dev looks down at the plastic bag in his hand.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 0.8,
+     "text": "Dev turns his head toward Nora, caught off guard."
+    },
+    {
+     "t0": 0.8,
+     "t1": 3.0,
+     "text": "He speaks quietly and hoarsely and gives a small nod."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "His eyes drop to the bag in his hand."
+    }
+   ],
+   "performance": "Tired gratitude, small movements.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a quiet breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Dev",
+      "voice": "quiet, hoarse man in his late thirties, tired, restrained, every word careful",
+      "line": "That would help. Thank you.",
+      "delivery": "quiet, hoarse, grateful"
+     }
+    ]
+   },
+   "keyframe": "Dev, standing at washing machine 7, grey hoodie, looking toward the camera; Nora's mustard shoulder soft in the left foreground; behind him washing machines 6 and 7, the blue-glowing vending machine, the green wall clock and the stacked steel dryers.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "reading the coin-slot instructions on machine 7 and patting his pockets for change"
+   }
+  },
+  {
+   "id": "c6-tokens",
+   "title": "Tokens",
+   "seconds": 4,
+   "cast": [
+    "Nora",
+    "Dev"
+   ],
+   "intent": "The tokens change hands.",
+   "start_state": "Close on two hands over the steel table's north edge: Nora's right hand holds out three brass tokens, palm up; Dev's hand comes in from the right.",
+   "end_state": "Dev's hand closes around the tokens.",
+   "camera": {
+    "size": "close-up insert",
+    "angle": "high angle over the table edge",
+    "movement": "tiny drift in about 1%",
+    "lens": "50 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Nora's hand offers the tokens, palm up."
+    },
+    {
+     "t0": 1.0,
+     "t1": 2.0,
+     "text": "His hand takes them; their fingers do not touch."
+    },
+    {
+     "t0": 2.0,
+     "t1": 3.2,
+     "text": "He closes his fist around the tokens."
+    },
+    {
+     "t0": 3.2,
+     "t1": 4.0,
+     "text": "His thumb strokes once over a token. No one speaks."
+    }
+   ],
+   "performance": "Delicate, careful hands.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "tokens clink in a palm",
+     "a soft clink as the fist closes"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "Close on two hands over the steel table's north edge: Nora's right hand holds out three brass tokens, palm up; Dev's hand comes in from the right.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora",
+    "Dev"
+   ],
+   "activity": {
+    "Nora": "holding out three tokens from her pocket",
+    "Dev": "taking the tokens"
+   }
+  },
+  {
+   "id": "c7-scarf",
+   "title": "The Scarf",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "The audience sees the one thing he brought.",
+   "start_state": "Close on washing machine 7's round glass door with a white \"7\", and Dev's two hands at chest height opening a clear plastic bag.",
+   "end_state": "The drum door is closed and Dev's hand rests flat on the glass.",
+   "camera": {
+    "size": "close-up insert",
+    "angle": "eye level",
+    "movement": "tiny drift in about 1%",
+    "lens": "50 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "He unrolls the top of the bag."
+    },
+    {
+     "t0": 1.0,
+     "t1": 2.4,
+     "text": "He draws out a deep-red wool scarf, folded, and holds it, his thumb on the frayed end, a beat too long."
+    },
+    {
+     "t0": 2.4,
+     "t1": 3.4,
+     "text": "He lowers the scarf into the open drum."
+    },
+    {
+     "t0": 3.4,
+     "t1": 4.0,
+     "text": "He closes the door; the latch clicks; his hand stays flat on the glass. No one speaks."
+    }
+   ],
+   "performance": "Gentle, reverent.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "plastic bag rustle",
+     "the drum door latch clunk"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "Close on washing machine 7's round glass door with a white \"7\", and Dev's two hands at chest height opening a clear plastic bag.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "unpacking the red scarf from the plastic bag into the drum"
+   }
+  },
+  {
+   "id": "c8-just-one",
+   "title": "Just One",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "Nora sees something is off.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "end_state": "Nora waits, the towel still in her hands.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "She watches him; her expression changes slowly from polite to curious."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks gently, her head tilting a few degrees."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "She waits."
+    }
+   ],
+   "performance": "Curious, gentle.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a faint breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Nora",
+      "voice": "calm, low, warm woman in her early thirties, gentle and a little tired, speaking softly",
+      "line": "Just the one scarf?",
+      "delivery": "gentle, curious"
+     }
+    ]
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "folding the same towel while watching him"
+   }
+  },
+  {
+   "id": "c9-smells",
+   "title": "Still Smells",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "The emotional line.",
+   "start_state": "Dev at washing machine 7, one hand flat on the closed round glass door, face toward the camera; Nora's mustard shoulder soft in the left foreground.",
+   "end_state": "Dev's eyes close once and open again.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "very slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "He stares at the drum, then turns his face toward the camera."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "He speaks very quietly; his jaw tightens on the last word."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "His eyes close once, then open."
+    }
+   ],
+   "performance": "Restrained, almost no movement.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a slow breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Dev",
+      "voice": "quiet, hoarse man in his late thirties, tired, restrained, every word careful",
+      "line": "It still smells like her.",
+      "delivery": "very quiet, breaking on the last word"
+     }
+    ]
+   },
+   "keyframe": "Dev at washing machine 7, one hand flat on the closed round glass door, face toward the camera; Nora's mustard shoulder soft in the left foreground.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "keeping his hand on the drum door and staring at the scarf"
+   }
+  },
+  {
+   "id": "c10-understands",
+   "title": "Understanding",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "Nora understands.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "end_state": "Nora presses her lips together and gives a small nod to herself.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.2,
+     "text": "She has stopped folding; her hands rest on the towel."
+    },
+    {
+     "t0": 1.2,
+     "t1": 2.6,
+     "text": "Her eyes move toward the drum and her breath catches."
+    },
+    {
+     "t0": 2.6,
+     "t1": 4.0,
+     "text": "She presses her lips together and nods once to herself. No one speaks."
+    }
+   ],
+   "performance": "Quiet realisation, no tears.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "one slow drip from Dev's sleeve off-screen"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "holding the half-folded towel, her work stopped"
+   }
+  },
+  {
+   "id": "c11-cold-slow",
+   "title": "Cold and Slow",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "She offers him something to do with his grief.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "end_state": "Nora has put the towel on the stack and keeps her eyes on him.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "She sets the pale blue towel on the stack at the table and squares its edge."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks warmly with a very small smile."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "She keeps her eyes on him."
+    }
+   ],
+   "performance": "Warm, quiet.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a soft pat of the towel on the stack"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Nora",
+      "voice": "calm, low, warm woman in her early thirties, gentle and a little tired, speaking softly",
+      "line": "Then wash it cold and slow.",
+      "delivery": "warm, quiet"
+     }
+    ]
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "putting the towel on the stack and squaring it"
+   }
+  },
+  {
+   "id": "c12-always",
+   "title": "She Always Said",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "A crack of warmth.",
+   "start_state": "Dev at washing machine 7, face toward the camera; Nora's mustard shoulder soft in the left foreground; behind him washing machines 6 and 7, the blue-glowing vending machine, the green wall clock and the stacked steel dryers.",
+   "end_state": "Dev wipes under one eye with the heel of his hand.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "He listens, then a breath that is almost a laugh."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "He speaks; his mouth trembles into a small broken smile."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "He wipes under one eye with the heel of his hand."
+    }
+   ],
+   "performance": "Bittersweet, restrained.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a short exhale"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Dev",
+      "voice": "quiet, hoarse man in his late thirties, tired, restrained, every word careful",
+      "line": "She always said that.",
+      "delivery": "soft, bittersweet"
+     }
+    ]
+   },
+   "keyframe": "Dev at washing machine 7, face toward the camera; Nora's mustard shoulder soft in the left foreground; behind him washing machines 6 and 7, the blue-glowing vending machine, the green wall clock and the stacked steel dryers.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "wiping his eye as the cycle starts"
+   }
+  },
+  {
+   "id": "c13-drum",
+   "title": "The Drum",
+   "seconds": 4,
+   "cast": [
+    "Dev"
+   ],
+   "intent": "The scarf turns.",
+   "start_state": "Close on washing machine 7's round glass door, the red scarf behind the glass, water beginning to enter.",
+   "end_state": "The red scarf rolls slowly behind the glass as red neon light slides across it.",
+   "camera": {
+    "size": "close-up insert",
+    "angle": "eye level",
+    "movement": "slow push in about 5%",
+    "lens": "50 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.2,
+     "text": "Water starts to enter the drum; the scarf is a red shape behind the glass."
+    },
+    {
+     "t0": 1.2,
+     "t1": 3.0,
+     "text": "The drum starts to turn slowly; the scarf rolls over once and settles."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "Red neon light slides across the glass as it turns. No one speaks."
+    }
+   ],
+   "performance": "No people, only the machine.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "water filling the drum",
+     "the motor starting",
+     "a slow rhythmic turning"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "Close on washing machine 7's round glass door, the red scarf behind the glass, water beginning to enter.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Dev"
+   ],
+   "activity": {
+    "Dev": "off-screen at the machine, watching the drum fill"
+   }
+  },
+  {
+   "id": "c14-wait",
+   "title": "I Will Wait",
+   "seconds": 4,
+   "cast": [
+    "Nora"
+   ],
+   "intent": "She decides to stay.",
+   "start_state": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "end_state": "Nora holds his gaze with a small honest look.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "eye level",
+    "movement": "slow push in about 4%",
+    "lens": "35 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "She glances at the orange chairs behind her."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks softly and nods toward the chairs."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "She holds his eyes."
+    }
+   ],
+   "performance": "Soft, sincere.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "a faint breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Nora",
+      "voice": "calm, low, warm woman in her early thirties, gentle and a little tired, speaking softly",
+      "line": "I will wait with you.",
+      "delivery": "soft, sincere"
+     }
+    ]
+   },
+   "keyframe": "Nora, standing north of the folding table in front of washing machines 5 and 6, mustard raincoat open, pale blue towel in her hands; Dev's shoulder soft in the right foreground; behind her the WASH & FOLD sign and two orange chairs.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora"
+   ],
+   "activity": {
+    "Nora": "nodding at the orange chairs behind her, ready to sit"
+   }
+  },
+  {
+   "id": "c15-wait-wide",
+   "title": "Together",
+   "seconds": 4,
+   "cast": [
+    "Nora",
+    "Dev"
+   ],
+   "intent": "They sit and watch the scarf turn.",
+   "start_state": "From the front door looking north-east: Nora and Dev sit side by side on two orange chairs in front of washing machine 7, seen from behind, watching the drum turn; the table, the row of washers, the vending machine glow.",
+   "end_state": "The camera holds on the two of them as the end card appears.",
+   "camera": {
+    "size": "wide",
+    "angle": "eye level",
+    "movement": "slow pull back about 5%",
+    "lens": "24 mm"
+   },
+   "lighting": "Unchanging, as in every shot.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.5,
+     "text": "They sit without speaking; the drum turns with red light on its glass."
+    },
+    {
+     "t0": 1.5,
+     "t1": 3.0,
+     "text": "Nora's head tilts a few degrees toward Dev; Dev's shoulders drop."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "The camera holds. No one speaks."
+    }
+   ],
+   "performance": "Stillness.",
+   "sound": {
+    "ambience": "rain on the shop window, a steady fluorescent hum, a distant machine rumble",
+    "effects": [
+     "the drum turning",
+     "the score swells then fades"
+    ],
+    "dialogue": []
+   },
+   "keyframe": "From the front door looking north-east: Nora and Dev sit side by side on two orange chairs in front of washing machine 7, seen from behind, watching the drum turn; the table, the row of washers, the vending machine glow.",
+   "keyframe_refs": [
+    "laundromat-plate",
+    "Nora",
+    "Dev"
+   ],
+   "activity": {
+    "Nora": "sitting down beside him to watch the drum",
+    "Dev": "sitting to watch the drum"
+   },
+   "arrival": {
+    "Nora": {
+     "from": "her spot at the table",
+     "to": "the orange chairs by machine 7",
+     "why": "the cycle takes thirty minutes and she has chosen to stay",
+     "then": "she sits and watches the drum"
+    },
+    "Dev": {
+     "from": "machine 7",
+     "to": "the chair beside her",
+     "why": "she pulled the chair out for him",
+     "then": "he sits and watches the drum"
+    }
+   }
+  }
+ ],
+ "hook_title": "At 2 a.m., he washed one scarf...",
+ "end_card": "Some things aren't ready to be washed.",
+ "plan": {
+  "units": "metres; x east, y north, z up; origin at the laundromat's south-west corner; facing in compass degrees (0 east, 90 north, 180 west, 270 south)",
+  "room": {
+   "x": [
+    0.0,
+    8.0
+   ],
+   "y": [
+    0.0,
+    5.0
+   ],
+   "z": 2.8
+  },
+  "features": [
+   {
+    "name": "glass front door",
+    "box": [
+     1.0,
+     0,
+     0,
+     2.0,
+     0.06,
+     2.1
+    ],
+    "color": "#7fb3c8"
+   },
+   {
+    "name": "shop window with rain and red neon",
+    "box": [
+     3.0,
+     0,
+     0.9,
+     7.0,
+     0.06,
+     2.2
+    ],
+    "color": "#5f7fa8"
+   },
+   {
+    "name": "washing machine 3",
+    "box": [
+     2.0,
+     4.3,
+     0,
+     2.7,
+     5.0,
+     1.0
+    ],
+    "color": "#e8e8e8"
+   },
+   {
+    "name": "washing machine 4",
+    "box": [
+     2.8,
+     4.3,
+     0,
+     3.5,
+     5.0,
+     1.0
+    ],
+    "color": "#e8e8e8"
+   },
+   {
+    "name": "washing machine 5",
+    "box": [
+     3.6,
+     4.3,
+     0,
+     4.3,
+     5.0,
+     1.0
+    ],
+    "color": "#e8e8e8"
+   },
+   {
+    "name": "washing machine 6",
+    "box": [
+     4.4,
+     4.3,
+     0,
+     5.1000000000000005,
+     5.0,
+     1.0
+    ],
+    "color": "#e8e8e8"
+   },
+   {
+    "name": "washing machine 7",
+    "box": [
+     5.2,
+     4.3,
+     0,
+     5.9,
+     5.0,
+     1.0
+    ],
+    "color": "#e8e8e8"
+   },
+   {
+    "name": "notice board with a yellow LOST CAT flyer",
+    "box": [
+     2.3,
+     4.94,
+     1.7,
+     3.5,
+     5.0,
+     2.2
+    ],
+    "color": "#d8c070"
+   },
+   {
+    "name": "blue-glowing vending machine",
+    "box": [
+     6.4,
+     4.4,
+     0,
+     7.2,
+     5.0,
+     1.8
+    ],
+    "color": "#3a6fd0"
+   },
+   {
+    "name": "green wall clock",
+    "box": [
+     6.7,
+     4.94,
+     2.1,
+     6.9,
+     5.0,
+     2.3
+    ],
+    "color": "#3fa05a"
+   },
+   {
+    "name": "stacked steel dryers",
+    "box": [
+     7.3,
+     1.2,
+     0,
+     8.0,
+     4.2,
+     1.9
+    ],
+    "color": "#b8b8c0"
+   },
+   {
+    "name": "WASH & FOLD price sign",
+    "box": [
+     0,
+     1.9,
+     1.6,
+     0.06,
+     2.9,
+     2.1
+    ],
+    "color": "#f0f0f0"
+   },
+   {
+    "name": "orange plastic chair (south)",
+    "box": [
+     0.1,
+     1.85,
+     0,
+     0.6,
+     2.35,
+     0.9
+    ],
+    "color": "#e07a1f"
+   },
+   {
+    "name": "orange plastic chair (north)",
+    "box": [
+     0.1,
+     2.55,
+     0,
+     0.6,
+     3.05,
+     0.9
+    ],
+    "color": "#e07a1f"
+   },
+   {
+    "name": "steel folding table",
+    "box": [
+     3.6,
+     2.3,
+     0,
+     5.6,
+     3.1,
+     0.9
+    ],
+    "color": "#a0a0a8"
+   }
+  ],
+  "figures": {
+   "Nora": {
+    "height": 1.65,
+    "pose": "standing",
+    "color": "#d9382b"
+   },
+   "Dev": {
+    "height": 1.8,
+    "pose": "standing",
+    "color": "#2f5fd0"
+   }
+  },
+  "shots": {
+   "c1-wide": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       1.5,
+       0.35,
+       1.55
+      ],
+      "target": [
+       5.0,
+       3.0,
+       1.1
+      ]
+     },
+     "end": {
+      "pos": [
+       1.55,
+       0.4,
+       1.55
+      ],
+      "target": [
+       5.0,
+       3.0,
+       1.1
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 270
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 270
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "Nora",
+      "steel folding table"
+     ],
+     "end": [
+      "Nora",
+      "steel folding table"
+     ]
+    },
+    "must_not_show": {
+     "start": [],
+     "end": []
+    }
+   },
+   "c2-look": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    }
+   },
+   "c3-enter": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       7.0,
+       1.2,
+       1.5
+      ],
+      "target": [
+       1.5,
+       0.9,
+       1.3
+      ]
+     },
+     "end": {
+      "pos": [
+       6.9,
+       1.2,
+       1.5
+      ],
+      "target": [
+       1.5,
+       0.9,
+       1.3
+      ]
+     }
+    },
+    "figures": {
+     "Dev": {
+      "start": {
+       "pos": [
+        1.6,
+        0.7
+       ],
+       "facing": 20
+      },
+      "end": {
+       "pos": [
+        4.0,
+        2.0
+       ],
+       "facing": 20
+      }
+     },
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 270
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 270
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "glass front door",
+      "Dev"
+     ],
+     "end": [
+      "glass front door",
+      "Dev"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7"
+     ],
+     "end": [
+      "washing machine 7"
+     ]
+    }
+   },
+   "c4-tokens-offer": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    },
+    "reposition": true
+   },
+   "c5-thank": {
+    "camera": {
+     "lens": 28,
+     "start": {
+      "pos": [
+       3.75,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       3.8,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ]
+    }
+   },
+   "c6-tokens": {
+    "camera": {
+     "lens": 50,
+     "start": {
+      "pos": [
+       5.0,
+       3.0,
+       1.15
+      ],
+      "target": [
+       5.12,
+       3.65,
+       1.0
+      ]
+     },
+     "end": {
+      "pos": [
+       5.0,
+       3.05,
+       1.15
+      ],
+      "target": [
+       5.12,
+       3.65,
+       1.0
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [],
+     "end": []
+    },
+    "must_not_show": {
+     "start": [],
+     "end": []
+    }
+   },
+   "c7-scarf": {
+    "camera": {
+     "lens": 50,
+     "start": {
+      "pos": [
+       5.9,
+       3.4,
+       1.25
+      ],
+      "target": [
+       5.55,
+       4.3,
+       0.95
+      ]
+     },
+     "end": {
+      "pos": [
+       5.88,
+       3.45,
+       1.25
+      ],
+      "target": [
+       5.55,
+       4.3,
+       0.95
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "washing machine 7"
+     ],
+     "end": [
+      "washing machine 7"
+     ]
+    },
+    "must_not_show": {
+     "start": [],
+     "end": []
+    }
+   },
+   "c8-just-one": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    }
+   },
+   "c9-smells": {
+    "camera": {
+     "lens": 28,
+     "start": {
+      "pos": [
+       3.75,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       3.8,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ]
+    }
+   },
+   "c10-understands": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    }
+   },
+   "c11-cold-slow": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    }
+   },
+   "c12-always": {
+    "camera": {
+     "lens": 28,
+     "start": {
+      "pos": [
+       3.75,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       3.8,
+       3.3,
+       1.55
+      ],
+      "target": [
+       5.55,
+       3.8,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "green wall clock",
+      "Dev"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "glass front door"
+     ]
+    }
+   },
+   "c13-drum": {
+    "camera": {
+     "lens": 50,
+     "start": {
+      "pos": [
+       5.9,
+       3.4,
+       1.25
+      ],
+      "target": [
+       5.55,
+       4.3,
+       0.95
+      ]
+     },
+     "end": {
+      "pos": [
+       5.88,
+       3.45,
+       1.25
+      ],
+      "target": [
+       5.55,
+       4.3,
+       0.95
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "washing machine 7"
+     ],
+     "end": [
+      "washing machine 7"
+     ]
+    },
+    "must_not_show": {
+     "start": [],
+     "end": []
+    }
+   },
+   "c14-wait": {
+    "camera": {
+     "lens": 35,
+     "start": {
+      "pos": [
+       6.3,
+       3.4,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     },
+     "end": {
+      "pos": [
+       6.25,
+       3.42,
+       1.55
+      ],
+      "target": [
+       4.7,
+       3.55,
+       1.5
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      },
+      "end": {
+       "pos": [
+        4.7,
+        3.55
+       ],
+       "facing": 14
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      },
+      "end": {
+       "pos": [
+        5.55,
+        3.8
+       ],
+       "facing": 195
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ],
+     "end": [
+      "WASH & FOLD price sign",
+      "orange plastic chair (south)",
+      "orange plastic chair (north)",
+      "Nora"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ],
+     "end": [
+      "washing machine 7",
+      "blue-glowing vending machine",
+      "stacked steel dryers",
+      "green wall clock"
+     ]
+    }
+   },
+   "c15-wait-wide": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       1.5,
+       0.35,
+       1.55
+      ],
+      "target": [
+       5.0,
+       3.0,
+       1.1
+      ]
+     },
+     "end": {
+      "pos": [
+       1.55,
+       0.4,
+       1.55
+      ],
+      "target": [
+       5.0,
+       3.0,
+       1.1
+      ]
+     }
+    },
+    "figures": {
+     "Nora": {
+      "start": {
+       "pos": [
+        5.0,
+        3.55
+       ],
+       "facing": 90
+      },
+      "end": {
+       "pos": [
+        5.0,
+        3.55
+       ],
+       "facing": 90
+      }
+     },
+     "Dev": {
+      "start": {
+       "pos": [
+        5.7,
+        3.55
+       ],
+       "facing": 90
+      },
+      "end": {
+       "pos": [
+        5.7,
+        3.55
+       ],
+       "facing": 90
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "Nora",
+      "Dev"
+     ],
+     "end": [
+      "Nora",
+      "Dev"
+     ]
+    },
+    "must_not_show": {
+     "start": [],
+     "end": []
+    },
+    "reposition": true
+   }
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] [breathing heavily] Harry, come with me. Don't look behind you. I'll explain, but you need to come with me now."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[frightened] You've just come across the room and grabbed me. What am I supposed to think? Tell me what you've seen."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[shaken] That would have gone straight through me. You saw that coming, didn't you? That's why you ran."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] I saw something above you. I didn't know what it was going to do. Harry, you're looking at the floor. Look at me."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[breathing heavily] I'm looking at the hole where I was standing. Give me a second. I don't even know which way we're going."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[nervous] Neither do I, yet. But the couples are moving and we're moving with them. For the moment, that's all I've got."
+    }
+  ],
+  "settings": {
+    "stability": 0.2
+  },
+  "seed": 7201
+}

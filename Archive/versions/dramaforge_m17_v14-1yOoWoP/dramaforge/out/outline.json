@@ -1,0 +1,118 @@
+{
+ "title": "The Confession in the Tower",
+ "hook": "Draconia Malfoy, wearing Harry's dress robes over her Yule Ball gown, snaps: \"You humiliated me in front of half the school, Potter. That 'mistaken identity' bit was cruel.\"",
+ "beats": [
+  {
+   "n": 1,
+   "sheet_step": "HOOK",
+   "location": "Grand Staircase alcove",
+   "camera": "Tight two-shot, shallow depth of field on their faces",
+   "action": "Harry adjusts his collar; Draconia paces in his oversized jacket, voice rising until Filch's wheeze cuts through the stone archway Speakers: Harry Potter, Draconia Malfoy",
+   "turn": "A shared enemy (Filch) forces momentary truce between rivals",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 12,
+   "purpose": "A shared enemy (Filch) forces momentary truce between rivals"
+  },
+  {
+   "n": 2,
+   "sheet_step": "INCITING",
+   "location": "Library restricted section",
+   "camera": "Over-the-shoulder through candle-lit shelves; Madam Pince's silhouette glides past",
+   "action": "Draconia slips a folded parchment into a hollowed-out book; Harry plucks it out, reading a name\u2014\"B. Parkinson\"\u2014before she snatches it back Speakers: Harry Potter, Draconia Malfoy",
+   "turn": "Physical proof of blackmail surfaces; Harry learns Pansy holds leverage over Draconia",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 13,
+   "purpose": "Physical proof of blackmail surfaces; Harry learns Pansy holds leverage over Draconia"
+  },
+  {
+   "n": 3,
+   "sheet_step": "ESCALATION 1",
+   "location": "Greenhouse Three (night-blooming)",
+   "camera": "Low angle through dripping orchids; moonlight fractures through glass panes",
+   "action": "Pansy steps from behind a Venomous Tentacula, waving the same parchment: \"Father's letter to yours. One owl and Draconia's betrayal is public.\" Speakers: Draconia Malfoy, Pansy Parkinson",
+   "turn": "Pansy corners them in a locked greenhouse\u2014no witnesses, no escape, minutes until curfew ends",
+   "speakers": [
+    "Draconia Malfoy",
+    "Pansy Parkinson"
+   ],
+   "seconds": 14,
+   "purpose": "Pansy corners them in a locked greenhouse\u2014no witnesses, no escape, minutes until curfew ends"
+  },
+  {
+   "n": 4,
+   "sheet_step": "ESCALATION 2",
+   "location": "Dungeons corridor near Slytherin common room",
+   "camera": "Handheld tracking behind Harry as he pulls Draconia toward a grating",
+   "action": "Harry kicks loose a rusted grate revealing a smugglers' tunnel; they crawl inside as Mrs. Norris's eyes glow behind them Speakers: Harry Potter, Draconia Malfoy",
+   "turn": "Forced into the castle's underbelly; the tunnel connects to the seventh-floor corridor",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 14,
+   "purpose": "Forced into the castle's underbelly; the tunnel connects to the seventh-floor corridor"
+  },
+  {
+   "n": 5,
+   "sheet_step": "REVERSAL",
+   "location": "Smugglers' tunnel (emerging behind a tapestry on seventh floor)",
+   "camera": "Close-up on Harry's hand brushing a dusty vial on a shelf; cut to Draconia's recognition",
+   "action": "In the tunnel's far end behind a tapestry, Harry shows Draconia a vial of stolen Polyjuice ingredients that he has tracked for three nights. Draconia realises Pansy used her to cover the thefts, and Harry realises Draconia was only trying to stop Pansy, not help her. Plain, easy to follow, no invented potion names beyond Polyjuice.",
+   "turn": "Each discovers the other lied about their true purpose tonight",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 13,
+   "purpose": "Each learns the other was chasing the same thief: Pansy. Their anger turns into reluctant alliance."
+  },
+  {
+   "n": 6,
+   "sheet_step": "ALL IS LOST",
+   "location": "Room of Requirement (manifested as a dead-end stone cell)",
+   "camera": "Wide from ceiling; door vanishes behind them, McGonagall's voice muffled through walls",
+   "action": "McGonagall pounds the hidden door: \"Open up! I know you're in there.\" Harry throws the Invisibility Cloak over Draconia, faces the door alone Speakers: Professor McGonagall, Harry Potter",
+   "turn": "Harry chooses visible arrest to buy Draconia escape\u2014sacrificing his record for her secret",
+   "speakers": [
+    "Professor McGonagall",
+    "Harry Potter"
+   ],
+   "seconds": 14,
+   "purpose": "Harry chooses visible arrest to buy Draconia escape\u2014sacrificing his record for her secret"
+  },
+  {
+   "n": 7,
+   "sheet_step": "CHOICE",
+   "location": "Seventh-floor corridor (outside Room of Requirement)",
+   "camera": "Tracking beside Harry as McGonagall marches him toward Gryffindor Tower",
+   "action": "Harry hands McGonagall the pilfered vial without breaking stride: \"Evidence, Professor. The real thief is still in the Room.\" Speakers: Harry Potter, Professor McGonagall",
+   "turn": "Harry redirects suspicion to an absent thief, protecting Draconia's identity while accepting detention",
+   "speakers": [
+    "Harry Potter",
+    "Professor McGonagall"
+   ],
+   "seconds": 14,
+   "purpose": "Harry redirects suspicion to an absent thief, protecting Draconia's identity while accepting detention"
+  },
+  {
+   "n": 8,
+   "sheet_step": "CLIFFHANGER",
+   "location": "Owlery (Draconia arrives out of breath, still under the Cloak)",
+   "camera": "Static wide, owls scattering; a school barn owl drops a parchment at her feet",
+   "action": "Draconia is ALONE in the Owlery (Harry was marched away to Gryffindor Tower in shot 7). A school owl drops a parchment; black ink writes new words on it. ONLY Draconia speaks: write exactly ONE line, her stunned whisper to herself as she reads it aloud. Speaker must be Draconia Malfoy.",
+   "turn": "The stolen ingredients weren't for a simple potion; someone is brewing Polyjuice in Hogwarts tonight",
+   "speakers": [
+    "Draconia Malfoy"
+   ],
+   "seconds": 14,
+   "purpose": "Alone, Draconia reads the self-writing note: Polyjuice batch ready, midnight, Astronomy Tower, signed B. Do NOT name or guess who B is; she only reads the note and decides to go to the tower."
+  }
+ ],
+ "cliffhanger": "The parchment unfurls itself\u2014black ink forming fresh words: \"Polyjuice batch ready. Midnight. Astronomy Tower. \u2014B.\""
+}

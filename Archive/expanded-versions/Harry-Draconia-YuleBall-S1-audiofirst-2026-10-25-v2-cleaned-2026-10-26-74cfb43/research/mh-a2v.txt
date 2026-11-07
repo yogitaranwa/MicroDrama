@@ -1,0 +1,762 @@
+Audio-to-Video - Magic Hour API Docs
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Magic Hour API Docs
+home page
+Search...
+⌘
+K
+Support
+Get API key
+Get API key
+Search...
+Navigation
+Video Projects
+Audio-to-Video
+Documentation
+API Reference
+Webhook Reference
+Changelog
+API quickstart
+API pricing
+Community
+Status
+API Reference
+Models
+Processing Times
+Account
+GET
+Get account details
+Files
+GET
+List saved items
+POST
+Generate Asset Upload Urls
+GET
+Get Face Detection Details
+POST
+Face Detection
+Video Projects
+GET
+Get Video Details
+DEL
+Delete Video
+POST
+AI Talking Photo
+POST
+AI Video Editor
+POST
+AI Video Translator
+POST
+Animation
+POST
+Audio-to-Video
+POST
+Auto Subtitle Generator
+POST
+Character Replace
+POST
+Face Swap Video
+POST
+Image-to-Video
+POST
+Lip Sync
+POST
+Text-to-Video
+POST
+Video-to-Video
+Image Projects
+GET
+Get Image Details
+DEL
+Delete Image
+POST
+AI Clothes Changer
+POST
+AI Face Editor
+POST
+AI GIF Generator
+POST
+AI Image Editor
+POST
+AI Headshot Generator
+POST
+AI Image Generator
+POST
+AI Image Upscaler
+POST
+AI Meme Generator
+POST
+AI QR Code Generator
+POST
+Body Swap
+POST
+Face Swap Photo
+POST
+Head Swap
+POST
+Image Background Remover
+POST
+Photo Colorizer
+Audio Projects
+GET
+Get Audio Details
+DEL
+Delete Audio
+POST
+AI Voice Generator
+POST
+AI Voice Cloner
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.audio_to_video.generate(
+assets
+=
+{
+"audio_file_path"
+:
+"/path/to/1234.mp3"
+,
+"image_file_path"
+:
+"/path/to/1234.png"
+,
+},
+end_seconds
+=
+15.0
+,
+name
+=
+"My Audio To Video video"
+,
+resolution
+=
+"720p"
+,
+start_seconds
+=
+0.0
+,
+style
+=
+{
+"prompt"
+:
+"Car driving through a city"
+},
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.audioToVideo.generate(
+{
+assets: {
+audioFilePath: "/path/to/1234.mp3",
+imageFilePath: "/path/to/1234.png",
+},
+endSeconds: 15.0,
+name: "Audio To Video video",
+resolution: "720p",
+startSeconds: 0.0,
+},
+{
+waitForCompletion: true,
+downloadOutputs: true,
+downloadDirectory: ".",
+},
+);
+package main
+import (
+os "os"
+sdk "github.com/magichourhq/magic-hour-go/client"
+nullable "github.com/magichourhq/magic-hour-go/nullable"
+audio_to_video "github.com/magichourhq/magic-hour-go/resources/v1/audio_to_video"
+types "github.com/magichourhq/magic-hour-go/types"
+)
+func main() {
+client := sdk.NewClient(
+sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+)
+res, err := client.V1.AudioToVideo.Create(audio_to_video.CreateRequest{
+Assets: types.V1AudioToVideoCreateBodyAssets{
+AudioFilePath: "api-assets/id/1234.mp3",
+ImageFilePath: nullable.NewValue("api-assets/id/1234.png"),
+},
+EndSeconds:   5.0,
+Name:         nullable.NewValue("My Audio To Video video"),
+Resolution:   nullable.NewValue(types.V1AudioToVideoCreateBodyResolutionEnum480p),
+StartSeconds: nullable.NewValue(0.0),
+})
+}
+let client = magic_hour::Client::default()
+.with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+.v1()
+.audio_to_video()
+.create(magic_hour::resources::v1::audio_to_video::CreateRequest {
+assets: magic_hour::models::V1AudioToVideoCreateBodyAssets {
+audio_file_path: "api-assets/id/1234.mp3".to_string(),
+image_file_path: Some("api-assets/id/1234.png".to_string()),
+},
+end_seconds: 5.0,
+name: Some("My Audio To Video video".to_string()),
+resolution: Some(
+magic_hour::models::V1AudioToVideoCreateBodyResolutionEnum::Enum480p,
+),
+start_seconds: Some(0.0),
+..Default::default()
+})
+.await;
+curl --request POST \
+--url https://api.magichour.ai/v1/audio-to-video \
+--header 'accept: application/json' \
+--header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+--header 'content-type: application/json' \
+--data '
+{
+"name": "My Audio To Video video",
+"start_seconds": 0,
+"end_seconds": 5,
+"resolution": "480p",
+"assets": {
+"audio_file_path": "api-assets/id/1234.mp3",
+"image_file_path": "api-assets/id/1234.png"
+},
+"style": {
+"prompt": "Car driving through a city"
+}
+}
+'
+<?php
+$curl = curl_init();
+curl_setopt_array($curl, [
+CURLOPT_URL => "https://api.magichour.ai/v1/audio-to-video",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 30,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => json_encode([
+'name' => 'My Audio To Video video',
+'start_seconds' => 0,
+'end_seconds' => 5,
+'resolution' => '480p',
+'assets' => [
+'audio_file_path' => 'api-assets/id/1234.mp3',
+'image_file_path' => 'api-assets/id/1234.png'
+],
+'style' => [
+'prompt' => 'Car driving through a city'
+]
+]),
+CURLOPT_HTTPHEADER => [
+"accept: application/json",
+"authorization: Bearer <token>",
+"content-type: application/json"
+],
+]);
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+if ($err) {
+echo "cURL Error #:" . $err;
+} else {
+echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/audio-to-video")
+.header("accept", "application/json")
+.header("content-type", "application/json")
+.header("authorization", "Bearer <token>")
+.body("{\"name\":\"My Audio To Video video\",\"start_seconds\":0,\"end_seconds\":5,\"resolution\":\"480p\",\"assets\":{\"audio_file_path\":\"api-assets/id/1234.mp3\",\"image_file_path\":\"api-assets/id/1234.png\"},\"style\":{\"prompt\":\"Car driving through a city\"}}")
+.asString();
+require 'uri'
+require 'net/http'
+url = URI("https://api.magichour.ai/v1/audio-to-video")
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"end_seconds\": 5,\n  \"assets\": {\n    \"audio_file_path\": \"api-assets/id/1234.mp3\",\n    \"image_file_path\": \"api-assets/id/1234.png\"\n  },\n  \"name\": \"My Audio To Video video\",\n  \"start_seconds\": 0,\n  \"resolution\": \"480p\",\n  \"style\": {\n    \"prompt\": \"Car driving through a city\"\n  }\n}"
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+450
+}
+{
+"code": "invalid_request",
+"message": "<string>"
+}
+{
+"code": "unauthorized",
+"message": "<string>"
+}
+{
+"code": "insufficient_credits",
+"message": "<string>"
+}
+{
+"code": "not_found",
+"message": "<string>"
+}
+{
+"code": "unprocessable_entity",
+"message": "<string>"
+}
+{
+"code": "internal_server_error",
+"message": "<string>"
+}
+Video Projects
+Audio-to-Video
+OpenAI
+Open in ChatGPT
+What this API does
+Create the same Audio To Video you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.
+Good for
+Automation and batch processing
+Adding audio to video into apps, pipelines, or tools
+How it works (3 steps)
+Upload your inputs (video, image, or audio) with
+Generate Upload URLs
+and copy the
+file_path
+.
+Send a request to create a audio to video job with the basic fields.
+Check the job status until it’s
+complete
+, then download the result from
+downloads
+.
+Key options
+Inputs: usually a file, sometimes a YouTube link, depending on project type
+Resolution: output size and plan requirements vary by workflow and model. Some workflows derive output size from the input video.
+Extra fields: e.g.
+face_swap_mode
+,
+start_seconds
+/
+end_seconds
+, or a text prompt
+Cost
+Credits are charged when the job is queued (
+credits_charged
+in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.
+For detailed examples, see the
+product page
+.
+OpenAI
+Open in ChatGPT
+POST
+/
+v1
+/
+audio-to-video
+Try it
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.audio_to_video.generate(
+assets
+=
+{
+"audio_file_path"
+:
+"/path/to/1234.mp3"
+,
+"image_file_path"
+:
+"/path/to/1234.png"
+,
+},
+end_seconds
+=
+15.0
+,
+name
+=
+"My Audio To Video video"
+,
+resolution
+=
+"720p"
+,
+start_seconds
+=
+0.0
+,
+style
+=
+{
+"prompt"
+:
+"Car driving through a city"
+},
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.audioToVideo.generate(
+{
+assets: {
+audioFilePath: "/path/to/1234.mp3",
+imageFilePath: "/path/to/1234.png",
+},
+endSeconds: 15.0,
+name: "Audio To Video video",
+resolution: "720p",
+startSeconds: 0.0,
+},
+{
+waitForCompletion: true,
+downloadOutputs: true,
+downloadDirectory: ".",
+},
+);
+package main
+import (
+os "os"
+sdk "github.com/magichourhq/magic-hour-go/client"
+nullable "github.com/magichourhq/magic-hour-go/nullable"
+audio_to_video "github.com/magichourhq/magic-hour-go/resources/v1/audio_to_video"
+types "github.com/magichourhq/magic-hour-go/types"
+)
+func main() {
+client := sdk.NewClient(
+sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+)
+res, err := client.V1.AudioToVideo.Create(audio_to_video.CreateRequest{
+Assets: types.V1AudioToVideoCreateBodyAssets{
+AudioFilePath: "api-assets/id/1234.mp3",
+ImageFilePath: nullable.NewValue("api-assets/id/1234.png"),
+},
+EndSeconds:   5.0,
+Name:         nullable.NewValue("My Audio To Video video"),
+Resolution:   nullable.NewValue(types.V1AudioToVideoCreateBodyResolutionEnum480p),
+StartSeconds: nullable.NewValue(0.0),
+})
+}
+let client = magic_hour::Client::default()
+.with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+.v1()
+.audio_to_video()
+.create(magic_hour::resources::v1::audio_to_video::CreateRequest {
+assets: magic_hour::models::V1AudioToVideoCreateBodyAssets {
+audio_file_path: "api-assets/id/1234.mp3".to_string(),
+image_file_path: Some("api-assets/id/1234.png".to_string()),
+},
+end_seconds: 5.0,
+name: Some("My Audio To Video video".to_string()),
+resolution: Some(
+magic_hour::models::V1AudioToVideoCreateBodyResolutionEnum::Enum480p,
+),
+start_seconds: Some(0.0),
+..Default::default()
+})
+.await;
+curl --request POST \
+--url https://api.magichour.ai/v1/audio-to-video \
+--header 'accept: application/json' \
+--header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+--header 'content-type: application/json' \
+--data '
+{
+"name": "My Audio To Video video",
+"start_seconds": 0,
+"end_seconds": 5,
+"resolution": "480p",
+"assets": {
+"audio_file_path": "api-assets/id/1234.mp3",
+"image_file_path": "api-assets/id/1234.png"
+},
+"style": {
+"prompt": "Car driving through a city"
+}
+}
+'
+<?php
+$curl = curl_init();
+curl_setopt_array($curl, [
+CURLOPT_URL => "https://api.magichour.ai/v1/audio-to-video",
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => "",
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 30,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => "POST",
+CURLOPT_POSTFIELDS => json_encode([
+'name' => 'My Audio To Video video',
+'start_seconds' => 0,
+'end_seconds' => 5,
+'resolution' => '480p',
+'assets' => [
+'audio_file_path' => 'api-assets/id/1234.mp3',
+'image_file_path' => 'api-assets/id/1234.png'
+],
+'style' => [
+'prompt' => 'Car driving through a city'
+]
+]),
+CURLOPT_HTTPHEADER => [
+"accept: application/json",
+"authorization: Bearer <token>",
+"content-type: application/json"
+],
+]);
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+if ($err) {
+echo "cURL Error #:" . $err;
+} else {
+echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/audio-to-video")
+.header("accept", "application/json")
+.header("content-type", "application/json")
+.header("authorization", "Bearer <token>")
+.body("{\"name\":\"My Audio To Video video\",\"start_seconds\":0,\"end_seconds\":5,\"resolution\":\"480p\",\"assets\":{\"audio_file_path\":\"api-assets/id/1234.mp3\",\"image_file_path\":\"api-assets/id/1234.png\"},\"style\":{\"prompt\":\"Car driving through a city\"}}")
+.asString();
+require 'uri'
+require 'net/http'
+url = URI("https://api.magichour.ai/v1/audio-to-video")
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"end_seconds\": 5,\n  \"assets\": {\n    \"audio_file_path\": \"api-assets/id/1234.mp3\",\n    \"image_file_path\": \"api-assets/id/1234.png\"\n  },\n  \"name\": \"My Audio To Video video\",\n  \"start_seconds\": 0,\n  \"resolution\": \"480p\",\n  \"style\": {\n    \"prompt\": \"Car driving through a city\"\n  }\n}"
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+450
+}
+{
+"code": "invalid_request",
+"message": "<string>"
+}
+{
+"code": "unauthorized",
+"message": "<string>"
+}
+{
+"code": "insufficient_credits",
+"message": "<string>"
+}
+{
+"code": "not_found",
+"message": "<string>"
+}
+{
+"code": "unprocessable_entity",
+"message": "<string>"
+}
+{
+"code": "internal_server_error",
+"message": "<string>"
+}
+Authorizations
+​
+Authorization
+string
+header
+required
+Bearer authentication header of the form
+Bearer <api_key>
+, where
+<api_key>
+is your API key. To get your API key, go to
+Developer Hub
+and click "Create new API Key".
+Body
+application/json
+Body
+​
+end_seconds
+number<float>
+required
+End time of your clip (seconds). Must be greater than start_seconds.
+Required range
+:
+x >= 0.1
+Example
+:
+5
+​
+assets
+object
+required
+Provide the audio file and an optional reference image.
+Show
+child attributes
+​
+name
+string
+default:
+Audio To Video - dateTime
+Give your video a custom name for easy identification.
+Example
+:
+"My Audio To Video video"
+​
+start_seconds
+number<float>
+default:
+0
+Start time of your clip (seconds). Must be ≥ 0.
+Required range
+:
+x >= 0
+Example
+:
+0
+​
+resolution
+enum<string>
+Output video resolution. Defaults to
+720p
+on paid tiers and
+480p
+on free tiers.
+Available options
+:
+480p
+,
+720p
+,
+1080p
+Example
+:
+"480p"
+​
+style
+object
+Attributes used to dictate the style of the output
+Show
+child attributes
+Response
+200
+application/json
+Success
+Success
+​
+id
+string
+required
+Unique ID of the video. Use it with the
+Get video Project API
+to fetch status and downloads.
+Example
+:
+"cuid-example"
+​
+credits_charged
+integer
+required
+The amount of credits deducted from your account to generate the video. If the status is not 'complete', this value is an estimate and may be adjusted upon completion based on the actual FPS of the output video.
+If video generation fails, credits will be refunded, and this field will be updated to include the refund.
+Example
+:
+450
+Was this page helpful?
+Yes
+No
+Suggest edits
+Raise issue
+Animation
+Auto Subtitle Generator
+website
+x
+github
+linkedin
+instagram
+youtube
+Powered by
+This documentation is built and hosted on Mintlify, a developer documentation platform

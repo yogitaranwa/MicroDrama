@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "seconds": 16,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "Your jaw tightens whenever his name surfaces, yet your eyes dart toward the stairs instead of the doors. That contradiction tells me more than any denial you might offer.",
+   "emotion": "quietly analytical",
+   "expression": "head tilted slightly, gaze sweeping from her clenched jaw to the corridor corners"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "I learned to mask fear before I mastered my first spell, Potter. The stairs lead to a dormitory where I must pretend tonight never happened, and the doors lead to questions I cannot answer.",
+   "emotion": "brittle defiance",
+   "expression": "shoulders squaring, chin lifting as her eyes flicker between the staircase and his face"
+  }
+ ]
+}

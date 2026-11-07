@@ -1,0 +1,1408 @@
+{
+ "title": "Working Late (directed)",
+ "logline": "Mia told Tomas she was working late. At one in the morning she sneaks home in the dark and finds him waiting in the kitchen with her receipt.",
+ "aspect": "16:9",
+ "bible": {
+  "format": "16:9, 24 fps, 35 mm lens equivalent, shallow depth of field, soft natural film grain, restrained naturalistic colour, no stylised grading, handheld-steady realism",
+  "set": "a small city apartment at night: a short hallway runs from the front door to the kitchen doorway on the kitchen's west wall; in the kitchen a rectangular wooden table stands in the middle, a tall window onto city lights fills the east wall, a fridge covered in notes and teal cabinets stand along the right-hand side, and a wooden chair stands against the left-hand wall a few steps inside the doorway, hidden from the hallway by the doorframe",
+  "geography": "Mia enters from the hallway at the WEST doorway. The wall light switch is at hip height on the LEFT wall just inside the doorway. Tomas is sitting in the dark in a wooden chair against that same left wall, a few steps further into the kitchen; the doorframe hides him from anyone in the hallway, which is why only the empty table shows from the hall. The table itself is empty. Reveal: Mia turns her head to the left and the camera moves forward past her shoulder and pans with her gaze. Reverse shots look from just behind Tomas toward Mia in the doorway. Keep the table, window, fridge and cabinets in the same places in every shot.",
+  "lighting": "Before the switch the kitchen is dark: only cool blue city light through the east window and a faint streetlight glow on the floor. The overhead kitchen light is controlled only by the wall switch and turns on only when Mia presses it, with a small click. After that every shot has the same two sources: a warm overhead light (about 2700 K) and the cool window light behind Tomas, so faces are lit warm from above with a cool rim from the window.",
+  "performance": "Naturalistic and restrained, like a film, not a sitcom: small micro-expressions, no grins, no wide-eyed shock, no big gestures. Mia is tired and guilty; Tomas is calm and hurt. Nobody raises their voice.",
+  "wardrobe_props": "Mia: olive trench coat over a cream top, shoes in one hand. Tomas: dark navy crew-neck sweater, short dark hair, clean-shaven, a crumpled paper receipt between his fingers. No cake.",
+  "set_short": "a small city apartment kitchen at night: wooden table in the middle, tall east window with city lights, fridge covered in notes and teal cabinets on the right, a wooden chair against the left wall just inside the doorway",
+  "geography_short": "Mia enters from the west doorway; the wall switch is at hip height on the left wall just inside it. Tomas sits in a wooden chair against that same left wall a few steps further in, hidden from the hallway by the doorframe; the table is empty. Keep every piece of furniture where it is.",
+  "lighting_rule": "The overhead light is switched only by the wall switch. Once on, every shot has warm overhead light on faces and a cool window glow behind.",
+  "performance_short": "Naturalistic and restrained like a film: micro-expressions only, no grins, no wide-eyed shock, no big gestures. Mia is tired and guilty, Tomas calm and hurt.",
+  "wardrobe_short": "Mia: olive trench coat, cream top, shoes in hand. Tomas: dark navy crew-neck sweater, short dark hair, clean-shaven, a crumpled receipt in his fingers; no cake."
+ },
+ "voices": {
+  "Mia": "tired, low, warm woman in her early thirties, speaking softly so as not to wake anyone, guilty",
+  "Tomas": "calm, low man in his early thirties, quiet and dry, every word deliberate"
+ },
+ "plate": {
+  "id": "kitchen-plate",
+  "file": "kitchen-plate.png"
+ },
+ "portraits": {
+  "Mia": "mia-master.png",
+  "Tomas": "tomas-master.png"
+ },
+ "shots": [
+  {
+   "id": "d1-return",
+   "title": "The Return",
+   "seconds": 5,
+   "cast": [
+    "Mia"
+   ],
+   "intent": "Establish that she is sneaking home at one in the morning and that the kitchen at the end of the hall is dark.",
+   "start_state": "Inside the dark apartment, just past the front door: Mia has her back to us, her hand still on the door she has just closed; her shoes dangle from her other hand; the hallway ahead is dark with a faint cool glow at its far end.",
+   "end_state": "Mia stands at the kitchen doorway seen from behind and slightly from the side, her free hand flat on the wall beside the doorframe feeling for the switch, not yet pressed; the kitchen beyond is dark with cool window light and the table looks empty.",
+   "camera": {
+    "size": "medium-wide",
+    "angle": "starts at knee height behind her",
+    "movement": "slow dolly forward that rises from knee height to chest height as it follows her down the hallway",
+    "lens": "35 mm"
+   },
+   "lighting": "Dark. Cool blue glow from the far end of the hall on the floor; her face is barely lit.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.5,
+     "text": "Mia eases the front door the last inch shut with her free hand, holds perfectly still and listens."
+    },
+    {
+     "t0": 1.5,
+     "t1": 3.5,
+     "text": "She tiptoes down the dark hallway toward the kitchen doorway where the faint blue glow spills on the floorboards; the camera follows and slowly rises."
+    },
+    {
+     "t0": 3.5,
+     "t1": 5.0,
+     "text": "She stops at the kitchen doorway, one hand sliding along the wall beside the doorframe, feeling for the light switch."
+    }
+   ],
+   "performance": "Careful, tired, guilty; she is trying to make no sound at all.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum and faint distant traffic",
+    "effects": [
+     "the front door latch clicking softly shut",
+     "floorboards creaking under bare careful steps",
+     "fabric of the coat brushing the wall"
+    ]
+   },
+   "keyframe": "Interior of a dark apartment hallway just past the front door, seen from behind and low: a woman in an olive trench coat has just closed the front door, her shoes in one hand, a faint cool glow at the far end of the hall. Her face is not visible."
+  },
+  {
+   "id": "d2-switch",
+   "title": "The Switch",
+   "seconds": 3,
+   "cast": [
+    "Mia"
+   ],
+   "continues_previous": true,
+   "intent": "Show why the light comes on: she turns it on, and the light is what reveals the room.",
+   "start_state": "Exactly where the previous shot ended: Mia at the kitchen doorway, her hand on the wall beside the doorframe feeling for the switch.",
+   "end_state": "Mia stands frozen in the kitchen doorway, lit by the warm overhead light, shoes dangling from her hand, her eyes fixed on the table across the room.",
+   "camera": {
+    "size": "close-up",
+    "angle": "low, hip height",
+    "movement": "tilts up from her hand on the switch to her face",
+    "lens": "35 mm"
+   },
+   "lighting": "Dark until her finger presses the switch; then the warm overhead light comes on at once, spilling across her.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Her fingers find the switch plate and press it: a small click, and the overhead kitchen light comes on."
+    },
+    {
+     "t0": 1.0,
+     "t1": 2.4,
+     "text": "The camera tilts up from her hand to her face as the warm light reaches her; the relief of being home turns into stillness as her eyes find something across the room."
+    },
+    {
+     "t0": 2.4,
+     "t1": 3.0,
+     "text": "She freezes, breath held, shoes still dangling from her hand, gaze fixed across the kitchen."
+    }
+   ],
+   "performance": "A flicker of relief, then complete stillness. No gasp, no wide eyes.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a small, distinct wall light-switch click",
+     "the faint buzz of an overhead light warming up"
+    ]
+   }
+  },
+  {
+   "id": "d3-reveal",
+   "title": "The Reveal",
+   "seconds": 5,
+   "cast": [
+    "Tomas",
+    "Mia"
+   ],
+   "intent": "Reveal that Tomas has been sitting in the dark kitchen the whole time, calm and waiting, in the chair the doorframe was hiding.",
+   "start_state": "Exactly where the previous shot ended: Mia in the lit doorway seen from behind, looking across the kitchen at the empty table.",
+   "end_state": "Close on Tomas, seated against the left wall, a crumpled receipt between his fingers, level gaze on Mia just off-screen; the edge of Mia's shoulder is soft in the foreground.",
+   "camera": {
+    "size": "medium over-the-shoulder becoming medium close-up",
+    "angle": "eye level",
+    "movement": "the camera moves forward past Mia's shoulder and pans left with her gaze, then settles into a gentle push in on Tomas",
+    "lens": "35 mm"
+   },
+   "lighting": "The warm overhead light is already on from the switch; the cool window glow is behind. Tomas is lit warm from above.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.6,
+     "text": "Mia slowly turns her head to the left; the camera moves forward past her shoulder and pans left along the wall with her gaze."
+    },
+    {
+     "t0": 1.6,
+     "t1": 2.4,
+     "text": "It reveals Tomas sitting in a wooden chair against the left wall a few steps inside the kitchen, hands folded, a crumpled receipt between his fingers, already looking at her."
+    },
+    {
+     "t0": 2.4,
+     "t1": 3.9,
+     "text": "He lets out a slow breath and speaks quietly."
+    },
+    {
+     "t0": 3.9,
+     "t1": 5.0,
+     "text": "He holds his level gaze on her as the camera finishes a gentle push in."
+    }
+   ],
+   "performance": "Calm, hurt, controlled. Almost no movement.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a faint creak of the wooden chair as he shifts"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Tomas",
+      "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate",
+      "line": "Working late?",
+      "delivery": "quiet, dry, not sarcastic"
+     }
+    ]
+   },
+   "continues_previous": true
+  },
+  {
+   "id": "d4-answer",
+   "title": "The Answer",
+   "seconds": 4,
+   "cast": [
+    "Mia",
+    "Tomas"
+   ],
+   "intent": "Her side of the exchange: she is caught and tries to sound casual.",
+   "start_state": "From just behind Tomas's shoulder (his shoulder and dark hair soft and out of focus in the foreground), looking toward Mia a few steps away just inside the kitchen doorway, shoes in her hand, warm overhead light on her face, the dark hallway behind her.",
+   "end_state": "Mia has set her shoes down on the floor beside her; her hands are empty and she looks at him.",
+   "camera": {
+    "size": "medium close over-the-shoulder",
+    "angle": "eye level",
+    "movement": "slow push in toward Mia",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on Mia's face; the doorway and dark hallway behind her.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.3,
+     "text": "Mia swallows, her eyes drop to the table for a moment and come back up. The camera pushes in slowly."
+    },
+    {
+     "t0": 1.3,
+     "t1": 3.2,
+     "text": "She crouches an inch to set her shoes quietly on the floor, straightens, and speaks softly, trying to sound casual."
+    },
+    {
+     "t0": 3.2,
+     "t1": 4.0,
+     "text": "She holds his gaze."
+    }
+   ],
+   "performance": "Tired and guilty, small movements; a weak attempt at a casual tone.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "shoes being set down on the wooden floor"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mia",
+      "voice": "tired, low, warm woman in her early thirties, speaking softly so as not to wake anyone, guilty",
+      "line": "Tomas, you're still up.",
+      "delivery": "soft, tired, trying to sound casual"
+     }
+    ]
+   },
+   "keyframe": "From just behind Tomas's shoulder (his shoulder in a dark navy sweater and his short dark hair soft and out of focus in the foreground), looking toward Mia standing a few steps away just inside the kitchen doorway, shoes in her hand, warm overhead light on her face, the dark hallway behind her. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "Mia",
+    "previous_last_frame"
+   ]
+  },
+  {
+   "id": "d5-receipt",
+   "title": "The Receipt",
+   "seconds": 4,
+   "cast": [
+    "Tomas"
+   ],
+   "intent": "The hook: he already knows. He slides the receipt toward her and says the line that ends the lie.",
+   "start_state": "Medium close-up of Tomas seated against the wall, the crumpled receipt between his fingers, level gaze toward Mia.",
+   "end_state": "Tomas holds the receipt out toward her and keeps his steady gaze.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "slightly low, table height",
+    "movement": "very slow push in on Tomas's face",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on his face with the cool window rim behind.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.2,
+     "text": "He looks down at the receipt between his fingers."
+    },
+    {
+     "t0": 1.2,
+     "t1": 2.0,
+     "text": "He lifts it and holds it out toward her with two fingers, never taking his eyes off her."
+    },
+    {
+     "t0": 2.0,
+     "t1": 3.6,
+     "text": "He says the line, flat and quiet."
+    },
+    {
+     "t0": 3.6,
+     "t1": 4.0,
+     "text": "He holds his steady gaze."
+    }
+   ],
+   "performance": "Flat, quiet, devastating. No anger.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "the crumple of the paper receipt as he lifts it"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Tomas",
+      "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate",
+      "line": "Your office closed at six.",
+      "delivery": "flat, quiet, final"
+     }
+    ]
+   },
+   "keyframe": "Medium close-up of Tomas, the clean-shaven young man with short dark hair in a dark navy crew-neck sweater from the final reference image, seated in the wooden chair against the wall, holding a crumpled paper receipt between two fingers at chest height, level steady gaze toward camera-right, warm overhead light on his face and a cool window glow behind. Same face as the final reference image. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "last:d3-reveal"
+   ]
+  },
+  {
+   "id": "d6-explain",
+   "title": "Let Me Explain",
+   "seconds": 4,
+   "cast": [
+    "Mia",
+    "Tomas"
+   ],
+   "intent": "She drops the casual act and pleads.",
+   "start_state": "From just behind Tomas's shoulder (his shoulder and dark hair soft and out of focus in the foreground), looking toward Mia standing just inside the kitchen doorway, her shoes on the floor beside her, hands empty, her hands open at her sides, warm overhead light on her face, the dark hallway behind her.",
+   "end_state": "Mia still stands just inside the doorway, eyes on him, the dark hallway behind her.",
+   "camera": {
+    "size": "medium close over-the-shoulder",
+    "angle": "eye level",
+    "movement": "slow push in toward Mia",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on Mia's face; the doorway and dark hallway behind her.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Mia breathes in, her shoulders tight, and steps half a pace toward him. The camera pushes in slowly."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks softly, pleading, her hands open at her sides."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "She stops and holds his gaze, lips pressed together."
+    }
+   ],
+   "performance": "Frightened and sincere, small movements, no theatrics.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a faint breath, a floorboard creak"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mia",
+      "voice": "tired, low, warm woman in her early thirties, speaking softly so as not to wake anyone, guilty",
+      "line": "Tomas, please. Let me explain.",
+      "delivery": "soft, pleading, unsteady"
+     }
+    ]
+   },
+   "keyframe": "From just behind Tomas's shoulder (his shoulder and dark hair soft and out of focus in the foreground), looking toward Mia standing just inside the kitchen doorway, her shoes on the floor beside her, hands empty, her hands open at her sides, warm overhead light on her face, the dark hallway behind her. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "Mia",
+    "last:dv4-answer"
+   ]
+  },
+  {
+   "id": "d7-table",
+   "title": "Table for Two",
+   "seconds": 4,
+   "cast": [
+    "Tomas"
+   ],
+   "intent": "He answers with the one fact she cannot explain.",
+   "start_state": "Medium close-up of Tomas seated against the wall, the crumpled receipt resting on his knee, level gaze toward Mia.",
+   "end_state": "Tomas still seated against the wall, steady gaze toward Mia.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "slightly low, table height",
+    "movement": "very slow push in on Tomas's face",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on his face with the cool window rim behind.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "He looks at her without moving, the receipt resting on his knee."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "He says the line, flat and quiet, never raising his voice."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "He holds his steady gaze."
+    }
+   ],
+   "performance": "Flat, quiet, devastating. No anger.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a quiet shift of his weight on the wooden chair"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Tomas",
+      "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate",
+      "line": "Table for two. At eight.",
+      "delivery": "flat, quiet, final"
+     }
+    ]
+   },
+   "keyframe": "Medium close-up of Tomas, the clean-shaven young man with short dark hair in a dark navy crew-neck sweater from the final reference image, seated in the wooden chair against the wall, the crumpled receipt resting on his knee, level steady gaze toward camera-right, warm overhead light on his face and a cool window glow behind. Same face as the final reference image. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "Tomas",
+    "last:dv5-receipt"
+   ]
+  },
+  {
+   "id": "d8-think",
+   "title": "Not What You Think",
+   "seconds": 4,
+   "cast": [
+    "Mia",
+    "Tomas"
+   ],
+   "intent": "She reaches for the oldest defence.",
+   "start_state": "From just behind Tomas's shoulder (his shoulder and dark hair soft and out of focus in the foreground), looking toward Mia standing just inside the kitchen doorway, her shoes on the floor beside her, hands empty, her eyes glistening, warm overhead light on her face, the dark hallway behind her.",
+   "end_state": "Mia still stands just inside the doorway, eyes on him, the dark hallway behind her.",
+   "camera": {
+    "size": "medium close over-the-shoulder",
+    "angle": "eye level",
+    "movement": "slow push in toward Mia",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on Mia's face; the doorway and dark hallway behind her.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "Mia swallows and shakes her head slightly, the camera pushing in slowly."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "She speaks, quietly and too quickly, her eyes glistening."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "Her face falls as she realises how it sounds."
+    }
+   ],
+   "performance": "Panicked, small, honest; the lie is already failing.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a faint breath, a floorboard creak"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mia",
+      "voice": "tired, low, warm woman in her early thirties, speaking softly so as not to wake anyone, guilty",
+      "line": "It isn't what you think.",
+      "delivery": "quick, thin, unconvincing"
+     }
+    ]
+   },
+   "keyframe": "From just behind Tomas's shoulder (his shoulder and dark hair soft and out of focus in the foreground), looking toward Mia standing just inside the kitchen doorway, her shoes on the floor beside her, hands empty, her eyes glistening, warm overhead light on her face, the dark hallway behind her. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "Mia",
+    "last:dv6-explain"
+   ]
+  },
+  {
+   "id": "d9-tell",
+   "title": "Then Tell Me",
+   "seconds": 4,
+   "cast": [
+    "Tomas"
+   ],
+   "intent": "The last question, left hanging for the end card.",
+   "start_state": "Medium close-up of Tomas seated against the wall, the receipt in his hand, level gaze toward Mia.",
+   "end_state": "Tomas still seated against the wall, steady gaze toward Mia.",
+   "camera": {
+    "size": "medium close-up",
+    "angle": "slightly low, table height",
+    "movement": "very slow push in on Tomas's face",
+    "lens": "35 mm"
+   },
+   "lighting": "Warm overhead light on his face with the cool window rim behind.",
+   "beats": [
+    {
+     "t0": 0.0,
+     "t1": 1.0,
+     "text": "He looks at her, a long quiet beat."
+    },
+    {
+     "t0": 1.0,
+     "t1": 3.0,
+     "text": "He asks the question evenly and without blinking."
+    },
+    {
+     "t0": 3.0,
+     "t1": 4.0,
+     "text": "He waits, silent, eyes steady on her."
+    }
+   ],
+   "performance": "Controlled, hurt underneath, no anger.",
+   "sound": {
+    "ambience": "quiet apartment at night: refrigerator hum",
+    "effects": [
+     "a quiet shift of his weight on the wooden chair"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Tomas",
+      "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate",
+      "line": "Then tell me what it is.",
+      "delivery": "even, quiet, patient"
+     }
+    ]
+   },
+   "keyframe": "Medium close-up of Tomas, the clean-shaven young man with short dark hair in a dark navy crew-neck sweater from the final reference image, seated in the wooden chair against the wall, the receipt in his hand, level steady gaze toward camera-right, warm overhead light on his face and a cool window glow behind. Same face as the final reference image. Mouth closed.",
+   "keyframe_refs": [
+    "kitchen-plate",
+    "Tomas",
+    "last:dv7-table"
+   ]
+  }
+ ],
+ "hook_title": "She said she was working late...",
+ "end_card": "What will Mia say?",
+ "plan": {
+  "units": "metres; x east, y north, z up; origin at the kitchen's south-west corner; facing in compass degrees (0 east, 90 north, 180 west, 270 south)",
+  "room": {
+   "x": [
+    0.0,
+    4.6
+   ],
+   "y": [
+    0.0,
+    3.4
+   ],
+   "z": 2.6
+  },
+  "hallway": {
+   "x": [
+    -3.6,
+    0.0
+   ],
+   "y": [
+    1.1,
+    2.1
+   ],
+   "z": 2.4
+  },
+  "doorway": {
+   "y": [
+    1.1,
+    2.1
+   ],
+   "z": 2.1
+  },
+  "window": {
+   "wall": "east",
+   "span": [
+    1.0,
+    2.4
+   ],
+   "z": [
+    0.9,
+    2.1
+   ]
+  },
+  "features": [
+   {
+    "name": "doorway to the dark hallway",
+    "box": [
+     -0.05,
+     1.1,
+     0.0,
+     0.05,
+     2.1,
+     2.1
+    ],
+    "render": false
+   },
+   {
+    "name": "dark hallway",
+    "box": [
+     -3.6,
+     1.1,
+     0.0,
+     -0.1,
+     2.1,
+     2.4
+    ],
+    "render": false
+   },
+   {
+    "name": "tall window with city lights",
+    "box": [
+     4.54,
+     1.0,
+     0.9,
+     4.6,
+     2.4,
+     2.1
+    ],
+    "render": false
+   },
+   {
+    "name": "table",
+    "box": [
+     2.4,
+     1.3,
+     0.0,
+     3.8,
+     2.1,
+     0.75
+    ],
+    "color": "#9a6b3c"
+   },
+   {
+    "name": "pendant lamp",
+    "box": [
+     2.95,
+     1.55,
+     1.9,
+     3.25,
+     1.85,
+     2.2
+    ],
+    "color": "#f5c542"
+   },
+   {
+    "name": "fridge covered in notes",
+    "box": [
+     3.9,
+     0.0,
+     0.0,
+     4.5,
+     0.7,
+     1.8
+    ],
+    "color": "#d8d8d8"
+   },
+   {
+    "name": "teal cabinets",
+    "box": [
+     1.6,
+     0.0,
+     0.0,
+     3.8,
+     0.6,
+     0.9
+    ],
+    "color": "#3d8f8a"
+   },
+   {
+    "name": "Tomas's wooden chair",
+    "box": [
+     0.8,
+     2.7,
+     0.0,
+     1.3,
+     3.2,
+     0.9
+    ],
+    "color": "#6b4a2b"
+   },
+   {
+    "name": "wall light switch",
+    "box": [
+     -0.4,
+     2.08,
+     1.15,
+     -0.25,
+     2.1,
+     1.3
+    ],
+    "color": "#ffffff"
+   },
+   {
+    "name": "door in the north wall",
+    "box": [
+     2.3,
+     3.38,
+     0.0,
+     3.2,
+     3.4,
+     2.0
+    ],
+    "color": "#5a4636"
+   }
+  ],
+  "figures": {
+   "Mia": {
+    "height": 1.65,
+    "pose": "standing",
+    "color": "#d9382b"
+   },
+   "Tomas": {
+    "height": 1.3,
+    "pose": "seated",
+    "color": "#2f5fd0"
+   }
+  },
+  "shots": {
+   "d1-return": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       -3.5,
+       1.7,
+       0.6
+      ],
+      "target": [
+       -0.5,
+       1.6,
+       1.1
+      ]
+     },
+     "end": {
+      "pos": [
+       -1.9,
+       1.6,
+       1.45
+      ],
+      "target": [
+       0.4,
+       2.0,
+       1.3
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        -2.0,
+        1.6
+       ],
+       "facing": 0
+      },
+      "end": {
+       "pos": [
+        -0.4,
+        1.75
+       ],
+       "facing": 0
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "doorway to the dark hallway"
+     ],
+     "end": [
+      "doorway to the dark hallway",
+      "table"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "Tomas's wooden chair"
+     ],
+     "end": [
+      "Tomas's wooden chair"
+     ]
+    }
+   },
+   "d2-switch": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       -1.9,
+       1.6,
+       1.45
+      ],
+      "target": [
+       0.4,
+       2.0,
+       1.3
+      ]
+     },
+     "end": {
+      "pos": [
+       -1.9,
+       1.6,
+       1.45
+      ],
+      "target": [
+       0.4,
+       2.0,
+       1.3
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        -0.4,
+        1.75
+       ],
+       "facing": 0
+      },
+      "end": {
+       "pos": [
+        -0.4,
+        1.75
+       ],
+       "facing": 0
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "wall light switch"
+     ],
+     "end": [
+      "table"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "Tomas's wooden chair"
+     ],
+     "end": [
+      "Tomas's wooden chair"
+     ]
+    }
+   },
+   "d3-reveal": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       -1.9,
+       1.6,
+       1.45
+      ],
+      "target": [
+       0.4,
+       2.0,
+       1.3
+      ]
+     },
+     "end": {
+      "pos": [
+       0.1,
+       1.5,
+       1.5
+      ],
+      "target": [
+       1.4,
+       2.6,
+       1.25
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        -0.4,
+        1.75
+       ],
+       "facing": 0
+      },
+      "end": {
+       "pos": [
+        0.35,
+        1.35
+       ],
+       "facing": 25
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [],
+     "end": [
+      "Tomas"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "Tomas's wooden chair"
+     ],
+     "end": []
+    }
+   },
+   "d4-answer": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       1.35,
+       3.15,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     },
+     "end": {
+      "pos": [
+       1.2,
+       2.95,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "doorway to the dark hallway",
+      "Mia"
+     ],
+     "end": [
+      "doorway to the dark hallway",
+      "Mia"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ],
+     "end": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ]
+    }
+   },
+   "d5-receipt": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       0.05,
+       2.0,
+       1.35
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     },
+     "end": {
+      "pos": [
+       0.2,
+       2.1,
+       1.3
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "Tomas"
+     ],
+     "end": [
+      "Tomas"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ],
+     "end": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ]
+    }
+   },
+   "d6-explain": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       1.35,
+       3.15,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     },
+     "end": {
+      "pos": [
+       1.2,
+       2.95,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "doorway to the dark hallway",
+      "Mia"
+     ],
+     "end": [
+      "doorway to the dark hallway",
+      "Mia"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ],
+     "end": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ]
+    }
+   },
+   "d7-table": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       0.05,
+       2.0,
+       1.35
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     },
+     "end": {
+      "pos": [
+       0.2,
+       2.1,
+       1.3
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "Tomas"
+     ],
+     "end": [
+      "Tomas"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ],
+     "end": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ]
+    }
+   },
+   "d8-think": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       1.35,
+       3.15,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     },
+     "end": {
+      "pos": [
+       1.2,
+       2.95,
+       1.35
+      ],
+      "target": [
+       0.3,
+       1.55,
+       1.4
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "doorway to the dark hallway",
+      "Mia"
+     ],
+     "end": [
+      "doorway to the dark hallway",
+      "Mia"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ],
+     "end": [
+      "tall window with city lights",
+      "table",
+      "fridge covered in notes"
+     ]
+    }
+   },
+   "d9-tell": {
+    "camera": {
+     "lens": 24,
+     "start": {
+      "pos": [
+       0.05,
+       2.0,
+       1.35
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     },
+     "end": {
+      "pos": [
+       0.2,
+       2.1,
+       1.3
+      ],
+      "target": [
+       1.05,
+       2.95,
+       1.2
+      ]
+     }
+    },
+    "figures": {
+     "Mia": {
+      "start": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      },
+      "end": {
+       "pos": [
+        0.3,
+        1.55
+       ],
+       "facing": 59
+      }
+     },
+     "Tomas": {
+      "start": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      },
+      "end": {
+       "pos": [
+        1.05,
+        2.95
+       ],
+       "facing": 234
+      }
+     }
+    },
+    "must_show": {
+     "start": [
+      "Tomas"
+     ],
+     "end": [
+      "Tomas"
+     ]
+    },
+    "must_not_show": {
+     "start": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ],
+     "end": [
+      "tall window with city lights",
+      "fridge covered in notes",
+      "Mia"
+     ]
+    }
+   }
+  }
+ }
+}

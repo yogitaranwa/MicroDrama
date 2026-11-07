@@ -1,0 +1,22 @@
+SELECTABLE LOCAL AUDIO ROUTE CHECKPOINT - 2026-11-06 13:40 IST
+
+This is an update overlay, not a standalone release.
+Extract the nine verified m25 ZIPs into the same empty directory first,
+then extract this ZIP over them. No concatenation. Preserve prior files.
+No model weights or paid access are included.
+
+565 first-party tests +30 subtests passed. One existing MoviePy end-frame warning.
+Sources: dramaforge/forge/integrations/plan_execution.py, plan_review.py,
+audio_timing.py and existing forge/render_plan.py opt-in dispatch.
+Details: dramaforge/docs/validation/audio_timing_contract.md.
+Production generation hold remains in force. This ZIP does not authorize
+production, spending, new TTS or acceptance. InfiniteTalk clip is a truncated
+0.68s technical test, not full speech or episode quality. MultiTalkV5 pending.
+Reviewed continuation and compositor tests are synthetic code tests, not E01.
+The restored110.8s v9 plan is old planning timing, not the measured production
+audio timeline. Bind actual approved assets and measured timing before use.
+Legacy routes remain available; new guarded route is explicitly selected.
+
+13:40 hardening: clip review also binds execution runtime controls. CLI now
+selects prepare, execute or reviewed assembly. Existing compositor exports30fps;
+final AV sync and pixels must be reviewed after assembly, not assumed.

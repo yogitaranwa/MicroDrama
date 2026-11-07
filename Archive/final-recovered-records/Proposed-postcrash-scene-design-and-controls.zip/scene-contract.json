@@ -1,0 +1,75 @@
+{
+  "id": "e01-s17-s18-proposed-blocking-v1",
+  "status": "PROPOSED_NOT_OBSERVED",
+  "units": "relative layout units, not measured room dimensions",
+  "paid_enabled": false,
+  "source_aftermath_sha256": "aae7543012afa6d23edd018c0a0b164e1d094c514eae9617323315b105296315",
+  "actors": {
+    "harry": [
+      -1,
+      0
+    ],
+    "draconia": [
+      1,
+      0
+    ]
+  },
+  "landmarks": {
+    "window": [
+      0,
+      6
+    ],
+    "wreckage": [
+      0,
+      3
+    ],
+    "icy_table": [
+      -1.4,
+      -0.6
+    ]
+  },
+  "cameras": {
+    "master": [
+      0,
+      -4
+    ],
+    "harry_close": [
+      1,
+      -2
+    ],
+    "draconia_close": [
+      -1,
+      -2
+    ]
+  },
+  "camera_height": "same eye level; target actor eyes, not lens",
+  "axis": "Harry to Draconia, y=0; every camera y<0",
+  "spatial_approval": false,
+  "video_approval": false,
+  "shots": [
+    {
+      "actor": "harry",
+      "duration_s": 3,
+      "locked_dialogue": "Draconia. Look at me. What did you do?",
+      "audio": "e01-l16-harry.mp3",
+      "audio_sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+      "camera": "harry_close",
+      "eyeline": "screen-right",
+      "intent": "Controlled alarm and accusation, not relief or humor. Turns attention to Draconia, demands an answer.",
+      "mouth_requirement": "readable actual mouth performance must match locked take; unverified",
+      "wardrobe": "black red-lined robes, white shirt, straight dark necktie, round glasses"
+    },
+    {
+      "actor": "draconia",
+      "duration_s": 4.5,
+      "locked_dialogue": "I spent weeks trying to warn you. You never once listened.",
+      "audio": "e01-l17-draconia.mp3",
+      "audio_sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+      "camera": "draconia_close",
+      "eyeline": "screen-left",
+      "intent": "Genuinely scared but holds her ground. Hurt and defensive resolve, not wry disbelief or relief.",
+      "mouth_requirement": "readable actual mouth performance must match locked take; unverified",
+      "wardrobe": "emerald gold-embroidered gown, braided blonde updo, earrings"
+    }
+  ]
+}

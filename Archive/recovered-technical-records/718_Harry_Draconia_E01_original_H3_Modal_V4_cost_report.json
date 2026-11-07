@@ -1,0 +1,22 @@
+{
+  "function_call_id": "fc-01M5RYTAV8XYQTKG8YAVP232QM",
+  "dashboard_url": "[private-project-source]",
+  "app_id": "ap-Kk2VGBp1FOB8C3H05D0II4",
+  "app_stopped_at": "2026-10-25T13:06:46+05:30",
+  "status": "success",
+  "scope": "one corrected 13.12s E01 V4 non-overlapping image+audio guide test",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "execution_seconds": 988,
+  "sampling": "25/25 steps in 15m31s; block cache cached 11/25 model forwards",
+  "billing_prelaunch_metered_usd": "1.03077625",
+  "billing_at_stop_metered_usd": "2.16084757",
+  "billing_delta_metered_usd": "1.13007132",
+  "billing_delta_note": "Provisional Modal summary at stop; user-approved estimate was $1.10-$1.35 credits, not a hard cap.",
+  "billed_cost_usd": "0.00",
+  "credits_adjustment_total_usd": "-2.12",
+  "estimated_cycle_credits_remaining_usd": "27.88",
+  "card_net_spend_limit_usd": "0.00",
+  "raw_output_sha256": "6dcc0158a1adefd54a21522599a23d28857421131232fe2ff2905edcfdb74d87",
+  "trimmed_output_sha256": "532c147b3fe94f228f584e0e823b227e6cc41c6c0c10afc8fa1ae24c35b06440",
+  "trimmed_video": "24fps, 315 frames, 13.125s, 576x1024"
+}

@@ -1,0 +1,38 @@
+The Confession in the Tower
+HOOK: Draconia Malfoy, wearing Harry's dress robes over her Yule Ball gown, snaps: "You humiliated me in front of half the school, Potter. That 'mistaken identity' bit was cruel."
+TOTAL 104s
+
+[1] Grand Staircase alcove | Tight two-shot, shallow depth of field on their faces | 12s
+  Harry adjusts his collar; Draconia paces in his oversized jacket, voice rising until Filch's wheeze cuts through the stone archway Speakers: Harry Potter, Draconia Malfoy
+  Draconia Malfoy (sharp indignation; hands fisting the oversized lapels, chin thrust upward): You humiliated me in front of half the school, Potter. That mistaken identity bit was cruel and calculated.
+  Harry Potter (flat urgency; eyes fixed on the archway, hand drifting to wand pocket): Filch is wheezing toward us through the archway right now. We argue later if we still can.
+[2] Library restricted section | Over-the-shoulder through candle-lit shelves; Madam Pince's silhouette glides past | 13s
+  Draconia slips a folded parchment into a hollowed-out book; Harry plucks it out, reading a name—"B. Parkinson"—before she snatches it back Speakers: Harry Potter, Draconia Malfoy
+  Harry Potter (cold realization; eyes fixed on the parchment, jaw tightening as the name registers): B Parkinson wrote this note, so Pansy is the one holding something over you. That explains why you vanished from the ball early.
+  Draconia Malfoy (desperate fury; hand snatching for the paper, knuckles white, breath sharp and shallow): Hand it back this instant, Potter, or I will make you regret reading a single word. My business with Pansy is mine alone.
+[3] Greenhouse Three (night-blooming) | Low angle through dripping orchids; moonlight fractures through glass panes | 14s
+  Pansy steps from behind a Venomous Tentacula, waving the same parchment: "Father's letter to yours. One owl and Draconia's betrayal is public." Speakers: Draconia Malfoy, Pansy Parkinson
+  Draconia Malfoy (cold fury masking rising panic; wand raised steady, jaw locked, eyes darting to the heavy greenhouse door): Parkinson, you would not recognise loyalty if it bit you. That parchment belongs to me and you will return it before anyone else sees a single line.
+  Pansy Parkinson (smug satisfaction laced with sharp warning; parchment held high between two fingers, lips curled, weight shifted to her back foot): Father's owl reaches Lucius before dawn unless you hand over the Slytherin prefect badge tomorrow. Consider it insurance for my silence.
+[4] Dungeons corridor near Slytherin common room | Handheld tracking behind Harry as he pulls Draconia toward a grating | 14s
+  Harry kicks loose a rusted grate revealing a smugglers' tunnel; they crawl inside as Mrs. Norris's eyes glow behind them Speakers: Harry Potter, Draconia Malfoy
+  Harry Potter (urgent focus; crouching low, wand tip lighting the damp stone as he gestures ahead): This tunnel connects straight to the seventh floor corridor if the map is accurate. We can bypass Filch entirely and reach the tower before midnight.
+  Draconia Malfoy (sharp resentment; jaw tight, brushing dust from her sleeve while refusing to meet his eyes): You expect me to crawl through filth because you kicked a grate open? My robes are ruined and Pansy holds my father's wrath in an envelope.
+[5] Smugglers' tunnel (emerging behind a tapestry on seventh floor) | Close-up on Harry's hand brushing a dusty vial on a shelf; cut to Draconia's recognition | 13s
+  In the tunnel's far end behind a tapestry, Harry shows Draconia a vial of stolen Polyjuice ingredients that he has tracked for three nights. Draconia realises Pansy used her to cover the thefts, and Harry realises Draconia was only trying to stop Pansy, not help her. Plain, easy to follow, no invented potion names beyond Polyjuice.
+  Harry Potter (grim realisation; holds up a glass vial, eyes narrowing as he watches her face shift from fury to shock): I found these Polyjuice components in Pansy's trunk three nights ago and tracked every missing ingredient since. She stole them to brew a disguise while making you the perfect distraction for her own escape.
+  Draconia Malfoy (stunned betrayal turning cold; hand rises to her throat, fingers tightening on the borrowed robe fabric as understanding hardens her jaw): She played me from the start, using my desperation to cover her theft while I scrambled to protect my father's name. We have been chasing the same snake in different directions this entire time.
+[6] Room of Requirement (manifested as a dead-end stone cell) | Wide from ceiling; door vanishes behind them, McGonagall's voice muffled through walls | 14s
+  McGonagall pounds the hidden door: "Open up! I know you're in there." Harry throws the Invisibility Cloak over Draconia, faces the door alone Speakers: Professor McGonagall, Harry Potter
+  Professor McGonagall (stern authority edged with exhaustion; square jaw, wand leveled at the seam of the hidden door, eyes narrowed against the dim torchlight): Open this door immediately, Potter. I will not tolerate students vanishing from a supervised event while a caretaker chases shadows.
+  Harry Potter (flat calm masking adrenaline; shoulders deliberately relaxed, hands open at his sides, gaze steady on her face): I slipped away for air, Professor. No one else is here and the cloak never left my trunk.
+[7] Seventh-floor corridor (outside Room of Requirement) | Tracking beside Harry as McGonagall marches him toward Gryffindor Tower | 14s
+  Harry hands McGonagall the pilfered vial without breaking stride: "Evidence, Professor. The real thief is still in the Room." Speakers: Harry Potter, Professor McGonagall
+  Harry Potter (calm and redirecting; hands the vial to McGonagall without breaking stride, eyes fixed ahead): This vial is evidence, Professor. The actual thief remains inside the Room of Requirement brewing Polyjuice right now. I found the bottle near the tapestry while Filch chased us down the hallway.
+  Professor McGonagall (sharp scepticism masking reluctant respect; accepts the vial, lips thinning, gaze boring into Harry's face): You expect me to believe a student stumbled onto a serious breach while violating curfew? You have earned detention every Saturday until June. We will discuss your sources at length then.
+[8] Owlery (Draconia arrives out of breath, still under the Cloak) | Static wide, owls scattering; a school barn owl drops a parchment at her feet | 14s
+  Draconia is ALONE in the Owlery (Harry was marched away to Gryffindor Tower in shot 7). A school owl drops a parchment; black ink writes new words on it. ONLY Draconia speaks: write exactly ONE line, her stunned whisper to herself as she reads it aloud. Speaker must be Draconia Malfoy.
+  Draconia Malfoy (stunned disbelief sharpening into cold resolve; eyes locked on the parchment, breath barely moving, fingers tightening around the cloak's edge): The ink moves without a wand, forming words I did not write. The message reads Polyjuice batch ready midnight Astronomy Tower signed with a single initial.
+  Draconia Malfoy (quiet fury hardening into deliberate purpose; jaw sets, parchment crushed into a fist, body turning toward the window): Pansy's threat bought me hours, but this note buys me a target. I will be in that tower before the clock strikes twelve.
+
+CLIFFHANGER: The parchment unfurls itself—black ink forming fresh words: "Polyjuice batch ready. Midnight. Astronomy Tower. —B."

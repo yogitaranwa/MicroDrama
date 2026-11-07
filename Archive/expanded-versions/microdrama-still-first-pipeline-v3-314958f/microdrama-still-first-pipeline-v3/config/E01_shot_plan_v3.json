@@ -1,0 +1,192 @@
+{
+  "episode": "E01",
+  "version": "v3",
+  "target_seconds": [
+    90,
+    105
+  ],
+  "shots": [
+    {
+      "shot": 1,
+      "duration": 6,
+      "dialogue": [],
+      "action": "Harry enters the candlelit Yule Ball alone and notices Draconia watching him.",
+      "camera": "slow wide push-in",
+      "props": [
+        "wand in pocket",
+        "dress robes"
+      ],
+      "expression": "guarded"
+    },
+    {
+      "shot": 2,
+      "duration": 7,
+      "dialogue": [
+        "Potter, don't turn around. Take my hand and move."
+      ],
+      "action": "Draconia crosses the floor, grabs Harry's hand and pulls him into the dancers.",
+      "camera": "tracking medium close-up",
+      "props": [
+        "Draconia wand hidden",
+        "Harry wand in pocket"
+      ],
+      "expression": "urgent"
+    },
+    {
+      "shot": 3,
+      "duration": 8,
+      "dialogue": [
+        "The floor marks anyone who stops. Keep dancing.",
+        "Tell me you're not serious."
+      ],
+      "action": "Ice arrows strike behind them as Draconia starts the waltz.",
+      "camera": "over-shoulder moving two-shot",
+      "props": [
+        "ice arrows",
+        "dance floor"
+      ],
+      "expression": "controlled fear"
+    },
+    {
+      "shot": 4,
+      "duration": 9,
+      "dialogue": [
+        "That reflection is copying us."
+      ],
+      "action": "Harry follows while scanning the ceiling and wand positions.",
+      "camera": "alternating close-ups",
+      "props": [
+        "dance floor",
+        "candles"
+      ],
+      "expression": "dry banter under pressure"
+    },
+    {
+      "shot": 5,
+      "duration": 9,
+      "dialogue": [
+        "The arrows land after the second beat.",
+        "Then move on the beat, not after it."
+      ],
+      "action": "Harry changes the step timing by half a beat and avoids the next volley.",
+      "camera": "low tracking two-shot",
+      "props": [
+        "ice arrows",
+        "orchestra"
+      ],
+      "expression": "pattern recognition"
+    },
+    {
+      "shot": 6,
+      "duration": 8,
+      "dialogue": [
+        "You knew what this was.",
+        "It's a Malfoy ward mark. I thought it was dead."
+      ],
+      "action": "They dodge together and start trusting the rhythm.",
+      "camera": "circling medium two-shot",
+      "props": [
+        "dance floor",
+        "candles"
+      ],
+      "expression": "relieved challenge"
+    },
+    {
+      "shot": 7,
+      "duration": 9,
+      "dialogue": [
+        "The music is carrying the curse. Cut those strings."
+      ],
+      "action": "Silver orchestra strings whip toward them and Harry raises his wand.",
+      "camera": "tight action close-up",
+      "props": [
+        "Harry wand",
+        "flexible silver strings"
+      ],
+      "expression": "focused"
+    },
+    {
+      "shot": 8,
+      "duration": 8,
+      "dialogue": [
+        "The suits of armor are moving. We need that trolley."
+      ],
+      "action": "Harry cuts two strings with a wand charm; Draconia snaps the third with her heel.",
+      "camera": "fast but readable action two-shot",
+      "props": [
+        "wand",
+        "flexible strings",
+        "drinks trolley"
+      ],
+      "expression": "sharp teamwork"
+    },
+    {
+      "shot": 9,
+      "duration": 9,
+      "dialogue": [],
+      "action": "The trolley hits armor and Harry spots the masked figure mirroring them.",
+      "camera": "whip pan into over-shoulder",
+      "props": [
+        "armor",
+        "masked figure"
+      ],
+      "expression": "realization"
+    },
+    {
+      "shot": 10,
+      "duration": 9,
+      "dialogue": [
+        "The floor is pulling us into the pattern.",
+        "Then we break it. Left side, three beats, red table."
+      ],
+      "action": "Harry breaks the waltz grid and redirects a spell toward the chandelier chain.",
+      "camera": "wide to close-up",
+      "props": [
+        "red table",
+        "chandelier",
+        "shield charm"
+      ],
+      "expression": "risky commitment"
+    },
+    {
+      "shot": 11,
+      "duration": 9,
+      "dialogue": [
+        "They've marked us both."
+      ],
+      "action": "The chandelier crashes, marks burn around their joined hands and the doors seal.",
+      "camera": "slow close-up on hands to faces",
+      "props": [
+        "green marks",
+        "silver marks",
+        "sealed doors"
+      ],
+      "expression": "fear and suspicion"
+    },
+    {
+      "shot": 12,
+      "duration": 6,
+      "dialogue": [
+        "You knew more than you said.",
+        "I sent you a warning. Someone made sure it never reached you."
+      ],
+      "action": "Draconia holds Harry's gaze as green light answers from the forest.",
+      "camera": "tight close-up",
+      "props": [
+        "window",
+        "forest light"
+      ],
+      "expression": "afraid but honest"
+    }
+  ],
+  "key_beats_per_shot": [
+    "entrance_or_start",
+    "dialogue_start",
+    "dialogue_mid",
+    "action_peak",
+    "reaction",
+    "exit_or_transition",
+    "continuity_insert"
+  ],
+  "candidate_pool_size": 252
+}

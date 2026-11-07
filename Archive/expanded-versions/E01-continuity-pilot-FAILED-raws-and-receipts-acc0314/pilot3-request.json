@@ -1,0 +1,13 @@
+{
+  "name": "E01-threeparts-consistency-pilot-shot3-ONCE",
+  "model": "minimax-h3",
+  "resolution": "720p",
+  "audio": false,
+  "end_seconds": 5,
+  "assets": {
+    "image_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/0cafd2b4-f049-41aa-a8c6-fc1873981bb0-image-2.png"
+  },
+  "style": {
+    "prompt": "Photorealistic single continuous full-body action, no cuts. Preserve both reference faces and exact costumes. The blonde woman grips the man's right hand and pulls him two quick sideways steps to the left. Show their hands stay connected, his shoes visibly slide then step, his robe swings, and both bodies clear their previous standing spot. One ice arrow crosses overhead and strikes the EMPTY floor behind their heels, scattering ice chips. She turns eyes toward him, he follows her pull. They remain upright, anatomically correct hands and legs. Show real displacement and impact, not a freeze frame or camera pan. Ballroom remains coherent. Camera stays wide enough to see their connected hands and both pairs of shoes. No text, no face replacement, no transformation."
+  }
+}

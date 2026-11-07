@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "seconds": 17,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "Distance has never protected either of us from the choices our families made long before we arrived at this castle. I stopped pretending otherwise the night Voldemort returned in the graveyard.",
+   "emotion": "quiet intensity",
+   "expression": "steps closer, fingers brushing cold stone, eyes fixed on her face without blinking"
+  },
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "My father chose his allegiance before I could walk, yet you stand there acting as though my silence tonight equals consent to everything he built. I have spent years untangling his decisions from my own.",
+   "emotion": "sharp defensiveness masking hurt",
+   "expression": "chin lifts, jaw tightens, one hand presses flat against the corridor wall behind her"
+  }
+ ]
+}

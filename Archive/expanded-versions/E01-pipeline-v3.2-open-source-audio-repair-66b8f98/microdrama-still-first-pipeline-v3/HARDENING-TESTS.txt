@@ -1,0 +1,49 @@
+test_clean_run_with_episode_receipt_approves (test_assemble_cli.AssembleCliTests) ... ok
+test_clean_run_without_episode_receipt_is_candidate_exit_2 (test_assemble_cli.AssembleCliTests) ... ok
+test_frozen_shot_exits_1_with_no_output (test_assemble_cli.AssembleCliTests) ... ok
+test_missing_receipt_exits_1_with_no_output (test_assemble_cli.AssembleCliTests) ... ok
+test_rejected_action_exits_1_with_no_output (test_assemble_cli.AssembleCliTests) ... ok
+test_freeze_flags_static_clip (test_detectors.DetectorTests) ... ok
+test_freeze_ignores_moving_clip (test_detectors.DetectorTests) ... ok
+test_gap_math (test_detectors.DetectorTests) ... ok
+test_no_false_silence_on_tone (test_detectors.DetectorTests) ... ok
+test_opening_silence_detected (test_detectors.DetectorTests) ... ok
+test_quiet_gap_flagged_against_full_mean (test_detectors.DetectorTests) ... ok
+test_apostrophe_escaped (test_hardening.HardeningTests) ... ok
+test_changed_action_invalidates_receipt (test_hardening.HardeningTests) ... ok
+test_detector_failure_is_not_clean_report (test_hardening.HardeningTests) ... ok
+test_duplicate_beat_rejected (test_hardening.HardeningTests) ... ok
+test_duplicate_receipts_rejected (test_hardening.HardeningTests) ... ok
+test_existing_output_preserved (test_hardening.HardeningTests) ... ok
+test_freeze_cannot_be_downgraded_by_stale_receipt (test_hardening.HardeningTests) ... ok
+test_future_review_pauses (test_hardening.HardeningTests) ... ok
+test_historical_custom_assembler_blocks_before_encoding (test_hardening.HardeningTests) ... ok
+test_line_outside_beat_rejected (test_hardening.HardeningTests) ... ok
+test_lowlevel_bypass_blocked (test_hardening.HardeningTests) ... ok
+test_nonfinite_and_boolean_time_rejected (test_hardening.HardeningTests) ... ok
+test_output_alias_refused_before_probe (test_hardening.HardeningTests) ... ok
+test_path_newline_rejected (test_hardening.HardeningTests) ... ok
+test_submit_scripts_block_before_secret_or_network (test_hardening.HardeningTests) ... ok
+test_timeline_gap_rejected (test_hardening.HardeningTests) ... ok
+test_wrong_beat_invalidates_receipt (test_hardening.HardeningTests) ... ok
+test_apostrophe_path_actually_decodes (test_hardening.SignalEdgeTests) ... ok
+test_assembly_rejects_short_audio_and_wrong_geometry (test_hardening.SignalEdgeTests) ... ok
+test_full_silence_is_not_a_clean_open (test_hardening.SignalEdgeTests) ... ok
+test_missing_audio_and_black_are_reported (test_hardening.SignalEdgeTests) ... ok
+test_cost_estimate_is_explicit_floor (test_pipeline.PipelineTests) ... ok
+test_right_sized_candidate_plan_is_explicit (test_pipeline.PipelineTests) ... ok
+test_script_time_notation_is_valid (test_pipeline.PipelineTests) ... ok
+test_v3_script_has_no_short_fragments (test_pipeline.PipelineTests) ... ok
+test_action_absent_is_strict_reject (test_reviewgate.ReviewGateTests) ... ok
+test_complete_receipt_approves_clean_shot (test_reviewgate.ReviewGateTests) ... ok
+test_episode_mechanical_defect_blocks_approval (test_reviewgate.ReviewGateTests) ... ok
+test_episode_needs_playback_and_listen_receipt (test_reviewgate.ReviewGateTests) ... ok
+test_freeze_is_hard_reject_even_with_receipt (test_reviewgate.ReviewGateTests) ... ok
+test_gate_check_counts (test_reviewgate.ReviewGateTests) ... ok
+test_missing_receipt_pauses_for_review (test_reviewgate.ReviewGateTests) ... ok
+test_stale_receipt_after_byte_change_pauses (test_reviewgate.ReviewGateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 12.813s
+
+OK

@@ -1,0 +1,105 @@
+{
+ "title": "The Confession in the Tower",
+ "hook": "Harry Potter and Draconia Malfoy burst from the Yule Ball's thunderous music into the silent Grand Staircase, mid-argument: she accuses him of public humiliation; he claims she stole his jacket.",
+ "beats": [
+  {
+   "n": 1,
+   "sheet_step": "HOOK",
+   "location": "Grand Staircase",
+   "camera": "Handheld two-shot tracking backward as they storm away from the Ball's muffled bass",
+   "action": "Draconia jabs a finger at Harry's chest; he catches her wrist to stop her pacing, both breathing hard in formal robes",
+   "turn": "Their petty row masks a shared need to escape the Ball immediately",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 9
+  },
+  {
+   "n": 2,
+   "sheet_step": "INCITING",
+   "location": "Third-floor corridor near Filch's office",
+   "camera": "Low-angle steadycam pushing in as lantern light sweeps toward them",
+   "action": "Filch's wheezy cough echoes; he rounds the corner, lantern raised, squinting at them past curfew",
+   "turn": "Filch's presence forces them to flee together instead of parting ways",
+   "speakers": [
+    "Argus Filch"
+   ],
+   "seconds": 8
+  },
+  {
+   "n": 3,
+   "sheet_step": "ESCALATION 1",
+   "location": "Astronomy Tower spiral staircase",
+   "camera": "Tight close-up on their feet climbing stone steps, then whip-pan up to faces",
+   "action": "Draconia halts mid-flight, yanks her arm free, and refuses to go higher; Harry grips the cold iron railing",
+   "turn": "She admits she must meet someone in the library tonight—someone Lucius would forbid",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 10
+  },
+  {
+   "n": 4,
+   "sheet_step": "ESCALATION 2",
+   "location": "Library Restricted Section antechamber",
+   "camera": "Over-the-shoulder through shelves as Pansy Parkinson materializes from the shadows",
+   "action": "Pansy blocks the doorway, holding a gilt-edged invitation, sneering about Draconia's 'secret tryst'",
+   "turn": "Pansy threatens to owl Lucius unless Draconia hands over the 'stolen' cabinet key she palmed from Filch",
+   "speakers": [
+    "Pansy Parkinson",
+    "Draconia Malfoy"
+   ],
+   "seconds": 11
+  },
+  {
+   "n": 5,
+   "sheet_step": "REVERSAL",
+   "location": "Library main hall behind the checkout desk",
+   "camera": "Static wide; Harry steps from the invisibility cloak's shimmer at the desk's edge",
+   "action": "Harry reveals he witnessed Draconia slip the brass key into her sleeve earlier—he didn't just 'notice details', he followed her",
+   "turn": "Draconia realizes Harry lied about 'chasing thefts'; he was tracking her, not the ingredients",
+   "speakers": [
+    "Harry Potter",
+    "Draconia Malfoy"
+   ],
+   "seconds": 12
+  },
+  {
+   "n": 6,
+   "sheet_step": "ALL IS LOST",
+   "location": "Corridor outside the Great Hall",
+   "camera": "Dutch-angle handheld rushing with them as they sprint from McGonagall's voice",
+   "action": "McGonagall's silhouette appears at the far doors; Draconia shoves the key into Harry's hand and bolts toward the dungeons",
+   "turn": "Trust shattered: she uses him as a decoy, leaving him holding evidence of theft from Filch's cabinet",
+   "speakers": [
+    "Professor McGonagall"
+   ],
+   "seconds": 10
+  },
+  {
+   "n": 7,
+   "sheet_step": "CHOICE",
+   "location": "Dungeon corridor outside Slytherin common room",
+   "camera": "Extreme close-up on the brass key in Harry's palm; pull back to reveal him pressing it into the stone serpent's mouth",
+   "action": "Harry speaks Parseltongue to open the hidden passage, choosing to hide the key inside Slytherin walls rather than hand it to McGonagall",
+   "turn": "He commits to protecting Draconia's secret—and the unknown potion—at the cost of his own prefect standing",
+   "speakers": [
+    "Harry Potter"
+   ],
+   "seconds": 13
+  },
+  {
+   "n": 8,
+   "sheet_step": "CLIFFHANGER",
+   "location": "Moaning Myrtle's bathroom (abandoned entrance)",
+   "camera": "POV through the cracked sink pipe: a single drop of silver liquid falls from the key's hollow hilt into a waiting vial",
+   "action": "The key was never a key—it's a siphon; the 'potion' is Polyjuice, and the hair inside belongs to Albus Dumbledore",
+   "turn": "Someone is brewing the Headmaster; the Yule Ball distraction was the last ingredient window",
+   "speakers": [],
+   "seconds": 14
+  }
+ ],
+ "cliffhanger": "The brass key is a siphon dripping Polyjuice made with Dumbledore's hair—someone plans to become the Headmaster before midnight."
+}

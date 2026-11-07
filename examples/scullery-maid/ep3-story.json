@@ -1,0 +1,227 @@
+{
+ "title": "The Billionaire's Scullery Maid - Episode 3",
+ "aspect": "9:16",
+ "style": "Cinematic photorealistic live-action drama, glossy vertical short-drama look, 9:16 portrait framing, shallow depth of field, high contrast, warm natural skin tones, consistent faces and wardrobe",
+ "voices": {
+  "Chloe": "soft, low, steady young woman in her twenties, calm even when hurt, a slight tremble when emotional",
+  "Ethan": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+  "Peterson": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+  "Young Chloe": "bright, kind, gentle young teenage girl",
+  "Young Ethan": "hoarse, wary, quiet teenage boy",
+  "Mark": "crisp, efficient, respectful man in his thirties",
+  "Vivian": "silky, sweet, slow woman in her late forties with poison underneath",
+  "Sasha": "sharp, mocking, gossipy young woman",
+  "Leo": "weak but warm young teenage boy",
+  "Grandfather": "old, gravelly, commanding man in his seventies"
+ },
+ "hook_title": "The janitor became the CEO's assistant overnight...",
+ "end_card": "He let her in. Episode 4 next...",
+ "scenes": {
+  "street": {
+   "set": "a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade",
+   "plate": "street-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade. Empty, no people. No text, no watermark."
+  },
+  "penthouse": {
+   "set": "a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves",
+   "plate": "penthouse-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves. Empty, no people. No text, no watermark."
+  },
+  "mansion": {
+   "set": "a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall",
+   "plate": "mansion-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall. Empty, no people. No text, no watermark."
+  },
+  "office": {
+   "set": "a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows",
+   "plate": "office-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows. Empty, no people. No text, no watermark."
+  },
+  "boardroom": {
+   "set": "a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors",
+   "plate": "boardroom-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors. Empty, no people. No text, no watermark."
+  },
+  "airstrip": {
+   "set": "a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing",
+   "plate": "airstrip-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing. Empty, no people. No text, no watermark."
+  },
+  "rooftop": {
+   "set": "the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below",
+   "plate": "rooftop-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below. Empty, no people. No text, no watermark."
+  },
+  "study": {
+   "set": "a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window",
+   "plate": "study-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window. Empty, no people. No text, no watermark."
+  }
+ },
+ "shots": [
+  {
+   "id": "e3-s02-appoint",
+   "scene_id": "office",
+   "location": "office",
+   "seconds": 6,
+   "visual": "Morning. Chloe in her janitor uniform has just stepped out of the elevator; Mark greets her with a polite nod. Only Mark speaks; Chloe stares in disbelief.",
+   "camera": "Push-in on Mark.",
+   "sound": {
+    "ambience": "a busy office: quiet keyboards, murmurs, a phone ringing far away",
+    "effects": [
+     "an elevator ding"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mark",
+      "voice": "crisp, efficient, respectful man in his thirties",
+      "line": "Miss Gray, you're Mr. Vance's personal assistant now.",
+      "delivery": "polite, formal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e3-s03-sasha",
+   "scene_id": "office",
+   "location": "office",
+   "seconds": 6,
+   "visual": "Sasha smirks to a colleague and eyes Chloe up and down. Only Sasha speaks.",
+   "camera": "Medium close-up.",
+   "sound": {
+    "ambience": "a busy office: quiet keyboards, murmurs, a phone ringing far away",
+    "effects": [
+     "a nail tapping on the desk"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Sasha",
+      "voice": "sharp, mocking, gossipy young woman",
+      "line": "The janitor got promoted? I wonder what she did for that.",
+      "delivery": "mocking whisper"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e3-s04-work",
+   "scene_id": "office",
+   "location": "office",
+   "seconds": 6,
+   "visual": "Chloe, now in a neat navy dress, quietly fixes a mistake in a report; behind the glass Ethan watches her with a faint smile. Nobody speaks.",
+   "camera": "Slow rack focus from Chloe to Ethan.",
+   "sound": {
+    "ambience": "a busy office: quiet keyboards, murmurs, a phone ringing far away",
+    "effects": [
+     "a pen scratching",
+     "keyboards"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e3-s06-thief",
+   "scene_id": "office",
+   "location": "office",
+   "seconds": 8,
+   "visual": "Vivian, in a white suit and pearls, just off the elevator, spots Chloe, narrows her eyes and whispers to Peterson through a sweet smile. Only Vivian speaks; Peterson nods.",
+   "camera": "Close two-shot, Vivian is talking.",
+   "sound": {
+    "ambience": "a busy office: quiet keyboards, murmurs, a phone ringing far away",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Vivian",
+      "voice": "silky, sweet, slow woman in her late forties with poison underneath",
+      "line": "My stepdaughter, here? Call her a thief in that meeting. Get her thrown out.",
+      "delivery": "sweet, poisonous whisper"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e3-s07-podium",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Afternoon. A big board meeting is underway; Peterson stands smugly at the podium presenting a new project, silent mid-gesture.",
+   "camera": "Wide, slow push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "a projector hum",
+     "murmuring board members"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e3-s08-door",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "The door quietly opens; Chloe walks in carrying a tray with Ethan's coffee; every head turns. Nobody speaks.",
+   "camera": "Medium shot.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "a heavy door opening",
+     "cup clinking on the tray"
+    ],
+    "dialogue": []
+   }
+  },
+  {
+   "id": "e3-s09-trash",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 8,
+   "visual": "Peterson stops mid-sentence and scoffs loudly, pointing at the door. Only Peterson speaks.",
+   "camera": "Medium shot, push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [],
+    "dialogue": [
+     {
+      "speaker": "Peterson",
+      "voice": "loud, nasal, arrogant middle-aged man, stammering and whiny when scared",
+      "line": "What is this trash doing in a board meeting? Who let a janitor in here?",
+      "delivery": "loud, sneering"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e3-s10-idid",
+   "scene_id": "boardroom",
+   "location": "boardroom",
+   "seconds": 4,
+   "visual": "Ethan leans back in his leather chair, radiating absolute authority. Only Ethan speaks.",
+   "camera": "Slow push-in.",
+   "sound": {
+    "ambience": "a hushed conference room, air conditioning, papers shuffling",
+    "effects": [
+     "the leather chair creaking"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ethan",
+      "voice": "deep, quiet, controlled young man in his late twenties, ice cold to enemies, very soft and gentle with Chloe",
+      "line": "I did.",
+      "delivery": "calm, cold, final"
+     }
+    ]
+   }
+  }
+ ],
+ "frame_for": {
+  "e3-s02-appoint": "e3-elevator",
+  "e3-s03-sasha": "e3-sasha",
+  "e3-s04-work": "e3-work",
+  "e3-s06-thief": "e3-vivian",
+  "e3-s07-podium": "e3-podium",
+  "e3-s08-door": "e3-door",
+  "e3-s09-trash": "e3-podium",
+  "e3-s10-idid": "e3-ethan-chair"
+ }
+}

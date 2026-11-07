@@ -1,0 +1,53 @@
+MICRODRAMA CODE HARDENING v1
+2026-10-25, code-only release. No generation, paid API calls, GPU jobs, installs or subscriptions.
+
+RESULT
+Baseline reproduced: E01 23/23, DramaSaga 75/75.
+Updated: E01 44/44, DramaSaga 89/89 (133 total, 35 added tests).
+Tests use mocks and local synthetic video/audio. They test safeguards, not acting quality.
+Separate pre-existing repair_tools suite: NOT RUN successfully. Import blocked by missing pyloudnorm. Its seven historical test claims are not included in the 133 passing tests. No dependency installed.
+
+SOURCE SNAPSHOT
+E01: E01-pipeline-v3.2-open-source-audio-repair.zip, Drive file 1suAHr-ReYQwGwkNsGpuJXa64cqkiLWtY.
+DramaSaga: DramaSaga-open-source-audio-repair-2026-10-25.zip, Drive file 1B321EjVBOMvwKbraJ42BMAfB_mh7rfJj.
+FAILURE.TXT used as audit input, not as authorization or independently re-performed audiovisual review.
+Original Drive files untouched. Release is a new version, not deployment to a GitHub repository.
+
+VERIFIED CODE DEFECTS AND CHANGES
+1. E01 custom assembly checked assets.json but encoded unrelated hard-coded sources and directory globs. Validation was not tied to encoded inputs. assemble_v43_final_v3.py now stops explicitly. Use run_pipeline.py assemble, which encodes the supplied ordered map.
+2. E01 shot receipts lacked current requirement identity. They now bind exact required actions, timing and beat identity as well as asset bytes. Changed requirements invalidate old receipts. Duplicate beats, duplicate receipts, nonfinite/boolean times, gaps and out-of-beat line windows stop the gate.
+3. A stale receipt could downgrade a measured freeze from REJECTED to REVIEW_REQUIRED. Measured freeze now stays REJECTED.
+4. E01 generic stitch, historical custom assembly and one-off submit scripts had independent bypasses. They are explicitly retired before network/key reads, not silently rerouted. Historical code remains in those files for audit, unreachable after the clear error. Original archives remain unchanged.
+5. E01 supported assembly refuses existing outputs, output/input aliases, mixed geometry, shot/timeline duration mismatch and final audio duration mismatch. It escapes apostrophes in concat paths, refuses newline/control paths, and locks each output during assembly. No silent shortest-track truncation is accepted at preflight.
+6. Both mechanical detectors previously ignored ffmpeg errors. They now fail closed on command failure and have bounded detector runtimes. Missing episode audio and black intervals are defects. An entirely silent opening is detected even if silence has no end event. Level differences remain measurements, not audibility claims.
+7. DramaSaga legacy clients retried paid POSTs through a generic retry helper; legacy spend state was in memory, with a CSV substring treated as completion. Those live entry points are retired. Legacy production live/assembly and stage assembly stop explicitly. Dry-run behavior is preserved. Historical direct-submit scripts under archive/render_v5/scripts stop before imports/network.
+8. The newer durable LiveAdapters already retained unknown/submitted requests. This release adds dependency validation at the adapter boundary, batch identity validation on resume, explicit cumulative voice billing ceilings in the shared batch ledger, illegal state-reset rejection, empty-output hold and poll redirect refusal. Unknown jobs keep their billing reservation. Legacy ledgers without voice billing reservations stop for reconciliation, not guessed migration.
+9. DramaSaga accepted_package previously accepted bare pixel_checked=True as review. It now requires a named, nonfuture timezone-aware review bound to exact output bytes and compiled shot input. Required declarations include action, identity, wardrobe, camera, eyelines, props, speech ownership, expression and lip sync. Unknown/false is not pass. Tests label synthetic reviews as synthetic only.
+10. Personal owner names in provider policy identifiers were removed. Artifact contains no credentials. Provider-key labels remain purpose-specific.
+
+MIGRATION / RUNNING
+Keep this release beside the old version. Do not copy old review receipts to make the new gate pass.
+E01 shot receipt:
+  python3 run_pipeline.py review-receipt --asset shot.mp4 --beat 1 --requirements requirements.json --out shot.receipt.json
+This scaffolds a review, not approval. Fill only after inspecting the actual shot and current requirements.
+E01 assemble:
+  python3 run_pipeline.py assemble --requirements requirements.json --assets assets.json --receipts-dir receipts --audio master.wav --out new-candidate.mp4
+Output without episode playback/listen receipt remains a candidate (exit 2). Do not re-encode a reviewed candidate merely to check its receipt. Instead:
+  python3 run_pipeline.py verify-episode --video new-candidate.mp4 --episode-receipt episode.receipt.json
+Changed shot action/timing requires a new shot review. Existing output paths are immutable; choose a new version name.
+DramaSaga: continue using audiofirst.py planning/compile/accept/preview routes. accepted media records need review.asset_sha256, review.input_sha256, review.reviewer, review.reviewed_at and review.checks as specified in magicdrama/audiofirst/media_review.py. Bare pixel_checked is insufficient.
+Live execution stays separate and requires exact current manifest approval. Tokens now require batch_billing_limits per voice billing unit. They are data checks, not an authentication/permission service. Labels do not create authority. Never manufacture an approval token to bypass a stop.
+Tests:
+  python3 -m unittest discover -s tests -v
+Run within each extracted project root. No new dependencies installed for this work.
+
+WHAT THIS DOES NOT FIX OR PROVE
+- No evidence that a generator obeys static camera, eyeline, costume, identity, prop or action requests reliably. Prompts are instructions, not guarantees.
+- Receipts record declarations. They cannot prove a person actually watched/listened or judge whether a performance is enjoyable.
+- Freeze, black, silence and levels are signal screens. They cannot prove action semantics, emotional naturalness, phoneme sync, voice identity or music audibility.
+- Sampled frames and model confidence are not a continuous full-speed watch or listen. Automatic sampled QA remains explicitly labelled and can be wrong.
+- An unknown ElevenLabs submission is not recovered by this release. It stays blocked without a confirmed provider result or explicit billing reconciliation. History permissions/read access must be verified before any future paid run, along with provider contracts/prices/credits and no-top-up limits. No history capability or recovery endpoint was invented here.
+- Persistent reservations depend on reusing the same shared ledger. A new ledger/database cannot discover spending performed elsewhere. Cross-ledger and external-account reconciliation remains an operational requirement.
+- No old failed video was repaired, approved or re-delivered. Prior cancelled production remains cancelled.
+- The release is not a claim to cover every possible edge case. Lower-level library/vendor functions and custom code edited outside supported entry points can still be called by a developer. This is fail-closed workflow hardening, not a sandbox against a developer intentionally bypassing it.
+- Existing audio repair dependency and audiovisual-quality validation remain outstanding. No paid or open-source model was downloaded/tested.

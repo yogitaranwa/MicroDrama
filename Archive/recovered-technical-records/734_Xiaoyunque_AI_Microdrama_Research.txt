@@ -1,0 +1,250 @@
+XIAOYUNQUE / AI MICRODRAMA RESEARCH
+Started 25 October 2026, 21:50 IST
+Status: completed research pass, 25 October 2026, 22:03 IST. No paid tests, subscriptions, generation or installs.
+
+FINAL RESEARCH SUMMARY
+The watermark is a credible Xiaoyunque lead, not proof of the exact reel's model or editing workflow. Public documentation describes shared character/scene assets, character audio references, smart preview, partial reshoots and 3D staging. India/+91 access, exact free usage, Hindi/accent quality, checkout and end-to-end results remain unverified.
+
+Our strongest lesson is control, not more negative prompts: the rejected argument and stronger continuity pilot still drifted in wardrobe, framing and eyelines. Open-source reference selection, action-state contracts, motion guides and audio-led performance are useful mechanisms to investigate, not a free turnkey season engine. The actual VACE trial failed before synthesis; the original H3 graph has materially different audio/timed-guide controls but unresolved compatible compute/install/rights constraints. The old H100 forecast is not transferable.
+
+Keep production stopped. No model/route has earned a finished-quality verdict from this research. Any future test needs a separate execution decision, compatible rights-cleared setup, current account/billing verification and real playback/listening of the exact artifact. Measure total spend including rejects and manual edits per accepted second.
+
+FAILURE.TXT was updated separately in place, preserving the original audit and appending corrections, later failures, source-level defects and precisely limited code-hardening evidence. The 133 passing tests reported by the code worker are mock/synthetic safeguards, not repaired videos. Seven audio-repair tests blocked on pyloudnorm are not counted.
+
+The dated milestones below retain the research trail. Later corrections/status updates supersede earlier pending steps. Full findings, source links and unknowns follow.
+
+Original question: verify the tool clue in Runaway Bride and find practical evidence-backed paths.
+Reel: https://www.instagram.com/reel/DeQb7wBhKtj
+Watermark reported from inspected frames: 由小云雀AI创作生成. This does not establish its entire production pipeline.
+
+MILESTONE 1 - 25 October 2026, 21:55 IST
+
+1. IDENTIFICATION AND PROVENANCE
+The reel watermark names 小云雀 (Xiaoyunque). This is a real product lead, not proof of its model version or the reel's complete pipeline.
+The ByteDance jobs site has a role titled AI Native Product Manager - 小云雀Pippit:
+https://jobs.bytedance.com/campus/position/7659264490416933173/detail
+The product at https://xyq.jianying.com/ exposes Xiaoyunque tutorials, short-drama creation and SMS/Douyin login. Its linked agreement names Shenzhen Lianmeng Technology Co., Ltd. and affiliates as operator.
+An additional domain, xiaoyunque.com, reproduces product/pricing/manual content and claims ByteDance affiliation. That domain's self-claim alone is NOT identity verification. Recommendations here rely on the jianying product surface and independently hosted sources rather than treating that extra domain as authenticated.
+
+2. VERIFIED PUBLIC DOCUMENTATION, NOT A GENERATION TEST
+https://xyq.jianying.com/tutorials/web-manual
+The manual describes TXT/DOCX/pasted scripts up to 100,000 Chinese characters; requirement confirmation; global character and scene libraries; per-episode storyboard editing; synthesis/export. Character images can be uploaded, and character appearance/voice can be changed in the library. Storyboard references use @character assets. These are documented controls, not guarantees that faces or voices remain correct.
+https://xyq.jianying.com/tutorials/seedance-2-5
+The current manual describes 4-30s single generations; up to 30 image, 10 video, 10 audio references (50 combined); timestamp control, partial editing and extensions. These limits do not mean a 116s reel is a single generation.
+https://xyq.jianying.com/tutorials/short-drama-agent-smart-preview
+Smart preview plans a group of shots before video generation. It requires more than 2 selected clips and no more than 9 referenced assets for the selected group. Those workflow limits differ from the model's total reference limits.
+
+3. INDIA ACCESS: NOT YET PROVEN
+Observed the public login panel: phone/SMS or Douyin, no visible country selector. The phone input has maxlength=11. No number was entered, code requested, account created or credits spent. This raises an access obstacle for +91 users; it does NOT establish that all possible India access routes are blocked. A remote browser opening a public site is not an India-network/account test.
+
+4. CURRENT LISTED PRICING, NOT A PURCHASE QUOTE
+https://xyq.jianying.com/pricing
+Fetched page lists Basic monthly: CNY38 first month, CNY79 next renewal, 830 credits/month, automatic renewal, cancel anytime. Standard: CNY100 first month, CNY209 next renewal, 2320 credits/month. Basic annual CNY759, 830 credits/month. Free login daily credits are advertised; exact daily allotment and what a free account can generate are not established.
+Headline rates as low as CNY0.19/second are conditional promotions, not a two-minute episode quote. Page mixes annual, quarterly, monthly tiers and time-limited bonuses. Promotion text references October 13-26. Do not multiply that headline by episode length and promise a budget: asset generation, model/resolution/reference settings, rejected takes and edits all matter. No checkout, payment eligibility or tax check performed.
+
+NEXT: finish exact voice-reference restrictions, privacy/rights terms, independent failure reports and viable modular/open-source alternatives. Research only. No MicroDrama restart.
+
+MILESTONE 2 - 25 October 2026, 21:57 IST
+
+5. THE CONTROLS THAT MATTER FOR OUR USE CASE
+A. Character and place consistency
+The product manual describes global assets, multi-episode references, manual replacement and @asset links. This is a meaningful difference from simply sending disconnected text prompts to a renderer. It does not prove long-season consistency. The manual itself contains a FAQ about inconsistent characters and recommends explicitly referencing the character in the affected storyboard.
+Source: https://xyq.jianying.com/tutorials/web-manual
+
+B. Voice identity and acting
+The character canvas manual explicitly allows uploading a reference audio file to a character node, in addition to a text description of voice. It does not establish lossless preservation of an uploaded performance, phoneme-accurate lip sync, fixed audio duration across shots or guaranteed emotion.
+Source: https://xyq.jianying.com/tutorials/short-drama-agent-canvas
+The model-ecosystem page advertises Seed Audio and 20 languages. That page does not enumerate all 20. English examples and language-strengthening guidance appear in the prompt manual. Hindi support and Indian-accent quality remain unverified.
+Sources: https://xyq.jianying.com/model-ecosystem
+https://xyq.jianying.com/tutorials/seedance-2-5-prompt-guide
+The prompt guide advises naming dialogue language, regional variant/accent and delivery. It explicitly discusses English dialogue being spoken in Chinese and suggests strengthening the language instruction. So non-Chinese dialogue is a supported target, but not a guaranteed result.
+For acting, the guide recommends specifying visible or audible behavior: gaze, brows, mouth, breathing and hand movements, with triggers and progression. This is useful direction, not evidence of performance reliability.
+
+C. Space, action and camera control
+A documented 3D director tool supports static staging, camera positions, FOV, action presets, drawn movement paths and frame-based keyframes in a preview timeline. It exports still/dynamic references back to the canvas. This can reduce ambiguity about who stands where before generating.
+Source: https://xyq.jianying.com/tutorials/short-drama-agent-3d-director
+Important distinction: a frame-based PREVIEW timeline does not make the final generative output frame-deterministic. The prompt guide says timestamps allocate event rhythm, not frame-accurate cuts. It also says video editing cannot guarantee frame-by-frame matching; output duration can differ from input by up to about 0.3 seconds; extension volume may differ slightly; exact text and frame times need pre/post-production.
+Source: https://xyq.jianying.com/tutorials/seedance-2-5-prompt-guide
+
+D. Repair rather than full reroll
+Partial reshoot/edit is documented, including billing for the selected segment, not necessarily an entire original clip. Exact minimum billable duration, allowed edit lengths and successful fixes still need a live task quote/test.
+Source: https://xyq.jianying.com/tutorials/web-manual
+
+E. Existing-footage remaking is a separate route
+The remake manual describes uploading an existing short drama, identifying characters/scenes/props, changing style/target region, using motion references and then synthesizing edited segments. This offers an alternative to wholly text-originated acting.
+Source: https://xyq.jianying.com/tutorials/short-drama-remake
+There is NO evidence that the supplied Runaway Bride reel used this route. Use owned/licensed source footage only. Remaking a video is not permission to copy it.
+
+6. RIGHTS AND PRIVACY: IMPORTANT BEFORE UPLOADING PRIVATE MEDIA
+The agreement linked directly by the product login:
+https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/a40822a6-30c0-4037-919d-49230f660a25.html
+Updated March 27, 2026; effective April 3, 2026.
+Operator named: Shenzhen Lianmeng Technology Co., Ltd. and affiliates.
+Section 9.2: inputs must be original or lawfully authorized; rights in inputs/outputs remain with the user or lawful rights holder to the extent allowed by law. This is not a blanket guarantee of copyright protection or third-party clearance.
+Section 9.3: user grants a worldwide, free, non-exclusive, multi-level sublicensable right to use inputs, outputs and published information to provide services, improve products/services/models and ensure security/stability. It offers feedback/email contact if the user does not want that use. A verified zero-retention or no-training toggle was NOT found.
+Section 9.4 grants broader promotion/adaptation/display rights over PUBLISHED content. Section 9.6 says published uploaded content, including voices/audio/dialogue, may be usable by other users through product features. Private input and public publishing are not equivalent, but neither should be assumed confidential by default.
+Practical consequence: do not upload private faces, cloned voices, client scripts or unreleased work without checking the relevant controls/rights first. Use original or consented test assets.
+
+Privacy policy linked by the same login:
+https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/503995fb-a603-4549-91a0-8316a9a2f1de.html
+Section 5.1 says personal information collected/generated during its operations in mainland China is stored there; overseas transfer, if any, follows applicable law. Section 5.2 describes necessary retention and deletion/anonymization with legal exceptions. This is not evidence of an India-specific data-processing agreement.
+
+7. INDEPENDENT AND COMMUNITY CHECKS, INCLUDING BAD RESULTS
+A March 23, 2026 report by Wang Shanshan / 叁拾代, carried by Sohu, tested three episodes (~6,000 Chinese characters). It describes 8 characters and 3 principal scene libraries; stable-looking single-person shots and reasonable two-person staging, but confused supporting-character faces in multi-person frames that needed manual prompt changes. It reports around 47 seconds generated before the test budget ran out and warns that internal showcase users had different credit/queue conditions.
+https://www.sohu.com/a/1000086438_122659110
+Caution: the article's cost wording is internally awkward: body reports about CNY75 actual spend while an image caption refers to a CNY39 first-month membership. Its old 1,200-credit plan also differs from today's 830-credit Basic page. Treat the article as historical evidence of correction burden, not a current price quote or reliable cost-per-minute.
+
+An April 8, 2026 hands-on creator review praises integrated script/asset/storyboard editing but says the basic annual membership's monthly credits did not cover a two-minute episode. Its historical plan/price differs from today's page.
+https://news.qq.com/rain/a/20260408A01SUF00
+
+A February 21-25 community thread reports generation/network errors, moderation problems and an account penalty on Jimeng; replies disagree on causes and one reports recovery. These are anecdotes, NOT proof of a current Xiaoyunque outage, discrimination against overseas users or a reliable workaround. Suggestions in comments about identity verification were not followed.
+https://www.reddit.com/r/Seedance_v2/comments/1ranvi6/are_jimeng_and_xiaoyunque_down_for_seedance_20/
+
+A March 19 APPSO hands-on report describes DOCX upload, blueprint/character lifecycle management and storyboard editing. Useful workflow corroboration, but its positive quality claims are not our own benchmark.
+https://news.qq.com/rain/a/20260319A04ZDH00
+
+An August 20 TopMarketing walkthrough describes localization using asset replacement, white-model motion references and multilingual audio. Its promotional tone and unverified performance/engagement figures mean it is supporting workflow evidence, not an independent quality guarantee.
+https://www.itopmarketing.com/info23199
+
+8. AUTOMATION/API LEAD: INVESTIGATE, DO NOT INSTALL YET
+A repository at https://github.com/Pippit-dev/cli describes short-drama task submission, reference uploads, progress querying, result downloads, character-canvas commands and generation workflows. It describes web authorization and bearer-key access, and points to the xyq.jianying.com service.
+This is a code-source claim, not yet a verified official vendor SDK endorsement, security review, successful account route or usable API grant. No package/script was installed or executed; no keys were collected or exposed. A repository pointing at a vendor domain does not authenticate itself.
+Do not conclude that Xiaoyunque has no automation, but equally do not plug this into the stopped project until provenance, permitted usage, billing and authentication have been verified.
+
+9. SAME-FAMILY INTERNATIONAL LEAD: PIPPIT
+The ByteDance jobs title mentions 小云雀Pippit. Pippit's own English-language homepage offers video/image agents and references, language/duration/aspect customization, talking-photo examples and Seedance-labeled examples.
+https://www.pippit.ai/
+Its pricing page advertises a free plan with no credit card required; the fetched annual Starter listing shows USD101 promotional price vs USD168, auto-renewal, 1,575 monthly credits. Exact promotional eligibility and India availability were not confirmed. The plan table was partly flattened in extraction, so do not treat every listed feature as included in Free.
+https://www.pippit.ai/pricing
+Crucially, the fetched English product surface did NOT establish that it exposes the same global short-drama character library, 3D director or complete Xiaoyunque workflow. Pippit is worth checking as an access lead, not a proven interchangeable international edition. No account created.
+
+MILESTONE 3 - 25 October 2026, 22:00 IST
+Expanded by request: open-source repositories tied to our actual failures.
+
+10. RANKED PATHS, WITH THEIR LIMITS
+Ranking is by fit to our failures and ability to learn safely, not a measured image-quality leaderboard. Nothing below was installed or run in this research.
+
+(1) Fix production state and evidence first, not another renderer reroll.
+Keep exact audio/shot requirements, immutable canonical wardrobe/prop/location references, ordered cut coverage, durable job states and fail-closed review. Compare start and end state across cuts: who stands where, which hand holds what, where they look and what changed. This addresses preventable orchestration defects; it cannot force a generative model to obey.
+
+(2) Xiaoyunque as a workflow reference and conditional hosted candidate.
+Closest documented end-to-end match found here: global assets + character audio references + storyboard preview + local shot repair + optional 3D/motion staging. Main obstacle is unverified +91 access/eligibility and actual cost/reliability. Documentation is worth borrowing as production method even if service access fails. No vendor selected, trial purchased or quality promise made.
+
+(3) Open-source scene planning: ViMax, Jellyfish, Toonflow/VideoClaw.
+Use selected mechanisms rather than replacing our whole project because a demo looks good.
+
+ViMax: https://github.com/HKUDS/ViMax
+MIT source. Current README describes Idea2Video, Script2Video, Novel2Video, storyboard/reference selection and interactive revision/session reuse. Provider calls and compute are still required; open source does not mean free generation. Its reference selector explicitly chooses appropriate character view, prior scene images, environment and camera composition, at most 8 references. That directly addresses using a mismatched portrait or unrelated background for every shot.
+Inspected source: https://github.com/HKUDS/ViMax/blob/main/agents/reference_image_selector.py
+Fit: a reference-selection baseline for our eyeline/background/wardrobe drift. Limit: selecting good references does not verify generated pixels or physical action. Keep missing-view coverage explicit rather than substituting a front view and labeling it a profile. The large pipeline file was not fully audited here. Model support listed in a roadmap is not proof the exact backend is ready.
+Source: https://github.com/HKUDS/ViMax/blob/main/pipelines/idea2video_pipeline.py
+
+Jellyfish: https://github.com/Forget-C/Jellyfish
+Apache-2.0 source; current repository and action-beat module read. It separates reusable entities/shot preparation and structured action beats. Useful for representing a table shield as phases instead of one vague prompt: before state, grip/lift, rotated table, visible protection, consequences. A schema can require phases; only media review can establish they occurred.
+Inspected source: https://github.com/Forget-C/Jellyfish/blob/main/backend/app/services/studio/action_beats.py
+
+Toonflow: https://github.com/HBAI-Ltd/Toonflow-app
+Current source says MIT, with explicit historical version exceptions: before v1.0.8 AGPL-3.0; v1.0.8-v1.1.8 Apache-2.0 plus additional agreement. Do not transfer current licensing to an arbitrary older snapshot. Third-party models/assets have separate rights. Current docs explicitly say API calls may cost money, and local models need their own environment/compute.
+Its continuity checklist covers clothes, carried items, injuries/emotions, relative positions, entry/exit directions, eyelines, lighting, action start/end, prop hand/count, and matching sound to visible events. It says that without actual image/video one can review only the plan, not nonexistent quality/lips/motion. This is a useful model for our acceptance rubric, not an automated solution.
+Inspected source: https://github.com/HBAI-Ltd/Toonflow-app/blob/master/packages/teams/storyboardTeam/knowledge/continuity.md
+
+VideoClaw: the inspected staging prompt checks relative position/facing, furniture relationships, impossible crossings and eyelines, while forbidding story/dialogue/shot-count changes during a spatial repair. Useful scope discipline for our own continuity validator. This is a text-plan reviewer, not proof of video consistency.
+https://github.com/HITsz-TMG/VideoClaw/blob/main/video-claw/video-claw/backend/prompts/storyboard/staging_continuity_zh.txt
+
+Maintenance caveat: these are live moving branches fetched on Oct 25, 2026. Visible activity/news and file existence do not prove responsiveness, security, release stability or compatibility. An implementation decision needs a pinned commit, lockfile/dependency review, minimal reproducible environment and a bounded test. No star-count ranking, blanket security approval or unperformed test is claimed.
+
+(4) Controlled action: VACE and Wan Animate, not generic prose-only I2V.
+
+VACE: https://github.com/ali-vilab/VACE/tree/main
+https://github.com/ali-vilab/VACE/blob/main/UserGuide.md
+Reference-to-video, video-to-video and masked video editing; task conditioning can include structural controls. The model table distinguishes 1.3B ~81 frames at 480x832 and 14B ~81 frames at 720x1280. Apache-2.0 for listed Wan-based variants; LTX variant RAIL-M, and original-model terms still apply. Official setup says tested Python3.10.13/CUDA12.4/PyTorch>=2.5.1, with git dependencies. That exact installation is not automatically permitted under our registry-only rule.
+Fit: staged/masked action experiment with owned action/blockout reference, not free-form hope that 'flip table' works. NOT proof of correct contact, weight, anatomy or causal impact. Our earlier free test already failed in runtime compatibility before synthesis; see section 12. Do not call it a failed model-quality test, or an untried alternative.
+
+Wan2.2 Animate: https://github.com/Wan-Video/Wan2.2
+https://github.com/Wan-Video/Wan2.2/blob/main/wan/modules/animate/preprocess/UserGuider.md
+The project releases character animation/replacement with movement/expression replication. Preprocessing produces pose/face controls; replacement also uses background/mask controls. Guide warns simplified pose retargeting is not guaranteed and must be inspected. It introduces real source-motion work, not just one portrait. Use owned/consented performance; reference-video rights matter.
+Hardware caveat: the official 24GB example is TI2V-5B, not proof that Animate-14B runs within 24GB. Large 14B T2V/S2V examples specify 80GB-class memory. Offloading may change speed/memory but was not benchmarked here. Do not substitute TI2V numbers for Animate or promise free Colab production.
+License: repository Apache-2.0; extra encoders, pose detectors and optional FLUX.1-Kontext-dev path have their own terms. Dependency/model rights must be checked separately.
+
+(5) Audio-driven dialogue: LongCat Avatar 1.5 / MultiTalk, with lip-only alternatives.
+
+LongCat-Video-Avatar-1.5:
+https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5
+https://github.com/meituan-longcat/longcat-video
+Current model card describes audio-text/image-to-video, continuation, single/multi-stream audio, 480p/720p, Whisper-Large audio encoder and INT8 option. It says weights MIT. Example commands use two processes/GPUs; exact free-hardware feasibility and end-to-end memory/runtime remain unmeasured. 'Production-ready' is the author's claim, not our verdict. Strong fit for preserving an audio-led exchange; not proof of wardrobe, body physics or season continuity. Multi-stream handling still requires deliberate silence/overlap/timeline preparation.
+
+MultiTalk: https://github.com/MeiGen-AI/MultiTalk
+Apache-2.0 repository. Multi-stream audio + reference image + prompt; 15s generation and multi-person conversation. README distinguishes stated 480p/720p model capability from implementation details: current code says 480p inference supported, 720p needs multi-GPU. Low-VRAM RTX4090 path is documented, not a guarantee on free T4. It now points to LongCat Avatar 1.5, so compare maintained upstream paths before committing to the older implementation. Not a whole-drama engine.
+
+LatentSync: https://github.com/bytedance/latentsync
+Apache-2.0 code; README minimum inference VRAM 8GB for v1.5, 18GB for v1.6. Guidance may improve lip accuracy but can increase distortion/jitter. This can be a close-face mouth-sync experiment after the source shot passes, not a way to create missing faces/actions/emotion. Check weight/dependency terms separately.
+
+MuseTalk: https://github.com/TMElyralab/MuseTalk/blob/main/README.md
+MIT code; README says trained models may be used commercially subject to dependencies, while test media are noncommercial research only. Stated limits include 256x256 face region, imperfect moustache/lip-shape/color preservation and jitter from single-frame generation. Face restoration can alter identity and must not be assumed harmless. This is a targeted lip patch candidate, not evidence of whole-scene consistency.
+
+WhisperX: https://github.com/m-bain/whisperX
+Current repository label BSD-2-Clause. Forced alignment/word times can help catch missed words, speaker-window coverage and clipped dialogue; it is NOT emotion, timbre, acting or phoneme-to-mouth proof. README warns overlapping speech is weak, diarization imperfect, and dictionary-missing characters/numbers may not align. Language-specific alignment models have separate licenses, including an unresolved licensing issue discussed here:
+https://github.com/m-bain/whisperX/issues/962
+
+(6) Restoration is late-stage polish, not semantic repair.
+https://github.com/ByteDance-Seed/SeedVR/blob/main/readme.md
+Restoration/super-resolution may improve presentation but cannot establish that a trolley hit armor, a table became a shield or a character looked at the correct person. It can invent details. Do not use sharpness as acceptance evidence or run it over rejected actions to hide defects.
+
+11. EVIDENCE-BACKED COMMERCIAL ALTERNATIVES, NOT FREE EXECUTION PLANS
+Runway Gen-4 References supports up to three reference images for IMAGE generation. Prepare accepted character/location frames, then explicitly animate them. Do not conflate still-image consistency with final-video consistency.
+https://help.runwayml.com/hc/en-us/articles/40042718905875-Creating-with-Gen-4-Image-References
+Runway's performance app accepts a recorded/uploaded performance and target character, optionally voice: potentially more direct acting control than silent I2V + lip patch, but requires an owned/consented performance and evaluation.
+https://runway.com/apps/add-performance
+Fetched pricing lists 125 one-time free credits; Standard USD15 monthly or USD12/month billed annually, 625 monthly credits. Credit/model access may differ; no free account tested. API pricing is a separate balance: Act Two USD0.05/s, 15-credit minimum at USD0.01/credit. These are list rates, not all-in accepted-film cost.
+https://runway.com/pricing
+https://dev.runway.com/pricing
+The current API pricing also lists Seedance 2.5 (480p USD0.20/s,720p0.30/s,1080p0.68/s, reference-video surcharges). This is a potentially different service-access route, not the Xiaoyunque Agent, proof of Indian account eligibility or guaranteed reference policy parity.
+
+Vidu reference-to-video has an explicit subject/reference contract and audio output flag, more suitable for a programmable reference baseline than a generic text-only endpoint. Q3 docs list 1-7 images, named subject references, 3-16s standard/turbo duration, 540p/720p/1080p and an audio boolean default false; Q3-drama is listed as a separate 2-16s model.
+https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/reference-to-video
+API price page: CNY0.03125/credit, listed smallest top-up CNY500 for16,000 credits, one-year validity. Q3-turbo reference720p10credits/s; Q3 reference720p12credits/s; Q3-mix720p24credits/s. Cheaper off-peak may wait up to48h and is not appropriate for urgent production. These API prices do not establish web subscription/free-tier pricing; web pricing extraction was empty. No top-up or account created.
+https://platform.vidu.com/docs/pricing.md
+No route is chosen for purchase. Rejected successful generations, preparation, editing and human review must be counted, not only list generation seconds.
+
+12. OUR OWN FAILURES: EVIDENCE-BOUND SUMMARY
+Sources downloaded/read: original FAILURE.TXT; rejected33.6s argument; failed silent pilot; both reference/request/receipt archives; both current code archives; VACE failure record; original H3 graph/runtime and source comparison. This research inspected sampled pixels/temporal sheets, source and records. It did NOT perform a full-speed continuous watch or hear emotional audio.
+
+Original episode: the detailed historical audit remains intact in FAILURE.TXT. Its suggested 5-shot/1.5-2.5k repair estimate is superseded: it was incomplete, depended on old/unverified pricing, and shortening/retiming does not create missing action. Shot numbering in that audit differs from original script numbering in places; identify by action plus script beat/line, not a naked shot number. A separate audio mix candidate is not a fixed video or emotional approval.
+
+33.6s argument test: requests explicitly preserve face/costume/room and off-camera gaze, but sampled pixels show a plain tie/waistcoat becoming striped tie/sweater neckline, repeated inward framing, near-lens gaze and changing background. Review notes report one motion + one standard sync per shot, no rerolls; historical reconciliation totals2,536 existing credits (1,728 generation+808 sync). These receipts are historical records, not fresh billing verification. Mouth movement in samples is not phoneme or emotion proof.
+
+Continuity pilot: even stronger locked-camera/zero-zoom/never-lens wording did not make observed framing and eyelines stable. This weakens the theory that more negative prompting alone solves the failure. The action sample shows body displacement, connected hands and an ice effect, but exact two-step movement/safe floor impact is unverified and must not be marked accepted. No sync/batch started. Net962 credits is the reconciled record; initial reference-jobs entries show two50 charges while final record says one50 after a moderation refund. Refund was not independently rechecked in live billing.
+
+VACE free test: actual free T4 allocated; run ended before synthesis on an inference-tensor in-place-update compatibility error during prompt embedding. Not a VRAM failure, action-quality failure or successful free replacement. No playable output, no rerun; cleanup documented. Source:
+[private-project-source]
+
+Source audit: historical custom assembler checks assets.json but encodes hardcoded PRO/PROD inputs and sorted CONFORMED directory files. Therefore a valid manifest could approve different bytes than output. Old review receipt hashes the asset but not the current beat requirements, so a changed action/timing contract could reuse stale semantic approval. Old client retries POSTs; old governor stores batch balances in memory and treats a CSV substring hit as completed. These are real engineering weaknesses, distinct from renderer quality. Final hardening evidence was later reviewed; see the code status update below for exact scope and limits.
+
+Original H3 difference: full original files exist, missing only from the six-file export. The graph is R2V with audio/video references and runtime-added fixed-audio zero mask/timed guide controls, not the same one-image I2V+separate mouth patch. It remains untried here, not proven superior. The supplied default runtime uses NVFP4 encoder and BlackwellRTXPRO6000/B200. Previous H100 season forecasts do not apply unchanged. Custom-node installs, weight rights/territorial terms, compliant deployment/storage and compatible compute remain unresolved. Do not revive the old budget or promise an ETA.
+[private-project-source]
+https://docs.comfy.org/tutorials/video/minimax/minimax-h3-native
+https://docs.comfy.org/built-in-nodes/MiniMaxH3AddGuide
+https://docs.comfy.org/built-in-nodes/MiniMaxH3ReferenceToVideo
+https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE
+
+13. WHAT WOULD CHANGE THE RECOMMENDATION
+A useful next experiment, only after a separate authorized execution decision, must test one materially different control mechanism on original/consented assets: (a) reference-driven quiet two-person exchange; (b) staged prop action with before/contact/after states; (c) adjacent scene transition. Freeze story/audio/reference inputs where supported, record any deviations, total spend including rejects, accepted seconds, elapsed/manual-edit time and critical errors. Require full real-time playback and listening for the exact delivered artifact. A small success is not a 50-episode guarantee.
+At present: keep production stopped, preserve usable writing/audio/assets, harden evidence/job handling, and choose by controllability plus cost per ACCEPTED second. No paid test, new account, model installation or generation was performed during this research.
+
+OPEN QUESTIONS
+- Exact creator workflow/model version/rejected takes/editing effort for the supplied reel: not found.
+- Xiaoyunque +91 registration, India eligibility/network/payment and any verified official alternate login: unresolved.
+- Exact free credit allowance, per-task quote, final watermark/export restrictions and refund route: unresolved.
+- Hindi/Indian-accent quality, exact-audio preservation and phoneme sync: untested.
+- Public CLI publisher binding/security and rights-compatible installation: unresolved.
+- Local/free GPU runtime, dependency and model-weight licenses for each chosen pinned path: not established by repository availability.
+- No common-input output benchmark was run, so none of the vendors/repos is declared best quality.
+
+22:01 IST CODE STATUS UPDATE
+Versioned hardening report received and patched source archives downloaded/read. Report says baseline23+75 tests reproduced, final44E01+89DramaSaga=133mock/synthetic tests,35added. Seven separate audio-repair tests blocked by missing pyloudnorm and NOT included. The research pass corroborated selected changed source paths, not an independent full test rerun. Gates/retired unsafe entry points are safeguards; no rejected video, renderer quality, historic missing ElevenLabs take or cross-account billing was repaired by these tests.
+Private versioned source folder:
+[private-project-source]
+E01:
+[private-project-source]
+DramaSaga:
+[private-project-source]

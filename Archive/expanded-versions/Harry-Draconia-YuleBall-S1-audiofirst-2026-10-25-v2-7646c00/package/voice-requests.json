@@ -1,0 +1,491 @@
+{
+  "cast": {
+    "harry": {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "trait_profile": {
+        "character_id": "harry",
+        "language": "English",
+        "delivery": [
+          "natural conversational delivery"
+        ],
+        "provider_voice_id": null,
+        "status": "trait_profile_only_voice_catalog_not_connected",
+        "selection_rule": "Match a licensed English provider voice to these traits when keys are authorized; do not clone an unconsenting person."
+      },
+      "status": "selected_catalog_preview_not_episode_tested"
+    },
+    "draconia": {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "trait_profile": {
+        "character_id": "draconia",
+        "language": "English",
+        "delivery": [
+          "natural conversational delivery"
+        ],
+        "provider_voice_id": null,
+        "status": "trait_profile_only_voice_catalog_not_connected",
+        "selection_rule": "Match a licensed English provider voice to these traits when keys are authorized; do not clone an unconsenting person."
+      },
+      "status": "selected_catalog_preview_not_episode_tested"
+    }
+  },
+  "episodes": [
+    {
+      "episode_id": "e01",
+      "spoken_characters": 330,
+      "submitted_characters": 366,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[sighs] I came for ten quiet minutes, not a war reunion.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[angry] Tell your scar to stop picking my partners.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "That was not my spell.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[nervous] Then congratulations, Potter. The floor hates both of us.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "It is not locking us out. It is inviting us back in.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Every crack lands on a beat. This is choreography, not damage.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[excited] Then let us give it a count it did not expect.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e02",
+      "spoken_characters": 336,
+      "submitted_characters": 395,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[angry] One rehearsal. Then we burn the card.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] Try not to lead like you are chasing a Snitch.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "The steps are older than the school.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] [nervous] Potter, why is she still dancing?",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "The reflection is half a count ahead. It is showing the next move, not the last one.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] Finally, a partner who admits when I am right.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[nervous] We have nine minutes before the guests are readmitted.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e03",
+      "spoken_characters": 321,
+      "submitted_characters": 355,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "This is not music. It is a Slytherin warning.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[sad] I know that voice. I have heard it my whole life.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "Then listen, but do not follow it alone.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] It knows her name.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[sad] My grandmother sang this when the family vault was about to bite.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] She sang it forward. Someone buried her inside it backward.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "Stay with my voice, not hers. Count my steps.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e04",
+      "spoken_characters": 334,
+      "submitted_characters": 406,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[nervous] Stay on the carved steps. The gaps are moving.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] If I fall, I am taking your reputation with me.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[excited] I have you. Move on my count.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[angry] [sad] No. My family paid for this dance in secrets.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[nervous] Pattern changes on the seventh beat. Wait for my mark.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] Your seventh beat is late. My sixth is better.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[excited] Do not pull away from it. Step into the mark and make it carry you.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e05",
+      "spoken_characters": 439,
+      "submitted_characters": 473,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "What does it want from us?",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] A confession. Mine would burn what is left of my name.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Then we find another way. No one gets sacrificed tonight.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[sad] Remember that choice when you hate me tomorrow.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "It does not need your name. It needs a true exchange. That is a loophole.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[sad] Some loopholes are just prettier traps, Potter.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] My family fed the song a Potter memory. I buried the proof.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Then we make it ask for the truth when you are ready, not when it is hungry.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e06",
+      "spoken_characters": 331,
+      "submitted_characters": 390,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[nervous] Do not break the rhythm. It is counting us.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[excited] Left spin, now. Do not let go.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] You are heavy for a savior.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] It wants me alone.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[excited] Four beats forward, two sideways, one dramatic disaster. I adore a predictable curse.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "The conductor is not leading. It is copying something under the floor.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] Try to look impressed, Harry. I just outdanced a haunting.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e07",
+      "spoken_characters": 356,
+      "submitted_characters": 400,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "You tried to stop this before I ever knew it existed.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[sad] I failed. In my family, that is the same as helping.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Why does it have my memories?",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] Because it did not wake for me. It woke for you.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "You were a child. Why carry it alone?",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] Because admitting fear feels like handing someone a knife.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[sad] It stole the safest thing I had.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[excited] Then we steal it back. Loudly, badly, together.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e08",
+      "spoken_characters": 368,
+      "submitted_characters": 422,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[angry] It is using the old champion. Wand up.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[excited] Its left turn is late. Break on three.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[angry] Not him. Not again.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "I hid the debt because I was ashamed. I am not hiding now.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[angry] Break on three. I will hold its pattern; you break its rhythm.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] Three is so predictable. Try now.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] I hid the proof because I wanted one choice my family did not make for me.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Then choose now. Not because the card says it.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e09",
+      "spoken_characters": 372,
+      "submitted_characters": 435,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[sad] I spent years blaming easy targets because the real ones were dead.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[softly] Then we are both done being haunted by other people's names.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[whispers] One dance. No prophecy, no debt. Just us.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] I hate that you dance better when terrified.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[nervous] If this ends badly, I am blaming your footwork.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "[softly] For once, I do not want the safest plan. I want this dance.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[laughs] Of course the castle waits for the exact wrong second.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    },
+    {
+      "episode_id": "e10",
+      "spoken_characters": 346,
+      "submitted_characters": 396,
+      "missing_voice_selections": [],
+      "request": {
+        "endpoint": "/v1/text-to-dialogue/with-timestamps",
+        "body": {
+          "model_id": "eleven_v3",
+          "inputs": [
+            {
+              "text": "[nervous] Do not make this noble, Potter. It was one dance.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Then give me one honest thing before you go.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[whispers] I wanted the card to choose us.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "Draconia, the forest is answering.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[nervous] [laughs] One dance, one haunting, zero sensible decisions. A perfect evening.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            },
+            {
+              "text": "I asked for honesty, not a review of my decisions.",
+              "voice_id": "4dZr8J4CBeokyRkTRpoN"
+            },
+            {
+              "text": "[excited] That is either an invitation or a threat. Wonderful. My favorite kind.",
+              "voice_id": "ZF6FPAbjXT4488VcRRnw"
+            }
+          ]
+        }
+      },
+      "timing_rule": "Reject timestamps not supported by actual WAV; local word timing/onset checks before captions",
+      "live_enabled": false
+    }
+  ],
+  "paid_requests": 0,
+  "license_and_model_access": "Recheck provider catalog, permission and surcharge before execution",
+  "key_policy": "ElevenLabs only with exact tagged-character approval; never Magic Hour image/video key",
+  "emotion_note": "Performance tags are instructions, not proof of emotional acting",
+  "live_enabled": false
+}

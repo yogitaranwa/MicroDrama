@@ -1,0 +1,40 @@
+id,scene,draft_seconds,framing,action,purpose,dialogue_cue,status
+s01sh01,corridor_classroom,5,corridor_wide,Harry stops at the locked classroom door.,"He hears an ordinary parental call, not a horror scream.",Lily offscreen: Harry. You will be late.,not_generated
+s01sh02,corridor_classroom,5,harry_close,Harry almost answers; Hermione enters at the edge of frame.,Vulnerable recognition.,Hermione: What are you doing? Harry: You heard her?,not_generated
+s01sh03,corridor_classroom,6,classroom_wide,Door opens to reveal basin and table; keep geography clear.,Temptation is isolated within a real space.,,not_generated
+s01sh04,corridor_classroom,6,tag_insert,Ministry evidence tag beside basin.,"Readable text composited in post, not generated.",,not_generated
+s01sh05,corridor_classroom,5,hermione_close,Hermione notices the date and looks toward Harry.,Alert concern.,Harry. The date.,not_generated
+s01sh06,corridor_classroom,8,reach_two_shot,Harry reaches toward the silver before warning finishes.,His choice causes entry to memory.,,not_generated
+s02sh01,potter_kitchen_memory,7,kitchen_wide,"Ordinary breakfast: toddler at table, Lily beside him.","Domestic calm, no fantasy spectacle.",James laughs offscreen.,not_generated
+s02sh02,potter_kitchen_memory,6,lily_toddler,Lily wipes porridge from cheek and catches slipping spoon.,Unremarkable maternal care is what Harry lacks.,,not_generated
+s02sh03,potter_kitchen_memory,6,harry_observes,"Harry stands apart watching, unable to move closer.",No smile; overwhelmed by normality.,,not_generated
+s02sh04,potter_kitchen_memory,8,return_harry_close,Cut back to matching classroom position; Hermione asks.,Harry initially conceals what he saw.,What did you see? Nothing. They were having breakfast.,not_generated
+s02sh05,potter_kitchen_memory,8,wrist_watch_insert,Harry reaches again; Hermione arrests wrist near stopped watch.,Reveal consequence using a stable insert.,Your watch.,not_generated
+s03sh01,classroom_investigation,6,evidence_insert,Hermione studies seal beside Harry.,Continue established screen direction.,Department of Mysteries...,not_generated
+s03sh02,classroom_investigation,8,harry_close,Harry admits Lily looked at him.,He defends what he wants to believe.,She looked at me... I was standing there.,not_generated
+s03sh03,classroom_investigation,8,hermione_reverse,Hermione asks for specific remembered words.,"Test a contradiction, not exposition lecture.",What did she say?,not_generated
+s03sh04,classroom_investigation,10,harry_reverse,Harry cannot recall words but describes room.,Unease intrudes on certainty.,I do not remember. Yellow curtains...,not_generated
+s03sh05,classroom_investigation,8,shadow_insert,Harry lowers hand; shadow lags; Hermione raises wand.,Separate shadow plate and composite.,Step away from it.,not_generated
+s04sh01,bargain,5,harry_touches,Harry touches memory despite warning.,"An active, consequential mistake.",,not_generated
+s04sh02,bargain,8,lily_approaches,Lily sees older Harry and approaches.,Warmth before manipulation.,You look like him.,not_generated
+s04sh03,bargain,7,harry_memory_close,Harry listens to joke about his father.,Almost accepts touch.,Your father. When he thinks he is in trouble.,not_generated
+s04sh04,bargain,6,silver_wrist,Classroom insert: silver coils over wrist.,"Tracked practical-style VFX, no extra hands.",,not_generated
+s04sh05,bargain,6,hermione_pull,Hermione braces against table and pulls.,Clear contact; film with staged separate coverage if needed.,,not_generated
+s04sh06,bargain,5,lily_warning,Lily notices disturbance; Harry reacts.,She redirects his trust.,Someone is hurting you.,not_generated
+s04sh07,bargain,4,door_impact,Harry pulls away; cut to Hermione at door with impact sound.,Imply fall with safe separated shots.,,not_generated
+s04sh08,bargain,4,confrontation_two_shot,Harry accuses her; she reveals injury.,End anger with uncomfortable silence.,You could have broken it. You have not asked me why I am bleeding.,not_generated
+s05sh01,price,7,inscription,Turn over tag: inscription appears.,Tracked text with readable hold.,,not_generated
+s05sh02,price,8,hermione_explains,Hermione quietly explains exchange.,One clear rule.,It is not taking time. It is taking memories.,not_generated
+s05sh03,price,10,memory_test_reverse,"Shot reverse shot: where did they meet, what was she seeking?","Harry starts certain, then stalls.",On the train...,not_generated
+s05sh04,price,10,harry_blank,He cannot recall the troll; hold on his face.,Do not replace with magical insert.,Tell me about the troll.,not_generated
+s05sh05,price,10,kitchen_intrusion,Kettle on previously empty desk; window light changes.,Composite intrusions around locked geography.,Kettle whistle.,not_generated
+s06sh01,choice,10,lily_apparition,"Lily stands behind basin, overlapping kitchen light.",Emotional obstacle between wand and basin.,You do not have to lose me again.,not_generated
+s06sh02,choice,10,harry_question,Harry asks childhood nickname; Lily hesitates.,Her certainty breaks for one beat.,What did you call me? When I was little.,not_generated
+s06sh03,choice,7,hermione_truth,Hermione admits she cannot know.,Honesty against false comfort.,I do not know either.,not_generated
+s06sh04,choice,10,harry_decides,"Harry looks between both faces, then takes offered hand.",Decision reads before effect.,,not_generated
+s06sh05,choice,8,wand_insert,"Wand points toward trapped hand and bowl, not Lily face.",Contact geometry prepared as separate plate.,Reducto.,not_generated
+s06sh06,choice,10,destruction,"White flash, stone break sound; cut to debris.",Do not ask one model to simulate whole destruction.,,not_generated
+s07sh01,aftermath,10,floor_two_shot,Hermione kneels beside Harry; show injured palm consistently.,Relief without celebration.,Neville's toad. Do you remember the kitchen?,not_generated
+s07sh02,aftermath,10,harry_loss,Harry cannot recall kitchen; asks about voice.,The victory has a permanent emotional cost.,The memory might have started from something real. What did she sound like?,not_generated
+s07sh03,aftermath,6,doorway_departure,Hermione helps Harry leave and extinguishes lights.,Relationship restored in an action.,,not_generated
+s07sh04,aftermath,4,empty_room,Dark basin fragments; kettle whistle returns.,One restrained final threat.,,not_generated

@@ -1,0 +1,40 @@
+NO-CHARGE BLOCKING ASSESSMENT -26OCT2026 21:10IST
+Question: can the s17/s18 two-character exchange be made spatially coherent using existing footage and four reference-test images, without inventing camera geography?
+
+ANSWER
+Not as a demonstrated face-to-face live-action exchange from the inspected source material. A limited audio-led storyboard/animatic can be assembled, explicitly labeled as such, but crops and inserts cannot establish missing positions or correct existing on-camera mouth/gaze/wardrobe. Do not animate the four candidates or buy another isolated repair by default. No new generation in this assessment, no production changes.
+
+WHAT IS OBSERVED
+Actual downloaded current s16b1,b2,b3 video samples, existing s17b1/s18b1/s18b2 samples and all four full-resolution new images inspected. Source-lock.json records exact video hashes/timestamps. Evidence sheet and three readable sections saved. This is spatial sample inspection, not continuous playback, acting, audio or sync acceptance.
+- s16b1 at0.1/0.9/1.7s: chandelier descends left-of-center, masked figure at window center. Neither Harry nor Draconia visible. Cannot locate their future positions from this shot.
+- s16b2 at0.1/2/4s: Draconia alone with floor wreckage behind; looks toward/near lens then her palm then near lens. No partner visible or reliable Harry mark.
+- s16b3 at0.1/1.2/2.3s: two hands together on icy table, male dark sleeve at left and green sleeve at right. Establishes close hand placement at that table for this detail. Does NOT establish face orientation, full body marks, common eye height or camera axis for later closeups. Do not infer side-by-side vs opposed bodies solely from hands.
+- s17b1 at0.1/1.4/2.8s: Harry left/center, looks toward near screen-right/near-lens; dark foreground sliver at right doesn't establish Draconia. Large intact overhead chandelier, bowtie and warm hall remain visible.
+- s18b1 at0.1/2.1/4.3s: Draconia holds a mostly lens-directed gaze in warm populated hall. No reliable reciprocal look toward established Harry mark.
+- s18b2 at0.1/0.7/1.3s: icy empty aftermath hall, collapsed floor fixture, tall window/green light, no leads. Good state evidence but not a master of actors.
+- New candidates: directions now oppose, Harry straight necktie and aftermath present. All use almost the same frontal architectural backdrop. This is not proof of incompatible geometry in every conceivable staging, but it fails to establish the requested reverse-camera geography. Harry-A foreground shoulder ambiguous. Portrait direction alone is insufficient.
+
+CAN AN EDIT FIX IT?
+1. Cropping on current video can hide an overhead fixture and some wardrobe, but cannot rotate Draconia eyes toward Harry, recover missing shared positions or prove lips match locked takes. Tightening also loses environmental evidence. Not a coherent-scene acceptance.
+2. Cropping/reframing candidates and matching eye heights can make a readable screen-direction animatic, using original locked lines. It would remain static illustration with unknown mutual geography and wrong prompted emotional intent. Do not advertise as improved acted scene or lip-sync result.
+3. Covering lines entirely with existing hands/wreckage insert gives audio-led coverage and avoids mismatched on-camera lips, but removes the dramatic face confrontation requested by s17/s18. Reusing hand insert could falsely imply names are newly appearing a second time. It is a different creative edit, not a silent fix.
+4. Mirroring Draconia flips anatomy/hair/gown/background and does not establish correct reverse room view or partner line. No mirror/cutout/composite manufactured as observation.
+
+MISSING EVIDENCE / CONTROL
+- A common postcrash master or defensible scene map showing both actor positions relative to icy table, wreckage/window and conversational axis.
+- Matching camera-side/height/distance commitments for two closeups, with a real offscreen eyeline mark, not 'look at the other person' alone.
+- State/wardrobe/identity authority independent of erroneous source pixels.
+- Correct dramatic direction: Harry controlled alarm/accusation, Draconia frightened but holding ground. Test prompts' dry relief/wry disbelief were task-owned drift. Four images prove limited reference control, not dramatic correctness.
+- Correct motion/locked-take mouth performance remains untested; no frame pass establishes it.
+
+PROPOSED PLAN, NOT OBSERVED CANON
+If scene design is resumed, first make one explicit blocking decision using existing room landmarks, then use it for BOTH views. A useful proposal is two standing marks near the icy table on the near side of the wreckage, face-to-face along one axis; two cameras stay on one side of that axis and share eye height. Harry's look-right/Draconia's look-left follows the chosen marks. This is a design option, NOT recovered actor placement. No new cost or generation implied. A simple source-overlay/diagram could be reviewed before any rendering, and it must remain labeled proposed. Alternatively retain a stylized audio-led storyboard if the user wants a no-spend rough instead of film-quality conversation.
+
+RECOMMENDATION
+Keep current production unchanged. Retain the four-image test as evidence that explicit state and necktie overrides affect output, with its geography/drama failures recorded. Do not stack more independent closeup calls. Resolve shared blocking and intended delivery form first. We have not shown a coherent finished two-character exchange can be recovered from existing material alone.
+
+SOURCE LINKS
+s16b1 [private-project-source]
+s16b2 [private-project-source]
+s16b3 [private-project-source]
+s17/s18 originals and all candidate refs saved in companion research input/media packages; source hashes in source-lock.json. Story requirements from current sanitized shot-manifest-wan30.json s16-s18. No original private conversations/tool traces included.

@@ -1,0 +1,32 @@
+﻿MAGICDRAMA E01 - RECOVERY RECOMMENDATION (27 Oct 2026, advice only)
+No spend, generation, code change or vendor change is part of this. 1,957 credits stay held. No promise of "perfect".
+
+
+WHAT WE KNOW (sampled frames and files, no playback, no listening)
+- All 37 current clips used still-first: a start frame, then Wan 3.0 image-to-video. Each start frame was its own generation. Some faults were already in the stills and some appeared in the animation.
+- Faults seen in the stills: bow tie where the manifest pins a straight dark necktie (settled canon, not a question).
+- Faults seen between a clip's first and last frame: s03-b1 and s09-b1 end in a different wide framing, floor and arrangement than their start frame. s13-b1 gains a glowing grid overlay late in the clip. s14-b1 starts with a shield around Draconia and ends without it; whether that is an error depends on the script's intended state and duration, which I did not check.
+- Written acceptance controls and per-clip checks did not produce a convincing performance. They protected spend and state, not scene quality. The audio/silence numbers in the audit are indirect measurements, not heard failures, and not proven mouth offsets.
+
+
+WHAT TO DO (one scene, not the episode)
+The proposed blocking package already exists: Drive "Proposed-postcrash-scene-design-and-controls.zip" (id 1kAk2ptf3-RijULXbMX1SLrgihiJjKE8i). It is the s17/s18 post-crash conversation:
+- Harry (s17, 3s, locked take e01-l16-harry): "Draconia. Look at me. What did you do?" Controlled alarm and accusation.
+- Draconia (s18, 4.5s, locked take e01-l17-draconia): "I spent weeks trying to warn you. You never once listened." Frightened but holding her ground.
+- One room, one common master first, Harry screen-left looking right, Draconia screen-right looking left, both close cameras on the same side of the axis at matched eye height. Wardrobe from the manifest: red-lined black robes, white shirt, straight dark necktie, round glasses; emerald gown, braided updo.
+- Locked takes stay as they are. Short, restrained movement only. No inserts to hide a mismatch: the scene has to hold continuity itself.
+- This package is a proposed layout on real aftermath pixels. Actor marks, camera positions and the reverse-side room are not proven by anything we have. It is a schematic, not footage.
+
+
+THE SINGLE FREE NEXT STEP
+Review that package's two boards and decide the master composition (who stands where in the iced aftermath, necktie visible, correct gaze direction) before anything is generated. This needs no new work from me and no spend. Nothing else in the 37-clip set should be audited or reshot until that scene proves the method.
+
+
+IF THE SCENE IS GENERATED LATER (separate decision, not made here)
+- It needs fresh final costs, the voice/lip-sync remainder and a fresh yes from the user. No automatic reshoots, no retries without approval.
+- A passing master and matching reverse close-ups would be the first proof. Lip-sync was never run; whether the mouths read as speaking those takes needs the user's eyes and ears. I cannot confirm that from frames.
+
+
+LIMITS
+- I cannot hear audio or watch continuous playback. Acting, lip-sync, eyelines and emotion need the user's judgment.
+- Counts: 5,674 lines in the current examples/r2v folder (including 2,295 test lines), 17,352 in the whole repo including older inherited code.

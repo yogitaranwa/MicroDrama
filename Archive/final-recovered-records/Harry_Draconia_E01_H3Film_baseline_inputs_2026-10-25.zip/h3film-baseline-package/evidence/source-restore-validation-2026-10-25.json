@@ -1,0 +1,22 @@
+{
+  "restored_runner_sha256": "3587ca8a94d95f0e7c9a06045518d93130b77a202e1bacd9c784ef244bfd537e",
+  "preserved_workflow_sha256": "c039fd3a846cc94f07f82c19cf9b074aec9582e625ba82e21129320a0b6eb0fd",
+  "fresh_dry_run_workflow_sha256": "7270ea016c6d2292d72e1761d8c553a4145c424dd81a427389f7c7a5c9c00f1d",
+  "semantic_graph_equal_after_run_name_normalization": true,
+  "run_specific_fields_normalized": [
+    "LoadImage/LoadAudio upload names",
+    "VHS_video_to_frames filename_prefix run suffix"
+  ],
+  "fresh_file_content_hashes": [
+    "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+    "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e",
+    "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+    "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+    "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+    "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+    "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36",
+    "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909",
+    "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+    "ce64fbb7a8650e77e3d6dde7316eba1939968d32dc680520b6cc640addc2a58f"
+  ]
+}

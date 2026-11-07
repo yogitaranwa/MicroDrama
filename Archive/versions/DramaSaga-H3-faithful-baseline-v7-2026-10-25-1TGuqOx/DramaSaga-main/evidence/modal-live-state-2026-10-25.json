@@ -1,0 +1,35 @@
+{
+  "checked_at_ist": "2026-10-25T11:41:00+05:30",
+  "profile": "h3-corrective-test",
+  "app": {
+    "app_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "state": "stopped",
+    "tasks": 0,
+    "stopped_at_ist": "2026-10-25T11:10:03+05:30",
+    "servers": 0
+  },
+  "billing_summary_cli": {
+    "metered_cost_usd": 1.07077625,
+    "billed_cost_usd": 0,
+    "credits_adjustment_usd": -1.03,
+    "network_egress_allowance_usd": -0.04077625
+  },
+  "billing_dashboard_read_only": {
+    "url": "[private-project-source]",
+    "plan_type": "Starter",
+    "cycle_credits_usd": 30.0,
+    "cycle_credits_applied_usd": 0.99,
+    "cycle_credits_remaining_usd": 29.01,
+    "cycle_charges_usd": 0.0,
+    "net_spend_limit_usd": 0.0,
+    "effective_net_spend_limit_usd": 0.0,
+    "max_net_spend_limit_usd": 20.0,
+    "cycle_spend_limit_field_usd": 42.5,
+    "max_budget_field_usd": 42.5,
+    "next_threshold_invoice_usd": 10.0
+  },
+  "interpretation": "Net spend limit 0 blocks net card charges after credits and allowances; it is not a zero-usage or zero-credit-consumption cap.",
+  "token_note": "Current local Modal token warned that it expires in about 10 hours; refresh before any delayed future use.",
+  "sensitive_account_identifiers_omitted": true
+}

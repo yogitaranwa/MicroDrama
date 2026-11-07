@@ -1,0 +1,12 @@
+{
+  "expected_words": 1720,
+  "observed_words": 1720,
+  "differences": [
+    {
+      "type": "replace",
+      "expected": "draconia",
+      "observed": "traconia"
+    }
+  ],
+  "caveat": "Machine transcription screening only; pronunciation/emotion require listening."
+}

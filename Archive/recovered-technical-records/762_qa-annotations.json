@@ -1,0 +1,14 @@
+[
+ {
+  "unit": "e01:7",
+  "topic": "you/us",
+  "note": "Locked take e01-l06-draconia.mp3 (sha 00e69ec4...) was generated from text '...won't slow down for us.' (accepted-audio/qa.json; script v3). Manifest beat action text (shot-manifest-wan30.json line ~417) says 'for you'. Take stays authoritative; gate asr_ref 'us' is correct for the take; video raw speech said 'you' and is dropped at assemble. Manifest left unedited (evidence preserved); heard final-mix verification still open.",
+  "ref": "main:2026-10-26T18:47:13+05:30"
+ },
+ {
+  "unit": "e01:12",
+  "topic": "exit/door",
+  "note": "manifest beat action text says 'seals another exit'; locked take e01-l11-draconia.mp3 says 'seals another door'. Take authoritative; unedited.",
+  "ref": "main:2026-10-26T19:09:29+05:30"
+ }
+]

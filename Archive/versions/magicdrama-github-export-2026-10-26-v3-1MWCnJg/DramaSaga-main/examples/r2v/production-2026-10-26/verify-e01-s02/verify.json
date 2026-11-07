@@ -1,0 +1,24 @@
+{
+ "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s02.mp4",
+ "video": {
+  "r_frame_rate": "30/1",
+  "avg_frame_rate": "30/1",
+  "w": 720,
+  "h": 1280,
+  "dur": "10.031000"
+ },
+ "audio_track": true,
+ "envelope_correlation": 0.189,
+ "lag_s": -0.44,
+ "asr_clip": "Potter, don't turn around, look at me, only at me, and walk over here slowly.",
+ "asr_ref": "Potter don't turn around, look at me, only at me, and walk over here slowly.",
+ "asr_match": true,
+ "motion": {
+  "frames": 300,
+  "mean": 5.5,
+  "min": 0.85,
+  "max": 14.05,
+  "near_static": 0,
+  "sampled": 299
+ }
+}

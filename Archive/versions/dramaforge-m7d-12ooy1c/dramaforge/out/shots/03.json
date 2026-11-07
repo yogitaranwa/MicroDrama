@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "seconds": 13,
+ "lines": [
+  {
+   "speaker": "Draconia Malfoy",
+   "text": "Parkinson, you would not recognise loyalty if it bit you. That parchment belongs to me and you will return it before anyone else sees a single line.",
+   "emotion": "cold fury masking rising panic",
+   "expression": "wand raised steady, jaw locked, eyes darting to the heavy greenhouse door"
+  },
+  {
+   "speaker": "Pansy Parkinson",
+   "text": "My father's owl flies to Lucius by dawn, unless you give me that prefect badge tomorrow. Call it my price for keeping quiet.",
+   "emotion": "smug satisfaction laced with sharp warning",
+   "expression": "parchment held high between two fingers, lips curled, weight shifted to her back foot"
+  }
+ ]
+}

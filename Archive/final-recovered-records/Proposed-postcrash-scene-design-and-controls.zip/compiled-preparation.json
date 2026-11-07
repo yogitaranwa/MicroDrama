@@ -1,0 +1,72 @@
+{
+  "status": "PREPARATION_ONLY",
+  "source_contract": "e01-s17-s18-proposed-blocking-v1",
+  "network_allowed": false,
+  "master_requirement": "both actors at proposed marks with room/wreckage/table and mutual eyelines readable",
+  "shots": [
+    {
+      "actor": "harry",
+      "locked_audio_sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+      "duration_s": 3,
+      "direction": "Controlled alarm and accusation, not relief or humor. Turns attention to Draconia, demands an answer.",
+      "spatial_control": {
+        "camera": [
+          1,
+          -2
+        ],
+        "actor": [
+          -1,
+          0
+        ],
+        "look_target": [
+          1,
+          0
+        ],
+        "eyeline": "screen-right",
+        "axis_side": "near-side negative y",
+        "height": "matched eye height"
+      },
+      "wardrobe": "black red-lined robes, white shirt, straight dark necktie, round glasses",
+      "aftermath": "fallen principal chandelier remains on floor, broken overhead suspension, ice and surviving side candles; opposite camera must see consistent side-specific architecture, not duplicate frontal window backdrop",
+      "acceptance": [
+        "common master positions approved",
+        "matched eyeline/scale/state/wardrobe",
+        "correct accusation/fear intent",
+        "mouth follows exact locked take",
+        "continuous video/audio review before release"
+      ]
+    },
+    {
+      "actor": "draconia",
+      "locked_audio_sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+      "duration_s": 4.5,
+      "direction": "Genuinely scared but holds her ground. Hurt and defensive resolve, not wry disbelief or relief.",
+      "spatial_control": {
+        "camera": [
+          -1,
+          -2
+        ],
+        "actor": [
+          1,
+          0
+        ],
+        "look_target": [
+          -1,
+          0
+        ],
+        "eyeline": "screen-left",
+        "axis_side": "near-side negative y",
+        "height": "matched eye height"
+      },
+      "wardrobe": "emerald gold-embroidered gown, braided blonde updo, earrings",
+      "aftermath": "fallen principal chandelier remains on floor, broken overhead suspension, ice and surviving side candles; opposite camera must see consistent side-specific architecture, not duplicate frontal window backdrop",
+      "acceptance": [
+        "common master positions approved",
+        "matched eyeline/scale/state/wardrobe",
+        "correct accusation/fear intent",
+        "mouth follows exact locked take",
+        "continuous video/audio review before release"
+      ]
+    }
+  ]
+}

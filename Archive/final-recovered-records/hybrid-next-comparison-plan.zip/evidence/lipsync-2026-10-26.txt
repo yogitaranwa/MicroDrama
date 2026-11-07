@@ -1,0 +1,715 @@
+Lip Sync API Reference - Magic Hour Docs - Magic Hour API Docs
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Magic Hour API Docs
+home page
+Search...
+⌘
+K
+Search...
+Navigation
+Video Projects
+Lip Sync API Reference - Magic Hour Docs
+Documentation
+API Reference
+Webhook Reference
+Changelog
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.lip_sync.generate(
+assets
+=
+{
+"audio_file_path"
+:
+"/path/to/1234.mp3"
+,
+"video_file_path"
+:
+"/path/to/1234.mp4"
+,
+"video_source"
+:
+"file"
+,
+},
+style
+=
+{
+"generation_mode"
+:
+"lite"
+,
+},
+end_seconds
+=
+15.0
+,
+start_seconds
+=
+0.0
+,
+max_fps_limit
+=
+12.0
+,
+name
+=
+"Lip Sync video"
+,
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.lipSync.generate(
+  {
+    assets: {
+      audioFilePath: "/path/to/1234.mp3",
+      videoFilePath: "/path/to/1234.mp4",
+      videoSource: "file",
+    },
+    endSeconds: 15.0,
+    maxFpsLimit: 12.0,
+    name: "Lip Sync video",
+    startSeconds: 0.0,
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	lip_sync "github.com/magichourhq/magic-hour-go/resources/v1/lip_sync"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.LipSync.Create(lip_sync.CreateRequest{
+		Assets: types.V1LipSyncCreateBodyAssets{
+			AudioFilePath: "api-assets/id/1234.mp3",
+			VideoFilePath: nullable.NewValue("api-assets/id/1234.mp4"),
+			VideoSource:   types.V1LipSyncCreateBodyAssetsVideoSourceEnumFile,
+		},
+		EndSeconds:   5.0,
+		MaxFpsLimit:  nullable.NewValue(12.0),
+		Name:         nullable.NewValue("My Lip Sync video"),
+		StartSeconds: 0.0,
+	})
+}
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .lip_sync()
+    .create(magic_hour::resources::v1::lip_sync::CreateRequest {
+        assets: magic_hour::models::V1LipSyncCreateBodyAssets {
+            audio_file_path: "api-assets/id/1234.mp3".to_string(),
+            video_file_path: Some("api-assets/id/1234.mp4".to_string()),
+            video_source: magic_hour::models::V1LipSyncCreateBodyAssetsVideoSourceEnum::File,
+            ..Default::default()
+        },
+        end_seconds: 5.0,
+        max_fps_limit: Some(12.0),
+        name: Some("My Lip Sync video".to_string()),
+        start_seconds: 0.0,
+        ..Default::default()
+    })
+    .await;
+curl --request POST \
+     --url https://api.magichour.ai/v1/lip-sync \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "name": "My Lip Sync video",
+  "start_seconds": 0,
+  "end_seconds": 5,
+  "max_fps_limit": 12,
+  "assets": {
+    "audio_file_path": "api-assets/id/1234.mp3",
+    "video_source": "file",
+    "video_file_path": "api-assets/id/1234.mp4"
+  },
+  "style": {
+    "generation_mode": "lite"
+  }
+}
+'
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/lip-sync",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Lip Sync video',
+    'start_seconds' => 0,
+    'end_seconds' => 5,
+    'max_fps_limit' => 12,
+    'assets' => [
+        'audio_file_path' => 'api-assets/id/1234.mp3',
+        'video_source' => 'file',
+        'video_file_path' => 'api-assets/id/1234.mp4'
+    ],
+    'style' => [
+        'generation_mode' => 'lite'
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/lip-sync")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Lip Sync video\",\"start_seconds\":0,\"end_seconds\":5,\"max_fps_limit\":12,\"assets\":{\"audio_file_path\":\"api-assets/id/1234.mp3\",\"video_source\":\"file\",\"video_file_path\":\"api-assets/id/1234.mp4\"},\"style\":{\"generation_mode\":\"lite\"}}")
+  .asString();
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/lip-sync")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"start_seconds\": 0,\n  \"end_seconds\": 5,\n  \"assets\": {\n    \"audio_file_path\": \"api-assets/id/1234.mp3\",\n    \"video_source\": \"file\",\n    \"video_file_path\": \"api-assets/id/1234.mp4\"\n  },\n  \"name\": \"My Lip Sync video\",\n  \"max_fps_limit\": 12,\n  \"style\": {\n    \"generation_mode\": \"lite\"\n  }\n}"
+
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+450
+}
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+{
+  "code": "not_found",
+  "message": "<string>"
+}
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+Video Projects
+Lip Sync API Reference - Magic Hour Docs
+OpenAI
+Open in ChatGPT
+What this API does
+Create the same Lip Sync you can make in the browser, but programmatically, so you can automate it, run it at scale, or connect it to your own app or workflow.
+Good for
+Automation and batch processing
+Adding lip sync into apps, pipelines, or tools
+How it works (3 steps)
+Upload your inputs (video, image, or audio) with
+Generate Upload URLs
+and copy the
+file_path
+.
+Send a request to create a lip sync job with the basic fields.
+Check the job status until it’s
+complete
+, then download the result from
+downloads
+.
+Key options
+Inputs: usually a file, sometimes a YouTube link, depending on project type
+Resolution: output size and plan requirements vary by workflow and model. Some workflows derive output size from the input video.
+Extra fields: e.g.
+face_swap_mode
+,
+start_seconds
+/
+end_seconds
+, or a text prompt
+Cost
+Credits are charged when the job is queued (
+credits_charged
+in the response). Tools billed per frame charge an estimate and settle to the frames that actually render once the job finishes; tools billed per second charge the final amount upfront. Failed jobs are refunded.
+For detailed examples, see the
+product page
+.
+OpenAI
+Open in ChatGPT
+POST
+/
+v1
+/
+lip-sync
+Try it
+Python
+Python
+from
+magic_hour
+import
+Client
+from
+os
+import
+getenv
+client
+=
+Client(
+token
+=
+getenv(
+"MAGIC_HOUR_API_KEY"
+))
+res
+=
+client.v1.lip_sync.generate(
+assets
+=
+{
+"audio_file_path"
+:
+"/path/to/1234.mp3"
+,
+"video_file_path"
+:
+"/path/to/1234.mp4"
+,
+"video_source"
+:
+"file"
+,
+},
+style
+=
+{
+"generation_mode"
+:
+"lite"
+,
+},
+end_seconds
+=
+15.0
+,
+start_seconds
+=
+0.0
+,
+max_fps_limit
+=
+12.0
+,
+name
+=
+"Lip Sync video"
+,
+wait_for_completion
+=
+True
+,
+download_outputs
+=
+True
+,
+download_directory
+=
+"."
+)
+import { Client } from "magic-hour";
+
+const client = new Client({ token: process.env["MAGIC_HOUR_API_KEY"] });
+const res = await client.v1.lipSync.generate(
+  {
+    assets: {
+      audioFilePath: "/path/to/1234.mp3",
+      videoFilePath: "/path/to/1234.mp4",
+      videoSource: "file",
+    },
+    endSeconds: 15.0,
+    maxFpsLimit: 12.0,
+    name: "Lip Sync video",
+    startSeconds: 0.0,
+  },
+  {
+    waitForCompletion: true,
+    downloadOutputs: true,
+    downloadDirectory: ".",
+  },
+);
+package main
+
+import (
+	os "os"
+
+	sdk "github.com/magichourhq/magic-hour-go/client"
+	nullable "github.com/magichourhq/magic-hour-go/nullable"
+	lip_sync "github.com/magichourhq/magic-hour-go/resources/v1/lip_sync"
+	types "github.com/magichourhq/magic-hour-go/types"
+)
+
+func main() {
+	client := sdk.NewClient(
+		sdk.WithBearerAuth(os.Getenv("MAGIC_HOUR_API_KEY")),
+	)
+	res, err := client.V1.LipSync.Create(lip_sync.CreateRequest{
+		Assets: types.V1LipSyncCreateBodyAssets{
+			AudioFilePath: "api-assets/id/1234.mp3",
+			VideoFilePath: nullable.NewValue("api-assets/id/1234.mp4"),
+			VideoSource:   types.V1LipSyncCreateBodyAssetsVideoSourceEnumFile,
+		},
+		EndSeconds:   5.0,
+		MaxFpsLimit:  nullable.NewValue(12.0),
+		Name:         nullable.NewValue("My Lip Sync video"),
+		StartSeconds: 0.0,
+	})
+}
+let client = magic_hour::Client::default()
+    .with_bearer_auth(&std::env::var("MAGIC_HOUR_API_KEY").unwrap());
+let res = client
+    .v1()
+    .lip_sync()
+    .create(magic_hour::resources::v1::lip_sync::CreateRequest {
+        assets: magic_hour::models::V1LipSyncCreateBodyAssets {
+            audio_file_path: "api-assets/id/1234.mp3".to_string(),
+            video_file_path: Some("api-assets/id/1234.mp4".to_string()),
+            video_source: magic_hour::models::V1LipSyncCreateBodyAssetsVideoSourceEnum::File,
+            ..Default::default()
+        },
+        end_seconds: 5.0,
+        max_fps_limit: Some(12.0),
+        name: Some("My Lip Sync video".to_string()),
+        start_seconds: 0.0,
+        ..Default::default()
+    })
+    .await;
+curl --request POST \
+     --url https://api.magichour.ai/v1/lip-sync \
+     --header 'accept: application/json' \
+     --header "authorization: Bearer $MAGIC_HOUR_API_KEY" \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "name": "My Lip Sync video",
+  "start_seconds": 0,
+  "end_seconds": 5,
+  "max_fps_limit": 12,
+  "assets": {
+    "audio_file_path": "api-assets/id/1234.mp3",
+    "video_source": "file",
+    "video_file_path": "api-assets/id/1234.mp4"
+  },
+  "style": {
+    "generation_mode": "lite"
+  }
+}
+'
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://api.magichour.ai/v1/lip-sync",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => json_encode([
+    'name' => 'My Lip Sync video',
+    'start_seconds' => 0,
+    'end_seconds' => 5,
+    'max_fps_limit' => 12,
+    'assets' => [
+        'audio_file_path' => 'api-assets/id/1234.mp3',
+        'video_source' => 'file',
+        'video_file_path' => 'api-assets/id/1234.mp4'
+    ],
+    'style' => [
+        'generation_mode' => 'lite'
+    ]
+  ]),
+  CURLOPT_HTTPHEADER => [
+    "accept: application/json",
+    "authorization: Bearer <token>",
+    "content-type: application/json"
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+HttpResponse<String> response = Unirest.post("https://api.magichour.ai/v1/lip-sync")
+  .header("accept", "application/json")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer <token>")
+  .body("{\"name\":\"My Lip Sync video\",\"start_seconds\":0,\"end_seconds\":5,\"max_fps_limit\":12,\"assets\":{\"audio_file_path\":\"api-assets/id/1234.mp3\",\"video_source\":\"file\",\"video_file_path\":\"api-assets/id/1234.mp4\"},\"style\":{\"generation_mode\":\"lite\"}}")
+  .asString();
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.magichour.ai/v1/lip-sync")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Authorization"] = 'Bearer <token>'
+request["Content-Type"] = 'application/json'
+request.body = "{\n  \"start_seconds\": 0,\n  \"end_seconds\": 5,\n  \"assets\": {\n    \"audio_file_path\": \"api-assets/id/1234.mp3\",\n    \"video_source\": \"file\",\n    \"video_file_path\": \"api-assets/id/1234.mp4\"\n  },\n  \"name\": \"My Lip Sync video\",\n  \"max_fps_limit\": 12,\n  \"style\": {\n    \"generation_mode\": \"lite\"\n  }\n}"
+
+response = http.request(request)
+puts response.read_body
+200
+400
+401
+402
+404
+422
+500
+{
+"id"
+:
+"cuid-example"
+,
+"credits_charged"
+:
+450
+}
+{
+  "code": "invalid_request",
+  "message": "<string>"
+}
+{
+  "code": "unauthorized",
+  "message": "<string>"
+}
+{
+  "code": "insufficient_credits",
+  "message": "<string>"
+}
+{
+  "code": "not_found",
+  "message": "<string>"
+}
+{
+  "code": "unprocessable_entity",
+  "message": "<string>"
+}
+{
+  "code": "internal_server_error",
+  "message": "<string>"
+}
+Authorizations
+​
+Authorization
+string
+header
+required
+Bearer authentication header of the form
+Bearer <api_key>
+, where
+<api_key>
+is your API key. To get your API key, go to
+Developer Hub
+and click "Create new API Key".
+Body
+application/json
+Body
+​
+start_seconds
+number<float>
+required
+Start time of your clip (seconds). Must be ≥ 0.
+Required range
+:
+x >= 0
+Example
+:
+0
+​
+end_seconds
+number<float>
+required
+End time of your clip (seconds). Must be greater than start_seconds.
+Required range
+:
+x >= 0.1
+Example
+:
+5
+​
+assets
+object
+required
+Provide the assets for lip-sync. For video, The
+video_source
+field determines whether
+video_file_path
+or
+youtube_url
+field is used
+Show
+child attributes
+Example
+:
+{
+"audio_file_path"
+:
+"api-assets/id/1234.mp3"
+,
+"video_source"
+:
+"file"
+,
+"video_file_path"
+:
+"api-assets/id/1234.mp4"
+}
+​
+name
+string
+default:
+Lip Sync - dateTime
+Give your video a custom name for easy identification.
+Example
+:
+"My Lip Sync video"
+​
+max_fps_limit
+number
+Defines the maximum FPS (frames per second) for the output video. If the input video's FPS is lower than this limit, the output video will retain the input FPS. This is useful for reducing unnecessary frame usage in scenarios where high FPS is not required.
+Required range
+:
+x >= 1
+Example
+:
+12
+​
+style
+object
+Attributes used to dictate the style of the output
+Show
+child attributes
+Response
+200
+application/json
+Success
+Success
+​
+id
+string
+required
+Unique ID of the video. Use it with the
+Get video Project API
+to fetch status and downloads.
+Example
+:
+"cuid-example"
+​
+credits_charged
+integer
+required
+The amount of credits deducted from your account to generate the video. If the status is not 'complete', this value is an estimate and may be adjusted upon completion based on the actual FPS of the output video.
+If video generation fails, credits will be refunded, and this field will be updated to include the refund.
+Example
+:
+450
+Was this page helpful?
+Yes
+No
+Suggest edits
+Raise issue

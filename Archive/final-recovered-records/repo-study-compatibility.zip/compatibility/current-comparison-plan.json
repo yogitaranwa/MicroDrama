@@ -1,0 +1,1889 @@
+{
+  "manifest_sha256": "9accd0cd8b339fc2aaaec6eef98b9931cbd13c701726712bbc8edafe9aab73dc",
+  "source_scope": "current untrimmed113s planning manifest; recorded trim override not applied",
+  "source_license": "original local adapter; no third-party code copied",
+  "shots": [
+    {
+      "id": "e01s01b1",
+      "parent_shot": 1,
+      "start_in_shot_s": 0.0,
+      "duration_s": 5.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide on the frozen dance floor: the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie entering alone at the edge of the hall, plain dress robes among finery, watching reflections on the ice instead of the dancers, snow hanging motionless beneath the enchanted ceiling. Full body visible. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_fullbody",
+          "bank_id": "ref-harry-fullbody",
+          "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": null,
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "cbad29e71ad7af7316c2eb8ee1cd8446c05563a2e27cb3135c20b7d56bf61bd4"
+    },
+    {
+      "id": "e01s02b1",
+      "parent_shot": 2,
+      "start_in_shot_s": 0.0,
+      "duration_s": 4.7,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references: her smile vanishing, eyes locked up and to the side, mouth open mid-call, urgent. Face large, mouth clearly visible, simple candlelit background. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l01-draconia.mp3",
+        "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "f801d906b6caeb020ba6e89adb1e3ec8a32c02fc5d532ea315330018642b5142"
+    },
+    {
+      "id": "e01s02b2",
+      "parent_shot": 2,
+      "start_in_shot_s": 4.7,
+      "duration_s": 2,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: over the black-haired boy's shoulder and hair from behind, a small black spark crackling with bright white-hot points hanging in the air above his head against the bright window. No face visible. Match the location lighting. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_fullbody",
+          "bank_id": "ref-harry-fullbody",
+          "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l01-draconia.mp3",
+        "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "b1bfa0a5b0ddc66a2e59f7b62456c19253b96fc7fa35cb2696ae911df3342f2b"
+    },
+    {
+      "id": "e01s02b3",
+      "parent_shot": 2,
+      "start_in_shot_s": 6.7,
+      "duration_s": 3.3,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the platinum-blonde woman in the green embroidered gown from the references runs through formally dressed dancing couples, a paper programme falling from her fingers behind her, the black-haired boy with round glasses visible ahead of her. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_fullbody",
+          "bank_id": "ref-draconia-fullbody",
+          "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l01-draconia.mp3",
+        "sha256": "7b90311e9218a7f8865153c625a08fc46e49d19b5a4c2d82917b1d266b8db559",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "1690936b1bf31a172cce92bcc3459382a03ba5fb17c382b3341b9fa797fe1b52"
+    },
+    {
+      "id": "e01s03b1",
+      "parent_shot": 3,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.9,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot on the platinum-blonde woman in the green embroidered gown gripping the black-haired boy's hand and pulling him onto the dance floor; she speaks directly to him, mouth clearly visible, urgent command on her face, both faces readable. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l02-draconia.mp3",
+        "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "4e8acd9fcfa11db0e0d8a8112dd0031ea72c964341e60bbc7389f2ac9a8f65c8"
+    },
+    {
+      "id": "e01s03b2",
+      "parent_shot": 3,
+      "start_in_shot_s": 3.9,
+      "duration_s": 0.6,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: two joined hands, her pale fingers gripping his hand tight, green embroidered sleeve and dark dress robe cuff visible, blurred dancing couples and candlelight behind. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l02-draconia.mp3",
+        "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "1d137ca436470a5337e27de4f9c8a05d3d6703f5f61d669216fc870b96a8a46e"
+    },
+    {
+      "id": "e01s03b3",
+      "parent_shot": 3,
+      "start_in_shot_s": 4.5,
+      "duration_s": 3.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the platinum-blonde woman in the green embroidered gown pulling the black-haired boy in black red-lined dress robes over a white shirt and dark necktie into a dance among scattering couples, crystalline ice arrows striking the floor tiles behind them. Both figures full body, faces small and not readable. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_fullbody",
+          "bank_id": "ref-draconia-fullbody",
+          "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_fullbody",
+          "bank_id": "ref-harry-fullbody",
+          "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l02-draconia.mp3",
+        "sha256": "4bdb094c8d15031615bb25a86ac74403b143816fb42cb479bccf533370bda7f5",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "1f0f5a3c4894a36744ef135ccff87c1071db7bfbb2ecbe56077cec80e4c22199"
+    },
+    {
+      "id": "e01s04b1",
+      "parent_shot": 4,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie, mid-dance-hold, eyes flicking sideways toward the ceiling while his face stays controlled, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l03-harry.mp3",
+        "sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "4277a28c696cab9d4b9494fb6a3de77411f7dd3644acaa1ec1aba47cef753423"
+    },
+    {
+      "id": "e01s04b2",
+      "parent_shot": 4,
+      "start_in_shot_s": 3.5,
+      "duration_s": 1.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert looking down: a glowing geometric waltz grid etched across the frozen floor, dancers' feet stepping along its lines; above, faint spell-sparks against the enchanted ceiling. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l03-harry.mp3",
+        "sha256": "8dd057ac82f64e876e7d13cc167022bec186ff8da41a2f24be4e4443bfa10937",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "1d4318a204a025749d84acf477a81548bf7d98f79216173a49779e2aaeb5b74c"
+    },
+    {
+      "id": "e01s05b1",
+      "parent_shot": 5,
+      "start_in_shot_s": 0.0,
+      "duration_s": 0.8333333333333334,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide action two-shot: the platinum-blonde woman in the green embroidered gown spinning the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie out of the line of a spell volley punching glowing holes into the frozen floor between the dancers, her hair whipping across her face. Both full bodies visible. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l04-draconia.mp3",
+        "sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "44edaf320feafc03a61f89d38fb5798f65d48aa9e97bf4c101cc9a9031f22df4"
+    },
+    {
+      "id": "e01s05b2",
+      "parent_shot": 5,
+      "start_in_shot_s": 0.833333,
+      "duration_s": 7.166666666666667,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot: the platinum-blonde woman in the green embroidered gown turned toward the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie mid-dance, breathless and direct, mouth clearly visible mid-speech; both faces readable. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_dialogue",
+          "bank_id": "ref-two-shot-dialogue",
+          "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36",
+          "views": [
+            "wide",
+            "three_quarter"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l04-draconia.mp3",
+        "sha256": "5677a05435d8eb267569c27f5e85b3c2f8d43172d93079eeb27e988e5db5b1af",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "9386d0507f7420228d5ee44b0c325bbcec7a961dda4580bf5dae93f7c690d24c"
+    },
+    {
+      "id": "e01s06b1",
+      "parent_shot": 6,
+      "start_in_shot_s": 0.0,
+      "duration_s": 2.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie from the references: mid-dance, eyes flicking upward toward falling ice arrows, mouth open mid-speech, realization on his face. Face large, mouth clearly visible. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l05-harry.mp3",
+        "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "ef1fce52b96f122eed678a74852a604b60e42984c6bcd483f62407bfa7d141e1"
+    },
+    {
+      "id": "e01s06b2",
+      "parent_shot": 6,
+      "start_in_shot_s": 2.5,
+      "duration_s": 0.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: crystalline ice arrows striking a violin and harp in a small orchestra on a raised platform, silver strings snapping and whipping, candlelight glinting off ice. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l05-harry.mp3",
+        "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "b626849a412a2aac8339908712642ba0d4194cda952f027de72c003e02cd28a3"
+    },
+    {
+      "id": "e01s06b3",
+      "parent_shot": 6,
+      "start_in_shot_s": 3.0,
+      "duration_s": 4.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: the black-haired boy in black red-lined dress robes over a white shirt and dark necktie leading the platinum-blonde woman in the green embroidered gown through a sharp half-beat step change on the dance floor, crystalline ice arrows shattering on the tiles just beside them. Both figures full body, faces small and not readable. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_fullbody",
+          "bank_id": "ref-draconia-fullbody",
+          "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_fullbody",
+          "bank_id": "ref-harry-fullbody",
+          "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l05-harry.mp3",
+        "sha256": "db2d73b490dd6099dee88f4d94f5dd1d9a8c3a6130180bc29bc8e87817faa90f",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "a89ba796cdc378a31c722355da3ddd381a79981e17f9e719c1bd208b245fe5ef"
+    },
+    {
+      "id": "e01s07b1",
+      "parent_shot": 7,
+      "start_in_shot_s": 0.0,
+      "duration_s": 6.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown, grinning despite the chaos around her, delighted, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l06-draconia.mp3",
+        "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "fe7ebc66541137fa7a0df8689ea88af86c58c43387016f9d919c380bc79a5736"
+    },
+    {
+      "id": "e01s07b2",
+      "parent_shot": 7,
+      "start_in_shot_s": 6.0,
+      "duration_s": 2.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: the glowing waltz grid flaring brighter under dancing feet, tempo lines pulsing; at the dark edge of the floor, empty suits of armor shifting. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l06-draconia.mp3",
+        "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "ee5e2dd8aa0d695198a94f8cf09a44a8cd58febdbbc9834c82b1681bb369108c"
+    },
+    {
+      "id": "e01s08b1",
+      "parent_shot": 8,
+      "start_in_shot_s": 0.0,
+      "duration_s": 4.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references: sharp delighted smirk tightening into a tense warning, eyes tracking something whipping through the air beside her, mouth clearly visible mid-speech. Face large. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l07-draconia.mp3",
+        "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "b9767906e70b637c967709bbb296acb8a2d02e4e83624aaa69a2e8bf8025955a"
+    },
+    {
+      "id": "e01s08b2",
+      "parent_shot": 8,
+      "start_in_shot_s": 4.0,
+      "duration_s": 3.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide shot: a glowing silver string wrapped around the black-haired boy's wrist pulling him off balance; the platinum-blonde woman in the green embroidered gown lunging to catch his arm. Both figures full body, faces small. Identical wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_fullbody",
+          "bank_id": "ref-draconia-fullbody",
+          "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_fullbody",
+          "bank_id": "ref-harry-fullbody",
+          "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+          "views": [
+            "full_body",
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l07-draconia.mp3",
+        "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "c7ce59d5421c1864bd4bfa92500caf65d1c57a94fe8a23c9ba4fb6e3421aa511"
+    },
+    {
+      "id": "e01s09b1",
+      "parent_shot": 9,
+      "start_in_shot_s": 0.0,
+      "duration_s": 1.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide action two-shot: the platinum-blonde woman in the green embroidered gown snapping a glowing silver string off the wrist of the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie with a sharp heel strike while hauling him upright into a dance hold, cut strings falling. Both full bodies visible. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l08-harry.mp3",
+        "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "9f024d4de72c14ea7fec2033277af979df6131601250df8dad638b2ab1bf5343"
+    },
+    {
+      "id": "e01s09b2",
+      "parent_shot": 9,
+      "start_in_shot_s": 1.0,
+      "duration_s": 4.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot: the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie flexing his freed hand while the platinum-blonde woman in the green embroidered gown holds the dance frame, dry delivery, mouth clearly visible mid-speech; both faces readable. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_dialogue",
+          "bank_id": "ref-two-shot-dialogue",
+          "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36",
+          "views": [
+            "wide",
+            "three_quarter"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l08-harry.mp3",
+        "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "28dc9f85c29e266c5d3d94098f9c20d828b3f894771b5e99ebe001a71c25b2ae"
+    },
+    {
+      "id": "e01s10b1",
+      "parent_shot": 10,
+      "start_in_shot_s": 0.0,
+      "duration_s": 0.8333333333333334,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide action shot: six empty suits of armor marching out of the shadows at the edge of the frozen floor; the platinum-blonde woman in the green embroidered gown kicking a laden drinks trolley into the lead suit and ducking under its swing. Full bodies. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l09-draconia.mp3",
+        "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "2d509c6c78304a2b89bcbbbe4141d8faca66a721485bfe00a95b78c869cf3bb8"
+    },
+    {
+      "id": "e01s10b2",
+      "parent_shot": 10,
+      "start_in_shot_s": 0.833333,
+      "duration_s": 5.166666666666667,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown, rising from a duck with a laughing grin, a toppled drinks trolley and a staggering suit of armor blurred behind her, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l09-draconia.mp3",
+        "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "3218531f1d63b9b86d96cae2f5cb1413c86c8f3c153c0e66b2186d8e55ff9bf0"
+    },
+    {
+      "id": "e01s11b1",
+      "parent_shot": 11,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot: the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie catching the platinum-blonde woman in the green embroidered gown mid-stumble and turning it into a dance step, his eyes fixed past her on something forming at the floor's center, mouth clearly visible mid-speech; both faces readable. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_dialogue",
+          "bank_id": "ref-two-shot-dialogue",
+          "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36",
+          "views": [
+            "wide",
+            "three_quarter"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l10-harry.mp3",
+        "sha256": "a00b2257fb52cdfe3e476f3bde57e0a84c25b1a4ba5200bffdd96f3d0c6efac5",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "d27994ca954ee1a98cccf42af825520415ac1cf7d7ce537e4526d8a77aaa7472"
+    },
+    {
+      "id": "e01s12b1",
+      "parent_shot": 12,
+      "start_in_shot_s": 0.0,
+      "duration_s": 5.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown, low urgent delivery while still dancing, eyes flicking toward the exits, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l11-draconia.mp3",
+        "sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "911b4715f2a73d96b31f67d49f5c6fadcf448ed675ac6c5054247c86aa523564"
+    },
+    {
+      "id": "e01s12b2",
+      "parent_shot": 12,
+      "start_in_shot_s": 5.0,
+      "duration_s": 2.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide insert: a masked figure in a dark hooded cloak at the floor's center mirroring dance steps, doorways around the hall sealing under crawling ice with each step. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l11-draconia.mp3",
+        "sha256": "70fd12b472c8a702e4b934b5137a48bb2c1d26e3e7a068eba269e2dccf660a7a",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "e43c3241146ae52488aa6466aa43a1a2c2216387dddfe514fd7395dc3ba9054b"
+    },
+    {
+      "id": "e01s13b1",
+      "parent_shot": 13,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie, realization landing, deliberately breaking dance form mid-step, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l12-harry.mp3",
+        "sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "473a80d2f68d13614192502a04cf9d3c22f8f57811e47de412e6723f30bd8123"
+    },
+    {
+      "id": "e01s13b2",
+      "parent_shot": 13,
+      "start_in_shot_s": 3.5,
+      "duration_s": 1.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert looking straight down: two pairs of dress shoes stomping deliberately OFF the glowing grid lines on the frozen floor, the light pattern stuttering and breaking. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l12-harry.mp3",
+        "sha256": "4df242f9a11112fea83552277d299bc2601797718469fa8d72b07c9fba080cad",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "2fb8d6cebf4362b0ab88b62dca7677a29e6864fcc303b1d4d4a681f78e74baf0"
+    },
+    {
+      "id": "e01s14b1",
+      "parent_shot": 14,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.566666666666667,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Close two-shot: the platinum-blonde woman in the green embroidered gown jabbing one finger upward at the chandelier overhead, a faint shield-charm shimmer holding around her, incredulous, mouth clearly visible mid-speech, her gown hem and hair swinging wide; the black-haired boy in black red-lined dress robes over a white shirt and dark necktie standing still beside her, watching her. Identical faces, hair, wardrobe to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l13-draconia.mp3",
+        "sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "627918bd5ae8899373320057d79c85de1d9758039ecbbda16448c09c339b3ceb"
+    },
+    {
+      "id": "e01s14b2",
+      "parent_shot": 14,
+      "start_in_shot_s": 3.566667,
+      "duration_s": 1.4333333333333333,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Low-angle insert looking straight up: a massive candle-lit chandelier hanging from a straining chain high above the hall, flames swaying, stone ceiling vault behind. No people. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l13-draconia.mp3",
+        "sha256": "1b8383d06cdd30074ba4b910a246f20a5ca09818380d35a5e62747c663d4a207",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "ef79a54da4d70d7c7c5f870cc140f8cad00883f0090e653afa8a38ae74d7b530"
+    },
+    {
+      "id": "e01s15b1",
+      "parent_shot": 15,
+      "start_in_shot_s": 0.0,
+      "duration_s": 4.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie, rapid precise delivery, arm extended pointing off-frame left, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l14-harry.mp3",
+        "sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "3d0edda0d0d95b1ee386571018416c64e7ee8db3cfc3c12ea72bd81de2f73291"
+    },
+    {
+      "id": "e01s15b2",
+      "parent_shot": 15,
+      "start_in_shot_s": 4.0,
+      "duration_s": 2.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide insert: a long red velvet banquet table wrenching up off the floor, dishes scattering, slamming sideways into place as a barricade against the marching armor. No faces. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l14-harry.mp3",
+        "sha256": "96c79cd32fbdb0267f53bb16536084d4060ad506045abaa08f36f25995023176",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "7f7c4564f758add5f2cf8d95c1ff7a0d27332b366d5dad29b65265dd8eae15a9"
+    },
+    {
+      "id": "e01s16b1",
+      "parent_shot": 16,
+      "start_in_shot_s": 0.0,
+      "duration_s": 2.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide on the frozen dance floor: the great chandelier mid-fall, dropping toward the ice with chain links snapping taut, frost already bursting where it strikes; at the floor's center mark a masked figure in a dark hooded cloak stands applauding without sound. The two leads are not in frame. Match the location lighting. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l15-draconia.mp3",
+        "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "f2510efbf4b1723b45361d85b8b8bf19d2d8d36aaad4923bf787d79e10c4c132"
+    },
+    {
+      "id": "e01s16b2",
+      "parent_shot": 16,
+      "start_in_shot_s": 2.0,
+      "duration_s": 4.4,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown from the references, the crashed chandelier half-swallowed by ice visible far behind her on the frozen floor: staring down at her own hand, dawning dread, then lifting her eyes toward someone off-frame, mouth clearly visible mid-speech. Face large. Identical face, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l15-draconia.mp3",
+        "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "f0745d7a0a97461b81934e90674d9fdcb67701d5efa6911ff9887d42cf83347e"
+    },
+    {
+      "id": "e01s16b3",
+      "parent_shot": 16,
+      "start_in_shot_s": 6.4,
+      "duration_s": 2.6,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Detail insert: two hands side by side on the frozen banquet table, a larger hand and a smaller pale hand, glowing green and silver ribbon-like marks burned into the skin forming exactly two legible cursive written names: \"Harry\" and \"Draconia\", one name on each hand. The exact letter strings H-a-r-r-y and D-r-a-c-o-n-i-a, no other words, embers at the edges of the marks. No faces. Match the location lighting. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "two_shot_action",
+          "bank_id": "ref-two-shot-action",
+          "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f",
+          "views": [
+            "wide",
+            "full_body"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l15-draconia.mp3",
+        "sha256": "5b92ce2b6d3d7fac521320ea2143b5294a54b03303f34ce15e145d88f28ec15d",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "482ffeb889a1782590a8d02c0f51bb62e55fcfb0463a096fc9ee6a50d931bf97"
+    },
+    {
+      "id": "e01s17b1",
+      "parent_shot": 17,
+      "start_in_shot_s": 0.0,
+      "duration_s": 3.0,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the black-haired boy with round glasses in black red-lined dress robes over a white shirt and dark necktie, controlled but alarmed, turning to face someone off-frame directly, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "harry_front_close",
+          "bank_id": "ref-harry-front-close",
+          "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "HARRY",
+      "approved_take": {
+        "file": "e01-l16-harry.mp3",
+        "sha256": "b5f4928b7a41707100f76202a74eda6b1ab5896582a68ebb35cde3985e3f46b8",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "0499db6f8483e2c2b72aba5ff3b60119bb0c46d7f0b4426cd1999015cc82e59f"
+    },
+    {
+      "id": "e01s18b1",
+      "parent_shot": 18,
+      "start_in_shot_s": 0.0,
+      "duration_s": 4.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Single close-up on the platinum-blonde woman in the green embroidered gown, genuinely scared for the first time but holding her ground, chin up, mouth clearly visible mid-speech. Face large. Identical faces, hair, wardrobe and proportions to the references. Photorealistic, cinematic candlelight.",
+      "reference_bindings": [
+        {
+          "name": "draconia_front_close",
+          "bank_id": "ref-draconia-front-close",
+          "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+          "views": [
+            "front",
+            "close"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        },
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "dialogue",
+      "speaker": "DRACONIA",
+      "approved_take": {
+        "file": "e01-l17-draconia.mp3",
+        "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": true,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "666739c4fd69e8731ff40352ac8592a8a1a68d1e5a95a297ec78839697fd0938"
+    },
+    {
+      "id": "e01s18b2",
+      "parent_shot": 18,
+      "start_in_shot_s": 4.5,
+      "duration_s": 1.5,
+      "aspect_ratio": "9:16",
+      "resolution": "720p",
+      "fps": 30,
+      "frame_description": "Candlelit Yule Ball Great Hall from the location reference. Wide insert: the great hall's doors sealed shut under ice; beyond the tall windows a bow-shaped green light pulses once over a dark forest skyline; in the foreground the great chandelier lies CRASHED on the frozen floor, half-swallowed by clear ice, dark and unlit. No people. The chandelier must NOT hang intact overhead - it has already fallen. Match the location lighting. Photorealistic.",
+      "reference_bindings": [
+        {
+          "name": "yule_ball_location",
+          "bank_id": "ref-yule-ball-location",
+          "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+          "views": [
+            "wide"
+          ],
+          "pixel_status": "not_in_transfer_not_inspected"
+        }
+      ],
+      "audio_intent": "sound_fx",
+      "speaker": null,
+      "approved_take": {
+        "file": "e01-l17-draconia.mp3",
+        "sha256": "8b09b16dc9c4fc0b353043027d3e79c379dbfbc98d041d50f59a999873abddcb",
+        "status": "locked_bytes_verified"
+      },
+      "on_screen_speech_carrier": false,
+      "camera_group": null,
+      "parent_camera_frame": null,
+      "render_enabled": false,
+      "required_before_render": [
+        "review camera grouping and axis against actual pixels",
+        "inspect referenced source images and candidate keyframe",
+        "audio-conditioned performance route for readable speech; no text-only substitute"
+      ],
+      "status": "comparison_plan_only_not_renderable",
+      "input_sha256": "3443960f7361bb877f799b335b734175aa50c4646de7ca245586ba9a3d27cee6"
+    }
+  ],
+  "status": "prepared_for_review_not_generated",
+  "render_enabled": false,
+  "note": "Camera relationships deliberately unset. Approved take belongs to whole shot, can continue over inserts; this is not per-beat copied speech."
+}

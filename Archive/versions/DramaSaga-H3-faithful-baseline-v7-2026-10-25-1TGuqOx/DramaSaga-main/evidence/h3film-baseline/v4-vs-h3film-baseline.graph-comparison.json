@@ -1,0 +1,378 @@
+{
+  "node_counts": {
+    "alec_h3film_baseline": 35,
+    "v4_failed": 71,
+    "by_class": {
+      "alec_h3film_baseline": {
+        "VAELoader": 2,
+        "VAEDecodeAudio": 1,
+        "VAEDecode": 1,
+        "KSamplerSelect": 1,
+        "BasicScheduler": 1,
+        "SamplerCustomAdvanced": 1,
+        "BasicGuider": 1,
+        "UNETLoader": 1,
+        "CLIPLoader": 1,
+        "RandomNoise": 1,
+        "CreateVideo": 1,
+        "ComfyMathExpression": 1,
+        "PrimitiveFloat": 1,
+        "MiniMaxH3ReferenceToVideo": 1,
+        "PrimitiveStringMultiline": 1,
+        "PathchSageAttentionKJ": 1,
+        "MiniMaxH3BlockCacheT8": 1,
+        "PrimitiveInt": 2,
+        "SaveVideo": 1,
+        "VAEEncodeAudio": 1,
+        "SetLatentNoiseMask": 1,
+        "SolidMask": 1,
+        "LoadAudio": 1,
+        "LTXVConcatAVLatent": 1,
+        "LoadImage": 9
+      },
+      "v4_failed": {
+        "SaveVideo": 1,
+        "VAELoader": 2,
+        "VAEDecodeAudio": 1,
+        "VAEDecode": 1,
+        "KSamplerSelect": 1,
+        "BasicScheduler": 1,
+        "SamplerCustomAdvanced": 1,
+        "BasicGuider": 1,
+        "UNETLoader": 1,
+        "CLIPLoader": 1,
+        "RandomNoise": 1,
+        "CreateVideo": 1,
+        "ComfyMathExpression": 1,
+        "PrimitiveFloat": 1,
+        "MiniMaxH3ReferenceToVideo": 1,
+        "PrimitiveStringMultiline": 1,
+        "PathchSageAttentionKJ": 1,
+        "MiniMaxH3BlockCacheT8": 1,
+        "PrimitiveInt": 2,
+        "LoadImage": 21,
+        "LoadAudio": 13,
+        "VAEEncodeAudio": 1,
+        "SolidMask": 1,
+        "SetLatentNoiseMask": 1,
+        "LTXVConcatAVLatent": 1,
+        "MiniMaxH3AddGuide": 12
+      }
+    }
+  },
+  "sampler": {
+    "same": false,
+    "project-owner": {
+      "123": {
+        "sampler_name": "res_multistep"
+      },
+      "124": {
+        "denoise": 1,
+        "model": [
+          "142",
+          0
+        ],
+        "scheduler": "simple",
+        "steps": 25
+      },
+      "125": {
+        "guider": [
+          "126",
+          0
+        ],
+        "latent_image": [
+          "av",
+          0
+        ],
+        "noise": [
+          "129",
+          0
+        ],
+        "sampler": [
+          "123",
+          0
+        ],
+        "sigmas": [
+          "124",
+          0
+        ]
+      },
+      "126": {
+        "conditioning": [
+          "136",
+          0
+        ],
+        "model": [
+          "142",
+          0
+        ]
+      },
+      "129": {
+        "noise_seed": 419433329744414
+      },
+      "141": {
+        "allow_compile": false,
+        "model": [
+          "127",
+          0
+        ],
+        "sage_attention": "auto"
+      },
+      "142": {
+        "cache_device": "cpu",
+        "end_percent": 0.95,
+        "max_consecutive_hits": 2,
+        "metric_stride": 8,
+        "model": [
+          "141",
+          0
+        ],
+        "residual_diff_threshold": 0.12,
+        "start_percent": 0.08,
+        "verbose": false
+      }
+    },
+    "v4": {
+      "123": {
+        "sampler_name": "res_multistep"
+      },
+      "124": {
+        "scheduler": "simple",
+        "steps": 25,
+        "denoise": 1,
+        "model": [
+          "142",
+          0
+        ]
+      },
+      "125": {
+        "noise": [
+          "129",
+          0
+        ],
+        "guider": [
+          "126",
+          0
+        ],
+        "sampler": [
+          "123",
+          0
+        ],
+        "sigmas": [
+          "124",
+          0
+        ],
+        "latent_image": [
+          "md_av",
+          0
+        ]
+      },
+      "126": {
+        "model": [
+          "142",
+          0
+        ],
+        "conditioning": [
+          "md_pin11",
+          0
+        ]
+      },
+      "129": {
+        "noise_seed": 419433329744414
+      },
+      "141": {
+        "sage_attention": "auto",
+        "allow_compile": false,
+        "model": [
+          "127",
+          0
+        ]
+      },
+      "142": {
+        "residual_diff_threshold": 0.12,
+        "start_percent": 0.08,
+        "end_percent": 0.95,
+        "max_consecutive_hits": 2,
+        "cache_device": "cpu",
+        "metric_stride": 8,
+        "verbose": false,
+        "model": [
+          "141",
+          0
+        ]
+      }
+    }
+  },
+  "reference_to_video": {
+    "shared_fields": {
+      "width": [
+        "151",
+        0
+      ],
+      "height": [
+        "152",
+        0
+      ],
+      "length": [
+        "131",
+        1
+      ],
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "prompt": [
+        "138",
+        0
+      ]
+    },
+    "ref_image_size": {
+      "project-owner": "match",
+      "v4": "max"
+    },
+    "reference_audio_connected": {
+      "project-owner": true,
+      "v4": false
+    },
+    "reference_image_count": {
+      "project-owner": 9,
+      "v4": 9
+    }
+  },
+  "audio": {
+    "alec_load_audio": [
+      "dialogue.wav trimmed/padded to 13.12s"
+    ],
+    "v4_load_audio": [
+      "dialogue.wav",
+      "guide-L1-start.wav",
+      "guide-L1-mid.wav",
+      "guide-L2-start.wav",
+      "guide-L2-mid.wav",
+      "guide-L3-start.wav",
+      "guide-L3-mid.wav",
+      "guide-L4-start.wav",
+      "guide-L4-mid.wav",
+      "guide-L5-start.wav",
+      "guide-L5-mid.wav",
+      "guide-L6-start.wav",
+      "guide-L6-mid.wav"
+    ],
+    "alec_exact_target_audio_latent": [
+      "av",
+      0
+    ],
+    "v4_exact_target_audio_latent": [
+      "md_av",
+      0
+    ]
+  },
+  "timed_guides": {
+    "alec_count": 0,
+    "v4_count": 12,
+    "v4": [
+      {
+        "node": "md_pin0",
+        "frame_idx": 0,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L1-start.wav"
+      },
+      {
+        "node": "md_pin1",
+        "frame_idx": 20,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L1-mid.wav"
+      },
+      {
+        "node": "md_pin2",
+        "frame_idx": 40,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L2-start.wav"
+      },
+      {
+        "node": "md_pin3",
+        "frame_idx": 71,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L2-mid.wav"
+      },
+      {
+        "node": "md_pin4",
+        "frame_idx": 102,
+        "image": "ref-harry-speaking-profile.png",
+        "audio": "guide-L3-start.wav"
+      },
+      {
+        "node": "md_pin5",
+        "frame_idx": 132,
+        "image": "ref-harry-speaking-profile.png",
+        "audio": "guide-L3-mid.wav"
+      },
+      {
+        "node": "md_pin6",
+        "frame_idx": 163,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L4-start.wav"
+      },
+      {
+        "node": "md_pin7",
+        "frame_idx": 188,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L4-mid.wav"
+      },
+      {
+        "node": "md_pin8",
+        "frame_idx": 213,
+        "image": "ref-harry-speaking-profile.png",
+        "audio": "guide-L5-start.wav"
+      },
+      {
+        "node": "md_pin9",
+        "frame_idx": 241,
+        "image": "ref-harry-speaking-profile.png",
+        "audio": "guide-L5-mid.wav"
+      },
+      {
+        "node": "md_pin10",
+        "frame_idx": 269,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L6-start.wav"
+      },
+      {
+        "node": "md_pin11",
+        "frame_idx": 292,
+        "image": "ref-draconia-speaking-profile.png",
+        "audio": "guide-L6-mid.wav"
+      }
+    ]
+  },
+  "prompt": {
+    "same": false,
+    "alec_first_line": "Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied soundtrack is the exact timing source; perform the dialogue to the soundtrack and do not invent dialogue.",
+    "v4_first_line": "Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied full soundtrack is the exact timing source; each active-speaker guide also carries the matching line-audio segment. Draw mouth motion from those line guides and do not invent dialogue."
+  },
+  "dimensions_seconds": {
+    "project-owner": {
+      "width": 576,
+      "height": 1024,
+      "seconds": 13.12,
+      "computed_length": [
+        "131",
+        1
+      ]
+    },
+    "v4": {
+      "width": 576,
+      "height": 1024,
+      "seconds": 5,
+      "length": 328
+    }
+  }
+}

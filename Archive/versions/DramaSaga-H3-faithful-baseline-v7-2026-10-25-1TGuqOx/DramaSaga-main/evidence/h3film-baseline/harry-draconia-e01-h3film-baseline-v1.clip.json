@@ -1,0 +1,17 @@
+{
+  "audio": "/tmp/harry-original-h3-v4-staged/dialogue.wav",
+  "id": "harry-draconia-e01-h3film-baseline-v1",
+  "images": [
+    "/tmp/harry-original-h3-v4-staged/ref-harry-front-close.png",
+    "/tmp/harry-original-h3-v4-staged/ref-harry-speaking-profile.png",
+    "/tmp/harry-original-h3-v4-staged/ref-harry-fullbody.png",
+    "/tmp/harry-original-h3-v4-staged/ref-draconia-front-close.png",
+    "/tmp/harry-original-h3-v4-staged/ref-draconia-speaking-profile.png",
+    "/tmp/harry-original-h3-v4-staged/ref-draconia-fullbody.png",
+    "/tmp/harry-original-h3-v4-staged/ref-two-shot-dialogue.png",
+    "/tmp/harry-original-h3-v4-staged/ref-two-shot-action.png",
+    "/tmp/harry-original-h3-v4-staged/ref-yule-ball-location.png"
+  ],
+  "prompt": "evidence/h3film-baseline/harry-draconia-e01-h3film-baseline-v1.prompt.txt",
+  "seconds": 13.12
+}

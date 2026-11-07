@@ -1,0 +1,28 @@
+{
+ "name": "e01-s02-wan30",
+ "model": "wan-3.0",
+ "end_seconds": 10,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "audio": true,
+ "references": [
+  {
+   "name": "draconia_front_close"
+  },
+  {
+   "name": "draconia_speaking_profile"
+  },
+  {
+   "name": "harry_front_close"
+  },
+  {
+   "name": "yule_ball_location"
+  },
+  {
+   "name": "e01-l01-draconia"
+  }
+ ],
+ "style": {
+  "prompt": "Static locked camera on a tripod: no zoom, no pull-back, no pan, no tilt; the framing and focal length stay identical for the entire shot. Candlelit Yule Ball in the Great Hall: chandeliers, formally dressed dancers, glowing waltz-grid lines on the marble floor. Action beat: Draconia sees a black spark forming above Harry's head. Her smile vanishes. She drops her programme and runs through the dancers. Keep the feet and the glowing floor grid visible in frame for the step beats; when a character refers to the grid or the floor, the grid is visible at that moment. Draconia says: \"Potter, don't turn around! Look at me - only at me - and walk over here slowly.\" Speak in the voice timbre and delivery of @e01-l01-draconia; Draconia is the only speaker. Emotion: alarm she's masking as command. Delivery: [urgent], low but carrying, mid-run breath; \"only at me\" is pleading under the order. Emphasis on \"only\". Keep @draconia_front_close, @draconia_speaking_profile, @harry_front_close identical to the references in face, hair, wardrobe and proportions. Match the staging, framing and lighting of @yule_ball_location."
+ }
+}

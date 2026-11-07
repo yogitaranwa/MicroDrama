@@ -1,0 +1,344 @@
+{
+ "title": "The Last Ferry",
+ "note": "Original two-character micro-drama written to stress the native-audio route: 13 spoken lines, two speakers, a range of expressions, storm sound design, an off-screen speaker, a three-line exchange in one shot, scene changes and a night exterior. Publishable: no borrowed characters or voices.",
+ "logline": "A woman races a storm to reach her dying father; the ferryman who refuses her turns out to have known him for forty years.",
+ "voices": {
+  "Mara": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+  "Jonas": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent"
+ },
+ "references": {
+  "masters": {
+   "mara-master": "Cinematic realistic head-and-shoulders portrait of an original character: a woman in her mid-thirties, shoulder-length damp dark-blonde hair, pale freckled skin, grey-green eyes, navy rain jacket over a grey wool sweater. Neutral front-facing, closed mouth, tired but composed. Soft neutral grey background. Realistic skin texture. No text, no watermark, no other people. Vertical 9:16.",
+   "jonas-master": "Cinematic realistic head-and-shoulders portrait of an original character: a man in his sixties, weathered tanned face with deep lines, short grey stubble, thick grey eyebrows, pale blue eyes, dark green knitted wool cap, heavy dark-yellow oilskin coat over a navy sweater. Neutral front-facing, closed mouth, calm and weary. Soft neutral grey background. Realistic skin texture. No text, no watermark, no other people. Vertical 9:16."
+  },
+  "frames": {
+   "s01-dock": {
+    "refs": [
+     "mara-master"
+    ],
+    "prompt": "Cinematic night shot, vertical 9:16: a rain-soaked wooden pier running toward a small ticket office with one glowing yellow window at its end. The woman from the reference walks away from camera along the pier carrying a small canvas suitcase, head down, rain streaking in the light, wet planks reflecting. A dark ferry silhouette moored to the side, black sea, low clouds. No text, no watermark, no other people."
+   },
+   "s02-door": {
+    "refs": [
+     "mara-master",
+     "jonas-master"
+    ],
+    "prompt": "Cinematic realistic interior, vertical 9:16: a small wooden ferry ticket office, warm yellow lamp light, a wooden counter with a brass grille, a wall clock showing 8:45, old timetable boards and a pinned storm notice. The woman from the first reference stands drenched in the open doorway at LEFT, hand on the door, mouth closed, catching her breath. The older man from the second reference sits behind the counter at RIGHT, looking up from a newspaper. Both faces clearly recognizable and matching their references. No text overlays, no watermark."
+   },
+   "s03-jonas": {
+    "refs": [
+     "jonas-master"
+    ],
+    "prompt": "Cinematic realistic medium close-up, vertical 9:16: the older man from the reference behind the wooden counter of a small ticket office, warm lamp light, a storm notice pinned on the wall beside him, mouth closed, calm weary expression, eyes toward camera-left. Same face, cap and oilskin coat as the reference. No text overlays, no watermark."
+   },
+   "s04-mara": {
+    "refs": [
+     "mara-master"
+    ],
+    "prompt": "Cinematic realistic close-up, vertical 9:16: the woman from the reference standing at the wooden counter of a small ticket office, wet hair clinging to her face, mouth closed, tense and tired, eyes toward camera-right, warm lamp light. Same face, hair and navy jacket as the reference. No text overlays, no watermark."
+   },
+   "s07-two": {
+    "refs": [
+     "mara-master",
+     "jonas-master"
+    ],
+    "prompt": "Cinematic realistic medium two-shot across a wooden counter, vertical 9:16: the woman from the first reference at LEFT and the older man from the second reference at RIGHT, warm lamp light, a worn photograph lying on the counter between them, both mouths closed, both looking down at the photograph. Both faces matching their references. No text overlays, no watermark."
+   },
+   "s09-keys": {
+    "refs": [
+     "jonas-master"
+    ],
+    "prompt": "Cinematic realistic medium shot, vertical 9:16: the older man from the reference standing behind the counter in a small ticket office, one hand reaching toward a ring of keys on a hook on the wooden wall, warm lamp light, mouth closed, resolute expression. Same face, cap and oilskin coat as the reference. No text overlays, no watermark."
+   },
+   "s10-boat": {
+    "refs": [
+     "mara-master",
+     "jonas-master"
+    ],
+    "prompt": "Cinematic night exterior, vertical 9:16: a small old fishing boat tied at a wooden pier in heavy rain, a lantern hanging by the wheelhouse. The older man from the second reference stands at the wheel in his oilskin coat, mouth closed. The woman from the first reference steps aboard behind him holding a canvas suitcase. Wet deck, dark rough sea. Both faces matching their references. No text, no watermark."
+   },
+   "s11-mara-boat": {
+    "refs": [
+     "mara-master"
+    ],
+    "prompt": "Cinematic night close-up, vertical 9:16: the woman from the reference at the rail of a small fishing boat in a storm, rain streaming down her face, wind in her hair, lantern light from one side, mouth closed, eyes toward the dark horizon at camera-left. Same face and navy jacket as the reference. No text, no watermark."
+   }
+  },
+  "frame_for": {
+   "s01-dock": "s01-dock",
+   "s02-door": "s02-door",
+   "s03-jonas": "s03-jonas",
+   "s04-mara": "s04-mara",
+   "s05-jonas": "s03-jonas",
+   "s06-photo": "s04-mara",
+   "s07-recognition": "s07-two",
+   "s08-hurt": "s04-mara",
+   "s09-keys": "s09-keys",
+   "s10-boat": "s10-boat",
+   "s11-final": "s11-mara-boat"
+  }
+ },
+ "shots": [
+  {
+   "id": "s01-dock",
+   "scene_id": "dock-arrival",
+   "location": "pier",
+   "seconds": 4,
+   "visual": "A woman hurries along a rain-soaked wooden pier toward the lit window of a small ticket office, suitcase in hand, head down against the wind, rain streaming through the light.",
+   "camera": "Wide shot, slow push forward.",
+   "sound": {
+    "ambience": "heavy rain on wood and water, wind, water slapping against pilings",
+    "effects": [
+     "her hurried footsteps splashing on wet planks",
+     "a long low roll of distant thunder"
+    ]
+   }
+  },
+  {
+   "id": "s02-door",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 4,
+   "visual": "She bursts through the door, wet and breathless, rain blowing in. Behind the counter the older man looks up slowly from a newspaper. Her chest heaves and her eyes are wide and urgent.",
+   "camera": "Medium-wide shot from inside the office, locked.",
+   "sound": {
+    "ambience": "warm quiet office, rain drumming on a tin roof, a ticking wall clock",
+    "effects": [
+     "the door banging open and a small bell jangling"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "One ticket. The nine o'clock ferry.",
+      "delivery": "breathless, hurried"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03-jonas",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 6,
+   "visual": "The ferryman shakes his head slowly, calm and weary, tapping a storm notice pinned beside him. His eyes stay level and unmoved.",
+   "camera": "Steady medium close-up, locked.",
+   "sound": {
+    "ambience": "warm quiet office, rain on the roof, ticking clock",
+    "effects": [
+     "a slow finger tap on paper"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "The nine o'clock is cancelled. Storm warning since six.",
+      "delivery": "flat, gravelly, final"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04-mara",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 4,
+   "visual": "Mara's face crumples with desperate hope; her eyes shine, her lip trembles and she grips the edge of the counter.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "rain on the roof, ticking clock",
+    "effects": [
+     "wet fabric creaking and a shaky breath"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "Please. My father is dying.",
+      "delivery": "voice cracking, barely controlled"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s05-jonas",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 6,
+   "visual": "Jonas narrows his eyes and studies her, suspicious, one eyebrow lifting and his jaw working slightly, then he leans back and folds his arms.",
+   "camera": "Medium close-up, locked.",
+   "sound": {
+    "ambience": "rain on the roof, ticking clock",
+    "effects": [
+     "a wooden chair creaking as he leans back"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Everyone's father is dying when the ferry's cancelled.",
+      "delivery": "dry, suspicious, unmoved"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s06-photo",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 4,
+   "visual": "Mara's expression hardens into defiance; she pulls a worn photograph from her coat, slaps it on the counter and lifts her chin.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "rain on the roof, ticking clock",
+    "effects": [
+     "the photograph slapping down on the wooden counter"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "Then look at him.",
+      "delivery": "defiant, low, shaking with anger"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s07-recognition",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 6,
+   "visual": "Jonas picks up the photograph and goes very still; his eyes widen, his breath catches and his face softens. Mara watches him, confused and hopeful. They speak quietly across the counter.",
+   "camera": "Medium two-shot across the counter, locked with a very slow subtle push.",
+   "sound": {
+    "ambience": "rain softening on the roof, ticking clock",
+    "effects": [
+     "paper rustling as the photograph is lifted",
+     "a slow rumble of thunder far off"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Henrik.",
+      "delivery": "whispered, stunned recognition"
+     },
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "You knew him?",
+      "delivery": "hushed, desperate"
+     },
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Forty years. He never mentioned a daughter.",
+      "delivery": "gentle, stunned"
+     }
+    ]
+   },
+   "allow_multi_speaker": true
+  },
+  {
+   "id": "s08-hurt",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 4,
+   "visual": "Mara blinks back tears and gives a small broken laugh; her mouth twists, hurt and bitter, her eyes dropping then lifting.",
+   "camera": "Close-up, locked.",
+   "sound": {
+    "ambience": "rain on the roof, ticking clock",
+    "effects": [
+     "a shaky exhale"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "He never mentioned me either.",
+      "delivery": "wry, wounded, quiet"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s09-keys",
+   "scene_id": "office",
+   "location": "ticket-office",
+   "seconds": 6,
+   "visual": "Jonas exhales, makes a decision, pushes his chair back, stands and lifts a ring of keys from a hook, jaw set, eyes warming.",
+   "camera": "Medium shot, locked.",
+   "sound": {
+    "ambience": "rain on the roof, ticking clock",
+    "effects": [
+     "a chair scraping back",
+     "a heavy ring of keys jingling off a metal hook",
+     "a crack of thunder"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Get your bag. My boat doesn't need a timetable.",
+      "delivery": "gruff, resolute, a trace of warmth"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s10-boat",
+   "scene_id": "crossing",
+   "location": "boat",
+   "seconds": 4,
+   "visual": "Jonas at the wheel of a small fishing boat, rain lashing, waves slamming the bow as the engine coughs and catches; Mara grips the rail behind him.",
+   "camera": "Medium-wide shot with a rough handheld sway.",
+   "sound": {
+    "ambience": "storm wind, heavy rain, waves, creaking wood",
+    "effects": [
+     "an old diesel engine coughing then catching with a throaty rumble",
+     "waves slamming against the hull with spray",
+     "a rope creaking taut"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Hold on to something!",
+      "delivery": "shouting over the storm"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s11-final",
+   "scene_id": "crossing",
+   "location": "boat",
+   "seconds": 6,
+   "visual": "Mara at the rail, rain streaming down her face, small and frightened, looking toward the dark horizon; she turns her head slightly toward Jonas, who is off-screen beside her.",
+   "camera": "Close-up, gentle handheld sway.",
+   "sound": {
+    "ambience": "storm wind, rain, waves and a steady engine rumble",
+    "effects": [
+     "a swell of water and a wind gust",
+     "a distant foghorn"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Mara",
+      "voice": "warm, slightly husky woman in her thirties with a faint Scandinavian-tinged English accent, controlled but fraying under stress",
+      "line": "What if I'm too late?",
+      "delivery": "small, afraid"
+     },
+     {
+      "speaker": "Jonas",
+      "voice": "deep, gravelly man in his sixties, slow and weathered, faint Nordic-tinged English accent",
+      "line": "Then we tell him anyway.",
+      "delivery": "steady, gentle, raised over the wind",
+      "offscreen": true
+     }
+    ]
+   }
+  }
+ ]
+}

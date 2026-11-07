@@ -1,0 +1,111 @@
+{
+  "jobs": [
+    {
+      "id": "frame-harry-1",
+      "provider": "magichour",
+      "endpoint": "/v1/ai-image-editor",
+      "quote_credits": 50,
+      "body": {
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "assets": {
+          "image_file_paths": []
+        },
+        "style": {
+          "prompt": null
+        }
+      },
+      "blocked_by": [
+        "user approved200credit frame-only scope",
+        "reviewed aftermath reference",
+        "hash-bound actual uploads",
+        "exact reviewed prompt"
+      ],
+      "live_enabled": false,
+      "wardrobe_target": "Documented dark necktie, black red-lined dress robes, white shirt; no bowtie"
+    },
+    {
+      "id": "frame-harry-2",
+      "provider": "magichour",
+      "endpoint": "/v1/ai-image-editor",
+      "quote_credits": 50,
+      "body": {
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "assets": {
+          "image_file_paths": []
+        },
+        "style": {
+          "prompt": null
+        }
+      },
+      "blocked_by": [
+        "user approved200credit frame-only scope",
+        "reviewed aftermath reference",
+        "hash-bound actual uploads",
+        "exact reviewed prompt"
+      ],
+      "live_enabled": false,
+      "wardrobe_target": "Documented dark necktie, black red-lined dress robes, white shirt; no bowtie"
+    },
+    {
+      "id": "frame-draconia-1",
+      "provider": "magichour",
+      "endpoint": "/v1/ai-image-editor",
+      "quote_credits": 50,
+      "body": {
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "assets": {
+          "image_file_paths": []
+        },
+        "style": {
+          "prompt": null
+        }
+      },
+      "blocked_by": [
+        "user approved200credit frame-only scope",
+        "reviewed aftermath reference",
+        "hash-bound actual uploads",
+        "exact reviewed prompt"
+      ],
+      "live_enabled": false,
+      "wardrobe_target": "Documented dark necktie, black red-lined dress robes, white shirt; no bowtie"
+    },
+    {
+      "id": "frame-draconia-2",
+      "provider": "magichour",
+      "endpoint": "/v1/ai-image-editor",
+      "quote_credits": 50,
+      "body": {
+        "model": "nano-banana-2.1",
+        "image_count": 1,
+        "aspect_ratio": "9:16",
+        "resolution": "1k",
+        "assets": {
+          "image_file_paths": []
+        },
+        "style": {
+          "prompt": null
+        }
+      },
+      "blocked_by": [
+        "user approved200credit frame-only scope",
+        "reviewed aftermath reference",
+        "hash-bound actual uploads",
+        "exact reviewed prompt"
+      ],
+      "live_enabled": false,
+      "wardrobe_target": "Documented dark necktie, black red-lined dress robes, white shirt; no bowtie"
+    }
+  ],
+  "total_credits": 200,
+  "status": "proposal_missing_authority_and_parameters",
+  "no_auto_advance": true
+}

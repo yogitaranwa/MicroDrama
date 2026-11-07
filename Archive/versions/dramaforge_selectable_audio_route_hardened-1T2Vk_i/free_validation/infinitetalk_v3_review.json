@@ -1,0 +1,17 @@
+{
+  "backend": "infinitetalk",
+  "version": 3,
+  "source_url": "[private-project-source]",
+  "runtime_seconds": 1671.87,
+  "runtime_pass": true,
+  "sha256": "2e9cce6778081f688a945c69fa1b5607b4d2c794b258898cd8c785ba764a8849",
+  "frames": 17,
+  "fps": 25,
+  "video_audio_stream_seconds": 0.68,
+  "source_audio_seconds": 1.2,
+  "discarded_seconds": 0.52,
+  "decoded_aac_seconds": 0.704,
+  "visual_review": "limited identity/robe/background preserved, mouth changes visible, face soft",
+  "dialogue_acceptance": "rejected_truncated_test_audio",
+  "episode_acceptance": false
+}

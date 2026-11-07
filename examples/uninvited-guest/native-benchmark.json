@@ -1,0 +1,248 @@
+{
+ "title": "Harry Potter - The Uninvited Guest (benchmark only, not for publication)",
+ "note": "Fixed benchmark for comparing render routes on the same scenes and lines. Uses copyrighted characters: never publish. Voices are written descriptions, not preset names. No shot continues the previous frame: every one changes framing.",
+ "shots": [
+  {
+   "id": "s01-hall",
+   "scene_id": "lunch",
+   "location": "great-hall",
+   "seconds": 5,
+   "visual": "Wide shot of a lively Hogwarts lunch: Harry, Hermione and Ron eat at a long table; two distant owls cross high above the tables.",
+   "camera": "Slow gentle push forward.",
+   "sound": {
+    "ambience": "warm Great Hall lunch: cutlery on pewter, goblets, low overlapping chatter",
+    "effects": [
+     "soft owl wing flaps overhead"
+    ]
+   }
+  },
+  {
+   "id": "s02-hermione",
+   "scene_id": "lunch",
+   "location": "great-hall",
+   "seconds": 3,
+   "visual": "Hermione lowers her book and teases Ron with a dry look.",
+   "camera": "Steady close-up, eyeline just off camera right.",
+   "sound": {
+    "ambience": "quiet hall chatter behind",
+    "dialogue": [
+     {
+      "speaker": "Hermione",
+      "voice": "bright, quick, slightly bossy teenage girl with a British accent",
+      "line": "Do you ever stop eating?",
+      "delivery": "dry, teasing",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03-ron",
+   "scene_id": "lunch",
+   "location": "great-hall",
+   "seconds": 4,
+   "visual": "Ron answers dryly, fork held safely below his mouth, subtle raised eyebrow.",
+   "camera": "Steady medium close-up, eyeline just off camera left.",
+   "sound": {
+    "ambience": "quiet hall chatter behind",
+    "dialogue": [
+     {
+      "speaker": "Ron",
+      "voice": "warm, dry, easygoing teenage boy with a British accent",
+      "line": "Usually when you start revising.",
+      "delivery": "dry, amused",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04-table",
+   "scene_id": "lunch",
+   "location": "great-hall",
+   "seconds": 3,
+   "visual": "Harry smiles at Ron; the owl beside a letter goes rigid and still.",
+   "camera": "Locked medium shot.",
+   "sound": {
+    "ambience": "quiet hall chatter that dips as the owl freezes",
+    "effects": [
+     "a single owl feather rustle, then a sudden hush"
+    ]
+   }
+  },
+  {
+   "id": "s05-owls",
+   "scene_id": "alarm",
+   "location": "great-hall",
+   "seconds": 3,
+   "visual": "An owl on a beam snaps its head toward the entrance while the other owls wheel up into the rafters.",
+   "camera": "Locked wide shot.",
+   "sound": {
+    "ambience": "hushed hall, chatter fading",
+    "effects": [
+     "sharp owl screech and a flurry of wings"
+    ]
+   }
+  },
+  {
+   "id": "s06-impact",
+   "scene_id": "alarm",
+   "location": "great-hall",
+   "seconds": 5,
+   "visual": "First impact: a distant boom shakes the hall; Ron freezes, glances toward the entrance and speaks.",
+   "camera": "Medium close-up, locked.",
+   "sound": {
+    "ambience": "tense hall, goblets trembling",
+    "effects": [
+     "deep distant boom with a stone rumble, goblets rattling on the table"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Ron",
+      "voice": "warm, dry, easygoing teenage boy with a British accent",
+      "line": "Please tell me that was a staircase.",
+      "delivery": "nervous joke, worried",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s07-warning",
+   "scene_id": "alarm",
+   "location": "great-hall",
+   "seconds": 4,
+   "visual": "Hermione rises and gives a firm warning, motioning her friends back; fine dust falls through the light.",
+   "camera": "Stable medium shot.",
+   "sound": {
+    "ambience": "low tense rumble, dust pattering",
+    "effects": [
+     "falling dust and pebbles pattering on stone, a second muffled boom far off"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Hermione",
+      "voice": "bright, quick, slightly bossy teenage girl with a British accent",
+      "line": "Away from the entrance. Now.",
+      "delivery": "urgent, firm",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08-collapse",
+   "scene_id": "breach",
+   "location": "great-hall",
+   "seconds": 5,
+   "visual": "The cracked entrance arch bursts inward: masonry and splintered doors collapse into the hall while students duck behind benches.",
+   "camera": "Locked wide shot.",
+   "sound": {
+    "ambience": "hall echo",
+    "effects": [
+     "enormous stone crash with splintering wood and rubble scattering across the floor, long reverberating hall echo",
+     "screams and benches scraping"
+    ]
+   }
+  },
+  {
+   "id": "s09-foot",
+   "scene_id": "breach",
+   "location": "great-hall",
+   "seconds": 4,
+   "visual": "One huge dragon forefoot plants into the rubble; fragments jump and dust puffs outward.",
+   "camera": "Locked ground-level shot.",
+   "sound": {
+    "ambience": "settling dust, distant crowd",
+    "effects": [
+     "heavy thud of the dragon foot with rubble jumping and a low rumble"
+    ]
+   }
+  },
+  {
+   "id": "s10-dragon",
+   "scene_id": "breach",
+   "location": "great-hall",
+   "seconds": 6,
+   "visual": "The dragon forces its shoulders through the breach into the hall, wings folded, dust shaking from the masonry.",
+   "camera": "Slow low-angle push.",
+   "sound": {
+    "ambience": "echoing hall",
+    "effects": [
+     "stone scraping against scales, deep reptilian breathing and a low rumbling growl, dust trickling"
+    ]
+   }
+  },
+  {
+   "id": "s11-harry",
+   "scene_id": "confrontation",
+   "location": "great-hall",
+   "seconds": 4,
+   "visual": "Harry holds his wand low, then lifts it to protect his friends, frightened but determined.",
+   "camera": "Tight calm close-up, eyeline off camera left.",
+   "sound": {
+    "ambience": "tense hall, distant crowd murmur",
+    "effects": [
+     "cloth rustle as the wand rises"
+    ],
+    "dialogue": [
+     {
+      "speaker": "Harry",
+      "voice": "steady, quiet, determined teenage boy with a British accent",
+      "line": "Stay behind me.",
+      "delivery": "low, protective",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s12-reveal",
+   "scene_id": "confrontation",
+   "location": "great-hall",
+   "seconds": 4,
+   "visual": "Black-robed Voldemort steps from beside the dragon foreleg into the light, then stops.",
+   "camera": "Stable low-angle shot.",
+   "sound": {
+    "ambience": "dragon breathing behind, hall echo",
+    "effects": [
+     "slow footsteps on stone and heavy robes rustling"
+    ]
+   }
+  },
+  {
+   "id": "s13-voldemort",
+   "scene_id": "confrontation",
+   "location": "great-hall",
+   "seconds": 3,
+   "visual": "Voldemort finds Harry in the crowd and speaks quietly, lips barely moving.",
+   "camera": "Steady close-up, eyeline off camera left.",
+   "sound": {
+    "ambience": "hall echo, faint dragon breathing",
+    "dialogue": [
+     {
+      "speaker": "Voldemort",
+      "voice": "soft, cold, unhurried adult male voice, almost a whisper, British accent",
+      "line": "There you are.",
+      "delivery": "quiet, cold recognition",
+      "offscreen": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "s14-eyes",
+   "scene_id": "confrontation",
+   "location": "great-hall",
+   "seconds": 3,
+   "visual": "Extreme close-up of Voldemort eyes, a flicker of orange light reflected in them.",
+   "camera": "Very slow subtle push.",
+   "sound": {
+    "ambience": "low ominous room tone",
+    "effects": [
+     "faint crackle of fire and a low rumble"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "seconds": 16,
+ "lines": [
+  {
+   "speaker": "Harry Potter",
+   "text": "This vial is evidence, Professor. The actual thief remains inside the Room of Requirement brewing Polyjuice right now. I found the bottle near the tapestry while Filch chased us down the hallway.",
+   "emotion": "calm and redirecting",
+   "expression": "hands the vial to McGonagall without breaking stride, eyes fixed ahead"
+  },
+  {
+   "speaker": "Professor McGonagall",
+   "text": "You expect me to believe a student stumbled onto a serious breach while violating curfew? You have earned detention every Saturday until June. We will discuss your sources at length then.",
+   "emotion": "sharp scepticism masking reluctant respect",
+   "expression": "accepts the vial, lips thinning, gaze boring into Harry's face"
+  }
+ ]
+}

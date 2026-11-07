@@ -1,0 +1,45 @@
+DRAMAFORGE m24 CURRENT CODE CHECKPOINT - RUNTIME UNACCEPTED
+
+This is locally tested source, not a finished integration or episode.
+It does not satisfy the conditional approval for paid generation. No paid calls were made.
+
+Download the following FIVE normal ZIPs and extract all five into the same
+empty folder. All begin at dramaforge/. No concatenation or unpublished patch
+is required. Existing upstream repository ZIPs are unchanged.
+
+Core: https://drive.google.com/file/d/18dcO7j3H9v7tda_2vcVFrDfqjzdGE0_3/view?usp=drivesdk&account=private
+SHA256: 1098f5d8d9aacd10aae8477f922bc8ae438fe319f4e1a9abe23b8de107085849
+
+dramaforge_m20_multitalk.zip: https://drive.google.com/file/d/1QTo49ft4UV_AALLto6_kIlHjtf2unmfN/view?usp=drivesdk&account=private
+SHA256: fc9473e33124796bafaef2bbef97ed70839505ee917e0e7f298821638d02583e
+
+dramaforge_m20_infinitetalk.zip: https://drive.google.com/file/d/1yY3PGjYKmjJYW48ojBR5XkcpIRaSuJhq/view?usp=drivesdk&account=private
+SHA256: 87f33ceb2faf6213330e336b7af8990c2358d5b89bca298e0f70bddca03bf0ea
+
+dramaforge_m20_vace.zip: https://drive.google.com/file/d/1gGqDVoinNhOnP_eeohR_6lRpiBoKGc5X/view?usp=drivesdk&account=private
+SHA256: 2b291d34cb65bb031c5d127e1a857dcf4c432c98c9459a0e72b5cd4ebd3c4809
+
+dramaforge_m20_pulid.zip: https://drive.google.com/file/d/1oPTfhweuoNX-OPFkUJ2P985E8t1zLSqe/view?usp=drivesdk&account=private
+SHA256: 255eb1bdd5f4df778333566f3c0115b35f1a2b111751fe0f2b14d320f19f9b59
+
+Combined package verification: 695 files byte-compared to the current source.
+New core downloaded back from Drive and SHA256 matched. ZIP integrity passed.
+Local full tests:485 passed+30 subtests; one known MoviePy last-frame warning.
+Code/executor tests are not model inference. No model weights or secrets included.
+
+Includes all later working fixes: gated VACE/PuLID execution, explicit InfiniteTalk
+audio checkpoint, checkpoint layouts, absolute Python preflight, streamed logs
+with process-group timeout cleanup, mixed-RoPE/value dtype attention correction.
+Prepared VACE retry notebook is included but has NOT been run.
+
+Actual runtime state: VACE Version1 last checked Running at02:56 IST.
+Environment installed; CLI help failed missingmatplotlib; core inference pending.
+No new model has confirmed successful inference. Earlier equal-dtype T4 numeric
+comparison and legacy Wan seed clips are limited evidence, not integration passes.
+Model environments must remain separate. Read licenses before downloading/using
+models, including non-commercial InsightFace conditions. No commercial rights
+for franchise material are cleared.
+
+Read docs/releases/m24_status.md, docs/LOCAL_MODEL_EXECUTION.md and
+out/acceptance/current_inventory.json. Episode1 still needs final voices, full
+v9 assets, connected proof, full render and continuous watch/listen review.

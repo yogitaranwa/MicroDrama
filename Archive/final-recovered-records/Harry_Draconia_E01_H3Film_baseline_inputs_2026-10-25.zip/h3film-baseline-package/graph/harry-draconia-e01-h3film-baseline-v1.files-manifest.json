@@ -1,0 +1,42 @@
+{
+  "0a594d2c-ref-harry-front-close.png": {
+    "bytes": 2072868,
+    "sha256": "9a813a6c92e65f4d4b11c856609aa563842ac046bcd7f593c9069df4a2aafb46"
+  },
+  "4b6cc4d2-ref-two-shot-dialogue.png": {
+    "bytes": 2218896,
+    "sha256": "a6d956e2dcae0664de6da70035f6c9a3864ac59c0840c54eeba854d130d55a36"
+  },
+  "6f358b25-ref-draconia-speaking-profile.png": {
+    "bytes": 2223356,
+    "sha256": "43ade29ca633b2c47e10862d1fad6f2d734285a70977f99f09eb938912ba8b1e"
+  },
+  "8ca89816-ref-two-shot-action.png": {
+    "bytes": 2373958,
+    "sha256": "c2498543dc464c2ddf16271a927a09d8341fe28fcc802b9972cb5d59793d254f"
+  },
+  "9e613b09-ref-yule-ball-location.png": {
+    "bytes": 3056670,
+    "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0"
+  },
+  "a96e4a5e-fit13.12s-60c0baa1.wav": {
+    "bytes": 1157262,
+    "sha256": "ce64fbb7a8650e77e3d6dde7316eba1939968d32dc680520b6cc640addc2a58f"
+  },
+  "ae08ca1f-ref-draconia-fullbody.png": {
+    "bytes": 2494163,
+    "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d"
+  },
+  "bb64686d-ref-draconia-front-close.png": {
+    "bytes": 2185515,
+    "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c"
+  },
+  "d9caa514-ref-harry-fullbody.png": {
+    "bytes": 2062177,
+    "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a"
+  },
+  "fa627edc-ref-harry-speaking-profile.png": {
+    "bytes": 1964313,
+    "sha256": "adead16dd28e7aa821ed3e98f5fb20553343f1c53bd3711250ee16d7594ae909"
+  }
+}

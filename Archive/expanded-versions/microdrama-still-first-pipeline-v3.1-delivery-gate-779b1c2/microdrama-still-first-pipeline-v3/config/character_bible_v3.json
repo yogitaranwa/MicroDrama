@@ -1,0 +1,86 @@
+{
+  "harry": {
+    "hair": "messy black hair",
+    "face": "round glasses, recognizable accepted reference identity",
+    "outfit": "white dress shirt, plain black long tie, black buttoned waistcoat, dark trousers, plain black formal robe with a thin red inner lining, and polished black formal shoes",
+    "forbidden": [
+      "blade",
+      "boots",
+      "ice skates",
+      "knife",
+      "metal cuffs",
+      "rapier",
+      "skate blades",
+      "sword",
+      "tuxedo jacket"
+    ],
+    "wand": "slim wooden wand in right hand",
+    "footwear": "plain black formal dress shoes"
+  },
+  "draconia": {
+    "hair": "platinum blonde braided updo made only of hair, matching the accepted reference, with only one small jeweled pin tucked into the side braid",
+    "face": "recognizable accepted reference identity",
+    "outfit": "emerald green embroidered sleeveless Yule gown with sheer dark green shoulder drapes",
+    "forbidden": [
+      "costume change",
+      "crown",
+      "headpiece",
+      "ice skates",
+      "jewelry on top of head",
+      "long loose side braid",
+      "necklace change",
+      "new jewelry",
+      "skate blades",
+      "tiara"
+    ],
+    "wand": "slim wand, usually hidden while dancing",
+    "footwear": "emerald formal dress shoes matching the accepted reference"
+  },
+  "scene": {
+    "palette": "candle gold and cool blue shadows",
+    "camera": "restrained cinematic photorealistic shallow depth of field",
+    "forbidden": [
+      "anime",
+      "illustration",
+      "readable text",
+      "extra fingers",
+      "distorted faces"
+    ]
+  },
+  "input_contamination_review": {
+    "ref-harry-fullbody.png": "canonical garment authority: black buttoned waistcoat, long black tie, red-lined robe, polished black formal shoes",
+    "ref-two-shot-action.png": "usable for action identity/pose, but footwear must be checked manually because full-body anchors are limited",
+    "draconia references": "braided updo is consistent; prompt wording must avoid \"braided crown\" because the model turns it into a physical crown"
+  },
+  "anchor_sets": {
+    "close_dialogue": [
+      "ref-harry-front-close.png",
+      "ref-harry-fullbody.png",
+      "ref-draconia-front-close.png",
+      "ref-two-shot-dialogue.png",
+      "ref-yule-ball-location.png"
+    ],
+    "action_fullbody": [
+      "ref-harry-fullbody.png",
+      "ref-two-shot-action.png",
+      "ref-draconia-fullbody.png",
+      "ref-yule-ball-location.png"
+    ],
+    "cliffhanger_close": [
+      "ref-harry-front-close.png",
+      "ref-harry-fullbody.png",
+      "ref-draconia-front-close.png",
+      "ref-two-shot-dialogue.png",
+      "ref-yule-ball-location.png"
+    ]
+  },
+  "canonical_decision": {
+    "decision": "Use the accepted Harry full-body reference as canonical: black buttoned waistcoat under the red-lined formal robe. This resolves an internal bible contradiction; the no-waistcoat rule was not a user mandate.",
+    "evidence": [
+      "ref-harry-fullbody.png shows the waistcoat plainly",
+      "ref-two-shot-action.png supports the same long-tie formal look",
+      "ref-harry-front-close.png remains useful for face/hair identity but is not the garment authority"
+    ],
+    "draconia": "Keep accepted braided updo made only of hair with small side pin; no tiara/headpiece or long side braid."
+  }
+}

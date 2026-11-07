@@ -1,0 +1,1000 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "scene": 1,
+      "speaker": "DRACONIA",
+      "spoken": "Harry, come with me. Don't look behind you. I'll explain, but you need to come with me now.",
+      "text": "[urgent] [breathing heavily] Harry, come with me. Don't look behind you. I'll explain, but you need to come with me now.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 2,
+      "scene": 1,
+      "speaker": "HARRY",
+      "spoken": "You've just come across the room and grabbed me. What am I supposed to think? Tell me what you've seen.",
+      "text": "[frightened] You've just come across the room and grabbed me. What am I supposed to think? Tell me what you've seen.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 3,
+      "scene": 1,
+      "speaker": "HARRY",
+      "spoken": "That would have gone straight through me. You saw that coming, didn't you? That's why you ran.",
+      "text": "[shaken] That would have gone straight through me. You saw that coming, didn't you? That's why you ran.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 4,
+      "scene": 1,
+      "speaker": "DRACONIA",
+      "spoken": "I saw something above you. I didn't know what it was going to do. Harry, you're looking at the floor. Look at me.",
+      "text": "[urgent] I saw something above you. I didn't know what it was going to do. Harry, you're looking at the floor. Look at me.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 5,
+      "scene": 1,
+      "speaker": "HARRY",
+      "spoken": "I'm looking at the hole where I was standing. Give me a second. I don't even know which way we're going.",
+      "text": "[breathing heavily] I'm looking at the hole where I was standing. Give me a second. I don't even know which way we're going.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 6,
+      "scene": 1,
+      "speaker": "DRACONIA",
+      "spoken": "Neither do I, yet. But the couples are moving and we're moving with them. For the moment, that's all I've got.",
+      "text": "[nervous] Neither do I, yet. But the couples are moving and we're moving with them. For the moment, that's all I've got.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 7,
+      "scene": 2,
+      "speaker": "HARRY",
+      "spoken": "We can't leave her like that. She's still reaching for someone. If I can get my wand clear, I can try to break the ice.",
+      "text": "[frightened] We can't leave her like that. She's still reaching for someone. If I can get my wand clear, I can try to break the ice.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 8,
+      "scene": 2,
+      "speaker": "DRACONIA",
+      "spoken": "And if you stop beside her, I'll have two people I can't get out. Watch your heel. Look at what's happening to it.",
+      "text": "[quietly] And if you stop beside her, I'll have two people I can't get out. Watch your heel. Look at what's happening to it.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 9,
+      "scene": 2,
+      "speaker": "HARRY",
+      "spoken": "It was doing the same thing to me. I didn't even feel it. I was going to stand right there.",
+      "text": "[angry] It was doing the same thing to me. I didn't even feel it. I was going to stand right there.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 10,
+      "scene": 2,
+      "speaker": "DRACONIA",
+      "spoken": "You saw someone who needed help. I'm not telling you that was wrong. I'm telling you the floor doesn't care why you stop.",
+      "text": "[nervous] You saw someone who needed help. I'm not telling you that was wrong. I'm telling you the floor doesn't care why you stop.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 11,
+      "scene": 2,
+      "speaker": "HARRY",
+      "spoken": "Do you think I don't understand that? I understand it. I just don't know how to walk away while she's looking at us.",
+      "text": "[raising voice] Do you think I don't understand that? I understand it. I just don't know how to walk away while she's looking at us.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 12,
+      "scene": 2,
+      "speaker": "DRACONIA",
+      "spoken": "I don't know how to help her yet. I wish I had something better to say, but I don't. We need to find what's doing this.",
+      "text": "[defensive] I don't know how to help her yet. I wish I had something better to say, but I don't. We need to find what's doing this.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 13,
+      "scene": 2,
+      "speaker": "HARRY",
+      "spoken": "Then that's what we're doing. We're not finding a door and pretending we didn't see her. If we get a chance, we go back.",
+      "text": "[angry] Then that's what we're doing. We're not finding a door and pretending we didn't see her. If we get a chance, we go back.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 14,
+      "scene": 2,
+      "speaker": "DRACONIA",
+      "spoken": "If we can reach her without being caught ourselves, yes. But don't pull away from me without telling me. I nearly lost you just then.",
+      "text": "[voice trembling] If we can reach her without being caught ourselves, yes. But don't pull away from me without telling me. I nearly lost you just then.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 15,
+      "scene": 3,
+      "speaker": "HARRY",
+      "spoken": "There's someone in the glass, over my shoulder. Don't turn us around. I want to see what it does if we change direction.",
+      "text": "[angry] There's someone in the glass, over my shoulder. Don't turn us around. I want to see what it does if we change direction.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 16,
+      "scene": 3,
+      "speaker": "DRACONIA",
+      "spoken": "I can see the mask. Are you sure it isn't another couple behind us? The reflection's full of people.",
+      "text": "[voice trembling] I can see the mask. Are you sure it isn't another couple behind us? The reflection's full of people.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 17,
+      "scene": 3,
+      "speaker": "HARRY",
+      "spoken": "There. Nobody else did that. It waited for me, then took the same step. Whatever it is, it's watching us.",
+      "text": "[frustrated] There. Nobody else did that. It waited for me, then took the same step. Whatever it is, it's watching us.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 18,
+      "scene": 3,
+      "speaker": "DRACONIA",
+      "spoken": "Or following us. I don't like the way it's closing the distance. Can you still see it when we turn away from the window?",
+      "text": "[defensive] Or following us. I don't like the way it's closing the distance. Can you still see it when we turn away from the window?",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 19,
+      "scene": 3,
+      "speaker": "HARRY",
+      "spoken": "Not yet. I can't watch it and watch the floor at the same time. Tell me before you change the step, will you?",
+      "text": "[breathing heavily] Not yet. I can't watch it and watch the floor at the same time. Tell me before you change the step, will you?",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 20,
+      "scene": 3,
+      "speaker": "DRACONIA",
+      "spoken": "I will. And don't keep looking over my shoulder like that. Every time you do, I think something's already behind me.",
+      "text": "[quietly] I will. And don't keep looking over my shoulder like that. Every time you do, I think something's already behind me.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 21,
+      "scene": 4,
+      "speaker": "DRACONIA",
+      "spoken": "Harry, are you hurt? You're holding your breath. I need you to tell me if it caught you.",
+      "text": "[whispers] Harry, are you hurt? You're holding your breath. I need you to tell me if it caught you.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 22,
+      "scene": 4,
+      "speaker": "HARRY",
+      "spoken": "It didn't. I thought it had for a second. Listen to the orchestra. There are two beats before each one lands.",
+      "text": "[tense] It didn't. I thought it had for a second. Listen to the orchestra. There are two beats before each one lands.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 23,
+      "scene": 4,
+      "speaker": "DRACONIA",
+      "spoken": "You heard that while it was coming at your head? I heard the ice hit. I didn't hear anything before it.",
+      "text": "[urgent] You heard that while it was coming at your head? I heard the ice hit. I didn't hear anything before it.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 24,
+      "scene": 4,
+      "speaker": "HARRY",
+      "spoken": "I wasn't listening the first time either. But it's the same phrase. If I'm right, we can move before it chooses where we're standing.",
+      "text": "[frustrated] I wasn't listening the first time either. But it's the same phrase. If I'm right, we can move before it chooses where we're standing.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 25,
+      "scene": 4,
+      "speaker": "DRACONIA",
+      "spoken": "And if you're wrong, we're moving into an arrow instead of away from one. Tell me exactly what you want me to do.",
+      "text": "[quietly] And if you're wrong, we're moving into an arrow instead of away from one. Tell me exactly what you want me to do.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 26,
+      "scene": 4,
+      "speaker": "HARRY",
+      "spoken": "Come across me on the second beat. Not away from me, across. I'll turn us. I know it looks too narrow, but I think there's room.",
+      "text": "[frightened] Come across me on the second beat. Not away from me, across. I'll turn us. I know it looks too narrow, but I think there's room.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 27,
+      "scene": 4,
+      "speaker": "DRACONIA",
+      "spoken": "I thought we'd left it too late. For a moment I couldn't tell if you'd moved or if I'd pulled you down.",
+      "text": "[angry] I thought we'd left it too late. For a moment I couldn't tell if you'd moved or if I'd pulled you down.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 28,
+      "scene": 4,
+      "speaker": "HARRY",
+      "spoken": "You didn't pull me down. I nearly tripped over my own foot. Please don't tell me you thought I had that under control.",
+      "text": "[voice trembling] You didn't pull me down. I nearly tripped over my own foot. Please don't tell me you thought I had that under control.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 29,
+      "scene": 5,
+      "speaker": "HARRY",
+      "spoken": "You recognized it. Don't tell me to watch my feet. I am watching my feet, and I'm asking you what that mark is.",
+      "text": "[breathing heavily] [angry] You recognized it. Don't tell me to watch my feet. I am watching my feet, and I'm asking you what that mark is.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 30,
+      "scene": 5,
+      "speaker": "DRACONIA",
+      "spoken": "It's a Malfoy ward. I thought it was dead. I didn't think there was anything left that could do this.",
+      "text": "[nervous] [voice trembling] It's a Malfoy ward. I thought it was dead. I didn't think there was anything left that could do this.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 31,
+      "scene": 5,
+      "speaker": "HARRY",
+      "spoken": "Your family's magic is firing arrows at us, and you were going to wait until when to tell me? Until another one missed?",
+      "text": "[angry] [raising voice] Your family's magic is firing arrows at us, and you were going to wait until when to tell me? Until another one missed?",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 32,
+      "scene": 5,
+      "speaker": "DRACONIA",
+      "spoken": "I recognized it just now. You saw me recognize it. Don't turn that into me knowing everything before you walked into the room.",
+      "text": "[defensive] [voice breaking] I recognized it just now. You saw me recognize it. Don't turn that into me knowing everything before you walked into the room.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 33,
+      "scene": 5,
+      "speaker": "HARRY",
+      "spoken": "You knew to pull me into the dance. You knew not to stop. Every time I ask something, there's another thing you haven't said.",
+      "text": "[frustrated] You knew to pull me into the dance. You knew not to stop. Every time I ask something, there's another thing you haven't said.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 34,
+      "scene": 5,
+      "speaker": "DRACONIA",
+      "spoken": "I saw what happened to the people who stopped. That's not the same as knowing how to undo it. I am frightened too, Harry.",
+      "text": "[nervous] I saw what happened to the people who stopped. That's not the same as knowing how to undo it. I am frightened too, Harry.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 35,
+      "scene": 5,
+      "speaker": "HARRY",
+      "spoken": "Then tell me what you know, even if it isn't enough. I can deal with you being frightened. I can't deal with guessing which answers you're keeping from me.",
+      "text": "[breathing heavily] Then tell me what you know, even if it isn't enough. I can deal with you being frightened. I can't deal with guessing which answers you're keeping from me.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 36,
+      "scene": 5,
+      "speaker": "DRACONIA",
+      "spoken": "I know whose ward it is. I thought it couldn't work anymore. I don't know who's using it now. That's what I can tell you.",
+      "text": "[defensive] I know whose ward it is. I thought it couldn't work anymore. I don't know who's using it now. That's what I can tell you.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 37,
+      "scene": 5,
+      "speaker": "HARRY",
+      "spoken": "All right. Then we start there. But if you recognize something else, I need to hear it before I have to ask.",
+      "text": "[urgent] All right. Then we start there. But if you recognize something else, I need to hear it before I have to ask.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 38,
+      "scene": 5,
+      "speaker": "DRACONIA",
+      "spoken": "Behind you. Harry, raise your wand. Those strings are coming straight at us.",
+      "text": "[voice trembling] Behind you. Harry, raise your wand. Those strings are coming straight at us.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 39,
+      "scene": 6,
+      "speaker": "HARRY",
+      "spoken": "It's round my wrist. Don't pull me that way, it's tightening. I can't get the wand up.",
+      "text": "[breathing heavily] It's round my wrist. Don't pull me that way, it's tightening. I can't get the wand up.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 40,
+      "scene": 6,
+      "speaker": "DRACONIA",
+      "spoken": "I'm not pulling your arm. I'm trying to keep you on your feet. Let your elbow come down. You're fighting it and it's getting tighter.",
+      "text": "[urgent] I'm not pulling your arm. I'm trying to keep you on your feet. Let your elbow come down. You're fighting it and it's getting tighter.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 41,
+      "scene": 6,
+      "speaker": "HARRY",
+      "spoken": "I can feel it getting tighter. I don't know how I'm supposed to let it take my arm without losing the wand.",
+      "text": "[frustrated] I can feel it getting tighter. I don't know how I'm supposed to let it take my arm without losing the wand.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 42,
+      "scene": 6,
+      "speaker": "DRACONIA",
+      "spoken": "Keep your fingers closed. Let me take your weight for a step. I can get my heel on the line if you give me a little room.",
+      "text": "[quietly] Keep your fingers closed. Let me take your weight for a step. I can get my heel on the line if you give me a little room.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 43,
+      "scene": 6,
+      "speaker": "HARRY",
+      "spoken": "I thought it was going to break it. I could feel it pulling right up to my shoulder.",
+      "text": "[angry] I thought it was going to break it. I could feel it pulling right up to my shoulder.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 44,
+      "scene": 6,
+      "speaker": "DRACONIA",
+      "spoken": "Can you open your fingers? Slowly. I'm not asking you to pretend it doesn't hurt. I need to know if you can still hold the wand.",
+      "text": "[frightened] Can you open your fingers? Slowly. I'm not asking you to pretend it doesn't hurt. I need to know if you can still hold the wand.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 45,
+      "scene": 6,
+      "speaker": "HARRY",
+      "spoken": "Draconia, the armor behind you. Don't turn toward it. There's a trolley beside your left foot.",
+      "text": "[firmly] Draconia, the armor behind you. Don't turn toward it. There's a trolley beside your left foot.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 46,
+      "scene": 7,
+      "speaker": "HARRY",
+      "spoken": "You nearly went down. I knew you were going to kick it, but I didn't know you were going to throw your whole weight after it.",
+      "text": "[urgent] You nearly went down. I knew you were going to kick it, but I didn't know you were going to throw your whole weight after it.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 47,
+      "scene": 7,
+      "speaker": "DRACONIA",
+      "spoken": "Neither did I. My foot slipped. Are you all right? You caught me with the arm it just hurt.",
+      "text": "[breathing heavily] Neither did I. My foot slipped. Are you all right? You caught me with the arm it just hurt.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 48,
+      "scene": 7,
+      "speaker": "HARRY",
+      "spoken": "I'll find out when we aren't doing this. For now, stay close enough that I don't have to catch you from across the room.",
+      "text": "[angry] I'll find out when we aren't doing this. For now, stay close enough that I don't have to catch you from across the room.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 49,
+      "scene": 7,
+      "speaker": "DRACONIA",
+      "spoken": "Harry, I'm not trying to make this harder for you. I saw it coming and there wasn't time to do it neatly.",
+      "text": "[quietly] Harry, I'm not trying to make this harder for you. I saw it coming and there wasn't time to do it neatly.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 50,
+      "scene": 7,
+      "speaker": "HARRY",
+      "spoken": "I know you weren't. I thought I'd lost you for a second. That's what I'm trying to say.",
+      "text": "[frightened] I know you weren't. I thought I'd lost you for a second. That's what I'm trying to say.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 51,
+      "scene": 7,
+      "speaker": "HARRY",
+      "spoken": "It isn't just in the glass anymore. Look past the chair. It's here, and it's still doing what we do.",
+      "text": "[firmly] It isn't just in the glass anymore. Look past the chair. It's here, and it's still doing what we do.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 52,
+      "scene": 8,
+      "speaker": "DRACONIA",
+      "spoken": "I'm trying to turn away from it. I can feel myself trying, but my feet keep taking me back. Harry, can you feel that?",
+      "text": "[frightened] I'm trying to turn away from it. I can feel myself trying, but my feet keep taking me back. Harry, can you feel that?",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 53,
+      "scene": 8,
+      "speaker": "HARRY",
+      "spoken": "Yes. Don't fight it so hard you fall. Give me a second to look. It's making us repeat the step, and the figure knows where we'll be.",
+      "text": "[raising voice] Yes. Don't fight it so hard you fall. Give me a second to look. It's making us repeat the step, and the figure knows where we'll be.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 54,
+      "scene": 8,
+      "speaker": "DRACONIA",
+      "spoken": "Can you break the floor lines with your wand? If you can open one gap, we might be able to get out of the pattern.",
+      "text": "[urgent] Can you break the floor lines with your wand? If you can open one gap, we might be able to get out of the pattern.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 55,
+      "scene": 8,
+      "speaker": "HARRY",
+      "spoken": "I can't keep aiming down while those things are coming at us. There's another way. The red table on our left. Could you turn it onto its side?",
+      "text": "[shaken] I can't keep aiming down while those things are coming at us. There's another way. The red table on our left. Could you turn it onto its side?",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 56,
+      "scene": 8,
+      "speaker": "DRACONIA",
+      "spoken": "If you get me close enough to reach under the edge. Why? Harry, look at me. What are you about to bring down?",
+      "text": "[quietly] If you get me close enough to reach under the edge. Why? Harry, look at me. What are you about to bring down?",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 57,
+      "scene": 8,
+      "speaker": "HARRY",
+      "spoken": "The chandelier. Across the ice, not on us. I need the table between us and whatever comes off it when it hits.",
+      "text": "[angry] The chandelier. Across the ice, not on us. I need the table between us and whatever comes off it when it hits.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 58,
+      "scene": 8,
+      "speaker": "DRACONIA",
+      "spoken": "You can't see where all of it will fall. If a piece comes over the top, that table won't stop it.",
+      "text": "[defensive] You can't see where all of it will fall. If a piece comes over the top, that table won't stop it.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 59,
+      "scene": 8,
+      "speaker": "HARRY",
+      "spoken": "I know. I don't have a safe version. But I can see the table and I can reach the chandelier. If we keep taking this step, that thing reaches us.",
+      "text": "[breathing heavily] I know. I don't have a safe version. But I can see the table and I can reach the chandelier. If we keep taking this step, that thing reaches us.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    },
+    {
+      "id": 60,
+      "scene": 8,
+      "speaker": "DRACONIA",
+      "spoken": "Get me to the edge. Give me the count before you cast, and don't let go until I've got both hands on it.",
+      "text": "[voice trembling] Get me to the edge. Give me the count before you cast, and don't let go until I've got both hands on it.",
+      "voice_id": "ZF6FPAbjXT4488VcRRnw"
+    },
+    {
+      "id": 61,
+      "scene": 8,
+      "speaker": "HARRY",
+      "spoken": "Three beats. We move on the third. If you can't get hold of it, tell me. Don't try to make it work just because I've started.",
+      "text": "[firmly] Three beats. We move on the third. If you can't get hold of it, tell me. Don't try to make it work just because I've started.",
+      "voice_id": "4dZr8J4CBeokyRkTRpoN"
+    }
+  ],
+  "batches": [
+    [
+      {
+        "id": 1,
+        "scene": 1,
+        "speaker": "DRACONIA",
+        "spoken": "Harry, come with me. Don't look behind you. I'll explain, but you need to come with me now.",
+        "text": "[urgent] [breathing heavily] Harry, come with me. Don't look behind you. I'll explain, but you need to come with me now.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 2,
+        "scene": 1,
+        "speaker": "HARRY",
+        "spoken": "You've just come across the room and grabbed me. What am I supposed to think? Tell me what you've seen.",
+        "text": "[frightened] You've just come across the room and grabbed me. What am I supposed to think? Tell me what you've seen.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 3,
+        "scene": 1,
+        "speaker": "HARRY",
+        "spoken": "That would have gone straight through me. You saw that coming, didn't you? That's why you ran.",
+        "text": "[shaken] That would have gone straight through me. You saw that coming, didn't you? That's why you ran.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 4,
+        "scene": 1,
+        "speaker": "DRACONIA",
+        "spoken": "I saw something above you. I didn't know what it was going to do. Harry, you're looking at the floor. Look at me.",
+        "text": "[urgent] I saw something above you. I didn't know what it was going to do. Harry, you're looking at the floor. Look at me.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 5,
+        "scene": 1,
+        "speaker": "HARRY",
+        "spoken": "I'm looking at the hole where I was standing. Give me a second. I don't even know which way we're going.",
+        "text": "[breathing heavily] I'm looking at the hole where I was standing. Give me a second. I don't even know which way we're going.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 6,
+        "scene": 1,
+        "speaker": "DRACONIA",
+        "spoken": "Neither do I, yet. But the couples are moving and we're moving with them. For the moment, that's all I've got.",
+        "text": "[nervous] Neither do I, yet. But the couples are moving and we're moving with them. For the moment, that's all I've got.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      }
+    ],
+    [
+      {
+        "id": 7,
+        "scene": 2,
+        "speaker": "HARRY",
+        "spoken": "We can't leave her like that. She's still reaching for someone. If I can get my wand clear, I can try to break the ice.",
+        "text": "[frightened] We can't leave her like that. She's still reaching for someone. If I can get my wand clear, I can try to break the ice.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 8,
+        "scene": 2,
+        "speaker": "DRACONIA",
+        "spoken": "And if you stop beside her, I'll have two people I can't get out. Watch your heel. Look at what's happening to it.",
+        "text": "[quietly] And if you stop beside her, I'll have two people I can't get out. Watch your heel. Look at what's happening to it.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 9,
+        "scene": 2,
+        "speaker": "HARRY",
+        "spoken": "It was doing the same thing to me. I didn't even feel it. I was going to stand right there.",
+        "text": "[angry] It was doing the same thing to me. I didn't even feel it. I was going to stand right there.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 10,
+        "scene": 2,
+        "speaker": "DRACONIA",
+        "spoken": "You saw someone who needed help. I'm not telling you that was wrong. I'm telling you the floor doesn't care why you stop.",
+        "text": "[nervous] You saw someone who needed help. I'm not telling you that was wrong. I'm telling you the floor doesn't care why you stop.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 11,
+        "scene": 2,
+        "speaker": "HARRY",
+        "spoken": "Do you think I don't understand that? I understand it. I just don't know how to walk away while she's looking at us.",
+        "text": "[raising voice] Do you think I don't understand that? I understand it. I just don't know how to walk away while she's looking at us.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 12,
+        "scene": 2,
+        "speaker": "DRACONIA",
+        "spoken": "I don't know how to help her yet. I wish I had something better to say, but I don't. We need to find what's doing this.",
+        "text": "[defensive] I don't know how to help her yet. I wish I had something better to say, but I don't. We need to find what's doing this.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 13,
+        "scene": 2,
+        "speaker": "HARRY",
+        "spoken": "Then that's what we're doing. We're not finding a door and pretending we didn't see her. If we get a chance, we go back.",
+        "text": "[angry] Then that's what we're doing. We're not finding a door and pretending we didn't see her. If we get a chance, we go back.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 14,
+        "scene": 2,
+        "speaker": "DRACONIA",
+        "spoken": "If we can reach her without being caught ourselves, yes. But don't pull away from me without telling me. I nearly lost you just then.",
+        "text": "[voice trembling] If we can reach her without being caught ourselves, yes. But don't pull away from me without telling me. I nearly lost you just then.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      }
+    ],
+    [
+      {
+        "id": 15,
+        "scene": 3,
+        "speaker": "HARRY",
+        "spoken": "There's someone in the glass, over my shoulder. Don't turn us around. I want to see what it does if we change direction.",
+        "text": "[angry] There's someone in the glass, over my shoulder. Don't turn us around. I want to see what it does if we change direction.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 16,
+        "scene": 3,
+        "speaker": "DRACONIA",
+        "spoken": "I can see the mask. Are you sure it isn't another couple behind us? The reflection's full of people.",
+        "text": "[voice trembling] I can see the mask. Are you sure it isn't another couple behind us? The reflection's full of people.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 17,
+        "scene": 3,
+        "speaker": "HARRY",
+        "spoken": "There. Nobody else did that. It waited for me, then took the same step. Whatever it is, it's watching us.",
+        "text": "[frustrated] There. Nobody else did that. It waited for me, then took the same step. Whatever it is, it's watching us.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 18,
+        "scene": 3,
+        "speaker": "DRACONIA",
+        "spoken": "Or following us. I don't like the way it's closing the distance. Can you still see it when we turn away from the window?",
+        "text": "[defensive] Or following us. I don't like the way it's closing the distance. Can you still see it when we turn away from the window?",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 19,
+        "scene": 3,
+        "speaker": "HARRY",
+        "spoken": "Not yet. I can't watch it and watch the floor at the same time. Tell me before you change the step, will you?",
+        "text": "[breathing heavily] Not yet. I can't watch it and watch the floor at the same time. Tell me before you change the step, will you?",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 20,
+        "scene": 3,
+        "speaker": "DRACONIA",
+        "spoken": "I will. And don't keep looking over my shoulder like that. Every time you do, I think something's already behind me.",
+        "text": "[quietly] I will. And don't keep looking over my shoulder like that. Every time you do, I think something's already behind me.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      }
+    ],
+    [
+      {
+        "id": 21,
+        "scene": 4,
+        "speaker": "DRACONIA",
+        "spoken": "Harry, are you hurt? You're holding your breath. I need you to tell me if it caught you.",
+        "text": "[whispers] Harry, are you hurt? You're holding your breath. I need you to tell me if it caught you.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 22,
+        "scene": 4,
+        "speaker": "HARRY",
+        "spoken": "It didn't. I thought it had for a second. Listen to the orchestra. There are two beats before each one lands.",
+        "text": "[tense] It didn't. I thought it had for a second. Listen to the orchestra. There are two beats before each one lands.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 23,
+        "scene": 4,
+        "speaker": "DRACONIA",
+        "spoken": "You heard that while it was coming at your head? I heard the ice hit. I didn't hear anything before it.",
+        "text": "[urgent] You heard that while it was coming at your head? I heard the ice hit. I didn't hear anything before it.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 24,
+        "scene": 4,
+        "speaker": "HARRY",
+        "spoken": "I wasn't listening the first time either. But it's the same phrase. If I'm right, we can move before it chooses where we're standing.",
+        "text": "[frustrated] I wasn't listening the first time either. But it's the same phrase. If I'm right, we can move before it chooses where we're standing.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 25,
+        "scene": 4,
+        "speaker": "DRACONIA",
+        "spoken": "And if you're wrong, we're moving into an arrow instead of away from one. Tell me exactly what you want me to do.",
+        "text": "[quietly] And if you're wrong, we're moving into an arrow instead of away from one. Tell me exactly what you want me to do.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 26,
+        "scene": 4,
+        "speaker": "HARRY",
+        "spoken": "Come across me on the second beat. Not away from me, across. I'll turn us. I know it looks too narrow, but I think there's room.",
+        "text": "[frightened] Come across me on the second beat. Not away from me, across. I'll turn us. I know it looks too narrow, but I think there's room.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 27,
+        "scene": 4,
+        "speaker": "DRACONIA",
+        "spoken": "I thought we'd left it too late. For a moment I couldn't tell if you'd moved or if I'd pulled you down.",
+        "text": "[angry] I thought we'd left it too late. For a moment I couldn't tell if you'd moved or if I'd pulled you down.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 28,
+        "scene": 4,
+        "speaker": "HARRY",
+        "spoken": "You didn't pull me down. I nearly tripped over my own foot. Please don't tell me you thought I had that under control.",
+        "text": "[voice trembling] You didn't pull me down. I nearly tripped over my own foot. Please don't tell me you thought I had that under control.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      }
+    ],
+    [
+      {
+        "id": 29,
+        "scene": 5,
+        "speaker": "HARRY",
+        "spoken": "You recognized it. Don't tell me to watch my feet. I am watching my feet, and I'm asking you what that mark is.",
+        "text": "[breathing heavily] [angry] You recognized it. Don't tell me to watch my feet. I am watching my feet, and I'm asking you what that mark is.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 30,
+        "scene": 5,
+        "speaker": "DRACONIA",
+        "spoken": "It's a Malfoy ward. I thought it was dead. I didn't think there was anything left that could do this.",
+        "text": "[nervous] [voice trembling] It's a Malfoy ward. I thought it was dead. I didn't think there was anything left that could do this.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 31,
+        "scene": 5,
+        "speaker": "HARRY",
+        "spoken": "Your family's magic is firing arrows at us, and you were going to wait until when to tell me? Until another one missed?",
+        "text": "[angry] [raising voice] Your family's magic is firing arrows at us, and you were going to wait until when to tell me? Until another one missed?",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 32,
+        "scene": 5,
+        "speaker": "DRACONIA",
+        "spoken": "I recognized it just now. You saw me recognize it. Don't turn that into me knowing everything before you walked into the room.",
+        "text": "[defensive] [voice breaking] I recognized it just now. You saw me recognize it. Don't turn that into me knowing everything before you walked into the room.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 33,
+        "scene": 5,
+        "speaker": "HARRY",
+        "spoken": "You knew to pull me into the dance. You knew not to stop. Every time I ask something, there's another thing you haven't said.",
+        "text": "[frustrated] You knew to pull me into the dance. You knew not to stop. Every time I ask something, there's another thing you haven't said.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 34,
+        "scene": 5,
+        "speaker": "DRACONIA",
+        "spoken": "I saw what happened to the people who stopped. That's not the same as knowing how to undo it. I am frightened too, Harry.",
+        "text": "[nervous] I saw what happened to the people who stopped. That's not the same as knowing how to undo it. I am frightened too, Harry.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 35,
+        "scene": 5,
+        "speaker": "HARRY",
+        "spoken": "Then tell me what you know, even if it isn't enough. I can deal with you being frightened. I can't deal with guessing which answers you're keeping from me.",
+        "text": "[breathing heavily] Then tell me what you know, even if it isn't enough. I can deal with you being frightened. I can't deal with guessing which answers you're keeping from me.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 36,
+        "scene": 5,
+        "speaker": "DRACONIA",
+        "spoken": "I know whose ward it is. I thought it couldn't work anymore. I don't know who's using it now. That's what I can tell you.",
+        "text": "[defensive] I know whose ward it is. I thought it couldn't work anymore. I don't know who's using it now. That's what I can tell you.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 37,
+        "scene": 5,
+        "speaker": "HARRY",
+        "spoken": "All right. Then we start there. But if you recognize something else, I need to hear it before I have to ask.",
+        "text": "[urgent] All right. Then we start there. But if you recognize something else, I need to hear it before I have to ask.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 38,
+        "scene": 5,
+        "speaker": "DRACONIA",
+        "spoken": "Behind you. Harry, raise your wand. Those strings are coming straight at us.",
+        "text": "[voice trembling] Behind you. Harry, raise your wand. Those strings are coming straight at us.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      }
+    ],
+    [
+      {
+        "id": 39,
+        "scene": 6,
+        "speaker": "HARRY",
+        "spoken": "It's round my wrist. Don't pull me that way, it's tightening. I can't get the wand up.",
+        "text": "[breathing heavily] It's round my wrist. Don't pull me that way, it's tightening. I can't get the wand up.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 40,
+        "scene": 6,
+        "speaker": "DRACONIA",
+        "spoken": "I'm not pulling your arm. I'm trying to keep you on your feet. Let your elbow come down. You're fighting it and it's getting tighter.",
+        "text": "[urgent] I'm not pulling your arm. I'm trying to keep you on your feet. Let your elbow come down. You're fighting it and it's getting tighter.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 41,
+        "scene": 6,
+        "speaker": "HARRY",
+        "spoken": "I can feel it getting tighter. I don't know how I'm supposed to let it take my arm without losing the wand.",
+        "text": "[frustrated] I can feel it getting tighter. I don't know how I'm supposed to let it take my arm without losing the wand.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 42,
+        "scene": 6,
+        "speaker": "DRACONIA",
+        "spoken": "Keep your fingers closed. Let me take your weight for a step. I can get my heel on the line if you give me a little room.",
+        "text": "[quietly] Keep your fingers closed. Let me take your weight for a step. I can get my heel on the line if you give me a little room.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 43,
+        "scene": 6,
+        "speaker": "HARRY",
+        "spoken": "I thought it was going to break it. I could feel it pulling right up to my shoulder.",
+        "text": "[angry] I thought it was going to break it. I could feel it pulling right up to my shoulder.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 44,
+        "scene": 6,
+        "speaker": "DRACONIA",
+        "spoken": "Can you open your fingers? Slowly. I'm not asking you to pretend it doesn't hurt. I need to know if you can still hold the wand.",
+        "text": "[frightened] Can you open your fingers? Slowly. I'm not asking you to pretend it doesn't hurt. I need to know if you can still hold the wand.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 45,
+        "scene": 6,
+        "speaker": "HARRY",
+        "spoken": "Draconia, the armor behind you. Don't turn toward it. There's a trolley beside your left foot.",
+        "text": "[firmly] Draconia, the armor behind you. Don't turn toward it. There's a trolley beside your left foot.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      }
+    ],
+    [
+      {
+        "id": 46,
+        "scene": 7,
+        "speaker": "HARRY",
+        "spoken": "You nearly went down. I knew you were going to kick it, but I didn't know you were going to throw your whole weight after it.",
+        "text": "[urgent] You nearly went down. I knew you were going to kick it, but I didn't know you were going to throw your whole weight after it.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 47,
+        "scene": 7,
+        "speaker": "DRACONIA",
+        "spoken": "Neither did I. My foot slipped. Are you all right? You caught me with the arm it just hurt.",
+        "text": "[breathing heavily] Neither did I. My foot slipped. Are you all right? You caught me with the arm it just hurt.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 48,
+        "scene": 7,
+        "speaker": "HARRY",
+        "spoken": "I'll find out when we aren't doing this. For now, stay close enough that I don't have to catch you from across the room.",
+        "text": "[angry] I'll find out when we aren't doing this. For now, stay close enough that I don't have to catch you from across the room.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 49,
+        "scene": 7,
+        "speaker": "DRACONIA",
+        "spoken": "Harry, I'm not trying to make this harder for you. I saw it coming and there wasn't time to do it neatly.",
+        "text": "[quietly] Harry, I'm not trying to make this harder for you. I saw it coming and there wasn't time to do it neatly.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 50,
+        "scene": 7,
+        "speaker": "HARRY",
+        "spoken": "I know you weren't. I thought I'd lost you for a second. That's what I'm trying to say.",
+        "text": "[frightened] I know you weren't. I thought I'd lost you for a second. That's what I'm trying to say.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 51,
+        "scene": 7,
+        "speaker": "HARRY",
+        "spoken": "It isn't just in the glass anymore. Look past the chair. It's here, and it's still doing what we do.",
+        "text": "[firmly] It isn't just in the glass anymore. Look past the chair. It's here, and it's still doing what we do.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      }
+    ],
+    [
+      {
+        "id": 52,
+        "scene": 8,
+        "speaker": "DRACONIA",
+        "spoken": "I'm trying to turn away from it. I can feel myself trying, but my feet keep taking me back. Harry, can you feel that?",
+        "text": "[frightened] I'm trying to turn away from it. I can feel myself trying, but my feet keep taking me back. Harry, can you feel that?",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 53,
+        "scene": 8,
+        "speaker": "HARRY",
+        "spoken": "Yes. Don't fight it so hard you fall. Give me a second to look. It's making us repeat the step, and the figure knows where we'll be.",
+        "text": "[raising voice] Yes. Don't fight it so hard you fall. Give me a second to look. It's making us repeat the step, and the figure knows where we'll be.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 54,
+        "scene": 8,
+        "speaker": "DRACONIA",
+        "spoken": "Can you break the floor lines with your wand? If you can open one gap, we might be able to get out of the pattern.",
+        "text": "[urgent] Can you break the floor lines with your wand? If you can open one gap, we might be able to get out of the pattern.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 55,
+        "scene": 8,
+        "speaker": "HARRY",
+        "spoken": "I can't keep aiming down while those things are coming at us. There's another way. The red table on our left. Could you turn it onto its side?",
+        "text": "[shaken] I can't keep aiming down while those things are coming at us. There's another way. The red table on our left. Could you turn it onto its side?",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 56,
+        "scene": 8,
+        "speaker": "DRACONIA",
+        "spoken": "If you get me close enough to reach under the edge. Why? Harry, look at me. What are you about to bring down?",
+        "text": "[quietly] If you get me close enough to reach under the edge. Why? Harry, look at me. What are you about to bring down?",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 57,
+        "scene": 8,
+        "speaker": "HARRY",
+        "spoken": "The chandelier. Across the ice, not on us. I need the table between us and whatever comes off it when it hits.",
+        "text": "[angry] The chandelier. Across the ice, not on us. I need the table between us and whatever comes off it when it hits.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 58,
+        "scene": 8,
+        "speaker": "DRACONIA",
+        "spoken": "You can't see where all of it will fall. If a piece comes over the top, that table won't stop it.",
+        "text": "[defensive] You can't see where all of it will fall. If a piece comes over the top, that table won't stop it.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 59,
+        "scene": 8,
+        "speaker": "HARRY",
+        "spoken": "I know. I don't have a safe version. But I can see the table and I can reach the chandelier. If we keep taking this step, that thing reaches us.",
+        "text": "[breathing heavily] I know. I don't have a safe version. But I can see the table and I can reach the chandelier. If we keep taking this step, that thing reaches us.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      },
+      {
+        "id": 60,
+        "scene": 8,
+        "speaker": "DRACONIA",
+        "spoken": "Get me to the edge. Give me the count before you cast, and don't let go until I've got both hands on it.",
+        "text": "[voice trembling] Get me to the edge. Give me the count before you cast, and don't let go until I've got both hands on it.",
+        "voice_id": "ZF6FPAbjXT4488VcRRnw"
+      },
+      {
+        "id": 61,
+        "scene": 8,
+        "speaker": "HARRY",
+        "spoken": "Three beats. We move on the third. If you can't get hold of it, tell me. Don't try to make it work just because I've started.",
+        "text": "[firmly] Three beats. We move on the third. If you can't get hold of it, tell me. Don't try to make it work just because I've started.",
+        "voice_id": "4dZr8J4CBeokyRkTRpoN"
+      }
+    ]
+  ],
+  "fixed_wording": true,
+  "stability": 0.2
+}

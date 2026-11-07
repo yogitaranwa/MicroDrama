@@ -1,0 +1,49 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[hurt] You came for me before the first arrow. I keep coming back to that. I want to believe you just saw the spark, but you were already frightened when you reached me."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[sad] There was something above your head and you were about to turn toward it. Of course I was frightened. I didn't have time to decide how I should look."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[hurt] That's not what I mean. I'm not accusing you because you were scared. I'm asking why I feel like I'm the last person in this room to know I'm in danger."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[sad] You aren't wrong to ask me. But knowing you might be in danger isn't the same as knowing this would happen. I didn't know about the ballroom."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[hurt] You knew I might be in danger. You can say that now, after all of this, but you couldn't say it when I could still do something about it?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[sad] I tried to tell you. I didn't decide you were better off not knowing. Please don't put that on me."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[hurt] Then when? Because all I remember is walking into this room and you pulling me away from something that nearly killed me."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[sad] Before tonight. Before you walked in here. I thought you'd had time to read it, and then I saw you standing under that spark."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[hurt] Read what? Draconia, I didn't get anything from you. What are you telling me I was supposed to have read?"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[sad] I sent you a warning. Someone made sure it never reached you."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4110
+}

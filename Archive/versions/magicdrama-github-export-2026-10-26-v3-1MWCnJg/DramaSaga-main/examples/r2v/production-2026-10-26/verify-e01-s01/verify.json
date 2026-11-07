@@ -1,0 +1,19 @@
+{
+ "clip": "/home/sandbox/work/DramaSaga-work/examples/r2v/production-2026-10-26/e01-s01.mp4",
+ "video": {
+  "r_frame_rate": "30/1",
+  "avg_frame_rate": "30/1",
+  "w": 720,
+  "h": 1280,
+  "dur": "5.039000"
+ },
+ "audio_track": true,
+ "motion": {
+  "frames": 150,
+  "mean": 2.09,
+  "min": 0.46,
+  "max": 5.22,
+  "near_static": 1,
+  "sampled": 149
+ }
+}

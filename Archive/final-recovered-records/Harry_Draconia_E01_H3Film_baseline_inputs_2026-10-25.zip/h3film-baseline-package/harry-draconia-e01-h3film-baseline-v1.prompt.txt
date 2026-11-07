@@ -1,0 +1,11 @@
+Vertical cinematic photorealistic Yule Ball action-dialogue shot, 24 fps, 9:16. The supplied soundtrack is the exact timing source; perform the dialogue to the soundtrack and do not invent dialogue.
+Reference identity anchors: Image 1 Harry front close, Image 2 Harry speaking profile, Image 3 Harry full body, Image 4 Draconia front close, Image 5 Draconia speaking profile, Image 6 Draconia full body, Image 7 Harry and Draconia dialogue two-shot, Image 8 Harry and Draconia action two-shot, Image 9 the empty candlelit Yule Ball location.
+Keep Harry as the same black-haired man with round glasses and black/red formal robes. Keep Draconia as the same platinum-blonde braided woman in the emerald gown. Preserve both identities, costumes, realistic faces and cinematic lighting.
+Whole-line framing:
+0.00-1.68s: Draconia is clearly visible and urgently warns Harry; keep her face and unobstructed mouth framed for the whole line.
+1.68-4.24s: Draconia pulls Harry into a fast dance turn; keep her face and unobstructed mouth framed for the whole line while ice arrows flash past.
+4.24-6.80s: Harry is clearly visible as he challenges her; keep his face and unobstructed mouth framed for the whole line and do not cut away to Draconia until his line ends.
+6.80-8.88s: Draconia answers; keep her face and unobstructed mouth framed for the whole line.
+8.88-11.20s: Harry follows the offbeat step; keep his face and unobstructed mouth framed for the whole line.
+11.20-13.12s: Draconia corrects the count and pulls him clear; keep her face and unobstructed mouth framed for the whole line and do not let Harry's back occlude her mouth.
+The ballroom location matches Image 9. Dynamic motion is allowed only while the active speaker remains visible.

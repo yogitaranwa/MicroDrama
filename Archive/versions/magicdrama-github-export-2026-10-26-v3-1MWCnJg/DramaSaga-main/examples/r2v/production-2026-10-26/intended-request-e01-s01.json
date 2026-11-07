@@ -1,0 +1,22 @@
+{
+ "name": "e01-s01-wan30",
+ "model": "wan-3.0",
+ "end_seconds": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "audio": true,
+ "references": [
+  {
+   "name": "draconia_front_close"
+  },
+  {
+   "name": "harry_front_close"
+  },
+  {
+   "name": "yule_ball_location"
+  }
+ ],
+ "style": {
+  "prompt": "Static locked camera on a tripod: no zoom, no pull-back, no pan, no tilt; the framing and focal length stay identical for the entire shot. Candlelit Yule Ball in the Great Hall: chandeliers, formally dressed dancers, glowing waltz-grid lines on the marble floor. Action beat: GREAT HALL, candlelit Yule Ball. Snow hangs motionless under the enchanted ceiling. Harry enters alone, dressed plainly, watching reflections instead of people. In every window reflection, Draconia is already looking at him. Keep @draconia_front_close, @harry_front_close identical to the references in face, hair, wardrobe and proportions. Match the staging, framing and lighting of @yule_ball_location."
+ }
+}

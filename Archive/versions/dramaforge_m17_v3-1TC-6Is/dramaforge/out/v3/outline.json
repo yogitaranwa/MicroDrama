@@ -1,0 +1,71 @@
+{
+ "title": "Midnight Waltz",
+ "hook": "Harry catches Draconia alone in the corridor, the tension thicker than the candle smoke.",
+ "beats": [
+  {
+   "n": 1,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Close-up over shoulder",
+   "action": "Harry adjusts his cuff, looking past Draconia.",
+   "purpose": "Establish isolation after the ball's chaos.",
+   "seconds": 10
+  },
+  {
+   "n": 2,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Wide angle",
+   "action": "Draconia stops, clutching her empty champagne flute.",
+   "purpose": "Show Draconia's poise cracking.",
+   "seconds": 11
+  },
+  {
+   "n": 3,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Eye-level",
+   "action": "Harry steps forward, hand on the stone wall.",
+   "purpose": "Physically corner the space between them.",
+   "seconds": 12
+  },
+  {
+   "n": 4,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Close-up on face",
+   "action": "Draconia sets the flute on a side table.",
+   "purpose": "Remove the prop, focus on hands.",
+   "seconds": 10
+  },
+  {
+   "n": 5,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Over Harry's shoulder",
+   "action": "Harry's eyes search hers.",
+   "purpose": "Silent question: what are you really feeling?",
+   "seconds": 13
+  },
+  {
+   "n": 6,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Wide angle",
+   "action": "Draconia's jaw tightens, breath visible in the chill.",
+   "purpose": "Show restrained anger beneath calm.",
+   "seconds": 12
+  },
+  {
+   "n": 7,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Close-up on hands",
+   "action": "Harry's fingers trace the wall grain.",
+   "purpose": "Reveal his hidden worry through small motion.",
+   "seconds": 11
+  },
+  {
+   "n": 8,
+   "location": "Hogwarts Corridor - Night",
+   "camera": "Eye-level",
+   "action": "Draconia meets his gaze, mask slipping.",
+   "purpose": "The vulnerability she cannot hide.",
+   "seconds": 14
+  }
+ ],
+ "cliffhanger": "Draconia's voice drops low, the words unspoken hanging in the stale air."
+}

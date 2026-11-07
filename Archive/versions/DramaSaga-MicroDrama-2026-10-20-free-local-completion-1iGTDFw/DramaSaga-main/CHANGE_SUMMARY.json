@@ -1,0 +1,30 @@
+{
+  "comparison": "Previous clean code release, 20 October 2026 22:46 IST",
+  "base_archive_sha256": "8bdc6993318e7836c877ad40e3f45a5886e4ce4a98fca4458e8a2c47eea74c5a",
+  "base_files": 136,
+  "added": [
+    "magicdrama/audiofirst/acceptance.py",
+    "magicdrama/audiofirst/alignment.py",
+    "magicdrama/audiofirst/free_audio.py",
+    "magicdrama/audiofirst/h3_local.py",
+    "magicdrama/audiofirst/local_vision.py",
+    "magicdrama/audiofirst/procedural.py",
+    "magicdrama/audiofirst/quality.py",
+    "tests/test_alignment_acceptance.py",
+    "tests/test_free_audio_h3.py"
+  ],
+  "changed": [
+    "AUDIO_FIRST.md",
+    "CHANGE_SUMMARY.json",
+    "EXPORT_NOTES.md",
+    "README.md",
+    "SOURCE_MANIFEST.json",
+    "audiofirst.py",
+    "magicdrama/audiofirst/production_run.py",
+    "requirements.txt"
+  ],
+  "removed": [],
+  "preserved_unchanged": 128,
+  "tests": 218,
+  "paid_calls": 0
+}

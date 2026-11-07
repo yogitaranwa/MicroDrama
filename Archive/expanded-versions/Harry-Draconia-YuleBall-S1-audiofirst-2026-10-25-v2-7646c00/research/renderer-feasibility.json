@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-25T09:23:00+05:30",
+  "magic_hour_audio_to_video": {
+    "source_urls": [
+      "https://docs.magichour.ai/api-reference/video-projects/audio-to-video",
+      "https://docs.magichour.ai/api-reference/models"
+    ],
+    "accepted_inputs": ["one audio file", "optional one reference image", "text prompt"],
+    "resolutions": ["480p", "720p", "1080p"],
+    "documented_credits_per_second": {"480p": 24, "720p": 48, "1080p": 72},
+    "gaps": ["no model field in documented request", "no multi-image reference slots", "no timed pins", "no documented two-person external-audio lip-sync controls", "not H3film parity"]
+  },
+  "h3_reference_to_video": {
+    "source_urls": [
+      "https://docs.comfy.org/built-in-nodes/MiniMaxH3ReferenceToVideo",
+      "https://docs.comfy.org/tutorials/video/minimax/minimax-h3"
+    ],
+    "local_code_evidence": [
+      "vendor/h3-film-reference/research/h3/runpod/comfy_r2v.py wires LoadAudio into MiniMaxH3ReferenceToVideo ref_audios.ref_audio_0",
+      "vendor/h3-film-reference/research/h3/runpod/comfy_r2v.py wires ordered MiniMaxH3AddGuide timed pins",
+      "magicdrama/audiofirst/h3_local.py compiles fixed-audio and ordered-guide Comfy graphs but has only mock-tested transport"
+    ],
+    "documented_limits": {"reference_images_max": 9, "reference_videos_max": 3, "reference_audios_max": 3, "fps": 24, "native_clip_length_about_seconds": 15},
+    "lip_sync_caveat": "External-audio conditioning is documented; exact two-person production lip-sync still needs a real GPU smoke test. project-owner's supplied wrapper wires one audio per clip; line-level clips avoid multi-speaker confusion. A two-speaker combined-audio variant would need explicit overall plus individual stems and validation."
+  },
+  "runpod_reference_pricing": {
+    "source_url": "https://www.runpod.io/pricing",
+    "updated_on_page": "2026-10-08",
+    "community_per_hour_usd": {"RTX_4090_24GB": 0.34, "RTX_5090_32GB": 0.69, "L40S_48GB": 0.79, "A100_80GB": 1.39, "H100_PCIe_80GB": 1.99},
+    "secure_per_hour_usd": {"RTX_4090_24GB": 0.89, "RTX_5090_32GB": 1.19, "L40S_48GB": 1.09, "A100_80GB": 1.79, "H100_PCIe_80GB": 2.89},
+    "status": "price research only; no rental approved or started; actual model VRAM/runtime/storage estimate still pending"
+  }
+}

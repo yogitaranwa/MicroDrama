@@ -1,0 +1,54 @@
+{
+ "title": "Working Late",
+ "note": "Original live-action micro-drama for the human-reference test: two realistic people, one small kitchen at night, three lines, reaction beats, moving cameras, free zoom/flash edits. Written against the measured gaps to the user's reference (movement, sound continuity, not wall-to-wall talking).",
+ "aspect": "16:9",
+ "logline": "She says she was working late; he has been waiting at the kitchen table with a cake and a receipt.",
+ "voices": {
+  "Mia": "warm, bright woman in her early thirties, a little breathless, trying too hard to sound relaxed",
+  "Tomas": "calm, low man in his early thirties, quiet and dry, every word deliberate"
+ },
+ "style": "photorealistic cinematic live action, natural skin texture, shallow depth of field, subtle handheld realism, warm practical lighting at night",
+ "scenes": {
+  "kitchen": {
+   "set": "a small city apartment kitchen at night: a wooden table with two chairs, a single warm pendant lamp over the table, a tall window showing distant city lights, a fridge covered in notes and magnets, teal cabinets",
+   "plate": "kitchen-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 16:9, an empty small city apartment kitchen at night: a wooden table with two chairs, a single warm pendant lamp over the table, a tall window showing distant city lights, a fridge covered in notes and magnets, teal cabinets, a doorway to a dark hallway at the left. No people, no text, no watermark."
+  }
+ },
+ "references": {
+  "masters": {
+   "mia-master": "Photorealistic head-and-shoulders portrait, exactly one person, 16:9 composition with her centered: a woman in her early thirties with shoulder-length dark brown hair, warm olive skin, brown eyes, an olive trench coat over a cream top. Neutral expression, mouth closed, plain soft grey background. Natural skin texture. No text, no watermark.",
+   "tomas-master": "Photorealistic head-and-shoulders portrait, exactly one person, 16:9 composition with him centered: a man in his early thirties with short dark hair and a short dark beard, fair skin, tired dark eyes, a grey crew-neck sweater. Calm neutral expression, mouth closed, plain soft grey background. Natural skin texture. No text, no watermark."
+  },
+  "frames": {
+   "f1-door": {"scene": "kitchen", "refs": ["mia-master"], "prompt": "Photorealistic cinematic photograph, 16:9, wide shot from the dark hallway into the kitchen: Mia tiptoes in through the doorway holding her shoes in one hand, mouth closed, glancing toward the dark kitchen. The kitchen lamp is off, only city light from the window. No text, no watermark."},
+   "f2-tomas": {"scene": "kitchen", "refs": ["tomas-master"], "prompt": "Photorealistic cinematic photograph, 16:9, medium shot of Tomas sitting at the kitchen table with arms folded, a small birthday cake with one unlit candle in front of him, the pendant lamp now lit, mouth closed, calm steady eyes looking toward camera-right. No text, no watermark."},
+   "f3-mia": {"scene": "kitchen", "refs": ["mia-master"], "prompt": "Photorealistic cinematic photograph, 16:9, close-up of Mia frozen in the kitchen light, shoes in her hand, eyes wide, mouth closed, caught, the kitchen softly out of focus behind her. No text, no watermark."},
+   "f4-receipt": {"scene": "kitchen", "refs": ["tomas-master"], "prompt": "Photorealistic cinematic photograph, 16:9, close-up of Tomas at the table, one hand resting on a crumpled paper receipt on the table in front of him, mouth closed, level unforgiving stare toward camera-right, the pendant lamp warm above him. No text, no watermark."}
+  },
+  "frame_for": {"s01-door": "f1-door", "s02-tomas": "f2-tomas", "s03-mia": "f3-mia", "s04-receipt": "f4-receipt"}
+ },
+ "shots": [
+  {"id": "s01-door", "scene_id": "kitchen", "location": "apartment-kitchen", "seconds": 3,
+   "visual": "Mia eases through the doorway at night, shoes in her hand, tiptoeing; the pendant lamp suddenly clicks on and she stops dead, her shadow thrown across the floor.",
+   "camera": "Slow push-in from the hallway, a little handheld sway.", "zoom": [1.0, 1.08],
+   "sound": {"ambience": "quiet apartment at night: refrigerator hum and faint distant city traffic", "effects": ["a key turning and the door creaking", "a loud lamp switch click"]}},
+  {"id": "s02-tomas", "scene_id": "kitchen", "location": "apartment-kitchen", "seconds": 4,
+   "visual": "Tomas sits at the table in the sudden warm light, arms folded, the little cake in front of him, and looks at her calmly without moving.",
+   "camera": "Medium shot, slow push-in.", "zoom": [1.0, 1.10],
+   "sound": {"ambience": "quiet apartment at night: refrigerator hum", "effects": ["a chair creak"],
+             "dialogue": [{"speaker": "Tomas", "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate", "line": "Working late again?", "delivery": "quiet, dry"}]}},
+  {"id": "s03-mia", "scene_id": "kitchen", "location": "apartment-kitchen", "seconds": 3,
+   "visual": "Mia freezes mid-step, shoes dangling from her hand, eyes wide; she forces a bright, guilty smile.",
+   "camera": "Close-up with handheld sway.", "zoom": [1.0, 1.06],
+   "sound": {"ambience": "quiet apartment at night: refrigerator hum", "effects": ["shoes dropping to the floor"],
+             "dialogue": [{"speaker": "Mia", "voice": "warm, bright woman in her early thirties, a little breathless, trying too hard to sound relaxed", "line": "Tomas! You're awake.", "delivery": "startled, too bright"}]}},
+  {"id": "s04-receipt", "scene_id": "kitchen", "location": "apartment-kitchen", "seconds": 4,
+   "visual": "Tomas slowly slides a crumpled receipt across the table toward her, never breaking eye contact.",
+   "camera": "Close-up, very slow push-in.", "zoom": [1.0, 1.12],
+   "sound": {"ambience": "quiet apartment at night: refrigerator hum", "effects": ["paper sliding across the wooden table"],
+             "dialogue": [{"speaker": "Tomas", "voice": "calm, low man in his early thirties, quiet and dry, every word deliberate", "line": "Funny. Your office closed at six.", "delivery": "calm, devastating"}]}}
+ ],
+ "hook_title": "She said she was working late...",
+ "end_card": "What will Mia say?"
+}

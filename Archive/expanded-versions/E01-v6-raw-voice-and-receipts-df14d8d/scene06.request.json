@@ -1,0 +1,37 @@
+{
+  "model_id": "eleven_v3",
+  "inputs": [
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[pained] It's round my wrist. Don't pull me that way, it's tightening. I can't get the wand up."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] I'm not pulling your arm. I'm trying to keep you on your feet. Let your elbow come down. You're fighting it and it's getting tighter."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[pained] I can feel it getting tighter. I don't know how I'm supposed to let it take my arm without losing the wand."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] Keep your fingers closed. Let me take your weight for a step. I can get my heel on the line if you give me a little room."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[pained] I thought it was going to break it. I could feel it pulling right up to my shoulder."
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "text": "[urgent] Can you open your fingers? Slowly. I'm not asking you to pretend it doesn't hurt. I need to know if you can still hold the wand."
+    },
+    {
+      "voice_id": "4dZr8J4CBeokyRkTRpoN",
+      "text": "[pained] Draconia, the armor behind you. Don't turn toward it. There's a trolley beside your left foot."
+    }
+  ],
+  "settings": {
+    "stability": 0.35
+  },
+  "seed": 4106
+}

@@ -1,0 +1,32 @@
+{
+  "name": "e01-s02-start-frame-validation",
+  "endpoint": "POST /v1/ai-image-editor",
+  "one_attempt": true,
+  "no_auto_retry": true,
+  "estimated_charge_cr": 50,
+  "price_source": "docs.magichour.ai models page: nano-banana-2.1 = 50 cr single image at 640px or 1k (explicit)",
+  "charged_total_if_queued": "2976 + 50 = 3026 / 28704",
+  "body": {
+    "name": "e01-s02-start-frame-validation",
+    "model": "nano-banana-2.1",
+    "image_count": 1,
+    "aspect_ratio": "9:16",
+    "resolution": "1k",
+    "style": {
+      "prompt": "Candlelit Yule Ball in the Great Hall from the location reference. Medium-wide lateral composition. LEFT third: the platinum-blonde woman in the green embroidered gown and sheer shawl from references 1-2, her smile vanishing, a paper programme slipping from her fingers mid-fall, her gaze locked UP and RIGHT. RIGHT third: the black-haired boy with round glasses and dark red-trimmed dress robes from references 1 and 3, caught MID-TURN, his back mostly to her, beginning to turn toward a threat. Directly above the boy's head: a small black sparking crackle of dark magic with bright white-hot points, clearly visible against the bright window. Background: formally dressed dancing couples, chandeliers, glowing waltz-grid lines on the marble floor. Both faces identical to the references in face, hair, wardrobe and proportions. Match the staging, framing and lighting of the location reference. Photorealistic, cinematic candlelight."
+    },
+    "assets": {
+      "image_file_paths": [
+        "UPLOAD:ref-two-shot-dialogue.png",
+        "UPLOAD:ref-draconia-front-close.png",
+        "UPLOAD:ref-harry-front-close.png",
+        "UPLOAD:ref-yule-ball-location.png"
+      ]
+    }
+  },
+  "execution_notes": [
+    "Uploads via /v1/files/upload-urls are free; credits are charged only when the job is queued (per docs).",
+    "Same approval-guard pattern as production_runner: record intended request, halt-on-unknown transport outcome, no resubmit, receipt with job id + credits_charged.",
+    "Gates on the returned frame (free, local): eye-test at 720p AND phone-scale 375px for (a) carrier: spark + her eyeline + his mid-turn legible; (b) identity hold on both faces vs hash-locked bank; (c) phone-size readability of the threat. Report pass/fail with frame attached; no second attempt without fresh approval."
+  ]
+}

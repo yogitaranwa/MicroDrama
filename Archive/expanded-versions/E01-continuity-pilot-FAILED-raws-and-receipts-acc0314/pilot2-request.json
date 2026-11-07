@@ -1,0 +1,13 @@
+{
+  "name": "E01-threeparts-consistency-pilot-shot2-ONCE",
+  "model": "minimax-h3",
+  "resolution": "720p",
+  "audio": false,
+  "end_seconds": 7,
+  "assets": {
+    "image_file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/0cafd2b4-f049-41aa-a8c6-fc1873981bb0-image-1.png"
+  },
+  "style": {
+    "prompt": "Photorealistic film. LOCKED STATIC CAMERA at eye level. Constant chest-up medium close-up, ZERO zoom or push-in. Preserve face, messy black hair, round glasses and EXACT plain black necktie and black BUTTONED WAISTCOAT over white collared shirt and black robe with burgundy lining. NO striped tie, NO school uniform, NO sweater neckline, NO costume changes. The man looks slightly screen right toward the woman off-camera, NEVER into lens. Frightened and indignant, small natural lip/jaw motion, restrained shoulders and breathing, no large turns. Unchanging blue-lit ballroom, no reflections, no new characters."
+  }
+}

@@ -1,0 +1,1293 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.0cm]{geometry}
+\setlength{\tabcolsep}{4pt}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black]{hyperref}
+\definecolor{accent}{HTML}{1F5C3A}
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{accent}}{\thesubsubsection}{0.6em}{}
+\setlist{itemsep=2pt,topsep=4pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyfoot[C]{\thepage}\fancyhead[L]{\small MagicDrama: Engineering Review}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{3em}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTpre}{4pt}\setlength{\LTpost}{6pt}
+\begin{document}
+\begin{titlepage}
+\centering\vspace*{4cm}
+{\Huge\bfseries\color{accent} MagicDrama\par}
+\vspace{0.6cm}
+{\LARGE Engineering and Outcome Review\par}
+\vspace{0.4cm}
+{\large Method-by-method technical handover\\An AI microdrama generation pipeline\\8 October to 6 November 2026\par}
+\vfill
+{\large Report date: 6 November 2026\par}
+\vspace{0.3cm}
+{\small Technical handover for contributors continuing the project\par}
+\vspace{2cm}
+\end{titlepage}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+\section{Executive assessment}
+The project set out to build a system that turns a short brief and character reference images into a finished vertical micro-drama episode of 60 to 120 seconds, using paid and free generation services. In one month it produced a large body of engineering and a long series of dated experiments. It did not produce an accepted episode. No generated media has passed a full-speed watch plus a human listen. The recurring failure is the gap between software that runs correctly and audio and video that a viewer would accept.
+
+What the month did establish is specific and useful:
+\begin{itemize}
+\item A set of planning, evidence and spending controls that make the known mistakes hard to repeat: hash-bound inputs, durable spend ledgers, unknown-outcome handling, review receipts, route capability gates and continuity contracts.
+\item A measured record of what each generation route did on real renders: which models produced intelligible speech, which added stray words, what each shot cost in credits, and which continuity problems each method did or did not fix. The paid native-audio tests alone account for 20,398 credits of testing that reconcile exactly to an account balance change (section~\ref{sec:native}).
+\item A catalogue of failures with root causes (F22 to F31 for generation and source, D1 to D21 for the first full episode), each mapped to a repair and to the acceptance evidence still needed.
+\item Several routes that were tried and failed or were rejected on viewing, recorded so successors do not repeat them: the dubbed route, one-image silent video with prompt constraints, a custom timed-guide H3 graph, free-GPU identity and talking-video routes that ran but were visually rejected.
+\end{itemize}
+
+The final method, chosen by the owner, is the latest supplied source archive: an audio-first pipeline (the \code{magicdrama/audiofirst} family). Section~\ref{sec:final} explains it module by module. It is a planning, gating, native-audio assembly and review framework. It is not a generator that guarantees quality, and its authors say so in its own documentation.
+
+\textbf{The next credible milestone} is one short, full-duration dialogue scene with stable identity and wardrobe, intelligible complete speech and a human-reviewed cut, judged by watching and listening at full speed. It is not another unvalidated full episode.
+
+\section{How to read this report}
+\subsection{Evidence classes}
+Every claim in the method chapters carries one of these classes in its text or table.
+\begin{description}[leftmargin=2.2cm,style=nextline]
+\item[Billed] A number read from a provider account or spend ledger. In the native-audio tests every job billed exactly its quote except where stated.
+\item[Measured] Produced by a script on real files (word error rate from local speech recognition, frame counts, loudness, pitch, cut jumps).
+\item[Judged] The project owner watched and listened and gave a verdict. Voice quality, lip sync and acting can only be judged this way.
+\item[Static] Source code was inspected but not run for this review.
+\item[Historical] A claim in an older document or a dated record, not rerun. Old test counts (111, 133, 189, 227, 257) belong to older revisions and are not current claims.
+\item[Fresh] Executed on 6 November 2026 on the canonical root (section~\ref{sec:verify}).
+\end{description}
+Nothing here is a viewer study. Sample sizes in the generation tests are small, often one shot with one line. Rankings are leads, not proof.
+
+\subsection{Scope and provenance}
+\textbf{Source collection.} The latest supplied code archive is 29,191,172 bytes (SHA-256 prefix \code{9f3927df...ef788}) and holds 218 files. Its root is the audio-first family. It has no repository commit identity, and it contains generated MP4 and MP3 output next to code. For the consolidation review it is used as the root and generated media is kept outside the source tree.
+
+\textbf{Recovered versions.} Recovery found 116 source and archive-manifest files, including 110 ZIP archives that passed an integrity check. Two ZIPs are byte-identical, which leaves 108 distinct payloads. This is the recovered collection. It is not proof that every version ever produced has been found.
+
+\textbf{Previous repository.} The previous repository on its default branch holds three commits (head \code{73ee0b5}) and 59 tracked files. A full Git bundle of that history was verified for private recovery. A request to combine the three old commits into one named ``14 Oct Draft'' is documented but not executed. Nothing has been pushed, and repository visibility and branch protection must be rechecked before any push.
+
+\textbf{Review package.} The source package produced for review is a sanitised, source-focused copy. Generated media, caches, model binaries and six private third-party implementation files are omitted and listed. Notebook outputs are cleared and personal account details are redacted. It is not a byte-identical backup. A separate bounded output collection has been prepared for review (section~\ref{sec:gaps}). It is limited to a recorded scope and exclusion list, so this report makes no claim that every project output is collected or final.
+
+\textbf{Method of this report.} The method chapters are reconstructed from the supplied design documents, test logs, ledgers and source files, and from dated project records. The daily record (section~\ref{sec:daily}) is not a timesheet. A delivery date does not prove when a change was written. Raw private communications are not included.
+
+\subsection{Method map}
+Table~\ref{tab:map} lists the methods in the order they were tried. Several coexisted and some were never run. The status column is about outcome, not effort.
+
+\begin{longtable}{@{}P{0.6cm}P{3.3cm}P{3.0cm}P{2.6cm}P{4.7cm}@{}}
+\caption{Method map.\label{tab:map}}\\
+\toprule \textbf{\#} & \textbf{Method} & \textbf{Period} & \textbf{Evidence} & \textbf{Outcome}\\ \midrule \endfirsthead
+\toprule \textbf{\#} & \textbf{Method} & \textbf{Period} & \textbf{Evidence} & \textbf{Outcome}\\ \midrule \endhead
+0 & Research and planning documents & 8 to 14 Oct & Static & Plans only. No API call or spend at that stage.\\
+1 & Notebook generator and series engine & 11 to 20 Oct & Static, historical & Writer and judge stages ran in part. No accepted episode.\\
+2 & Supervised scene runner (render\_v5) & to 20 Oct & Static, historical & Native speech inside minimax-h3 image-to-video with keyframes. Drift and unsafe retries found.\\
+3 & Audio-first pipeline & 20 to 25 Oct & Static, fresh tests & Planning, gating, assembly. Selected final root.\\
+4 & Dubbed route (silent video, preset voices, lip-sync) & before 29 Oct & Billed, judged & Rejected on viewing.\\
+5 & Free and open GPU routes & 20 Oct to 6 Nov & Receipts & Several ran. All visually rejected or too short to judge.\\
+6 & H3 reference-to-video (custom guides, faithful baseline) & 20 to 25 Oct & Static, historical & Custom V4 rejected. Baseline compiled, never rendered.\\
+7 & Named-reference R2V and Wan 3.0 probe & 26 Oct & Static, measured & One probe clip with documented flaws.\\
+8 & Native-audio route with measured tests & 29 Oct to 2 Nov & Billed, measured, judged & Best results of the project. Not accepted as final.\\
+9 & Studio and directed chaining & 1 to 3 Nov & Billed, measured & Floor-plan blocking and master frames held spatial continuity.\\
+10 & Experimental Forge & 30 Oct to 6 Nov & Static, fresh tests & Archived family. Not the final root.\\
+\bottomrule
+\end{longtable}
+\part*{Part I: Methods in the order they were tried}
+\addcontentsline{toc}{section}{Part I: Methods in the order they were tried}
+
+\section{Method 0: Research and planning documents (8 to 14 October)}
+\subsection{Purpose and artefacts}
+The project began as a research plan, not as code. The first plan (\code{Plan.txt}, knowledge cutoff 8 October) describes itself as a research plan with no key used, no video generated and no credits spent. A second document (\code{1stdraft.md}, 13 October) is a script-generator plan with the same stated limits: ``Read'' means a file or page was opened, ``Run'' means executed, and nothing was run.
+
+\textbf{Plan.txt} states the product idea as a user supplying reference images of characters and a story prompt, optionally a template and specific scenes, and receiving a 60 to 120 second micro-drama episode, built in Python (Colab acceptable) on a video-generation API, with a benchmark that reruns the same inputs so each iteration is comparable. It contains: a skeptical stress test of the idea, a full architecture, alternate approaches compared, an experiment plan sized to a 20,000-credit starting budget, a paper index, a commercial and open-source landscape, a data-analyst treatment of the market, legal and platform constraints, a benchmark design and a build roadmap. Its own source grading marks vendor and aggregator sources as lower quality. It records that the API lists 14 video models, that text-to-video accepts a references array and image-to-video accepts a start image with an optional end image, and that the reference-count limits and how prompts address a reference were not documented. That unknown was named as the first experiment.
+
+\textbf{1stdraft.md} reports the state on 13 October: one Colab notebook edited in place (v9) with a README; the only model called on the writer route was a hosted 120-billion-parameter instruction model, which returned responses on 13 generation calls, which is evidence that the route answered and not that the writing was good; 500 benchmark rows from a public drama-evaluation dataset saved and split 350, 99 and 51; retrieval off; no fine-tuning. It adds that the first bible and outline had changed the owner's story (ending, phone mother, early reveal), so they were kept as rejected files and not reused. v9 added error-specific retries, off-screen phone voices, a faithful versus seed mode, original-quote checks across the series and an outline review before episodes are generated. It compared three open-source writer repositories by actual fit: one that goes from idea to bible, characters, outline, scenes and dialogue (closest, borrow the scene-by-scene writing structure); one that breaks an existing script into shots, entities, consistency checks and generation tasks (borrow the entity model, JSON repair and consistency check, but it does not write scripts); and one that provides evaluation prompts and a dataset pointer. It also records that a reverse-engineering tool the owner had named is for binaries and websites, not for stories, so the intended meaning (study a working open-source system and build on its approach) was substituted.
+
+\subsection{Market benchmark research (14 October)}
+A separate benchmark document gathers market data as of 14 October: the most-watched vertical series of the week of 5 to 11 October by platform, ad-exposure leaders and structural rules practitioners report. It records, as observations: dominant genres (hidden identity, revenge and regret, forbidden romance, secret children, werewolf and mafia pairings, ugly-duckling reveals), that every top title states its central fantasy in the title, an episode length of about 60 to 90 seconds, series of 50 to 100 or more episodes, 3 to 5 arcs of 15 to 25 episodes, and an episode skeleton of a hook within 3 seconds followed by four beats of about 15 seconds. Its limitation is written into it: charts measure plays and ad exposure, not script quality, and the labelled dataset of about 300 episodes proposed in the plan had not been built. The document is an external baseline, not an evaluator.
+
+\subsection{Outcome and lesson}
+No generation happened in this phase, so there is no result to judge. The useful outputs were the questions: reference handling, model limits and a benchmark design that holds inputs constant. The warning that most planning documents repeat is that a plan, a script count or a delivery target is not an episode.
+
+\section{Method 1: Notebook generator and single-episode engine (11 to 20 October)}
+\subsection{Source and entry points}
+The previous repository's master tree (\code{73ee0b5}) contains two notebooks (a studio notebook and a ``reliable forms'' notebook for the LTX 2.5 video model), \code{run_generator.py}, \code{run_series.py} and a package \code{src/microdrama}. These are static findings from the source. The retained plan says explicitly that its model, pricing and provider statements are proposals, not verified availability.
+
+\subsection{Data flow}
+\code{run_generator.py} constructs a \code{MicrodramaEngine} with a language-model provider, model name and a mock flag, then calls \code{generate_episode} with a story prompt, a trope template, an optional character reference mapping, a shot count, a per-shot duration, a video model and resolution, an episode number and the previous screenplay and cliffhanger. The result is expected to hold a screenplay, subtitles and optionally a master MP4. Reaching the code that prints outputs is not evidence that any of those exist.
+
+The package separates concerns:
+\begin{itemize}
+\item \code{narrative/} holds a prompt builder, a screenwriter, a judge and a validator: writer and judge stages.
+\item \code{templates/} holds a registry and templates for contract marriage, revenge, hidden billionaire, werewolf and mafia, and thriller loop.
+\item \code{client/} holds the asset manager, voice manager, generator and a journal.
+\item \code{postprod/} holds a storyboard builder, subtitle writer and assembler.
+\item \code{series/} holds a series bible, arc planner, organiser, continuity checker and a semantic verifier.
+\end{itemize}
+
+\subsection{Source defaults (not trial settings)}
+\begin{longtable}{@{}P{5cm}P{10.5cm}@{}}
+\toprule \textbf{Setting} & \textbf{Source default}\\ \midrule\endhead
+Shots and length & 8 shots of 8 seconds, nominal 64 seconds\\
+Video model label and resolution & ltx-2.5, 480p\\
+Script provider and writer label & gemini, gemini-3.5-flash\\
+Template & thriller\_loop\\
+Series wizard & 10 episodes by default, full video mode\\
+Offline switches & \code{--mock} simulates; \code{--storyboard-only} suppresses video\\
+\bottomrule
+\end{longtable}
+These are defaults in source. They are not the settings of any recorded run and not an endorsement of the model labels.
+
+\subsection{What the history shows}
+\begin{itemize}
+\item By 18 October the batch had produced 31 of 100 scripts, 5 of 10 arcs and 3 of 10 judged, with timeouts continuing (historical record). Scripts are not episodes.
+\item A 19 October export and retrospective audit found that the export lacked completed media and ledger evidence and needed privacy cleanup.
+\item A source-level hazard exists in the series runner: it computes \code{render_video = not args.storyboard_only} although a separate \code{--render-video} flag also exists. Absence of that flag does not guarantee that nothing renders. A name-substitution helper called an IP sanitiser in the code does not establish originality or rights clearance. These are static findings. The consolidation did not execute the old runner, and no new charge was observed.
+\end{itemize}
+
+\subsection{Lesson}
+Three commits and 59 files establish a source history, not an accepted movie. Later versions tightened explicit approval, durable accounting and media review because the first abstractions and reasonable-looking prompts were not enough.
+
+\section{Method 2: Supervised scene runner with native speech (render\_v5)}
+\subsection{Design}
+The 20 October full-code archive retains \code{render_v5/render_step.py}. It is an execution script, not an import-safe module: it reads the episode number and API key from environment variables at module scope and uses hard-coded historical output paths. It generates one scene per invocation and then stops for human review.
+\begin{longtable}{@{}P{4.2cm}P{11.3cm}@{}}
+\caption{render\_v5 request design (static).}\\
+\toprule \textbf{Stage} & \textbf{Recorded design}\\ \midrule\endfirsthead
+\toprule \textbf{Stage} & \textbf{Recorded design}\\ \midrule\endhead
+Keyframe image & nano-banana-2.1 through the image-editor endpoint, with up to two inferred character references plus one location reference (three images at most)\\
+Video & minimax-h3, 720p, image-to-video endpoint, audio on, requested length scene seconds plus 2\\
+Prompt content & Exact dialogue, ordered micro-acting beats, fixed wardrobe, prop orientation, no new people, no readable text, photoreal office style, natural lip sync\\
+Speech & Native speech generated inside the video request. Not a fixed-voice, audio-driven lip-sync route\\
+Reference choice & Characters found by scanning serialised scene text, falling back to the lead character. Location found by scanning visual text, defaulting to the office floor\\
+Chaining & A hard-coded map for selected episodes and scenes; a chained start frame is extracted at the previous scene's scripted duration\\
+QA artefacts & Frames at about 0.5 s, the midpoint and a late point; a mono 16 kHz WAV; duration and audio presence from ffprobe\\
+Polling & Every ten seconds for about 25 minutes, then raises\\
+\bottomrule
+\end{longtable}
+
+\subsection{Weaknesses visible in source}
+\begin{enumerate}
+\item The generic \code{post} helper retries connection errors, timeouts and selected server and rate-limit errors. For a generation request a timeout can happen after the provider accepted the job, so a retry risks duplicate spend.
+\item Ledger entries use the provider's charge value but fall back to fixed historical estimates when it is missing, which conflates estimated and actual charge.
+\item A polling timeout raises, but a raised timeout does not show that the provider job failed or was free.
+\item Character and location references are chosen by text heuristics and can silently select the wrong reference. Later work replaced this with an explicit reference bank and coverage check.
+\item Frame samples and an ffprobe record do not verify dialogue correctness, emotion, every frame or lip sync. Cached output from earlier attempts can sit in the same folder, so a file's existence is not current acceptance.
+\end{enumerate}
+These are exactly the patterns the later failure audit (F26 to F31, section~\ref{sec:fail}) retired.
+
+\subsection{Observed outcome versus intent}
+The prompts asked for fixed wardrobe, camera, props and exact speech. The later audit records wardrobe, framing, background and eyeline drift despite such prose (F22, F23). A separate mouth-sync pass cannot repair a wrong camera, costume or action. The successor experiment changes the control mechanism and measures one variable. It does not lengthen the negative prompt.
+
+\subsection{Supervised-runner contract}
+The runner as documented in the root README keeps these rules, which successors can rely on: \code{python run.py} loads the example plan, reads all ten scripts, prints per-scene quotes, missing references and cap checks, and makes no network request; the sample ten-episode plan exceeds its 25,000-credit batch cap, and planning does not raise the cap; \code{--live --accept-costs} renders at most one new scene per invocation and then stops for human review; approval is bound to the clip's SHA-256; a rejected clip is rerolled by raising that scene's \code{attempt} number and keeping the same output directory so earlier attempts still count against the caps; job IDs and credit reservations are saved before polling; a timeout after submission is an unknown outcome and is never resubmitted automatically; two independent transcription commands must be configured and the second is not bundled. Note that this legacy path is not protected by the later audio-first approval token. Do not run it live without a fresh scoped approval.
+
+\section{Method 3: Audio-first pipeline (20 to 25 October)}
+\label{sec:audiofirst}
+The audio-first pipeline is the code the owner later selected as final. Its full module-level description is in section~\ref{sec:final}. This chapter records why it was built and how it grew.
+
+\subsection{Motivation}
+The supervised runner trusted the video model for speech and trusted prose for control. The audio-first idea reverses that: fix the spoken audio first, measure it, then plan shots, references and renders to fit the measured track, and accept media only on evidence. The 20 October release states its scope as planning, gating, assembly and spend controls. It makes no claim of film quality.
+
+\subsection{Growth in four steps}
+\begin{description}[leftmargin=0.6cm]
+\item[20 October, base release.] Input form, writers (local and cloud, default off), image-first reference planning, tagged dialogue requests, dialogue-timing checks against the real WAV, subtitles, local assembly, season ZIP continuation, an exact-manifest execution ledger and an optional hashed soundtrack licence gate. Six third-party H3 modules are vendored unchanged, and only one (a local joiner) executes.
+\item[20 October, evening.] Local ASR exact-word alignment recovery, fail-closed semantic QA with a two-evaluator rule, an installed-local vision transport, mouth-track correlation screening, an automatic-preparation hook, free licensed audio discovery, a local H3 graph compiler with licence, weights and free-compute preflight, and an elementary OBJ prop blockout.
+\item[20 October, portable runtime.] Pinned official-source model downloads and CPU smoke tests (section~\ref{sec:cpu}).
+\item[25 October.] Staged story development, a version-2 story contract with facts, scene IDs, start and end states and change records, grounded review and repair, renderer capability profiles, cut coverage, storyboard and animatic previews, and a reference bank, route capability registry and eyeline continuity (sections~\ref{sec:fail} and~\ref{sec:final}).
+\end{description}
+
+\subsection{Stress checks and their limits}
+The evening revision reports finite stress matrices: 512 required-check presence combinations (only the complete valid evidence passes), 32 licence, host and MIME combinations (one compatible combination passes), and 12 ASR confidence and mismatch combinations, plus low, unknown, NaN, stale and duplicate evidence, and download, runtime, tamper and unknown-job rejection paths. These are explicit finite matrices. They are not proof that every input has been tested. A synthetic fixture exercised automatic preparation and assembly end to end with real ffmpeg, and the caption, name and introduction pixels were inspected. Real ASR, vision, face tracking and H3 inference were not part of that fixture.
+
+\section{Method 4: The dubbed route and why it was rejected}
+\subsection{What it was}
+Before 29 October the repository used: silent generated video with no audio, preset voices from the provider's voice generator (named after film characters), a separate standard lip-sync pass and synthesised effects. The assembler stripped every clip's own audio and laid one pre-made voice file over silent video.
+
+\subsection{Evidence (billed and judged)}
+\begin{itemize}
+\item A 14-shot scene from a third-party fantasy franchise, used as a benchmark only and never for publication: 4,218 credits (images 1,000, video 2,688, voices 18, music 56, five lip-sync passes 456). The owner judged it rejected: one male voice sounded like a female character, impacts did not read, delivery was bland.
+\item A five-shot LTX 2.5 test at 480p with native audio (the ``Missing Minute'' example): 360 credits, as a historical source claim without per-job receipts (section~\ref{sec:honesty}). Native speech worked and a recogniser understood it, but mouth shapes were exaggerated, two raw clips burned in unwanted subtitles that the edit cropped, and the performance stayed artificial.
+\end{itemize}
+
+\subsection{Root causes}
+Every clip's own audio was discarded; the voices were impersonation presets (all 1,264 of the provider's voices are impersonations, so nothing could be published); the voice was generated separately from the mouth that was supposed to speak it. The native-audio assembler replaced it (section~\ref{sec:native}). Do not use this route again.
+\section{Method 5a: Local CPU smoke tests (20 October)}
+\label{sec:cpu}
+The portable audio-first release was exercised on a machine with no GPU. These are historical records of one run on that date, not repeated for this review.
+\begin{longtable}{@{}P{3.6cm}P{7.6cm}P{4.3cm}@{}}
+\caption{Portable CPU smoke results (historical).}\\
+\toprule \textbf{Component} & \textbf{Result recorded} & \textbf{Reading}\\ \midrule\endfirsthead
+\toprule \textbf{Component} & \textbf{Result recorded} & \textbf{Reading}\\ \midrule\endhead
+Speech recognition (tiny English model) & 22 words recovered, 0 errors on the test clip; lowest word probability about 0.181 & A strict 0.65 confidence gate rejected it. The gate fails closed, so the evidence did not pass automatically.\\
+Local vision model (256M parameters) & Ran as a description transport & Descriptions are not acceptance evidence.\\
+Face geometry tracker & 1 face, 478 landmarks on a test image & Geometry only. Not identity or phoneme proof.\\
+Test suite at that revision & 227 tests (historical) & Replaced by the fresh run in section~\ref{sec:verify}.\\
+H3 weights selection & 75,893,003,157 bytes (about 70.7 GiB) of pinned files & Size of the download plan. No model was run.\\
+\bottomrule
+\end{longtable}
+The point of the exercise was to show the checks fail closed with real files. It did not run a video model.
+
+\section{Method 5b: Free and open GPU routes}
+\label{sec:freegpu}
+Between 20 October and 6 November the project tried several free or open-source GPU paths to avoid paid generation: a hosted-GPU volunteer notebook tier with a single T4, and a dual-T4 notebook tier, with the open-source models InfiniteTalk, MultiTalk, VACE, PuLID and an SDXL FaceID adapter. They are wrapped in the experimental Forge line (Chapter~\ref{sec:forge}). This chapter records what ran.
+
+\subsection{Evidence quality}
+The runtime and visual-review records for MultiTalk V5, InfiniteTalk V3 and PuLID V1 are retained as review JSON, stream dumps, notebook builders and preview strips. The failures of earlier iterations are known by failure class only, and the owner records that not every iteration log was kept. For the FaceID adapter and the generalised VACE executor, recovered output files were re-hashed and the hashes match their receipts: FaceID V3 front image (prefix \code{7edc4dfa}) and the generalised gated executor V1 clip (prefix \code{64e5b7ee}). The FaceID output is a single-identity still. It is no evidence of multi-person, speech or lip-sync ability. No claim here goes beyond those records.
+
+\subsection{Pinned third-party code}
+\begin{longtable}{@{}P{2.3cm}P{3.0cm}P{2.2cm}P{1.8cm}P{6.2cm}@{}}
+\caption{Pinned repositories used by the local route (static, from the registry).}\\
+\toprule \textbf{Key} & \textbf{Project} & \textbf{Code licence} & \textbf{Min GPU} & \textbf{Capability stated by its authors}\\ \midrule\endfirsthead
+\toprule \textbf{Key} & \textbf{Project} & \textbf{Code licence} & \textbf{Min GPU} & \textbf{Capability}\\ \midrule\endhead
+multitalk & MultiTalk & Apache-2.0 & 16 GB & Multi-person audio-driven talking video, clips up to about 15 s\\
+infinitetalk & InfiniteTalk & Apache-2.0 & 16 GB & Audio-driven dubbing and lip sync, streaming long-form mode (quality claims are the authors' own)\\
+vace & VACE & Apache-2.0 & 12 GB & Reference-guided generation and editing; the LTX variant is under a RAIL-M licence and is marked do-not-use\\
+pulid & PuLID & Apache-2.0 & 16 GB & Identity-preserved stills; the vendored pipeline is SDXL, not FLUX\\
+ip\_adapter\allowbreak\_faceid & IP-Adapter & Apache-2.0 & 16 GB & Local SDXL single-identity stills\\
+\bottomrule
+\end{longtable}
+Weights are not vendored. Face-analysis models used by the identity routes carry separate non-commercial or research-only terms regardless of the repository licence. Metadata captured before download shows the Wan2.1 image-to-video 14B 480p weights and the InfiniteTalk weights are Apache-2.0.
+
+\subsection{Executed trials with retained evidence}
+\begin{longtable}{@{}P{3.0cm}P{6.2cm}P{6.3cm}@{}}
+\caption{Settings and measured results of the executed audio-driven trials (evidence: build scripts, review JSON, stream dump).}\\
+\toprule \textbf{Item} & \textbf{MultiTalk V5} & \textbf{InfiniteTalk V3}\\ \midrule\endfirsthead
+\toprule \textbf{Item} & \textbf{MultiTalk V5} & \textbf{InfiniteTalk V3}\\ \midrule\endhead
+Executor & Speech-preserving executor with test truncation explicitly allowed & Same\\
+Runtime profile & dual T4, int8 quantised, 4 sample steps & Same\\
+Other settings & no persistent DiT parameters, text encoder on CPU & Same, plus explicit InfiniteTalk checkpoint and single-person int8 file\\
+Timeout & 2700 s & 2400 s\\
+Environment & Python 3.10 via uv, torch 2.5.1, torchvision 0.20.1, torchaudio 2.5.1 (cu124), diffusers 0.33.1, transformers 4.49.0, numpy below 2 & Same\\
+Job & One shot, plan 0.68 s, one speaker, one locked reference still, static-camera prompt & Same\\
+Source audio & 1.2 s WAV & 1.2 s WAV\\
+Runtime result & passed, executor 2289.07 s, return code 0 & passed, 1671.87 s\\
+Output & 59,863 bytes, SHA-256 prefix \code{fa52515c}; H.264 High, 448x832, yuv420p, 17 frames, 25 fps, 0.680 s; AAC mono 16 kHz, 0.68 s & SHA-256 prefix \code{2e9cce67}; 17 frames, 25 fps, stream 0.68 s; decoded AAC 0.704 s (codec padding)\\
+Audio fate & 1.2 s source cropped to 0.68 s; 0.52 s lost & Same: 0.52 s discarded. Output audio prefix correlates 0.9984 with the source prefix at zero lag, which shows cropping and not retiming\\
+Visual note (trial owner) & limited plausible reference retention, mouth motion visible, soft face, late-frame shape change & limited identity, robe and background preserved, mouth changes visible, face soft\\
+Acceptance & Not accepted for full speech, identity, lip sync, AV sync, two-person, cross-angle or episode use & dialogue\_acceptance rejected\_truncated\_test\_audio; episode acceptance false\\
+\bottomrule
+\end{longtable}
+Both clips are 17 frames because the plan seconds were chosen to give a 17-frame job, and the test flag deliberately allowed the crop. They are technical samples, not dialogue. Figures~\ref{fig:it} and~\ref{fig:mt} show frame strips. A mouth change across the strip is not evidence of correct lip sync.
+
+\subsection{PuLID V1 (identity still)}
+Runtime passed with 4 steps, executor 130.92 s, notebook 223.0 s, output SHA-256 prefix \code{ee3a5f01}. The visual review rejected it for these recorded reasons: illustrated and plastic rather than photoreal; childlike proportions and a younger face; rectangular instead of round glasses; green garment, belt and brown shoes instead of the approved wardrobe; full body instead of the prompted close-up.
+
+\subsection{Trial ledger}
+\begin{longtable}{@{}P{2.4cm}P{4.4cm}P{3.0cm}P{5.7cm}@{}}
+\caption{Free-GPU trial ledger with evidence level.}\\
+\toprule \textbf{Trial} & \textbf{Outcome} & \textbf{Evidence} & \textbf{Note}\\ \midrule\endfirsthead
+\toprule \textbf{Trial} & \textbf{Outcome} & \textbf{Evidence} & \textbf{Note}\\ \midrule\endhead
+MultiTalk V1 & failed, missing T5 weights & reported class only & No log retained\\
+MultiTalk V2 & failed, context problem & reported class only & No log retained\\
+MultiTalk V3 & failed, Float/Half dtype mismatch & reported class only & Consistent with the dtype audit in the docs, not proven linked\\
+MultiTalk V4 & failed, timeout & reported class only & No log retained\\
+MultiTalk V5 & runtime pass, visual limited & review JSON, stream dump, strip & See table above\\
+InfiniteTalk V1 & failed, context problem & reported class only & No log retained\\
+InfiniteTalk V2 & failed, timeout & reported class only & No log retained\\
+InfiniteTalk V3 & runtime pass, truncated test audio & review JSON, strip & See table above\\
+PuLID V1 & runtime pass, visual reject & result JSON & Reasons above\\
+FaceID V3 & Two 20-step diffusion runs (face analysis on CPU, diffusion on GPU); front image recovered, three-quarter image not recovered & recovered output image with matching hash prefix \code{7edc4dfa}; notebook log retained internally and not published & Visual review: harsh, illustrated, plastic look with a high-contrast green cloak. Not accepted.\\
+VACE official V1 (upstream sample route) & Environment install passed; command-line help failed on a missing plotting library; inference pending at last record & status document only & No result retained. Do not read it as a visual reject\\
+VACE generalised executor V1 (a different route and notebook from the official trials) & Runtime pass: 8 steps, 17 frames, 152.806 s generation, 480x832, 16 fps, 1.063 s, 715,931 bytes, SHA-256 prefix \code{64e5b7ee}, hash matches its receipt & recovered MP4 with fresh ffprobe & Visual review: a different, younger face and different torso framing from the reference. Not accepted for production. No speech, lip sync or two-person proof\\
+VACE official V2 & failed after 2801.8 s & status document & Install steps 00-08 passed; help failed (plotting backend); mixed-dtype GPU comparison passed; weights downloaded at 174.2 s; model built at 339.6 s; generation stayed in CPU-side text-encoder passes until the 2700 s timeout; no video\\
+VACE official V3 & test wrapper prepared (not run) & status document & Puts the text encoder on the second GPU, requires finite encoder output, sets a non-interactive plotting backend. No retained result\\
+Duration-corrected InfiniteTalk & \textbf{prepared, not run} & notebook, builder & 33 frames from the real 1.2 s audio, truncation disallowed, 4500 s timeout. Paused before launch\\
+\bottomrule
+\end{longtable}
+
+\subsection{Earlier free-GPU attempts}
+A free single-T4 test of the Wan2.1 VACE 1.3B model with a reference image and mask for the table-flip action began on 25 October and failed at prompt embedding with \code{RuntimeError: Inplace update to inference tensor outside InferenceMode} (F24). The error is a test-code and PyTorch mode compatibility problem. It is not evidence of a memory limit and not evidence that the model cannot perform the action. A remedy (correct the inference-mode boundary or clone the tensor) was a hypothesis at that time and the later dual-T4 driver does not adopt it directly.
+
+\subsection{What this route does and does not show}
+Supported: a 0.68 s clip was produced on a free dual-T4 setup at 4 sample steps with int8 quantisation, after environment and memory problems were solved. Not supported: any statement about model quality at normal settings (the settings were reduced for memory), any dialogue acceptance, any lip-sync, any continuity, any multi-speaker behaviour. Nothing here shows these models cannot work; it shows the goal was not achieved under these free-tier conditions.
+
+\section{Method 6: H3 reference-to-video (20 to 25 October)}
+\label{sec:h3}
+\subsection{What H3 is here}
+The ``H3 film'' method is a ComfyUI workflow family around an open-weights video model that accepts many reference images and an audio file. The project vendored six third-party H3 modules unchanged. Only a local joiner executes; a wrapper (\code{h3_wrapper.py}) explicitly says it is a wrapper for that joiner and never executes the H3 model. A local compiler (\code{h3_local.py}) builds an H3 graph offline and gates a local runtime transport behind preflight checks for licence, weights and free compute.
+
+\subsection{Cloud trial and licence}
+A hosted-GPU platform was investigated for running the weights (Starter plan, region selection not enabled). A recorded test shows a metered delta of 1.08007132 USD against a monthly metered total of 2.11084757 USD, with credits adjusting billed cost to 0. The licence review found territorial exclusions (EU, UK, South Korea and US). The guard wording that blocks use for those territories is documented as ``conservative internal wording'', not as legal advice. Rights are a precondition before any publication (section~\ref{sec:rights}).
+
+\subsection{Custom guided graph (V4) versus the faithful baseline}
+\begin{longtable}{@{}P{4.0cm}P{5.7cm}P{5.8cm}@{}}
+\caption{H3 graph comparison (static inspection of exported workflow graphs).}\\
+\toprule \textbf{Property} & \textbf{Custom V4} & \textbf{Faithful baseline}\\ \midrule\endfirsthead
+\toprule \textbf{Property} & \textbf{Custom V4} & \textbf{Faithful baseline}\\ \midrule\endhead
+Nodes & 71 & 35\\
+Image loaders / audio loader & guide images inserted by the project & 9 LoadImage, 1 LoadAudio\\
+Single-frame guides & 12 & none (zero AddGuide)\\
+Audio length & 13.666 s submitted, trimmed after & 13.12 s\\
+Reference image size mode & max & match\\
+Resolution & as built & 576x1024\\
+Sampling & as built & 25 steps, res\_multistep sampler, simple scheduler, denoise 1\\
+Cache & as built & T8 cache\\
+Status & Not baseline parity & Compiled offline only. No generation\\
+\bottomrule
+\end{longtable}
+V4 was not a faithful copy: it added 12 single-frame guides, used the max reference-size mode and sent 13.666 s of audio that was trimmed afterwards. The faithful baseline reproduces the original recipe's structure, and it has been compiled offline only. Appendix~B shows recovered V4 guide anchors, mouth crops and a reply sheet (Figures~\ref{fig:anchors}, \ref{fig:l1} and \ref{fig:l3}) and a proposal-only camera plan (Figure~\ref{fig:plan}); none of them is evidence of an accepted shot.
+
+\subsection{V4 postmortem (measured on the V4 output)}
+A postmortem measured the V4 render. Active-speaker visibility (L3) was 33 of 63 samples (52.4 percent). The audio envelope correlation was 0.9765 with onset at $-0.02$ s and a global offset of 0. These numbers describe the audio envelope against the video's motion envelope. They are not lip-sync proof. The idea that frozen guide frames caused the visual stiffness is a hypothesis. It has not been isolated by a controlled comparison, so successors should not treat it as a cause.
+
+\subsection{Verdict}
+V4 was judged not acceptable; the faithful baseline was compiled but not generated; the 257-test count from that period is historical and is not a fresh claim.
+
+\section{Method 7: Named-reference R2V and the Wan 3.0 probe (26 October)}
+\subsection{R2V route}
+The reference-to-video route accepts 1 to 10 named reference images and refers to them in the prompt. A bounded test plan (v2) covered 23 seconds across shots \code{e01s07} to \code{e01s10}. The account balance recorded on 26 October was 137,493 credits. The plan states hard caps and does not authorise spend by itself.
+
+\subsection{Wan 3.0 probe}
+A single probe of one shot, \code{e01s13}, was recorded at 384 credits for 4 s at 720p. The flaw log for the probe lists five flaws. A single clip on one shot is a probe, not a comparison, and the flaw log was written by the project, not a viewer panel.
+
+\subsection{Talking-photo adapter}
+An adapter for a talking-photo endpoint was exercised on 26 October. The observed cost was 24 credits per second against 20 credits per second in the vendor's documentation. A bounded test on a great-hall scene was capped at 5,000 credits. The lesson: always read the billed amount from the account after a first call; documented prices are not guaranteed.
+
+\section{Method 8: Native-audio route with measured tests (29 October to 2 November)}
+\label{sec:native}
+\subsection{What changed}
+The native-audio method keeps each generated clip's own dialogue, effects and ambience and joins clips with real transitions instead of stripping audio and laying a voice track over silent video. The planner (\code{native_plan.py}) compiles story shots to render jobs, the mixer (\code{native_mix.py}) joins them with exact frame accounting, and measurement scripts check words, pitch and loudness. A bug found on 29 October (frame-rate filters in joins dropped frames and truncated the video, so the first version sent for review lacked about 4.5 s of picture) was fixed.
+
+\subsection{Rates used (credits per second, as read on 1 November)}
+\begin{longtable}{@{}P{2.9cm}P{1.5cm}P{1.5cm}P{1.5cm}P{1.5cm}P{2.3cm}P{3.4cm}@{}}
+\caption{Published rate table as recorded in the log of 1 November. Always re-quote before spending.}\\
+\toprule \textbf{Model} & \textbf{480p} & \textbf{720p} & \textbf{1080p} & \textbf{Audio} & \textbf{720p with audio} & \textbf{Whole seconds}\\ \midrule\endfirsthead
+\toprule \textbf{Model} & \textbf{480p} & \textbf{720p} & \textbf{1080p} & \textbf{Audio} & \textbf{720p with audio} & \textbf{Whole seconds}\\ \midrule\endhead
+veo3.1-lite & - & 48 & 72 & +24 & 72 & 4, 6, 8, 16, 24 to 56\\
+veo3.1 & - & 96 & 120 & +24 & 120 & same\\
+kling-3.0 & - & 48 & 72 & +24 & 72 & 3 to 15\\
+wan-3.0 & 48 & 96 & 180 & included & 96 & 2 to 10, 15 to 30\\
+seedance-2.0 & 96 & 216 & 528 & included & 216 & 4 to 15\\
+seedance-2.0-fast & 84 & 180 & - & included & 180 & 4 to 15\\
+seedance-2.0-mini & 48 & 120 & - & included & 120 & 4 to 15\\
+seedance-2.5 & 168 & 336 & 840 & included & 336 & 4 to 30\\
+minimax-h3 & 24 & 48 & 72 & included & 48 & 1 to 30\\
+ltx-2.5 & 24 & 48 & 72 & included & 48 & 1 to 60\\
+\bottomrule
+\end{longtable}
+Other prices: an image (1k) 50 credits, an image edit with references 50, voice generation or cloning 0.1 per character, instrumental music 1 per second, a lip-sync pass about 90 per 3 to 5 s clip. Failed generations are not charged. In practice every video job billed exactly its quote.
+
+\subsection{Every native-audio test in order}
+\begin{longtable}{@{}P{0.7cm}P{2.0cm}P{2.1cm}P{4.2cm}P{6.5cm}@{}}
+\caption{Billed tests. Credits are read from the account or per-job ledger.}\\
+\toprule \textbf{\#} & \textbf{Date} & \textbf{Credits} & \textbf{Test} & \textbf{Result}\\ \midrule\endfirsthead
+\toprule \textbf{\#} & \textbf{Date} & \textbf{Credits} & \textbf{Test} & \textbf{Result}\\ \midrule\endhead
+3.1 & before 29 Oct & 4,218 & Old dubbed route, 14 shots & Rejected by the owner (Method 4)\\
+3.1b & before 29 Oct & 360 & LTX 2.5 480p, 5 shots & Intelligible but artificial; burned-in subtitles in 2 clips (historical source claim; no per-job receipt supplied)\\
+3.2 & 29 Oct & 818 & Same still, same line, 3 models at 4 s (1 image 50, veo3.1-lite 288, kling-3.0 288, seedance-2.0-mini 480p 192) & Veo preferred by the owner; kling most restrained; seedance lowest resolution, exaggerated eyes\\
+3.3 & 29 Oct & 4,608 & 14-shot benchmark on veo3.1-lite, reused reference frames & Judged better than before; joined video was missing about 4.5 s until the bug was fixed\\
+3.4 & 30 Oct & 4,388 & Original story ``The Last Ferry'', 11 shots, 13 lines (3,888 video, 10 images, remainder other) & Word error 0.0 to 0.09 on every speaking shot; pitch drift of about 5 and 7 or more semitones for the two characters between shots; background not constant; judged not publishable\\
+3.5 & 31 Oct & 600 & Anime ``Only Training'': plate, 3 portraits, 7 frames & Locked-street background held in every frame; one portrait returned as a turnaround sheet and was redone for 50\\
+3.6 & 31 Oct & 1,152 & One 16 s two-speaker take, veo3.1-lite & Words exact. Model cut to the other character at about 12.5 s while the first was still speaking, so the wrong mouth carried the voice. Judged: lip sync bad\\
+3.7 & 31 Oct to 1 Nov & 4,176 & ``Only Training'' per shot, 13 shots, 58 s, veo3.1-lite & 12 of 13 shots word error 0.0 to 0.2; shot 9 scored 0.67 (invented mumbled words). Judged very bad\\
+3.8 & 1 Nov & 1,056 & Same line, 4 models, same frame and prompt & Table below\\
+3.9 & 1 Nov & 3,600 & ``Only Training'' on kling-3.0, 13 shots plus 1 regeneration, 47.0 s, 1,128 frames, -16.2 LUFS & 576 credits (14 percent) cheaper and 11 s shorter than 3.7; one non-word and one invented-name miss. Owner verdict pending\\
+8 & 1 Nov & 1,417 & ``Working Late'': 7 images 350, four kling-3.0 shots 936, clone 4, audio-to-video 112, music 15 & Room and two people consistent; fixed-voice route works\\
+9 & 2 Nov & 1,683 & Directed retry with sequential chaining & Caught an empty table, wrong face, brightness jump; final film 18.7 s\\
+11 & 2 Nov & 726 of 750 cap & Re-render of shots 4 and 5 & Kling returned an unknown error 5 times (uncharged); veo3.1-lite fallback gave right room position; one stray phrase\\
+12 & 2 Nov & 5,280 & ``Cold Cycle'' 60 s, 15 shots on Kling, master frames & Continuity of room objects held; all 8 dialogue shots word error 0.0; 3 silent shots got invented speech\\
+\midrule & & \textbf{29,504} & Sum of the rows above excluding 3.1 and 3.1b & Arithmetic of the table. Not an account reconciliation beyond the 20,398 below\\
+\bottomrule
+\end{longtable}
+\textbf{Reconciliation.} For tests 3.2 to 3.9 the account balance read 113,463 before and 93,065 after, a drop of exactly 20,398, equal to the sum of the ledger entries (818 + 4,608 + 4,388 + 600 + 1,152 + 4,176 + 1,056 + 3,600). After section 9 the running total was 23,498 and the balance 89,965; after section 11 the balance was 89,239. The account is shared, so in general a balance change can include other use; the per-job ledgers are the budget record. The Cold Cycle total (5,280) comes from its own ledger and is not tied to a balance reading in the log.
+
+\subsection{Same shot on four models (test 3.8)}
+\begin{longtable}{@{}P{3.1cm}P{1.7cm}P{1.5cm}P{3.2cm}P{1.8cm}P{4.2cm}@{}}
+\caption{A character's line ``Really, it's only training!'' same start frame, same prompt, 720p, audio on.}\\
+\toprule \textbf{Model} & \textbf{Billed} & \textbf{Length} & \textbf{Word error} & \textbf{Pitch} & \textbf{Frames}\\ \midrule\endfirsthead
+\toprule \textbf{Model} & \textbf{Billed} & \textbf{Length} & \textbf{Word error} & \textbf{Pitch} & \textbf{Frames}\\ \midrule\endhead
+veo3.1-lite & 288 & 4 s & 0.0 & 296 Hz & holds together\\
+veo3.1 & 480 & 4 s & 0.0 & 250 Hz & holds together, no visible gain for 67 percent more\\
+kling-3.0 & 288 & 4 s & 0.25 (extra ``Ugh'') & 258 Hz & larger gestures\\
+wan-3.0 & 288 & 3 s & 0.0 & 271 Hz & turns toward the listener, natural staging\\
+\bottomrule
+\end{longtable}
+The owner judged the third and fourth (kling and wan) as better. Pitch for identical text varied by about 2.9 semitones between models, so voice is unstable across models.
+
+\subsection{Speech rules}
+Kling without a speech clause prepended ``Ugh'' or ``A- A-'' in 3 of 4 tries. A SPEECH RULES clause in every dialogue prompt (speak only the given words, no extra sounds before the line, face toward the camera with the mouth visible) gave clean results in the next shots, but the sample is small and one shot still produced a non-word (``Hm'' for ``Hmph'') and one an invented name (``Kai Orren'' heard as ``Hi, Oren'').
+
+\subsection{Fixed-voice route}
+A voice was cloned from the character's own generated 1.65 s line, then an audio-to-video call was driven by it. The video's audio matches the cloned audio exactly (124.0 Hz); word error 0.17 (the recogniser wrote a digit for a word). Cost for a 2.3 s line was about 116 credits (cloner 4 plus audio-to-video 112) against 72 per second native (about 165). The route returns only the voice: no room tone or effects and little body motion. Gotchas: the cloner returns WAV bytes even if saved as MP3; the audio window must not run past the end; billing is per whole frame at 24 fps so a naive quote can be one credit low; the overcharge guard halted a batch on a one-credit difference and the paid video was recovered from the ledger. Voice cloning is permitted by the guard only from project-generated audio, with explicit voice approval and an exact quote.
+
+\subsection{Measurement validity}
+Reliable: word accuracy from local speech recognition, frame counts, loudness, dead air, cost versus ledger. Noisy: pitch per shot. Invalid: the mouth-motion versus loudness proxy. On a clean professional reference clip it returned $-333$, $+333$ and $-333$ ms with weak or negative correlation, so an earlier report of 40 to 170 ms offsets is withdrawn. Only a person can judge voice quality, lip sync and acting.
+
+\subsection{Reference edit profile (1 November)}
+The reference clip is a Japanese voice-acted anime with burned-in subtitles. Its profile is compared with two renders.
+\begin{longtable}{@{}P{4.8cm}P{2.5cm}P{2.5cm}P{2.5cm}P{3.2cm}@{}}
+\caption{Edit profile numbers (measured).}\\
+\toprule \textbf{Measure} & \textbf{Reference} & \textbf{Kling v1} & \textbf{Kling v2} & \textbf{Note}\\ \midrule\endfirsthead
+\toprule \textbf{Measure} & \textbf{Reference} & \textbf{Kling v1} & \textbf{Kling v2} & \textbf{Note}\\ \midrule\endhead
+Cuts & 16 & - & - & \\
+Movement mean / p90 & 2.44 / 6.91 & 1.91 / 4.79 & 3.56 / 6.46 & \\
+Sound jump at cuts (dB) & 8.3 & 18.3 & 19.0 & 12 dB triage threshold\\
+Loudness range (LU) & 10.8 & 5.2 & - & \\
+\bottomrule
+\end{longtable}
+A music bed lowered the jump to about 3 dB on a 13 s clip and later to 7.8 dB (reference 8.3). Per-cut diagnostics treat jumps as warnings, not failures. This is a measurement tool for edits, not a quality verdict.
+
+\subsection{Lessons that stand}
+One on-screen speaker per shot (planner rule). Build an environment plate first. Check every start frame by eye before paying. Stage big renders: first three shots, check, then the rest. Run the word-check gate on every shot before assembly. Never resubmit a job in the submitted or unknown state. Do not claim a model is better until the same shots run on both.
+\section{Method 9: Still-first pipeline for the first episode (E01, v3 to v4.3, 25 October)}
+\label{sec:stillfirst}
+\subsection{Why it was built}
+The first full episode (E01) was cut from separately generated moving shots, each from a text prompt and one reference, and checked for consistency only afterwards. It was rejected. The still-first correction reorders the work: script first, voice second, stills for continuity third, motion last. Its readme states: the script must be complete natural sentences (v2 used compressed fragments); video jobs consume selected stills and the locked audio; every generated asset gets a manifest, hash, job ID, credit charge and QA status; stitching checks run before delivery. The user's wish for many reference images was recorded as a coverage requirement, not a fixed count. A right-sized plan of 12 shots times 7 key beats gave 84 required still states.
+
+\subsection{Artefacts retained}
+\begin{itemize}
+\item A candidate index of 252 stills (generated as a plan; the file is hash-pinned in a manifest) and a selected set of 14 visual beats with a per-beat manifest of source, duration, start, end and dialogue lines.
+\item Shot plans (v3 and a timed v4.3), a character bible, gate requirements, a whole-sequence semantic QA, a voice QA ledger and a still QA ledger.
+\item Submission scripts for stills and motion (many versioned submit scripts), a delivery gate (\code{reviewgate.py}), mechanical detectors (\code{detectors.py}), a stitcher and tests (\code{test_pipeline}, \code{test_reviewgate}, \code{test_assemble_cli}, \code{test_detectors}). These tests were not rerun for this review.
+\end{itemize}
+
+\subsection{Delivery gate (what is mechanical and what is not)}
+Mechanical, measured by the detectors: freeze windows, silence windows, integrated loudness and level, music-bed level in dialogue-free gaps versus the file mean, black frames. Validated against the rejected v3 delivery, the detectors reproduced the audit's own measurements: a 9.0 s freeze at 13.58 to 22.58 s, 1.7 s of opening silence, dialogue-free gaps 17 to 35 dB below the file mean, $-17.69$ LUFS integrated. Never mechanical: that a scripted action happened, that a performance is emotional, that lip sync is right. These come only from a named human review receipt bound to the reviewed bytes by SHA-256. The gate checks that receipts exist and are current, not that they are true. Project documentation records three rules after the rejected v3 delivery: a shot missing its scripted action is rejected and not patched by crop, retime or slow motion; unclear action quality or emotion pauses for human review; changed bytes invalidate a receipt.
+
+\subsection{Stills and selection}
+The still-first ledger records a v4.3 timed sequence of 14 visual beats. Selection notes include several honest limits. The full 720p shot 1 clip was not accepted because its size and position were not monotonic, and a local trim-and-slow cut was created at zero credits pending review. Shot 11 had an abrupt foreground chandelier sweep with a similar local fix. Musical symbols in shot 7 were not removed; they were accepted as a coherent magical staff visual, not claimed absent. The semantic QA also corrects an earlier overclaim that armour was established by a shot 8 crop. These are cases of the QA recording its own over-claims.
+
+\subsection{Recognition short test (34 seconds)}
+\begin{longtable}{@{}P{4.2cm}P{11.3cm}@{}}
+\caption{34-second recognition-argument test (billed, measured, sampled pixels).}\\
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endfirsthead
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endhead
+Design & Four alternating single-speaker clips, 720x1280, 24 fps, 33.6 s, with the supplied short retake audio. One generation and one standard lip-sync pass per shot. No music, no rerolls\\
+Provider boundaries & 0.00, 9.60, 16.72, 25.28, 33.60 s; cuts quantised to 24 fps; audio muxed without stretching\\
+Cost & Generation 1,728 plus standard lip sync 808 equals 2,536 existing credits, under a 2,600 cap. Balance 143,325 to 140,789. No cash top-up\\
+Seen on sampled frames & Faces unobstructed; mouth shapes change with the single-speaker pass\\
+Known defects & Male shots start with an incoming-arrow remnant; reverse shots repeat a similar start pose and push closer; male costume drifts from a plain dark tie and waistcoat toward a striped tie and visible sweater neckline; eyelines approach the lens; background geometry changes between shots\\
+Status & A review test. Phoneme sync and emotional performance are not certified by sampled frames or transcript\\
+\bottomrule
+\end{longtable}
+This test is the evidence behind failure F22 (section~\ref{sec:fail}).
+
+\subsection{Continuity pilot (failed gate)}
+\begin{longtable}{@{}P{4.2cm}P{11.3cm}@{}}
+\caption{Continuity pilot (billed, sampled pixels at 0.2, 1.5, 3 and 4.5 s).}\\
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endfirsthead
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endhead
+Prompting & Locked static camera and never-into-camera wording in the prompts\\
+Result & The female eyeline stayed near the lens; the camera pushed closer despite a static prompt; the male plain black tie and waistcoat stayed more stable but framing shifted and performance became exaggerated; the two speakers' eyelines and background light did not form a coherent exchange; a pull action showed body displacement, hand connection and ice impact but needed denser review\\
+Cost & Three complete motion jobs 912 plus one female reference 50 equals 962. Balance 140,789 to 139,827. A male reference failed moderation and was refunded to zero\\
+Decision & Gate failed on the dialogue defects alone. No lip sync, no episode batch, no reroll. The planned 4 to 8 hour production window did not start\\
+\bottomrule
+\end{longtable}
+This is the evidence behind F23: prose constraints did not become hard camera or gaze controls.
+
+\subsection{Voice v6 (review candidate)}
+\begin{longtable}{@{}P{4.4cm}P{11.1cm}@{}}
+\caption{Voice candidate v6 (billed from usage, measured from audio, machine transcript).}\\
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endfirsthead
+\toprule \textbf{Item} & \textbf{Record}\\ \midrule\endhead
+Text & The approved v6 text, 76 lines, two voices from the provider library, sparse scene-level emotion tags, \code{eleven_v3} model at stability 0.35\\
+Requests & Ten scene requests, one attempt each, no rerolls\\
+Characters & 8,609 spoken, 9,319 submitted with tags\\
+Credits & 4,102 included credits; usage moved from 2,999 to 7,101 of a 131,000 limit; overage 0; limit extension 0; no top-up, plan change or video\\
+Duration & Combined dry review MP3 598.88 s (9:59), \textbf{not} the old 94 s edit. No music, no effects, no action pauses, no speed-up\\
+Loudness & $-18.2$ LUFS integrated, true peak $-2.2$ dBFS\\
+Machine compare & 1,720 words compared; all words in order except one occurrence of a character name transcribed as a different word in scene 6. That is a pronunciation flag, not proof of an audible mispronunciation\\
+Scene durations (s) & 38.43, 65.15, 50.99, 65.15, 79.49, 48.67, 41.48, 89.73, 37.41, 82.76 (raw per-scene durations from the timeline JSON)\\
+Not established & Full human listening: pronunciation, voice identity, emotional delivery. Tags and transcripts do not certify fear, anger or naturalness\\
+\bottomrule
+\end{longtable}
+Do not mix this 598.88 s dry voice review with the 94.254 s audio repair candidate (next section) or with a retained earlier draft whose probed length is 98.592 s (section~\ref{sec:forge}). They are different artefacts for different cut versions.
+
+\subsection{Audio repair of the delivered cut}
+A CPU repair was executed on the original 49.39755 s dry source plus the full original music. It removed 1.65 s of source-music pre-roll (onset chosen by sustained RMS, not first non-zero sample), applied a 6 dB duck under speech with 100 ms attack and 250 ms release, set a bed target of $-29$ LUFS before the duck and a full-mix target of $-18$ LUFS constrained by a $-2$ dBFS peak, and produced a 94.254 s candidate holding all 15 dialogue lines. Measured: $-18.47$ LUFS by pyloudnorm and $-18.28$ LUFS by FFmpeg (a 0.19 LU meter difference, documented), true peak $-2.00$ dBTP. Opening and tail levels were $-27.6$ and $-27.7$ dBFS. Six behaviour tests (every line placed, overlap, truncation, missing line, music-short, duck and peak) passed in the repair package; they cover the repair code and nothing about listening quality. Dependencies came only from the official package index and no model weights or third-party neural code ran. This is repaired media for the audio only. It does not fix missing visual actions or prove emotional delivery. A music attribution sidecar was added. No fixed final video was exported.
+
+\subsection{Repair routes surveyed (25 October, none run for visuals)}
+\begin{longtable}{@{}P{3.0cm}P{4.2cm}P{4.8cm}P{3.5cm}@{}}
+\toprule \textbf{Route} & \textbf{Target} & \textbf{Status at the time} & \textbf{Decision}\\ \midrule\endhead
+pyloudnorm + FFmpeg & Opening silence, weak bed, loudness & Executed, 6 behaviour tests pass & Integrated into both code families\\
+VACE (Wan2.1) & Action control from pose, depth, layout, reference, masks & Code, paper, guide, licences inspected; no local GPU & Best next controlled-action experiment, not a promised fix\\
+MuseTalk & Close-up lip repair & Commercial model use allowed subject to dependencies; 4 GB GPU example & Smallest documented GPU lip route to test\\
+LatentSync & Close-up lip repair & Apache-2 repo; 8 GB or 18 GB VRAM & Alternate higher-memory test\\
+Phantom / ConsisID & Reference-based identity & Papers, repos examined, not run & Identity control only\\
+Wav2Lip & Lip repair & Non-commercial model restriction & Not integrated for product use\\
+\bottomrule
+\end{longtable}
+At the public rates of that date the hosted video model minimax-h3 at 720p cost 48 credits per second and a Pro lip sync at 24 fps cost 48 credits per second. These are planning rates, not maximum commitments. The package states the episode remained rejected and lists what is still missing: the programme drop and pull, the guest freezing and arrow impacts, mirrored steps, evasion timed to the beat, a recognition beat, the string cutting and heel snap, the trolley impact, the table flip and chandelier impact, and visible emotional dialogue. The action mapping was corrected: the wrist-string and heel action belongs to original shot 8 and the trolley impact to shot 9, not as the earlier audit's numbering had it.
+
+\subsection{Spend recorded in the still-first ledger}
+The ledger states project spend of 11,335 credits at 16:19 on its date (10,615 through the first three 720p shots and 720 for ten 3-second 480p motion tests), then 17,619 at 16:42 including 2,636 for Pro lip sync (250 for one validation and 2,386 for seven face-visible dialogue beats). It expected a final total of about 17,500 to 19,500 credits including lip sync and bounded retries. These are the ledger's own statements and were not reconciled to an account balance in this review. No full-episode batch was launched; production was shot by shot.
+
+\section{Method 10: Studio and directed chaining (1 to 3 November)}
+\label{sec:studio}
+\subsection{Pipeline}
+The Studio (\code{studio.py}, \code{produce.py}, \code{directed.py}, \code{blocking.py}) is the front of the generator: an idea becomes a reviewed, priced director's script, then is produced shot by shot.
+\begin{verbatim}
+brief -> LLM draft -> repair loop -> compile (code does geometry)
+      -> validators -> REVIEW.md + price -> approve
+      -> produce: assets -> per shot [start frame -> human review
+         -> video -> speech check -> last frame] -> score -> assembly
+\end{verbatim}
+Drafting spends no credits. A local language model writes only story: two characters, a closed room with features on named walls, shots (wide, entrance, dialogue, insert) with lines of at most 9 words and what each speaker is busy with. It never writes coordinates or video prompts. Code builds the floor plan, fixed camera set-ups, marks, framing text and prompts. The pack is checked and the model is shown each problem to repair its own answer. The compiled story must pass \code{validate_directed}.
+
+\subsection{Rules in the directed planner}
+\begin{description}[leftmargin=0.6cm]
+\item[Chained first frames.] \code{continue}: same angle and people, the previous shot's real last frame is the first frame and no image job runs. \code{resume}: an earlier shot used this angle, so its last frame is the first-frame reference. \code{build}: new angle, built from the previous real last frame, the plate, portraits and a layout guide.
+\item[Motivated action.] Everyone on screen has a task; anyone entering has an arrival record with from, to, why and first action. ``Standing'' and ``waiting'' are rejected.
+\item[Blocking check.] A floor plan in metres with camera position and target and each person's start and end position and facing. The check fails when a person moves more than 0.4 m between consecutive shots, when a required item is not in frame, when something behind the camera would be in frame, when a speaker is out of frame or faces away, or when a shot has no blocking. It also caught errors in the plans themselves: cameras 0.6 m behind a person, a camera that could not see its subject because of a wall, and a layout renderer that drew furniture through a wall.
+\item[Approval binding.] Approval is bound to the script's SHA-256 and a credit cap at least as large as the quote. A start frame is used only after a named reviewer accepts it. Each video is transcribed at once and a dialogue shot must say its line (word error under 0.35, at most one extra word). A failed take stops the run, and a paid re-take needs an explicit flag. A silent shot given invented speech does not stop the run; its audio is replaced with room ambience in assembly.
+\item[Provider.] kling-3.0 by default. A failed or pending job is never resubmitted automatically.
+\end{description}
+
+\subsection{Evidence and limits}
+The directed retry of the human scene and Cold Cycle (section~\ref{sec:native}) are the live runs behind these rules. The assembler (colour match, ducked score, captions, hook and end card) was checked on synthetic clips, and the credit-spending path was exercised with a fake provider and by hand in the Cold Cycle run, not by an automated live run of the exact studio command. With a 7-billion-parameter local model (tested on one run of about 6 minutes with one repair) the story was valid but generic and sometimes odd. The limits of this first build are exactly two on-screen characters, one closed room and 4-second shots. Nothing here judges voices, lip sync or acting.
+
+\section{Method 11: Experimental Forge line (30 October to 6 November)}
+\label{sec:forge}
+\subsection{Status}
+Forge is an additive layer placed beside a vendored multi-agent video framework (ViMax, MIT licence). It adds process gates, a spend ledger, a staged script writer, a shot and reverse-shot dialogue planner, audio tooling, a compositor, and from milestones m19 to m25 wrappers that run open-source audio-driven and reference-guided models on free dual-T4 GPUs. It is archived and is not the selected final root. The code is large and heavily guarded; the runtime evidence is small. No full episode, no accepted lip sync and no accepted dialogue clip came from it.
+
+\subsection{Layout}
+\begin{longtable}{@{}P{4.5cm}P{11.0cm}@{}}
+\toprule \textbf{Path} & \textbf{Role}\\ \midrule\endhead
+\code{agents/ pipelines/ tools/ configs/} & Vendored framework with additive provider adapters. Not part of the Forge method\\
+\code{forge/guard/} & Spend ledger and persisted generation hold\\
+\code{forge/gates/} & Still lock, proof scene, review sign-off, full-speed review, angle stills, delivery\\
+\code{forge/planning/} & Model routes and quotes, director prompts, story-state continuity, floor-plan blocking, story arc\\
+\code{forge/audio/} & Casting, speech clients, pacing, alignment, mastering, stem separation\\
+\code{forge/assemble/} & Compositor, captions, vertical conversion, lip-sync face policy, scene checks, timeline\\
+\code{forge/integrations/} & Local-model wrappers (m19 to m25): registry, job builders, plan bridge, executors, duration safety, review binding\\
+\code{forge/experiments/} & Matched-seed visual and voice experiments (preparation only, no request)\\
+\code{gpu_tests/}, \code{docs/}, \code{tests_forge/} & Free-GPU scripts, milestone notes, tests\\
+\bottomrule
+\end{longtable}
+
+\subsection{Milestones as documented}
+\begin{longtable}{@{}P{1.6cm}P{9.9cm}P{4.0cm}@{}}
+\toprule \textbf{Id} & \textbf{Added} & \textbf{Source}\\ \midrule\endhead
+m10 & Fail-closed gates: stills first, one proof scene, review before delivery & project readme\\
+m11 & Reference-clip lessons: angle stills, action budget, proof checklist & milestone note\\
+m13 & Dialogue shot plan (shot and reverse shot), caption burn-in & code\\
+m14 & Director planning, story-state continuity, model-aware route and cost checks & milestone note\\
+m15, m16 & Hardening (62 tests at m15); safe resume as the default on a normal rerun & milestone note\\
+m17 & Season archive, intake, preflight, full-speed gate, face policy, vertical conversion, reception-study instrumentation & milestone note\\
+m19, m20 & Vendored local repositories, job builders, plan bridge; PuLID FLUX-versus-SDXL correction & status file\\
+m21 to m23 & Gated visual jobs, InfiniteTalk checkpoint wiring, GPU preparation scripts & readme\\
+m24 & Streaming logs, mixed-dtype attention correction; last stated local run 485 passed plus 30 subtests & status file\\
+m25 & Persistent generation hold, FaceID route, general dual-T4 VACE staged driver, voice-seed experiment; stated 510 passed plus 30 subtests & status file\\
+6 Nov & Selectable plan executor, duration safety, review-bound continuation, assembly handoff & contract document\\
+\bottomrule
+\end{longtable}
+Test counts in this table are the documents' own statements on different dates and are not additive. A separate fresh full-suite run by the owning worker reports 567 passed plus 30 subtests with one known MoviePy end-frame warning. Focused tests overlap the full suite and must not be added to it.
+
+\subsection{Control principles in code (static)}
+Fail closed on missing or malformed state. Hash-bind stills, source audio, jobs and reviewed outputs. One clip, then review: the local executor raises after the first new clip. No automatic acceptance: a successful process exit is recorded as unreviewed and acceptance records must name a reviewer and source. No silent retry or overwrite.
+
+\subsection{Gates}
+\begin{longtable}{@{}P{2.8cm}P{10.2cm}P{2.5cm}@{}}
+\toprule \textbf{Gate} & \textbf{Rule} & \textbf{Evidence}\\ \midrule\endhead
+Stills first & Every character and location reference still is SHA-256 pinned; editing a still invalidates the lock & static\\
+Angle stills & Each camera angle in the plan needs a locked still labelled by character and angle class & static\\
+Proof scene & One connected scene (at most 4 shots, 30 s, one location) assembled, watched and signed off by a named reviewer before episode-scale work & static, readme\\
+Proof checklist & A started checklist must be complete before episode mode & static\\
+Review before delivery & Machine report (silent stretches over 3 s, continuity flags) plus named human sign-off plus a full-speed watch review; delivery refuses unsigned or changed cuts & static\\
+Continuity (free) & Image-histogram and grid drift against locked stills; flags, not verdicts & static\\
+\bottomrule
+\end{longtable}
+
+\subsection{Script and dialogue contracts}
+The script writer is validated by schema. A line must be 16 to 45 words with at least two full sentences; filler words and ellipses are rejected; shot seconds are integers 4 to 15 and at least words divided by 3.0; an episode has 8 to 14 shots totalling 90 to 120 s with at least 12 spoken lines. The staged writer (develop, outline, judge, revise) has a judge threshold default of 8 over at most 2 rounds. The dialogue planner expands multi-speaker shots into shot and reverse-shot clips and proves every scripted line survives into the plan. Reaction clips are silent.
+
+\subsection{Local-model wrappers and the duration defect}
+The pinned MultiTalk and InfiniteTalk muxers work at 25 fps and crop the source audio to frame count divided by 25 before muxing. A video that exists therefore does not prove the whole line survived. Controls: the frame count must be an integer, at least 5 and of the form $4n+1$; capacity is frames divided by 25; a source longer than capacity raises before launch unless truncation is explicitly allowed, and then the result is labelled \code{rejected_truncated_test_audio}; after the run the output is probed for both streams, exact 25 fps, planned frame count and a muxed audio length at least equal to the speech window, else \code{rejected_output_timing}. A plan bridge sizes frames from the real audio, refusing more than 377 frames (about 15 s).
+\begin{longtable}{@{}P{2.6cm}P{3.0cm}P{1.6cm}P{2.2cm}P{6.0cm}@{}}
+\caption{Duration-safety examples (from tests and documents).}\\
+\toprule \textbf{Source audio} & \textbf{Plan} & \textbf{Frames} & \textbf{Capacity} & \textbf{Outcome}\\ \midrule\endhead
+1.2 s & 0.68 s (stale) & 33 & 1.32 s & Full speech kept, no speed change\\
+1.2 s & 17 frames & 17 & 0.68 s & Refused as truncating\\
+3.2 s (legacy bridge) & 3.2 s & 81 & 3.24 s & Legacy path\\
+over 15.08 s & n/a & over 377 & n/a & Refused; split at a reviewed sentence boundary, never crop\\
+\bottomrule
+\end{longtable}
+
+\subsection{Acceptance and review binding}
+Episode mode requires a per-backend acceptance record: status approved, a named reviewer, matching backend, all of identity, full speech, AV sync, speaker mapping and multi-shot continuity true, and a proof file whose hash still matches. No code writes this record, and a one-person cropped technical sample cannot unlock the first episode. Clip review records check identity, wardrobe, location, full speech, speech text, AV sync and speaker mapping, and are bound to a fingerprint of the whole prepared job: changing sample steps, precision profile or checkpoint invalidates a prior review. Reviewed assembly keeps each clip's muxed audio and marks the result \code{assembled_pending_final_review}, never accepted. The tests behind these rules use synthetic media, tiny real subprocesses or mocked model calls, so they prove refusal and control flow, not output quality.
+
+\subsection{Planning versus audio for the first episode script (corrected)}
+The v9 first-episode script is recorded as 24 shots (19 speaking, 5 visual), 5 speakers, no multi-speaker clips, 4 locations, 19 scripted lines all planned with none missing, duplicated or out of order, and 110.8 planned seconds, with 2,589 dialogue characters. Its status is planning only, not rendered, audio approval not verified, paid generation blocked pending a total cap. The retained draft audio file is an MP3 of 98.592 s (1,577,901 bytes, SHA-256 prefix \code{4c3d18ca}). An earlier claim of 132.344 s for the rendered audio is \textbf{withdrawn}: no retained artefact supports it. The relation between the 98.592 s file and the full dialogue track is not established, so no planning-versus-audio difference is claimed. What is established is the rule: the planned duration is an estimate and clip length is set from probed audio, because a stale plan cropped a 1.2 s line to 0.68 s in the audio-driven trials.
+
+\subsection{Further Forge components}
+Speech: casting with per-emotion settings, a local draft engine, a preview engine and a hosted final engine with a character ledger; unknown voices and non-audio paid responses fail loudly; a voice-seed experiment varies only 2 to 4 explicit seeds with text, voice, model and settings fixed. No voice experiment was generated, so no pitch or beat claim exists. Pacing limits per-line tempo to 1.15 to 1.5 toward a 330 words-per-minute target; native speech speed is 0.7 to 1.2, so a 1.4 times target cannot be assumed to fit. Alignment uses word-level timing, loudness mastering defaults to $-16$ LUFS, stems by source separation. Compositor: music gain default 0.18, caption burn-in with escaped paths, speaker captions, hook captions, 9:16 conversion. An earlier lip-sync tool softened mouths and damaged overlapping captions, so captions must be applied after lip sync. The season archive builds hashed manifests, rejects path traversal and enforces a 1 GiB decompressed limit while streaming. The intake form takes genre, 1 to 8 characters, a 1,000-character description and per-character upload or generate mode. A reception study was instrumented but not run.
+
+\subsection{VACE on two T4 GPUs (static)}
+An opt-in driver for the 1.3B VACE model re-checks the generation hold and gates, requires two Turing-class devices with no silent CPU fallback, forces offline loading, installs a source-preserving chunked attention substitute (FlashAttention is not an ordinary T4 path), keeps the diffusion model on CPU in fp16, wraps the text encoder to run on the second GPU and rejects non-finite encodings, generates with UniPC (shift 16, guide scale 5.0), saves at 16 fps and writes a hashed receipt marked unreviewed. The driver states that only the official upstream-sample run succeeded on two T4 GPUs. The attention substitute matched the reference with maximum absolute difference 0.0 on uniform fp16 tensors, then an audit found the rotary function returns float32 queries and keys over fp16 values and the fallback was corrected. A zero difference does not show a model pass. The retained evidence names the route of the one recovered run only as the generalised gated executor. This report does not assert that this staged driver, rather than another driver in the same family, produced it. That generalised gated executor (the project's own route, distinct from the official-sample trials) ran once: version 1 produced a 17-frame, 480x832, 16 fps, 1.063 s clip in 152.806 s of generation with 8 steps. Its output was visually rejected (different younger face, different torso framing). The official-sample trials (V1 install and help, V2 timeout without video, V3 prepared only) are a different notebook and are not erased or merged with it. Version names must not be conflated.
+
+\subsection{Verdict}
+Forge produced useful analyses and refusal logic. It did not produce an accepted result and is archived rather than adopted.
+\section{Method 12: Honesty-series renderer and script attempts}
+\label{sec:honesty}
+This chapter covers a late renderer and a script-writing run for a ten-episode workplace series. Only a retained renderer, its reference configuration and authored findings about script-writing logs were supplied. No video receipt, billing total or acceptance record for this series was supplied.
+
+\subsection{Renderer design (static)}
+The retained renderer is a single-episode script for the first episode only. It uses the paid native-audio route at 720p, 9:16, with audio enabled. Its stages, in order, are:
+\begin{enumerate}
+\item Generate one reference portrait for each of four characters and one reference plate for each of seven locations with the image model \code{nano-banana-2.1} (50 credits per image in the configured quote).
+\item Upload the references and match each shot to at most three of them by keyword (character first names and location words).
+\item Generate one keyframe per shot with the image editor endpoint, with the instruction to keep faces and wardrobe consistent.
+\item Generate one clip per keyframe with \code{minimax-h3}, 720p, audio on, at the configured 48 credits per second.
+\item Join the clips with an FFmpeg concat into the episode file, write a credit ledger and print a total.
+\end{enumerate}
+Safety behaviour in the code: resume-safe (existing files are skipped), a total credit cap checked after every job (4,300 credits in the renderer), one retry per API call, the key read from the environment and never written, and a pause file written on a fatal API status or cap breach.
+
+\subsection{Configuration (static)}
+\begin{longtable}{@{}P{5.0cm}P{10.5cm}@{}}
+\toprule \textbf{Setting} & \textbf{Value in the retained configuration}\\ \midrule\endhead
+Scripts & ten episode files\\
+Image and video model & \code{nano-banana-2.1}; \code{minimax-h3}\\
+Resolution and aspect & 720p, 9:16\\
+Reference assets & four character references; seven location references (the corridor reuses the office-floor plate)\\
+Quote & 50 credits per image; 48 credits per video second; \code{verified_at} is null\\
+Caps & 25,000 credits per batch; 10,000 per episode (the renderer script itself caps at 4,300)\\
+Polling & every 10 s; timeout 1,500 s\\
+Padding & 2 s\\
+Transcription check & similarity threshold 0.85; the transcriber list is EMPTY\\
+\bottomrule
+\end{longtable}
+Two entries matter for successors. The quote has no verification date, so it is not a price. The transcriber list is empty, so the configured speech-similarity check had nothing to run. Neither is evidence of cost or quality.
+
+\subsection{Script-writing attempts (authored findings from logs)}
+\begin{itemize}
+\item Early failures: an import failure for a stage configuration module, a missing provider key, a missing retry-status exception class and a streamed response that ended early.
+\item The ten-episode arc was generated in three chunks (episodes 1 to 4, 5 to 7 and 8 to 10).
+\item The first drafts of every episode failed to parse. Later repair and audit passes fixed them.
+\item A spend cap stopped the run at 9 of 10 episodes. A retry then completed the tenth. The final log marks 10 of 10 written and zero audit issues on the retried seventh episode.
+\end{itemize}
+Established: the scripts were written and passed an automated audit. Not established: any rendered episode, any human quality acceptance.
+
+\subsection{What is and is not known}
+\begin{longtable}{@{}P{4.6cm}P{10.9cm}@{}}
+\toprule \textbf{Item} & \textbf{State}\\ \midrule\endhead
+Renderer and configuration & Source available (static)\\
+Script-writing history & Authored findings from logs; raw workflow records are not included\\
+Version-specific video receipt & Missing. No accepted result or billing total is established\\
+Rendered episodes & None established. Ten scripts written is not ten episodes rendered\\
+LTX 2.5 ``Missing Minute'' test & Documented in the source test notes as five shots and 360 credits, with machine-recognised intelligible speech, exaggerated mouths and two raw subtitle burns. The per-job receipts were not supplied, so it is a historical source claim and not newly verified spend\\
+\bottomrule
+\end{longtable}
+
+\part*{Part II: The final method}
+\addcontentsline{toc}{section}{Part II: The final method}
+
+\section{The final method: the audio-first root (latest supplied ZIP)}
+\label{sec:final}
+\subsection{Identity and scope}
+The final method is the code in the latest supplied archive: 29,191,172 bytes, 218 files, SHA-256 prefix \code{9f3927df...ef788}. Its entry point is \code{audiofirst.py}, which dispatches to the package \code{magicdrama/audiofirst/} (53 modules in that package; the whole \code{magicdrama} API map lists 79). The archive has no repository commit identity and contains generated MP4 and MP3 output beside code. (A sanitised dossier lists 220 entries because it adds authored review metadata; the original archive itself has 218 files.) For the review it is the root and everything else (older code families, the previous repository tree, the experimental Forge line, 108 recovered snapshots) sits under a separate \code{Archive} folder as history, not as dependencies. Its own README states: no episode is accepted, generation is paused, and this is a consolidation preview, not a production-ready release or a claim that the visual-quality problem is solved. Python 3.10 or later and FFmpeg with ffprobe are required by the supplied source. Dependency pins are preserved from the ZIP and are not certified installable or current.
+
+\subsection{Pipeline in one line}
+\begin{verbatim}
+brief -> causal outline -> episode draft -> contract check
+ -> grounded review/repair -> reference plan -> storyboard
+ -> accepted audio/alignment -> measured cuts -> renderer plan
+ -> exact requests -> reviewed clips -> assembly -> season package
+\end{verbatim}
+The pipeline does not synthesise a film by validating JSON. A model's critique is not an audience test. Video, voice and writer calls need their own exact-request approvals. No model download or paid reroll happens automatically.
+
+\subsection{Two operating modes and two production routes}
+The root is a planning, gating and assembly framework for short serial drama. Its idea: decide the words and timing first, bind every later step to the exact bytes and hashes of the step before, and stop for a person wherever software cannot judge quality. It runs in two modes that share the same ledgers and approval rules.
+\begin{enumerate}
+\item \textbf{Planning mode} (\code{run}, \code{plan}, \code{validate-story}, \code{compile-render}, \code{plan-native}). No network and no spend. It writes JSON plans, a storyboard viewer, continuity and reference-coverage reports and priced job manifests.
+\item \textbf{Production mode} (\code{produce}, \code{studio produce}, \code{upload-assets}). It refuses unless an approval token binds the exact manifest hash, run and batch identity, quotes dated that day, job counts, totals and key identity. Every provider job is reserved in a local database before submission and is never retried automatically.
+\end{enumerate}
+\begin{longtable}{@{}P{2.9cm}P{5.0cm}P{3.6cm}P{4.0cm}@{}}
+\caption{Production routes inside the root. Do not confuse them.}\\
+\toprule \textbf{Route} & \textbf{Idea} & \textbf{Modules} & \textbf{Status}\\ \midrule\endhead
+Locked audio & Measured voice audio decides shot lengths; clips are timed or dubbed to it; generated clip audio is discarded & renderplan, bridge, production\_run, media, assembly & Implemented, older. The dubbed variant was rejected on owner review\\
+Native audio & Each clip carries its own speech, effects and ambience; the edit joins them frame-exactly & native\_plan, native\_mix, studio, produce, directed, blocking & Implemented and used in the later paid tests. One assembly test fails on this FFmpeg\\
+\bottomrule
+\end{longtable}
+
+\subsection{Entry points}
+\textbf{\code{run.py}} is a four-line file that calls the older supervised scene runner (\code{magicdrama/production.py}). In this root that runner can only plan. Its live preflight raises at once with a message that the legacy live path is retired and the audio-first approval and durable ledger must be used; its assemble step raises ``Legacy assembly retired''; a step without the live flag returns the plan only. So \code{python run.py --live} cannot generate anything. Its remaining use is dry planning of the older scene-config format. It still accepts only the provider's fixed API origin, requires positive caps and quotes, writes a reservation marked unknown before a POST, and raises when a payload signature changes (static). Other legacy modules are disabled the same way: the in-memory spend governor (works only in dry-run), the legacy provider clients, the legacy ungated assembler, and eight historical submission scripts in \code{render_v5/} and \code{scripts/} whose first statement raises that the script is retired.
+
+\textbf{\code{audiofirst.py}} is the supported command-line program, one \code{argparse} parser with 35 sub-commands.
+\begin{longtable}{@{}P{3.0cm}P{6.6cm}P{1.8cm}P{4.1cm}@{}}
+\caption{Sub-command groups of the supported command-line program.}\\
+\toprule \textbf{Group} & \textbf{Sub-commands} & \textbf{Network} & \textbf{Backing modules}\\ \midrule\endhead
+Plan and validate & plan, validate-story, references, image-plan, flow, timeline, check-stage, stage-status, reconcile-stage & none & core, story, continuity, planning, images, pipeline, workflow\\
+One-command planning & run & none unless a writer is explicitly enabled & runner\\
+Preview & storyboard, animatic, subtitles, burn-subtitles & none & preview, media, subtitles\\
+Audio evidence & align-local, check-dialogue-timing, check-free-audio, find-free-audio & only find-free-audio (public audio commons) & alignment, dialogue\_timing, free\_audio\\
+Render compilation & compile-render, prepare-render-inputs, video-manifest, plan-native & none, no spend & renderplan, bridge, native\_plan\\
+Live-capable & upload-assets, produce & yes, only with the enable flag and an approval token & bridge, production\_run, live\\
+Studio & studio draft, approve, produce, accept, reject, status & draft: local model only; produce: provider & studio, produce\\
+Assembly and review & media-package, assemble-native, master, compare-trials, merge-packages & none & bridge, native\_mix, benchmark\\
+Season continuity & inspect-season, extract-season, pack-season & none & season\\
+\bottomrule
+\end{longtable}
+Refusal defaults in the dispatcher (static): \code{produce} builds provider keys only when the enable flag is passed. \code{run} builds a cloud writer only when a cloud-writer config is given and then also needs a writer approval and writer ledger. \code{studio produce} needs the approval record and the provider key in an environment file and passes the approved credit cap as the ledger's hard cap. Two QA models, if given, must differ. The README states the same boundary: do not run live, cost-accepting, cloud-writing or studio-production commands merely to test an installation.
+
+\subsection{Layers and data flow}
+\begin{verbatim}
+INPUT     brief + optional story JSON + reference images
+          core.validate_brief, form (loopback), story.validate_story
+WRITE     staged writer: outline -> episode -> grounded review -> repair
+          director, writer, local_writer, cloud_writer, workflow
+CONTRACTS continuity, references.coverage_report, routes.plan_route
+          fail closed when the project declares them (runner)
+PLAN      flow / image plan / voice plan / storyboard preview
+-------------------------- two production routes --------------------------
+LOCKED AUDIO                          NATIVE AUDIO
+voice WAV -> alignment                story shots -> native_plan
+-> renderplan.measured_track          (priced jobs, chained first frames)
+-> compile_render_plan (capability)   -> bridge / produce.Producer
+-> prepare_render_inputs (PCM slices) -> provider clips (own speech/effects)
+-> bridge.video_manifest              -> speech gate (word error) per clip
+-> media_run (approved, ledgered)     -> native_mix.assemble_native_episode
+-> media.build_master / assembly         (frame-exact join, dissolves, mix)
+---------------------------------------------------------------------------
+EVIDENCE  media_review / acceptance / quality (hash-bound review records)
+PACKAGE   bridge.accepted_package, season.pack_season (ZIP with canon+hashes)
+\end{verbatim}
+
+\subsection{Cross-cutting rules (static)}
+\begin{longtable}{@{}P{5.8cm}P{9.7cm}@{}}
+\toprule \textbf{Rule} & \textbf{Mechanism}\\ \midrule\endhead
+Approval binds exact bytes & The signature is a SHA-256 of canonical JSON (sorted keys, no NaN)\\
+Live execution refused by default & Verification raises unless the enabled flag is exactly true\\
+Approval expiry & Within 24 hours and timezone-aware\\
+Quote freshness & Re-verified on the current India date with an https source\\
+Amounts & Provider amounts are positive integer credits\\
+Caps & Per-episode image cap 1 to 60 (default 12); hard credit caps default 3,000 per episode and 30,000 per batch\\
+Key identity & A wrong provider key identity is rejected; the image and video key is never routed to voice or writing\\
+Dependencies & Job dependencies must form an acyclic graph\\
+Reservations & Transactional and shared across the batch; existing quotes and actuals count against caps\\
+State transitions & Only reserved to submitting; submitting to unknown or submitted; submitted to complete, error or overcharge\\
+Overcharge & Halts the batch\\
+Writers & One writer process per workspace; uncertain remote work is never retried implicitly\\
+Output directories & A fresh output directory is required\\
+\bottomrule
+\end{longtable}
+Stated limits in the source: the approval reference is ``an interlock, not authenticated consent'' and the execution module is ``not an identity or authentication service''.
+
+\subsection{Planning stage}
+\textbf{Brief and story contract.} The brief is checked for identifiers, integers and finite numbers. The form (loopback only) takes 1 to 50 characters and episodes, genre, an era of up to 1,000 characters, a maximum episode length of 180 s, and uploads of PNG, JPEG or WebP (at most 5 MiB each and 30 MiB per request, decodable, at least 64 pixels, at most 16 megapixels). Story version 2 adds a fact catalogue, scene IDs, narrative purpose, and per-shot start state, end state, changes and reveals. Every changed flattened field needs a matching change record with a reason; a knowledge gain needs a reveal naming an actual line ID; same-scene cuts keep the previous end state; new scenes need a transition reason; wardrobe, props and knowledge stay continuous across scenes. Legacy stories are read and reported \code{legacy_unchecked}.
+
+\textbf{Staged writing.} \code{director.py} validates the outline, the episode schema, a grounded review and a bounded repair. Each stage saves its exact request before inference and completed responses are keyed by request content, so \code{--resume} continues instead of resubmitting. Context for episode N is the accepted summaries plus the immediately preceding full episode. Review criticism must quote real dialogue or action from a named shot. Repairs are bounded (\code{--max-repairs} 0 to 2, default 1). \code{--legacy-writer} keeps the one-call writer; \code{--template-draft} is a deterministic scaffold the source calls ``not a quality creative writer''. \code{reconcile-stage} imports a recovered writer response without resubmitting.
+\begin{longtable}{@{}P{2.4cm}P{13.1cm}@{}}
+\toprule \textbf{Writer} & \textbf{Behaviour}\\ \midrule\endhead
+Local & Loopback only, an already-installed model; no key, no download, no cloud fallback\\
+Cloud & A 120-billion-parameter hosted model first. A 60 s no-visible-output stall may fall back to an explicitly approved second model. HTTP errors, malformed or truncated output and stalls after partial content never trigger a paid fallback. Approval binds run ID, a hash of body and config, expiry up to 24 h, fallback permission and key identities. Worst-case cost is reserved before generation; fallback cap up to 2.30 USD per run\\
+\bottomrule
+\end{longtable}
+No local runtime was available in that check and no live cloud writing call was made. Rates in the config are dated 20 October (2 and 10 USD per million tokens for the fallback) and are not current proof.
+
+\textbf{Three fail-closed gates.} The runner enforces these only when the project declares them.
+\begin{longtable}{@{}P{2.6cm}P{12.9cm}@{}}
+\toprule \textbf{Contract} & \textbf{Rule}\\ \midrule\endhead
+Reference bank & Named views: front, three-quarter, profile, back, full-body, close, wide, detail. Every shot's framing needs a banked view for each visible character. A missing view is an explicit gap and never a silent substitution; failure raises\\
+Route capability & Six routes each declare six capabilities as supported, unverified or unsupported. A hard requirement on an unsupported capability blocks the route unless a named operator and a reason are recorded. The failure evidence is never erased\\
+Continuity & Per-character position, facing, wardrobe, emotion, eyeline and prop count and hand. An eyeline change across cuts in a continuous scene is flagged\\
+\bottomrule
+\end{longtable}
+\begin{longtable}{@{}P{3.3cm}P{1.3cm}P{1.3cm}P{1.4cm}P{1.3cm}P{1.4cm}P{1.4cm}P{3.0cm}@{}}
+\caption{Route capability registry (static). U = unverified, X = unsupported.}\\
+\toprule \textbf{Route} & \textbf{Cam} & \textbf{Eye} & \textbf{Ward} & \textbf{Prop} & \textbf{Audio} & \textbf{Struct} & \textbf{Evidence}\\ \midrule\endhead
+prose\_i2v & X & X & X & X & X & X & F22, F23\\
+reference\_r2v\_h3 & U & U & U & U & U & U & Needs a Blackwell-class GPU for the default text encoder; untested\\
+vace\_masked\_edit & U & U & U & U & X & U & One free T4 trial ended before synthesis\\
+native\_audio\_i2v (max 15 s, 1 reference slot) & U & U & U & U & U & X & 29 Oct test; sync proxy later retracted\\
+audio\_led\_avatar (max 15 s, 2 slots) & X & U & X & X & U & X & Research note, unmeasured\\
+lip\_patch & X & X & X & X & U & X & Sync spend on wide shots with unreadable mouths was wasted\\
+\bottomrule
+\end{longtable}
+A route is also blocked when the shot exceeds the route's maximum seconds or the number of references exceeds its slots. A label is an evidence label, not a quality verdict. Twenty-two tests cover these gates.
+
+\textbf{Image planning.} Shared character and location references are planned before every keyframe with the pinned image model (single image, 1k, portrait 9:16, generator and editor endpoints), 50 credits per image. Uploaded character images are not regenerated. A missing dependency fails and does not drop an identity reference. The default cap is 12 new images (600 credits) per episode. Grids of 4, 9 and 16 are excluded. These are 2D references, not reconstructed 3D.
+
+\subsection{Locked-audio route in nine steps}
+\begin{enumerate}
+\item \textbf{Measure} a PCM16 WAV and lay out lines with pauses at the chosen frame rate. The timeline check re-measures and never trusts edited timeline JSON.
+\item \textbf{Waveform check} rejects provider timestamps that are stale, shifted, non-monotonic or do not cover the real audio span. The source says passing is not proof of word sync.
+\item \textbf{ASR alignment} with an already-installed local model on CPU, no downloads. Every script word must match; no skipping or number substitution; confidence and onset checks fail closed.
+\item \textbf{Measured track} from audio, alignment and a review record whose line hash equals the signature of the episode lines. The review booleans for words, speakers, emotion and pronunciation must reflect real review.
+\item \textbf{Cut plan} converts shots to frame ranges at 24 fps.
+\item \textbf{Capability-checked compile.} The renderer profile must declare an ID, model, modes, maximum and minimum seconds, multi-shot, exact-audio and end-frame support, maximum speakers and reference images. Merged render groups cannot cross a scene or location and must be contiguous. A duration snaps up to the next supported value and above the maximum raises ``split at a motivated cut''. Too many visible speakers raises. Locked mode with visible speech needs exact audio. Every compiled frame needs a current hash-bound image. The output carries a plan hash, status \code{compiled_not_rendered} and \code{paid_requests: 0}.
+\item \textbf{Exact audio slices} cut with silence padding and re-verified.
+\item \textbf{Manifest} for verified routes with no upload, network or spend; uploads are a separate explicit phase with cached receipts.
+\item \textbf{Production and assembly.} An approved manifest runs and accepted media assemble into a master. A package needs audio checked with a matching hash, spoken lines, cues in measured seconds, and shots covering exactly the audio length at 24 fps. Generated clip audio is discarded and the accepted master plays once. Image-only input is labelled a still animatic. Short videos fail rather than freeze silently.
+\end{enumerate}
+Backends: \code{own} (project FFmpeg) or \code{h3_join} (a sanitised, hash-pinned local joiner for trim, concat and master audio, then the project's subtitle pass). The H3 wrapper runs only that joiner. Rendering scripts, cloud orchestration and rented GPU services are not activated. The local H3 compiler builds a workflow from a template and bindings, preflights and submits only to a local server and never downloads models or rents compute. None of this ran in the review. This route is secondary because the dubbed variant was rejected on owner review (wrong voices, flat acting, no effects). It is still tested (16 render-pipeline tests, 2 assembly tests).
+
+\subsection{Native-audio route}
+\textbf{Compile.} \code{plan-native} turns story shots into priced jobs under these rules (static): unique shot IDs; each shot in a known scene; at most two speakers per shot and at most one on-screen speaker unless explicitly allowed; seconds equal the maximum of the requested value, the speech estimate plus 1.2 s of padding and 1 s, snapped up to a model-accepted duration (above the maximum raises ``split at a motivated cut''); the speech estimate is 2.4 words per second; a continuing shot needs a previous shot in the same scene and location, becomes a dependency and starts from the previous clip's last frame; a scene or location change sets an 8-frame dissolve; each job is quoted and the plan total is compared with an optional credit cap (over the cap raises). One environment plate per scene is ordered before shot frames. Consecutive shots of one scene can be merged into one time-coded generation. The output includes voice-consistency checks (speakers in more than one shot) and a lint.
+
+\textbf{Lint warnings} (warn, not block): more than half the shots asking for a locked or static camera; more than 70 percent of runtime with dialogue; fewer silent shots than the larger of 2 and shots divided by 6; the same camera set-up three times in a row; no shot using zoom or flash frames. These came from the 1 November edit measurements.
+
+\textbf{Prompt.} One prompt carries picture and sound: a visual line, an optional camera line and a sound section listing ambience, effects at film-level loudness synchronised to the picture, and for each dialogue line a written voice description (a preset name is rejected) and ``says exactly once''. A fixed SPEECH RULES clause follows: speak only the quoted words, once, in order; no interjections, fillers, stutters or sighs; face toward the camera with the mouth visible. The clause answers recorded failures (stutters before lines, speaker turning away) and has been evaluated on small samples only.
+
+\textbf{Price helpers.} Native rates are credits per output second as base plus audio extra (the table in section~\ref{sec:native} lists them). Audio-to-video is 24, 48 and 72 credits per second at 480, 720 and 1080p, billed per whole 24 fps frame rounded up (2.3 s is 56 frames and 112 credits at 720p). Voice generation and cloning cost 0.1 credit per character, 1 to 1,000 characters per request. Music costs 1 credit per requested second, 15 to 300 s. Rates were read from a provider table on dated days. Re-verify before spend.
+
+\textbf{Studio and Producer.} The Studio flow is described in section~\ref{sec:studio}. The Producer is a resumable state machine whose next action is one of asset, frame, review, video, gate, rerender, music, assemble, done or blocked.
+\begin{verbatim}
+assets (plate + portraits, 50 credits each)
+ -> per shot: [frame (chained or built) -> HUMAN REVIEW -> video
+               -> speech gate -> last frame]
+ -> music (instrumental score) -> assemble_film -> done
+\end{verbatim}
+\begin{longtable}{@{}P{3.8cm}P{11.7cm}@{}}
+\toprule \textbf{Rule} & \textbf{Detail}\\ \midrule\endhead
+Start frames need a named reviewer & The acceptance record is bound to the frame's SHA-256 with checks for identity, wardrobe, action, expression, prop orientation and layout. If the frame changes after review, the run blocks\\
+Speech gate & A dialogue shot passes only with word error rate at most 0.35 and at most one extra word. A silent shot passes with at most one stray word\\
+Failed dialogue shot & Stops the run. A flag authorises one paid re-take per occurrence; the failed take is kept as a numbered file\\
+Silent shot with invented speech & Does not stop the run; its audio is replaced with room ambience in assembly\\
+Rejected frame & Renamed with a rejected suffix and regenerated as a new paid job with a new ID\\
+Provider adapter & Immutable manifest per job, approval token from the approved cap with a 12-hour expiry, a local ledger; a job in error or submitted state blocks until reconciled; a timeout keeps the provider project and never resubmits\\
+Job bodies & Image: pinned model, 1 image, 1k, 16:9, editor endpoint when references exist. Video: default kling-3.0, 720p, audio on, end seconds equal to the shot length, one start image\\
+\bottomrule
+\end{longtable}
+The credit-spending path was exercised with a fake provider in automated tests and by hand in an earlier real run, not yet by an automated live run of the exact command.
+
+\textbf{Director's script and blocking.} The validator reports every problem in one error. It checks the bible (format, set, geography, lighting, performance, wardrobe and props), per shot title, intent, start and end state, lighting, performance and camera size, angle, movement and lens; that the camera moves (a static frame is what made the first films look dead); that the first shot and any non-continuing shot has a keyframe; that every cast member has a portrait; and that timed beats tile the shot. Prompts are fitted to the model's 2,500-character limit and state how the previous shot ended. The blocking module is geometry: a floor plan in metres, camera projection, people as 0.5 by 0.35 m boxes, line of sight past a wall with a doorway, a sampled coverage share, a framing paragraph naming camera direction, who is where, what is behind and what is not in frame, and image renderers for the layout guide and floor plan. These checks fail a script that contradicts its own plan. The footage showed the image model sometimes ignored the layout guide, and a geometry checker cannot make a generator obey it.
+
+\textbf{Assembly.} In order:
+\begin{enumerate}
+\item Validate the output size (even dimensions, 9:16 or 16:9, default 540x960); refuse an existing output directory; episode at most 180 s; build the timeline (2 to 4,320 frames per shot, overlap 0 to 48, the first shot cannot overlap, overlapped frames removed from the total).
+\item Per shot: hash-checked file; the pixel-checked flag must be true; the file must have video and an audio stream (``do not dub silently''); the source must be long enough for the start frame plus frames (``do not freeze silently''); gain toward a common mean level without lifting the peak over the ceiling unless a gain is given.
+\item Video pieces are cut with exact frame trimming, scaled and padded, x264 CRF 10, no audio. Free editor effects (zoom, flash frames, grade) apply. Each piece's frame count is verified. The fps filter is deliberately not used to join because it drops frames at segment ends and shifts every later dissolve; a version of that bug sent a benchmark film missing about 4.5 s of picture.
+\item Hard-cut runs are concatenated; dissolves between runs use a crossfade with computed offsets; total frames are verified.
+\item Audio: each clip's own track is trimmed, resampled to 48 kHz stereo, optionally pitch-shifted (at most 6 semitones, formant preserved), gain-matched, given edge fades (at least 6 frames) and delayed to its timeline position, then mixed. Optional beds, effects and music (gain at most 1.0). Music is ducked by a sidechain compressor keyed from the dialogue. An optional steady layer adds a compressor. The final chain is a limiter then loudness normalisation to $-16$ LUFS with a $-1.5$ dB true-peak ceiling.
+\item Mux to the clean file (AAC 192 kb/s), run the native report, attach per-cut diagnostics, write an assembly record with status \code{assembled_preview_requires_full_playback_and_listening} and \code{paid_requests: 0}. Raise if mechanical defects were measured.
+\end{enumerate}
+The native report measures dead air below $-50$ dB lasting 1.0 s or more, silent seams below $-55$ dB at each cut and integrated loudness outside $-23$ to $-12$ LUFS, and says it is ``not an audibility or quality verdict''. Per-cut diagnostics measure adjacent 250 ms windows with a default warning threshold of 12 dB, an editorial triage setting and not a gate. Captions are timed from measured speech spans and burned as plain captions.
+
+\textbf{Measurement helpers.}
+\begin{longtable}{@{}P{3.0cm}P{6.3cm}P{6.2cm}@{}}
+\toprule \textbf{Module} & \textbf{Measures} & \textbf{Documented limit}\\ \midrule\endhead
+intelligibility & Word error rate against the script with a local base English model; default threshold 0.35 & ASR agreement does not prove voice identity or emotion; names and non-words inflate the rate\\
+voice\_check & Pitch and spectral-centroid profile per shot; flags pitch spread over 3.0 semitones or centroid ratio over 1.35; plans shifts up to 3.0 semitones & Noisy on shouts and gasps; a flag only\\
+mechanical & Freeze windows, silence, black frames, loudness, dead-air gaps, opening silence 0.75 s, bed level 12 dB below the mean & Signal facts only\\
+edit\_profile & Cut times, motion mean and p90, audio jump per cut, loudness range; comparison with a reference & Numbers only\\
+quality & Frame sampling and decision with minimum confidence 0.95 over nine checks (identity, wardrobe, props, prop orientation, action, expression, lip sync, speech, continuity) & Needs an injected evaluator; the motion-versus-loudness sync proxy was retracted\\
+mouth tracker, local vision & Optional mouth tracking and local vision evaluators & Not exercised in the fresh run\\
+\bottomrule
+\end{longtable}
+
+\subsection{Budgets and ledgers}
+Two generations of cost control coexist. The legacy one (in-memory governor, CSV ledgers with substring matching, generic retry) is retired for live use. The current one (manifest hash binding, quote freshness, per-episode and per-batch caps, transactional reservation, unknown outcomes keep their reservation, no automatic resubmit, redirect refusal, empty-output hold) is in code and covered by 18 tests. Voice and music have extra gates: Magic Hour voice needs a separate explicit flag and an exact per-character quote; voice cloning is allowed only when the job is marked project-generated audio and the sample is an uploaded asset; music needs its own flag, instrumental only, an integer duration of 15 to 300 s and an amount equal to the duration; hosted voice needs an exact submitted-character count and verified maximum billing. The software cannot reverse provider-side overcharges. One historical voice submission (F25) may have charged without the take being recovered, and a timeout is unknown, not failed and not free.
+
+\subsection{Human acceptance and evidence binding}
+Software may record that a named person looked and bind that record to exact bytes. It must not claim to have looked itself.
+\begin{longtable}{@{}P{4.2cm}P{11.3cm}@{}}
+\toprule \textbf{Mechanism} & \textbf{Binding}\\ \midrule\endhead
+Media review declaration & Exact output bytes and shot input hash; named, timezone-aware reviewer; checks for action, identity, wardrobe, camera, eyeline, prop, speaker, expression and lip\\
+Audio review & Hash, line hash, booleans for words, speakers, emotion and pronunciation\\
+Stage chain & Each stage's review bound to artefact bytes through the whole chain\\
+Start-frame acceptance & Named reviewer, frame SHA-256, six checks; a changed frame invalidates it\\
+Automatic evidence decision & Hash-bound evaluator results with minimum confidence; never unconditional approval\\
+Assembly input binding & Exact ordered input map; the legacy globbing assembler is retired\\
+\bottomrule
+\end{longtable}
+Process rules from the failure document: delivery needs one full-speed continuous watch and one human listen with notes naming the checks; lip sync only on shots whose face is readable at delivery size; music level checked at phone-speaker volume; run the suite in the build environment. Open evidence gaps: emotional naturalness, phoneme-level lip sync, identity against the locked references, voice timbre across all lines, and audibility of the music bed in real playback.
+
+\subsection{Season continuation and retained alternates}
+\code{pack-season} writes a ZIP listing every asset path, size and hash plus canon characters, facts, unresolved items and ending. \code{inspect-season} rejects unsafe paths, symlinks, encryption, duplicates, hash mismatches, suspicious compression and size limits; no imported file is executed. Merging packages never turns a partial season into canon. Retained but not supported as live paths: the multi-concept series runners (concepts, arcs, scripts, evaluation, repair, with a hosted writer and fallback), the historical per-series scripts (submission now raises), the portable local H3 setup scripts, and the CPU audio rebuild tool. The README states their presence does not make every path supported or safe to run live.
+
+\subsection{Module inventory}
+Counts are lines of code; the first docstring sentence is the module's own statement of scope (static inspection).
+\begin{longtable}{@{}P{3.2cm}P{1.0cm}P{11.3cm}@{}}
+\caption{Modules of the audio-first package, grouped by role.}\\
+\toprule \textbf{Module} & \textbf{Lines} & \textbf{Scope}\\ \midrule\endfirsthead
+\toprule \textbf{Module} & \textbf{Lines} & \textbf{Scope}\\ \midrule\endhead
+\multicolumn{3}{@{}l}{\textit{Story and writing}}\\
+story & 92 & Versioned story structure checks; semantic quality is separate\\
+director & 211 & Bounded outline, episode, grounded review, repair workflow\\
+writer, local\_writer, cloud\_writer & 41, 30, 136 & Model-writer adapter off by default; local installed model only; cloud writer is explicit-approval, stall-gated, default off\\
+continuity & 133 & Explicit physical and knowledge state checks, eyelines and prop counts\\
+workflow & 92 & Content-addressed stage receipts; no implicit retry of uncertain remote work\\
+season & 138 & Season ZIP continuation\\
+\multicolumn{3}{@{}l}{\textit{References and routes}}\\
+references & 80 & Canonical reference bank with named views and explicit coverage\\
+routes & 219 & Route capability registry with failure evidence attached\\
+images & 177 & Image-first reference planning, no network\\
+renderplan & 244 & Measured shot compilation and renderer capability checks\\
+native\_plan & 222 & Story shots to native-audio render jobs, no spend\\
+bridge & 163 & Measured story plans to exact provider requests and accepted-media packages\\
+\multicolumn{3}{@{}l}{\textit{Audio and timing}}\\
+voices & 51 & Continuous tagged dialogue payloads; no synthesis\\
+dialogue\_timing & 67 & Validates timestamps against the actual PCM WAV\\
+alignment & 107 & Local ASR exact-script recovery, CPU, no downloads\\
+intelligibility & 64 & Does the film say the script: local ASR against written lines\\
+voice\_check & 102 & Voice-consistency measurement and bounded pitch matching\\
+free\_audio & 118 & Licensed audio discovery and download with attribution\\
+subtitles & 127 & English SRT and ASS from approved text and measured timing\\
+\multicolumn{3}{@{}l}{\textit{Assembly}}\\
+assembly & 219 & Local episode and season assembly from accepted assets\\
+native\_mix & 447 & Native-audio assembly: each clip's own dialogue and effects, joined with real transitions\\
+edit\_profile & 114 & Edit rhythm, movement and sound-jump numbers against a reference\\
+preview & 99 & Storyboard player and animatic; never production acceptance\\
+\multicolumn{3}{@{}l}{\textit{Directed production}}\\
+studio & 490 & Brief to a reviewed, validated, priced director's script\\
+directed & 229 & Visual bible, floor plan, motivated light, timed beats, camera moves\\
+blocking & 403 & Floor plan with coordinates, camera positions, person marks\\
+produce & 365 & Production from an approved script, shot by shot with review gates\\
+\multicolumn{3}{@{}l}{\textit{Evidence, gates and spend}}\\
+acceptance, gates, media\_review & 65, 61, 21 & Evidence decisions for real bytes; hash-bound review declarations; never unconditional approval\\
+quality, mechanical & 122, 112 & Fail-closed QA orchestration; freeze, silence, loudness and bed-level checks\\
+local\_vision, transformers\_vision & 43, 25 & Installed vision model transports; descriptions are not acceptance\\
+mouth\_tracker & 47 & Single-face geometry track; not identity or phoneme validation\\
+execution, live, budget & 165, 146, 79 & Exact run approvals, durable no-repeat ledger, live-capable adapters (no call without approved manifest), caps\\
+production\_run, runner, pipeline & 63, 145, 87 & Staged approvals; one-command offline orchestration; flow planner\\
+\multicolumn{3}{@{}l}{\textit{Third-party H3 and props}}\\
+h3\_local, h3\_wrapper & 132, 27 & Offline H3 workflow compiler with gated local runtime; wrapper for the vendored joiner only\\
+procedural & 14 & Small local box-prop blockout; not reconstruction or a rig\\
+\bottomrule
+\end{longtable}
+
+\subsection{Not present or not established}
+\begin{itemize}
+\item No accepted episode. No real semantic evaluator or lip-sync model tested in the release. No clean dependency installation. No new generation or paid request in the consolidation.
+\item Real ASR, vision, face tracking and H3 inference are not part of the synthetic fixture tests.
+\item Pricing, model names and availability recorded in the code are dated. Verify on the day.
+\item Six third-party H3 implementation files are withheld from the review copy while their audience and rights scope is reconciled; the root does not claim a blanket licence.
+\end{itemize}
+
+\section{Fresh verification of the final root (6 November 2026)}
+\label{sec:verify}
+\begin{longtable}{@{}P{4.2cm}P{11.3cm}@{}}
+\caption{What was executed on the canonical root.}\\
+\toprule \textbf{Item} & \textbf{Result}\\ \midrule\endhead
+Command & \code{python -m unittest discover -s tests -v} from the staged root\\
+Environment & Python 3.11.17; FFmpeg 4.4.2 (Ubuntu build); an existing validation environment, not a clean install from the requirements file\\
+Result & 261 tests run, 260 passed, 1 error, 40.331 s\\
+The one error & \code{test_edit_profile}, the steady music bed and trimmed lead-in assemble to exact frames: FFmpeg could not choose formats for the \code{sidechaincompress} filter. Path: native assembly, its FFmpeg runner, audio filter graph. No source change was applied. Whether an environment or FFmpeg version difference explains it is unverified\\
+Syntax parse & Zero syntax errors across the staged source. This does not establish imports or runtime behaviour\\
+Experimental Forge & 567 passed plus 30 subtests in its own suite; a separate code family, not a replacement for the root's error\\
+\bottomrule
+\end{longtable}
+\subsection{Test map}
+The per-file counts are test-function counts and sum to 261, matching the log. Counts in older documents (111, 133, 189, 227) belong to other revisions and are not current proof.
+\begin{longtable}{@{}P{5.2cm}P{1.2cm}P{9.1cm}@{}}
+\toprule \textbf{Test file} & \textbf{Tests} & \textbf{Exercises}\\ \midrule\endhead
+test\_story\_pipeline & 29 & story, director, workflow, writers, continuity (staged writing, resume, review quotes)\\
+test\_routes\_references & 22 & reference bank, route registry, continuity, runner (fail-closed gates)\\
+test\_native\_plan & 22 & durations, chaining, speech rules, tightening, scene lock, scene take\\
+test\_studio & 19 & pack check, repair, approval binding\\
+test\_execution & 18 & approval, reservation, transitions\\
+test\_native\_mix & 18 & planning, sound-design gate, assembly\\
+test\_blocking & 16 & geometry, supervision, framing, rendering\\
+test\_render\_pipeline & 16 & locked-audio route\\
+test\_chain & 14 & directed chaining and activity\\
+test\_edit\_profile & 14 & edit profile, native effects, price helpers (contains the one error)\\
+test\_hardening & 14 & hardening controls, media review, signal edge cases\\
+test\_directed & 11 & directed planning\\
+test\_produce & 11 & Producer with a fake runner, no spend\\
+test\_mechanical & 9 & mechanical checks, assembly enforcement\\
+test\_form\_and\_recovery & 8 & form, recovery\\
+test\_intelligibility & 8 & word error rate, caption cues, one speaker per shot\\
+test\_voice\_check & 5 & voice consistency\\
+test\_free\_audio\_metadata & 3 & free audio metadata\\
+test\_assembly\_integration & 2 & assembly resume\\
+test\_cli & 2 & command-line program\\
+\bottomrule
+\end{longtable}
+These are mock-provider and synthetic-media tests (coloured grids and tones). They show code behaviour, not acting, voice, lip sync or continuity of real generated footage.
+
+\subsection{The one error in detail}
+The failing test assembles one still-grid clip with a start offset of 24 frames and 70 frames, one music layer with the steady option, and expects 70 frames and no defects. FFmpeg reports that the sidechain compressor filter could not choose formats and that filters could not be reinitialised. In the source, the ducking branch (a dialogue split feeding a sidechain compressor) is built only when a music layer exists, and the steady option adds a compressor. In the test sources this is the only test that passes a music layer to assembly, so the ducking branch has no other passing assembly test in this run. A hypothesis, unverified: FFmpeg 4.4.2 may fail format negotiation for the two sidechain inputs (for example a sample-format or channel-layout difference after the split), or the behaviour may be version-specific. No source fix was applied and no run on another FFmpeg version is recorded. Impact: assembly with a ducked music bed is unproven in this environment; assembly without a music layer is covered by the passing tests.
+
+\subsection{Pins and withheld items}
+The requirements file pins a speech recognition package (1.2.1), a face-tracking package (1.1.1), a transformers package (5.20.2), a hub client (2.2.0), \code{requests} and \code{Pillow}. They are preserved from the supplied ZIP and were not verified installable or current. Prices, model names and availability are dated and the code requires same-day re-verification before spend. The corrected full-audio GPU trial is prepared and not launched.
+
+Not executed: a clean dependency install, any live generation or paid request, any runtime test of archived versions, any full-speed watch and listen of an episode, the corrected full-audio GPU trial, and any remote repository change. A historical record says seven repair-tool tests need an extra loudness package and sit outside the count; that is not freshly or independently verified here. The one error is an assembly path (native audio mixing with a sidechain compressor) that the paid-route films relied on. Before any use, rerun on the target machine and see whether it reproduces.
+
+\section{Exercising the final root safely}
+\begin{enumerate}
+\item Create an isolated environment and inspect the requirements file before installing. Check the Python and FFmpeg versions above.
+\item Run \code{python audiofirst.py --help}, then \code{validate-story} and \code{run} on the bundled pilot example. These plan offline and make no network request.
+\item Run the test suite and compare with 261 and the one error. If the sidechain error reproduces, fix the filter graph before using native assembly.
+\item Never run \code{--live}, \code{--accept-costs}, \code{--enable-live}, cloud writing or studio production just to test an installation. Each can call services or spend.
+\item Bundled examples (eight): a short sample of each shape, listed in the appendix. Use them as fixtures.
+\end{enumerate}
+\part*{Part III: Cross-method findings}
+\addcontentsline{toc}{section}{Part III: Cross-method findings}
+
+\section{Failure catalogue}
+\label{sec:fail}
+Evidence classes: S source or receipt read directly, V sampled-pixel inspection, H historical record, W vendor documentation, T recorded test result, P proposed and not implemented.
+\subsection{Generation failures}
+\begin{longtable}{@{}P{1.0cm}P{3.6cm}P{5.6cm}P{5.3cm}@{}}
+\toprule \textbf{ID} & \textbf{Failure} & \textbf{Root cause as recorded} & \textbf{Fix direction}\\ \midrule\endhead
+F22 [S,V,H] & Recognition and argument test (33.6 s): wardrobe drift, framing drift, near-lens gaze, changing background geometry despite same-face, same-costume prompts & The one-image silent image-to-video route does not enforce requested consistency; a separate mouth-sync pass is a different variable and cannot certify camera, wardrobe or eyelines & Reference and state contracts, view selection (the reference bank), and a materially different tested control route. More negative-prompt words are not evidence-backed\\
+F23 [S,V,H] & Continuity pilot: push-in, framing change and near-lens gaze despite locked-static-camera prose & Prose constraints did not become hard camera or gaze controls & Counterexample to ``negative prompting solved it''\\
+F24 [H,S] & Free VACE test stopped at prompt embedding with an inference-mode tensor error & A test-code and framework mode compatibility bug, not a memory limit and not evidence that the model cannot do the action & A candidate remedy (clone the tensor or correct the mode boundary) is a hypothesis, untested\\
+F25 [H] & One voice submission timed out and the take was not recovered; history access returned authorisation errors & A timeout is unknown, not failed and not free & Reconcile with the provider before any resubmission\\
+\bottomrule
+\end{longtable}
+
+\subsection{Source-level failures and the fixes in the root}
+\begin{longtable}{@{}P{1.0cm}P{4.6cm}P{4.7cm}P{5.2cm}@{}}
+\toprule \textbf{ID} & \textbf{Finding} & \textbf{Root cause} & \textbf{Fix in this codebase}\\ \midrule\endhead
+F26 & Validation and encoding mismatch & The assembler approved one asset set then encoded hard-coded or globbed paths & Legacy assembler retired; exact ordered input map\\
+F27 & Review receipt not bound to requirements & A previously approved asset hash stayed valid after the required action or timing changed & Receipts bind requirement and beat, validate times and coverage, reject duplicates and out-of-beat lines\\
+F28 & Gate bypass & Independent stitch, assembly and submission paths ran outside the acceptance path & Unsafe paths retired before any network or key read\\
+F29 & Duplicate spend risk & Generic POST retry, in-memory batch totals, CSV substring match treated as completion & Durable adapter: dependency checks, shared reservations, resume identity, illegal reset rejection, empty-output hold, redirect refusal; unknown jobs keep reservations\\
+F30 & A bare \code{pixel_checked=True} accepted as evidence & A boolean with no binding & Media review binds exact bytes and shot input to a named, timezone-aware review with explicit checks\\
+F31 & Ignored mechanical errors & Failed FFmpeg commands ignored; silent openings, missing audio and duration mismatches shipped & Detector timeouts, error stops, geometry and duration checks, fresh outputs, output locks\\
+\bottomrule
+\end{longtable}
+Hardening scope is precise: 133 tests at that revision (189 across both pipelines later), all mocks and synthetic local media. Gates stop predictable misuse. They do not generate a fix and cannot prove anyone watched or listened.
+
+\subsection{Episode defects D1 to D21}
+The first full episode (E01) was audited against its actual script. The ledger maps each finding to the repair and the acceptance evidence still needed. None is accepted and the episode remains rejected.
+\begin{longtable}{@{}P{1.6cm}P{5.6cm}P{8.3cm}@{}}
+\toprule \textbf{ID} & \textbf{Finding} & \textbf{Repair and acceptance needed / state}\\ \midrule\endhead
+D1 & Static 9 s stretch & Regenerate guest freezing, marks and arrow impacts with actual action progression\\
+D2 & Weak music & Rebuilt from dry voice plus source music with measured bed and ducking; candidate made, listening pending\\
+D3 & Opening and tail silence & Source pre-roll removed, music from frame 0, tail active; candidate opening $-27.6$ dBFS, tail $-27.7$ dBFS, not listening-approved\\
+D4 & Table glide & Visible natural-speed table flip as a shield plus chandelier impact; replacement required, not a retime or crop\\
+D5 & Line 14 off-screen & Close-up of the male lead, hurt and suspicious, with an actual speaking mouth; proposed timing in v44 prep\\
+D6 & Inert recognition & Stage a visible accusation and a recognition reaction\\
+D7 & Lip visibility & Readable speaking-face coverage first, then tested sync; wide or hidden-face shots not accepted\\
+D8 & Emotional voice & Needs actual listening; cannot be derived from loudness or transcript\\
+D9 & Static arrow graphic & Arrow impact or miss with visible trajectories related to the beat\\
+D10 & Slowed entry & Natural-speed source only if complete action and identity are established, else replace; no speed patch accepted\\
+D11 & Missing trolley kick & Show kick, travel, contact and armour reaction (original shot 9)\\
+D12 & Melted guest & Solid anatomy and ice boundary, no transparent legs or hands; replace with D1\\
+D13 & Non-mirroring silhouette & Copying the same step must be visible over time\\
+D14 & Missing string actions & Original shot 8: two strings cut, a third wraps the wrist, a heel snaps it. The earlier gate had mapped this to the wrong beat\\
+D15 & Extras looking at the lens & Background extras not staring or smiling at camera in danger\\
+D16 & Upscaled Pro lip-sync output & Verify actual returned dimensions; self-hosted lip route needs a GPU test; open\\
+D17 & Loudness mismatch & New WAV measured $-18.47$ LUFS by pyloudnorm and $-18.28$ by FFmpeg, $-2.00$ dBTP; delta documented\\
+D18 & Foreground frozen shape & Remove by properly staged coverage, not disguise\\
+D19 & Grin and empty hand & Danger-appropriate expression, wand continuity and trolley impact\\
+D20 & Musical second beat & Audible beat cue and a visible impact timed to it; unproven, cannot be asserted from a meter\\
+D21 & Credit & Attribution sidecar added; the final video was not exported\\
+\bottomrule
+\end{longtable}
+Process and evidence gaps recorded with the ledger: reference fidelity (review source anchors against shots, not shots against each other), character voice identity and timbre, full-speed watch not performed, script warnings to be cleared before generation and not suppressed, gate receipts must describe actual reviewer evidence (none fabricated), and new manifests are instructions to review, not verified observations.
+
+\subsection{Cross-method patterns}
+\begin{enumerate}
+\item Prose does not control cameras, gaze, wardrobe or action in these generators (F22, F23, native tests). Spatial controls (floor plan, master frames, chained last frames) did better.
+\item Voice drifts between shots of the same character in every model tried; the fixed-voice route fixes pitch but loses effects and body motion.
+\item Wide shots hide mouths; lip-sync spend on them was wasted.
+\item Silent shots and short gaps invite invented speech; multi-speaker takes let the model choose cuts.
+\item Environment and runtime problems consumed most of the free-GPU effort; results were then too short to judge.
+\item Gates that check hashes and receipts do not check quality. Several early gates passed work that a person then rejected.
+\end{enumerate}
+
+\section{Credit and cost ledger}
+\label{sec:ledger}
+All amounts are Magic Hour credits unless stated. Sources are the billed figures in the project records; none was recomputed for this review.
+\begin{longtable}{@{}P{4.4cm}P{2.4cm}P{8.7cm}@{}}
+\toprule \textbf{Item} & \textbf{Credits} & \textbf{Source and note}\\ \midrule\endhead
+Old dubbed benchmark, 14 shots & 4,218 & Model-testing record (images 1,000, video 2,688, voices 18, music 56, lip sync 456)\\
+LTX native test, 5 shots & 360 & Model-testing record\\
+Native tests 3.2 to 3.9 & 20,398 & Reconciled to the account balance drop 113,463 to 93,065\\
+Working Late & 1,417 & Cap 1,800\\
+Directed retry & 1,683 & Cap 1,700; balance then 89,965\\
+Shots 4 and 5 re-render & 726 & Cap 750; balance then 89,239\\
+Cold Cycle & 5,280 & Approved about 5,350; no reserve left for re-renders\\
+Sum of the five native groups above & 29,504 & Arithmetic of the rows 20,398 + 1,417 + 1,683 + 726 + 5,280\\
+Great Hall talking-photo test & cap 5,000 & Cap only; observed rate 24 versus 20 documented per second\\
+Wan 3.0 probe, one shot & 384 & 4 s at 720p\\
+34 s recognition test & 2,536 & Generation 1,728 plus lip sync 808; balance 143,325 to 140,789\\
+Continuity pilot & 962 & Three motion jobs 912 plus one reference 50; balance 140,789 to 139,827\\
+Voice v6 candidate & 4,102 included credits & Hosted voice usage 2,999 to 7,101 of 131,000; no overage; no top-up\\
+Recognition short voice test & 249 & Submitted 566 characters, spoken 457\\
+Still-first ledger & 11,335 then 17,619 & Ledger's own statements at two times of one day; not reconciled\\
+Hosted GPU H3 test & 1.08 USD metered & Credits adjusted so 0 billed\\
+Free GPU trials & 0 & No paid generation\\
+\bottomrule
+\end{longtable}
+The rows are from different accounts and dates and are not additive in general. The balance readings (113,463; 89,965; 89,239; 137,493 on 26 October; 143,325 and 139,827 later) show the account was also used outside these tests, so the per-job ledgers are the budget record.
+
+\section{Day-by-day record}
+\label{sec:daily}
+This reconstruction comes from dated project records, source files, archive exports and verification. It is not a timesheet and a delivery date does not prove when a change was written. Where nothing specific is established the gap is stated.
+\begin{longtable}{@{}P{1.8cm}P{8.2cm}P{5.5cm}@{}}
+\toprule \textbf{Date} & \textbf{Work and outcome} & \textbf{Evidence limit}\\ \midrule\endhead
+8 Oct & Idea and brief; research plan written & Proposal, no generation\\
+9 Oct & Writer and judge planning, character-consistency benchmark discussed & No render\\
+10 Oct & Nothing specific established & Gap\\
+11 to 12 Oct & Early dry-run package, story bible, notebook and pilot drafting & No API or video result; split uncertain\\
+13 Oct & First two repository commits (initial export, second revision) & Source history; subjects do not prove behaviour\\
+14 Oct & Third revision; the previous master tree (59 tracked files); market benchmark note & Git history\\
+15 Oct & Delivery targets discussed & No episode\\
+16 Oct & Nothing specific established & Gap\\
+17 Oct & Delivery expectations unmet & No episode\\
+18 Oct & Script batch progress reported: 31 of 100 scripts, 5 of 10 arcs, 3 of 10 judged; timeouts continue & Historical; scripts are not episodes\\
+19 Oct & Source export and retrospective audit; export lacked completed media and ledger evidence; privacy cleanup needed & Record and source\\
+20 Oct & Portable pipeline and audio-first development; CPU speech check and tests reported & Historical counts\\
+21 Oct & Recommendation to prove a short 5 to 10 s scene before another episode & Recommendation\\
+22 Oct & Nothing specific established & Gap\\
+23 Oct & Free-GPU runtime and smaller-model investigation; no main-model episode & Environment preparation is not inference success\\
+24 Oct & No date-specific result isolated & Gap\\
+25 Oct & Rejected-pilot audit, F22 to F31, D1 to D21, reference bank, route registry, continuity gates, repair research; audio repair executed; still-first v4.3 voice and recognition tests & Software controls, not solved acting or sync\\
+26 Oct & Reference-to-video and mechanical-gating exports recovered; R2V test plan; Wan 3.0 probe; talking-photo adapter & Synthetic checks do not prove generated continuity\\
+27 Oct & Short connected-conversation proof recommended instead of scaling another failed episode & No accepted episode\\
+28 Oct & Reference benchmarking and history reconstruction & Day allocations not verified\\
+29 Oct & Native-audio planner, exact-frame assembly and story benchmark; first native tests & Billed and judged\\
+30 Oct & The Last Ferry; experimental Forge rebuild and CPU checks & Billed; no accepted video\\
+31 Oct & Anime image plate; 16 s take; script continuity revisions & Billed and judged\\
+1 Nov & Per-shot film on two models; four-model comparison; Kling film; human scene; reference diagnosis & Billed, measured, judged\\
+2 Nov & Directed retry, spatial continuity fix, shot re-render, Cold Cycle; additive Forge and report revisions & Billed; no viewer study\\
+3 Nov & Per-cut audio diagnostics added & Warnings, not quality failures\\
+4 Nov & Nothing date-specific isolated & Gap\\
+5 Nov & Outreach preparation described remaining voice drift, omitted and added beats and manual lip-sync review & Turnaround estimates not benchmarked\\
+6 Nov & Free-GPU trials reconciled (tiny clips that cropped source audio); duration-safe planning verified in Forge; corrected full-audio trial prepared and paused; latest ZIP selected as root; 116 source files recovered; review tree prepared & Fresh tests and recovered receipts\\
+\bottomrule
+\end{longtable}
+
+\section{Rights and attribution}
+\label{sec:rights}
+This report is not a legal clearance and grants no licence.
+\begin{itemize}
+\item \textbf{Story world.} The benchmark stories use a third-party fantasy franchise. They were used for testing and must not be published or monetised. The owner's original stories (a ferry story, an anime training story, a kitchen scene and a laundromat story) are the publishable test material.
+\item \textbf{Voices.} All 1,264 voices in the video provider's own generator are impersonation presets and cannot be published. Library voices and cloned voices need their own licence check. Cloning is allowed by the guard only from project-generated audio.
+\item \textbf{Third-party reference implementation.} Six implementation files of a private H3 reference are withheld from the review copy. The supplied notice says they were excluded while the archive actually contained them. An intended redistribution scope is stated in a project document but has not been reconciled with the notice and the actual repository audience. Do not include them in any repository or share them until that scope is confirmed. Source permission would not by itself license model weights or provider access.
+\item \textbf{Governor concept.} A notice attributes a small exception-class concept in the legacy spend governor to an AGPL-3 project and labels it local use only. That wording is a historical notice and not a reliable summary of AGPL obligations. No legal analysis was done. Do not assert a permissive whole-project licence until provenance is reviewed.
+\item \textbf{Upstream code.} Forge snapshots contain third-party source and their own licence files (identity adapters, talking-video projects). Keep attribution and licences with those sources. A code licence does not cover model weights, training data, likenesses, voices, fonts or generated media. Face-analysis models used by the identity routes carry non-commercial or research-only terms.
+\item \textbf{H3 weights.} Licence territory exclusions (EU, UK, South Korea, US) are recorded in the project's own guard, described there as conservative internal wording.
+\item \textbf{Audio.} Free licensed audio is accepted only under CC0 or CC BY 4.0 with attribution. A music attribution sidecar exists for the delivered cut.
+\item \textbf{Frame strips in this report.} The two strips come from short trials on a reference still. The figures show a costume with a house-style crest that may resemble third-party franchise styling. Treat them as internal technical evidence and review before any wider circulation.
+\end{itemize}
+
+\section{Evidence gaps}
+\label{sec:gaps}
+\begin{longtable}{@{}P{5.6cm}P{9.9cm}@{}}
+\toprule \textbf{Gap} & \textbf{State}\\ \midrule\endhead
+Output archive & A bounded collection review has been prepared: 638 project media hashes (1,300,057,349 bytes) with no delivery-location gaps inside a finite, recorded scope (a 1,500-item scope queue, emptied without truncation). It lists 4 corrected source archives plus a supplement, 13 output archives plus 2 supplements, 141 native copies and 17 input references, with a catalogue recording scope and exclusions. This is not a claim that every project file everywhere is collected. 144 reference and upstream assets are kept separate. Rights review and any repository push approval are still pending, and nothing here says the project is finished or approved\\
+Iteration logs for failed free-GPU trials (MultiTalk V1 to V4, InfiniteTalk V1 and V2) & Not retained; the failure class is reported only\\
+VACE generalised executor and FaceID frames & Recovered with matching hashes and shown in the appendix. Neither was accepted. Official-sample VACE trials V1 and V2 have no passing run (section~\ref{sec:freegpu}) and are separate\\
+Full v9 dialogue audio length & No retained artefact supports an earlier 132.344 s claim. Only a 98.592 s draft MP3 is retained and its relation to the full track is not established\\
+Corrected full-audio InfiniteTalk trial & Prepared, not launched\\
+Honesty-series renderer, LTX 2.5 test and hosted notebook job records & Renderer source, configuration and script-attempt findings are now described in section~\ref{sec:honesty}. A version-specific video receipt, per-job billing receipts and hosted notebook job records are still missing, so no run result for that series is established\\
+Any viewer study & None. All judgements are one reviewer's\\
+Full-speed watch and human listen of any generated episode & Not performed\\
+Account reconciliation for the still-first ledger and later tests & Not done\\
+\bottomrule
+\end{longtable}
+
+\section{Guidance for successors}
+\label{sec:guide}
+\subsection{Start here}
+\begin{enumerate}
+\item Read Chapter~\ref{sec:final} and run the offline pilot and the test suite in an isolated environment (section~\ref{sec:verify}). Record Python and FFmpeg versions.
+\item Reproduce the single failing assembly test on a second FFmpeg version. Inspect the sidechain branch first. A candidate hypothesis is an explicit sample-format and channel-layout conversion on both sidechain inputs. Make any fix a separate approved change with its own test, because this is the only coverage of the ducking branch.
+\item Treat every price, model name and pin as dated. Verify them on the day and quote before approving a manifest.
+\end{enumerate}
+
+\subsection{The next experiment}
+One short, full-duration dialogue scene with stable identity and wardrobe, intelligible complete speech and a human-reviewed cut.
+\begin{itemize}
+\item Native route, one on-screen speaker per shot, \code{plan-native} to price, named-reviewer frame acceptance and the speech gate.
+\item A floor plan and one master frame per camera side, reused by every shot on that side (the Cold Cycle method), with a closed room.
+\item The SPEECH RULES clause in every dialogue prompt, and silent shots replaced by room ambience.
+\item Same-shot comparisons on at least two models before ranking them.
+\item Stage the render: first three shots, check, then the rest. Keep a reserve in the cap for re-takes.
+\item Measure cost, time and failure rate against a stated baseline before claiming efficiency.
+\item Full-speed watch and a human listen before calling anything accepted.
+\end{itemize}
+
+\subsection{Do not repeat}
+\begin{itemize}
+\item The dubbed route; impersonation voice presets; multi-speaker long takes; lip sync on wide shots.
+\item Prose-only camera, gaze or wardrobe control; one-image silent video with negative prompts.
+\item Resubmitting a job in the submitted or unknown state; treating a timeout as failed or free.
+\item Generating a full episode before one short scene passes.
+\item Claiming a clip passed because it exists, a hash matches or a test is green.
+\item Using the mouth-motion versus loudness sync proxy.
+\item Cropping source audio to fit a clip length: size the clip from the probed audio.
+\end{itemize}
+
+\subsection{Open technical questions}
+Whether any open GPU route can hold identity and speech over a full line at normal settings (the trials ran at 4 steps and int8 only). Whether the native route's voice drift can be bounded by pitch matching or by the fixed-voice route plus a separate effects layer. Whether an image model can be made to obey a layout guide reliably. Whether the speech gate's thresholds (0.35 word error, one extra word) are right for names and non-words.
+
+\section{Errata to the earlier edition}
+An earlier 10-page edition of this report was thin and in places wrong. Corrections:
+\begin{itemize}
+\item It treated the effort as free-GPU focused and omitted the paid native-audio route, its credit ledgers and the measured model tests. They are now sections~\ref{sec:native} and~\ref{sec:ledger}.
+\item It gave too little method detail. Each method now has its own chapter with settings, tables and limits.
+\item The earlier treatment of FaceID V3 and VACE V1 was imprecise. The recovered proof shows that FaceID V3 (front image) and the generalised gated VACE executor V1 both ran and were visually rejected. Of the official upstream VACE trials, V1 passed environment install but its help command failed on a missing plotting library and inference was pending at the last record (no visual reject is claimed); V2 failed by timeout without video; V3 was prepared but not run. Details are in the trial ledger and the appendix figures.
+\item An earlier figure of 132.344 s for the v9 audio is withdrawn.
+\item The InfiniteTalk and MultiTalk strips are evidence of short technical trials, not of lip sync, continuity or quality.
+\end{itemize}
+
+\appendix
+\section{Figures}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{strip_a.jpg}
+\caption{InfiniteTalk V3 output: five frames from a 17-frame, 0.680 s clip. Evidence of a short technical trial only.}\label{fig:it}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{strip_b.jpg}
+\caption{MultiTalk V5 output: five frames from a 17-frame, 0.680 s clip. Evidence of a short technical trial only.}\label{fig:mt}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.42\textwidth]{faceid_front.jpg}
+\caption{FaceID V3 recovered front image (512 by 768, hash prefix 7edc4dfa). Reviewed as harsh, illustrated and plastic, with a high-contrast green cloak. Not accepted. Single-identity still only.}\label{fig:fid}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{vace_strip.jpg}
+\caption{Generalised gated VACE executor V1: three frames from a 17-frame, 1.063 s, 480 by 832 clip at 16 fps (hash prefix 64e5b7ee). Reviewed as a different, younger face and different torso framing from the reference. Not accepted. No speech, lip sync or two-person evidence. The costume shows a house-style crest that may resemble third-party franchise styling; internal technical evidence only.}\label{fig:vace}
+\end{figure}
+
+\section{Additional recovered technical frames}
+\label{sec:frames}
+These frames come from the H3 V4 guide-quality review and from a hybrid test. They show what was produced and measured. They are not evidence that any shot was accepted. The characters are third-party test characters; no rights clearance is implied (section~\ref{sec:rights}).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{h3v4_anchors.jpg}
+\caption{H3 V4 guide anchor frames from the review archive. They show custom placement under the guide. They do not prove the faithful baseline, which was compiled and never rendered (Chapter~\ref{sec:h3}).}\label{fig:anchors}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{h3_l1_mouth.jpg}
+\caption{H3 V4 review, loop L1: mouth crops with a measured mouth-opening ratio per timestamp (about 0.19 to 0.21). The ratio varies little across the sampled frames. An automatic mouth-opening ratio does not accept or reject phonemes, so this is a measurement table and not a lip-sync verdict.}\label{fig:l1}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{h3_l3_reply.jpg}
+\caption{H3 V4 review, loop L3: the reply sheet for the expected second speaker. The actor and the framing change inside the sampled sheet. This is observability evidence on a sample and does not show that every frame is wrong.}\label{fig:l3}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{camera_plan.jpg}
+\caption{Camera plan diagram from the planning documents: one conversation axis with a common master and two coverage views. It is marked proposal only, with relative layout and no measured floor plan. No generated master proves its marks.}\label{fig:plan}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{hybrid_review.jpg}
+\caption{Hybrid test output review (existing voice, shots 17 and 18). It tests mechanics only. It is not evidence of accepted quality or continuity.}\label{fig:hybrid}
+\end{figure}
+
+\section{Recovered versions}
+The version catalogue lists 110 ZIP archives, 108 with a recorded file count and 2 byte-identical duplicates. The file count per snapshot ranges from 4 to 387. By name family: 62 \code{dramaforge} snapshots (the experimental line), 35 \code{dramasaga} snapshots, 12 \code{magicdrama} snapshots and one route patch. Each snapshot is kept under \code{Archive/versions} with its SHA-256. Snapshots are source only, not active dependencies, and they must not all be added to the Python path. The latest ZIP is the root.
+
+\section{Bundled examples}
+\begin{longtable}{@{}P{3.4cm}P{12.1cm}@{}}
+\toprule \textbf{Example} & \textbf{Contents}\\ \midrule\endhead
+pilot & Brief, story and a renderer profile example; six-shot original story of two adult siblings, a concealed grant letter and a key (estimated 45 s); the safe offline first run\\
+missing-minute & Screenplay, dialogue test, revised scene, extension and a production outline (the LTX native test)\\
+uninvited-guest & Screenplay, delivery note, native benchmark, production outline (the franchise benchmark; test use only)\\
+last-ferry & Native story (original, publishable)\\
+snow-street & Native story (anime training story)\\
+scullery-maid & Four episode stories and a story note\\
+late-night & Native and directed stories with a director's script (the human-reference scene)\\
+cold-cycle & Director's script, builder script and directed story (the closed-room film)\\
+\bottomrule
+\end{longtable}
+\end{document}

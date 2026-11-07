@@ -1,0 +1,135 @@
+[
+ {
+  "id": "v9_00",
+  "sp": "Draconia Malfoy",
+  "t": "Do not even breathe, Potter. Filch is ten steps away, and if he catches us out of bed tonight, I lose far more than a Saturday.",
+  "e": 0.6,
+  "c": 0.3
+ },
+ {
+  "id": "v9_01",
+  "sp": "Harry Potter",
+  "t": "You promised me the party would be dull and safe, Malfoy. I am beginning to think you lied about both.",
+  "e": 0.35,
+  "c": 0.5
+ },
+ {
+  "id": "v9_02",
+  "sp": "Draconia Malfoy",
+  "t": "I never lie, I only choose which truths to share. Besides, I do not run from anyone, and I will not start with a caretaker.",
+  "e": 0.8,
+  "c": 0.3
+ },
+ {
+  "id": "v9_03",
+  "sp": "Argus Filch",
+  "t": "I can smell perfume and mischief in this corridor, my sweet little rule breakers. Come out now, and I may only hang you by your thumbs.",
+  "e": 0.6,
+  "c": 0.3
+ },
+ {
+  "id": "v9_04",
+  "sp": "Harry Potter",
+  "t": "Take my hand and follow me behind that tapestry before he reaches us. We can argue about your dignity once we are out of sight.",
+  "e": 0.5,
+  "c": 0.4
+ },
+ {
+  "id": "v9_05",
+  "sp": "Harry Potter",
+  "t": "For someone who never runs from anyone, you are moving remarkably fast through this tunnel, Malfoy. I am barely keeping up.",
+  "e": 0.45,
+  "c": 0.4
+ },
+ {
+  "id": "v9_06",
+  "sp": "Draconia Malfoy",
+  "t": "This is a strategic retreat conducted with great dignity. The ruined hem of this gown is entirely your fault.",
+  "e": 0.7,
+  "c": 0.3
+ },
+ {
+  "id": "v9_07",
+  "sp": "Harry Potter",
+  "t": "I found this note outside the ballroom, and it carries Pansy's initials. She was waiting for you tonight, and I need to understand why.",
+  "e": 0.35,
+  "c": 0.5
+ },
+ {
+  "id": "v9_08",
+  "sp": "Draconia Malfoy",
+  "t": "Give me that parchment this instant, Potter. Whatever Pansy knows about my family is my burden, and I will not let you read a single line.",
+  "e": 1.0,
+  "c": 0.2
+ },
+ {
+  "id": "v9_09",
+  "sp": "Pansy Parkinson",
+  "t": "How very touching, Draco, and how typical of you. My father's owl reaches Lucius by dawn, unless you hand me your prefect badge tomorrow morning. Consider it the price of my silence.",
+  "e": 0.9,
+  "c": 0.2
+ },
+ {
+  "id": "v9_10",
+  "sp": "Draconia Malfoy",
+  "t": "You have always hidden behind your father's name, Parkinson. Step into the light and say that to my face if you dare.",
+  "e": 0.9,
+  "c": 0.25
+ },
+ {
+  "id": "v9_11",
+  "sp": "Harry Potter",
+  "t": "Three nights ago I found Polyjuice ingredients in her trunk, and every missing one has led here. She used your scandal as a distraction while she stole.",
+  "e": 0.5,
+  "c": 0.45
+ },
+ {
+  "id": "v9_12",
+  "sp": "Draconia Malfoy",
+  "t": "She played me from the very beginning, and I thought I was the one hunting her. We have been chasing the same snake in opposite directions all night.",
+  "e": 0.55,
+  "c": 0.4
+ },
+ {
+  "id": "v9_13",
+  "sp": "Professor McGonagall",
+  "t": "Potter, Malfoy, stay exactly where you are. Two students missing from the ball and a caretaker shouting about shadows is no coincidence.",
+  "e": 0.35,
+  "c": 0.55
+ },
+ {
+  "id": "v9_14",
+  "sp": "Harry Potter",
+  "t": "Professor, someone is brewing Polyjuice inside the Room of Requirement tonight. I found this vial by the tapestry, and I can prove it if you let us look.",
+  "e": 0.5,
+  "c": 0.4
+ },
+ {
+  "id": "v9_15",
+  "sp": "Professor McGonagall",
+  "t": "A vial in your pocket and a story at midnight prove nothing, Mr Potter. You have both earned detention every Saturday until June.",
+  "e": 0.5,
+  "c": 0.5
+ },
+ {
+  "id": "v9_16",
+  "sp": "Draconia Malfoy",
+  "t": "Look at my palm, Potter, because the ink is moving by itself. It says the Polyjuice will be ready at midnight in the Astronomy Tower, signed with a single letter.",
+  "e": 0.55,
+  "c": 0.4
+ },
+ {
+  "id": "v9_17",
+  "sp": "Harry Potter",
+  "t": "That is not Pansy's handwriting, and I do not recognise the letter at the bottom. Whoever wrote it knew we would find this tonight.",
+  "e": 0.4,
+  "c": 0.45
+ },
+ {
+  "id": "v9_18",
+  "sp": "Draconia Malfoy",
+  "t": "The clock strikes twelve in four minutes, and I will stand in that tower before it does. Whoever signed that letter is waiting, and I intend to see their face.",
+  "e": 0.8,
+  "c": 0.35
+ }
+]

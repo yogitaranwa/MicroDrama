@@ -1,0 +1,618 @@
+FAILURE.TXT
+E01 "The Waltz That Attacked First" - v4.3 final candidate v3 (94.254s, 720x1280, 24fps)
+Independent failure audit, 2026-10-25, rev 3. Audited file: the delivered v3 MP4
+(Drive copy), plus the project code package (manifest, assembly plan, QA ledgers).
+
+PROOF CLASSES USED BELOW
+[M]  Measured by tool on the delivered file (ffmpeg/ffprobe output quoted).
+[F]  Direct frame inspection of the delivered video (timestamps given).
+[J]  Visual/editorial judgment from inspected frames - lower confidence.
+[L]  Project ledger / package record; quoted, not independently re-verified.
+
+=====================================================================
+1. VERDICT
+=====================================================================
+The episode fails as a finished microdrama. Verified strengths: the dialogue
+track is intact (all 15 lines, exact wording, in order, on time) and the joins
+are clean. But the episode ships four shots whose generated assets were
+rejected and replaced with visible local patches, a first-act shot with no
+visible motion for its full 9 seconds, a music bed measured roughly 24-27 dB
+below the full-file mean in dialogue-free gaps (in a story whose curse is
+carried by music), 1.7s of measured silence at the open, and an emotional
+climax whose key line has no face. The delivery also overstated what had been
+checked: "visual fixes and dialogue-timing checks are finished" rested on
+sampled frames, never a full watch-through, and the project record itself
+states the explicitly requested emotional audio quality was never verified by
+listening. [M][F][L]
+
+=====================================================================
+2. METHOD (what was actually checked, and how)
+=====================================================================
+- Container/streams [M]: ffprobe. H.264 720x1280 24fps, 2262 frames; AAC
+  stereo 44.1kHz; video 94.250s, audio 94.157s.
+- Scene-cut detection, score>0.25 [M]: 14 cuts -> 15 segments; all cuts land
+  at the assembly plan's planned times.
+- Black-frame detection [M]: none.
+- Freeze detection [M]: one freeze, 13.5833-22.5833s, at -55dB threshold; it
+  still flags the full 9.0s window at the stricter -60dB threshold. Frame
+  comparison across the window (14.0s vs 22.0s): max luma difference 3/255,
+  mean 0.005/255 - encoder noise, no visible change.
+- Silence detection at -38dB and -50dB [M]; per-gap volumedetect levels.
+- Loudness [M]: loudnorm integrated -17.69 LUFS; volumedetect full-file mean
+  -23.6 dB, max -3.4 dB (matches the recorded -3.4 dBTP figure).
+- Dialogue [M]: the delivered audio track machine-transcribed as a whole and
+  per line at the assembly plan's 15 windows, plus padded windows for lines 5
+  and 6.
+- Visual review [F]: 95 frames at 1fps (one per second across the runtime);
+  147 frames in 3-6fps strips over every dialogue span and the shot-11a action
+  (shots 2, 4, 5, 6, 7, 10, 11a, 12b); 28 frames at +/-0.08s around all 14
+  cuts; 10 full-resolution frames (3.0, 12.0, 16.0, 23.0, 46.5, 53.0, 63.0,
+  65.5, 78.0, 79.5s). ~280 frames total. This is denser than the prior
+  sample-based QA but is still a frame audit, not a full-speed watch; and no
+  listening pass was possible in this review.
+
+=====================================================================
+3. WHAT PASSED (verified, so the record is straight)
+=====================================================================
+- All 15 dialogue lines present, in script order, exact wording, each landing
+  inside its planned time window; padded re-checks confirm the leading words
+  of lines 5 ("The") and 6 ("Then") are intact. [M]
+- No black frames at any cut; all 14 joins clean at +/-0.08s. [M][F]
+- Shot-to-shot visual consistency held in inspected frames: Harry's glasses,
+  black robe with thin red lining, white shirt, black tie; Draconia's braided
+  crown, emerald gown, sheer drapes, green heels. Note: consistency BETWEEN
+  shots was checked; fidelity AGAINST the locked reference images was not
+  re-verified here. [F][J]
+- The masked figure is visible on the floor at 63.0s before it matters at
+  84.8s, and in the window reflection from 22.6s, per the script's causality.
+  [F]
+- Suits of armor visible at 52-53s, before line 10 names them. [F]
+- Shot 12b (89.09-94.25s): mouth visibly opens/closes across line 15 in 6fps
+  face-crop frames; the strongest sync evidence in the episode. Her expression
+  reads somber/teary in inspected frames - that read is judgment, not a
+  viewer/listener verdict. [F][J]
+- Shot 10 reframe: the dark band is gone in inspected frames at 67.8-75.1s,
+  no visible crop damage. [F]
+- Line-14 insert (82.34-84.10s) shows hands and marks only, no faces; genuine
+  offscreen dialogue, not visible closed-mouth speech. Line 14 ends 84.10s;
+  silent shot 12a starts 84.79s. [M][F]
+- No clipping; true peak -3.4 dBTP. [M]
+
+=====================================================================
+4. DEFECTS - LOAD-BEARING
+=====================================================================
+D1. Shot 3 (13.58-22.58s): no visible motion for its full 9.0 seconds. Freeze
+    detection flags the entire shot at -55dB and again at the stricter -60dB
+    threshold; frames at 14.0s and 22.0s differ by at most 3/255 luma (mean
+    0.005/255), i.e. encoder noise; 1fps frames 14-22 and the full-res frame
+    at 16.0s are visually identical. Project records called this a "9s
+    animated still insert" - measured, it is a static frame: no pulse, no
+    camera drift, no faces, while lines 2 and 3 play. The script calls for
+    ice arrows hitting and a guest freezing mid-run. [M][F]
+D2. Music bed level. Measured mean levels in dialogue-free gaps: -47.5 dB
+    (21.75-23.15s), -49.5 dB (57.6-58.4s), -50.6 dB (85.1-85.8s), against a
+    full-file mean of -23.6 dB: roughly 24-27 dB below the full-file mean.
+    Audibility in real playback (phone speaker) was not verified by listening
+    in this review, and no listening check is documented in the project
+    record. The editorial concern: this story's curse is carried by the music
+    (line 9), so the bed's level is a story-carrying element, not decoration.
+    [M; audibility UNVERIFIED]
+D3. Opening silence: 0-1.69s measures as silence (mean -78.3 dB, max -51.1
+    dB); even the bed does not start at frame 0. The tail fades to -58.5 dB
+    mean by 93.5-94.2s, before the video ends. Editorial judgment: 1.7s of
+    dead air on the hook moment of a 94s microdrama. [M][J]
+D4. Shot 11a (76.38-80.34s): in 4fps frames 76.3-80.5 the red table slides
+    diagonally across the foreground with plates, glasses and cutlery
+    undisturbed, and the chandelier appears only as an enlarging shape at the
+    top of frame. Project ledger records this shot as source 1.0-3.0s retimed
+    to 3.959s (~2x slower). Judgment: the "flip the table as a shield" and
+    "chandelier drops into the ice" actions do not read. [F][L][J]
+D5. Line 14 ("You knew more than you said", 82.34-84.10s) has no face: it
+    plays over a hands/marks-only crop. The project ledger records why: the
+    shot-12a Pro lip-sync output showed no visible Harry mouth movement, so
+    the line was moved to voice-over. That resolves the closed-mouth defect
+    but leaves the script's emotional pivot (Harry hurt and suspicious,
+    looking at her) with nobody on screen saying it. [M][F][L]
+D6. Shot 6 (36.63-45.63s): in 3fps frames 37.2-43.3 both characters stand
+    nearly motionless looking down at the floor mark through lines 7-8. Faces
+    too small in frame to read expression or sync. Judgment: the scene goes
+    dramatically inert at the moment Draconia is scripted to lose her
+    composure. [F][J]
+D7. Lip-sync verification/visibility: Pro lip-sync was applied to shots 4, 6
+    and 10, where faces are too small or turned for mouth movement to be
+    visible (frames inspected at 23-25.4s, 37-43s, 67.8-75.1s). Line 1
+    (7.18-11.45s) runs 4.3s; Draconia turns away about 1s in (turn complete by
+    ~8.2s in strip frames), so most of the opening line plays over her back.
+    Line 4 plays with Harry's face a few pixels tall, turned away. Visible
+    mouth movement is confirmed only on shot 12b. Pro lip-sync spend per
+    project ledger: 2,636 credits total - 250 validation on shot 12b plus
+    2,386 across the other seven face-visible dialogue beats (shots 2, 4, 5,
+    6, 7, 10, 12a); shot 12a's output then failed the mouth-movement check
+    and was replaced by voice-over. [F][L]
+D8. Emotional/natural audio - an explicit requirement - was not verified by
+    listening before delivery; the project record itself states
+    human-listening naturalness remained unverified. Delivery copy said the
+    checks were finished; the record shows sampled-frame review plus acoustic
+    statistics, and no continuous watch or listen. [L]
+
+=====================================================================
+5. DEFECTS - VISIBLE QUALITY
+=====================================================================
+D9. Shot 5 (30.58-36.63s): in 3fps frames 30.9-36.7 the arrow volley is one
+    blue arrow graphic that sits in the same upper-left position (30.9-31.9s),
+    vanishes (~32.2-33.6s), and reappears in the same place (34.2-36.2s); no
+    frame shows an arrow striking anything, though lines 5-6 describe arrows
+    landing on the beat. Project ledger records this shot as a slowed/upscaled
+    480p local clip after the generated 720p asset was rejected. [F][L]
+D10. Shot 1 (0-7.08s): project ledger records the shipped shot as the
+    production clip's 3.2-7.0s section retimed to 7.084s (~1.9x slower) after
+    the full clip failed QA (non-monotonic size/position). Judgment from 1fps
+    frames 0-6: the entrance walk plays at visibly reduced speed, compounding
+    the silent opening. [L][F][J]
+D11. Shot 8 (52.08-60.08s): ledger records the source as a 312x554 lower-body
+    crop. Frames: 52.1s opens with a foreground trouser leg and dress hem
+    filling the right edge; the shot is dominated by a soft, tight trolley
+    closeup during line 10; the scripted trolley-kick-into-armor never occurs
+    on screen - at 65.5s (shot 9) the trolley is already beside the armor,
+    the armor's hand resting on its handle. [F][L]
+D12. Frozen guest (shot 3), full-res frame 16.0s: the figure is
+    semi-transparent - bare legs show through the dress - with waxy, melted
+    hands. Judgment: reads as a generation artifact rather than a person
+    frozen in ice. [F][J]
+D13. Masked figure in the window (shot 4): frames 22.9-25.7 (4fps) and 23.0s
+    full-res show a flat blue silhouette holding one pose; the script says it
+    mirrors the dancers' steps; no mirroring motion is visible in inspected
+    frames. [F]
+D14. Shot 7 (45.63-52.08s): frames 45.9-50.1 (4fps) show the silver "strings"
+    as flat staff-line graphics crossing the lower frame; no frame shows a
+    string wrapping Harry's wrist or Draconia snapping one with her heel (both
+    scripted). [F]
+D15. Full-res frame 12.0s (shot 2 tail): a blond male extra at frame right
+    looks directly into the lens, smiling. [F]
+D16. Upscaling: ledger records all Pro lip-sync beats (2, 4, 5, 6, 7, 10,
+    12a, 12b) returned at 570x1024 and locally conformed to 720x1280 - 8 of
+    14 beats upscaled. Judgment: closeups read softer than native; not
+    quantified here. [L][J]
+
+=====================================================================
+6. DEFECTS - MINOR
+=====================================================================
+D17. Loudness mismatch: project QA recorded -20.7 LUFS integrated; the
+    delivered file measures -17.7 LUFS (loudnorm) here. The -3.4 dBTP peak
+    matches. The measurement chain difference is not reconciled; treat the
+    LUFS figure as uncertain, not as proof of error. [M][L]
+D18. Shot 6: a static dark out-of-focus shape sits bottom-center for the full
+    9s (visible in all inspected frames 37-45s); judgment: reads as the top of
+    a foreground head/shoulders that never moves. [F][J]
+D19. Shot 9, full-res 65.5s: Harry's expression reads as an odd grin during a
+    danger beat; his raised lead hand is empty in a moment where the wand
+    (visible in shot 7 frames) would be expected. [F][J]
+D20. Lines 5-6 reference the orchestra's "second beat". Whether any musical
+    beat cue is audible in playback is unverified by listening; the bed's
+    measured level in the nearest dialogue-free gaps is -47.5 to -49.5 dB.
+    [M; audibility UNVERIFIED]
+D21. Attribution: the project ledger records the music bed as CC-BY 4.0 and
+    notes that attribution is mandatory [L]. No credit or end card appears in
+    inspected frames of the video, including the 89.1-94.2s tail [F]. Whether
+    attribution exists outside the asset (e.g. file descriptions), and
+    therefore whether the license terms are actually satisfied, is not
+    determined here - the observation is only that the video itself carries
+    no credit.
+
+=====================================================================
+7. CLAIMED vs MEASURED / OBSERVED
+=====================================================================
+- "9s animated still insert" [L] -> freeze detected for the full 9.0s at -55dB
+  and -60dB thresholds; first/last-second frames differ by at most 3/255
+  luma (encoder noise) [M]; 1fps frames visually identical [F].
+- "Low-volume music bed" [L] -> measured -47.5 to -50.6 dB mean in
+  dialogue-free gaps, roughly 24-27 dB below the full-file mean [M]. Whether
+  that level is audible in real playback is not a measurement made here or
+  documented in the project record; the level itself is the fact.
+- "-20.7 LUFS integrated" [L] -> -17.7 LUFS measured on the delivered file
+  [M]; measurement chains not reconciled; peak figure matches.
+- "Visual fixes and dialogue-timing checks are finished" [L] -> the record
+  shows sampled-frame review (8-18 frames per shot) and no continuous
+  full-speed watch, no listening pass. The sampling used missed the motion
+  defects that shipped: the repeated static arrow (shot 5), the slowed table
+  (shot 11a) and the retimed entrance (shot 1). [L][F]
+- Lip-sync "PASS with tradeoffs" [L] -> visible mouth movement confirmed here
+  only on shot 12b [F]; shots 4/6/10 too wide to verify [F]; shot 12a failed
+  and was worked around [L].
+
+=====================================================================
+8. WHAT WENT WRONG (facts; motives not asserted)
+=====================================================================
+R1. Four of the 14 beats shipped as zero-credit local patches after their
+    generated 720p assets were rejected by project QA: shots 1, 3, 5, 11a
+    (assembly plan rejected_assets; two retimed trims, one static frame, one
+    480p upscale). "4 of 14" refers to these rejected-and-patched assets; the
+    other defects in this file concern shots that shipped as generated assets,
+    the mix, or delivery/process - they are additional findings, not extra
+    rejected assets. The ledger records 720p production at 48 credits/second
+    at build time. The decision record does not state why regeneration was
+    not used for these four; what is established is the outcome: the four
+    weakest assets shipped as patches. [L][M][F]
+R2. Lip-sync allocation: Pro sync was applied to wide shots where mouths are
+    not visible at delivery size (4, 6, 10), while the close emotional shot
+    12a failed its mouth check and shipped as voice-over instead. [F][L]
+R3. Verification was sample-based: the ledger's own language is "dense
+    12-sample review", "16-sample review", "18-frame review" and contact
+    sheets; no full-speed watch of the assembled 94s and no listening pass is
+    recorded before delivery. The sampling used missed every motion-class
+    defect that shipped (the frozen 9s shot, the retimed shots, the repeated
+    arrow graphic). [L]
+R4. Mix discipline: the bed measured roughly 24-27 dB below the full-file
+    mean in dialogue-free gaps, starts 1.7s after frame 0 and fades before
+    the end; no listening or phone-speaker check is documented in the record.
+    [M][L]
+R5. Claim discipline: three statement-vs-measurement mismatches above (still
+    vs animated, LUFS, "checks finished") reached delivery. The practical
+    damage is that the delivered product arrived with overstated verification,
+    so the user found the defects instead of the process. [M][L]
+R6. Engineering hygiene [L]: the pytest suite never ran (dependency missing);
+    3 dialogue-intent warnings from script validation unresolved; 13 patch
+    versions (v31-v43) stacked local fixes on rejected generations.
+
+=====================================================================
+9. REPAIR vs REPLACE
+=====================================================================
+Zero-credit repairs (local; presentation-only, preserve the intended shots and
+actions; none started):
+- Audio remix: raise the music bed (order +10-14 dB with ducking under
+  dialogue), start music at 0.0s or trim the first 1.7s, extend the tail fade
+  past 94.2s. Verify by listening on an actual phone speaker - the check that
+  is not documented anywhere in this project. Add the CC-BY attribution the
+  ledger says is mandatory.
+- Re-time shot 1 toward natural walking speed (tightens the open to ~3.5-4s).
+- Shorten shot 3 to <=3s and use it as a brief insert, ending the 9s dead zone.
+- Re-time shot 11a's table motion toward natural speed and/or reframe so the
+  table reads as a flip rather than a glide.
+- Optional sharpening/color pass on the upscaled beats.
+
+Regeneration candidates (no spend during diagnosis; decisions after this
+review; no money commitment is made or implied by listing these):
+- A close shot with working lip-sync for line 14 (Harry on camera).
+- Shot 3: real motion of the guest freezing with marks spreading.
+- Shot 6: a two-shot with actual staging movement for lines 7-8.
+- Shot 8: coverage where the trolley actually strikes the armor.
+- Shot 5: a real arrow volley at 720p.
+Credit figures are UNVERIFIED planning estimates only, extrapolated from
+ledger-recorded build-time rates (480p 24 cr/s, 720p 48 cr/s; Pro lip-sync per
+the recorded 2,636-credit batch) - roughly 1.5k-2.5k credits for the five
+items; current Magic Hour pricing was not checked.
+
+Process fixes before any E02:
+- Delivery gate requires one full-speed continuous watch and one human listen;
+  delivery copy must name the exact checks performed.
+- Lip-sync only shots where the face is readable at delivery size.
+- Music level checked by listening at phone-speaker volume; music from frame 0.
+- Run the test suite in the build environment; clear script-validation
+  warnings before render.
+
+=====================================================================
+10. EVIDENCE GAPS (still unverified, stated plainly)
+=====================================================================
+- Emotional naturalness of the voice performances: not verifiable without
+  human listening. Transcript, wording, order, timing and loudness confirmed;
+  expression is not. No listening verdict is documented in the project record
+  or performed in this review.
+- Phoneme-level lip-sync on shots 2, 4, 6, 7 and 10: faces too small in frame
+  to verify. Only presence/absence of mouth movement could be confirmed, and
+  only on closeups (shot 12b pass; shot 12a failure is the ledger's finding,
+  not re-derived here from the intermediate asset).
+- Identity fidelity against the locked character reference images: shots were
+  checked against each other, not against the references.
+- Voice-timbre consistency between the two characters across all 15 lines.
+- Audibility of the music bed and of any beat cue in real playback: measured
+  levels are quoted; no listening verdict is documented in the project record
+  or performed in this review.
+
+
+=====================================================================
+11. DATED ADDENDUM - 2026-10-25, 22:03 IST - REV 4
+=====================================================================
+The original rev3 audit above is preserved byte-for-byte as historical
+findings. This addendum records later failures, corrections and research.
+The original episode and later tests remain REJECTED. Production is stopped.
+No paid generation, GPU job, account creation, model installation or reroll
+was performed for this research/addendum.
+
+ADDITIONAL PROOF CLASSES
+[S] Source code or exact request/receipt file read in this review.
+[V] New sampled-video pixel inspection in this review, not full playback.
+[H] Historical audit/review/reconciliation record, not independently rerun.
+[W] Vendor/repository documentation, not local inference or quality proof.
+[T] Code-hardening worker's recorded test result. Selected changed source
+    corroborated here; tests not independently rerun by this researcher.
+[P] Proposed engineering/research path, not an implemented quality fix.
+
+Method for this addendum:
+- Downloaded original FAILURE.TXT; both rejected test videos; both raw
+  reference/request/receipt archives; original and hardened source ZIPs;
+  VACE failure evidence; original H3 graph/runtime and comparison report.
+- Read exact prompts, media/job/reconciliation records and source paths.
+- Inspected actual sampled pixels, plus temporal sheets: argument every3s,
+  pilot every1s. These reveal changes but do not certify all frames.
+- ffprobe confirms argument33.600s,720x1280,24fps,video+audio. Pilot is a
+  silent review asset. No full-speed continuous watch or emotional listen
+  was performed. No voice/phoneme/performance verdict is inferred.
+
+=====================================================================
+12. CORRECTIONS TO THE HISTORICAL AUDIT
+=====================================================================
+C1. The section9 five-shot/1.5k-2.5k repair estimate is WITHDRAWN as a current
+    plan. It was incomplete and used unverified old rates. Many missing
+    actions, close emotional coverage and continuity problems remain.
+    Retiming/cropping shortens or conceals a defect; it does not create the
+    required action. Do not revive that estimate as an approved spend cap.
+C2. Audit shot numbering is not always original-script numbering. Existing
+    repair notes place wrist-string/heel action at original shot8 and trolley
+    impact at original shot9. Future checks must bind original beat/action
+    and dialogue IDs, not use a bare audit shot number as script truth. [H]
+C3. A separate audio remix/repaired soundtrack candidate is not a repaired
+    video, accepted dramatic performance or proof of phone-speaker audibility.
+    Historical local audio-repair tests are separate from today's133 tests.
+C4. Original supplied H3 files DO exist in the full source archive. Their
+    absence from the six-file export did not mean the original graph/runtime
+    were missing globally. The default runtime's Blackwell requirement also
+    invalidates an unchanged-workflow H100 forecast. See section16. [S]
+
+=====================================================================
+13. LATER REJECTED TESTS: EXACT FAILURE, CAUSE AND LIMIT
+=====================================================================
+F22. 33.6s recognition/argument test: costume and framing drift. [S][V][H]
+Evidence: four motion requests, four sync requests, generation-jobs.json,
+sync-jobs.json, REVIEW-NOTES.md, credit-reconciliation.json and delivered
+review MP4. The motion prompts explicitly request the same face, hair,
+costume and room, off-camera mutual gaze, no face morphing and single-face
+coverage. Sampled temporal pixels show the male plain tie/waistcoat becoming
+striped tie/sweater neckline, repeated closer framing, near-lens gaze and
+changing background geometry. The initial arrow remnant also persists in
+reported male openings. The user rejected the result; it is not repaired E01.
+Root cause supported by evidence: requested consistency was not enforced by
+the selected one-image silent-I2V route. A separate mouth-sync pass addresses
+a different variable and cannot certify camera, wardrobe or eyelines.
+Limit: sampled mouth changes are not phoneme-level sync or emotional acting
+proof. Background variation is observed; its exact model-internal cause is
+unknown. No blanket conclusion about every vendor/model follows.
+Proposed fix: explicit reference/state contracts, image-view selection and a
+materially different tested control route. More negative words alone are not
+an evidence-backed fix. Require actual media acceptance, not prompt presence.
+Cost record:1728 generation+808 standard sync=2536 existing credits, historical
+balance143325->140789. No reroll/top-up per records. Not fresh billing proof.
+
+F23. Stronger continuity pilot still failed camera/eyeline control. [S][V][H]
+Evidence: pilot1/2/3-request.json, PILOT-FAILED.md, jobs/reconciliation and
+silent review MP4. Female prompt says LOCKED STATIC CAMERA, ZERO zoom,
+NEVER into camera; male prompt adds exact plain tie/buttoned waistcoat and
+no sweater. Sampled pixels show push-in/framing change, near-lens gaze and
+performances varying in intensity. This is not a coherent accepted exchange.
+Root cause: prose constraints did not become hard camera/gaze controls in the
+chosen route. The tighter prompt is an empirical counterexample to claiming
+that negative prompting alone solved the earlier failure.
+Action pilot: displacement, hand connection and an ice effect are visible in
+samples. Exact two sideways steps, clean hand anatomy and safe floor impact
+still require denser/full-speed review. These are UNVERIFIED, not accepted.
+Cost record:912 motion+50 net reference=962,139827 final balance per historical
+reconciliation. Initial reference-jobs lists two50 charges; notes say male
+reference moderation failed and refunded. Net arithmetic depends on that
+refund, not independently checked against current provider billing here.
+No sync, episode batch or reroll followed the failed gate.
+
+F24. Free VACE test failed before any model-quality result. [H][S]
+Recorded environment: free TeslaT4,15360MiB,host12.67GB; Python3.13.16,
+torch2.11.0+cu130,transformers5.20.2,diffusers0.42.0. Model revision recorded:
+Wan-AI/Wan2.1-VACE-1.3B-diffusers ec4d2cb062b548996b179d493fdd05340de702a1.
+One seed42,49frames,480x832,25steps planned, existing table-scene reference.
+This was reference+mask, NOT a captured pose/depth-controlled action trial.
+It started18:48,ended18:53 before synthesis. At prompt embedding:
+  y = encoder(...).last_hidden_state
+  n = int(x.attention_mask.sum()); y[:, n:] = 0
+RuntimeError: Inplace update to inference tensor outside InferenceMode is
+not allowed. This is test-code/PyTorch-mode compatibility, NOT evidence of
+VRAM failure or inability of VACE to perform a table flip. No playable video.
+Potential code remedy: use a correct inference-mode boundary or normal cloned
+tensor before mutation, pinned to a tested environment. This is a hypothesis,
+not a tested patch or authorization for another run. Full downstream synthesis
+and quality remain untested. Cleanup record confirms disconnect/delete19:03,
+ReconnectT4 UI, no retry or paid fallback.
+
+F25. Paid voice submission timeout remains unresolved. [H]
+Historical records say one ElevenLabs scene5 submission may have charged,
+but the take was not recovered; history API access returned401/permission
+issues and browser sign-in did not persist. Seven saved takes remain saved;
+Part2 incomplete. No fresh login, history query or billing recovery attempted
+in this addendum. A timeout is UNKNOWN, not failed/free and not permission to
+repeat the POST. Exact historical charge/result needs provider reconciliation.
+
+=====================================================================
+14. SOURCE-LEVEL FAILURES AND CURRENT HARDENING STATUS
+=====================================================================
+F26. Validation-to-encoding mismatch in historical custom assembler. [S]
+Original assemble_v43_final_v3.py reads/approves assets.json, then encodes
+hardcoded PRO/PROD sources and sorted CONFORMED.glob('*.mp4'). Thus approved
+bytes and encoded bytes can differ, including stale workspace leftovers.
+Changed release: custom path explicitly raises before execution; supported
+run_pipeline.py assembly uses an exact ordered input map. [S][T]
+Limit: retirement prevents that supported workflow mistake; it cannot stop a
+developer writing another bypass or prove an old delivered file is repaired.
+
+F27. Review receipt not bound to current semantic requirements. [S]
+Original receipt stores asset hash/reviewer/time/check booleans. Changing
+required action/timing/beat could leave a previously approved asset hash valid.
+Changed release adds requirement/beat binding, validates times/coverage,
+rejects duplicate beats/receipts and out-of-beat lines. [S][T]
+Limit: even a perfectly bound declaration cannot prove anyone actually watched
+or that a performance is convincing. Semantic review remains necessary.
+
+F28. Independent assembly/submission paths bypassed the new gate. [S][T]
+Historical generic stitch, production/stage assembly and one-off submitters
+could execute outside the main acceptance path. Hardened release retires the
+identified unsafe paths before network/key reads, preserving history. This is
+not an exhaustive security boundary against arbitrary edited source code.
+
+F29. Generic POST retry and restart-unsafe spending state. [S]
+Original clients/magichour.py wraps requests.post in call_with_retries.
+Original governor.py keeps batch/episode totals in memory; a CSV substring hit
+returns complete. This can duplicate uncertain operations, forget reservations
+on restart and conflate a ledger text match with confirmed provider completion.
+Changed release retires legacy live entry points; newer durable adapter adds
+boundary dependency checks, shared batch/voice billing reservations, resume
+identity, illegal reset rejection, empty-output hold and redirect refusal.
+Unknown jobs retain reservations; legacy state needs reconciliation. [T]
+Limit: not recovery of historical voice timeout. A new ledger cannot discover
+spend elsewhere; cross-ledger/account reconciliation remains operational work.
+No code token/flag can create the user's authority to spend.
+
+F30. Bare pixel_checked=True accepted as media evidence. [S][T]
+Changed DramaSaga media_review binds exact output bytes and compiled shot input
+to named, timezone-aware, nonfuture review and explicit action/identity/
+wardrobe/camera/eyeline/prop/speaker/expression/lip checks. Unknown/false blocks.
+Limit: a declaration is still a declaration, not proof of full playback/listen.
+
+F31. Mechanical-check errors and assembly truncation risk. [T]
+Worker records failed FFmpeg commands previously ignored; silent opening with
+no end event, missing episode audio/black intervals and duration mismatches
+needed fail-closed handling. Updated supported paths add detector timeouts,
+error stops, geometry/duration checks, fresh outputs, aliases/path checks and
+output locks. These detect signal/structural issues, not emotion, action
+semantics, voice identity, phoneme accuracy or actual music audibility.
+
+HARDENING EVIDENCE, PRECISE SCOPE
+Code worker report: baseline23E01+75DramaSaga reproduced; final44+89=133 tests,
+35 added. Mocks and local synthetic FFmpeg media only, no generation/paid API.
+This researcher downloaded both patched ZIPs, read recorded test logs and
+selected changed source; did NOT rerun the suite independently. [S][T]
+Seven separate repair_tools tests could not import pyloudnorm in this work
+environment. They are NOT included in133 passing tests. No dependency installed.
+Original Drive source archives untouched. New versioned source is not a GitHub
+deployment, full pipeline acceptance or repaired-film delivery.
+
+=====================================================================
+15. OPEN SOURCE RESEARCH MATCHED TO FAILURE, NOT A REPO CATALOG
+=====================================================================
+R7. Planning/state: ViMax reference selector picks camera-appropriate views
+and prior scene references; Jellyfish action-beat records can represent
+before/contact/after; Toonflow/VideoClaw continuity checklists cover wardrobe,
+prop hands/count, position/facing/eyeline, lighting and endpoints. [W][S][P]
+Apply: encode the state contract and reference versions, then compare actual
+pixels at boundaries. Limit: a text reviewer does not prove generated physics.
+ViMax MIT; Jellyfish Apache2; current Toonflow MIT with historical-license
+exceptions. Pin exact versions/dependencies before reuse. Not executed.
+
+R8. Action control: VACE references/masks/structure or Wan Animate source
+pose/face/motion references target missing action more directly than prose.
+Apply: owned blockout/performance with verifiable action phases, then one
+bounded test only if separately authorized. Limit: hands/contact/anatomy and
+causal consequences still need video review. VACE trial already failed before
+synthesis, so this is not a ready free route. Wan's24GBTI2V5B number must not
+be relabeled as Animate14B hardware proof. Extra model licenses differ. [W][P]
+
+R9. Audio-led performance: LongCat Avatar1.5 and MultiTalk condition on audio
+streams plus reference rather than only patching mouths. Potential fit for a
+shared dialogue timeline. Limit: not whole-drama consistency, physical action
+or human-quality acting proof; multi-GPU examples and exact runtime must be
+budgeted. LongCat weights MIT per card; MultiTalk Apache2 source, dependencies
+separate. No model inference in this research. [W][P]
+
+R10. Lip-only tools: LatentSync8GBv1.5/18GBv1.6 minimum documented inference;
+MuseTalk256x256face-region, imperfect identity details and jitter documented.
+Can test readable closeups only after action/continuity passes. Neither makes
+hidden/wide mouths readable or supplies missing expression/action. [W][P]
+
+R11. QA: WhisperX can catch word-time/coverage issues, not emotion/timbre or
+phoneme-to-mouth truth. Dictionary gaps, overlapping speech and diarization
+limits must stay visible. Model licenses differ from repository license.
+Restoration/upscaling cannot make absent actions real and may invent detail.
+No quality score or sharper frame is a substitute for acceptance. [W][P]
+
+FULL NEW RESEARCH: Xiaoyunque_AI_Microdrama_Research.txt contains workflow,
+India access, live listed pricing conditions, privacy/rights, alternative
+routes, repository source findings and unresolved questions. All listed routes
+are research choices, not authorization to spend/install/restart production.
+
+=====================================================================
+16. ORIGINAL H3 CONTROL PATH: IMPORTANT CORRECTION
+=====================================================================
+Read source r2v_v1.json and modal_h3.py. Graph uses MiniMaxH3ReferenceToVideo,
+audio/videoVAEs and25steps. Original wrapper adds fixed-audio zero-noise-mask
+and timed visual guides. This differs from independent silent one-image I2V
+clips plus mouth patches. It is a credible control difference, NOT a tested
+quality winner or reason to rerun paid generation now. [S][W]
+The supplied default text encoder is NVFP4; runtime explicitly selects
+BlackwellRTXPRO6000/B200 and ComfyUIv0.36.0/custom nodes. Previous H100 season
+forecast does not apply to the unchanged setup. Source comments' speed/price
+figures are not a current quote. Compatibility changes require fresh tests.
+Model license, install restriction, deployment/storage and source-code reuse
+rights remain unresolved for a particular execution plan. The H3 weight
+license has territorial and hosted-use terms; do not infer provider rights
+from a general website or silently substitute a region. No execution here.
+
+=====================================================================
+17. WHAT REMAINS AND WHAT WOULD COUNT AS PROGRESS
+=====================================================================
+- No accepted E01 or season, no proved full runtime or current all-in budget.
+- Preserve scripts/audio/rejected assets/requests rather than delete evidence.
+- Supported code gates stop predictable misuse; they do not generate a fix.
+- Before any new execution, choose a materially different, compatible,
+  rights-cleared route; verify current provider/history access and billing;
+  settle exact execution authority and cap. No repeated ambiguous POST.
+- A future pilot should measure accepted seconds and all rejected takes,
+  manual-edit time, elapsed time, transcript/speaker errors, wardrobe/prop/
+  identity/eyeline/action violations, full playback and listening.
+- A partial action or moving mouth does not pass. A short accepted test does
+  not prove ten/fifty episodes. Unknown review fields remain unknown.
+
+=====================================================================
+18. SOURCE LINKS AND VERSIONED EVIDENCE
+=====================================================================
+Historical FAILURE.TXT, now updated in place with this preserved addendum:
+[private-project-source]
+33.6s rejected test:
+[private-project-source]
+Its references/requests/receipts:
+[private-project-source]
+Silent failed continuity pilot:
+[private-project-source]
+Pilot raws/receipts:
+[private-project-source]
+VACE exact failure and cleanup:
+[private-project-source]
+Original H3 comparison:
+[private-project-source]
+Original graph/runtime:
+[private-project-source]
+[private-project-source]
+Hardened versioned source folder:
+[private-project-source]
+E01 hardened ZIP:
+[private-project-source]
+DramaSaga hardened ZIP:
+[private-project-source]
+Research log:
+[private-project-source]
+
+Primary open-source/control sources fetched in this research:
+https://github.com/HKUDS/ViMax
+https://github.com/HKUDS/ViMax/blob/main/agents/reference_image_selector.py
+https://github.com/Forget-C/Jellyfish
+https://github.com/Forget-C/Jellyfish/blob/main/backend/app/services/studio/action_beats.py
+https://github.com/HBAI-Ltd/Toonflow-app
+https://github.com/HBAI-Ltd/Toonflow-app/blob/master/packages/teams/storyboardTeam/knowledge/continuity.md
+https://github.com/HITsz-TMG/VideoClaw/blob/main/video-claw/video-claw/backend/prompts/storyboard/staging_continuity_zh.txt
+https://github.com/ali-vilab/VACE/tree/main
+https://github.com/ali-vilab/VACE/blob/main/UserGuide.md
+https://github.com/Wan-Video/Wan2.2
+https://github.com/Wan-Video/Wan2.2/blob/main/wan/modules/animate/preprocess/UserGuider.md
+https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5
+https://github.com/meituan-longcat/longcat-video
+https://github.com/MeiGen-AI/MultiTalk
+https://github.com/bytedance/latentsync
+https://github.com/TMElyralab/MuseTalk/blob/main/README.md
+https://github.com/m-bain/whisperX
+https://github.com/m-bain/whisperX/issues/962
+https://docs.comfy.org/tutorials/video/minimax/minimax-h3-native
+https://docs.comfy.org/built-in-nodes/MiniMaxH3AddGuide
+https://docs.comfy.org/built-in-nodes/MiniMaxH3ReferenceToVideo
+https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE

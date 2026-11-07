@@ -1,0 +1,15 @@
+{
+  "series_id": "winter_letters",
+  "season": 1,
+  "character_count": 2,
+  "episodes_per_season": 10,
+  "genres": ["drama", "mystery"],
+  "setting": "A modern coastal city in winter. A postal clerk finds letters dated tomorrow. Keep the setting grounded, with no futuristic devices.",
+  "language": "en-IN",
+  "target_season_seconds": 900,
+  "max_episode_seconds": 180,
+  "characters": [
+    {"id": "clerk", "name": "Clerk", "description": "A careful young postal clerk in a navy coat", "image": {"mode": "upload", "path": "refs/clerk.png"}},
+    {"id": "neighbor", "name": "Neighbor", "description": "An impatient neighbor in a brown jacket", "image": {"mode": "generate", "model": "nano-banana-2.1", "prompt": "Character identity sheet, adult neighbor in a brown jacket, neutral background, front and three-quarter view"}}
+  ]
+}

@@ -1,0 +1,256 @@
+{
+ "style": "Cinematic photorealistic live-action drama, glossy vertical short-drama look, 9:16 portrait framing, shallow depth of field, high contrast, warm natural skin tones, consistent faces and wardrobe",
+ "aspect": "9:16",
+ "scenes": {
+  "street": {
+   "set": "a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade",
+   "plate": "street-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a narrow poor city street at dusk in heavy rain, wet red bricks, puddles, flickering neon shop signs reflecting on the ground, cardboard boxes by a wall, a warm faded flashback colour grade. Empty, no people. No text, no watermark."
+  },
+  "penthouse": {
+   "set": "a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves",
+   "plate": "penthouse-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a CEO penthouse office at night: floor-to-ceiling windows over glittering city lights, a glossy black desk with one warm desk lamp, dark wood shelves. Empty, no people. No text, no watermark."
+  },
+  "mansion": {
+   "set": "a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall",
+   "plate": "mansion-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a luxurious mansion living room at night: cream sofas, a crystal chandelier, a marble coffee table with a glass of red wine, a large oil portrait of a kind grey-haired man on the wall. Empty, no people. No text, no watermark."
+  },
+  "office": {
+   "set": "a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows",
+   "plate": "office-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a bright executive office floor by day: open-plan white desks with monitors, a glass-walled CEO office at the back, steel elevator doors on the left wall, city view windows. Empty, no people. No text, no watermark."
+  },
+  "boardroom": {
+   "set": "a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors",
+   "plate": "boardroom-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a grand corporate conference room in afternoon light: a long polished mahogany table, black leather chairs, a podium with a microphone at the far end, floor-to-ceiling skyline windows, heavy double doors. Empty, no people. No text, no watermark."
+  },
+  "airstrip": {
+   "set": "a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing",
+   "plate": "airstrip-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a private airstrip at dusk under an orange sky: a small white private jet with its stairs down, a black luxury sedan parked beside it on the tarmac, wind blowing. Empty, no people. No text, no watermark."
+  },
+  "rooftop": {
+   "set": "the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below",
+   "plate": "rooftop-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: the rooftop terrace of a glass skyscraper at dawn: a glass railing, a pink-gold sunrise sky, the city spread out below. Empty, no people. No text, no watermark."
+  },
+  "study": {
+   "set": "a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window",
+   "plate": "study-plate",
+   "plate_prompt": "Photorealistic cinematic photograph, 9:16 vertical: a dark wood-panelled private study at night: a crackling fireplace, a heavy antique desk, leather books, an old European city with church spires through the window. Empty, no people. No text, no watermark."
+  }
+ },
+ "references": {
+  "masters": {
+   "mark-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A neat 30-year-old man with short brown hair and thin rectangular glasses, a fitted grey suit, holding a thin manila folder, an efficient loyal face. No captions, no watermark.",
+   "vivian-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. An elegant 48-year-old woman with a sleek platinum-blonde bob, red lipstick, a pearl necklace and a white tailored suit, a sweet smile with cold eyes. No captions, no watermark.",
+   "sasha-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A 28-year-old woman with a glossy black bob, a cream silk blouse and red nails, a smirking gossipy face. No captions, no watermark.",
+   "leo-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A pale thin 14-year-old boy with short dark-brown hair and brown eyes, an oversized grey hoodie, a white hospital wristband, a sweet tired face. No captions, no watermark.",
+   "grandfather-master": "Photorealistic cinematic portrait, 9:16 vertical, exactly one person, waist-up, front-facing, neutral expression, mouth closed, plain soft grey studio background. A stern 75-year-old man with thick white hair, ice-grey eyes, a black three-piece suit, both hands on a silver-headed cane, a cold powerful face. No captions, no watermark."
+  },
+  "frames": {
+   "chloe-dress": {
+    "scene": null,
+    "refs": [
+     "chloe-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical waist-up portrait of exactly this same woman, same face, now with her dark-brown hair down and brushed, wearing a simple but neat navy knee-length dress, plain soft grey studio background, neutral expression, mouth closed. No captions, no watermark."
+   },
+   "young-chloe": {
+    "scene": null,
+    "refs": [
+     "chloe-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical waist-up portrait of this same woman as a 14-year-old girl: same brown eyes and face shape, younger and rounder, dark hair in two braids, a white school blouse and plaid skirt, plain soft grey studio background, mouth closed. No captions, no watermark."
+   },
+   "young-ethan": {
+    "scene": null,
+    "refs": [
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical waist-up portrait of this same man as a thin 17-year-old boy: same grey eyes and face shape, younger, messy wet black hair, a torn dirty dark hoodie, a bruise on his cheek, plain soft grey studio background, mouth closed. No captions, no watermark."
+   },
+   "e2-boy": {
+    "scene": "street",
+    "refs": [
+     "young-ethan"
+    ],
+    "prompt": "Photorealistic 9:16 vertical wide shot: the thin bruised teenage boy sitting curled against the wet brick wall in the rain, arms around his knees, soaked, head down. No captions, no watermark."
+   },
+   "e2-girl": {
+    "scene": "street",
+    "refs": [
+     "young-chloe",
+     "young-ethan"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: the teenage girl kneeling in the rain under a yellow umbrella, holding out an open lunch box to the bruised teenage boy sitting against the brick wall, both faces visible, mouths closed. No captions, no watermark."
+   },
+   "e2-ethan": {
+    "scene": "penthouse",
+    "refs": [
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Ethan standing by the night window, chest-up, looking down at the faded red string bracelet on his left wrist below his silver watch, mouth closed. No captions, no watermark."
+   },
+   "e2-mark": {
+    "scene": "penthouse",
+    "refs": [
+     "mark-master",
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Mark standing in front of the desk handing a thin manila folder to Ethan, Mark facing camera and about to speak, Ethan in profile, mouths closed. No captions, no watermark."
+   },
+   "e2-vivian": {
+    "scene": "mansion",
+    "refs": [
+     "vivian-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Vivian in an ivory silk robe reclining on the cream sofa, a phone to her ear and a glass of red wine in her hand, the oil portrait behind her, a slow cold smile, mouth closed. No captions, no watermark."
+   },
+   "e3-elevator": {
+    "scene": "office",
+    "refs": [
+     "chloe-master",
+     "mark-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe in her grey janitor uniform stepping out of the open steel elevator doors, surprised, and Mark waiting in front of her holding a folder, mouths closed. No captions, no watermark."
+   },
+   "e3-sasha": {
+    "scene": "office",
+    "refs": [
+     "sasha-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Sasha leaning over her desk partition, smirking sideways at someone, gossiping, mouth closed. No captions, no watermark."
+   },
+   "e3-work": {
+    "scene": "office",
+    "refs": [
+     "chloe-dress",
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe in her neat navy dress seated at a white desk, focused, correcting a report with a red pen; in the background behind the glass wall Ethan watches her with a faint smile, mouths closed. No captions, no watermark."
+   },
+   "e3-vivian": {
+    "scene": "office",
+    "refs": [
+     "vivian-master",
+     "peterson-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Vivian in her white suit and pearls just out of the elevator, leaning toward Peterson beside her and whispering, her eyes narrowed at someone off-screen, mouths closed. No captions, no watermark."
+   },
+   "e3-podium": {
+    "scene": "boardroom",
+    "refs": [
+     "peterson-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Peterson standing smugly at the podium in front of the board table, one hand gesturing, board members in suits seated along the table, mouth closed. No captions, no watermark."
+   },
+   "e3-door": {
+    "scene": "boardroom",
+    "refs": [
+     "chloe-dress"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe in her neat navy dress stepping through the heavy double doors carrying a small silver tray with one cup of coffee, nervous, mouth closed. No captions, no watermark."
+   },
+   "e3-ethan-chair": {
+    "scene": "boardroom",
+    "refs": [
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Ethan leaning back in the black leather chair at the head of the mahogany table, absolute authority, cold calm eyes, mouth closed. No captions, no watermark."
+   },
+   "e4-together": {
+    "scene": "boardroom",
+    "refs": [
+     "ethan-master",
+     "chloe-dress"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Ethan standing beside Chloe at the head of the table, his hand resting gently on her shoulder, the faded red string visible on his wrist, both facing the board, Chloe trembling, mouths closed. No captions, no watermark."
+   },
+   "e4-chloe": {
+    "scene": "boardroom",
+    "refs": [
+     "chloe-dress"
+    ],
+    "prompt": "Photorealistic 9:16 vertical close-up: Chloe looking up in shock and dawning recognition, eyes wet, lips slightly parted, a man's hand with a faded red string bracelet resting on her shoulder. No captions, no watermark."
+   },
+   "e4-knees": {
+    "scene": "boardroom",
+    "refs": [
+     "peterson-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Peterson collapsed on his knees on the boardroom floor beside the podium, face drained of colour, mouth closed. No captions, no watermark."
+   },
+   "e4-ethan-stand": {
+    "scene": "boardroom",
+    "refs": [
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Ethan standing, looking down at someone on the floor with cold fury, mouth closed. No captions, no watermark."
+   },
+   "e4-phone": {
+    "scene": "boardroom",
+    "refs": [
+     "chloe-dress"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium close-up: Chloe holding a phone to her ear, her face draining of colour in fear, mouth closed. No captions, no watermark."
+   },
+   "e5-car": {
+    "scene": "airstrip",
+    "refs": [
+     "leo-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: the black sedan by the jet, the pale boy looking out of the rear side window with frightened eyes, his palm on the glass. No captions, no watermark."
+   },
+   "e5-vivian": {
+    "scene": "airstrip",
+    "refs": [
+     "vivian-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Vivian in her white suit standing beside the black sedan holding up a contract, wind in her hair, a cruel smile, mouth closed. No captions, no watermark."
+   },
+   "e5-chloe": {
+    "scene": "airstrip",
+    "refs": [
+     "chloe-dress",
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe in her navy dress in front, hair whipping in the wind, determined, Ethan standing just behind her shoulder, both facing someone off-screen, mouths closed. No captions, no watermark."
+   },
+   "e5-hug": {
+    "scene": "airstrip",
+    "refs": [
+     "chloe-dress",
+     "leo-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: the pale boy in the grey hoodie running into Chloe's arms, both crying with relief, police car lights flashing behind them. No captions, no watermark."
+   },
+   "e5-roof": {
+    "scene": "rooftop",
+    "refs": [
+     "chloe-dress",
+     "ethan-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Chloe and Ethan standing face to face at the glass railing at sunrise, Chloe half laughing with tears in her eyes, mouths closed. No captions, no watermark."
+   },
+   "e5-kneel": {
+    "scene": "rooftop",
+    "refs": [
+     "ethan-master",
+     "chloe-dress"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: Ethan kneeling on one knee holding up a ring made of red string, Chloe standing in front of him with her hands over her heart, sunrise behind, mouths closed. No captions, no watermark."
+   },
+   "e5-grandfather": {
+    "scene": "study",
+    "refs": [
+     "grandfather-master"
+    ],
+    "prompt": "Photorealistic 9:16 vertical medium shot: the white-haired old man seated at the antique desk, a photograph of a young woman lying on the desk in front of him, the fireplace glowing, cold eyes, mouth closed. No captions, no watermark."
+   }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+project: harry_draconia_yule_ball_e01_v3
+mode: still_first
+currency: magic_hour_credits
+paid_generation_default: false
+require_env_for_paid_generation: ALLOW_PAID_GENERATION=1
+existing_balance_only: true
+voices:
+  draconia:
+    provider: elevenlabs
+    voice_id: ZF6FPAbjXT4488VcRRnw
+    accepted_identity: Amelia
+  harry:
+    provider: elevenlabs
+    voice_id: 4dZr8J4CBeokyRkTRpoN
+    accepted_identity: Peter Harwood
+visual:
+  aspect_ratio: "9:16"
+  resolution: "720p"
+  style: cinematic_photorealistic
+  palette: candle_gold_cool_blue
+  hard_negative:
+    - sword
+    - rapier
+    - blade
+    - knife
+    - metal cuffs
+    - anime
+    - illustration
+    - distorted face
+    - extra fingers
+    - text on clothing
+qa:
+  min_face_visibility_for_dialogue: 0.7
+  max_black_frame_seconds: 0.25
+  required_manual_checks:
+    - action_matches_script
+    - prop_orientation
+    - expression_matches_line
+    - wardrobe_continuity
+    - shot_boundary_continuity
+    - speaker_mouth_visibility

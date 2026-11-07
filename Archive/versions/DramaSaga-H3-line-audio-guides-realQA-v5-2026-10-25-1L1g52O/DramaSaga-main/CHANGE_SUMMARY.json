@@ -1,0 +1,43 @@
+{
+  "baseline": "DramaSaga-MicroDrama-2026-10-20-privacy-clean.zip",
+  "date": "2026-10-25",
+  "added": [
+    "magicdrama/audiofirst/real_video_qa.py",
+    "tests/test_real_video_qa.py",
+    "evidence/h3-line-audio-guide-design-comparison-2026-10-25.md",
+    "evidence/harry-original-h3-plan-v4.json",
+    "evidence/harry-original-h3-v4-input-manifest.json",
+    "evidence/compile-harry-original-h3-v4.py"
+  ],
+  "changed": [
+    "AUDIO_FIRST.md",
+    "CHANGE_SUMMARY.json",
+    "README.md",
+    "SOURCE_MANIFEST.json",
+    "magicdrama/audiofirst/original_h3.py",
+    "magicdrama/audiofirst/quality.py",
+    "magicdrama/audiofirst/sync_qa.py",
+    "portable/README.md",
+    "portable/models.py",
+    "portable/run.py",
+    "portable/sources.lock.json",
+    "requirements/local.txt",
+    "tests/test_original_h3_integration.py",
+    "tests/test_portable_runtime.py",
+    "tests/test_sync_qa.py",
+    "magicdrama/audiofirst/h3_local.py",
+    "tests/test_free_audio_h3.py"
+  ],
+  "removed": [],
+  "tests": 252,
+  "notes": [
+    "Original-H3 midpoint pin coverage and fail-closed pin validation added after source inspection showed boundary-only guides are sparse conditioning anchors, not strength-controlled whole-line constraints",
+    "Whole-line 25 Hz mouth-motion evaluator added; dense tracks must declare manual audit or validated local extractor provenance",
+    "Real decoded-video YuNet/SFace/MediaPipe extractor added with explicit detector score, identity similarity/margin, raw aperture, ambiguity and occlusion failures; it does not claim identity proof or phoneme matching",
+    "Pinned official OpenCV Zoo YuNet/SFace model URLs and SHA-256 hashes added alongside the existing official MediaPipe face-landmarker pin",
+    "MiniMaxH3AddGuide compilation now supports a staged WAV per guide, enabling line-start and midpoint active-speaker image+audio anchors while preserving the exact full soundtrack",
+    "A known-good public-domain FEMA clip proved the 0.70 raw aperture/envelope threshold is not calibrated; the screen stays fail-closed and is not a phoneme lip-sync score",
+    "252 tests passed locally; real H3 output remains rejected and no new render/spend is authorized"
+  ],
+  "unchanged_count": 165
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "harry-A",
+    "files": [
+      "e01-s17-b1-start.png",
+      "ref-harry-front-close.png",
+      "aftermath-existing-frame-0.7s.png"
+    ],
+    "body": {
+      "name": "hybrid-research-harry-A",
+      "model": "nano-banana-2.1",
+      "image_count": 1,
+      "resolution": "1k",
+      "aspect_ratio": "9:16",
+      "style": {
+        "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Harry wears round wire glasses, white shirt, black dress robes with deep red lapel lining, and a narrow STRAIGHT DARK NECKTIE hanging vertically below the collar. Explicitly replace the erroneous bowtie in references1/2. No bowtie. Harry occupies left/center, looks distinctly to screen RIGHT toward offscreen Draconia, never into lens. Concern settling into dry relief after surviving the crash. Tight chest-up three-quarter close-up, camera near her shoulder, a soft sliver of Draconia shoulder at far right edge; readable face, eye-level shot. Keep a small soft-focused floor-level wreckage glimpse in depth where composition permits, never float wreckage."
+      }
+    }
+  },
+  {
+    "name": "harry-B",
+    "files": [
+      "e01-s17-b1-start.png",
+      "ref-harry-front-close.png",
+      "aftermath-existing-frame-0.7s.png"
+    ],
+    "body": {
+      "name": "hybrid-research-harry-B",
+      "model": "nano-banana-2.1",
+      "image_count": 1,
+      "resolution": "1k",
+      "aspect_ratio": "9:16",
+      "style": {
+        "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Harry wears round wire glasses, white shirt, black dress robes with deep red lapel lining, and a narrow STRAIGHT DARK NECKTIE hanging vertically below the collar. Explicitly replace the erroneous bowtie in references1/2. No bowtie. Harry occupies left/center, looks distinctly to screen RIGHT toward offscreen Draconia, never into lens. Concern settling into dry relief after surviving the crash. Slightly wider waist-up reverse close-up at eye level, enough lower background to show fallen metal/crystal at floor level behind him, not a reinstated ceiling fixture. Draconia stays offscreen right. Restrained expression, mouth relaxed, no broad grin."
+      }
+    }
+  },
+  {
+    "name": "draconia-A",
+    "files": [
+      "e01-s18-b1-start.png",
+      "ref-draconia-front-close.png",
+      "aftermath-existing-frame-0.7s.png"
+    ],
+    "body": {
+      "name": "hybrid-research-draconia-A",
+      "model": "nano-banana-2.1",
+      "image_count": 1,
+      "resolution": "1k",
+      "aspect_ratio": "9:16",
+      "style": {
+        "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Draconia has the same braided platinum-blonde updo, earrings and fitted dark emerald green gold-embroidered gown as reference2. Draconia occupies right/center, turns her eyes and nose distinctly to screen LEFT toward offscreen Harry, never into lens, no frontal stare. Wry breathless disbelief after surviving the crash. Chest-up reciprocal reverse close-up at eye level, Harry remains offscreen left. Keep both eyes and face readable despite looking left. A soft floor-level wreckage glimpse in depth if plausible, not a giant object over her head."
+      }
+    }
+  },
+  {
+    "name": "draconia-B",
+    "files": [
+      "e01-s18-b1-start.png",
+      "ref-draconia-front-close.png",
+      "aftermath-existing-frame-0.7s.png"
+    ],
+    "body": {
+      "name": "hybrid-research-draconia-B",
+      "model": "nano-banana-2.1",
+      "image_count": 1,
+      "resolution": "1k",
+      "aspect_ratio": "9:16",
+      "style": {
+        "prompt": "Create one photoreal cinematic vertical 9:16 film still, not a collage or grid. No text or captions. Reference1 gives composition only, not its incorrect background or clothing. Reference2 pins the same adult character identity, hair and costume colors. Reference3 is the authoritative CURRENT HALL STATE: cold ice-covered Gothic hall after the principal chandelier crashed; its wreckage remains on the floor, broken suspension above. Replace the warm intact-hall background of references1/2 with this aftermath. Preserve stone arches, window layout, ice and credible surviving side candles; do not delete unrelated smaller lamps. No large intact principal chandelier above or behind character. No new architecture or duplicate characters. Match cool moonlight with gentle candle rim light and natural skin. Draconia has the same braided platinum-blonde updo, earrings and fitted dark emerald green gold-embroidered gown as reference2. Draconia occupies right/center, turns her eyes and nose distinctly to screen LEFT toward offscreen Harry, never into lens, no frontal stare. Wry breathless disbelief after surviving the crash. Slightly wider waist-up reciprocal reverse close-up, camera on the SAME side of their conversational axis, screen-left gaze. Lower background reveals fallen chandelier fragments on icy floor. Harry stays offscreen left. No extra people or posing for portrait."
+      }
+    }
+  }
+]

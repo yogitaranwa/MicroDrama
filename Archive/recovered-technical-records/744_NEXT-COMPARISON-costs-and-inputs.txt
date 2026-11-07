@@ -1,0 +1,45 @@
+BOUNDED HYBRID COMPARISON - 26 OCTOBER 2026, 20:32 IST
+
+Pick: candidate-frame gate using existing Magic Hour ai-image-editor + our locked-audio/timeline/receipt controls. No new vendor, no external repo execution, no GPU required. ViMax informs camera-linked reference/candidate review; it is not the renderer.
+
+Important actual-pixel finding: the canonical hall reference itself has the chandelier intact. Harry's canonical portrait shows a straight dark necktie, whereas the current s17 footage shows a black bow tie. Thus faithfully reusing the unchanged bank can faithfully reproduce the wrong scene state or wardrobe. A new library of names/extra reference prompts alone cannot solve this. Need explicit STATE-SPECIFIC references, plus the documented clothing target, not another blind reroll.
+
+FRAME-ONLY PROPOSAL (do not submit until approved):
+- Two independently prompted 9:16/1k nano-banana-2.1 candidates for Harry s17.
+- Two independently prompted 9:16/1k nano-banana-2.1 candidates for Draconia s18.
+- Separate one-image calls: 4x50=200 Magic Hour credits maximum; no auto retries, no grids, no video.
+- Same face/gown/robes as selected canonical portraits; Use the documented straight dark necktie. Production recovered current manifest and T50 test authority: black red-lined dress robes over a white shirt and dark necktie. Sampled bow ties are generation drift, not a new wardrobe decision. No user question is needed.
+- Use current start frame for spatial composition, canonical character for identity/wardrobe, and an explicitly reviewed aftermath state reference derived from existing s18b2 wreckage frame. Do not supply intact hall unchanged as overriding scene state.
+- Required edit: remove the crashed principal chandelier from overhead; preserve vaulted hall, candles, windows and background layout. Show only credible aftermath visible in frame; do not invent a new intact hero chandelier.
+- Eyelines: Harry looking toward offscreen Draconia, Draconia toward Harry, neither at camera. Faces readable, stable wardrobe. No text in image, no grid.
+- Stop after four images. Inspect actual pixels against source and scene role. Reject all if needed; choosing 'best' of four is not pass if all fail. No video without frame acceptance.
+
+NEXT, ONLY IF FRAMES PASS AND SEPARATELY APPROVED:
+- Two video calls on already selected Wan3.0/720p: 3s Harry +5s Draconia=8x96=768 credits. Trim second to4.5s, insert original1.5s aftermath, retain9s timeline and locked takes. No model switch/extra camera transition video.
+- Native video audio discarded. No promise it will mouth the fixed takes.
+- Visible-mouth lip stage, only after identity/wardrobe/action pixels pass:3s+4.5s at30fps x1credit/frame lite=225 credits estimate, final provider frame settlement must be reconciled. No Pro upgrade. Original assembly master soundtrack retained after splice, never provider-encoded dialogue substituted.
+- Total staged experiment:200 frame candidates +768 video +225 lip estimate=1193 credits. Not an unconditional1193 approval request: first decision only200 frame credits. Video/lip are gates with independent approvals; no auto advance. The dollar value/account balance is not verified here and no per-credit currency price is assumed.
+- Optional cheaper model comparison LTX2.5/720p costs48credits/s per docs, but it is a model change from user's Wan preference and not proven better. Do not choose it silently.
+
+FREE ROUTES:
+- Existing footage/frame extraction, local crop/reframe, contact sheets, original-voice assembly and source-hash checks work here; actual9s test saved. They do not reconstruct hidden scene state or photoreal lips.
+- Magic Hour free-plan models STILL consume credits. flux-2-klein is5credits at640px; this is cheaper, not zero cost. Not an authorized free trial.
+- No zero-credit photoreal generator was verified in this CPU-only environment. Built-in image editing capability exists, but a tool surface alone is not evidence of zero cost or permission to send private project references to a different inference service. Do not use it as a hidden workaround.
+- No GitHub-source exception needed for the proposed native Magic Hour candidate-frame path. Running ViMax unchanged adds incompatibility without buying a better comparison. Do not ask for that exception merely to show a repo ran.
+
+INPUT PROVENANCE:
+- Current sanitized production manifest+locked MP3s in research folder.
+- Canonical portrait/location PNG bytes downloaded from original Drive reference folder and hashed against production bank.
+- Current s17/s18 start frames and actual beat clips from verified production backup.
+- Any derived aftermath frame must carry source video hash and exact timestamp, then be visually reviewed before candidate generation.
+- Current permission scope for execution remains held. This document is a researched proposal, not authorization.
+
+SOURCES checked live:
+https://docs.magichour.ai/api-reference/models
+https://docs.magichour.ai/api-reference/image-projects/ai-image-editor
+https://docs.magichour.ai/api-reference/video-projects/image-to-video
+https://docs.magichour.ai/api-reference/video-projects/lip-sync
+
+Rates: Nano Banana2.1 single image640px or1k=50 credits; max9 additional editor inputs. Wan3.0/720p=96credits/s; lip1credit/frame, Pro doubled. Free-plan access still uses credits. Costs charged when queued; frame tools settle to actual rendered frames. No live account balance or tier queried, no key retrieved, no model call made.
+
+UPDATE20:35: production recovered dark-necktie contract and T50. Story state: chandelier struck s14b2, crashes s16b1, wreckage behind them s16b2 onward. s17/s18 prompts omit aftermath state. Hanging fixtures alone do not identify the crashed principal chandelier. Check layout/geometry against reviewed aftermath, preserve unrelated surviving lights. Hold unchanged.

@@ -1,0 +1,29 @@
+[
+  {
+    "shot": 1,
+    "seconds": 7,
+    "job": {
+      "id": "cmvnxtl9702zfjx01nwmfcgpe",
+      "estimated_frame_cost": 336,
+      "credits_charged": 336
+    }
+  },
+  {
+    "shot": 2,
+    "seconds": 7,
+    "job": {
+      "id": "cmvnxtlm60e8kfz01nc3zevrc",
+      "estimated_frame_cost": 336,
+      "credits_charged": 336
+    }
+  },
+  {
+    "shot": 3,
+    "seconds": 5,
+    "job": {
+      "id": "cmvnxtlz30mmej80125iis4b8",
+      "estimated_frame_cost": 240,
+      "credits_charged": 240
+    }
+  }
+]

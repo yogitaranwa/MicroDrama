@@ -1,0 +1,226 @@
+[
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "RTX-PRO-6000",
+    "cost": "0.85513395"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.01895835"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.08888625"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00011558"
+  },
+  {
+    "object_id": "ap-Kk2VGBp1FOB8C3H05D0II4",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T12:30:00+05:30",
+    "resource": "RTX-PRO-6000",
+    "cost": "0.90245209"
+  },
+  {
+    "object_id": "ap-Kk2VGBp1FOB8C3H05D0II4",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T12:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.02098366"
+  },
+  {
+    "object_id": "ap-Kk2VGBp1FOB8C3H05D0II4",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T12:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.09279174"
+  },
+  {
+    "object_id": "ap-Kk2VGBp1FOB8C3H05D0II4",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T12:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00007132"
+  },
+  {
+    "object_id": "ap-0xoT17hIwsft1r0DgZG6fN",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00088865"
+  },
+  {
+    "object_id": "ap-0xoT17hIwsft1r0DgZG6fN",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00004975"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00311677"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00010198"
+  },
+  {
+    "object_id": "ap-2nAJ1Q4qwOF5bk8RtTyy1t",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00009332"
+  },
+  {
+    "object_id": "ap-FX1T80BLdbWN3iSQcLyhxa",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00276765"
+  },
+  {
+    "object_id": "ap-FX1T80BLdbWN3iSQcLyhxa",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00004112"
+  },
+  {
+    "object_id": "ap-FX1T80BLdbWN3iSQcLyhxa",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00406049"
+  },
+  {
+    "object_id": "ap-JXqAVaXNzdih5u5a88VT0P",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00388322"
+  },
+  {
+    "object_id": "ap-JXqAVaXNzdih5u5a88VT0P",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00009853"
+  },
+  {
+    "object_id": "ap-JXqAVaXNzdih5u5a88VT0P",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00074680"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00547989"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00009682"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.01389910"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.01072209"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00025960"
+  },
+  {
+    "object_id": "ap-OvZZGeQ6atJmKQjk5hJyBp",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T10:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.02179502"
+  },
+  {
+    "object_id": "ap-d7ZVGXrXaKjuu9ZdwvjMx0",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "CPU",
+    "cost": "0.00161125"
+  },
+  {
+    "object_id": "ap-d7ZVGXrXaKjuu9ZdwvjMx0",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Memory",
+    "cost": "0.00011833"
+  },
+  {
+    "object_id": "ap-d7ZVGXrXaKjuu9ZdwvjMx0",
+    "description": "h3-render",
+    "environment": "main",
+    "interval_start": "2026-10-25T09:30:00+05:30",
+    "resource": "Network Egress",
+    "cost": "0.00006593"
+  }
+]

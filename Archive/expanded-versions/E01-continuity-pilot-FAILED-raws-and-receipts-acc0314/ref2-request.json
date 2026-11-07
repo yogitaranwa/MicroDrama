@@ -1,0 +1,16 @@
+{
+  "name": "E01-threeparts-lock-reference-2-ONCE",
+  "image_count": 1,
+  "model": "nano-banana-2.1",
+  "aspect_ratio": "9:16",
+  "resolution": "1k",
+  "assets": {
+    "image_file_paths": [
+      "api-assets/cmux6s32o0163kl01fczlz0bj/149ca096-4676-405c-8013-43268b51e319-image-0.png",
+      "api-assets/cmux6s32o0163kl01fczlz0bj/149ca096-4676-405c-8013-43268b51e319-image-1.png"
+    ]
+  },
+  "style": {
+    "prompt": "Photorealistic cinematic frame in the SAME Gothic ballroom, cold blue side light from tall leaded windows and warm candle bokeh behind. Static camera chest-up medium close-up at eye level, no wide lens distortion. Preserve EXACTLY the reference faces and garments, no redesign. No text, arrows, magic symbols, extra people, hand touching shoulder, no foreground obstruction. Only the young woman from second reference visible. Exact braided blonde updo, emerald beaded gown with same neckline, sheer emerald shoulder drapes, delicate green pendant. She faces slightly screen left, eyes just off-camera left at the man, never lens. Worried guarded expression, lips relaxed and visible, shoulders square. Keep face age and shape identical to second reference. First reference supplies scene continuity only."
+  }
+}

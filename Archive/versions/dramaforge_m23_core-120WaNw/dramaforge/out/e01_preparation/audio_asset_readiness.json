@@ -1,0 +1,301 @@
+{
+  "script": "v9 The Debt of Champions",
+  "dialogue_characters": 2589,
+  "voice_selection": [
+    {
+      "character": "Draconia Malfoy",
+      "lines": 8,
+      "characters": 1084,
+      "elevenlabs_voice_id": null,
+      "status": "needs voice selection before paid TTS",
+      "reference_lead": "out/refs/malfoy.wav",
+      "emotion_settings": [
+        {
+          "shot": 1,
+          "emotion": "urgent whisper, fear under bravado",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.15,
+            "style": 0.5,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 4,
+          "emotion": "proud, indignant, secretly thrilled",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.35,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 8,
+          "emotion": "mock outrage, laughter fighting through",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.15,
+            "style": 0.6,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 11,
+          "emotion": "cold fear turning to rage",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.15,
+            "style": 0.6,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 13,
+          "emotion": "wounded fury, voice shaking",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.2,
+            "style": 0.6,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 15,
+          "emotion": "stunned, softer, hurt and relieved",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.25,
+            "style": 0.45,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 21,
+          "emotion": "eerie wonder, barely breathing",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.35,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 23,
+          "emotion": "resolute, defiant, afraid and refusing to show it",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.35,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "character": "Harry Potter",
+      "lines": 7,
+      "characters": 923,
+      "elevenlabs_voice_id": null,
+      "status": "needs voice selection before paid TTS",
+      "reference_lead": "out/refs/potter.wav",
+      "emotion_settings": [
+        {
+          "shot": 3,
+          "emotion": "dry amusement over tension",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.45,
+            "style": 0.5,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 6,
+          "emotion": "controlled urgency, a flash of command",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.7,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 7,
+          "emotion": "teasing, breathless",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.55,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 10,
+          "emotion": "quiet, probing, genuinely worried",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.7,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 14,
+          "emotion": "slow realisation, steady voice",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.55,
+            "style": 0.3,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 18,
+          "emotion": "bold, quick, pleading",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.55,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 22,
+          "emotion": "low alarm, quiet dread",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.7,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "character": "Pansy Parkinson",
+      "lines": 1,
+      "characters": 182,
+      "elevenlabs_voice_id": null,
+      "status": "needs voice selection before paid TTS",
+      "reference_lead": "out/refs/parkinson.wav",
+      "emotion_settings": [
+        {
+          "shot": 12,
+          "emotion": "silky, smug, savouring the threat",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.2,
+            "style": 0.5,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "character": "Professor McGonagall",
+      "lines": 2,
+      "characters": 265,
+      "elevenlabs_voice_id": null,
+      "status": "needs voice selection before paid TTS",
+      "reference_lead": "out/refs/mcgonagall.wav",
+      "emotion_settings": [
+        {
+          "shot": 17,
+          "emotion": "stern, tired authority",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.75,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        },
+        {
+          "shot": 19,
+          "emotion": "disbelief hardening into steel",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.6,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "character": "Argus Filch",
+      "lines": 1,
+      "characters": 135,
+      "elevenlabs_voice_id": null,
+      "status": "needs voice selection before paid TTS",
+      "reference_lead": "out/refs/filch.wav",
+      "emotion_settings": [
+        {
+          "shot": 5,
+          "emotion": "wheezing menace, relishing it",
+          "proposed": {
+            "voice_id": null,
+            "stability": 0.4,
+            "style": 0.25,
+            "similarity_boost": 0.8,
+            "speed": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "existing_draft": {
+    "file": "out/audio/e01_chatterbox_draft_v9.mp3",
+    "duration_seconds": 98.592,
+    "approval": "not verified"
+  },
+  "missing_assets": {
+    "locations": [
+      "Corridor outside the Great Hall",
+      "Hidden passage behind the tapestry",
+      "Seventh-floor corridor, Room of Requirement wall",
+      "Astronomy Tower stairwell"
+    ],
+    "new_characters": [
+      "Pansy Parkinson",
+      "Professor McGonagall",
+      "Argus Filch"
+    ],
+    "wardrobe_gaps": [
+      "Draconia black travelling cloak over emerald gown",
+      "Harry charcoal robes/loosened collar vs existing black/red ballroom robe"
+    ],
+    "props": [
+      "lantern",
+      "B.P. parchment",
+      "vial",
+      "moving-ink palm/parchment",
+      "wall clock",
+      "tower-door cloaked figure"
+    ]
+  },
+  "generation": "none; budget pending",
+  "limitations": [
+    "character reference files are historical leads, not newly approved final voice identities",
+    "emotion settings are proposed, final TTS class currently does not pass these to the API",
+    "the accepted 13s old audio is different dialogue and must not substitute for v9"
+  ]
+}

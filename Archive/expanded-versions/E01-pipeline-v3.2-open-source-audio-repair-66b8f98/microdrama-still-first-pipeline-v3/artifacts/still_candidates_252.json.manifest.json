@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-25T09:58:57.152728+00:00",
+  "files": [
+    {
+      "bytes": 5021,
+      "name": "E01_shot_plan_v3.json",
+      "path": "config/E01_shot_plan_v3.json",
+      "sha256": "776b1ce0535a0b1882cbfebdbd7a8de63efca8fde44db0a360a066af67fa1836"
+    },
+    {
+      "bytes": 556395,
+      "name": "still_candidates_252.json",
+      "path": "artifacts/still_candidates_252.json",
+      "sha256": "99b39c960f60ef1c64e7a1b2b1c0434326b561bb169c752d2e384a9e1af7e419"
+    }
+  ],
+  "metadata": {
+    "paid_generation": false,
+    "stage": "still_candidate_plan"
+  }
+}

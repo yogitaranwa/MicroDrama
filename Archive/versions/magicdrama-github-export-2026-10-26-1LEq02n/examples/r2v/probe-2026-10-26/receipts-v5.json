@@ -1,0 +1,74 @@
+{
+  "manifest_id": "probe-r2v-e01s07-s10-2026-10-26-v5-rebind-draft",
+  "manifest_sha256": "b83873fdd5cc8e6b1fe67f701c46c2e7bbc9ca1513e6816c9e857295d35d2b26",
+  "started": "2026-10-26T02:49:20+0530",
+  "uploads": [
+    {
+      "name": "audio-new/e01-line-06.mp3",
+      "sha256": "00e69ec4236afabb57e71a72c610dc0984466b6c72b1e953060c89ede9e555a3",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/e90efc07-bdcc-4808-b3b5-602090b8adda-audio-0.mp3"
+    },
+    {
+      "name": "audio-new/e01-line-07.mp3",
+      "sha256": "6524404f0c90ecf6aaf8952c22d1dfefd255442620ed0f4b57df35f0c7cb1487",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/ac8ae420-5dfa-417e-90d5-c4b2424a150c-audio-0.mp3"
+    },
+    {
+      "name": "audio-new/e01-line-08.mp3",
+      "sha256": "8f177fae59be0ed710b43dfc511f22b1dd23ddb3b909dd713acce4b421f16025",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/ec380852-63c2-496b-a2b0-966e0ffc9169-audio-0.mp3"
+    },
+    {
+      "name": "audio-new/e01-line-09.mp3",
+      "sha256": "802044340537b625801b985675efebbc76559eb8d6a77fd434541c0915f07dbd",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/7906fafa-bd39-408f-9f90-0e43f659acfe-audio-0.mp3"
+    },
+    {
+      "name": "ref-draconia-front-close.png",
+      "sha256": "2a86d5dfb893d62acd1645e9eb03828b61ceaaaee3469c503da495807ac2810c",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/bdf02b4a-ff0b-408e-8491-8933294a5eb0-image-0.png"
+    },
+    {
+      "name": "ref-draconia-fullbody.png",
+      "sha256": "a02d5a595bfefbca0899554737ef7bc537aa1d1478aaaec7d968bcf57d632b8d",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/75dd67f9-024b-4b96-9261-779f870d5b52-image-0.png"
+    },
+    {
+      "name": "ref-harry-fullbody.png",
+      "sha256": "772588f98f5fe57de887a0280f145894348a7ba64044d6edacb6d168a6f2d70a",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/b4aff161-7c65-4f0f-8124-07afc084ac15-image-0.png"
+    },
+    {
+      "name": "ref-yule-ball-location.png",
+      "sha256": "8a549e18d70d7228141ac4cb636b592f299a56ac1fb4e6ce61919c934b090cf0",
+      "file_path": "api-assets/cmux6s32o0163kl01fczlz0bj/95c03dfd-b550-44d6-9e90-2f9c76de2cf5-image-0.png"
+    }
+  ],
+  "jobs": [
+    {
+      "shot_id": "e01s07",
+      "job_id": "cmvobz41b0oupfz01ho4iksch",
+      "credits_charged": 336,
+      "quoted": 336
+    },
+    {
+      "shot_id": "e01s08",
+      "job_id": "cmvobz5hs0mb6gn01pk5bkis4",
+      "credits_charged": 336,
+      "quoted": 336
+    },
+    {
+      "shot_id": "e01s09",
+      "job_id": "cmvobz6vv06bqjl01eezrc7ke",
+      "credits_charged": 240,
+      "quoted": 240
+    },
+    {
+      "shot_id": "e01s10",
+      "job_id": "cmvobz86v0dtujx01v7jqmb83",
+      "credits_charged": 336,
+      "quoted": 336
+    }
+  ],
+  "total_charged": 1248
+}

@@ -1,0 +1,51 @@
+{
+  "source_audio_sha256": "9dca102c9adfd39e9cae4046c35589f3de8ed85ecb6189d77489b2a07d4f62a2",
+  "rendered_video_sha256": "532c147b3fe94f228f584e0e823b227e6cc41c6c0c10afc8fa1ae24c35b06440",
+  "source_seconds": 13.6667,
+  "rendered_seconds": 13.12,
+  "sample_rate_hz": 16000,
+  "envelope_offset_seconds": 0.0,
+  "speech_onset_offset_seconds": -0.02,
+  "envelope_correlation": 0.9765,
+  "max_dialogue_line_offset_seconds": 0.0,
+  "min_dialogue_line_correlation": 0.9687,
+  "lines": [
+    {
+      "id": "L1",
+      "speaker": "draconia",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9752
+    },
+    {
+      "id": "L2",
+      "speaker": "draconia",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9726
+    },
+    {
+      "id": "L3",
+      "speaker": "harry",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9756
+    },
+    {
+      "id": "L4",
+      "speaker": "draconia",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9687
+    },
+    {
+      "id": "L5",
+      "speaker": "harry",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9813
+    },
+    {
+      "id": "L6",
+      "speaker": "draconia",
+      "line_offset_seconds": 0.0,
+      "line_correlation": 0.9828
+    }
+  ],
+  "note": "Waveform/envelope alignment only; not phoneme or visual lip-sync proof."
+}

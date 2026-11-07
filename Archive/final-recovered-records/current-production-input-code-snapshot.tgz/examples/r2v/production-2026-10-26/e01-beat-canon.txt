@@ -1,0 +1,55 @@
+s01 line: (wordless)
+  b1 [sound_fx/wide_action] Wide establishment: snow hangs motionless under the enchanted ceiling as Harry enters alone, dressed plainly, watching the floor's reflections instead of the dancers.
+s02 line: Potter, don't turn around! Look at me - only at me - and walk over her
+  b1 [dialogue/cu_dialogue] Close on Draconia: her smile vanishes as she sees the black spark above Harry's head; she calls out to him, urgent and controlled.
+  b2 [sound_fx/insert] Insert: a small black spark crackling with white-hot points above Harry's unsuspecting head, seen past his hair and shoulder; no speaking face on screen.
+  b3 [sound_fx/wide_action] Draconia's paper programme slips from her fingers and falls; she runs through the dancing couples toward Harry.
+s03 line: Dance with me right now. The floor won't touch us while we're moving -
+  b1 [dialogue/two_shot_dialogue] Close two-shot: Draconia grabs Harry's hand and drags him onto the dance floor, speaking the first sentence to his face, urgent and commanding.
+  b2 [sound_fx/insert] Insert: their joined hands and her grip tightening as dancers scatter around them; no speaking face on screen.
+  b3 [sound_fx/wide_action] Wide on the dance floor: Draconia pulls Harry into the dance among scattering couples as her voice continues offscreen; arrows strike the floor where they stood.
+s04 line: Fine - I'm dancing. Now tell me what those things are, and why they wa
+  b1 [dialogue/cu_dialogue] Close on Harry: he lets her lead, eyes flicking over the floor, the ceiling and wand positions while his face stays controlled - 'Fine - I'm dancing. Now tell me what those things are, and why they want us waltzing.'
+  b2 [sound_fx/insert] Insert: the glowing waltz grid under their feet; stray spells sparking against the enchanted ceiling far above; no faces.
+s05 line: It's a long story, and it ends with you breathing. Eyes on the ceiling
+  b1 [sound_fx/wide_action] A volley of spells punches into the frozen floor between the dancers; Draconia spins Harry out of the impact line, her hair whipping across her face.
+  b2 [dialogue/two_shot_dialogue] Close two-shot, still dancing: Draconia, breathless and direct - 'It's a long story, and it ends with you breathing. Eyes on the ceiling.'
+s06 line: The arrows land on the orchestra's offbeat. Change your step with me -
+  b1 [dialogue/cu_dialogue] Close on Harry mid-dance: his eyes flick to the falling arrows as he speaks the first sentence, realization landing.
+  b2 [sound_fx/insert] Insert: ice arrows striking the orchestra's instruments on the offbeat, strings snapping; no speaking face on screen.
+  b3 [sound_fx/wide_action] Wide: Harry shifts their step by half a beat; the next volley of ice arrows misses them by inches as his voice continues offscreen.
+s07 line: You counted. Clever boy. Then count faster - the music won't slow down
+  b1 [dialogue/cu_dialogue] Close on Draconia: she grins despite the chaos, delighted he saw the grid - 'You counted. Clever boy. Then count faster - the music won't slow down for you.'
+  b2 [sound_fx/insert] Insert: the waltz grid flares brighter under their feet as the tempo rises; distant armor shifts at the edge of the floor; no faces.
+s08 line: Show-off. Even you can't cut all three.
+  b1 [dialogue/cu_dialogue] Close on Draconia: a sharp, delighted smirk as Harry's charm cuts the first strings - 'Show-off.' - then her smirk turns to a warning as a third silver string whips toward them: 'Even you can't cut all three.'
+  b2 [sound_fx/wide_action] Wide: the third silver string wraps Harry's wrist and yanks; Draconia lunges to catch him.
+s09 line: Efficient. Remind me to applaud once the orchestra gives me my hand ba
+  b1 [sound_fx/wide_action] Draconia snaps the silver string binding Harry's wrist with her heel, pulls him upright, and keeps dancing because the floor punishes stillness.
+  b2 [dialogue/two_shot_dialogue] Close two-shot, back in hold: Harry, dry - 'Efficient. Remind me to applaud once the orchestra gives me my hand back.'
+s10 line: I meant to do that. The trolley was always part of the plan.
+  b1 [sound_fx/wide_action] Six empty suits of armor march from the shadows; Draconia kicks a drinks trolley into the first and ducks as it swings.
+  b2 [dialogue/cu_dialogue] Close on Draconia, laughing as she rises from the duck - 'I meant to do that. The trolley was always part of the plan.'
+s11 line: No, you didn't. Thanks for the catch anyway.
+  b1 [dialogue/two_shot_dialogue] Close two-shot: Harry catches Draconia before she falls and turns the rescue into the next dance step, eyes already on the masked figure forming at the center of the floor - 'No, you didn't. Thanks for the catch anyway.'
+s12 line: He's using the waltz grid. Every proper step we dance together seals a
+  b1 [dialogue/cu_dialogue] Close on Draconia, low and urgent, keeping the dance moving - 'He's using the waltz grid. Every proper step we dance together seals another exit.'
+  b2 [sound_fx/insert] Insert: the masked figure copies their steps; each copied step seals another doorway with crawling ice; no faces.
+s13 line: Then we dance it wrong on purpose. Break the grid with me.
+  b1 [dialogue/cu_dialogue] Close on Harry: he sees the pattern and deliberately breaks form mid-step - 'Then we dance it wrong on purpose. Break the grid with me.'
+  b2 [sound_fx/insert] Insert: their feet stomp deliberately off the grid lines; the glowing pattern stutters and breaks under the wrong steps; no faces.
+s14 line: That was your plan? Drop the ceiling on the whole hall?
+  b1 [dialogue/two_shot_dialogue] Close two-shot: Draconia, already turned to face Harry, jabs one finger upward at the chandelier overhead as she delivers the line, incredulous, rising disbelief; her gown hem and hair settle from the spin. Harry stands still beside her, watching her. The mouth stays visible for the entire line; the chain insert starts only after the take ends.
+  b2 [sound_fx/insert] Insert from below: a spell bolt streaks in from off-frame low and bends upward at a sharp angle - visibly turned aside mid-flight - striking the huge chandelier's chain; the chandelier groans and sways high above the dance floor, candles shaking; no speaking face on screen.
+s15 line: Left side, three beats, the red table. Flip it on my mark and hold it
+  b1 [dialogue/cu_dialogue] Close on Harry, rapid and precise, pointing - 'Left side, three beats, the red table. Flip it on my mark and hold it there.'
+  b2 [sound_fx/insert] Insert: a red velvet banquet table wrenches off the floor under a levitation charm and slams sideways into position as a shield; no faces.
+s16 line: Harry... it has our names. Both of them, burned right in.
+  b1 [sound_fx/insert] Wide insert: the chandelier falls and crashes into the frozen floor, ice swallowing it; at the floor's center mark the masked figure applauds without sound.
+  b2 [dialogue/cu_dialogue] Close on Draconia: behind them the chandelier lies crashed into the frozen floor, ice still swallowing it; she stares at her hand and breathes 'Harry...', the pause held on her dawning dread, then turns her palm toward him, voice low - 'it has our names.'
+  b3 [sound_fx/insert] Insert: their two hands side by side, green and silver ribbon-marks burning into the skin as names; her voice continues over the insert.
+s17 line: Draconia. Look at me. What did you do?
+  b1 [dialogue/cu_dialogue] Close on Harry, controlled but alarmed, turning on Draconia - 'Draconia. Look at me. What did you do?'
+s18 line: I spent weeks trying to warn you. You never once listened.
+  b1 [dialogue/cu_dialogue] Close on Draconia: scared for the first time, but she does not step back - 'I spent weeks trying to warn you. You never once listened.'
+  b2 [sound_fx/insert] Insert: the great doors seal fully; beyond the windows a bow-shaped green light pulses once over the dark Forbidden Forest; no faces, then cut to black.

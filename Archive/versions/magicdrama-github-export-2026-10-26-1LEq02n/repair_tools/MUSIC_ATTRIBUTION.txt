@@ -1,0 +1,5 @@
+Dark Dance by Kevin MacLeod (incompetech.com)
+https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100398
+Licensed under Creative Commons Attribution 4.0
+https://creativecommons.org/licenses/by/4.0/
+Changes: source onset trimmed0.05s, excerpted to94.254s, loudness adjusted and ducked6dB under dialogue. Voice takes and all dialogue timings unchanged. Review candidate only, tense fit not listening-approved. Musical second-beat alignment with future arrow impacts remains unverified.

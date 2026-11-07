@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/tmp/avfix-roundtrip/DramaSaga-main/vendor/h3-film-reference/research/h3/runpod/comfy_r2v.py",
+    "--clip=/tmp/h3film-baseline-module-dryrun/harry-draconia-e01-h3film-baseline-v1.clip.json",
+    "/tmp/h3film-baseline-module-dryrun/harry-draconia-e01-h3film-baseline-v1.dry-run.mp4",
+    "--rows=576",
+    "--ratio=9:16",
+    "--audio=inpaint",
+    "--seed=419433329744414"
+  ],
+  "note": "Returned for a future explicitly approved render only; not executed by the offline baseline compiler."
+}

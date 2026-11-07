@@ -1,0 +1,65 @@
+[
+  {
+    "shot": 4,
+    "line": 3,
+    "text": "This is how Slytherins ask?",
+    "job_id": "cmvnlzcsz012khf01j0ibfvno",
+    "credits": 124,
+    "lag_seconds": 0.0,
+    "correlation": 0.9999
+  },
+  {
+    "shot": 5,
+    "line": 4,
+    "text": "It's how they keep you alive.",
+    "job_id": "cmvnlze5b0bprhu01uvc2zppc",
+    "credits": 100,
+    "lag_seconds": 0.0,
+    "correlation": 1.0022
+  },
+  {
+    "shot": 6,
+    "line": 5,
+    "text": "They follow the offbeat.",
+    "job_id": "cmvnlzgg7035kgn01zp116p8j",
+    "credits": 112,
+    "lag_seconds": 0.0,
+    "correlation": 1.0006
+  },
+  {
+    "shot": 7,
+    "line": 6,
+    "text": "Then count faster.",
+    "job_id": "cmvnlzhlf012rhf01gum89k3q",
+    "credits": 94,
+    "lag_seconds": 0.0,
+    "correlation": 0.9996
+  },
+  {
+    "shot": 15,
+    "line": 14,
+    "text": "Left side, three beats, red table.",
+    "job_id": "cmvnlziuq007eet01xtei3izr",
+    "credits": 132,
+    "lag_seconds": 0.0,
+    "correlation": 1.0015
+  },
+  {
+    "shot": 17,
+    "line": 16,
+    "text": "What did you do?",
+    "job_id": "cmvnlzk4i09txfu010957cwaa",
+    "credits": 62,
+    "lag_seconds": 0.0,
+    "correlation": 1.0074
+  },
+  {
+    "shot": 18,
+    "line": 17,
+    "text": "I tried to warn you.",
+    "job_id": "cmvnlzl8q035qgn01h8oetocx",
+    "credits": 112,
+    "lag_seconds": 0.0,
+    "correlation": 1.0005
+  }
+]

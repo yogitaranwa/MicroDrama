@@ -1,0 +1,278 @@
+{
+ "e01-l01-draconia": {
+  "emotion": "alarm she's masking as command",
+  "delivery": "[urgent], low but carrying, mid-run breath; \"only at me\" is pleading under the order",
+  "emphasis": "only",
+  "line": "Potter, don't turn around! Look at me - only at me - and walk over here slowly."
+ },
+ "e01-l02-draconia": {
+  "emotion": "adrenaline with glee underneath",
+  "delivery": "[rushed], breathless, half a laugh in the last clause",
+  "emphasis": "alive",
+  "line": "Dance with me right now. The floor won't touch us while we're moving - you can scream at me when we're alive."
+ },
+ "e01-l03-harry": {
+  "emotion": "controlled demand, compliance as leverage",
+  "delivery": "level, dry, unhurried against the chaos",
+  "emphasis": "why",
+  "line": "Fine, I'm dancing. Now tell me what those things are and why they're aiming at me."
+ },
+ "e01-l04-draconia": {
+  "emotion": "deflection with honest intent",
+  "delivery": "[rushed], the second sentence an order",
+  "emphasis": "alive",
+  "line": "It's a long story, and it ends with you alive. Watch the ceiling, Potter, not me."
+ },
+ "e01-l05-harry": {
+  "emotion": "quiet discovery becoming instruction",
+  "delivery": "calm, precise",
+  "emphasis": "offbeat",
+  "line": "The arrows land on the orchestra's offbeat. Change your step with me - half a beat late, on my count."
+ },
+ "e01-l06-draconia": {
+  "emotion": "delight that he saw it",
+  "delivery": "[laughs], [rushed]",
+  "emphasis": "faster",
+  "line": "You actually counted. Good. Then count faster, because the music isn't slowing down for us."
+ },
+ "e01-l07-draconia": {
+  "emotion": "amused admiration",
+  "delivery": "[softly], under her breath while moving",
+  "emphasis": "",
+  "line": "Show-off. Even you can't cut all three."
+ },
+ "e01-l08-harry": {
+  "emotion": "flat approval",
+  "delivery": "dry, the joke placed gently",
+  "emphasis": "",
+  "line": "Efficient. Remind me to applaud once the orchestra gives me my hand back."
+ },
+ "e01-l09-draconia": {
+  "emotion": "brazen bluff",
+  "delivery": "[laughs], mid-duck",
+  "emphasis": "absolutely",
+  "line": "I absolutely meant to do that. The trolley was always part of my plan."
+ },
+ "e01-l10-harry": {
+  "emotion": "level, fond underneath",
+  "delivery": "dry, even, the thanks genuine",
+  "emphasis": "",
+  "line": "You really didn't. But I'll take the catch - thank you."
+ },
+ "e01-l11-draconia": {
+  "emotion": "rapid analysis turning to unease",
+  "delivery": "[urgent], voice dropping",
+  "emphasis": "every",
+  "line": "He's using the waltz grid. Every proper step we dance together seals another door."
+ },
+ "e01-l12-harry": {
+  "emotion": "cold decision",
+  "delivery": "low, final",
+  "emphasis": "wrong",
+  "line": "Then we stop dancing properly. Break the grid with me - wrong steps, on purpose."
+ },
+ "e01-l13-draconia": {
+  "emotion": "disbelief",
+  "delivery": "[interrupting], [rushed]",
+  "emphasis": "your",
+  "line": "That was your plan? Bring the entire ceiling down on the hall?"
+ },
+ "e01-l14-harry": {
+  "emotion": "tactical calm",
+  "delivery": "clipped, metered like a count",
+  "emphasis": "mark",
+  "line": "Left side, three beats, the red table. Flip it on my mark and hold it over us."
+ },
+ "e01-l15-draconia": {
+  "emotion": "the thrill draining out",
+  "delivery": "[softly], slow",
+  "emphasis": "both",
+  "line": "Harry... it has our names. Both of them, burned right in."
+ },
+ "e01-l16-harry": {
+  "emotion": "controlled alarm",
+  "delivery": "low, each word placed",
+  "emphasis": "you",
+  "line": "Draconia. Look at me. What did you do?"
+ },
+ "e01-l17-draconia": {
+  "emotion": "fear and old frustration, openly, for the first time",
+  "delivery": "slow, no wit, no deflection",
+  "emphasis": "weeks",
+  "line": "I tried to warn you for weeks. You never once listened."
+ },
+ "e02-l01-harry": {
+  "emotion": "cornered anger over fear; low, slow, each word placed",
+  "delivery": "",
+  "emphasis": "plainly",
+  "line": "Warn me about what, Draconia? Say it plainly this time."
+ },
+ "e02-l02-draconia": {
+  "emotion": "[whispers] rushed; she scans the ceiling",
+  "delivery": "",
+  "emphasis": "listening",
+  "line": "Not here. I will not say it while this room is still listening to us."
+ },
+ "e02-l03-curse": {
+  "emotion": "emotionless, patient, wrong. Slow count, off the actual waltz tempo. Narrator-class voice",
+  "delivery": "",
+  "emphasis": "",
+  "line": "One. Two. Three."
+ },
+ "e02-l04-harry": {
+  "emotion": "[nervous] but fighting to sound level",
+  "delivery": "",
+  "emphasis": "only",
+  "line": "Tell me those things are only reflections. Tell me they are not us."
+ },
+ "e02-l05-draconia": {
+  "emotion": "quiet, disgusted",
+  "delivery": "",
+  "emphasis": "become",
+  "line": "They're what this trial expects us to become. Don't you dare bow back."
+ },
+ "e02-l06-harry": {
+  "emotion": "[angry] mid-parry, breathless",
+  "delivery": "",
+  "emphasis": "",
+  "line": "It copied my footing, but it can't copy my temper. Watch."
+ },
+ "e02-l07-draconia": {
+  "emotion": "[laughs] delighted, [rushed]",
+  "delivery": "",
+  "emphasis": "cheat",
+  "line": "It dances better than me. Lucky for us, I cheat better than it."
+ },
+ "e02-l08-harry": {
+  "emotion": "dread arriving as understanding. Slow",
+  "delivery": "",
+  "emphasis": "casting",
+  "line": "It's not attacking us anymore. It's casting us, like actors in its rehearsal."
+ },
+ "e02-l09-draconia": {
+  "emotion": "controlled recitation cracking at \"my family's\"",
+  "delivery": "",
+  "emphasis": "",
+  "line": "This is the founding trial - my family's trial, Potter. It only releases the pair that finishes the waltz together."
+ },
+ "e02-l10-harry": {
+  "emotion": "formal, hard",
+  "delivery": "",
+  "emphasis": "everything",
+  "line": "Then we finish it together. And afterward, you tell me everything."
+ },
+ "e02-l11-draconia": {
+  "emotion": "bitter amusement, breathless in motion",
+  "delivery": "",
+  "emphasis": "lesson",
+  "line": "Every right step feeds it, and every wrong one punishes us. It's not a dance, Potter - it's a lesson."
+ },
+ "e02-l12-draconia": {
+  "emotion": "[urgent], genuine fear for him",
+  "delivery": "",
+  "emphasis": "keeps",
+  "line": "Every wrong step takes a piece of you and keeps it. Stop testing it, Harry."
+ },
+ "e02-l13-draconia": {
+  "emotion": "quiet, ashamed",
+  "delivery": "",
+  "emphasis": "",
+  "line": "There is a forfeit step. A Malfoy can end this trial by yielding the pair-bond. I just didn't want to pay that price."
+ },
+ "e02-l14-harry": {
+  "emotion": "[urgent] [angry], the loudest he's been",
+  "delivery": "",
+  "emphasis": "alone",
+  "line": "Don't you dare pay that price alone. Not for me."
+ },
+ "e02-l15-curse": {
+  "emotion": "pleased, patient. Emphasis: \"honesty\". Cut to black on the last word",
+  "delivery": "",
+  "emphasis": "",
+  "line": "Rehearsal two. Bring your honesty."
+ },
+ "e03-l01-draconia": {
+  "emotion": "[urgent], low, eyes on the stair",
+  "delivery": "",
+  "emphasis": "right now",
+  "line": "Whatever you think you found down here, we are leaving right now."
+ },
+ "e03-l02-harry": {
+  "emotion": "controlled, cold",
+  "delivery": "",
+  "emphasis": "",
+  "line": "This is your family's handwriting, Draconia, written before the ball. Start talking."
+ },
+ "e03-l03-draconia": {
+  "emotion": "[rushed], deflection with real fear under it",
+  "delivery": "",
+  "emphasis": "properly",
+  "line": "Fly first. You can hate me properly once we're at altitude."
+ },
+ "e03-l04-harry": {
+  "emotion": "alarmed realization, [urgent], louder than his norm against wind",
+  "delivery": "",
+  "emphasis": "same",
+  "line": "It's the same count as the ballroom! The storm is following the waltz!"
+ },
+ "e03-l05-draconia": {
+  "emotion": "[urgent] [rushed], shouting over wind",
+  "delivery": "",
+  "emphasis": "break",
+  "line": "Then stop flying on the beat! Break your rhythm, now!"
+ },
+ "e03-l06-harry": {
+  "emotion": "[nervous] humor over real fear, strained mid-fall",
+  "delivery": "",
+  "emphasis": "lovely",
+  "line": "A little help would be lovely right about now!"
+ },
+ "e03-l07-draconia": {
+  "emotion": "fierce, desperate, physical strain",
+  "delivery": "",
+  "emphasis": "got",
+  "line": "I've got you. Hold on to me - I've got you."
+ },
+ "e03-l08-harry": {
+  "emotion": "quiet accusation, colder than anger",
+  "delivery": "",
+  "emphasis": "knew",
+  "line": "You knew. Before the ball ever started, you knew some part of this."
+ },
+ "e03-l09-draconia": {
+  "emotion": "confession at speed, voice breaking on \"mark you\"",
+  "delivery": "",
+  "emphasis": "didn't know",
+  "line": "The warning spell was mine. I knew the trial wakes for a paired witness - I swear I didn't know it would mark you."
+ },
+ "e03-l10-harry": {
+  "emotion": "[angry], betrayal, disbelief",
+  "delivery": "",
+  "emphasis": "never agreed",
+  "line": "You used me. You picked me as the other half of a pair I never agreed to join?"
+ },
+ "e03-l11-draconia": {
+  "emotion": "quiet, defiance gone",
+  "delivery": "",
+  "emphasis": "mistake",
+  "line": "I picked the one person who wouldn't run. That wasn't strategy, Harry. That was the mistake."
+ },
+ "e03-l12-harry": {
+  "emotion": "grim understanding, low",
+  "delivery": "",
+  "emphasis": "directions",
+  "line": "The lake lets go of us at the forest. That's not rescue, Draconia - those are directions."
+ },
+ "e03-l13-draconia": {
+  "emotion": "awe and dread together, [softly]",
+  "delivery": "",
+  "emphasis": "inviting",
+  "line": "A second dance, at midnight. It's not threatening us - it's inviting us in."
+ },
+ "e03-l14-harry": {
+  "emotion": "decided, the season's first quiet line that is not anger",
+  "delivery": "",
+  "emphasis": "honest",
+  "line": "Then we go in honest. All of it, tonight. Together."
+ }
+}

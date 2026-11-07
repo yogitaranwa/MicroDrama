@@ -1,0 +1,1 @@
+10:01 MultiTalkV1 failed missing quantizedT5. Full cached fp16T5 adapter extended to bothbackends.24focusedtestspassed, earlierfull533notrerun. InfiniteTalkV1 launched10:02, MultiTalkV2 importpending. Not runtimeaccepted. Paid/E01held.

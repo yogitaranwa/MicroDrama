@@ -1,0 +1,13 @@
+{
+  "checks_passed": [
+    "proposal provenance retained",
+    "all cameras same side of conversational axis",
+    "both locked takes unchanged",
+    "dialogue windows retained",
+    "no execution authority implied",
+    "proposed camera/target projection gives opposing screen directions"
+  ],
+  "quality_pass": false,
+  "production_modified": false,
+  "paid_calls": 0
+}
